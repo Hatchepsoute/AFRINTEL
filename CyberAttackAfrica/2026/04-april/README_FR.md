@@ -6,7 +6,7 @@
 **Édition destinée aux RSSI, DSI, SOC/CERT et directions des risques**  
 **Période des fiches :** 1er au 30 avril 2026 · **Revue documentaire :** 6 novembre 2026  
 **Sources :** fiches victimes [FR](./victims_FR.md) / [EN](./victims.md), publications et échantillons décrits dans ces fiches, communications des organisations, sources OSINT citées en fin de rapport.  
-**Version anglaise :** [README.md](./README.md) · **Contrôles :** [VALIDATION.md](./VALIDATION.md)
+**Version anglaise :** [README.md](./README.md)
 
 > **Note de fiabilité - approche AFRINTEL.** Ce rapport consolide des publications effectivement consignées dans le corpus et les analyses post-divulgation associées à certaines fiches. Pour les dossiers ransomware, l'inscription sur un site d'extorsion est distinguée de l'accès à des documents divulgués, du chiffrement et d'une confirmation officielle. Pour les fuites, les éléments analysés sont décrits à partir des échantillons, exports, structures et captures **lorsque leur examen est tracé dans la fiche**. Une description fournie par un acteur sans échantillon vérifiable demeure une revendication. Le rapport ne prétend **pas** que tous les jeux de données ou toutes les infrastructures ont été examinés directement lors de sa rédaction. Aucun secret, identifiant personnel ou lien vers des archives illicites n'est reproduit.
 
@@ -18,7 +18,7 @@
 
 Sur les **64 observations**, on compte **32 fuites de données (50,0 %)**, **21 dossiers classés ransomware (32,8 %)**, **9 revendications DDoS (14,1 %)** et **2 offres de vente d'accès (3,1 %)**. Le corpus comprend **15 pays directement désignés** et **une publication multi-pays** (Angola, Afrique du Sud, Nigeria), comptée une seule fois. **L'Égypte (19)**, **le Maroc (15)** et **l'Afrique du Sud (6)** concentrent **40 observations (62,5 %)**, ce qui mesure la visibilité documentaire de la collecte, **pas la probabilité nationale de cyberattaque**.
 
-La principale rupture par rapport à mars tient aux **neuf publications DDoS revendiquées par le compte Keymous+**, concentrées les 11–12 avril et visant notamment des services publics égyptiens. Les captures ou tests de disponibilité publiés par le compte n'attestent ni la méthode, ni la durée, ni le succès d'une attaque DDoS. Cette série peut néanmoins alimenter la surveillance de disponibilité et les dispositifs anti-DDoS.
+La principale rupture par rapport à mars tient aux **neuf publications DDoS revendiquées par le compte Keymous+**, concentrées les 11-12 avril et visant notamment des services publics égyptiens. Les captures ou tests de disponibilité publiés par le compte n'attestent ni la méthode, ni la durée, ni le succès d'une attaque DDoS. Cette série peut néanmoins alimenter la surveillance de disponibilité et les dispositifs anti-DDoS.
 
 Trois dossiers justifient une attention immédiate des responsables de la sécurité : **Ahmed Al-Kadi Private Hospital** (Afrique du Sud), où le ransomware et le chiffrement partiel sont **confirmés par l'hôpital** ; **la CNSS Bénin**, pour une publication attribuée à une messagerie institutionnelle impliquant des dossiers sociaux, médicaux et bancaires ; et **Algérie Télécom Satellite (ATS)**, dont la fiche décrit un examen de **88 fichiers** de paie sensibles. À ceux-ci s'ajoutent **National Oil Ethiopia**, **Kenya Airports Authority**, **l'Université de Chlef** et plusieurs organismes marocains, où les revendications, les échantillons et les accès allégués doivent être traités à leur niveau de preuve respectif.
 
@@ -41,7 +41,7 @@ Trois dossiers justifient une attention immédiate des responsables de la sécur
 | Malware | 0 | 0 | 0 (stable) |
 | Operational Fraud | 1 | 0 | −1 (−100,0 %) |
 
-![Comparaison Mars–Avril](assets/comparaison_FR.png)
+![Comparaison Mars-Avril](assets/comparaison_FR.png)
 
 **Lecture comparative :** mars était principalement caractérisé par des publications relatives à des données et environnements internes, tandis qu'avril réunit une concentration de **publications de fuite**, de **dossiers ransomware** et d'**actions de visibilité DDoS alléguées**. Le volume égyptien passe de 8 dossiers en mars à 19 en avril, **dont huit revendications DDoS d'un même compte** ; la lecture par acteur et par nature de preuve est donc indispensable.
 
@@ -58,7 +58,7 @@ AFRINTEL surveille les menaces affectant les organisations ou les données assoc
 | **Incident confirmé par la victime** | Le périmètre reconnu publiquement est établi ; les affirmations non reprises par la victime demeurent séparées. |
 | **Analyse contextuelle** | Les scénarios d'attaque et hypothèses MITRE sont des **axes de détection** lorsqu'aucune télémétrie victime ne démontre la technique. |
 
-**Décision de comptage.** Les fichiers affichent des en-têtes historiques annonçant **70 fiches / 69 victimes canoniques**, mais ils contiennent **65 en-têtes de fiches dans chaque langue**. La ventilation réductible est **32 + 21 + 9 + 2 + 1 = 65** ; le dernier terme correspond à **Bank of Kigali** (`Under Investigation - Alleged`, `Operational Fraud`), **hors dénominateur canonique** conformément à sa fiche. Les graphiques canoniques du présent rapport utilisent **64**, non 65 ni 69. La publication multi-pays **Angola / Afrique du Sud / Nigeria** est comptée une fois, sans multiplier les pays ou les victimes. Les règles sont détaillées dans [VALIDATION.md](./VALIDATION.md).
+**Décision de comptage.** Les fichiers contiennent **65 en-têtes de fiches dans chaque langue**. La ventilation réductible est **32 + 21 + 9 + 2 + 1 = 65** ; le dernier terme correspond à **Bank of Kigali** (`Under Investigation - Alleged`, `Operational Fraud`), **hors dénominateur canonique** conformément à sa fiche. Les graphiques canoniques du présent rapport utilisent **64**. La publication multi-pays **Angola / Afrique du Sud / Nigeria** est comptée une fois, sans multiplier les pays ou les victimes.
 
 **Contrôle temporel.** La publication observée, la fuite initiale, la date réelle de compromission et l'entrée dans AFRINTEL peuvent diverger. Ainsi, la fiche **Pharmacie.ma**, classée dans l'inventaire d'avril, rapporte une première annonce au **27 janvier 2026** et une compromission revendiquée en **septembre 2025** ; le dump GET/General Electric Trading renvoie à **septembre 2024** ; la fiche **National Oil Ethiopia** mentionne une fuite au **24 mars 2026**. Ces événements ne doivent pas être décrits comme autant de nouvelles intrusions découvertes techniquement en avril.
 
@@ -151,13 +151,13 @@ Les **16 fiches avec échantillon signalé** n'impliquent pas que l'intégralit�
 
 ### 4.3 Algérie - Algérie Télécom Satellite : exposition de données de paie
 
-**Éléments analysés selon la fiche AFRINTEL.** La publication attribuée à **Phantom Atlas** du **16 avril** est accompagnée d'un examen documentaire de **88 fichiers (~29 Mo)**, surtout des bulletins de salaire datés **2023–2024**. Les pièces décrites comprennent des éléments RH et bancaires (matricule, salaire, catégorie, numéro de sécurité sociale, compte bancaire), couvrant plusieurs directions régionales. La cohérence de structure, la variété des périodes et les marques institutionnelles visibles étayent la **plausibilité** des documents ; elles ne démontrent pas à elles seules un accès actuel à tous les systèmes d'ATS.
+**Éléments analysés selon la fiche AFRINTEL.** La publication attribuée à **Phantom Atlas** du **16 avril** est accompagnée d'un examen documentaire de **88 fichiers (~29 Mo)**, surtout des bulletins de salaire datés **2023-2024**. Les pièces décrites comprennent des éléments RH et bancaires (matricule, salaire, catégorie, numéro de sécurité sociale, compte bancaire), couvrant plusieurs directions régionales. La cohérence de structure, la variété des périodes et les marques institutionnelles visibles étayent la **plausibilité** des documents ; elles ne démontrent pas à elles seules un accès actuel à tous les systèmes d'ATS.
 
 **Lecture RSSI :** les RH, l'identité du personnel et la paie sont des actifs à protéger contre le ciblage individualisé, la fraude documentaire et les tentatives de changement de coordonnées de paiement. **Mesure prioritaire :** audit des exports RH, contrôle des accès aux répertoires de paie, traçabilité des comptes de prestataires et dispositif d'alerte antifraude interne.
 
 ### 4.4 Algérie - Université de Chlef : exposition alléguée d'interfaces et de tables administratives
 
-La fiche **Phantom Atlas** du **10 avril** décrit des vues d'un environnement **phpMyAdmin** montrant deux ensembles : une base de type CMS et une base de gestion du personnel avec **19 tables** et environ **13 630 lignes** affichées. L'extrait visible comprend des attributs RH, dont un hachage de mot de passe à **40 caractères hexadécimaux**. Le récit de l'acteur évoque un accès depuis novembre 2025, sans preuve indépendante de sa durée réelle. Aucun export complet n'a été fourni dans les éléments de cette fiche.
+La fiche **Phantom Atlas** du **10 avril** décrit une interface d'administration présentant des structures CMS et de gestion du personnel. Le matériel observé comprend des champs RH et liés à l'authentification, mais aucun secret ni enregistrement personnel n'est reproduit ici. Le récit de l'acteur évoque un accès depuis novembre 2025, sans preuve indépendante de sa durée réelle. Aucun export complet n'a été fourni dans les éléments de cette fiche.
 
 **Lecture SOC :** surveiller les accès aux interfaces d'administration de bases depuis des réseaux inhabituels, les requêtes d'export, l'énumération de tables sensibles et l'utilisation de comptes applicatifs hors périmètre. La sécurisation ne doit pas se limiter à masquer phpMyAdmin : segmentation, MFA lorsque pris en charge, restriction réseau, moindre privilège et journaux d'audit sont nécessaires.
 
@@ -264,9 +264,9 @@ La grille suivante est une **normalisation éditoriale** à partir de l'activit�
 
 | Priorité | RSSI / Gouvernance | DSI / Exploitation | SOC / CSIRT |
 |---|---|---|---|
-| **P0 (0–7 jours)** | Identifier les jeux de données citoyens, RH, paie, santé et KYC les plus critiques ; lancer une revue des tiers et secrets exposables. | Réviser privilèges des comptes sensibles, sécuriser consoles externes, tester restauration d'au moins un service critique. | Vérifier l'ingestion IdP/VPN, EDR, messagerie, audit DB, WAF/CDN et SIEM ; mettre sous surveillance les exports anormaux. |
-| **P1 (8–30 jours)** | Prioriser notifications et plans de crise selon les obligations applicables ; revoir la protection des mineurs et des bénéficiaires sociaux. | Mettre en place MFA robuste, PAM, isolation des sauvegardes et restrictions des exports ; audit des clés et jetons applicatifs. | Tester les règles par simulation défensive, corréler comptes + données + volume sortant, entraîner l'escalade L1/L2 vers CSIRT. |
-| **P2 (31–90 jours)** | Exercice de crise multi-entités et fournisseurs, revue des contrats et de l'exposition résiduelle des données. | Architecture de récupération, segmentation et droits Just-In-Time ; preuves de restauration et de révocation de sessions. | Couverture ATT&CK mesurée, taux de faux positifs, délai de détection et temps de containment documentés. |
+| **P0 (0-7 jours)** | Identifier les jeux de données citoyens, RH, paie, santé et KYC les plus critiques ; lancer une revue des tiers et secrets exposables. | Réviser privilèges des comptes sensibles, sécuriser consoles externes, tester restauration d'au moins un service critique. | Vérifier l'ingestion IdP/VPN, EDR, messagerie, audit DB, WAF/CDN et SIEM ; mettre sous surveillance les exports anormaux. |
+| **P1 (8-30 jours)** | Prioriser notifications et plans de crise selon les obligations applicables ; revoir la protection des mineurs et des bénéficiaires sociaux. | Mettre en place MFA robuste, PAM, isolation des sauvegardes et restrictions des exports ; audit des clés et jetons applicatifs. | Tester les règles par simulation défensive, corréler comptes + données + volume sortant, entraîner l'escalade L1/L2 vers CSIRT. |
+| **P2 (31-90 jours)** | Exercice de crise multi-entités et fournisseurs, revue des contrats et de l'exposition résiduelle des données. | Architecture de récupération, segmentation et droits Just-In-Time ; preuves de restauration et de révocation de sessions. | Couverture ATT&CK mesurée, taux de faux positifs, délai de détection et temps de containment documentés. |
 
 ## 10. Hypothèses de détection SOC et workflows de corrélation
 
@@ -314,7 +314,7 @@ Pour le **RSSI**, la priorité est de rendre le risque gouvernable et traçable.
 
 ### Sources de référence et limites de vérification
 
-- **Source documentaire principale :** [fiches AFRINTEL d'avril - FR](./victims_FR.md) et [EN](./victims.md), données telles que fournies pour cette édition ; contrôles et regroupements dans [VALIDATION.md](./VALIDATION.md).
+- **Source documentaire principale :** [fiches AFRINTEL d'avril - FR](./victims_FR.md) et [EN](./victims.md), données telles que fournies pour cette édition.
 - **Confirmation primaire :** [Ahmed Al-Kadi Private Hospital - Notification of Data Incident](https://ahmedalkadi.com/notification-of-data-incident/).
 - **Source médiatique complémentaire :** [Taarifa Rwanda - Bank of Kigali, 1er avril 2026](https://taarifa.rw/2026/04/01/cyberattack-disrupts-bank-of-kigali-operations-amid-phishing-scheme/) ; [mise à jour du 6 avril](https://taarifa.rw/2026/04/06/rib-arrests-five-suspects-in-bk-mobile-banking-scam-as-losses-remain-limited/). **Hors statistiques canoniques.**
 - **Référentiel de détection :** [MITRE ATT&CK Enterprise](https://attack.mitre.org/) ; [CISA / MS-ISAC - Ransomware Guide](https://www.cisa.gov/stopransomware/ransomware-guide).

@@ -1,16 +1,22 @@
-# AFRINTEL CTI statistics - December 2025
+# AFRINTEL CTI Statistics - December 2025
 
-👉🏾 [French version](./README_FR.md)
+Source of truth: validated `victims_FR.md` / `victims.md` pair.
 
-## Summary
-
-This statistical sheet is compiled from the **20 cards** in the validated monthly victim file. Publications remain claims when the source provides no independent confirmation.
+This sheet covers the **21 records** in the victims corpus. Figures describe AFRINTEL documented visibility.
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 20 |
+| Total incidents | 21 |
+| Countries / geographic scopes | 11 |
+| Distinct sectors | 19 |
+| Distinct actors / sources | 8 |
+
+## Types
+
+| Type | Records |
+|---|---:|
 | Ransomware | 14 |
-| Data Leak | 6 |
+| Data Leak | 7 |
 | Access Sale | 0 |
 | DDoS | 0 |
 | Defacement | 0 |
@@ -18,79 +24,67 @@ This statistical sheet is compiled from the **20 cards** in the validated monthl
 | System Intrusion | 0 |
 | Malware | 0 |
 | Operational Fraud | 0 |
-| Countries | 10 |
-| Raw sector labels | 18 |
-| Actor / Group labels | 13 |
+| **Total** | **21** |
 
-## 1. Country
+## Countries
 
-| Country | Incidents |
+| Country / scope | Records |
 |---|---:|
 | 🇪🇬 Egypt | 6 |
+| 🇹🇳 Tunisia | 4 |
 | 🇿🇦 South Africa | 3 |
-| 🇹🇳 Tunisia | 3 |
-| 🇿🇲 Zambia | 1 |
-| 🇬🇭 Ghana | 1 |
-| 🇳🇬 Nigeria | 1 |
-| 🇿🇼 Zimbabwe | 1 |
+| 🇨🇮 Ivory Coast | 1 |
 | 🇩🇿 Algeria | 1 |
-| 🇲🇦 Morocco | 1 |
+| 🇬🇭 Ghana | 1 |
 | 🇰🇪 Kenya | 1 |
-| **Total** | **20** |
+| 🇲🇦 Morocco | 1 |
+| 🇳🇬 Nigeria | 1 |
+| 🇿🇲 Zambia | 1 |
+| 🇿🇼 Zimbabwe | 1 |
 
-## 2. Normalized sector
+## Sectors
 
-| Sector | Incidents |
+| Sector | Records |
 |---|---:|
-| Finance / Banking | 4 |
-| Healthcare / Medical | 3 |
-| Government / Administration | 2 |
 | Education / University | 2 |
-| Manufacturing / Industry | 2 |
-| Technology / IT | 1 |
-| Agriculture / Agribusiness | 1 |
-| Not specified | 1 |
-| Construction / Real Estate | 1 |
-| Energy / Utilities | 1 |
+| Healthcare | 2 |
+| Agribusiness / Beverages (Alcoholic and non-alcoholic) | 1 |
+| Agriculture / Rural development / Public administration | 1 |
+| Automotive Distribution / Diagnostic Equipment | 1 |
+| Energy / Electricity Transmission (Critical Infrastructure) | 1 |
+| Finance | 1 |
+| Finance / Trade | 1 |
+| Health / Medical Association / Education | 1 |
+| Healthcare / Pharmacy e-commerce | 1 |
+| Industrial / Electrical and Plastic Products Manufacturing | 1 |
+| Insurance | 1 |
+| Insurance (Health) | 1 |
+| Manufacturing Industry (Plastics) | 1 |
+| Public Administration / Local Government | 1 |
+| Public administrations (Financial Regulation) | 1 |
+| Real Estate Development / Management of Industrial and Leisure Parks | 1 |
 | Retail / E-commerce | 1 |
-| **Total** | **20** |
+| Technology | 1 |
 
-## 3. Actor / Group
+## Actors / sources
 
-| Actor / Group | Incidents |
+| Actor / source | Records |
 |---|---:|
-| qilin | 3 |
-| lockbit5 | 3 |
-| dragonforce | 2 |
-| nova | 2 |
-| ransomhouse | 1 |
-| kazu | 1 |
-| devman | 1 |
-| direwolf | 1 |
-| Habibi | 1 |
-| GhostVector | 1 |
+| Unknown | 14 |
+| Ahlul Sahara | 1 |
+| AshleyWood2022 | 1 |
 | camillabf | 1 |
+| GhostVector | 1 |
+| Habibi | 1 |
 | KaruHunters | 1 |
 | LindaBF | 1 |
 
-## 4. Type
+## Statuses
 
-| Type | Incidents |
-|---|---:|
-| Ransomware | 14 |
-| Data Leak | 6 |
-| **Total** | **20** |
-
-## 5. Evidence maturity
-
-| Status grouping | Incidents |
+| Status | Records |
 |---|---:|
 | Claim - Unverified | 13 |
-| Claim - Data Sample Published | 6 |
-| **Total** | **20** |
-
-## CTI reading
-
-The monthly volume reflects visibility in the reviewed sources, not all incidents that occurred. The Yalla Tager addition increases Egypt's December total from 5 to 6 and Data Leak from 4 to 6.
+| Claim - Data Sample Published | 7 |
+| Data Fully Published | 1 |
 
 **AFRINTEL** - TLP:CLEAR

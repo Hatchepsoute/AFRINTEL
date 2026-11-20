@@ -16,7 +16,7 @@ At sector level, the most represented categories are **Government / Administrati
 
 Evidence maturity remains variable: **9 records** are unverified claims or claims accompanied by samples. AFRINTEL maintains a strict separation between **observed facts, claims, corroboration, official confirmation, and technical unknowns**.
 
-Compared with January, monthly volume **decreases by 8 records**. The most visible changes are Ransomware 16->8 (-8), Data Leak 2->1 (-1), Account Takeover 1->2 (+1).
+Compared with January, monthly volume **decreases by 9 records, from 20 to 11 (-45.0%)**. The most visible changes are Ransomware 16->8 (-8), Data Leak 3->1 (-2), Access Sale 1->0 (-1), Defacement 1->0 (-1), and Account Takeover 0->2 (+2).
 
 > **Reading note:** AFRINTEL figures describe documented incidents and the visibility of observed threats. They are not an exhaustive measurement of every cyberattack that actually occurred across Africa.
 
@@ -24,16 +24,18 @@ Compared with January, monthly volume **decreases by 8 records**. The most visib
 
 | Indicator | January 2025 | February 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 19 | 11 | **-8 (-42.1%)** |
+| Total incidents | 20 | 11 | **-9 (-45.0%)** |
 | Ransomware | 16 | 8 | **-8 (-50.0%)** |
-| Data Leak | 2 | 1 | **-1 (-50.0%)** |
+| Data Leak | 3 | 1 | **-2 (-66.7%)** |
 | Access Sale | 0 | 0 | **Stable** |
 | DDoS | 0 | 0 | **Stable** |
 | Defacement | 0 | 0 | **Stable** |
-| Account Takeover | 1 | 2 | **+1 (+100.0%)** |
+| Account Takeover | 0 | 2 | **+2 (new)** |
 | System Intrusion | 0 | 0 | **Stable** |
 | Malware | 0 | 0 | **Stable** |
 | Operational Fraud | 0 | 0 | **Stable** |
+
+![Incident-type comparison - January and February 2025](assets/comparaison_en.png)
 
 
 
@@ -83,6 +85,9 @@ pie showData
     "Account Takeover" : 2
 ```
 
+![Incident types - February 2025](assets/types_en.png)
+![Incident-type share - February 2025](assets/types_pie_en.png)
+
 ## 4. Geographic distribution
 
 | Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
@@ -90,7 +95,7 @@ pie showData
 | Egypt | **3** | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | **2** | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 |
 | Morocco | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| South Africa | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| South Africa | **2** | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Zambia | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Ghana | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Namibia | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -98,31 +103,37 @@ pie showData
 
 > `Operational Fraud = 0` this month; the column is omitted for readability.
 
+![Countries represented - February 2025](assets/pays_en.png)
+
 ## 5. Regional distribution
 
 | Region | Records | Share |
 |---|---:|---:|
-| North Africa | 4 | 40.0% |
+| North Africa | 4 | 36.4% |
 | Southern Africa | 4 | 36.4% |
-| East Africa | 2 | 20.0% |
-| West Africa | 1 | 10.0% |
+| East Africa | 2 | 18.2% |
+| West Africa | 1 | 9.1% |
 | **Total** | **11** | **100%** |
 
-The leading region is **North Africa with 4 records (40.0%)**.
+The leading regions are **North Africa and Southern Africa with 4 records each (36.4%)**.
+
+![Regional distribution - February 2025](assets/regions_en.png)
 
 ## 6. Sector impact
 
 | Sector | Records | Share | Activity |
 |---|---:|---:|---|
-| Government / Administration | 2 | 20.0% | ██ |
-| Finance / Banking | 2 | 20.0% | ██ |
-| Technology / IT | 1 | 10.0% | █ |
-| Media / Entertainment | 1 | 10.0% | █ |
-| Not specified | 1 | 10.0% | █ |
-| Telecommunications | 1 | 10.0% | █ |
-| Transport / Logistics | 1 | 10.0% | █ |
+| Government / Administration | 2 | 18.2% | ██ |
+| Finance / Banking | 2 | 18.2% | ██ |
+| Technology / IT | 1 | 9.1% | █ |
+| Media / Entertainment | 1 | 9.1% | █ |
+| Not specified | 1 | 9.1% | █ |
+| Telecommunications | 1 | 9.1% | █ |
+| Transport / Logistics | 1 | 9.1% | █ |
 | Professional / Business Services | 2 | 18.2% | ██ |
 | **Total** | **11** | **100%** | |
+
+![Leading sectors - February 2025](assets/secteurs_en.png)
 
 ## 7. Actors / groups
 
@@ -139,16 +150,20 @@ The leading region is **North Africa with 4 records (40.0%)**.
 | hunter | 1 | █ |
 | Al-Sheikh | 1 | █ |
 
+![Actors and groups - February 2025](assets/acteurs_en.png)
+
 ## 8. Evidence maturity
 
 | Evidence maturity | Records | Share |
 |---|---:|---:|
-| Claim - Unverified | 5 | 50.0% |
+| Claim - Unverified | 5 | 45.5% |
 | Claim - Data Sample Published | 4 | 36.4% |
-| Victim/Government/Authority Confirmed | 2 | 20.0% |
+| Victim/Government/Authority Confirmed | 2 | 18.2% |
 | **Total** | **11** | **100%** |
 
 Evidence statuses describe the available validation level; they do not change the technical incident type.
+
+![Evidence maturity - February 2025](assets/preuve_en.png)
 
 ## 9. Timeline
 

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900"><rect width="100%" height="100%" fill="white"/><text x="70" y="75" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#162234">AFRINTEL — Janvier 2025 — Evidence status</text>
+<text x="70" y="208" font-family="DejaVu Sans" font-size="23" fill="#28303c">Claim - Data Sample Published</text>
+<rect x="390" y="185" width="900" height="28" rx="10" fill="#e8eef5"/><rect x="390" y="185" width="900" height="28" rx="10" fill="#2368b0"/><text x="1320" y="208" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#162234">10</text>
+<text x="70" y="263" font-family="DejaVu Sans" font-size="23" fill="#28303c">Claim - Unverified</text>
+<rect x="390" y="240" width="900" height="28" rx="10" fill="#e8eef5"/><rect x="390" y="240" width="720" height="28" rx="10" fill="#2368b0"/><text x="1320" y="263" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#162234">8</text>
+<text x="70" y="318" font-family="DejaVu Sans" font-size="23" fill="#28303c">Government Confirmed</text>
+<rect x="390" y="295" width="900" height="28" rx="10" fill="#e8eef5"/><rect x="390" y="295" width="90" height="28" rx="10" fill="#2368b0"/><text x="1320" y="318" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#162234">1</text>
+<text x="70" y="373" font-family="DejaVu Sans" font-size="23" fill="#28303c">Victim Confirmed</text>
+<rect x="390" y="350" width="900" height="28" rx="10" fill="#e8eef5"/><rect x="390" y="350" width="90" height="28" rx="10" fill="#2368b0"/><text x="1320" y="373" font-family="DejaVu Sans" font-size="22" font-weight="bold" fill="#162234">1</text>
+</svg>

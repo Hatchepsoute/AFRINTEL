@@ -2,24 +2,25 @@
 
 ![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue) ![Périmètre](https://img.shields.io/badge/P%C3%A9rim%C3%A8tre-Afrique-orange) ![Sources](https://img.shields.io/badge/Sources-OSINT-darkgreen) ![Statut](https://img.shields.io/badge/Rapport-revue%20analytique-purple)
 
-**Période étudiée :** 1er–31 octobre 2026 · **Revue éditoriale :** 5 novembre 2026  
-**Périmètre :** 54 pays africains suivis ; 15 pays représentés dans le corpus du mois  
-**Sources :** sites de divulgation ransomware, forums underground et places de marché clandestines (dark web/deep web), communications officielles, presse spécialisée et échantillons disponibles  
+**Période étudiée :** 1er-31 octobre 2026 · **Revue éditoriale et vérification OSINT :** 17 novembre 2026<br>
+**Périmètre :** 54 pays africains suivis ; 15 pays représentés dans le corpus du mois<br>
+**Destinataires :** RSSI, DSI, SOC, CERT/CSIRT et équipes IT<br>
+**Sources :** veille AFRINTEL des sites de divulgation ransomware, forums underground, dark web/deep web et marketplaces clandestines ; analyses locales d'échantillons ; recoupements avec les communications officielles et la presse spécialisée<br>
 **Consulter les données :** [fiches victimes FR](./victims_FR.md) · [Victim records EN](./victims.md) · [English report](./README.md)
 
 ![Couverture du rapport](assets/cover_FR.png)
 
-> **Sources et démarche d'analyse -** Ce rapport s'appuie sur la veille menée par AFRINTEL sur les sites de divulgation de groupes ransomware, les forums underground et les places de marché clandestines du dark web et du deep web. Chaque dossier est documenté à partir des publications observées, des éléments visuels disponibles et, lorsque cela est possible, de l'examen en lecture seule d'échantillons de données. Les informations sont rapprochées des sources publiques et des communications officielles lorsqu'elles existent. Les fiches précisent les éléments examinés, le niveau de confiance et les points qui restent à établir.
+> **Origine du renseignement.** Le cœur de cette veille provient de publications identifiées sur des **sites de fuite ransomware**, des **forums cybercriminels**, des **marketplaces clandestines** et d'autres espaces accessibles du **dark web/deep web**. AFRINTEL documente les messages, captures, métadonnées et échantillons mis à disposition ; lorsque des fichiers ont été fournis, leur structure a été examinée en lecture seule. Les communiqués de victimes, les autorités et la presse spécialisée servent au recoupement. Une référence à une source criminelle certifie l'**observation de sa publication**, pas à elle seule l'intégralité de l'attaque revendiquée.
 
 ## 1. Synthèse exécutive
 
-**Octobre laisse un constat clair : les données professionnelles et personnelles sont au centre des publications suivies par AFRINTEL.** Sur **48 dossiers documentés dans 15 pays**, les fuites de données représentent **23 cas (47,9 %)**, devant **17 publications liées au ransomware (35,4 %)**, **5 intrusions système signalées (10,4 %)** et **3 offres de vente d'accès (6,3 %)**. Les chiffres regroupent des faits de nature et de solidité différentes : ils ne correspondent pas à 48 compromissions techniquement confirmées.
+**Octobre confirme la valeur que les cybercriminels accordent aux données professionnelles, administratives et personnelles.** AFRINTEL a documenté **48 signalements dans 15 pays africains**, principalement à partir de publications sur des espaces cybercriminels et de preuves accessibles. Les **fuites de données dominent avec 23 dossiers (47,9 %)**, suivies de **17 signalements ransomware (35,4 %)**, **5 intrusions système (10,4 %)** et **3 offres de vente d'accès (6,3 %)**. Chaque dossier est une observation CTI canonique, non une affirmation de compromission techniquement démontrée.
 
 Le **Maroc et l'Égypte totalisent chacun 12 dossiers**. L'**Afrique du Sud en compte 9**. Ces trois pays concentrent **33 des 48 observations (68,8 %)**. Cette concentration reflète aussi les sources accessibles, les capacités de collecte et la visibilité des victimes ; elle ne mesure pas le niveau de risque national à elle seule.
 
 Trois enseignements ressortent. D'abord, les exports d'outils de gestion - ERP, e-commerce, recrutement, paie - peuvent exposer simultanément clients, salariés, partenaires et transactions. Ensuite, plusieurs dossiers concernent des informations particulièrement sensibles : santé, identité, dossiers administratifs ou judiciaires. Enfin, les plateformes gérées par des tiers, les environnements d'identité et les chaînes de diffusion numérique élargissent le périmètre de risque au-delà d'un seul organisme.
 
-**Qualification des éléments recueillis :** AFRINTEL distingue **21 dossiers avec échantillon publié ou visible** (dont le niveau d'examen varie), **2 lots publiés et analysés**, **4 incidents reconnus publiquement par l'organisation concernée**, **1 dossier en investigation** et **20 revendications non vérifiées**. Cette classification rend la lecture du corpus plus précise : elle indique ce qui est documenté dans chaque cas, sans confondre une annonce criminelle avec une confirmation technique.
+**La vérification croisée améliore la solidité du corpus :** **5 événements reconnus par les organisations concernées**, **2 publications intégrales examinées**, **19 dossiers avec échantillon annoncé, visible ou examiné**, **1 enquête publiquement déclarée** et **21 autres publications documentées**. Cette répartition qualifie les éléments accessibles sans gommer leur origine underground. **Ampath Laboratories** rejoint les cas reconnus grâce à sa communication du 14 octobre ; la revendication visant la **PGR Mozambique** reste comptée, mais son lot documentaire a été retiré des preuves attribuables à cette victime en raison d'un problème de provenance.
 
 ### 1.1 Comparaison avec septembre 2026
 
@@ -40,17 +41,24 @@ Trois enseignements ressortent. D'abord, les exports d'outils de gestion - ERP, 
 
 ![Comparaison septembre et octobre](assets/comparison_FR.png)
 
-Le changement le plus visible n'est pas une hausse des publications ransomware : leur nombre baisse de 20 à 17. C'est surtout **la place prise par les fuites de données dans le corpus** qui distingue octobre. Cette évolution doit néanmoins être interprétée avec prudence tant que les méthodes de collecte, la couverture des sources et les dossiers rétrospectifs ne sont pas comparés à périmètre constant.
+Les fuites de données expliquent l'essentiel de l'évolution du corpus (**11 à 23 dossiers**). À l'inverse, les publications ransomware passent de **20 à 17**. Cette comparaison mesure le **rythme de documentation AFRINTEL** : couverture des sources, reposts et enquêtes rétrospectives peuvent influer sur les résultats.
+
+### 1.2 Ce que le lecteur doit retenir
+
+- **Données et fraude :** commandes, comptes clients, paie, recrutement et dossiers de santé fournissent aux fraudeurs un contexte exploitable longtemps après la publication initiale.
+- **Écosystèmes tiers :** applications de gestion, prestataires, plateformes publicitaires et systèmes externalisés élargissent le périmètre à défendre.
+- **Confirmation publique :** Ampath, Lawyers for Human Rights, GCIS, InvestNaija et Al Arabia United ont fait l'objet de reconnaissances ou notifications publiques concernant un événement de sécurité, avec des périmètres différents.
+- **Priorité opérationnelle :** protéger les identités et les exports, vérifier les accès des fournisseurs et mettre sous surveillance les scénarios de fraude secondaire.
 
 ## 2. Périmètre, méthode et limites
 
-AFRINTEL suit les revendications et incidents concernant des organisations ou des données associées à l'Afrique. La collecte s'appuie notamment sur les publications directement observées sur les sites de groupes ransomware, les forums underground et les espaces de vente clandestins. Les captures, avis officiels et échantillons accessibles sont rapprochés pour documenter chaque dossier. Le classement d'octobre retient la **date de publication observée** ou la **première observation documentée par AFRINTEL**, lorsque la date technique de l'incident n'est pas établie. Une date de publication ne doit pas être confondue avec la date d'accès initial.
+AFRINTEL suit les revendications et incidents concernant des organisations ou des données associées à l'Afrique. La collecte s'appuie notamment sur les publications directement observées sur les sites de groupes ransomware, les forums underground et les espaces de vente clandestins. Les captures, avis officiels et échantillons accessibles sont rapprochés pour documenter chaque dossier. Le classement d'octobre retient les **publications et signalements intégrés pour la première fois dans le suivi mensuel AFRINTEL**. La date réelle de l'incident, la première publication de l'acteur, la communication publique de la victime et la date de collecte sont des dimensions différentes, consignées dans les fiches. Cette méthode documente la **visibilité CTI du mois**, et non exclusivement des attaques survenues en octobre.
 
 Les **48 fiches FR et les 48 fiches EN** ont été rapprochées pour les types, les statuts et l'ordre des dossiers. Pour les statistiques, les types composites sont ramenés à une seule catégorie principale : le cas **Decathlon Maroc** est compté en `Data Leak`, la présomption d'exposition restant décrite dans la fiche. Un événement est compté une seule fois dans le total mensuel ; les effets secondaires ne créent pas de seconde attaque.
 
 La ventilation sectorielle est recalculée depuis les secteurs des fiches et le **[référentiel sectoriel AFRINTEL 2026](../../../normalization/sector_mapping_2026.csv)**. Elle diffère de l'ancienne illustration sectorielle : les graphiques corrigés figurent dans ce rapport. Ce regroupement est une convention de comparaison, pas une classification réglementaire des infrastructures critiques.
 
-**Point chronologique à suivre :** la publication relative à **e-Solde (République du Congo)** datée d'octobre est liée à une annonce antérieure du **28 juin 2026**. Le dossier reste rattaché au suivi d'octobre, car il s'agit de la première observation AFRINTEL retenue dans le corpus publié. La date de juin est désormais explicitée ; **ce dossier ne doit pas être traité comme une nouvelle compromission d'octobre**. Une revue des séries historiques peut conduire à une réattribution temporelle documentée, sans double comptage.
+**Cas rétrospectif : e-Solde (République du Congo).** La première publication connue est datée du **28 juin 2026** ; le **2 octobre** correspond à une republication intégrée au suivi AFRINTEL. La fiche conserve ces deux dates. Le dossier est maintenu dans les **48 observations d'octobre**, sans être présenté comme une attaque nouvelle de ce mois ; son transfert éventuel vers une série historique événementielle exige de recalculer simultanément les deux mois, sans doublon.
 
 **Règle de preuve :** un fichier examiné ne valide ni l'ensemble des volumes annoncés ni l'origine technique des données. Un nombre de lignes, de fichiers, de commandes ou de comptes ne représente pas nécessairement autant de personnes. Les données personnelles, secrets, clés et liens vers les espaces criminels ne sont pas diffusés dans le dépôt.
 
@@ -107,23 +115,32 @@ pie showData
 
 La géographie souligne un autre enjeu : **39 des 54 pays suivis ne figurent pas dans ce corpus**, mais cela ne signifie ni absence d'incident ni absence de menace. Les priorités de collecte doivent également tenir compte des zones moins documentées, notamment hors des grands marchés médiatiques et technologiques.
 
-### 3.3 Qualité des éléments accessibles
+### 3.3 Qualification documentaire et confirmations publiques
 
-| État documentaire AFRINTEL | Dossiers | Part |
+| Statut AFRINTEL | Dossiers | Part |
 |---|---:|---:|
-| Claim - Unverified | 20 | 41,7 % |
-| Claim - Data Sample Published | 21 | 43,8 % |
+| Claim - Unverified | 21 | 43,8 % |
+| Claim - Data Sample Published | 19 | 39,6 % |
 | Data Fully Published | 2 | 4,2 % |
-| Incident Confirmed by Victim | 4 | 8,3 % |
+| Incident Confirmed by Victim | 5 | 10,4 % |
 | Under Investigation | 1 | 2,1 % |
 | **Total** | **48** | **100,0 %** |
 
-![Qualification de la preuve](assets/evidence_FR.png)
-![Statuts de preuve](assets/evidence_pie_FR.png)
+![Qualification documentaire](assets/evidence_FR.png)
 
-**À ne pas confondre :** `Claim - Data Sample Published` indique qu'un échantillon a été annoncé, visible ou examiné selon la fiche ; ce statut ne certifie pas une compromission de l'infrastructure de la victime. Dans le cas du **CNESTEN**, l'artefact analysé est un **inventaire de répertoire**, pas le contenu des dizaines de milliers de fichiers annoncés. Les communications de victimes confirment également des périmètres variables : une alerte ou un accès non autorisé reconnu ne confirme pas nécessairement tous les volumes circulant sur les forums.
+**Cinq événements disposent désormais d'une reconnaissance publique de la victime ou d'une autorité :**
 
-### 3.4 Acteurs, groupes et comptes de publication
+| Organisation | Pays | Information publique établie | Source accessible |
+|---|---|---|---|
+| **Ampath Laboratories** | Afrique du Sud | Cyberincident détecté le 2 octobre, contenu et notifié au régulateur ; enquête sur les données administratives | [Déclaration de l'entreprise, 14 octobre](https://novuspressbulletin.co.za/blog/ampath-cautions-about-overstated-numbers-as-cybersecurity-incident-probe-continues) |
+| **Lawyers for Human Rights** | Afrique du Sud | Accès et téléchargement non autorisés d'une base hébergée chez un prestataire, détectés le 5 octobre | [Avis officiel, 15 octobre](https://www.lhr.org.za/lhr-news/important-notice-regarding-a-security-incident/) |
+| **GCIS** | Afrique du Sud | Portail de recrutement compromis, activité suspecte identifiée le 24 octobre ; notification aux candidats | [ITWeb, 30 octobre](https://www.itweb.co.za/article/gcis-warns-of-information-breach/wbrpO7g2ea3vDLZn) |
+| **InvestNaija / Chapel Hill Denham** | Nigeria | Notification d'activité inhabituelle et d'une exposition potentielle limitée d'informations clients | [The Sun Nigeria, 30 octobre](https://thesun.ng/chapel-hill-denham-alerts-customers-to-potential-data-breach-says-investments-safe/) |
+| **Al Arabia United** | Égypte | Diffusion non autorisée sur un panneau numérique ; compromission d'une plateforme de diffusion tierce confirmée par les autorités | [Ministère égyptien de l'Intérieur, 29 octobre](https://www.moi.gov.eg/news/GetDetails?newsId=bbfb00a8-b8e2-4c10-81bd-161ba437d035) |
+
+La communication sur un incident **ne valide pas automatiquement chaque affirmation diffusée à son sujet**. Les autres dossiers conservent une valeur de renseignement lorsqu'ils comportent une publication retracée, des métadonnées, des captures ou des échantillons crédibles. Les limites sont consignées dans les fiches, sans être répétées au détriment de l'analyse.
+
+### 3.4 Comptes de publication et groupes revendiquants
 
 | Identifiant observé | Dossiers associés |
 |---|---:|
@@ -138,7 +155,7 @@ La géographie souligne un autre enjeu : **39 des 54 pays suivis ne figurent pas
 | Kazu | 2 |
 | List1 | 2 |
 
-![Comptes et groupes les plus cités](assets/actor_top10_FR.png)
+![Groupes et comptes de publication les plus cités](assets/actor_top10_FR.png)
 
 Ces **dix libellés couvrent 32 dossiers** ; les autres publications concernent des noms moins fréquents ou des dossiers sans auteur identifié. Il s'agit **d'identifiants de sources et d'attributions déclarées**, pas d'une validation de l'identité des cybercriminels. Certains noms renvoient à des groupes ransomware ; d'autres sont seulement des comptes ou vendeurs observés sur des plateformes.
 
@@ -174,17 +191,19 @@ Les dossiers **Midipcom**, **Karamtech** et **Decathlon Maroc** élargissent la 
 
 ### 4.2 Administrations : des données difficiles à remplacer
 
-Au **ministère marocain des Habous et des Affaires islamiques**, les **33 fichiers XLSX et un CSV** disponibles représentent environ **109 640 lignes de données** après retrait présumé des en-têtes. La structure évoque des candidatures à un concours, avec identité, formation et références administratives. La provenance technique depuis l'infrastructure ministérielle n'est pas démontrée.
+Au **ministère marocain des Habous et des Affaires islamiques**, les **33 fichiers XLSX** contiennent **109 607 lignes de candidatures**, avant déduplication, auxquelles s'ajoute un CSV de **10 lignes distinctes**. La revue retrouve **78 467 valeurs de CIN distinctes au format attendu**, ce qui ne constitue pas un nombre confirmé de personnes uniques. La structure évoque des candidatures à un concours, avec identité, formation et références administratives. La provenance technique depuis l'infrastructure ministérielle n'est pas démontrée.
 
 Au **Rwanda**, un corpus associé au **ministère de la Santé** contient **375 CSV**, soit **6 050 914 271 octets** et **42 509 228 lignes physiques**. Ces lignes agrègent différents types d'enregistrements, dont des informations de comptes, des journaux et des données liées à la santé. **Ce nombre ne peut pas être présenté comme 42,5 millions de patients ou de citoyens touchés.** La question de la provenance technique et du périmètre réel reste ouverte.
 
 En **RDC**, la publication concernant la plateforme d'enregistrement des enseignants **MINESURSI** revendique **136 Go et 125 823 fichiers**. Le lot examiné est plus limité : **1 531 fichiers**, dont **581 PDF et 950 images**. En **République du Congo**, le cas **e-Solde** expose dans l'échantillon des catégories liées aux comptes et à la paie de personnels publics ; l'existence d'un accès administrateur fonctionnel proposé à la vente reste à établir.
 
-### 4.3 Santé et données sensibles : l'impact potentiel dépasse la taille des fichiers
+### 4.3 Santé : un incident reconnu et des jeux de données sensibles
 
-Pour **Ampath Laboratories** en Afrique du Sud, AFRINTEL a examiné des fichiers structurés associés à des employés, patients, admissions, assurances et paiements. Ils confirment la présence de catégories de données sensibles dans l'échantillon fourni. En revanche, les **80 millions d'enregistrements revendiqués** et les centaines de bases annoncées ne sont pas vérifiés par ces seuls fichiers.
+Le dossier **Ampath Laboratories (Afrique du Sud)** illustre l'intérêt du recoupement entre la veille underground et les déclarations publiques. La publication associée au compte ByteToBreach a été confrontée aux échantillons examinés par AFRINTEL. L'entreprise a pour sa part **reconnu un cyberincident détecté le 2 octobre** et communiqué le **14 octobre** sur son confinement et sa notification au régulateur.
 
-Les annonces visant des organismes de santé ou des établissements de formation en **Égypte**, ainsi que la publication liée au **ministère éthiopien de la Santé**, montrent combien les références d'identité, les informations médicales et les données de professionnels peuvent accroître l'exposition des personnes. Pour les dossiers reposant surtout sur une publication ou une capture, l'origine des systèmes reste inconnue.
+Les fichiers examinés comportent des structures relatives aux **employés, patients, inscriptions, assurances et opérations de paiement**. Ampath indique toutefois que les informations potentiellement concernées paraissent surtout **démographiques ou administratives**, sans preuve identifiée, selon son communiqué, de compromission de **dossiers médicaux, diagnostics, résultats d'analyses ou coordonnées bancaires**. Les **80 millions d'enregistrements** annoncés sur le forum ne doivent pas être convertis en patients distincts.
+
+Le corpus associé au **ministère rwandais de la Santé** (375 CSV, environ 6,05 Go, 42,5 millions de lignes physiques) et le dossier relatif au **ministère éthiopien de la Santé** montrent, à des degrés de documentation différents, l'attrait des référentiels de santé. **Une ligne de journal, un compte applicatif et un dossier patient ne représentent pas la même unité statistique.** Le risque défensif prioritaire demeure la combinaison de données d'identité, de contact et d'accès métier.
 
 ### 4.4 Ransomware : une publication n'est pas une preuve de chiffrement
 
@@ -192,11 +211,13 @@ Les annonces visant des organismes de santé ou des établissements de formation
 
 Pour le **CNESTEN**, la publication associée à **Qilin** a été rapprochée d'un **inventaire de 110 803 fichiers** annonçant **205 805 114 681 octets**. Ce sont les valeurs d'un arbre documentaire ; les fichiers eux-mêmes n'ont pas été analysés. Aucune conséquence sur la sûreté nucléaire ou la continuité d'installation n'est établie. Le cas **YOD Ingénierie** est rattaché **uniquement au Bénin**, conformément à sa fiche.
 
-Les publications associées à **Gabon Meca (HYFLOCK)**, à la **Société Ivoirienne de Télédiffusion (Qilin)** et à d'autres victimes démontrent une visibilité sur les sites de groupes ou les dispositifs de suivi. Elles ne suffisent pas à déterminer l'état réel des négociations, l'accès initial ou une publication future. Un compte à rebours est un signal à surveiller, pas une preuve de résultat.
+Les publications visant **Gabon Meca (HYFLOCK)** et la **Société Ivoirienne de Télédiffusion (Qilin)** sont également reprises par des [dispositifs de suivi ransomware](https://www.legal-isac.org/ransomware/). La trace OSINT recoupe ici la présence de la fiche sur des espaces adverses ; elle ne décrit ni une technique d'accès initial ni l'issue d'une négociation.
+
+**Attention à la dépendance logicielle dans la chaîne maritime :** le groupe **N0n** a publié le 12 octobre une série de **38 organisations du transport et des ports**, dont Eurogate Tanger, selon [SOCRadar](https://socradar.io/blog/n0n-group-global-ports-shipping-leak/). Le regroupement des publications justifie une investigation sur les applications et prestataires partagés, **sans présumer 38 intrusions indépendantes ni une vulnérabilité commune démontrée**.
 
 ### 4.5 Des incidents reconnus publiquement : le risque ne se limite pas aux fuites
 
-En **Afrique du Sud**, **Lawyers for Human Rights** a annoncé qu'une base de données hébergée chez un prestataire avait été consultée et téléchargée sans autorisation. Le **GCIS** a communiqué sur la compromission de son portail de recrutement, sans établir pour autant l'étendue finale des informations consultées.
+En **Afrique du Sud**, **Lawyers for Human Rights** a annoncé, le **15 octobre**, qu'une base de données hébergée chez un prestataire avait été consultée et téléchargée sans autorisation le **5 octobre**. Le **GCIS** a notifié les candidats de la compromission de son portail de recrutement, après détection d'une activité suspecte le **24 octobre**. Dans les deux cas, les mesures de protection des personnes doivent être proportionnées au périmètre établi.
 
 Au **Nigeria**, **InvestNaija / Chapel Hill Denham** a signalé une activité inhabituelle pouvant concerner une part limitée des informations clients. En **Égypte**, **Al Arabia United** a reconnu la diffusion de contenu non autorisé sur un écran publicitaire ; l'incident renvoie à une chaîne de distribution de contenus, **sans preuve d'une fuite de données**. Ces cas rappellent qu'une compromission peut toucher la confidentialité, l'intégrité ou la disponibilité de manière différente.
 
@@ -226,9 +247,9 @@ Enfin, **la hausse du volume observé ne signifie pas que les attaques se sont a
 
 | Dossier ou sujet | Ce que l'on sait | Ce qu'il faut encore établir |
 |---|---|---|
-| e-Solde (Congo) | Deux publications concordantes en juin et octobre, un dossier suivi | Chronologie canonique et traitement des reprises dans les séries historiques |
-| PGR Mozambique / Rand Mutual Assurance | Deux fiches décrivent un échantillon de **262 fichiers et 75 941 802 octets**, avec la même composition | Empreintes des archives, provenance des lots et éventuelle erreur d'association ; **ne pas traiter ces corpus comme deux preuves indépendantes avant contrôle** |
-| Rand Mutual Assurance | Alerte et enquête publiquement reconnues ; échantillon attribué contextuellement | Accès non autorisé, origine du lot, portée réelle de la revendication et résultat de l'enquête |
+| e-Solde (République du Congo) | Première publication connue le **28 juin** ; republication suivie le **2 octobre** | Conserver les deux dates et éviter un doublon dans les séries événementielles ; correction historique coordonnée si nécessaire |
+| **PGR Mozambique / Rand Mutual** | L'inventaire du lot de **262 fichiers / 75 941 802 octets** est identique, alors que les marqueurs documentaires détaillés pointent vers RMA | **Échantillon exclu de la démonstration PGR** ; obtenir les empreintes de fichiers et la chaîne de provenance avant toute réattribution |
+| Rand Mutual Assurance | Alerte et enquête annoncées par l'entreprise le **23 octobre** ; lot de documents comportant des marqueurs RMA | Source exacte du lot, lien avec l'offre clandestine et conclusions de l'enquête |
 | CNESTEN | Inventaire de répertoire examiné, pas les documents cités | Réalité, exhaustivité et sensibilité des fichiers annoncés ; éventuel impact opérationnel |
 | Revendications ransomware sans échantillon disponible | Présence de publications et parfois d'une échéance | Dernière vérification, état de divulgation, confirmation victime, éventuelles preuves techniques |
 | Pays peu représentés | Aucun dossier ou peu de dossiers dans les sources d'octobre utilisées | Couverture des langues et sources locales, communiqués CERT/CSIRT, recoupement régional |
@@ -250,7 +271,7 @@ Aucun élément du seul classement mensuel ne suffit à identifier une chaîne d
 
 **Important :** la présence de données sur un forum ne prouve **ni T1567 ni aucune méthode d'exfiltration précise**. Une publication attribuée à un groupe ransomware ne démontre pas automatiquement T1486.
 
-## 9. Recommandations SOC : quoi surveiller concrètement ?
+## 9. Recommandations SOC : détection et corrélation concrètes
 
 | Scénario défensif | Sources à collecter | Corrélation / alerte à envisager |
 |---|---|---|
@@ -265,7 +286,9 @@ Aucun élément du seul classement mensuel ne suffit à identifier une chaîne d
 
 **Hypothèses à tester dans les environnements :** extraction automatisée, détournement de compte, accès via un prestataire, transfert sortant ou tentative de chiffrement. Aucune de ces techniques n'est présumée observée chez toutes les victimes.
 
-**Mesures préventives :** appliquer une MFA résistante au phishing sur les comptes privilégiés, réduire les permissions permanentes, revoir la journalisation des exports, sécuriser les sauvegardes et prévoir des procédures de révocation rapide des sessions et secrets. Les journaux doivent être conservés selon les obligations applicables et les besoins d'investigation.
+**Exemple de règle comportementale à adapter au SIEM :** sur un périmètre ERP ou recrutement, prioriser une alerte lorsque **(i)** un utilisateur exporte en une heure plus de cinq fois son volume habituel sur 30 jours, **(ii)** le même compte accède à un périmètre inhabituel ou gagne des privilèges, et **(iii)** un transfert sortant ou un volume de téléchargements anormal apparaît dans les journaux de proxy, DLP ou stockage. Les seuils servent à l'essai de détection, **pas à décrire des techniques observées chez les victimes**.
+
+**Mesures préventives :** MFA résistante au phishing pour les comptes privilégiés, privilèges minimaux, revue des exports, journaux intègres, sauvegardes protégées et procédures de révocation rapides des sessions et des secrets. Les durées de conservation doivent répondre aux contraintes réglementaires et d'enquête.
 
 ## 10. Plan d'action priorisé
 
@@ -293,13 +316,21 @@ Aucun élément du seul classement mensuel ne suffit à identifier une chaîne d
 
 L'effort doit porter sur le suivi des **nouveaux lots de données**, la vérification des **avis officiels**, la comparaison des **échantillons attribués à plusieurs victimes**, les éventuels **changements d'état des publications ransomware** et les signaux de fraude utilisant des références commerciales authentiques. Les observations futures devront être datées et séparées des hypothèses.
 
+## 12. Références et transparence de la collecte
+
+**Sources primaires du projet :** captures et métadonnées des publications sur les sites de divulgation ransomware, forums underground, marchés clandestins du dark web/deep web, ainsi que les résultats d'examen local d'échantillons. Les liens actifs vers les services criminels et les données individuelles ne sont pas reproduits. Chaque fiche victime contient son acteur ou compte de publication, le type de source et les éléments examinés.
+
+**Recoupements publics sélectionnés :** [Ampath, déclaration d'entreprise](https://novuspressbulletin.co.za/blog/ampath-cautions-about-overstated-numbers-as-cybersecurity-incident-probe-continues) ; [Lawyers for Human Rights, avis officiel](https://www.lhr.org.za/lhr-news/important-notice-regarding-a-security-incident/) ; [GCIS via ITWeb](https://www.itweb.co.za/article/gcis-warns-of-information-breach/wbrpO7g2ea3vDLZn) ; [InvestNaija via The Sun](https://thesun.ng/chapel-hill-denham-alerts-customers-to-potential-data-breach-says-investments-safe/) ; [ministère égyptien de l'Intérieur](https://www.moi.gov.eg/news/GetDetails?newsId=bbfb00a8-b8e2-4c10-81bd-161ba437d035) ; [Rand Mutual Assurance via ITWeb](https://www.itweb.co.za/article/rand-mutual-probes-alleged-breach-of-168m-claims/G98YdqLGAgXMX2PD) ; [N0n et la chaîne maritime, SOCRadar](https://socradar.io/blog/n0n-group-global-ports-shipping-leak/) ; [Qilin / SIDT via Legal-ISAC](https://www.legal-isac.org/ransomware/).
+
+*Revue documentaire réalisée le 17 novembre 2026. Les sources publiques citées corroborent ce qu'elles déclarent explicitement ; elles ne remplacent pas une investigation forensique chez les organismes concernés.*
+
 ## Conclusion
 
-**Le signal principal d'octobre n'est pas simplement le nombre de victimes citées : c'est la profondeur de certaines données rendues visibles.** Une base de commandes, un dossier de candidature, un inventaire de répertoire ou un export de paie peuvent servir à cibler une organisation longtemps après la première publication. Pour les équipes de sécurité, la réponse ne se limite plus à rechercher une intrusion : il faut aussi protéger les comptes, vérifier les accès des tiers, repérer les extractions anormales et anticiper les fraudes qui suivent l'exposition.
+**Le signal principal d’octobre est la profondeur des données commerciales, personnelles et administratives visibles sur les espaces de publication cybercriminels.** Une base de commandes, un dossier de candidature, un inventaire de répertoire ou un export de paie peuvent servir à cibler une organisation longtemps après la première publication. Pour les équipes de sécurité, la réponse ne se limite plus à rechercher une intrusion : il faut aussi protéger les comptes, vérifier les accès des tiers, repérer les extractions anormales et anticiper les fraudes qui suivent l'exposition.
 
 La lecture d'AFRINTEL reste volontairement prudente : **on distingue ce qui est publié, ce qui est observé dans les fichiers et ce qui reste inconnu**. C'est cette séparation qui rend la veille exploitable pour les décideurs, les CERT/CSIRT et les SOC.
 
 ---
 
-*AFRINTEL - Cyber Threat Intelligence for Africa*  
+*AFRINTEL - Cyber Threat Intelligence for Africa*<br>
 *Sources et fiches détaillées : [GitHub AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL) · [Fiches victimes, octobre 2026](./victims_FR.md)*

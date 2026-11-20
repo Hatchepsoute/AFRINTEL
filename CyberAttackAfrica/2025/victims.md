@@ -1,6 +1,6 @@
 # AFRINTEL - African victims - 2025
 
-**231 documented cyber incidents under AFRINTEL.**
+**234 documented cyber incidents under AFRINTEL.**
 
 > **Reading dates:** `Incident date` indicates when the event occurred or was detected according to available evidence. `Initial publication date` indicates when it was first publicly disclosed, claimed or communicated. The two dates may fall in different months.
 
@@ -2024,6 +2024,35 @@
 - **Victim Description:** Egyptian publisher of integrated management solutions (accounting, HR, production) used by numerous companies in the Middle East and Africa.
 
 ### 22 September 2025
+#### 🇹🇳 Tunisia - TOPNET
+- **Initial publication date:** 11 September 2025 at 5:33 AM (forum-displayed time; timezone not specified)
+- **Actor / Group:** Hider_N3x
+- **Sector:** Telecommunications / Internet Service Provider
+- **Website:** [topnet.tn](https://www.topnet.tn)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Victim Description:** TOPNET is a Tunisian Internet and telecommunications service provider.
+- **Analysis:** A post attributed to Hider_N3x claims to have compromised TOPNET and offers a database, website files and more than 5,000 accounts for sale. The associated screenshots display TOPNET account pages containing personal information, contact details, addresses and authentication fields. AFRINTEL does not reproduce any raw value, password or identifier. The visible material supports the existence of a sensitive sample presented as associated with TOPNET, but does not establish corpus completeness, the actual number of affected accounts, the access vector or official victim confirmation.
+
+### 11 September 2025
+
+
+#### 🇩🇿 Algeria - Ministry of Finance
+- **Initial publication date:** September 19, 2025 at 10:29 AM (forum-displayed time; timezone not specified)
+- **Actor / Group:** sarah8toumi (source account)
+- **Sector:** Government / Finance
+- **Website:** Not specified
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Low
+- **Impact level:** Level 3
+- **Victim Description:** The Algerian Ministry of Finance is the government institution responsible for national fiscal and financial administration.
+- **Analysis:** A forum post dated September 19, 2025 offers for sale an internal archive attributed to the ministry, described as containing HR, appointments and internal correspondence documents. The post displays a single PDF sample link. The visible elements establish the existence of a sales offer and an advertised sample, but do not confirm the archive's authenticity, completeness, access vector or official victim confirmation. Its relationship to a later post attributed to `jrintel` in January 2026 is not established.
+
+### 22 September 2025
+
 #### 🇲🇦 Morocco - Fractalite (fractalite.com)
 - **Ransomware Group:** killsec
 - **Sector:** Technology / Digital Services / Software Development
@@ -2519,6 +2548,40 @@
 - **Victim Description:** La Rabta Hospital is one of the largest hospital complexes in Tunisia.
 
 ### 15 December 2025
+#### 🇨🇮 Ivory Coast - National Agency for Rural Development (ANADER) (`anader.ci`)
+- **Initial publication date:** December 13, 2025 at 15:59
+- **Incident date:** Not established
+- **Actor / Group:** Ahlul Sahara
+- **Sector:** Agriculture / Rural development / Public administration
+- **Website:** [anader.ci](https://www.anader.ci/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Claimed volume:** 11.4 MB for an SQL and JSON dump, unverified
+- **Confidence level:** Medium for the existence of the publication and the structural consistency of the visible sample; technical provenance and completeness remain uncorroborated
+- **Impact level:** Level 4
+- **Source type:** Forum publication and sample content supplied as a visual capture
+
+- **Victim description:** The National Agency for Rural Development (ANADER) is an Ivorian institution associated with rural-development support. The domain presented in the publication is `anader.ci`.
+
+- **Analysis:** The December 13, 2025 publication claims an “ANADER data dump” presented as a raw database dump in UTF-8 SQL and JSON, with an advertised size of **11.4 MB**. It describes `users`, `contacts` and `zones` tables, a Symfony / Doctrine ORM structure and fields relating to accounts, roles, salts, password hashes, email addresses, usernames and metadata connections.
+
+  The visible content presents several user-table records with account identifiers, usernames, email addresses, activation states, administrative roles, salts and encoded password values. The visible values are intentionally omitted from this record. The publication describes the password values as derived from a PBKDF2-HMAC algorithm and the salts as random Base64 strings; these claims were not cryptographically verified against the original file. The presence of accounts carrying roles such as super-administrator or administrator indicates potentially high risk, but does not establish that the passwords or accounts remain valid.
+
+  A contacts table exposes, in the visible sample, function labels and telephone numbers. A zones table contains Ivorian locality names and regional-directorate identifiers. The publication also mentions an `acteurs` table with indexes linking users, actor types, zones, departments, sub-prefectures and ANADER directorates, as well as an `agent` table linked to regional directorates and zones. This structure is compatible with an application model for user management, contacts and territorial assignments.
+
+  **Observed:** Publication timestamped December 13, 2025 at 15:59; `anader.ci` displayed; claimed raw 11.4 MB SQL/JSON dump; `users`, `contacts` and `zones` tables cited; visible account, role, salt, password-hash, email, contact and regional-mapping fields; alleged indexes linking users, actors, zones and directorates.
+
+  **Assumption:** Consistency between the ANADER domain, the announced Symfony / Doctrine structure, administrative roles, Ivorian zone references and territorial relationships makes contextual association of the sample with an ANADER-related application plausible. This does not confirm that the dump came from the agency's servers, that it was acquired by the publication author or that account access remains possible.
+
+  **Unknown:** Source system, access vector and date, acquisition method, actual account and contact counts, dump integrity, validity of hashes, salts or sessions, table completeness, additional data in the SQL/JSON, exfiltration, confirmation by ANADER and notification to a competent authority.
+
+- **Analysis scope and limitations:** Structural and preliminary analysis based on a visual capture and the visible publication text; the original SQL/JSON dump was not supplied. Names, email addresses, phone numbers, identifiers, salts, hashes, detailed roles and other raw values are not reproduced, tested or added to the repository. The advertised 11.4 MB volume and complete table set were not independently verified.
+- **Risk assessment:** If authentic, the sample could facilitate account takeover, credential stuffing, targeted phishing, staff impersonation, telephone fraud, mapping of regional deployments and secondary access to administrative functions. The presence of privileged roles and territorial-assignment data warrants priority response, without assuming that the secrets remain exploitable.
+- **SOC / CTI recommendations:** Preserve Symfony, Doctrine, web, database, IAM and VPN logs; reset privileged accounts and invalidate sessions after scoping; investigate SQL/JSON exports, bulk queries and outbound transfers; verify secret rotation and hash resilience; review links between accounts, zones, directorates and actors; monitor impersonation campaigns targeting staff and regional offices; notify relevant parties under applicable regulations.
+- **Sources / Evidence:** Forum publication supplied to AFRINTEL and a visual capture taken on November 18, 2026 showing the post dated December 13, 2025; [ANADER associated website](https://www.anader.ci/). No dump, identifier, secret, hash, contact or raw personal value is published.
+
+### 15 December 2025
+
 #### 🇹🇳 Tunisia - Tunisian Society of Radiology (strtn.org)
 - **Ransomware Group:** nova
 - **Sector:** Health / Medical Association / Education

@@ -1,77 +1,82 @@
-# AFRINTEL CTI statistics - November 2025
+# AFRINTEL CTI Statistics - November 2025
 
-👉🏾 [French version](./README_FR.md)
+Source of truth: validated `victims_FR.md` / `victims.md` pair.
 
-## Summary
-
-This statistical sheet is compiled from the 14 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+This sheet covers the **16 records** in the victims corpus. Figures describe AFRINTEL documented visibility.
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 14 |
-| Ransomware | 10 |
-| Data leaks | 4 |
-| Access sales | 0 |
-| Defacement | 0 |
-| Unclassified public claims | 0 |
-| Countries | 6 |
-| Sectors | 13 |
-| Actors / sources | 10 |
+| Total incidents | 16 |
+| Countries / geographic scopes | 8 |
+| Distinct sectors | 15 |
+| Distinct actors / sources | 6 |
 
-## 1. Country
+## Types
 
-| Country | Incidents |
+| Type | Records |
 |---|---:|
-| 🇲🇦 Morocco | 4 |
+| Ransomware | 10 |
+| Data Leak | 5 |
+| Access Sale | 0 |
+| DDoS | 0 |
+| Defacement | 1 |
+| Account Takeover | 0 |
+| System Intrusion | 0 |
+| Malware | 0 |
+| Operational Fraud | 0 |
+| **Total** | **16** |
+
+## Countries
+
+| Country / scope | Records |
+|---|---:|
 | 🇪🇬 Egypt | 4 |
-| 🇿🇦 South Africa | 2 |
+| 🇲🇦 Morocco | 4 |
 | 🇨🇮 Ivory Coast | 2 |
-| 🇿🇲 Zambia | 1 |
+| 🇿🇦 South Africa | 2 |
+| Kenya | 1 |
+| 🇰🇲🇨🇲 Comoros / Cameroon | 1 |
 | 🇳🇬 Nigeria | 1 |
+| 🇿🇲 Zambia | 1 |
 
-## 2. Sector
+## Sectors
 
-| Sector | Incidents |
+| Sector | Records |
 |---|---:|
 | Logistics | 2 |
-| Human Resources / Recruitment | 1 |
-| Technology / Industry | 1 |
-| Financial Services (Banking) | 1 |
-| Retail / Mass retail / E-commerce | 1 |
-| Government / Transportation / Road Safety | 1 |
-| Public administrations / Social Housing | 1 |
-| Financial Services (Pension Management) | 1 |
 | Construction | 1 |
-| Wood and Building Materials Manufacturing | 1 |
-| Real Estate / Investment / Urban Development | 1 |
+| Financial Services (Banking) | 1 |
+| Financial Services (Pension Management) | 1 |
+| Government / Administration | 1 |
+| Government / Transportation / Road Safety | 1 |
 | Health / NGO / Humanitarian | 1 |
+| Human Resources / Recruitment | 1 |
+| Public administrations / Social Housing | 1 |
+| Real Estate / Investment / Urban Development | 1 |
+| Retail / Mass retail / E-commerce | 1 |
 | Technology / Digital services (exact business activity not independently confirmed) | 1 |
+| Technology / Industry | 1 |
+| Telecommunications / Customs / Government / Justice | 1 |
+| Wood and Building Materials Manufacturing | 1 |
 
-## 3. Actor / source
+## Actors / sources
 
-| Actor / source | Incidents |
+| Actor / source | Records |
 |---|---:|
-| clop | 3 |
-| nightspire | 3 |
-| spacebears | 1 |
-| Unknown | 1 |
-| Spirigatito, post published on a cybercriminal forum | 1 |
-| stormous | 1 |
+| Unknown | 11 |
+| Ahlul Sahara | 1 |
 | anisanas2 | 1 |
-| qilin | 1 |
-| benzona | 1 |
+| PCP@Kenya (preliminary government attribution) | 1 |
 | RL000 | 1 |
+| Spirigatito | 1 |
 
-## 4. Type
+## Statuses
 
-| Type | Incidents |
+| Status | Records |
 |---|---:|
-| Ransomware | 10 |
-| Data Leak | 4 |
-
-## CTI reading
-
-The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
+| Claim - Unverified | 9 |
+| Claim - Data Sample Published | 5 |
+| Data Fully Published | 1 |
+| Government Confirmed + Preliminary Actor Attribution | 1 |
 
 **AFRINTEL** - TLP:CLEAR
-

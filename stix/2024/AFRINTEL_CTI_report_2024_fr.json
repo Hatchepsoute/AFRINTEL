@@ -1,195 +1,281 @@
 {
-  "title": "Rapport annuel de Cyber Threat Intelligence AFRINTEL - Afrique 2024",
-  "version": "2.0",
   "source": "AFRINTEL OSINT Dataset",
+  "version": "3.0",
   "classification": "TLP:CLEAR",
-  "period_covered": "1er janvier au 31 décembre 2024",
-  "total_incidents": 118,
-  "total_victims": 118,
-  "compatibility_note": "Le champ total_victims est conservé pour compatibilité historique ; il désigne ici le nombre d'incidents publiés et suivis par AFRINTEL, non des compromissions toutes confirmées.",
+  "period_covered": "1 January to 31 December 2024",
+  "total_incidents": 125,
+  "total_victims": 125,
   "sections": {
-    "1. resume_executif": {
-      "content": "AFRINTEL a documenté 118 incidents dans 27 pays africains : 86 revendications ransomware, 29 fuites de données et 3 ventes d'accès. Aucun défacement n'est présent dans le corpus. L'Afrique du Sud concentre 30 incidents, devant l'Égypte avec 13, puis l'Algérie et le Nigeria avec 7 chacun. Ces chiffres mesurent les publications observées, pas l'incidence exhaustive des cyberattaques sur le continent.",
-      "key_findings": [
-        "Ransomware : 86 incidents, soit 74,1 % du corpus",
-        "Afrique du Sud : 30 incidents, dont 29 ransomware",
-        "Second semestre : 70 incidents, contre 48 au premier",
-        "Pics mensuels : août et novembre, 15 incidents chacun",
-        "Finance / Banque : premier secteur avec 15 incidents"
-      ]
-    },
-    "2. methodologie": {
-      "content": "Les douze fichiers victims_FR.md mensuels constituent la source française. Ils sont synchronisés avec victims.md en anglais. Les catégories ransomware, fuite de données, vente d'accès et défacement sont conservées séparément. Une revendication, une republication, un échantillon et une confirmation officielle n'ont pas la même valeur probante.",
-      "source_files": "CyberAttackAfrica/2024/*/victims_FR.md",
-      "limitations": [
-        "Biais de visibilité lié aux sources publiques, criminelles et OSINT suivies.",
-        "Les incidents non revendiqués ou non publiés peuvent échapper à la collecte.",
-        "L'absence fréquente de rapports DFIR publics limite l'analyse des chaînes d'attaque.",
-        "Les dates de publication ne datent pas nécessairement l'accès initial ou l'exfiltration.",
-        "Les republications et doubles revendications peuvent modifier la perception temporelle de l'activité."
-      ]
-    },
-    "3. vue_globale": {
-      "incident_type_distribution": {
-        "ransomware": 86,
-        "data_leak": 29,
-        "access_sale": 3,
+    "monthly_activity": [
+      {
+        "month": "January",
+        "total": 8,
+        "ransomware": 4,
+        "data_leak": 1,
+        "access_sale": 1,
+        "ddos": 0,
         "defacement": 0,
-        "total": 118
+        "account_takeover": 0,
+        "system_intrusion": 2,
+        "malware": 0,
+        "operational_fraud": 0
       },
-      "monthly_activity": [
-        {"month": "Janvier", "total": 12, "ransomware": 3, "data_leak": 8, "access_sale": 1},
-        {"month": "Février", "total": 9, "ransomware": 5, "data_leak": 4, "access_sale": 0},
-        {"month": "Mars", "total": 9, "ransomware": 7, "data_leak": 2, "access_sale": 0},
-        {"month": "Avril", "total": 7, "ransomware": 5, "data_leak": 2, "access_sale": 0},
-        {"month": "Mai", "total": 8, "ransomware": 8, "data_leak": 0, "access_sale": 0},
-        {"month": "Juin", "total": 3, "ransomware": 3, "data_leak": 0, "access_sale": 0},
-        {"month": "Juillet", "total": 11, "ransomware": 7, "data_leak": 4, "access_sale": 0},
-        {"month": "Août", "total": 15, "ransomware": 14, "data_leak": 1, "access_sale": 0},
-        {"month": "Septembre", "total": 5, "ransomware": 4, "data_leak": 1, "access_sale": 0},
-        {"month": "Octobre", "total": 12, "ransomware": 8, "data_leak": 4, "access_sale": 0},
-        {"month": "Novembre", "total": 15, "ransomware": 11, "data_leak": 2, "access_sale": 2},
-        {"month": "Décembre", "total": 12, "ransomware": 11, "data_leak": 1, "access_sale": 0}
-      ],
-      "country_counts": {
-        "Afrique du Sud": 30,
-        "Égypte": 14,
-        "Algérie": 7,
-        "Nigeria": 7,
-        "Tunisie": 6,
-        "Maroc": 5,
-        "Burkina Faso": 4,
-        "Côte d'Ivoire": 4,
-        "Ghana": 4,
-        "Kenya": 4,
-        "Namibie": 4,
-        "Cameroun": 3,
-        "Éthiopie": 4,
-        "Seychelles": 3,
-        "Zimbabwe": 3,
-        "Libye": 2,
-        "Sénégal": 2,
-        "Soudan": 2,
-        "Tanzanie": 2,
-        "Botswana": 1,
-        "Congo": 1,
-        "Djibouti": 1,
-        "Madagascar": 1,
-        "Maurice": 1,
-        "Mauritanie": 1,
-        "Rwanda": 1,
-        "Zambie": 1
+      {
+        "month": "February",
+        "total": 8,
+        "ransomware": 6,
+        "data_leak": 1,
+        "access_sale": 0,
+        "ddos": 0,
+        "defacement": 0,
+        "account_takeover": 0,
+        "system_intrusion": 1,
+        "malware": 0,
+        "operational_fraud": 0
       },
-      "regional_distribution": [
-        {"region": "Afrique australe", "total": 39, "ransomware": 38, "data_leak": 1, "access_sale": 0},
-        {"region": "Afrique du Nord", "total": 35, "ransomware": 22, "data_leak": 13, "access_sale": 0},
-        {"region": "Afrique de l'Ouest", "total": 21, "ransomware": 11, "data_leak": 8, "access_sale": 2},
-        {"region": "Afrique de l'Est", "total": 13, "ransomware": 8, "data_leak": 5, "access_sale": 0},
-        {"region": "Océan Indien", "total": 5, "ransomware": 4, "data_leak": 1, "access_sale": 0},
-        {"region": "Afrique centrale", "total": 4, "ransomware": 3, "data_leak": 0, "access_sale": 1}
-      ],
-      "sector_distribution": {
-        "Finance / Banque": 15,
-        "Gouvernement / Administration": 12,
-        "Industrie / Fabrication": 11,
-        "Services professionnels / Entreprises": 11,
-        "Technologies / Informatique": 11,
-        "Éducation / Université": 11,
-        "Santé / Médical": 10,
-        "Commerce / E-commerce": 9,
-        "Télécommunications": 5,
-        "Médias / Divertissement": 4,
-        "Agriculture / Agro-industrie": 3,
-        "Pétrole / Énergie": 3,
-        "Transport / Logistique": 3,
-        "Défense / Sécurité": 2,
-        "Juridique / Justice": 2,
-        "Eau / Services essentiels": 2,
-        "Aviation": 1,
-        "Construction / Immobilier": 1,
-        "Mines / Industries extractives": 1,
-        "Société civile / ONG": 1
+      {
+        "month": "March",
+        "total": 9,
+        "ransomware": 8,
+        "data_leak": 1,
+        "access_sale": 0,
+        "ddos": 0,
+        "defacement": 0,
+        "account_takeover": 0,
+        "system_intrusion": 0,
+        "malware": 0,
+        "operational_fraud": 0
+      },
+      {
+        "month": "April",
+        "total": 9,
+        "ransomware": 5,
+        "data_leak": 2,
+        "access_sale": 0,
+        "ddos": 2,
+        "defacement": 0,
+        "account_takeover": 0,
+        "system_intrusion": 0,
+        "malware": 0,
+        "operational_fraud": 0
+      },
+      {
+        "month": "May",
+        "total": 9,
+        "ransomware": 8,
+        "data_leak": 0,
+        "access_sale": 0,
+        "ddos": 0,
+        "defacement": 0,
+        "account_takeover": 0,
+        "system_intrusion": 0,
+        "malware": 0,
+        "operational_fraud": 1
+      },
+      {
+        "month": "June",
+        "total": 3,
+        "ransomware": 3,
+        "data_leak": 0,
+        "access_sale": 0,
+        "ddos": 0,
+        "defacement": 0,
+        "account_takeover": 0,
+        "system_intrusion": 0,
+        "malware": 0,
+        "operational_fraud": 0
+      },
+      {
+        "month": "July",
+        "total": 11,
+        "ransomware": 7,
+        "data_leak": 2,
+        "access_sale": 1,
+        "ddos": 0,
+        "defacement": 0,
+        "account_takeover": 0,
+        "system_intrusion": 1,
+        "malware": 0,
+        "operational_fraud": 0
+      },
+      {
+        "month": "August",
+        "total": 16,
+        "ransomware": 14,
+        "data_leak": 1,
+        "access_sale": 0,
+        "ddos": 0,
+        "defacement": 0,
+        "account_takeover": 0,
+        "system_intrusion": 1,
+        "malware": 0,
+        "operational_fraud": 0
+      },
+      {
+        "month": "September",
+        "total": 7,
+        "ransomware": 5,
+        "data_leak": 1,
+        "access_sale": 0,
+        "ddos": 0,
+        "defacement": 0,
+        "account_takeover": 0,
+        "system_intrusion": 1,
+        "malware": 0,
+        "operational_fraud": 0
+      },
+      {
+        "month": "October",
+        "total": 11,
+        "ransomware": 8,
+        "data_leak": 2,
+        "access_sale": 0,
+        "ddos": 0,
+        "defacement": 0,
+        "account_takeover": 0,
+        "system_intrusion": 1,
+        "malware": 0,
+        "operational_fraud": 0
+      },
+      {
+        "month": "November",
+        "total": 16,
+        "ransomware": 12,
+        "data_leak": 2,
+        "access_sale": 2,
+        "ddos": 0,
+        "defacement": 0,
+        "account_takeover": 0,
+        "system_intrusion": 0,
+        "malware": 0,
+        "operational_fraud": 0
+      },
+      {
+        "month": "December",
+        "total": 18,
+        "ransomware": 11,
+        "data_leak": 5,
+        "access_sale": 1,
+        "ddos": 0,
+        "defacement": 1,
+        "account_takeover": 0,
+        "system_intrusion": 0,
+        "malware": 0,
+        "operational_fraud": 0
       }
-    },
-    "4. analyse_par_type": {
-      "ransomware": "Le ransomware représente près des trois quarts du corpus et se concentre particulièrement en Afrique australe. La publication d'une victime sur un site de fuite n'établit pas à elle seule le chiffrement, l'exfiltration ou l'interruption des services.",
-      "data_leaks_and_access_sales": "Les 28 fuites et 3 ventes d'accès sont plus réparties géographiquement. Un accès proposé à la vente signale une exposition possible, mais ne confirme ni sa validité actuelle ni son utilisation."
-    },
-    "5. impact_sectoriel": {
-      "content": "La finance arrive en tête avec 15 incidents, devant le gouvernement avec 12. L'industrie, les services professionnels et les technologies en comptent 11 chacun. Les priorités portent sur les identités et transactions dans la finance, la continuité des services publics, la segmentation industrielle et le contrôle des accès prestataires."
-    },
-    "6. acteurs_et_risque": {
-      "top_actors": {
-        "lockbit3": 16,
-        "ransomhub": 12,
-        "killsec": 10,
-        "hunters": 8,
-        "spacebears": 5,
-        "arcusmedia": 4,
-        "Tanaka - publication sur un forum clandestin": 3,
-        "blacksuit": 3,
-        "Addka72424 - republication attribuée à FriendlyChemist": 3,
-        "darkvault": 3
-      },
-      "risk_assessment": [
-        {"scope": "Afrique du Sud", "level": "Élevé", "basis": "30 incidents, dont 29 ransomware"},
-        {"scope": "Égypte", "level": "Élevé", "basis": "14 incidents de nature mixte"},
-        {"scope": "Algérie et Nigeria", "level": "Élevé", "basis": "7 incidents chacun, avec plusieurs fuites"},
-        {"scope": "Tunisie et Maroc", "level": "Moyen", "basis": "5 à 6 incidents, profils différents"}
-      ]
-    },
-    "7. tendances_et_lacunes": {
-      "observed": [
-        {"confidence": "Élevée", "finding": "86 incidents sur 118 sont classés ransomware."},
-        {"confidence": "Élevée", "finding": "L'Afrique du Sud représente 25,9 % du corpus annuel."},
-        {"confidence": "Élevée", "finding": "Le second semestre compte 70 incidents, contre 47 au premier."}
-      ],
-      "assumptions": [
-        {"confidence": "Moyenne au niveau général, faible par incident", "finding": "La réutilisation d'identifiants, les courtiers d'accès initial et les services Edge ou VPN exposés constituent des scénarios prioritaires de recherche, non des faits attribués aux victimes du corpus."}
-      ],
-      "intelligence_gaps": [
-        "Très faible disponibilité de rapports DFIR publics africains.",
-        "Vecteurs d'accès, durée de présence et chemins d'exfiltration inconnus dans la majorité des cas.",
-        "Âge et exhaustivité de plusieurs jeux de données non déterminés.",
-        "Impact des republications et doubles revendications sur la chronologie."
-      ]
-    },
-    "8. analyse_comparative_objective": {
-      "periods": "Janvier-juin versus juillet-décembre",
-      "incidents": {"first_half": 48, "second_half": 70, "absolute_change": 22, "change_percent": 45.8},
-      "ransomware": {"first_half": 31, "second_half": 55, "absolute_change": 24, "change_percent": 77.4},
-      "data_leaks": {"first_half": 16, "second_half": 13, "absolute_change": -3, "change_percent": -18.8},
-      "access_sales": {"first_half": 1, "second_half": 2, "absolute_change": 1, "change_percent": 100.0},
-      "assessment": "Le second semestre compte 23 incidents de plus, différence entièrement portée par le ransomware. Les fuites diminuent légèrement. Cette comparaison décrit le corpus collecté et ne prouve pas une hausse équivalente des compromissions réelles ; l'activité des sources, les republications et les délais de collecte restent des facteurs de visibilité."
-    },
-    "9. mitre_attack_contextuel": [
-      {"qualification": "Hypothèse - confiance moyenne", "technique_id": "T1078", "name": "Valid Accounts"},
-      {"qualification": "Hypothèse - confiance moyenne", "technique_id": "T1190", "name": "Exploit Public-Facing Application"},
-      {"qualification": "Préventif", "technique_id": "T1486", "name": "Data Encrypted for Impact"},
-      {"qualification": "Préventif", "technique_id": "T1490", "name": "Inhibit System Recovery"},
-      {"qualification": "Préventif", "technique_id": "T1567", "name": "Exfiltration Over Web Service"}
     ],
-    "10. recommandations": [
-      "Imposer une MFA résistante au phishing sur les accès sensibles et distants.",
-      "Segmenter les environnements IT, industriels, d'administration et de sauvegarde.",
-      "Surveiller les exports massifs et encadrer les accès des tiers.",
-      "Tester la continuité des services essentiels et la restauration hors ligne.",
-      "Évaluer régulièrement l'exposition Internet et fermer les accès distants inutiles."
-    ],
-    "11. recommandations_soc": {
-      "observed": "Corréler organisations, domaines, dates et acteurs du corpus avec la télémétrie IAM, EDR, VPN, WAF, DNS, proxy et messagerie.",
-      "assumption": "Rechercher accès depuis des infrastructures inhabituelles, réutilisation d'identifiants, création de comptes, élévation de privilèges et exports massifs.",
-      "preventive": "Détecter dump LSASS, PowerShell obfusqué, suppression de sauvegardes, chiffrement massif et transferts sortants anormaux, notamment via Rclone."
+    "incident_type_distribution": {
+      "ransomware": 91,
+      "data_leak": 18,
+      "access_sale": 5,
+      "ddos": 2,
+      "defacement": 1,
+      "account_takeover": 0,
+      "system_intrusion": 7,
+      "malware": 0,
+      "operational_fraud": 1,
+      "total": 125
     },
-    "12. recommandations_strategiques": {
-      "observed": "Prioriser la résilience ransomware en Afrique australe et les risques d'exposition de données en Afrique du Nord et de l'Ouest.",
-      "assumption": "Auditer les scénarios d'accès par identité, prestataire et équipement périmétrique sans les présenter comme historiques.",
-      "preventive": "Réduire la surface externe, corriger les équipements Edge/VPN, fermer les RDP inutiles et maintenir des sauvegardes immuables, isolées et testées."
+    "country_counts": {
+      "Afrique du Sud": 36,
+      "Égypte": 15,
+      "Nigeria": 8,
+      "Tunisie": 6,
+      "Maroc": 5,
+      "Algérie": 4,
+      "Cameroun": 4,
+      "Kenya": 4,
+      "Namibie": 4,
+      "Burkina Faso": 3,
+      "Côte d'Ivoire": 3,
+      "Libye": 3,
+      "Seychelles": 3,
+      "Zimbabwe": 3,
+      "Angola": 2,
+      "Ghana": 2,
+      "Malawi": 2,
+      "Soudan": 2,
+      "Sénégal": 2,
+      "Tanzanie": 2,
+      "Éthiopie": 2,
+      "Botswana": 1,
+      "Cabo Verde": 1,
+      "Congo": 1,
+      "Djibouti": 1,
+      "Madagascar": 1,
+      "Maurice": 1,
+      "Mauritanie": 1,
+      "Mozambique": 1,
+      "Ouganda": 1,
+      "Zambie": 1
     },
-    "13. conclusion": "Le corpus 2024 fournit une base de travail pour transformer des signaux issus du dark web, du darknet et de l'OSINT en priorités défensives. Sa limite principale reste le manque de retours DFIR publics : les faits observés, les hypothèses et les inconnues doivent rester explicitement séparés."
+    "regional_distribution": {
+      "Southern Africa": 50,
+      "North Africa": 34,
+      "West Africa": 19,
+      "East Africa": 12,
+      "Central Africa": 5,
+      "Indian Ocean": 5
+    },
+    "sector_distribution": {
+      "Finance / Banque": 18,
+      "Gouvernement / Administration": 18,
+      "Services professionnels / Business": 12,
+      "Industrie / Fabrication": 11,
+      "Commerce / E-commerce": 10,
+      "Santé / Médical": 10,
+      "Technologie / IT": 9,
+      "Éducation / Université": 9,
+      "Télécommunications": 5,
+      "Énergie / Services publics": 4,
+      "Agriculture / Agro-industrie": 3,
+      "Aviation": 3,
+      "Médias / Divertissement": 3,
+      "Transport / Logistique": 3,
+      "Eau / Services publics": 2,
+      "Juridique / Justice": 2,
+      "Construction / Immobilier": 1,
+      "Défense / Sécurité": 1,
+      "Mines / Industries extractives": 1
+    },
+    "top_actors": {
+      "Unknown": 19,
+      "lockbit3": 17,
+      "ransomhub": 12,
+      "killsec": 10,
+      "hunters": 8,
+      "spacebears": 5,
+      "arcusmedia": 4,
+      "FunkSec": 3,
+      "blacksuit": 3,
+      "darkvault": 3
+    },
+    "evidence_maturity": {
+      "Confirmed": 15,
+      "Claim - Unverified": 87,
+      "Claim - Data Sample Published": 20,
+      "Corroborated": 2,
+      "Attempted": 1
+    },
+    "confidence_counts": {
+      "Low": 84,
+      "Medium": 18,
+      "High": 7,
+      "Very High": 16
+    },
+    "impact_counts": {
+      "Level 2": 48,
+      "Level 3": 58,
+      "Level 4": 19
+    },
+    "comparative_analysis": {
+      "first_half": 46,
+      "second_half": 79,
+      "absolute_change": 33,
+      "change_percent": 71.7
+    }
   },
-  "references": [
-    "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2024/README_FR.md",
-    "https://github.com/Hatchepsoute/AFRINTEL/tree/main/CyberAttackAfrica/2024"
-  ]
+  "title": "Rapport annuel de Cyber Threat Intelligence AFRINTEL - Afrique 2024",
+  "language": "fr",
+  "notes": "Chiffres dérivés exclusivement des 12 fichiers victimes mensuels validés."
 }

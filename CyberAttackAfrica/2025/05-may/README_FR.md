@@ -16,7 +16,7 @@ Sur le plan sectoriel, les catégories les plus représentées sont **Finance / 
 
 La maturité des preuves reste variable : **20 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
 
-Par rapport à Avril, le volume mensuel **augmente de 6 fiches**. Les variations les plus visibles concernent Ransomware 7->13 (+6), Defacement 0->2 (+2), Access Sale 2->0 (-2).
+Par rapport à Avril, le volume mensuel **augmente de 5 fiches, passant de 21 à 26 (+23,8 %)**. Les variations les plus visibles concernent Ransomware 7->13 (+6), Defacement 0->2 (+2), Account Takeover 0->1 (+1), System Intrusion 0->1 (+1), Access Sale 2->0 (-2) et DDoS 1->0 (-1).
 
 > **Note de lecture :** les chiffres AFRINTEL décrivent les incidents documentés et la visibilité des menaces observées. Ils ne constituent pas une mesure exhaustive de toutes les cyberattaques réellement survenues en Afrique.
 
@@ -24,9 +24,9 @@ Par rapport à Avril, le volume mensuel **augmente de 6 fiches**. Les variations
 
 | Indicateur | Avril 2025 | Mai 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 20 | 26 | **+6 (+30,0 %)** |
+| Total incidents | 21 | 26 | **+5 (+23,8 %)** |
 | Ransomware | 7 | 13 | **+6 (+85,7 %)** |
-| Data Leak | 10 | 9 | **-1 (-10,0 %)** |
+| Data Leak | 11 | 9 | **-2 (-18,2 %)** |
 | Access Sale | 2 | 0 | **-2 (-100,0 %)** |
 | DDoS | 1 | 0 | **-1 (-100,0 %)** |
 | Defacement | 0 | 2 | **+2 (nouveau)** |
@@ -34,6 +34,8 @@ Par rapport à Avril, le volume mensuel **augmente de 6 fiches**. Les variations
 | System Intrusion | 0 | 1 | **+1 (nouveau)** |
 | Malware | 0 | 0 | **Stable** |
 | Operational Fraud | 0 | 0 | **Stable** |
+
+![Comparaison avril-mai 2025](assets/comparaison_FR.png)
 
 
 
@@ -75,6 +77,9 @@ Par rapport à Avril, le volume mensuel **augmente de 6 fiches**. Les variations
 | Operational Fraud | 0 | 0,0 % |
 | **Total** | **26** | **100 %** |
 
+![Types d’incident](assets/types_FR.png)
+![Répartition des types d’incident](assets/types_pie_FR.png)
+
 ```mermaid
 pie showData
     title Types d'incident - Mai 2025
@@ -104,6 +109,8 @@ pie showData
 
 > `Operational Fraud = 0` ce mois-ci ; la colonne est omise pour préserver la lisibilité.
 
+![Incidents documentés par pays](assets/pays_FR.png)
+
 ## 5. Répartition régionale
 
 | Région | Fiches | Part |
@@ -116,6 +123,9 @@ pie showData
 | **Total** | **26** | **100 %** |
 
 La région la plus représentée est **Afrique australe avec 12 fiches (46,2 %)**.
+
+![Répartition régionale](assets/regions_FR.png)
+![Parts régionales](assets/regions_pie_FR.png)
 
 ## 6. Impact sectoriel
 
@@ -134,9 +144,14 @@ La région la plus représentée est **Afrique australe avec 12 fiches (46,2 %)*
 | Commerce / E-commerce | 1 | 3,8 % | █ |
 | **Total** | **26** | **100 %** | |
 
+![Exposition sectorielle](assets/secteurs_FR.png)
+![Répartition sectorielle](assets/secteurs_pie_FR.png)
+
 ## 7. Acteurs / groupes
 
 `Unknown` correspond à une absence d'attribution, pas à un acteur.
+
+![Acteurs et labels de publication](assets/acteurs_FR.png)
 
 | Acteur / Groupe | Fiches | Activité |
 |---|---:|---|
@@ -166,6 +181,8 @@ La région la plus représentée est **Afrique australe avec 12 fiches (46,2 %)*
 | Corroboré / preuve secondaire | 2 | 7,7 % |
 | Tentative | 1 | 3,8 % |
 | **Total** | **26** | **100 %** |
+
+![Maturité des preuves](assets/preuves_FR.png)
 
 Les statuts de preuve décrivent le niveau de validation disponible ; ils ne changent pas le type technique de l'incident.
 

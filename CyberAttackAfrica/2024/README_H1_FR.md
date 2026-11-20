@@ -142,6 +142,16 @@ Vecteurs initiaux, dates techniques, volumes exacts, exfiltration et conclusions
 
 MFA résistante au phishing, PAM, segmentation, sauvegardes immuables, centralisation des journaux et suivi séparé des reposts historiques.
 
+## Visualisations
+
+![Types d’incident](assets/h1/types_fr.png)
+![Répartition des types](assets/h1/types_pie_fr.png)
+![Pays](assets/h1/countries_fr.png)
+![Répartition géographique](assets/h1/countries_pie_fr.png)
+![Secteurs](assets/h1/sectors_fr.png)
+![Répartition sectorielle](assets/h1/sectors_pie_fr.png)
+![Acteurs](assets/h1/actors_fr.png)
+
 ## 14. Conclusion
 
 Le S1 2024 retient **46 incidents canoniques**.

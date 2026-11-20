@@ -7,7 +7,7 @@ June 2026 includes **47 documented incidents**: **22 data leaks**, **20 ransomwa
 ### Notable incidents
 
 - **Morocco:** 7 incidents associated with the anisanas2 actor cluster during the month.
-- **Nigeria:** claimed exposure of fintech and biometric data associated with Jeroid.co, and email credentials attributed to the Nigerian Army.
+- **Nigeria:** claimed exposure of fintech and biometric data associated with Jeroid.co, and authentication-related data attributed to a Nigerian military domain.
 - **Tanzania:** 10.2 million records claimed for BRELA, covering approximately 8 million people.
 - **Libya:** two consecutive publications by EvaN47 targeting ministries responsible for education.
 
@@ -19,6 +19,7 @@ June 2026 includes **47 documented incidents**: **22 data leaks**, **20 ransomwa
 
 #### 🇬🇦 Gabon - Finam Gabon
 - **Initial publication date:** June 01, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** DeadLock
@@ -41,6 +42,7 @@ June 2026 includes **47 documented incidents**: **22 data leaks**, **20 ransomwa
 
 #### 🇳🇬 Nigeria - Fidelity Pension Managers
 - **Initial publication date:** June 01, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** DeadLock
@@ -56,6 +58,7 @@ June 2026 includes **47 documented incidents**: **22 data leaks**, **20 ransomwa
 
 #### 🇿🇦 South Africa - African National Congress (ANC)
 - **Initial publication date:** June 02, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** Black X
@@ -78,6 +81,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 
 #### 🇪🇬 Egypt - Bouri Group
 - **Initial publication date:** June 04, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** TheGentlemen
@@ -93,6 +97,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 
 #### 🇿🇦 South Africa - Access Dental
 - **Initial publication date:** June 05, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** WorldLeaks
@@ -106,6 +111,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 
 #### 🇿🇼 Zimbabwe - First Mutual Holdings
 - **Initial publication date:** June 05, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** Nightspire
@@ -155,6 +161,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 
 #### 🇲🇦 Morocco - IMT (Institut des Mines de Touissit) [Data Leak]
 - **Initial publication date:** June 06, 2026
+- **Incident type:** Data Leak
 
 
 - **Actor / Group:** anisanas2
@@ -222,6 +229,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 
 #### 🇪🇬 Egypt - Egyptian Pilots Database [Database Leak / Sale]
 - **Initial publication date:** June 06, 2026
+- **Incident type:** Data Leak
 
 
 - **Actor / Group:** Xyphorix
@@ -256,14 +264,15 @@ The consistency and volume of the files strengthen the credibility of a data exf
 
 - **Analysis:**
 
-  AFRINTEL reviewed a post published on 8 June 2026 by the newly registered actor KLINZO007 (account created June 2026, low reputation), titled "[MASSIVE LEAK] Tunisia Tayara.tn Database - 2 Million Lines | [4GB Full Dump]". The actor claims to hold the complete Tayara.tn user database: over 2,000,000 lines, a 4 GB raw dump, containing full names, active users' mobile phone numbers, email addresses, hashed passwords, ad titles and descriptions (vehicles, real estate, jobs), verified listing prices and full nationwide category/location coverage. Rather than a public download link, the post states the dump is "ready to send" on request via Telegram and TOX contact, and includes a short raw data sample directly in the thread.
+  AFRINTEL reviewed a post published on 8 June 2026 by the newly registered actor KLINZO007 (account created June 2026, low reputation), titled "[MASSIVE LEAK] Tunisia Tayara.tn Database - 2 Million Lines | [4GB Full Dump]". The actor claims to hold the complete Tayara.tn user database: over 2,000,000 lines, a 4 GB raw dump, containing identity, contact, listing and authentication-related fields. Rather than a public download link, the post states the dump is "ready to send" on request and includes a short raw data sample directly in the thread. No raw account data or secret value is reproduced in this corpus.
 
-  AFRINTEL independently reviewed the published sample. It consists of structured user records including internal platform and group-wide identifiers (linking each account to Adevinta's shared user-identity system), account creation timestamps, a retained history of prior state changes per account (previous display names, emails and phone numbers), avatar URLs, phone numbers, and salted password hashes (pbkdf2-sha256). Notably, a subset of the reviewed records additionally contain full RSA-style private and public key material embedded directly in the user record, associated with per-account cryptographic functionality; exposure of this key material is a significant risk in its own right, independent of password strength, as it could enable impersonation or decryption of anything secured with the affected keys. One reviewed record also contained a stored cross-site-scripting payload in place of a display name, indicating either a persisted historical attack against the platform or contamination from automated scanning.
+  AFRINTEL independently reviewed the published sample. It contains structured user records with account metadata, historical profile fields and authentication-related data. The sample also includes material requiring immediate credential and application-integrity review, but no secret value or user record is reproduced here. One reviewed record contained a possible stored cross-site-scripting payload; this is treated as an indicator for defensive validation, not as proof of active exploitation.
 
-  The exact structural match between the actor's description and the independently reviewed sample, together with the plausibility and internal consistency of the records, supports a very high confidence assessment. Given the combination of full identity data, password hashes and per-account private key material at national platform scale, AFRINTEL rates this incident's impact as Level 4. AFRINTEL does not reproduce any user name, phone number, email address, password hash, cryptographic key or record from the reviewed material.
+  The exact structural match between the actor's description and the independently reviewed sample, together with the plausibility and internal consistency of the records, supports a very high confidence assessment. The combination of identity data and authentication-related material warrants Level 4 impact. AFRINTEL does not reproduce any user name, phone number, email address, credential, secret, cryptographic material or record from the reviewed material.
 
 #### 🇿🇦 South Africa - South African Army (SANDF) [Classified document leak - Crowd control preparation]
 - **Initial publication date:** June 08, 2026
+- **Incident type:** Data Leak
 
 
 - **Actor / Group:** mosad
@@ -316,6 +325,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 
 #### 🇳🇬 Nigeria - Jeroid.co [Database Leak / Sale]
 - **Initial publication date:** June 10, 2026
+- **Incident type:** Data Leak
 
 
 - **Actor / Group:** burti
@@ -341,6 +351,7 @@ The consistency and volume of the files strengthen the credibility of a data exf
 
 #### 🇿🇦 South Africa - UNISA (University of South Africa) [Data leak - Technical Support]
 - **Initial publication date:** June 10, 2026
+- **Incident type:** Data Leak
 
 
 - **Actor / Group:** GOD User
@@ -350,15 +361,15 @@ The consistency and volume of the files strengthen the credibility of a data exf
 
 - **Description:**
   Publication of a complete SQL database from UNISA's technical support system, exposing customer, technician, incident and product registration information. The leak, dated 10 June 2026, contains a full dump of the `tech_support` database. Exposed data includes:
-  - **`customers` table:** 52 records with customer IDs, names, complete postal addresses, cities, states, postal codes, countries (mainly US and IN), phone numbers, email addresses and passwords in plain text.
-  - **`technicians` table:** 5 technicians with names, emails, phone numbers and passwords in plain text.
+  - **`customers` table:** 52 records with customer identifiers, contact details and authentication-related fields.
+  - **`technicians` table:** 5 technician records with contact details and authentication-related fields.
   - **`incidents` table:** 37 support tickets with detailed descriptions of technical issues encountered by customers.
   - **`registrations` table:** links between customers and products (sports management software) with registration dates.
   - **`products` and `countries` tables:** product lists and country codes.
-  - **`administrators` table:** 2 named administrator accounts with passwords in plain text. Account names are intentionally omitted by AFRINTEL.
+  - **`administrators` table:** 2 administrator records with authentication-related fields. Account names and secret values are intentionally omitted by AFRINTEL.
 
 - **Analysis:**
-  The presence of plain-text passwords across all tables constitutes a critical security flaw. The personal data (names, addresses, emails, phone numbers) exposes customers and technicians to identity theft, targeted phishing and credential-reuse attacks. Incident descriptions may reveal internal software weaknesses. If the published administrator credentials were valid at the time of exposure, they could have enabled unauthorized access to the technical support system. Although the database is small (21 KB), the observed structure and records warrant remediation without requiring AFRINTEL to reproduce account identifiers.
+  The database contains authentication-related material and sensitive contact data that warrant immediate credential rotation, session review and notification assessment. The personal data exposes customers and technicians to identity theft, targeted phishing and credential-reuse risks. Incident descriptions may reveal internal software weaknesses. The observed structure and records warrant remediation without requiring AFRINTEL to reproduce account identifiers or secret values.
 ---
 
 ### June 11, 2026
@@ -394,7 +405,7 @@ Precise geospatial data was also disclosed. Two documents provide the boundaries
 The technical material includes a named organisational chart covering network, technical support, GIS, statistics, archiving and documentation teams. An equipment inventory lists **389 computers, 87 scanners and 214 printers**, representing **690 devices**, together with their models and departmental distribution.
 The data visible in a government application interface used to process state-owned land recovery requests shows **30,456 requests** and fields relating to the applicant, national identity number, public authority, location, land area and case status.
 
-A software manual found in the corpus contains initial accounts associated with several privilege levels. Their current use by the ministry has not been demonstrated, but they may create additional exposure if default credentials or configurations were retained.
+A software manual found in the corpus describes several privilege levels and configuration assumptions. No current account validity was established, and no account name or secret is reproduced. The material justifies a controlled review for default access and outdated configuration.
 
 The material may support targeted phishing against government employees and agricultural associations, identity fraud, land-related fraud, document forgery and manipulation of administrative procedures. Organisational charts, technical inventories and visible application details also provide useful intelligence for reconnaissance and targeted attacks against internal systems.
 
@@ -459,6 +470,7 @@ A major incident disrupted SEEG systems, including EDAN. The government cited ma
 
 #### 🇪🇬 Egypt - Sheraton Miramar Resort El Gouna
 - **Initial publication date:** June 15, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** Nightspire
@@ -474,6 +486,7 @@ A major incident disrupted SEEG systems, including EDAN. The government cited ma
 
 #### 🇹🇳 Tunisia - Sumitomo Electric Bordnetze, SEBN Tunisia / Fejja site
 - **Initial publication date:** June 16, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** Aurora
@@ -515,6 +528,7 @@ A major incident disrupted SEEG systems, including EDAN. The government cited ma
 
 #### 🇪🇬 Egypt - Great Foods
 - **Initial publication date:** June 17, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** Lamashtu
@@ -527,6 +541,7 @@ A major incident disrupted SEEG systems, including EDAN. The government cited ma
 
 #### 🇸🇳 Senegal - Cour des Comptes du Sénégal
 - **Initial publication date:** June 17, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** Krybit
@@ -546,6 +561,7 @@ A major incident disrupted SEEG systems, including EDAN. The government cited ma
 
 #### 🇧🇼 Botswana - Botswana Vaccine Institute (BVI)
 - **Initial publication date:** June 18, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** LockBit 5
@@ -558,6 +574,7 @@ A major incident disrupted SEEG systems, including EDAN. The government cited ma
 
 #### 🇿🇦 South Africa - Grey High School
 - **Initial publication date:** June 18, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** LockBit 5
@@ -570,6 +587,7 @@ A major incident disrupted SEEG systems, including EDAN. The government cited ma
 
 #### 🇲🇺 Mauritius - Nundun Gopee & Co Ltd
 - **Initial publication date:** June 18, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** LockBit 5
@@ -585,6 +603,7 @@ A major incident disrupted SEEG systems, including EDAN. The government cited ma
 
 #### 🇲🇦 Morocco - MUPRAS RAM
 - **Initial publication date:** June 19, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** Krybit
@@ -635,10 +654,11 @@ A major incident disrupted SEEG systems, including EDAN. The government cited ma
   - 🇾🇪 **Yemen (Governmental):** $140
 
 - **Analysis:**
-  This offer follows the same logic as the "Convince" actor's, but with a more dangerous specificity: it sells not just raw email addresses, but **complete accounts that already have access to the official platform portals**. This means the buyer does not even need to draft fake EDR requests; they can directly log into the Meta or X interface using a genuine government agent's credentials. The risk is major: mass identity theft, extraction of personal data (including private messages via subpoenas), and manipulation of online content. The inclusion of countries like Palestine and Yemen in the "African" list (according to the seller) suggests an approximate geographical classification, but does not diminish the threat to legitimate African institutions involved.
+  The listing claims to offer government-linked accounts or access associated with official communication platforms. The material was not tested, and no account, login path or authentication value is reproduced here. If genuine, the exposure could enable impersonation, unauthorized content changes, privacy violations and targeted fraud. The inclusion of countries outside the African scope suggests an approximate geographical classification, but does not remove the risk to legitimate African institutions named in the listing.
 
 #### 🇹🇿 Tanzania - BRELA (Business Registrations and Licensing Agency) [Data Breach]
 - **Initial publication date:** June 20, 2026
+- **Incident type:** Data Leak
 
 
 - **Actor / Group:** hammer (forum [Citizen])
@@ -709,6 +729,7 @@ A major incident disrupted SEEG systems, including EDAN. The government cited ma
 
 #### 🇳🇬 Nigeria - Nigerian Military (army.mil.ng) [Credential Leak]
 - **Initial publication date:** June 21, 2026
+- **Incident type:** Data Leak
 
 
 - **Actor / Group:** [Citizen] Stunxet
@@ -718,13 +739,14 @@ A major incident disrupted SEEG systems, including EDAN. The government cited ma
 - **Website:** [army.mil.ng](https://army.mil.ng)
 
 - **Description:**
-  Public leak of credentials and authentication data from the Nigerian military domain `army.mil.ng`. The dataset includes at least **20+ unique email accounts** belonging to military personnel, with plaintext passwords. Exposed accounts include high-level addresses and various unit/battalion accounts. Credentials were captured from Chrome and Edge browsers and include login URLs for military webmail, DigitalGlobe satellite imagery portals (`securewatch.digitalglobe.com`), and other internal systems. The actor claims the leak is politically motivated, protesting government policies on terrorism.
+  A publication attributed to [Citizen] Stunxet claims exposure of authentication-related data associated with the Nigerian military domain. The actor claims that more than 20 institutional accounts and browser-derived material were included. No account identifier, password, login path or third-party service name is reproduced in this public record.
 
 - **Analysis:**
-  High-impact national security exposure. If valid at the time of observation, the exposed military email accounts and plaintext passwords could enable unauthorized access to internal communications, operational orders, intelligence sharing platforms, and satellite imagery services. Potential consequences include espionage, impersonation of military personnel and secondary compromise of connected systems. The presence of credentials for DigitalGlobe (used for reconnaissance) is particularly alarming. The Nigerian military must immediately revoke all exposed passwords and implement multi-factor authentication.
+  This is a high-impact national-security exposure claim. If valid at the time of observation, the material could support impersonation, unauthorized access and secondary compromise. The appropriate response is coordinated notification through authorized channels, revocation or rotation of affected secrets, retrospective authentication review and mandatory multi-factor authentication. AFRINTEL did not test or use any account.
 
 #### 🇾🇹 Mayotte - Municipality of Ouangani
 - **Initial publication date:** June 21, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware group:** DeadLock
 - **Sector:** Government / Administration
@@ -757,6 +779,7 @@ No passwords, access tokens, API keys or technical indicators of compromise were
 
 #### 🇱🇾 Libya - Central Bank of Libya
 - **Initial publication date:** June 22, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** Qilin
@@ -772,6 +795,7 @@ No passwords, access tokens, API keys or technical indicators of compromise were
 
 #### 🇰🇪 Kenya - Kenya National Highways Authority (KeNHA)
 - **Initial publication date:** June 23, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** DeadLock
@@ -810,6 +834,7 @@ No passwords, access tokens, API keys or technical indicators of compromise were
 
 #### 🇹🇳 Tunisia - Centrale Laitière du Cap-Bon (CLC)
 - **Initial publication date:** June 26, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** SETTRA
@@ -983,6 +1008,7 @@ No passwords, access tokens, API keys or technical indicators of compromise were
 
 #### 🇹🇳 Tunisia - monoprix.tn
 - **Initial publication date:** June 28, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** Stormous
@@ -995,6 +1021,7 @@ No passwords, access tokens, API keys or technical indicators of compromise were
 
 #### 🇿🇦 South Africa - Fidelity Security Group
 - **Initial publication date:** June 28, 2026
+- **Incident type:** Ransomware
 
 
 - **Ransomware group:** CMD Organization
@@ -1026,7 +1053,7 @@ No passwords, access tokens, API keys or technical indicators of compromise were
 
   The visible samples show structured student records, including national numbers, names in Arabic and English, phone numbers, institutions, academic registration numbers, departments, specializations, academic years, semesters, gender and nationality.
 
-  A second screenshot shows a user account table containing official @tve.gov.ly emails, names, phone numbers and a password-related field. Sensitive values are not reproduced here.
+  A second sample shows a user or administrator account table containing institutional contact fields and an authentication-related field. Sensitive values are not reproduced here.
 
   The observed data appears to come from an application or relational database linked to an academic management system. The visible structure shows at least two data categories: a student records table and a user or administrator account table.
 

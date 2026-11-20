@@ -6,7 +6,7 @@
 
 ## Synthèse mensuelle
 
-**15 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 10, Data Leak 4, Defacement 1.
+**16 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 10, Data Leak 5, Defacement 1.
 
 > Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour combler le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
 

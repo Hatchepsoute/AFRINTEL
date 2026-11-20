@@ -1,79 +1,84 @@
-# AFRINTEL CTI statistics - January 2025
+# AFRINTEL CTI Statistics - January 2025
 
-👉🏾 [French version](./README_FR.md)
+Source of truth: validated `victims_FR.md` / `victims.md` pair.
 
-## Summary
-
-This statistical sheet is compiled from the 20 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+This sheet covers the **20 records** in the victims corpus. Figures describe AFRINTEL documented visibility.
 
 | Indicator | Value |
 |---|---:|
 | Total incidents | 20 |
-| Ransomware | 16 |
-| Data leaks | 3 |
-| Access sales | 0 |
-| Defacement | 0 |
-| Unclassified public claims | 0 |
-| Countries | 8 |
-| Sectors | 16 |
-| Actors / sources | 7 |
+| Countries / geographic scopes | 9 |
+| Distinct sectors | 19 |
+| Distinct actors / sources | 3 |
 
-## 1. Country
+## Types
 
-| Country | Incidents |
-|---|---:|
-| 🇪🇬 Egypt | 4 |
-| 🇳🇬 Nigeria | 4 |
-| 🇰🇪 Kenya | 2 |
-| 🇲🇦 Morocco | 2 |
-| 🇩🇿 Algeria | 2 |
-| 🇿🇦 South Africa | 1 |
-| 🇺🇬 Uganda | 1 |
-| 🇿🇲 Zambia | 1 |
-
-## 2. Sector
-
-| Sector | Incidents |
-|---|---:|
-| Education / Higher Education / Research. | 2 |
-| Healthcare (Dental) | 1 |
-| Public Administrations / Finance / Public Procurement. | 1 |
-| Retail / Mass Distribution. | 1 |
-| Technology / Digital Marketing / SEO. | 1 |
-| Oil & Gas Logistics / Port Services. | 1 |
-| Hospitality / Tourism. | 1 |
-| Public Administrations | 1 |
-| Healthcare | 1 |
-| Public Administrations / Water Resources / Agriculture. | 1 |
-| Education / Scientific Research / Academic Publishing. | 1 |
-| Education / Higher Education / Educational Research. | 1 |
-| Consulting Services / Bulk SMS & Broadcast Messaging | 1 |
-| HR Services / Recruitment | 1 |
-| Education / Higher Education | 1 |
-| Religious Organization / Association | 1 |
-
-## 3. Actor / source
-
-| Actor / source | Incidents |
-|---|---:|
-| funksec | 6 |
-| GDLockerSec | 3 |
-| ransomhub | 2 |
-| spacebears | 2 |
-| babuk2 | 2 |
-| apt73 | 1 |
-| Counter | 1 |
-
-## 4. Type
-
-| Type | Incidents |
+| Type | Records |
 |---|---:|
 | Ransomware | 16 |
 | Data Leak | 3 |
+| Access Sale | 0 |
+| DDoS | 0 |
+| Defacement | 0 |
+| Account Takeover | 1 |
+| System Intrusion | 0 |
+| Malware | 0 |
+| Operational Fraud | 0 |
+| **Total** | **20** |
 
-## CTI reading
+## Countries
 
-The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
+| Country / scope | Records |
+|---|---:|
+| 🇪🇬 Egypt | 4 |
+| 🇳🇬 Nigeria | 4 |
+| Kenya | 2 |
+| 🇩🇿 Algeria | 2 |
+| 🇰🇪 Kenya | 2 |
+| 🇲🇦 Morocco | 2 |
+| 🇿🇦 South Africa | 2 |
+| 🇺🇬 Uganda | 1 |
+| 🇿🇲 Zambia | 1 |
+
+## Sectors
+
+| Sector | Records |
+|---|---:|
+| Education / Higher Education / Research. | 2 |
+| Consulting Services / Bulk SMS & Broadcast Messaging | 1 |
+| Education / Higher Education | 1 |
+| Education / Higher Education / Educational Research. | 1 |
+| Education / Scientific Research / Academic Publishing. | 1 |
+| Education / University | 1 |
+| Government / Administration | 1 |
+| Healthcare | 1 |
+| Healthcare (Dental) | 1 |
+| Hospitality / Tourism. | 1 |
+| HR Services / Recruitment | 1 |
+| Media / Entertainment | 1 |
+| Oil & Gas Logistics / Port Services. | 1 |
+| Public Administrations | 1 |
+| Public Administrations / Finance / Public Procurement. | 1 |
+| Public Administrations / Water Resources / Agriculture. | 1 |
+| Religious Organization / Association | 1 |
+| Retail / Mass Distribution. | 1 |
+| Technology / Digital Marketing / SEO. | 1 |
+
+## Actors / sources
+
+| Actor / source | Records |
+|---|---:|
+| Unknown | 18 |
+| Counter | 1 |
+| SevenZeroDay404 | 1 |
+
+## Statuses
+
+| Status | Records |
+|---|---:|
+| Claim - Data Sample Published | 10 |
+| Claim - Unverified | 8 |
+| Government Confirmed | 1 |
+| Victim Confirmed | 1 |
 
 **AFRINTEL** - TLP:CLEAR
-

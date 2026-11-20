@@ -3,9 +3,9 @@
 # AFRINTEL | Rapport mensuel de Cyber Threat Intelligence
 ## Cybermenaces visant les organisations africaines - Mai 2026
 
-**Public :** RSSI, DSI, directeurs des risques, responsables SOC/CERT, autorités de cybersécurité.  
-**Période de classement :** 1er–31 mai 2026 · **Revue et consolidation :** 6 novembre 2026.  
-**Documents sources :** [Fiches victimes FR](./victims_FR.md) · [Victim records EN](./victims.md) · [Contrôle de cohérence](./VALIDATION.md) · [Statistiques reproductibles](./AUDIT_STATISTIQUES.json).  
+**Public :** RSSI, DSI, directeurs des risques, responsables SOC/CERT, autorités de cybersécurité.<br>
+**Période de classement :** 1er-31 mai 2026 · **Revue et consolidation :** 6 novembre 2026 · **Version :** corrigée, statuts et images synchronisés.<br>
+**Documents sources :** [Fiches victimes FR](./victims_FR.md) · [Victim records EN](./victims.md).<br>
 👉🏾 **[Read the English report](./README.md)**
 
 > **Note de fiabilité - observation, analyse, confirmation.** AFRINTEL documente des publications d'acteurs, des dossiers d'extorsion, des jeux de données offerts à la vente et des échantillons examinés après divulgation. Lorsque les fiches renseignent une analyse technique ou documentaire, le présent rapport en restitue **les catégories observées, le nombre d'éléments effectivement examinés et leurs limites**. Les volumes revendiqués par les auteurs ne sont pas automatiquement considérés comme vérifiés. Une inscription sur un site ransomware ne prouve pas un chiffrement. Une capture de disponibilité ne prouve pas à elle seule un DDoS. Les confirmations institutionnelles sont citées séparément. Aucun secret, identifiant personnel ou document individuel n'est reproduit.
@@ -14,6 +14,8 @@
 
 ## 1. Synthèse exécutive
 
+
+La présente édition est une **consolidation rétrospective au 6 novembre 2026**. Elle conserve la baseline éditoriale de **107 fiches documentaires canoniques**, avec des réserves explicites sur les recoupements possibles ; il ne s'agit pas d'un décompte d'intrusions techniquement confirmées.
 
 Les 107 observations comprennent **45 fuites de données (42,1 %)**, **43 revendications DDoS (40,2 %)**, **17 dossiers ransomware (15,9 %)**, **une vente d'accès (0,9 %)** et **une intrusion système (0,9 %)**. Les fiches mono-pays se concentrent sur le **Maroc (53)**, l'**Égypte (17)** et l'**Afrique du Sud (17)** ; **trois dossiers multi-pays** étendent le périmètre à 18 pays africains au total. Les 107 événements canoniques produisent **115 présences géographiques** lorsqu'une publication multi-pays est ventilée vers chacun des pays cités ; ces deux dénominateurs ne sont pas interchangeables.
 
@@ -53,21 +55,21 @@ AFRINTEL couvre les 54 pays africains à partir des sites de divulgation ransomw
 Un incident classé `Ransomware` correspond à une **publication dans un contexte d'extorsion** ou à une compromission explicitement confirmée ; il ne signifie pas que le chiffrement a été prouvé dans chacun des 17 cas. Pour les fuites, un échantillon visible peut étayer la présence de données exposées sans valider l'ensemble des lignes annoncées. La **vente d'accès** distingue l'annonce d'identifiants de leur validité actuelle ; **aucune authentification n'a été tentée**. Enfin, les DDoS sont comptés comme **revendications publiées**, sans inférence de débit, durée ou indisponibilité soutenue.
 
 
-**Chronologie.** Le mois est celui de l'entrée documentaire canonique lorsque la date réelle d'accès initial reste inconnue. Plusieurs fuites peuvent concerner des données plus anciennes. Le dossier **Gauteng** du 16 mai et celui **Stats SA** du 17 mai doivent être rapprochés de publications **XP95 de mars 2026** : l'existence de nouveaux posts en mai ne démontre pas une deuxième compromission. Le dossier **Mansoura** contient une analyse d'échantillon publié en **juillet 2026**, consignée rétrospectivement. La confirmation publique détaillée de **Lengau** est intervenue le **24 août 2026** et ne doit pas être antidatée.
+**Chronologie.** Le mois est celui de l'entrée documentaire canonique lorsque la date réelle d'accès initial reste inconnue. **Les 107 entrées sont des unités de publication/documentation, non 107 intrusions techniques indépendantes.** Deux fiches du **23 mai**, associées aux labels **Keymous+** et **Keymous**, concernent le **ministère marocain des Affaires étrangères** et mentionnent chacune **8 440 lignes** de candidats ; une republication ou un recoupement reste possible. Les deux observations sont **maintenues dans la baseline éditoriale de 107**, sans conclure à deux fuites distinctes. Une déduplication future doit être versionnée, non réalisée silencieusement. Plusieurs fuites peuvent concerner des données plus anciennes. Le dossier **Gauteng** du 16 mai et celui **Stats SA** du 17 mai doivent être rapprochés de publications **XP95 de mars 2026** : l'existence de nouveaux posts en mai ne démontre pas une deuxième compromission. Le dossier **Mansoura** contient une analyse d'échantillon publié en **juillet 2026**, consignée rétrospectivement. La confirmation publique détaillée de **Lengau** est intervenue le **24 août 2026** et ne doit pas être antidatée. La date **31 mai** utilisée pour sa fiche est une **date de rattachement au corpus** : elle ne constitue pas une preuve de première publication publique ce jour-là.
 
 ### 2.1 Qualité des éléments documentés
 
 | Statut inscrit dans les fiches de mai | Fiches | Part | Interprétation |
 |---|---:|---:|---|
 | `Claim - Unverified` | 71 | 66,4 % | Publication observée ; impact, origine ou portée non établis indépendamment. |
-| `Claim - Data Sample Published` | 33 | 30,8 % | Échantillon décrit dans la fiche ; attribution et exhaustivité à qualifier cas par cas. |
+| `Claim - Data Sample Published` | 32 | 29,9 % | Échantillon publié et décrit ; authenticité, origine et exhaustivité à qualifier par dossier. |
 | `Data Fully Published` | 2 | 1,9 % | Publication totale signalée ; ne signifie pas authenticité intégrale validée. |
-| `Victim Confirmed` (à normaliser) | 1 | 0,9 % | Incident CHPC/Lengau reconnu institutionnellement. |
-| **Total** | **107** | **100 %** | Statut d'origine du corpus avant enrichissement externe. |
+| `Victim Confirmed` | 2 | 1,9 % | Trésor public sénégalais et CHPC/Lengau : incident reconnu ; portée de confirmation précisée par fiche. |
+| **Total** | **107** | **100 %** | Répartition après corroboration documentaire du 6 novembre (écart de 0,1 point possible par arrondis). |
 
 ![Qualification de la preuve](assets/preuves_FR.png)
 
-**Enrichissement externe important :** la déclaration de la **DGCPT sénégalaise** publiée le 18 mai **confirme un incident malveillant** et la diffusion irrégulière d'informations. La fiche source du Trésor porte encore `Claim - Data Sample Published` ; il faut **réviser son statut avec une note de périmètre**, sans transformer automatiquement les 1,66 million de lignes examinées en volume officiellement confirmé par la victime.
+**Portée des confirmations.** La déclaration de la **DGCPT sénégalaise du 18 mai** confirme un incident malveillant, des perturbations et une diffusion irrégulière d'informations. Son statut est désormais `Victim Confirmed`, comme pour **CHPC/Lengau**. Cela ne constitue **ni une confirmation officielle des 1,66 million d'enregistrements recensés dans le corpus**, ni une preuve de chiffrement ou d'attribution technique à AuditTeam. Les deux confirmations portent sur des périmètres distincts, détaillés dans les fiches.
 
 ## 3. Panorama quantitatif
 
@@ -112,7 +114,7 @@ pie showData
 
 ![Fiches mono-pays](assets/pays_FR.png)
 
-Trois fiches multi-pays concernent (1) des CV attribués au **Kenya, à l'Éthiopie, au Nigeria et au Zimbabwe**, (2) des accès DHIS2 présumés au **Mozambique, Liberia, Nigeria, Togo et Sierra Leone**, et (3) des scans de passeports concernant **l'Égypte et la Libye**. En ventilant chaque observation vers les pays cités, les 107 fiches deviennent **115 présences géographiques** ; le Maroc en représente **53/115 (46,1 %)**, l'Égypte **18/115 (15,7 %)** et l'Afrique du Sud **17/115 (14,8 %)**. Le fichier `AUDIT_STATISTIQUES.json` distingue explicitement ces deux modes de calcul.
+Trois fiches multi-pays concernent (1) des CV attribués au **Kenya, à l'Éthiopie, au Nigeria et au Zimbabwe**, (2) des accès DHIS2 présumés au **Mozambique, Liberia, Nigeria, Togo et Sierra Leone**, et (3) des scans de passeports concernant **l'Égypte et la Libye**. En ventilant chaque observation vers les pays cités, les 107 fiches deviennent **115 présences géographiques** ; le Maroc en représente **53/115 (46,1 %)**, l'Égypte **18/115 (15,7 %)** et l'Afrique du Sud **17/115 (14,8 %)**. Le rapport distingue explicitement ces deux modes de calcul.
 
 ![Présences géographiques - avec multi-pays](assets/exposition_geo_FR.png)
 
@@ -145,15 +147,15 @@ Le principal risque opérationnel du mois est **l'effet de réutilisation de don
 
 **🇸🇳 Trésor public du Sénégal - signal stratégique majeur.** La fiche AuditTeam contient l'analyse de **trois ensembles de bases**, totalisant environ **1 659 735 enregistrements** : personnel/paie (~40 394), contribuables/débiteurs (~960 146), ordres de paiement (~659 195). Des fichiers de virement datés jusqu'au **8 mai** et **323 jours d'opérations SICA** fournissent un contexte métier important. Les champs observés touchent identifiants fiscaux, comptes bancaires, mandats, agents et fournisseurs. **Confirmé séparément :** la DGCPT a signalé un incident affectant ses systèmes à partir du **10 mai**, puis, le **18 mai**, des **actes malveillants**, des **perturbations** et une **diffusion irrégulière d'informations**, avec reprise progressive. **Non établi :** déploiement d'un chiffreur, méthode d'accès, correspondance officielle entre chaque jeu de données et la compromission. **Impact RSSI :** fraude aux fournisseurs, détournement de virements, compromission d'identités et propagation de risques à l'ensemble des services publics payés par le Trésor. [APS - 11 mai](https://aps.sn/le-tresor-public-victime-dun-piratage-informatique/) · [APS - 18 mai](https://aps.sn/le-tresor-public-annonce-la-reprise-progressive-de-ses-services-a-la-suite-de-lincident-informatique/).
 
-**🇿🇦 Gauteng Provincial Government / Gauteng City Region Academy (GCRA).** La fiche Gauteng distingue **3,8 To / 3 673 556 fichiers revendiqués** d'une **archive effectivement examinée de 1 905 fichiers (~1,905 Go)** ; l'examen comprend **1 632 PDF**, **175 JPG** et **89 DOCX** (plus quelques autres formats). Les documents lisibles portent sur l'administration, les achats, la fiscalité, les contrats, le logement et des dossiers d'identité. Pour GCRA, **147 Go / 429 473 fichiers sont revendiqués**, tandis que l'échantillon examiné comporte **2 945 PDF (~1,145 Go)**, relatifs notamment aux étudiants, bourses, paiements et coordonnées bancaires. Les PDF sans couche de texte n'ont pas été qualifiés exhaustivement. Ces expositions ont une matérialité documentaire, **sans valider le volume total annoncé**. Les chevauchements avec les publications XP95 de mars appellent à surveiller une **revente ou republication possible**, non à conclure à deux intrusions certaines.
+**🇿🇦 Gauteng Provincial Government / Gauteng City Region Academy (GCRA).** La fiche Gauteng distingue **3,8 To / 3 673 556 fichiers revendiqués** d'une **archive effectivement examinée de 1 905 fichiers (~1,905 Go)** ; l'examen comprend **1 632 PDF**, **175 JPG** et **89 DOCX** (plus quelques autres formats). Les documents lisibles portent sur l'administration, les achats, la fiscalité, les contrats, le logement et des dossiers d'identité. Pour GCRA, **147 Go / 429 473 fichiers sont revendiqués**, tandis que l'échantillon examiné comporte **2 944 PDF (~1,144 Go ; 1 143 999 172 octets)**, relatifs notamment aux étudiants, bourses, paiements et coordonnées bancaires. Les PDF sans couche de texte n'ont pas été qualifiés exhaustivement. Ces expositions ont une matérialité documentaire, **sans valider le volume total annoncé**. Les chevauchements avec les publications XP95 de mars appellent à surveiller une **revente ou republication possible**, non à conclure à deux intrusions certaines.
 
-**🇪🇬 Éducation : ministère de l'Éducation, PAT, Mansoura.** Le compte **Revesky** annonce **22,6 Go**, **26,8 millions** de dossiers d'élèves et **3,8 millions** de dossiers du personnel éducatif, avec une revendication de privilèges administrateurs. Il s'agit de **volumes et de capacités allégués**, non d'un audit d'accès des services égyptiens. La fiche **PAT** décrit des échantillons d'identifiants enseignants, affiliations, codes et documents administratifs, dans un volume de **8–10 Go compressés revendiqués**. Pour **Mansoura**, l'analyse secondaire en juillet porte précisément sur **4 239 entrées**, tandis que **989 000** dossiers étudiants sont revendiqués ; ne pas confondre les deux. La communication d'**ISSA Egypt (19 juin)** qualifie la revendication Revesky de **non confirmée**, sans authentification publique du volume ni des accès. [ISSA Egypt](https://issa-eg.org/alleged-data-breach-claims-involving-egypts-ministry-of-education-highlight-potential-cybersecurity-risks/).
+**🇪🇬 Éducation : ministère de l'Éducation, PAT, Mansoura.** Le compte **Revesky** annonce **22,6 Go**, **26,8 millions** de dossiers d'élèves et **3,8 millions** de dossiers du personnel éducatif, avec une revendication de privilèges administrateurs. Il s'agit de **volumes et de capacités allégués**, non d'un audit d'accès des services égyptiens. La fiche **PAT** décrit des échantillons d'identifiants enseignants, affiliations, codes et documents administratifs, dans un volume de **8-10 Go compressés revendiqués**. Pour **Mansoura**, l'analyse secondaire en juillet porte précisément sur **4 239 entrées**, tandis que **989 000** dossiers étudiants sont revendiqués ; ne pas confondre les deux. La communication d'**ISSA Egypt (19 juin)** qualifie la revendication Revesky de **non confirmée**, sans authentification publique du volume ni des accès. [ISSA Egypt](https://issa-eg.org/alleged-data-breach-claims-involving-egypts-ministry-of-education-highlight-potential-cybersecurity-risks/).
 
 **🇲🇦 SDTM / Barid Al-Maghrib - identité applicative et flux financiers.** L'acteur **Sejjil** annonce **129 CSV** issus de l'environnement SAGE ERP et de systèmes associés. La fiche décrit des données de comptabilité, des coordonnées bancaires, des comptes ERP, des condensats MD5 et des jetons de session présentés comme actifs. Leur **validité actuelle n'est pas testée**. L'enjeu pour la DSI ne se limite pas à une fuite clients : il concerne **la rotation des secrets, le contrôle des exports ERP, les passerelles de communication et la séparation des environnements financiers**.
 
 **🇲🇿 🇱🇷 🇳🇬 🇹🇬 🇸🇱 DHIS2 - risque régional de dépendance technologique.** Une publication attribuée à **Keymous** (étiquette distincte de Keymous+) associe des combinaisons URL/identifiants/mots de passe à des instances de santé dans **cinq pays africains**. **Aucun accès n'a été testé.** La seule exposition présumée de secrets doit justifier, pour les organisations concernées, une invalidation rapide et une revue des journaux d'accès ; elle **ne confirme ni manipulation de données sanitaires ni accès continu**. Deux pays extra-africains sont mentionnés dans le contexte source, mais exclus du comptage AFRINTEL.
 
-**🇹🇿 Police tanzanienne / 🇲🇦 RADEM / 🇪🇬 FutureShop.** Des **identifiants de plus de 10 000 comptes webmail policiers** sont annoncés à la vente, sans vérification de leur validité. Pour RADEM, **1,1 million de documents sont revendiqués** contre **un premier lot annoncé d'environ 18 000 PDF** ; ces deux grandeurs doivent rester séparées. Pour FutureShop, le corpus décrit des risques liés à une **API présentée comme non authentifiée** et à un stockage objet, avec des données clients et de livraison ; il n'y a pas eu de test actif indépendant de l'exposition au moment du rapport. Ces dossiers justifient respectivement la protection des messageries, le cloisonnement documentaire et une revue d'autorisation des API.
+**🇹🇿 Police tanzanienne / 🇲🇦 RADEM / 🇪🇬 FutureShop.** Des **identifiants de plus de 10 000 comptes webmail policiers** sont annoncés à la vente, sans vérification de leur validité. Pour RADEM, **1,1 million de documents sont revendiqués** contre **un premier lot annoncé d'environ 18 000 PDF** ; ces deux grandeurs doivent rester séparées. Pour FutureShop, la publication présente une **API comme non authentifiée** et mentionne un stockage objet associé aux commandes et à la livraison : **la configuration réelle de l'API et l'accessibilité actuelle du stockage n'ont pas été testées indépendamment par AFRINTEL**. Les contrôles d'autorisation sont recommandés à la victime ; aucune exploitation active de tiers n'a été réalisée. Ces dossiers justifient respectivement la protection des messageries, le cloisonnement documentaire et une revue d'autorisation des API.
 
 **Vigilance sur l'attribution.** Les informations commerciales attribuées au **SARS** sud-africain montrent dans la fiche des identifiants majoritairement liés à des tiers internationaux : **un recueil de credentials associé à des URL d'un organisme ne prouve pas que sa base source a été compromise**. Le même contrôle de provenance s'impose pour les lots commercialisés sous des schémas génériques (« Contacts / Orders / Tickets »).
 
@@ -173,7 +175,7 @@ Le dossier **AuditTeam/Trésor** est classé ransomware dans la taxonomie des pu
 
 **🇲🇦 Spacex.ma** : la publication attribuée à **DarkMafiaX** présente un accès administratif présumé. La présence d'un identifiant dans une publication ne prouve pas que le compte était utilisable ; AFRINTEL ne l'a pas testé. Les contrôles attendus sont suspension/rotation des secrets concernés, MFA, revue de l'activité administrateur et blocage des chemins d'administration inutiles.
 
-**🇿🇦 CHPC/Lengau** : des autorités sud-africaines ont confirmé une **intrusion** affectant une partie de la plateforme de calcul intensif fin mai. La communication détaillée relayée le **24 août** pointe des **vulnérabilités d'un environnement HPC ancien** et des conséquences sur les ressources de calcul. C'est un cas distinct des publications d'extorsion : **aucun ransomware ni exfiltration spécifique ne sont attribués sans preuve**. Le risque porte sur les équipements de recherche critiques, les services hérités et l'intégrité des traitements scientifiques. [ITWeb - 24 août](https://www.itweb.co.za/article/cause-of-breach-on-sas-supercomputer-revealed/KPNG878NLeGq4mwD).
+**🇿🇦 CHPC/Lengau** : une réponse parlementaire sud-africaine, rapportée le **24 août 2026**, confirme **un accès non autorisé à certains composants du calculateur** fin mai, facilité par des **vulnérabilités de composants HPC anciens**, ainsi que le **déploiement d'un malware de minage de cryptomonnaie**. Les autorités indiquent que l'ensemble de l'infrastructure nationale n'a pas été compromis. **Il ne s'agit pas d'une preuve de ransomware ou d'exfiltration de données.** Le cas illustre un risque concret de détournement de calcul (`T1496.001`) et justifie la corrélation CPU/processus/connexions de sortie et une revue des accès privilégiés. [ITWeb - 24 août](https://www.itweb.co.za/article/cause-of-breach-on-sas-supercomputer-revealed/KPNG878NLeGq4mwD).
 
 ## 5. Impact sectoriel : risques métier
 
@@ -198,12 +200,12 @@ La visibilité d'un secteur dépend des sources et des campagnes suivies. Les **
 | **TheGentlemen** | **4** | Publications ransomware/extorsion, plusieurs pays. |
 | **Kazu** | **3** | Échantillons documentaires ; doublons possibles avec XP95. |
 | **NightSpire** | **3** | Plusieurs publications concernant des entités égyptiennes. |
-| **Keymous** | **2** | Label distinct de Keymous+ tant que l'équivalence n'est pas démontrée. |
+| **Keymous** | **3** | Label distinct de Keymous+ tant que l'équivalence n'est pas démontrée. |
 | **INT3X / cc5ab / anisanas2** | **2 chacun** | Données d'éducation, API, infrastructures et ventes. |
 
-![Principaux acteurs hors DDoS](assets/acteurs_FR.png)
+![Principaux comptes hors DDoS, regroupés par publication](assets/acteurs_FR.png)
 
-Le graphique hors DDoS évite que les **43 publications d'un même compte** écrasent la lecture des activités de fuite et d'extorsion. Le tableau réintègre Keymous+ pour mesurer l'ensemble de sa présence. Les groupes revendiqués, les pseudonymes commerciaux et les alliances de circonstance sont **des identifiants de publication**, pas des attributions techniques à un opérateur unique. Les mentions de coalition (ex. NullSec et 404Crew) sont conservées comme telles et **non fusionnées** avec les fiches attribuées à chaque groupe isolément.
+Le graphique **filtré hors DDoS** compte uniquement les publications de fuites, d'extorsion ou d'accès. **Keymous+ y représente 3 dossiers**, alors que le tableau des acteurs affiche ses **46 publications totales**, dont **43 revendications DDoS**. Les deux vues utilisent donc des dénominateurs distincts, explicités pour éviter tout biais de lecture. Les groupes revendiqués, les pseudonymes commerciaux et les alliances de circonstance sont **des identifiants de publication**, pas des attributions techniques à un opérateur unique. Les mentions de coalition (ex. NullSec et 404Crew) sont conservées comme telles et **non fusionnées** avec les fiches attribuées à chaque groupe isolément.
 
 ### 6.1 Priorisation géographique pour les RSSI (signal, non classement de risque national)
 
@@ -238,6 +240,7 @@ Le graphique hors DDoS évite que les **43 publications d'un même compte** écr
 | [T1567 - Exfiltration Over Web Service](https://attack.mitre.org/techniques/T1567/) | Volume de transfert inhabituel par compte ou service | Jeux de données divulgués ; transport non identifié | Hypothèse, aucune destination attribuée |
 | [T1486 - Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486/) | Renommages/écritures massifs, notes de rançon, suppression de sauvegardes | 17 dossiers ransomware ; chiffrement **non systématiquement prouvé** | Préventif / chasse |
 | [T1498 - Network Denial of Service](https://attack.mitre.org/techniques/T1498/) | Saturation de débit, hausse RPS et erreurs 5xx corrélées | 43 revendications DDoS Keymous+ | Hypothèse : méthode non établie |
+| [T1496.001 - Compute Hijacking](https://attack.mitre.org/techniques/T1496/001/) | Charge CPU/GPU anormale + processus inattendu + connexions vers services de minage | CHPC/Lengau : malware de cryptominage confirmé par la réponse parlementaire relayée le 24 août | Comportement lié à l'incident corroboré ; chasse locale à valider |
 
 ## 9. Recommandations par type d'organisation
 
@@ -259,6 +262,7 @@ Le graphique hors DDoS évite que les **43 publications d'un même compte** écr
 | **Campagne DDoS présumée** | WAF/CDN, NetFlow, LB, DNS, SLO/APM | Pic RPS/bande passante + augmentation 429/5xx + dégradation client corrélée temporellement | Distinguer pic légitime, panne applicative, DNS/CDN et attaque réseau ; conserver PCAP/flow. |
 | **Exposition API / stockage cloud** | API gateway, CloudTrail/S3 access logs, CSPM, WAF | Appels anonymes répétés sur exports + lecture d'objets inhabituelle ou politique publique | Contrôler authN/authZ et ACL sans accéder aux données d'autrui ; documenter les réponses attendues. |
 | **Précurseurs de chiffrement** | EDR, Sysmon/auditd, journaux backups, hyperviseur | Modification rapide de milliers de fichiers + suppression de snapshots + désactivation de services | Isoler si corroboré, préserver preuves, évaluer la restauration et le périmètre. |
+| **Détournement des ressources HPC** | Ordonnanceur de calcul, métriques CPU/GPU, EDR Linux, DNS/proxy | Job inconnu ou surconsommation CPU prolongée + exécutable non approuvé + destination sortante inhabituelle | Vérifier propriétaire du job, processus/commandes, périmètre hôte et exfiltration éventuelle sans la présumer. |
 
 **Workflow court de traitement :** **(1)** contextualiser la publication par date/acteur/victime, **(2)** identifier les actifs et comptes potentiellement concernés, **(3)** rechercher une corrélation dans les journaux internes, **(4)** qualifier l'impact métier, **(5)** contenir puis notifier selon le plan de réponse, **(6)** documenter preuves, limites et actions correctives. Les seuils doivent être calibrés sur les comportements habituels ; **un volume isolé n'est pas une preuve d'exfiltration**.
 
@@ -266,26 +270,26 @@ Le graphique hors DDoS évite que les **43 publications d'un même compte** écr
 
 | Échéance | Priorité | Responsable | Livrable vérifiable | Nature |
 |---|---|---|---|---|
-| **0–7 jours** | **P0** | RSSI + IAM + SOC | Inventaire des comptes/identifiants associés à des expositions potentielles, révocation ou rotation ciblée, chasse sur les connexions récentes | Réponse à exposition observée |
-| **0–7 jours** | **P0** | DSI + métiers finance | Validation hors bande des changements de RIB, revue des privilèges ERP et sauvegardes financières | Réponse aux données de paiement documentées |
-| **0–15 jours** | **P1** | Réseau/CDN + SOC | Tableau de bord RPS/5xx/latence et procédure de qualification DDoS avec preuves réseau | Réponse aux campagnes revendiquées |
-| **8–30 jours** | **P1** | DSI + équipes applications | Revue des autorisations API/buckets, contrôles RBAC, inventaire des exports sensibles | Préventif, déclenché par cas d'exposition |
-| **8–30 jours** | **P1** | SOC + antifraude | Deux corrélations en production : exfiltration de données ; modification suspecte de bénéficiaire/paiement | Détection proactive |
-| **31–60 jours** | **P2** | RSSI + responsables de données | Classification des données et revue des délégations à fournisseurs/partenaires | Réduction du risque de chaîne d'approvisionnement |
-| **31–90 jours** | **P2** | DSI + CERT/SOC | Exercices de restauration, tests de segmentation et simulation de crise ransomware/DDoS | Résilience / prévention |
-| **31–90 jours** | **P2** | RSSI + audit interne | Revue des systèmes hérités critiques et matrice de mise à jour/compensation | Retour d'expérience Lengau |
+| **0-7 jours** | **P0** | RSSI + IAM + SOC | Inventaire des comptes/identifiants associés à des expositions potentielles, révocation ou rotation ciblée, chasse sur les connexions récentes | Réponse à exposition observée |
+| **0-7 jours** | **P0** | DSI + métiers finance | Validation hors bande des changements de RIB, revue des privilèges ERP et sauvegardes financières | Réponse aux données de paiement documentées |
+| **0-15 jours** | **P1** | Réseau/CDN + SOC | Tableau de bord RPS/5xx/latence et procédure de qualification DDoS avec preuves réseau | Réponse aux campagnes revendiquées |
+| **8-30 jours** | **P1** | DSI + équipes applications | Revue des autorisations API/buckets, contrôles RBAC, inventaire des exports sensibles | Préventif, déclenché par cas d'exposition |
+| **8-30 jours** | **P1** | SOC + antifraude | Deux corrélations en production : exfiltration de données ; modification suspecte de bénéficiaire/paiement | Détection proactive |
+| **31-60 jours** | **P2** | RSSI + responsables de données | Classification des données et revue des délégations à fournisseurs/partenaires | Réduction du risque de chaîne d'approvisionnement |
+| **31-90 jours** | **P2** | DSI + CERT/SOC | Exercices de restauration, tests de segmentation et simulation de crise ransomware/DDoS | Résilience / prévention |
+| **31-90 jours** | **P2** | RSSI + audit interne | Revue des systèmes hérités critiques et matrice de mise à jour/compensation | Retour d'expérience Lengau |
 
 **Indicateurs de suivi proposés :** % d'identités privilégiées couvertes par MFA, délai de révocation après exposition, taux de succès des restaurations testées, couverture des logs applicatifs et cloud, disponibilité mesurée par parcours utilisateur, délai de qualification d'un signal de fuite, part des paiements sensibles revus hors bande. Aucun chiffre de performance interne n'est présumé pour des organisations non observées directement.
 
 ## 12. Conclusion - ce que mai change pour la défense
 
-La hausse de **64 à 107 observations canoniques** ne doit pas être présentée comme un bond équivalent des intrusions réelles. Elle révèle trois phénomènes documentés : **l'intensification des revendications de disponibilité visant le Maroc**, la **circulation de jeux de données administratifs et financiers sensibles**, et des **incidents institutionnellement confirmés** dont la nature précise peut être moins spectaculaire que les intitulés des groupes criminels.
+La hausse de **64 à 107 observations documentaires** ne doit pas être présentée comme un bond équivalent des intrusions réelles. Le corpus conserve par ailleurs **deux notices du 23 mai liées à un même jeu de données présumé de 8 440 lignes** ; cet éventuel doublon est signalé et non masqué. Elle révèle trois phénomènes documentés : **l'intensification des revendications de disponibilité visant le Maroc**, la **circulation de jeux de données administratifs et financiers sensibles**, et des **incidents institutionnellement confirmés** dont la nature précise peut être moins spectaculaire que les intitulés des groupes criminels.
 
 La réponse la plus utile pour les directions n'est pas de suivre uniquement les noms d'acteurs. Elle consiste à **réduire la valeur réutilisable des données exposées, protéger les flux financiers, renforcer les identités et prouver la résilience des services**. Pour les SOC, la priorité est une corrélation reproductible entre renseignement externe et télémétrie interne ; sans cette jonction, une revendication reste une publication, et non une chaîne d'attaque attribuable.
 
-**AFRINTEL - African Cyber Threat Intelligence**  
-**Périmètre :** 54 pays africains · **Diffusion :** TLP:CLEAR · **Méthode :** OSINT-safe, traçabilité des échantillons et contrôle des incertitudes.  
-**Dépôt :** [Hatchepsoute/AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL) · **Fiches :** [victims_FR.md](./victims_FR.md) · **Contrôle QA :** [VALIDATION.md](./VALIDATION.md).
+**AFRINTEL - African Cyber Threat Intelligence**<br>
+**Périmètre :** 54 pays africains · **Diffusion :** TLP:CLEAR · **Méthode :** OSINT-safe, traçabilité des échantillons et contrôle des incertitudes.<br>
+**Dépôt :** [Hatchepsoute/AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL) · **Fiches :** [victims_FR.md](./victims_FR.md).
 
 ### Sources externes de corroboration et référentiels
 

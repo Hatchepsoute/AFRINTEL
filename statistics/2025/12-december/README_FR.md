@@ -1,94 +1,97 @@
 # Statistiques CTI AFRINTEL - Décembre 2025
 
-👉🏾 [English version](./README.md)
+Source de vérité : couple validé `victims_FR.md` / `victims.md`.
 
-Cette fiche reprend les **20 cartes** du couple validé de fichiers victimes mensuels. Les publications restent des revendications lorsqu'aucune confirmation indépendante n'est disponible.
+Cette fiche reprend les **21 fiches** du corpus victimes. Les chiffres décrivent la visibilité documentée par AFRINTEL.
 
 | Indicateur | Valeur |
 |---|---:|
-| Total incidents | 20 |
+| Total incidents | 21 |
+| Pays / portées géographiques | 11 |
+| Secteurs distincts | 19 |
+| Acteurs / sources distincts | 15 |
+
+## Types
+
+| Type | Fiches |
+|---|---:|
 | Ransomware | 14 |
-| Data Leak | 6 |
-| Access Sale | 0 |
+| Fuite de données | 7 |
+| Vente d'accès | 0 |
 | DDoS | 0 |
-| Defacement | 0 |
-| Account Takeover | 0 |
-| System Intrusion | 0 |
+| Défacement | 0 |
+| Prise de contrôle de compte | 0 |
+| Intrusion système | 0 |
 | Malware | 0 |
-| Operational Fraud | 0 |
-| Pays | 10 |
-| Libellés sectoriels bruts | 18 |
-| Labels Acteur / Groupe | 13 |
+| Fraude opérationnelle | 0 |
+| **Total** | **21** |
 
-## 1. Pays
+## Pays
 
-| Pays | Incidents |
+| Pays / portée | Fiches |
 |---|---:|
 | 🇪🇬 Égypte | 6 |
+| 🇹🇳 Tunisie | 4 |
 | 🇿🇦 Afrique du Sud | 3 |
-| 🇹🇳 Tunisie | 3 |
-| 🇿🇲 Zambie | 1 |
-| 🇬🇭 Ghana | 1 |
-| 🇳🇬 Nigeria | 1 |
-| 🇿🇼 Zimbabwe | 1 |
+| 🇨🇮 Côte d'Ivoire | 1 |
 | 🇩🇿 Algérie | 1 |
-| 🇲🇦 Maroc | 1 |
+| 🇬🇭 Ghana | 1 |
 | 🇰🇪 Kenya | 1 |
-| **Total** | **20** |
+| 🇲🇦 Maroc | 1 |
+| 🇳🇬 Nigeria | 1 |
+| 🇿🇲 Zambie | 1 |
+| 🇿🇼 Zimbabwe | 1 |
 
-## 2. Secteur normalisé
+## Secteurs
 
-| Secteur | Incidents |
+| Secteur | Fiches |
 |---|---:|
-| Finance / Banque | 4 |
-| Santé / Médical | 3 |
-| Gouvernement / Administration | 2 |
+| Santé | 2 |
 | Éducation / Université | 2 |
-| Industrie / Fabrication | 2 |
-| Technologie / IT | 1 |
-| Agriculture / Agro-industrie | 1 |
-| Non précisé | 1 |
-| Construction / Immobilier | 1 |
-| Énergie / Services publics | 1 |
+| Administration Publique / Gouvernement Local. | 1 |
+| Administrations publiques (Régulation financière) | 1 |
+| Agriculture / Développement rural / Administration publique | 1 |
+| Agroalimentaire / Boissons (Alcoolisées et non alcoolisées). | 1 |
+| Assurances | 1 |
+| Assurances (Santé) | 1 |
 | Commerce / E-commerce | 1 |
-| **Total** | **20** |
+| Distribution automobile / Équipement de diagnostic | 1 |
+| Développement Immobilier / Gestion de Parcs Industriels et de Loisirs. | 1 |
+| Finance | 1 |
+| Finance / Commerce | 1 |
+| Industrie / Fabrication de produits électriques et plastiques | 1 |
+| Industrie manufacturière (Plastiques) | 1 |
+| Santé / Association Médicale / Éducation. | 1 |
+| Santé / E-commerce pharmaceutique | 1 |
+| Technologies | 1 |
+| Énergie / Transport d'électricité (Infrastructure critique) | 1 |
 
-## 3. Acteur / Groupe
+## Acteurs / sources
 
-| Acteur / Groupe | Incidents |
+| Acteur / source | Fiches |
 |---|---:|
-| qilin | 3 |
 | lockbit5 | 3 |
+| qilin | 3 |
 | dragonforce | 2 |
 | nova | 2 |
-| ransomhouse | 1 |
-| kazu | 1 |
+| Ahlul Sahara | 1 |
+| AshleyWood2022 | 1 |
+| camillabf | 1 |
 | devman | 1 |
 | direwolf | 1 |
-| Habibi | 1 |
 | GhostVector | 1 |
-| camillabf | 1 |
+| Habibi | 1 |
 | KaruHunters | 1 |
+| kazu | 1 |
 | LindaBF | 1 |
+| ransomhouse | 1 |
 
-## 4. Types
+## Statuts
 
-| Type | Incidents |
-|---|---:|
-| Ransomware | 14 |
-| Data Leak | 6 |
-| **Total** | **20** |
-
-## 5. Maturité des preuves
-
-| Regroupement de statut | Incidents |
+| Statut | Fiches |
 |---|---:|
 | Claim - Unverified | 13 |
-| Claim - Data Sample Published | 6 |
-| **Total** | **20** |
-
-## Lecture CTI
-
-Le volume mensuel mesure la visibilité dans les sources examinées et non l'ensemble des incidents réellement survenus. L'ajout de Yalla Tager porte le total de l'Égypte en décembre de 5 à 6 et les Data Leak de 4 à 6.
+| Claim - Data Sample Published | 7 |
+| Data Fully Published | 1 |
 
 **AFRINTEL** - TLP:CLEAR

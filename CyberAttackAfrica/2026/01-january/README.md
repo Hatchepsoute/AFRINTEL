@@ -4,19 +4,19 @@
 ## Cyber threats targeting African organizations, January 2026
 
 **Audience:** CISOs, risk committees, SOC/CERT leads and business continuity managers.  
-**Period:** January 1–31, 2026, based on documented publications and events.  
+**Period:** January 1-31, 2026, based on documented publications and events.
 **Edition:** November 6, 2026 | **Distribution:** TLP:CLEAR.  
-👉🏾 [Version française](./README_FR.md) | [Detailed records in English](./victims.md) | [French records](./victims_FR.md)
+👉🏾 [Version française](./README_FR.md) | [Detailed records in English](./victims.md) | [French records](./victims_FR.md) | [Weekly report](./WEEKLY_REPORT_JANUARY_2026_EN.md)
 
 > **Evidence method - how to read this report.** AFRINTEL consolidates the OSINT investigations and post-disclosure examinations already documented in its victim records. **For ransomware listings**, analysts review the post and, when published, file inventories, previews and released documents to characterise the exposure. **For data leaks**, available samples are assessed for structure, fields, consistency, observed volume and business impact. Readers can therefore distinguish material actually reviewed from volumes merely claimed. First-party confirmations are identified separately; intrusion, encryption and full exfiltration are not assumed without supporting evidence.
 
 ## 1. Executive summary
 
-AFRINTEL's January 2026 corpus contains **31 documented observations across 13 African countries**: **19 ransomware records (61.3%)**, **10 data-leak records (32.3%)**, **one access-sale offer** and **one coordinated defacement** (3.2% each). These figures reflect the visibility of documented threats in monitored sources, rather than national breach rates or an exhaustive census of attacks.
+AFRINTEL's January 2026 corpus contains **30 documented observations across 13 African countries**: **18 ransomware records (60.0%)**, **10 data-leak records (33.3%)**, **one access-sale offer** and **one coordinated defacement** (3.3% each). These figures reflect the visibility of documented threats in monitored sources, rather than national breach rates or an exhaustive census of attacks.
 
-**South Africa (6)** has the largest number of records, followed by **Kenya (5)**, **Egypt (4)** and **Algeria (4)**. Together they account for **19 of 31 records (61.3%)**. The largest normalized sector groups are finance and related services (6), industry and engineering (5), government and public administration (4), and transportation and logistics broadly defined (4). These risks reach beyond IT operations, with potential effects on payments, public services, digital identity and supplier relationships.
+**South Africa (6)** has the largest number of records, followed by **Kenya (4)**, **Egypt (4)** and **Algeria (4)**. Together they account for **18 of 30 records (60.0%)**. The largest normalized sector groups are finance and related services (6), industry and engineering (5), government and public administration (4), and transportation and logistics broadly defined (4). These risks reach beyond IT operations, with potential effects on payments, public services, digital identity and supplier relationships.
 
-Two ransomware labels stand out: **TheGentlemen (6 publications)** and **tengu (5)**, representing **11 of 19 ransomware entries (57.9%)**. Concentrated publication activity does not by itself prove a coordinated campaign or a measurable increase in operational capability. Sensitive data publications also concern Ghanaian waste-billing platform Nerasolgh, payment configuration material attributed to PixPay in Senegal and PAYGO financing records associated with Kenya.
+Two ransomware labels stand out: **TheGentlemen (6 publications)** and **tengu (5)**, representing **11 of 18 ransomware entries (61.1%)**. Concentrated publication activity does not by itself prove a coordinated campaign or a measurable increase in operational capability. Sensitive data publications also concern Ghanaian waste-billing platform Nerasolgh, payment configuration material attributed to PixPay in Senegal and PAYGO financing records associated with Kenya.
 
 **South Africa's Land Bank** is the most clearly confirmed ransomware incident in the monthly set. Public reporting describes encryption affecting some devices and exfiltration of files. Several other entries are supported by ransomware listings, file inventories or samples, while their full operational extent remains unknown. For boards and CISOs, the key priorities are to **sustain critical operations, prevent fraud and demonstrate rapid containment when credentials or sensitive information are exposed**.
 
@@ -26,28 +26,23 @@ Two ransomware labels stand out: **TheGentlemen (6 publications)** and **tengu (
 
 | Indicator | December 2025, recounted records | January 2026 | Provisional change |
 |---|---:|---:|---:|
-| Total records | 20 | **31** | **+11 (+55.0%)** |
-| Ransomware | 14 | **19** | +5 (+35.7%) |
+| Total records | 20 | **30** | **+10 (+50.0%)** |
+| Ransomware | 14 | **18** | +4 (+28.6%) |
 | Data Leak | 6 | **10** | +4 (+66.7%) |
 | Access Sale | 0 | **1** | +1 (new) |
-| DDoS | 0 | **0** | 0 (stable) |
 | Defacement | 0 | **1** | +1 (new) |
-| Account Takeover | 0 | **0** | 0 (stable) |
-| System Intrusion | 0 | **0** | 0 (stable) |
-| Malware | 0 | **0** | 0 (stable) |
-| Operational Fraud | 0 | **0** | 0 (stable) |
 
 **CISO interpretation:** growth in recorded entries may reflect retrospective additions, broader coverage, new source availability and repeat publications. It does not establish a 55% increase in real intrusions across Africa.
 
 ## 2. Scope, methodology and limitations
 
-Monitoring covers all **54 African countries**; an entry must have an explicit African organizational, operational or data nexus. The source corpus comprises the supplied January [victims_FR.md](./victims_FR.md) and [victims.md](./victims.md). Structured values were normalized using the French file, with **31 matching cards in the same order** in the English file. Statistics were recalculated from the individual records, not copied from their headers or the eight supplied charts.
+Monitoring covers all **54 African countries**; an entry must have an explicit African organizational, operational or data nexus. The source corpus comprises the supplied January [victims_FR.md](./victims_FR.md) and [victims.md](./victims.md). Structured values were normalized using the French file, with **30 matching cards in the same order** in the English file. Statistics were recalculated from the individual records, not copied from their headers or the eight supplied charts.
 
 Each record is counted **once** under one primary type and country. Other countries referenced in the Kenyan PAYGO archive are not counted as separately identified victims. Many record dates are **publication dates**, not established dates of initial compromise. BazookaEgy, for example, is a January 2026 publication whose relationship to an older leak is unresolved.
 
 The victim records document post-disclosure reviews of ransomware leak sites, criminal forums, file inventories and available samples, supplemented by independent reporting where relevant. This edition consolidates those **documented AFRINTEL sample examinations**, stating the specific material reviewed in each case; it does not claim to have conducted a fresh forensic examination of victim infrastructure. Case-level evidence and scope remain traceable to the victim records.
 
-**Data-quality finding.** The supplied January headings contain inconsistent, outdated figures (21 in English and 23 in French), with an old breakdown of 17 + 2 + 1 + 1 = 21. The supplied charts cover 23 entries, versus **31 actual victim cards**. All graphics in this edition were rebuilt. Some older cards omit `Incident type`, `Confidence level` or `Impact level`; the primary type can be inferred where a ransomware-group label makes it explicit, but no missing confidence or impact values have been fabricated.
+**Data-quality finding.** The supplied January headings initially contained inconsistent, outdated figures (21 in English and 23 in French), with an old breakdown of 17 + 2 + 1 + 1 = 21. The supplied charts also covered 23 entries, versus **30 actual victim cards** after exclusion of the uncorroborated Kenya water-authority claim. The graphics in this edition were recalculated. All 30 cards now contain the structured `Incident type`, `Confidence level` and `Impact level` fields.
 
 ### AFRINTEL post-disclosure validation protocol
 
@@ -68,18 +63,18 @@ AFRINTEL's analysis begins **after an actor post or reported disclosure has been
 
 | Category | Records | Share |
 |---|---:|---:|
-| Ransomware | **19** | **61.3%** |
+| Ransomware | **18** | **60.0%** |
 | Data Leak | **10** | **32.3%** |
 | Access Sale | **1** | **3.2%** |
 | Defacement | **1** | **3.2%** |
-| **Total** | **31** | **100%** |
+| **Total** | **30** | **100%** |
 
 ![January 2026 incident category breakdown](./assets/incident_types_january_2026_EN.png)
 
 ```mermaid
 pie showData
     title AFRINTEL records by category - January 2026
-    "Ransomware" : 19
+    "Ransomware" : 18
     "Data Leak" : 10
     "Access Sale" : 1
     "Defacement" : 1
@@ -92,7 +87,7 @@ A ransomware leak-site listing does not automatically establish encryption, exfi
 | Country | Ransomware | Data Leak | Access Sale | Defacement | Total |
 |---|---:|---:|---:|---:|---:|
 | 🇿🇦 South Africa | 6 | 0 | 0 | 0 | **6** |
-| 🇰🇪 Kenya | 4 | 1 | 0 | 0 | **5** |
+| 🇰🇪 Kenya | 3 | 1 | 0 | 0 | **4** |
 | 🇩🇿 Algeria | 1 | 3 | 0 | 0 | **4** |
 | 🇪🇬 Egypt | 3 | 1 | 0 | 0 | **4** |
 | 🇲🇦 Morocco | 1 | 2 | 0 | 0 | **3** |
@@ -104,7 +99,7 @@ A ransomware leak-site listing does not automatically establish encryption, exfi
 | 🇸🇳 Senegal | 0 | 1 | 0 | 0 | 1 |
 | 🇹🇿 Tanzania | 1 | 0 | 0 | 0 | 1 |
 | 🇹🇬 Togo | 0 | 0 | 1 | 0 | 1 |
-| **Total** | **19** | **10** | **1** | **1** | **31** |
+| **Total** | **18** | **10** | **1** | **1** | **30** |
 
 ![Country distribution, January 2026](./assets/countries_january_2026_EN.png)
 
@@ -112,17 +107,16 @@ A ransomware leak-site listing does not automatically establish encryption, exfi
 |---|---|---:|---:|
 | North Africa | Algeria, Egypt, Morocco, Tunisia | 13 | 41.9% |
 | Southern Africa | South Africa, Mozambique | 7 | 22.6% |
-| East Africa | Kenya, Tanzania | 6 | 19.4% |
+| East Africa | Kenya, Tanzania | 5 | 16.7% |
 | West Africa | Ghana, Niger, Senegal, Togo | 4 | 12.9% |
 | Indian Ocean | Mauritius | 1 | 3.2% |
-| Central Africa | No record in this corpus | 0 | 0% |
-| **Total** | **13 countries** | **31** | **100%** |
+| **Total** | **13 countries** | **30** | **100%** |
 
 The rankings reflect **observations available to AFRINTEL**, not an objective league table of national cyber risk. Kenyan and South African cases involve public and financial services; Algerian publications notably touch identity documents, insurance, sports administration and industrial systems.
 
 ## 5. Sector exposure and business implications
 
-The 31 raw sector labels have been **normalized into 13 business-sector groups**, with one primary group per record. The underlying cards retain the original organizational context.
+The 30 raw sector labels have been **normalized into 13 business-sector groups**, with one primary group per record. The underlying cards retain the original organizational context.
 
 | Sector family | Records | Share | Business exposure |
 |---|---:|---:|---|
@@ -130,7 +124,7 @@ The 31 raw sector labels have been **normalized into 13 business-sector groups**
 | Industry, engineering and construction | **5** | **16.1%** | production stoppage, payroll and contract disclosures |
 | Government and public administration | **4** | **12.9%** | public service disruption, institutional impersonation |
 | Transport, logistics, aviation and tourism | **4** | **12.9%** | supply-chain disruption, supplier fraud |
-| Public utilities: water and waste | 2 | 6.5% | service continuity, billing records |
+| Public utilities: water and waste | 1 | 3.3% | service continuity, billing records |
 | Healthcare and pharmacies | 2 | 6.5% | clinical continuity, sensitive applications |
 | Commerce and distribution | 2 | 6.5% | customer data, transactions and sales |
 | Technology and cybersecurity | 1 | 3.2% | technical environments |
@@ -139,7 +133,7 @@ The 31 raw sector labels have been **normalized into 13 business-sector groups**
 | Insurance and assistance | 1 | 3.2% | claims fraud and document abuse |
 | Mining and mineral resources | 1 | 3.2% | ERP, staff data and backups |
 | Postal services | 1 | 3.2% | identity impersonation and citizen services |
-| **Total** | **31** | **100%** | |
+| **Total** | **30** | **100%** | |
 
 ![Normalized sectors, January 2026](./assets/sectors_january_2026_EN.png)
 
@@ -152,9 +146,9 @@ The 31 raw sector labels have been **normalized into 13 business-sector groups**
 | **TheGentlemen** | **6** | Listings in South Africa (3), Egypt (1), Kenya (1) and Mauritius (1). |
 | **tengu** | **5** | Listings in Morocco, Kenya, Tunisia, Egypt and Algeria. |
 | **dark07x** | **2** | Publications attributed to the LRFA/Foot'Up and Inter Partner Assistance in Algeria. |
-| Other one-off labels | 15 | One record each; some denote a poster or republisher rather than the intruder. |
+| Other one-off labels | 14 | One record each; some denote a poster or republisher rather than the intruder. |
 | No reliable human attribution | 3 | Constantia Pharmacy, Land Bank and the Niger defacement. `Want_to_cry` names observed ransomware, not an identified human operator. |
-| **Total** | **31** | **Publication accounts must not be conflated with attributed intrusion groups.** |
+| **Total** | **30** | **Publication accounts must not be conflated with attributed intrusion groups.** |
 
 ![Actor and attribution breakdown](./assets/actors_january_2026_EN.png)
 
@@ -162,13 +156,13 @@ The 31 raw sector labels have been **normalized into 13 business-sector groups**
 
 | Status in source records | Count | Meaning |
 |---|---:|---|
-| `Claim - Unverified` | 15 | Claim or listing; underlying compromise not independently established. |
+| `Claim - Unverified` | 14 | Claim or listing; underlying compromise not independently established. |
 | `Claim - Data Sample Published` | 11 | A sample is displayed or available; the full claim may remain unverified. |
 | `Data Fully Published` | 2 | Data described as published; completeness is not automatically verified. |
 | `Corroborated` | 1 | Converging evidence regarding Constantia Pharmacy. |
 | `Victim Confirmed` | 1 | Land Bank publicly acknowledged the incident. |
 | `Under Investigation` (legacy term) | 1 | Coordinated Niger defacement remains under investigation. |
-| **Total** | **31** | |
+| **Total** | **30** | |
 
 ![Evidence status, January 2026](./assets/statuses_january_2026_EN.png)
 
@@ -178,7 +172,7 @@ The 31 raw sector labels have been **normalized into 13 business-sector groups**
 
 | Area | CISO monitoring priority | Corpus-based rationale |
 |---|---|---|
-| 🔴 South Africa, Kenya | High | Six and five entries involving financial, public and industrial systems. |
+| 🔴 South Africa, Kenya | High | Six and four entries involving financial, public and industrial systems. |
 | 🟠 Algeria, Egypt, Morocco | Reinforced | Industrial and identity-document publications, data exposure or alleged sales. |
 | 🟡 Other countries represented | Targeted | Case-specific prioritization according to sensitivity and evidence quality. |
 
@@ -232,7 +226,7 @@ A **January 4** case describes a coordinated political **defacement** of officia
 
 ## 8. Trends and priority intelligence gaps
 
-**Extortion is the dominant publication source.** The 19 ransomware entries span many sectors. TheGentlemen and tengu each list victims across several markets, but the records do not establish a common intrusion infrastructure, initial access vector or single coordinated campaign.
+**Extortion is the dominant publication source.** The 18 ransomware entries span many sectors. TheGentlemen and tengu each list victims across several markets, but the records do not establish a common intrusion infrastructure, initial access vector or single coordinated campaign.
 
 **Data-leak risk goes beyond contact lists.** At varying evidence levels, Nerasolgh, PAYGO, PixPay, LRFA/Foot'Up and Inter Partner Assistance involve payment information, government documents, application tokens or location data. Fraud risk may outlast the remediation of an underlying technical flaw.
 
@@ -276,12 +270,12 @@ The following mappings support **threat hunting and detection design**. They are
 
 | Timeline | Priority | Required action | Evidence of completion |
 |---|---|---|---|
-| **0–72 hours** | P0 | Review privileged access to identity, VPN, ERP, payment and backup environments; investigate any known secret exposure | Critical account inventory, reviewed risky sessions, exposure-based rotation records |
-| **0–72 hours** | P0 | Verify critical backups, immutability/isolation and recovery capability outside production | Restore logs, measured RPO/RTO, successful recovery test |
-| **7–30 days** | P1 | Deploy or tune SOC scenarios for ransomware, bulk extraction, privileged accounts, web integrity and supplier fraud | Active rules, dashboards, validation tests, escalation process |
-| **7–30 days** | P1 | Review SaaS vendors and partners hosting customer, billing, finance or sensitive documents | Data-flow map, accountable data owners, IAM and storage reviews |
-| **30–90 days** | P1 | Run a cyber crisis exercise combining encryption, data leak and payment fraud | Cross-functional exercise, tracked lessons and decisions |
-| **30–90 days** | P2 | Operationalize CTI case tracking across SIEM, OpenCTI and TheHive without sharing secrets or raw personal data | Traceable observations, statuses and case handling times |
+| **0-72 hours** | P0 | Review privileged access to identity, VPN, ERP, payment and backup environments; investigate any known secret exposure | Critical account inventory, reviewed risky sessions, exposure-based rotation records |
+| **0-72 hours** | P0 | Verify critical backups, immutability/isolation and recovery capability outside production | Restore logs, measured RPO/RTO, successful recovery test |
+| **7-30 days** | P1 | Deploy or tune SOC scenarios for ransomware, bulk extraction, privileged accounts, web integrity and supplier fraud | Active rules, dashboards, validation tests, escalation process |
+| **7-30 days** | P1 | Review SaaS vendors and partners hosting customer, billing, finance or sensitive documents | Data-flow map, accountable data owners, IAM and storage reviews |
+| **30-90 days** | P1 | Run a cyber crisis exercise combining encryption, data leak and payment fraud | Cross-functional exercise, tracked lessons and decisions |
+| **30-90 days** | P2 | Operationalize CTI case tracking across SIEM, OpenCTI and TheHive without sharing secrets or raw personal data | Traceable observations, statuses and case handling times |
 
 ### 11.1 Board-level indicators
 

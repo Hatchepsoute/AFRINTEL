@@ -19,6 +19,7 @@ Juin 2026 compte **47 incidents documentés** : **22 fuites de données**, **20 
 
 #### 🇬🇦 Gabon - Finam Gabon
 - **Date de publication initiale :** 01 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** DeadLock
@@ -43,6 +44,7 @@ Juin 2026 compte **47 incidents documentés** : **22 fuites de données**, **20 
 
 #### 🇳🇬 Nigeria - Fidelity Pension Managers
 - **Date de publication initiale :** 01 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** DeadLock
@@ -58,6 +60,7 @@ Juin 2026 compte **47 incidents documentés** : **22 fuites de données**, **20 
 
 #### 🇿🇦 Afrique du Sud - African National Congress (ANC)
 - **Date de publication initiale :** 02 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** Black X
@@ -81,6 +84,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
 #### 🇪🇬 Égypte - Bouri Group
 - **Date de publication initiale :** 04 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** TheGentlemen
@@ -96,6 +100,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
 #### 🇿🇦 Afrique du Sud - Access Dental
 - **Date de publication initiale :** 05 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** WorldLeaks
@@ -109,6 +114,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
 #### 🇿🇼 Zimbabwe - First Mutual Holdings
 - **Date de publication initiale :** 05 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** Nightspire
@@ -158,6 +164,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
 #### 🇲🇦 Maroc - IMT (Institut des Mines de Touissit) [Fuite de données]
 - **Date de publication initiale :** 06 juin 2026
+- **Type d'incident:** Data Leak
 
 
 - **Acteur / Groupe :** anisanas2
@@ -225,6 +232,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
 #### 🇪🇬 Égypte - Base de données des pilotes égyptiens [Fuite / Vente de base de données]
 - **Date de publication initiale :** 06 juin 2026
+- **Type d'incident :** Data Leak
 
 
 - **Acteur / Groupe :** Xyphorix
@@ -259,14 +267,15 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
 - **Analyse :**
 
-  AFRINTEL a examiné une publication du 8 juin 2026 par l'acteur nouvellement inscrit KLINZO007 (compte créé en juin 2026, faible réputation), intitulée « [MASSIVE LEAK] Tunisia Tayara.tn Database - 2 Million Lines | [4GB Full Dump] ». L'acteur affirme détenir la base de données complète des utilisateurs de Tayara.tn : plus de 2 000 000 de lignes, un dump brut de 4 Go, contenant noms complets, numéros de téléphone mobile des utilisateurs actifs, adresses email, mots de passe hachés, titres et descriptions d'annonces (véhicules, immobilier, emploi), prix affichés vérifiés et une couverture complète des catégories/localisations à l'échelle nationale. Plutôt qu'un lien de téléchargement public, la publication indique que le dump est « prêt à envoyer » sur demande via un contact Telegram et TOX, et inclut un court échantillon de données brutes directement dans le fil.
+  AFRINTEL a examiné une publication du 8 juin 2026 par l'acteur nouvellement inscrit KLINZO007 (compte créé en juin 2026, faible réputation), intitulée « [MASSIVE LEAK] Tunisia Tayara.tn Database - 2 Million Lines | [4GB Full Dump] ». L'acteur affirme détenir la base de données complète des utilisateurs de Tayara.tn : plus de 2 000 000 de lignes et un dump brut de 4 Go contenant des champs d'identité, de contact, d'annonces et liés à l'authentification. La publication indique que le dump serait transmis sur demande et inclut un court échantillon de données brutes directement dans le fil. Aucun compte ni secret n'est reproduit dans ce corpus.
 
-  AFRINTEL a examiné de façon indépendante l'échantillon publié. Il se compose d'enregistrements utilisateurs structurés incluant des identifiants internes à la plateforme et au groupe (reliant chaque compte au système d'identité utilisateur partagé d'Adevinta), des horodatages de création de compte, un historique conservé des changements d'état antérieurs par compte (anciens noms affichés, emails et numéros de téléphone), des URL d'avatar, des numéros de téléphone, et des mots de passe hachés et salés (pbkdf2-sha256). Fait notable, un sous-ensemble des enregistrements examinés contient en outre du matériel de clés cryptographiques complet de type RSA (privée et publique) intégré directement dans l'enregistrement utilisateur, associé à une fonctionnalité cryptographique propre au compte ; l'exposition de ce matériel de clés constitue un risque significatif en soi, indépendamment de la robustesse des mots de passe, car elle pourrait permettre une usurpation d'identité ou le déchiffrement de tout élément sécurisé par les clés concernées. Un enregistrement examiné contenait également une charge utile de type cross-site scripting stockée à la place d'un nom affiché, indiquant soit une attaque historique persistée sans assainissement contre la plateforme, soit une contamination liée à un scan automatisé.
+  AFRINTEL a examiné de façon indépendante l'échantillon publié. Il contient des enregistrements utilisateurs structurés, des métadonnées de comptes, un historique de profils et des éléments liés à l'authentification. L'échantillon comprend également du matériel nécessitant une revue immédiate des secrets et de l'intégrité applicative, mais aucune valeur sensible ni aucun enregistrement individuel n'est reproduit ici. Un enregistrement examiné contenait une charge utile possiblement liée à un XSS stocké ; cet élément est traité comme un indicateur de vérification défensive, et non comme la preuve d'une exploitation active.
 
-  La correspondance exacte entre la description de l'acteur et l'échantillon examiné de façon indépendante, ainsi que la plausibilité et la cohérence interne des enregistrements, justifient un niveau de confiance très élevé. Compte tenu de la combinaison de données d'identité complètes, de mots de passe hachés et de matériel de clés privées par compte à l'échelle d'une plateforme nationale, AFRINTEL évalue l'impact de cet incident au Niveau 4. AFRINTEL ne reproduit aucun nom d'utilisateur, numéro de téléphone, adresse email, mot de passe haché, clé cryptographique ni enregistrement issu des éléments examinés.
+  La correspondance exacte entre la description de l'acteur et l'échantillon examiné de façon indépendante, ainsi que la plausibilité et la cohérence interne des enregistrements, justifient un niveau de confiance très élevé. La combinaison de données d'identité et d'éléments liés à l'authentification justifie un impact de Niveau 4. AFRINTEL ne reproduit aucun nom, numéro de téléphone, adresse email, identifiant, secret, matériel cryptographique ni enregistrement issu des éléments examinés.
 
 #### 🇿🇦 Afrique du Sud - Armée sud-africaine (SANDF) [Fuite de document classifié - Préparation au maintien de l'ordre]
 - **Date de publication initiale :** 08 juin 2026
+- **Type d'incident :** Data Leak
 
 
 - **Acteur / Groupe :** mosad
@@ -319,6 +328,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
 #### 🇳🇬 Nigéria - Jeroid.co [Fuite / Vente de base de données]
 - **Date de publication initiale :** 10 juin 2026
+- **Type d'incident :** Data Leak
 
 
 - **Acteur / Groupe :** burti
@@ -344,6 +354,7 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
 #### 🇿🇦 Afrique du Sud - UNISA (University of South Africa) [Fuite de données - Support technique]
 - **Date de publication initiale :** 10 juin 2026
+- **Type d'incident:** Data Leak
 
 
 - **Acteur / Groupe :** GOD User 
@@ -353,15 +364,15 @@ La cohérence et le volume des fichiers renforcent la crédibilité d’une exfi
 
 - **Description :**
   Publication d'une base de données SQL complète du système de support technique de l'UNISA, exposant les informations des clients, techniciens, incidents et enregistrements de produits. La fuite, datée du 10 juin 2026, contient un dump de la base `tech_support`. Données exposées :
-  - **Table `customers`** : 52 enregistrements avec identifiants clients, noms, adresses postales complètes, villes, États, codes postaux, pays (principalement US et IN), numéros de téléphone, adresses email et mots de passe en clair.
-  - **Table `technicians`** : 5 techniciens avec noms, emails, téléphones et mots de passe en clair.
+  - **Table `customers`** : 52 enregistrements avec identifiants clients, coordonnées et champs liés à l'authentification.
+  - **Table `technicians`** : 5 enregistrements de techniciens avec coordonnées et champs liés à l'authentification.
   - **Table `incidents`** : 37 tickets de support avec descriptions détaillées des problèmes techniques rencontrés par les clients.
   - **Table `registrations`** : liens entre clients et produits (logiciels de gestion sportive) avec dates d'enregistrement.
   - **Tables `products` et `countries`** : listes de produits et codes pays.
-  - **Table `administrators`** : 2 comptes administrateurs nommés avec mots de passe en clair. AFRINTEL omet volontairement les noms des comptes.
+  - **Table `administrators`** : 2 enregistrements administrateurs avec des champs liés à l'authentification. Les noms de comptes et valeurs secrètes sont volontairement omis par AFRINTEL.
 
 - **Analyse :**
-  La présence de mots de passe en clair dans toutes les tables constitue une faille de sécurité critique. Les données personnelles (noms, adresses, emails, téléphones) exposent les clients et techniciens à des risques d'usurpation d'identité, de phishing ciblé et de réutilisation d'identifiants. Les descriptions d'incidents peuvent révéler des faiblesses logicielles internes. Si les identifiants administrateurs publiés étaient valides au moment de l'exposition, ils auraient pu permettre un accès non autorisé au système de support technique. Bien que la base soit de petite taille (21 ko), la structure et les enregistrements observés justifient une remédiation sans qu'AFRINTEL reproduise les identifiants de comptes.
+  La base contient des éléments liés à l'authentification et des coordonnées sensibles qui justifient une rotation immédiate des secrets, une revue des sessions et une évaluation des notifications. Les données personnelles exposent les clients et techniciens à des risques d'usurpation d'identité, de phishing ciblé et de réutilisation d'identifiants. Les descriptions d'incidents peuvent révéler des faiblesses logicielles internes. La structure observée justifie une remédiation sans reproduire de compte ni de valeur secrète.
 ---
 
 ### 11 juin 2026
@@ -457,6 +468,7 @@ Un incident majeur a perturbé les systèmes de la SEEG, notamment EDAN. Le gouv
 
 #### 🇪🇬 Égypte - Sheraton Miramar Resort El Gouna
 - **Date de publication initiale :** 15 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** Nightspire
@@ -472,6 +484,7 @@ Un incident majeur a perturbé les systèmes de la SEEG, notamment EDAN. Le gouv
 
 #### 🇹🇳 Tunisie - Sumitomo Electric Bordnetze, site SEBN Tunisia / Fejja
 - **Date de publication initiale :** 16 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** Aurora
@@ -513,6 +526,7 @@ Un incident majeur a perturbé les systèmes de la SEEG, notamment EDAN. Le gouv
 
 #### 🇪🇬 Égypte - Great Foods
 - **Date de publication initiale :** 17 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** Lamashtu
@@ -525,6 +539,7 @@ Un incident majeur a perturbé les systèmes de la SEEG, notamment EDAN. Le gouv
 
 #### 🇸🇳 Sénégal - Cour des Comptes du Sénégal
 - **Date de publication initiale :** 17 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** Krybit
@@ -544,6 +559,7 @@ Un incident majeur a perturbé les systèmes de la SEEG, notamment EDAN. Le gouv
 
 #### 🇧🇼 Botswana - Botswana Vaccine Institute (BVI)
 - **Date de publication initiale :** 18 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** LockBit 5
@@ -556,6 +572,7 @@ Un incident majeur a perturbé les systèmes de la SEEG, notamment EDAN. Le gouv
 
 #### 🇿🇦 Afrique du Sud - Grey High School
 - **Date de publication initiale :** 18 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** LockBit 5
@@ -568,6 +585,7 @@ Un incident majeur a perturbé les systèmes de la SEEG, notamment EDAN. Le gouv
 
 #### 🇲🇺 Maurice - Nundun Gopee & Co Ltd
 - **Date de publication initiale :** 18 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** LockBit 5
@@ -583,6 +601,7 @@ Un incident majeur a perturbé les systèmes de la SEEG, notamment EDAN. Le gouv
 
 #### 🇲🇦 Maroc - MUPRAS RAM
 - **Date de publication initiale :** 19 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** Krybit
@@ -637,6 +656,7 @@ Un incident majeur a perturbé les systèmes de la SEEG, notamment EDAN. Le gouv
 
 #### 🇹🇿 Tanzanie - BRELA (Business Registrations and Licensing Agency) [Fuite de données]
 - **Date de publication initiale :** 20 juin 2026
+- **Type d'incident:** Data Leak
 
 
 - **Acteur / Groupe :** hammer
@@ -707,6 +727,7 @@ Un incident majeur a perturbé les systèmes de la SEEG, notamment EDAN. Le gouv
 
 #### 🇳🇬 Nigéria - Armée nigériane (army.mil.ng) [Fuite d'identifiants]
 - **Date de publication initiale :** 21 juin 2026
+- **Type d'incident :** Data Leak
 
 
 - **Acteur / Groupe :** [Citizen] Stunxet
@@ -716,13 +737,14 @@ Un incident majeur a perturbé les systèmes de la SEEG, notamment EDAN. Le gouv
 - **Site web :** [army.mil.ng](https://army.mil.ng)
 
 - **Description :**
-  Fuite publique d'identifiants et de données d'authentification du domaine militaire nigérian `army.mil.ng`. L'ensemble comprend au moins **20+ comptes email uniques** de militaires, avec leurs mots de passe en clair. Les comptes exposés incluent des adresses de haut niveau et divers comptes d'unités/bataillons. Les identifiants ont été capturés depuis les navigateurs Chrome et Edge et incluent des URL de connexion vers la webmail militaire, les portails d'imagerie satellite DigitalGlobe (`securewatch.digitalglobe.com`) et d'autres systèmes internes. L'acteur justifie la fuite par une protestation politique contre la politique antiterroriste du gouvernement.
+  Une publication attribuée à [Citizen] Stunxet revendique l'exposition de données d'authentification associées au domaine militaire nigérian. L'acteur affirme que plus de 20 comptes institutionnels et du matériel issu de navigateurs seraient concernés. Aucun identifiant, mot de passe, chemin de connexion ou nom de service tiers n'est reproduit dans cette fiche publique.
 
 - **Analyse :**
-  Fuite d'une gravité extrême pour la sécurité nationale. Les comptes email militaires avec mots de passe en clair permettent un accès total aux communications internes, aux ordres opérationnels, aux plateformes de partage de renseignement et aux services d'imagerie satellite. Cela facilite l'espionnage, l'usurpation d'identité d'officiers, le sabotage d'opérations et la compromission ultérieure de systèmes classifiés. La présence d'identifiants pour DigitalGlobe (utilisé pour la reconnaissance) est particulièrement alarmante. L'armée nigériane doit immédiatement révoquer tous les mots de passe exposés et mettre en place une authentification multi-facteurs.
+  Il s'agit d'une revendication d'exposition à fort impact pour la sécurité nationale. Si elle était valide au moment de l'observation, elle pourrait faciliter l'usurpation, des accès non autorisés et une compromission secondaire. La réponse appropriée consiste à notifier les responsables par des canaux autorisés, révoquer ou renouveler les secrets concernés, examiner rétrospectivement les authentifications et imposer l'authentification multifacteur. AFRINTEL n'a testé ni utilisé aucun compte.
 
 #### 🇾🇹 Mayotte - Commune de Ouangani
 - **Date de publication initiale :** 21 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** DeadLock
@@ -754,6 +776,7 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 
 #### 🇱🇾 Libye - Central Bank of Libya
 - **Date de publication initiale :** 22 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** Qilin
@@ -769,6 +792,7 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 
 #### 🇰🇪 Kenya - Kenya National Highways Authority (KeNHA)
 - **Date de publication initiale :** 23 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** DeadLock
@@ -807,6 +831,7 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 
 #### 🇹🇳 Tunisie - Centrale Laitière du Cap-Bon (CLC)
 - **Date de publication initiale :** 26 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** SETTRA
@@ -980,6 +1005,7 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 
 #### 🇹🇳 Tunisie - monoprix.tn
 - **Date de publication initiale :** 28 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** Stormous
@@ -992,6 +1018,7 @@ Aucun mot de passe, jeton d’accès, clé API ou indicateur technique de compro
 
 #### 🇿🇦 Afrique du Sud - Fidelity Security Group
 - **Date de publication initiale :** 28 juin 2026
+- **Type d'incident:** Ransomware
 
 
 - **Groupe ransomware :** CMD Organization

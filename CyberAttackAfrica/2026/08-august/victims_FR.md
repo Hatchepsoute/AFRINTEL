@@ -4,7 +4,7 @@
 
 👉🏾 [English version](./victims.md)
 
-> **Règle de comptage :** 28 fiches conservées pour la traçabilité, dont **27 dossiers retenus dans les statistiques canoniques** et **1 dossier en investigation (Yalidine), hors dénominateur**. Une revendication n'est pas une compromission confirmée. L'ordre ci-dessous suit la date de classement de la fiche, pas nécessairement la date réelle d'intrusion.
+> **Règle de comptage :** 28 fiches conservées et retenues dans le corpus canonique. Une revendication n'est pas une compromission confirmée. L'ordre ci-dessous suit la date de publication observée, pas nécessairement la date réelle d'intrusion.
 
 ## Août 2026
 
@@ -708,8 +708,6 @@ last_checked_at: 2026-08-20T13:54:00
 
 ---
 
-> ⚠️ **Dossier sous investigation - exclu du total canonique.**
-
 #### 🇩🇿 Algérie - Yalidine El Djazair Service (`yalidine.com`) - attribution non établie dans les sources publiques
 - **Date de publication initiale :** 20 août 2026
 
@@ -717,7 +715,7 @@ last_checked_at: 2026-08-20T13:54:00
 - **Acteur / Groupe :** TelephoneHooliganism (pseudonyme affiché ; identité réelle et affiliation non vérifiées)
 - **Secteur revendiqué :** Transport / Logistique / Livraison express
 - **Site web revendiqué :** [yalidine.com](https://www.yalidine.com/)
-- **Statut :** Under Investigation
+- **Statut :** Claim - Data Sample Published
 - **Type d'incident :** Data Leak
 - **Niveau de confiance :** Low
 - **Niveau d'impact :** Level 3 (potentiel)
@@ -731,22 +729,34 @@ last_checked_at: 2026-08-20T13:54:00
 
   AFRINTEL a examiné en lecture seule trois fichiers CSV locaux correspondant à ces trois ensembles : **50 lignes de contacts**, **20 lignes de réservations** et **20 lignes de tickets**. Les fichiers sont structurellement lisibles et totalisent **90 lignes tabulaires**, sans que ce total représente 90 personnes uniques. Les fichiers contiennent respectivement **34, 29 et 29 colonnes**. Les champs annoncés incluent notamment des coordonnées, des informations CRM, des réservations, des paiements, des tickets et des éléments de suivi client. Aucune donnée personnelle brute n'est reproduite dans cette fiche.
 
-  **Anomalies observées :** seulement **3 des 50 contacts** portent la valeur `Algeria` ; les autres valeurs de pays sont principalement étrangères. Les villes de réservation observées ne sont pas algériennes. Les `contact_id` utilisés dans les réservations et les tickets ne correspondent pas aux identifiants du fichier Contacts. Les 20 réservations ne contiennent que **2 valeurs distinctes de `booking_id`**, et les 20 tickets ne contiennent que **2 valeurs distinctes de `ticket_id`**. Les relations vers les réservations sont également incohérentes. Les colonnes d'e-mail et de téléphone des tickets sont vides, et plusieurs champs de contacts annoncés sont largement ou entièrement vides. Des problèmes de qualité ou d'encodage apparaissent dans certaines valeurs géographiques.
+  **Analyse approfondie du contenu :** Les 50 contacts contiennent des champs d'identité, coordonnées, adresse, statut commercial, source du contact, niveau de compte, préférences de contact, segmentation, activité commerciale et notes internes. Les 20 réservations couvrent des villes, dates, horaires, services, statuts, paiements, agents et suivis. Les 20 tickets couvrent des catégories de support, priorités, statuts, niveaux d'escalade, délais de réponse, impact client et résolution. Les catégories observées sont donc compatibles avec un CRM et un système de livraison ou de service client, mais elles ne prouvent pas l'utilisation par Yalidine.
+
+  **Qualité et couverture :** Aucun doublon de ligne complet n'a été détecté. Les dates des contacts vont de janvier 2022 à juin 2024 ; les réservations vont d'octobre 2022 à mai 2024 ; les tickets vont de mars 2022 à août 2024, avec des échéances jusqu'en septembre 2024. Les fichiers sont donc des extraits historiques et non une photographie complète d'un système en août 2026. Plusieurs colonnes sont vides ou très incomplètes : les e-mails et téléphones des tickets sont entièrement vides, les pièces jointes ne contiennent qu'une URL répétée, et de nombreux champs CRM ne sont renseignés que pour six contacts.
+
+  **Anomalies observées :** seulement **3 des 50 contacts** portent la valeur `Algeria` ; les autres pays sont principalement étrangers, notamment l'Argentine et le Brésil. Les 20 villes de réservation observées ne sont pas algériennes. Aucun des 20 `contact_id` des réservations ou des tickets ne correspond aux 50 identifiants du fichier Contacts. Les 20 réservations ne contiennent que **2 valeurs distinctes de `booking_id`**, et les 20 tickets seulement **2 valeurs distinctes de `ticket_id`**. Les 20 références de réservation des tickets ne correspondent à aucun identifiant de réservation observé. Ces incohérences relationnelles et géographiques réduisent fortement la confiance dans l'attribution directe à Yalidine.
 
   Les empreintes SHA-256 locales sont : `Contacts_Algeria.csv` **fb87c90da9b74d186b3f5a3bbcef32ff63f177c908c48ad75b44b868e818da51** ; `Booking_History_Algeria.csv` **964fe16260cd75f3994feb0dc9fe0393334ef37eb23e6a22851a6729b2244443** ; `Support_Tickets_Algeria.csv` **49dc113a234b852ba97709a2dfc09ac26dae3b8af5397b543286885e3ac2218d**.
 
-  **Hypothèse :** Le nom de domaine, l'activité de Yalidine et la structure en trois tables sont compatibles avec la revendication. Cette compatibilité est faible : les incohérences géographiques, relationnelles et de remplissage sont plus importantes que les éléments qui relient l'échantillon à Yalidine. L'échantillon peut être synthétique, mal attribué, issu d'un environnement multi-pays, incomplet ou construit à partir d'un modèle CRM générique.
+  **Hypothèses possibles :**
+  * l'échantillon provient réellement d'un environnement lié à Yalidine, mais il est ancien, partiel ou mélangé à des données d'autres marchés ;
+  * les fichiers proviennent d'un environnement multi-pays ou d'un fournisseur SaaS partagé, sans être directement issus de Yalidine ;
+  * l'échantillon est synthétique, de démonstration ou construit à partir d'un modèle CRM générique ;
+  * l'acteur a mal attribué les fichiers au domaine Yalidine ou a réutilisé une structure provenant d'une autre organisation ;
+  * la publication est une offre commerciale exagérée, dans laquelle le volume de 563 000 enregistrements n'est pas représenté par les fichiers fournis.
+
+  Le nom de domaine, l'activité de Yalidine et la structure en trois tables sont compatibles avec la revendication, mais cette compatibilité reste faible face aux incohérences observées.
 
   Un lien avec le cas **Afribaba** du 20 août 2026 est possible uniquement au niveau de la campagne : même acteur affiché, même date de publication et catégories de données proches. Cela peut refléter une campagne ciblant plusieurs organisations algériennes ou la réutilisation d'un modèle de publication. Aucun identifiant, domaine, fichier ou marqueur technique commun n'a été observé ; le lien entre les deux cas n'est donc **pas établi** et ne doit pas entraîner une fusion des victimes.
 
   **Inconnu :** La provenance technique des fichiers, leur date d'extraction, leur authenticité, le nombre de personnes uniques, l'existence d'un accès non autorisé, la méthode d'obtention, l'exhaustivité de la base annoncée, l'impact opérationnel et toute confirmation par Yalidine ou une autorité ne sont pas renseignés dans les sources consultées.
 
-- **Périmètre et limites de l'analyse :** Les trois CSV fournis ont été examinés intégralement en lecture seule, avec contrôle de structure, volumes, champs vides, doublons, relations entre tables, plages temporelles et empreintes SHA-256. Les fichiers restent hors du dépôt. L'analyse ne valide pas les **563 000 enregistrements** revendiqués et ne permet pas d'attribuer l'échantillon à Yalidine.
+- **Périmètre et limites de l'analyse :** Les trois CSV fournis ont été examinés intégralement en lecture seule, soit **90 lignes de données, 92 colonnes cumulées et environ 26 Ko**. Le contrôle a couvert l'encodage, la structure, les volumes, les champs vides, les doublons, les plages temporelles, les relations entre tables et les empreintes SHA-256. Les fichiers restent hors du dépôt. L'analyse ne valide pas les **563 000 enregistrements** revendiqués et ne permet pas d'attribuer l'échantillon à Yalidine.
 
 - **Évaluation des risques :** Si une partie de l'échantillon était authentique, les catégories annoncées pourraient faciliter le phishing ciblé, l'ingénierie sociale, l'usurpation de clients et la fraude liée aux commandes ou aux paiements. Ces risques sont potentiels et ne constituent pas la preuve d'une exposition réelle de la clientèle de Yalidine.
 
 
-- **Sources / Éléments de preuve :** publication et réponse de modération datées du 20 août 2026, captures reçues pour analyse ultérieure ; trois fichiers CSV locaux examinés en lecture seule ; [site officiel de Yalidine](https://www.yalidine.com/). Aucun lien onion, compte criminel, donnée personnelle ou valeur individuelle n'est publié.
+- **Décision de comptage :** la fiche est comptée dans le corpus canonique d'août 2026, car la publication de l'acteur date du 20 août. Le statut `Claim - Data Sample Published` indique qu'un échantillon a été publié ; il ne confirme ni la compromission, ni l'origine Yalidine, ni les 563 000 enregistrements.
+- **Sources / Éléments de preuve :** publication et réponse de modération datées du 20 août 2026, capture reçue pour analyse ; trois fichiers CSV locaux examinés en lecture seule ; [site officiel de Yalidine](https://www.yalidine.com/). Aucun lien onion, compte criminel, donnée personnelle ou valeur individuelle n'est publié.
 - **Vérification publique complémentaire (5 novembre 2026) :** aucune déclaration officielle de Yalidine confirmant ou démentant spécifiquement la revendication du **20 août 2026** n’a été retrouvée dans les sources publiques consultées. Un [article d’Awras publié le 17 décembre 2025](https://www.awras.com/%D9%85%D8%A7-%D8%AD%D9%82%D9%8A%D9%82%D8%A9-%D8%AA%D8%B9%D8%B1%D8%B6-%D8%B4%D8%B1%D9%83%D8%A9-%D9%8A%D8%A7%D9%84%D9%8A%D8%AF%D9%8A%D9%86-%D9%84%D9%84%D8%AA%D9%88%D8%B5%D9%8A%D9%84-%D8%A7%D9%84/) rapporte un **démenti de Yalidine concernant une autre allégation**, antérieure ; il ne saurait être utilisé pour statuer sur la revendication de 2026.
 
 ### 21 août 2026

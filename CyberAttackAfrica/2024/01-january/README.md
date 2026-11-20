@@ -1,6 +1,13 @@
 # AFRINTEL CTI Report - Cyber Threats in Africa - January 2024
 
-👉🏾 [Version française](./README_FR.md)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL) ![Scope](https://img.shields.io/badge/Scope-Africa-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Period](https://img.shields.io/badge/Period-January%202024-blueviolet)
+
+**Audience:** CISOs, SOC/CERT leads, risk committees and business continuity managers.<br>
+**Period:** January 1–31, 2024, based on the documented canonical records.<br>
+**Edition:** audited November 20, 2026 | **Distribution:** TLP:CLEAR.<br>
+👉🏾 [Version française](./README_FR.md) | [Detailed records in English](./victims.md) | [French records](./victims_FR.md)
+
+> **Evidence method.** This report derives from the validated January 2024 victim cards. Claims, victim confirmations, samples and confidence levels remain separate. A criminal publication is not treated as proof of encryption, exfiltration or full compromise without supporting evidence.
 
 ## 1. Executive summary
 
@@ -10,6 +17,10 @@ The most represented countries are **South Africa (4)** and **Cameroon (2)**, fo
 
 The January baseline has been corrected following the retrospective integration of the **Daeyang University Data Leak**, initially published on **January 25, 2024** with a visible SQL sample. The actor claims more than 224,000 SQL lines; AFRINTEL does not equate this figure with a number of affected persons.
 
+### 1.1 Comparison with December 2023
+
+December 2023 is **N/A** in this report because no equivalent retrospective corpus has been validated under the same counting rules. January is therefore an absolute monthly baseline, not a measured month-over-month increase.
+
 ## 2. Methodology
 
 - One canonical incident equals one event retained in the 2024 year.
@@ -18,6 +29,8 @@ The January baseline has been corrected following the retrospective integration 
 - Nine AFRINTEL types are used; attempts are represented by status, never by an `Attempted Attack` type.
 - Coordinated DDoS is counted by campaign.
 - Type, status, confidence, impact, attribution, and source remain separate.
+
+The French and English files contain **8 cards in the same order**. All charts and tables in this report derive from that validated pair; zero-count categories are retained to preserve the nine-type AFRINTEL taxonomy.
 
 ## 3. Incident-type distribution
 
@@ -32,6 +45,10 @@ The January baseline has been corrected following the retrospective integration 
 | System Intrusion | 2 | 25.0% |
 | Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
+| **Total** | **8** | **100.0%** |
+
+![Types d’incident](assets/types_EN.png)
+![Répartition des types](assets/types_pie_EN.png)
 
 ```mermaid
 pie showData
@@ -50,6 +67,10 @@ pie showData
 | Cameroon | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Angola | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Malawi | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **Total** | **8** | **4** | **1** | **1** | **0** | **0** | **0** | **2** | **0** | **0** |
+
+
+![Pays](assets/pays_EN.png)
 
 ## 5. Regional distribution
 
@@ -57,6 +78,11 @@ pie showData
 |---|---:|---:|
 | Southern Africa | 6 | 75.0% |
 | Central Africa | 2 | 25.0% |
+| **Total** | **8** | **100.0%** |
+
+
+![Régions](assets/regions_EN.png)
+![Répartition régions](assets/regions_pie_EN.png)
 
 ## 6. Sector distribution
 
@@ -68,6 +94,11 @@ pie showData
 | Finance / Banking | 1 | 12.5% |
 | Professional / Business Services | 1 | 12.5% |
 | Energy / Utilities | 1 | 12.5% |
+| **Total** | **8** | **100.0%** |
+
+
+![Secteurs](assets/secteurs_EN.png)
+![Répartition secteurs](assets/secteurs_pie_EN.png)
 
 ## 7. Actors / groups
 
@@ -77,6 +108,10 @@ pie showData
 | lockbit3 | 3 | 37.5% |
 | cnHunter | 1 | 12.5% |
 | X0Frankenstein | 1 | 12.5% |
+| **Total** | **8** | **100.0%** |
+
+
+![Acteurs / groupes](assets/acteurs_EN.png)
 
 ## 8. Evidence maturity
 
@@ -85,6 +120,7 @@ pie showData
 | Claim - Unverified | 4 | 50.0% |
 | Confirmed | 3 | 37.5% |
 | Claim - Data Sample Published | 1 | 12.5% |
+| **Total** | **8** | **100.0%** |
 
 ### Confidence
 
@@ -93,6 +129,9 @@ pie showData
 | Low | 4 | 50.0% |
 | Very High | 2 | 25.0% |
 | High | 2 | 25.0% |
+
+![Maturité des preuves](assets/preuves_EN.png)
+
 ## 9. Timeline
 
 ```mermaid

@@ -19,6 +19,7 @@ Mai 2026 comporte **107 fiches documentaires** et **107 publications/observation
 ### 02 mai 2026
 #### 🇪🇬 Égypte - Ministère du Travail (Ministry of Labour / Manpower) [Fuite de données]
 - **Date de publication initiale:** 2 mai 2026
+- **Type d'incident:** Data Leak
 - **Acteur / Groupe :** CrowStealer
 - **Secteur :** Government / Administration
 - **Site web :** [manpower.gov.eg](https://www.manpower.gov.eg/)
@@ -56,6 +57,7 @@ Mai 2026 comporte **107 fiches documentaires** et **107 publications/observation
 
 #### 🇿🇦 Afrique du Sud - Consumer Goods Council of South Africa (CGCSA)
 - **Date de publication initiale:** 3 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** Stormous (XOverStm)
 - **Secteur :** E-commerce / Retail
 - **Site web :** [cgcsa.co.za](https://www.cgcsa.co.za)
@@ -82,6 +84,7 @@ Mai 2026 comporte **107 fiches documentaires** et **107 publications/observation
 ### 04 mai 2026
 #### 🇩🇿 Algérie - Ministère de l’Industrie Pharmaceutique [Fuite de données]
 - **Date de publication initiale:** 4 mai 2026
+- **Type d'incident:** Data Leak
 - **Acteur / Groupe :** kamalsheikhxx
 - **Secteur :** Government / Administration
 - **Statut :** Data Fully Published
@@ -118,6 +121,7 @@ Mai 2026 comporte **107 fiches documentaires** et **107 publications/observation
 
 #### 🇿🇦 Afrique du Sud - Standard Bank Group
 - **Date de publication initiale:** 4 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** PrinzEugen
 - **Secteur :** Finance / Banking
 - **Site web :** [www.standardbank.com](https://www.standardbank.com)
@@ -126,6 +130,7 @@ Mai 2026 comporte **107 fiches documentaires** et **107 publications/observation
 
 #### 🇪🇬 Égypte - Luna Group
 - **Date de publication initiale:** 4 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** Lamashtu
 - **Secteur :** Industrie / Automobile / Fabrication
 - **Site web :** [lunagroupeg.com](https://lunagroupeg.com)
@@ -138,6 +143,7 @@ Mai 2026 comporte **107 fiches documentaires** et **107 publications/observation
 ### 05 mai 2026
 #### 🇳🇬 Nigeria - ActionAid / TACOSA
 - **Date de publication initiale:** 5 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** MedusaLocker
 - **Secteur :** ONG / Action sociale
 - **Site web :** [www.actionaid.org](https://www.actionaid.org)
@@ -181,6 +187,7 @@ Mai 2026 comporte **107 fiches documentaires** et **107 publications/observation
 ### 06 mai 2026
 #### 🇬🇭 Ghana - Kasapreko
 - **Date de publication initiale:** 6 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** TheGentlemen
 - **Secteur :** Alimentation / Boissons / Restauration
 - **Statut :** Claim - Unverified
@@ -192,6 +199,7 @@ Mai 2026 comporte **107 fiches documentaires** et **107 publications/observation
 ### 07 mai 2026
 #### 🇪🇬 Égypte - Rhactus Hotel
 - **Date de publication initiale:** 7 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** LockBit 5.0
 - **Secteur :** Hôtellerie / Événementiel
 - **Site web :** [rhactushotel.com](https://rhactushotel.com)
@@ -203,6 +211,7 @@ Mai 2026 comporte **107 fiches documentaires** et **107 publications/observation
 ### 08 mai 2026
 #### 🇪🇬 Égypte - Imex International
 - **Date de publication initiale:** 8 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** Qilin
 - **Secteur :** Transport / Logistique
 - **Site web :** [imex-logistics.com](https://www.imex-logistics.com)
@@ -215,6 +224,7 @@ Mai 2026 comporte **107 fiches documentaires** et **107 publications/observation
 ### 09 mai 2026
 #### 🇪🇬 Égypte - Misr Chemical Industries (MCI)
 - **Date de publication initiale:** 9 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** TheGentlemen
 - **Secteur :** Industrie / Automobile / Fabrication
 - **Site web :** [mci.com.eg](http://mci.com.eg)
@@ -223,6 +233,7 @@ Mai 2026 comporte **107 fiches documentaires** et **107 publications/observation
 
 #### 🇳🇬 Nigeria - MRS Holdings
 - **Date de publication initiale:** 9 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** KillSec
 - **Secteur :** Oil & Energy
 - **Site web :** [www.mrsholdings.com](https://www.mrsholdings.com)
@@ -454,6 +465,7 @@ Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète d
 
 #### 🇹🇳 Tunisie - SETCAR
 - **Date de publication initiale:** 12 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** TheGentlemen
 - **Secteur :** Industrie / Automobile / Fabrication
 - **Site web :** [www.setcar.com.tn](https://www.setcar.com.tn)
@@ -462,6 +474,7 @@ Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète d
 
 #### 🇪🇬 Égypte - FutureShop [Fuite de données / API exposée]
 - **Date de publication initiale:** 12 mai 2026
+- **Type d'incident:** Data Leak
 
 - **Acteur / Groupe :** cc5ab (forum [Citizen])
 - **Secteur :** E-commerce / Retail
@@ -498,16 +511,7 @@ Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète d
 - **Acteur / Groupe :** Keymous
 - **Secteur :** Government / Administration
 - **Plateformes ciblées :** DHIS2 (District Health Information System)
-- **Sites web :** Plusieurs instances DHIS2 (voir les URL ci-dessous)
-- **URL revendiquées par l’acteur comme associées à des identifiants exposés (valeurs sensibles non reproduites) :**
-  - 🇲🇿 Mozambique  -  [fdc.dhis2.org.mz/app/dhis-web-commons/security/login.action](https://fdc.dhis2.org.mz/app/dhis-web-commons/security/login.action)
-  - 🇲🇿 Mozambique  -  [fdc.dhis2.org.mz/viva/dhis-web-commons/security/login.action](https://fdc.dhis2.org.mz/viva/dhis-web-commons/security/login.action)
-  - 🇱🇷 Liberia  -  [dhis2.moh.gov.lr/dhis/dhis-web-commons/security/login.action](https://dhis2.moh.gov.lr/dhis/dhis-web-commons/security/login.action)
-  - 🇳🇬 Nigéria  -  [dhis2nigeria.org.ng/dhis/dhis-web-commons/security.action](https://dhis2nigeria.org.ng/dhis/dhis-web-commons/security.action)
-  - 🇹🇬 Togo  -  [dhis2.togosafe.gouv.tg/dhis/dhis-web-commons/security/login.action](https://dhis2.togosafe.gouv.tg/dhis/dhis-web-commons/security/login.action)
-  - 🇸🇱 Sierra Leone  -  [sl.dhis2.org](https://sl.dhis2.org/)
-  - 🇧🇹 Bhoutan  -  [www.drukhmis.gov.bt/dhis/dhis-web-commons/security/login.action](http://www.drukhmis.gov.bt/dhis/dhis-web-commons/security/login.action)
-  - 🇭🇳 Honduras  -  [siis.salud.gob.hn/dhis/dhis-web-commons/security/login.action](https://siis.salud.gob.hn/dhis/dhis-web-commons/security/login.action)
+- **Instances concernées :** plusieurs plateformes DHIS2 en Afrique ont été citées dans la publication. Les chemins de connexion et les domaines associés aux identifiants revendiqués ne sont pas reproduits dans cette version publique.
 - **Statut :** Claim - Unverified
 - **Type d'incident :** Fuite de données
 - **Description :**  **DHIS2** est une plateforme open-source largement utilisée par les ministères de la Santé pour la gestion des données sanitaires, la surveillance épidémiologique et les campagnes de vaccination.
@@ -515,11 +519,9 @@ Le 12 mai 2026, le cybercriminel *Sejjil*  revendique l’exposition complète d
  ▫️🇲🇿 Mozambique
   ▫️🇱🇷 Liberia
   ▫️🇳🇬 Nigeria
-  ▫️🇧🇹 Bhoutan
-  ▫️🇭🇳 Honduras
   ▫️🇹🇬 Togo
   ▫️🇸🇱 Sierra Leone
-Périmètre géographique AFRINTEL : le Mozambique, le Liberia, le Nigéria, le Togo et la Sierra Leone sont inclus dans les statistiques africaines. Le Bhoutan et le Honduras sont conservés comme contexte de source mais exclus des comptages AFRINTEL.
+Périmètre géographique AFRINTEL : le Mozambique, le Liberia, le Nigéria, le Togo et la Sierra Leone sont inclus dans les statistiques africaines.
 
 Une telle compromission pourrait permettre :
   ▫️ accès non autorisé à des données sanitaires nationales
@@ -551,6 +553,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 ### 15 mai 2026
 #### 🇪🇹 Éthiopie - Base de données des ONG [Fuite / Vente de données]
 - **Date de publication initiale:** 15 mai 2026
+- **Type d'incident :** Data Leak
 
 - **Acteur / Groupe :** 404Crew Cyber Team (forum [Citizen])
 - **Secteur :** Government / Administration
@@ -592,6 +595,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
 #### 🇪🇬 Égypte - Baitzakat.org.eg [Fuite de données]
 - **Date de publication initiale:** 15 mai 2026
+- **Type d'incident:** Data Leak
 
 - **Acteur / Groupe :** DR-X-LOL (forum [Citizen])
 - **Secteur :** ONG / Action sociale
@@ -751,6 +755,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 ### 18 mai 2026
 #### 🇹🇳 Tunisie - CRIT Tunisie
 - **Date de publication initiale:** 18 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** Titan
 - **Secteur :** Ressources humaines / Recrutement
 - **Site web :** [crit-tunisie.net](https://www.crit-tunisie.net)
@@ -760,10 +765,11 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
 #### 🇸🇳 Sénégal - Trésor Public du Sénégal
 - **Date de publication initiale:** 18 mai 2026
+- **Type d'incident:** Ransomware
 
 - **Groupe ransomware :** AuditTeam
 - **Secteur :** Government / Administration
-- **Statut :** Claim - Data Sample Published
+- **Statut :** Victim Confirmed
 - **Site web :** [www.tresor.sn](https://www.tresor.sn)
 - **Description :**
   Le Trésor Public du Sénégal est l'institution étatique responsable de la gestion des finances publiques, de l'exécution du budget national et du suivi du recouvrement fiscal et des dépenses de l'État. Le groupe ransomware **AuditTeam** a revendiqué la compromission de l'institution les 17-18 mai 2026. Les fichiers analysés sont présentés comme provenant de deux systèmes internes et comportent des dates antérieures à la revendication publique. La durée et la méthode d'accès restent inconnues.
@@ -789,8 +795,10 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   - La présence de virements liés aux indemnités d'examen CFEE dans les éléments SICA indique une dépendance inter-institutionnelle concernant les flux de paiement du Ministère de l'Éducation.
   - **Niveau de confiance : Élevé. Niveau d'impact : Niveau 4** (infrastructure financière nationale critique et exposition à grande échelle de données financières et d'identité sensibles).
 
+- **Portée de la confirmation institutionnelle (18 mai 2026) :** la DGCPT confirme des actes malveillants, des perturbations et une diffusion irrégulière d’informations. Cette confirmation porte sur l'incident subi par la victime ; elle ne confirme pas l'attribution à AuditTeam, la méthode d'accès, le chiffrement ni l'intégralité des ~1 659 735 enregistrements examinés par AFRINTEL. Source : https://aps.sn/le-tresor-public-annonce-la-reprise-progressive-de-ses-services-a-la-suite-de-lincident-informatique/
 #### 🇪🇬 Égypte / 🇱🇾 Libye - Scans de passeports [Fuite de données]
 - **Date de publication initiale:** 18 mai 2026
+- **Type d'incident:** Data Leak
 - **Acteur / Groupe :** raylie (forum [Citizen])
 - **Secteur :** Government / Administration
 - **Statut :** Data Fully Published
@@ -805,6 +813,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 ### 19 mai 2026
 #### 🇩🇿 Algérie - OGEBC (Office de Gestion des Biens Culturels) [Fuite / Vente de base de données]
 - **Date de publication initiale:** 19 mai 2026
+- **Type d'incident :** Data Leak
 
 - **Acteur / Groupe :** Databasehooligan (via le forum [Citizen])
 - **Secteur :** Government / Administration
@@ -933,6 +942,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
 #### 🇹🇿 Tanzanie - Police (Webmail) [Fuite / Vente de base de données]
 - **Date de publication initiale:** 22 mai 2026
+- **Type d'incident :** Data Leak
 
 - **Acteur / Groupe :** [Citizen] Kampuchean
 - **Secteur :** Government / Administration
@@ -946,6 +956,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
 #### 🇲🇦 Maroc - RADEM Meknès [Fuite de données massive - Infrastructure critique]
 - **Date de publication initiale:** 22 mai 2026
+- **Type d'incident:** Data Leak
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Oil & Energy
 - **Statut :** Claim - Data Sample Published
@@ -1027,6 +1038,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
   Observé : une publication Telegram côté acteur qualifie explicitement le matériel de données de candidats divulguées et décrit des noms complets et des numéros d inscription. Inconnus : le fichier original, son authenticité, la méthode d acquisition, le volume complet et une éventuelle réponse officielle. AFRINTEL ne reproduit aucune donnée personnelle.
 
 ---
+- **Contrôle de déduplication :** une autre publication datée du 23 mai, sous le label Keymous+/Keymous, évoque également 8 440 lignes de candidats du même ministère. Ces deux publications sont conservées séparément dans la baseline documentaire de mai (107 fiches), mais **ne démontrent pas deux compromissions indépendantes**.
 
 #### 🇲🇦 Maroc - Ministère des Affaires étrangères [Data Leak]
 - **Date de publication initiale :** 23 mai 2026 à 21:29 (horodatage affiché ; fuseau horaire non précisé)
@@ -1048,8 +1060,11 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
 
 ### 24 mai 2026
+- **Contrôle de déduplication :** une autre publication datée du 23 mai, sous le label Keymous+/Keymous, évoque également 8 440 lignes de candidats du même ministère. Ces deux publications sont conservées séparément dans la baseline documentaire de mai (107 fiches), mais **ne démontrent pas deux compromissions indépendantes**.
+
 #### 🇪🇬 Égypte - Papa John's Egypt
 - **Date de publication initiale:** 24 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** NightSpire
 - **Secteur :** Alimentation / Boissons / Restauration
 - **Site web :** [papajohnsegypt.com](https://www.papajohnsegypt.com)
@@ -1059,6 +1074,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
 #### 🇪🇬 Égypte - Rawaj Consumer Finance
 - **Date de publication initiale:** 24 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** NightSpire
 - **Secteur :** Finance / Banking
 - **Site web :** [rawaj-finance.com](https://www.rawaj-finance.com)
@@ -1118,6 +1134,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
 #### 🇪🇬 Égypte - Wuzzuf.net [Fuite / Vente de base de données]
 - **Date de publication initiale:** 24 mai 2026
+- **Type d'incident :** Data Leak
 - **Acteur / Groupe :** Databasehooligan
 - **Secteur :** Ressources humaines / Recrutement
 - **Statut :** Claim - Data Sample Published
@@ -1136,6 +1153,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 ### 26 mai 2026
 #### 🇪🇬 Égypte - B Investments (Basata / Basatamfi)
 - **Date de publication initiale:** 26 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** NightSpire
 - **Secteur :** Finance / Banking
 - **Site web :** [binvestmentsegypt.com](https://www.binvestmentsegypt.com)
@@ -1328,6 +1346,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
 #### 🇨🇮 Côte d'Ivoire - Mayelia Automotive
 - **Date de publication initiale:** 28 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** TheGentlemen
 - **Secteur :** Industrie / Automobile / Fabrication
 - **Site web :** [mayelia.com](https://www.mayelia.com)
@@ -1337,6 +1356,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
 #### 🇳🇬 Nigeria - XL Africa Group
 - **Date de publication initiale:** 28 mai 2026
+- **Type d'incident:** Ransomware
 - **Groupe ransomware :** 0day Syndicate
 - **Secteur :** Services aux entreprises
 - **Site web :**[xlafricagroup.com](https://www.xlafricagroup.com)
@@ -1756,6 +1776,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 ### 31 mai 2026
 #### 🇹🇳 Tunisie - OptionCarriere.tn [Fuite / Vente de base de données]
 - **Date de publication initiale:** 31 mai 2026
+- **Type d'incident :** Data Leak
 - **Acteur /Groupe:** Databasehooligan (forum [Citizen])
 - **Secteur :** Ressources humaines / Recrutement
 - **Statut :** Claim - Data Sample Published
@@ -1771,6 +1792,7 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 
 #### 🇲🇦 Maroc - Vente massive de bases de données marocaines [Fuite de données / Mise en vente]
 - **Date de publication initiale:** 31 mai 2026
+- **Type d'incident:** Data Leak
 
 - **Acteur / Groupe :** anisanas2
 - **Secteur :** Government / Administration
@@ -1794,12 +1816,12 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Analyse :**
   Cette vente concerne à la fois des institutions publiques et des entreprises privées au Maroc. Les données judiciaires, routières et de formation professionnelle revendiquées pourraient créer des risques de fraude, d’usurpation d’identité, de phishing et de chantage. Le même acteur a également publié des revendications concernant des institutions marocaines en avril 2026, ce qui indique une activité répétée à suivre. Les sources disponibles ne permettent pas d’établir le vecteur d’accès initial, l’état de la remédiation ni une éventuelle réponse institutionnelle.
 
-## Observations rétrospectives - Keymous+ mai 2026
+## Ajouts et vérifications rétrospectifs - Mai 2026
 
 
 ### 31 mai 2026
 #### 🇿🇦 Afrique du Sud - Centre for High Performance Computing (CHPC) / Supercalculateur Lengau
-- **Date de publication initiale :** 31 mai 2026
+- **Date de rattachement au corpus :** 31 mai 2026 (fin mai ; date de première publication publique non établie)
 
 - **Date de l'incident :** fin mai 2026
 - **Date de confirmation publique détaillée :** 24 août 2026
@@ -1811,10 +1833,12 @@ AFRINTEL n’a effectué aucune tentative d’authentification afin d’éviter 
 - **Niveau d'impact :** Level 4
 - **Description :** Le **Centre for High Performance Computing (CHPC)** est une infrastructure nationale sud-africaine de **calcul intensif**, rattachée à l'écosystème de recherche du **CSIR** et au dispositif NICIS. Il met des ressources de calcul scientifique à la disposition des universités et instituts de recherche ; **Lengau** est l'un des supercalculateurs emblématiques de cette infrastructure. Le CHPC n'est donc pas une entreprise commerciale ordinaire ([présentation officielle du CHPC](https://www.chpc.ac.za/about-the-chpc/)).
 
-- **Vérification indépendante au 18 octobre 2026 :** **Confirmation institutionnelle relayée :** le CSIR et une réponse parlementaire ont fait état de la compromission du cluster Lengau fin mai 2026, liée à des vulnérabilités d’un système ancien, avec perturbation des ressources de calcul. Ne pas assimiler ce cas à un ransomware septembre.
+- **Recoupement rétrospectif au 6 novembre 2026 :** **Confirmation institutionnelle relayée :** le CSIR et une réponse parlementaire ont fait état de la compromission du cluster Lengau fin mai 2026, liée à des vulnérabilités d’un système ancien, avec perturbation des ressources de calcul. Ne pas assimiler ce cas à un ransomware.
 
 - **Sources de vérification complémentaires :** [Source 1](https://www.itweb.co.za/article/cause-of-breach-on-sas-supercomputer-revealed/KPNG878NLeGq4mwD)
 
 - **Sources / Éléments de preuve :** [ITWeb, 24 août 2026](https://www.itweb.co.za/article/cause-of-breach-on-sas-supercomputer-revealed/KPNG878NLeGq4mwD)
 
 Une réponse parlementaire a confirmé un incident affectant une partie de l'environnement HPC Lengau à la fin mai, en lien avec des vulnérabilités d'un environnement ancien. L'accès, la durée de présence et les données éventuellement consultées restent inconnus.
+
+- **Précision technique corroborée (publication du 24 août 2026) :** selon la réponse parlementaire relayée par ITWeb, l'incident a impliqué un accès non autorisé à certains composants HPC et le déploiement d'un logiciel malveillant de minage de cryptomonnaie. Les autorités précisent que l'incident n'a pas compromis l'intégralité de l'infrastructure nationale. Hypothèse SOC ciblée : surveillance des charges CPU anormales et processus de minage, ATT&CK [T1496.001](https://attack.mitre.org/techniques/T1496/001/). Cette information est postérieure au mois de classement, sans rétrodatation de sa publication.

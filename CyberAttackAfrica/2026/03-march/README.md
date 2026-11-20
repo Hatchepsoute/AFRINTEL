@@ -3,10 +3,10 @@
 # AFRINTEL | Monthly Cyber Threat Intelligence Report
 ## Cyber threats affecting African organisations - March 2026
 
-**Audience:** CISOs, CIOs, SOC/CSIRT managers and operational risk leaders.  
-**Documentary period:** 1–31 March 2026. **Editorial review and external-source checks:** 6 November 2026.  
-**Disclosure:** TLP:CLEAR - aggregated information only; no personal records, secrets or illicit data-download links.  
-**Data:** [French victim records](./victims_FR.md) · [English victim records](./victims.md) · [Rapport français](./README_FR.md) · [Validation and corrections](./VALIDATION.md)
+**Audience:** CISOs, CIOs, SOC/CSIRT managers and operational risk leaders.<br>
+**Documentary period:** 1-31 March 2026. **Editorial review and external-source checks:** 6 November 2026.<br>
+**Disclosure:** TLP:CLEAR - aggregated information only; no personal records, secrets or illicit data-download links.<br>
+**Data:** [French victim records](./victims_FR.md) · [English victim records](./victims.md) · [Rapport français](./README_FR.md)
 
 > **Evidence method - how to read this report.** AFRINTEL consolidates the OSINT investigations and post-disclosure examinations already documented in its victim records. **For ransomware listings**, analysts review the post and, when published, file inventories, previews and released documents to characterise the exposure. **For data leaks**, available samples are assessed for structure, fields, consistency, observed volume and business impact. Readers can therefore distinguish material actually reviewed from volumes merely claimed. First-party confirmations are identified separately; intrusion, encryption and full exfiltration are not assumed without supporting evidence.
 
@@ -33,7 +33,7 @@ In the public sector, the **ZISPIS social-protection registry in Zambia**, **Egy
 
 ## 2. Methodology and reconciliation
 
-The audit recounts **all `####` victim records** in the supplied French and English files, checks their order and assigns **one primary type per record**. Multi-country datasets remain one observation when separate underlying breaches are not supported. Primary-sector assignment is documented in [VALIDATION.json](./VALIDATION.json) and should not be confused with the full operational footprint of an organisation.
+The review recounts **all `####` victim records** in the supplied French and English files, checks their order and assigns **one primary type per record**. Multi-country datasets remain one observation when separate underlying breaches are not supported. Primary-sector assignments should not be confused with the full operational footprint of an organisation.
 
 **Main data-quality findings:**
 
@@ -168,9 +168,7 @@ Each entry receives **one primary business-sector label** for reproducible count
 
 ## 4. Strategic cases and business consequences
 
-### 4.1 🇳🇬 Remita / SystemSpecs - a potential payments supply-chain exposure
-
-**Record:** the `Bytetobreach` post dated **31 March** claims **3 TB** of data and **800 GB** of KYC documents. The supplied AFRINTEL analysis separately describes a list of **~35,800 email/hash pairs**, screenshots of KYC and transaction tables, a Git archive with **~34,800 files** in **~40 repositories**, numerous configuration files and a cloud bucket depicted as holding **~657,000 objects, ~588 GB**. These are **described evidentiary elements**, not an independent forensic validation of the entire claimed archive or its provenance.
+**Record:** the `Bytetobreach` post dated **31 March** claims a large volume of KYC and technical material. The supplied AFRINTEL analysis describes repository, configuration, KYC, transaction and cloud-infrastructure elements. These are **described evidentiary elements**, not an independent forensic validation of the entire claimed archive or its provenance. No credential, key, token, hash or identity document is reproduced.
 
 **CTI assessment:** identity data, source code, configurations, backups and references to interbank integrations create a significant **credential and third-party propagation risk**. Filenames associated with banks or encryption keys do **not prove** that the keys are valid or that named banks' core systems were accessed. The initial-access mechanism remains unknown. Nigeria's **Data Protection Commission (NDPC)** opened an investigation into Remita-related allegations in April. This corroborates **regulatory investigation**, not the claimed scope. [Source: Premium Times, NDPC statement](https://www.premiumtimesng.com/news/top-news/869669-ndpc-investigates-remita-sterling-bank-for-alleged-data-breach.html).
 
@@ -184,7 +182,7 @@ On **23 March**, Standard Bank acknowledged **unauthorised access to select data
 
 ### 4.3 🇸🇳 UBA Senegal - corroborated ATM fraud, unattributed intrusion method
 
-The coordinated withdrawal operation took place on **30–31 January 2026** and was indexed by AFRINTEL in **March**. The Nigerian national CERT's [25 June 2026 advisory ngCERT-2026-060005](https://cert.gov.ng/advisories/alert-on-cyber-enabled-atm-cash-out-attacks-targeting-african-financial-institutions) mentions **3,421 ATM withdrawals** and losses of **over USD 2 million**. It considers privileged card-authorisation access a likely scenario, but does not provide a complete public forensic chain or establish a particular insider, ATM malware or phishing episode in this case.
+The coordinated withdrawal operation took place on **30-31 January 2026** and was indexed by AFRINTEL in **March**. The Nigerian national CERT's [25 June 2026 advisory ngCERT-2026-060005](https://cert.gov.ng/advisories/alert-on-cyber-enabled-atm-cash-out-attacks-targeting-african-financial-institutions) mentions **3,421 ATM withdrawals** and losses of **over USD 2 million**. It considers privileged card-authorisation access a likely scenario, but does not provide a complete public forensic chain or establish a particular insider, ATM malware or phishing episode in this case.
 
 **Banking SOC implications:** track withdrawal concentration, changes to card-authorisation parameters and limits, unusual card activity, geographically incompatible withdrawals and vendor access to payment systems. This is an **operational fraud** case, not a ransomware or data-leak entry.
 
@@ -206,11 +204,11 @@ An actor posting as `Spirigatito` claimed access to Zambia's **ZISPIS** social-p
 
 **Maroc Telecom, 2M TV and IRES** share the `APT73 / Bashe` publication label, but this does not prove a coordinated intrusion or common entry point. Maroc Telecom screenshots relate to fixed-line/fibre **complaint handling and customer support**, not evidence of a complete subscriber-database export. The 2M TV record describes a **1,777-message** professional mailbox export and HR material; this is consistent with potential mailbox exposure, **not proven compromise of broadcast equipment**. IRES evidence is limited to professional or researcher documents.
 
-For **Smarteez**, the source record describes **296 pharmacies**, **361,000 sales/KPI records** and **22 alleged OAuth2 application secrets**. This calls for immediate authorised review of application identities, API access and suppliers. The relationship to **L'Oréal Morocco's field operations** does **not prove** a direct breach of L'Oréal systems. The `Qilin` claim involving BPO provider **Outsourcia** raises a supply-chain concern, while specific downstream customer impact is not established.
+For **Smarteez**, the source record describes **296 pharmacies**, **361,000 sales/KPI records** and references to application authentication material related to OAuth2. No secret value is reproduced and the validity of the material is unverified. This calls for immediate authorised review of application identities, API access and suppliers. The relationship to **L'Oréal Morocco's field operations** does **not prove** a direct breach of L'Oréal systems. The `Qilin` claim involving BPO provider **Outsourcia** raises a supply-chain concern, while specific downstream customer impact is not established.
 
 ### 4.7 Credentials, platforms and education
 
-**Loozap (multi-country), Semsar Masr (Egypt), UNISA, Walter Sisulu University and Ahmadu Bello University** feature distinct risks of account takeover and profiling. Loozap's reviewed sample is described as containing **SHA1-format password hashes** and geolocation data; weak password storage increases risk if passwords are reused. Semsar Masr's post shows **ten alleged plaintext-password records**, while **185,024** total records are claimed - these must not be conflated. The UNISA alleged admin-credential publication does not establish present-day validity. For ABU Zaria, the review describes **237 rows** from one section against **over 11,000 claimed**.
+**Loozap (multi-country), Semsar Masr (Egypt), UNISA, Walter Sisulu University and Ahmadu Bello University** feature distinct risks of account takeover and profiling. The reviewed material includes account and authentication-related fields, contact data and location-related information; no credential value or personal record is reproduced. The scope and security of the complete datasets remain unverified. The UNISA publication concerns alleged administrative-access information, without establishing present-day validity. For ABU Zaria, the review describes **237 rows** from one section against **over 11,000 claimed**.
 
 The Guinea Ministry of Health/DHIS2 entry references alleged activity dating to **July 2025**, with AFRINTEL identification in March. Access controls and public-health data integrity should be reviewed without declaring any proven alteration of health indicators.
 
@@ -251,9 +249,9 @@ The Guinea Ministry of Health/DHIS2 entry references alleged activity dating to 
 
 | Horizon | CISO / risk | CIO / architecture | SOC / CSIRT | Evidence of progress |
 |---|---|---|---|---|
-| **0–7 days** | List critical data and supplier dependencies; prioritise high-risk cases | Revoke genuinely affected secrets, secure privileges, verify backups | Targeted hunts for exports, OAuth changes and unusual sign-ins | Available IAM/API logs, assessed alerts, action records |
-| **8–30 days** | Review supplier contracts, fraud controls and notification processes | PAM/MFA, DLP, object-access logging and restore testing | Test T1078/T1213/T1530/T1114 use cases and payment correlations | Asset coverage, detection latency and alert quality |
-| **31–90 days** | Exercise a combined data leak, fraud and supplier incident | Segmentation, lifecycle rotation, immutable backups and cross-org access review | Automate CTI enrichment/STIX, tune playbooks and reduce false positives | MTTR/MTTC, revocation time, validated restores and evidence quality |
+| **0-7 days** | List critical data and supplier dependencies; prioritise high-risk cases | Revoke genuinely affected secrets, secure privileges, verify backups | Targeted hunts for exports, OAuth changes and unusual sign-ins | Available IAM/API logs, assessed alerts, action records |
+| **8-30 days** | Review supplier contracts, fraud controls and notification processes | PAM/MFA, DLP, object-access logging and restore testing | Test T1078/T1213/T1530/T1114 use cases and payment correlations | Asset coverage, detection latency and alert quality |
+| **31-90 days** | Exercise a combined data leak, fraud and supplier incident | Segmentation, lifecycle rotation, immutable backups and cross-org access review | Automate CTI enrichment/STIX, tune playbooks and reduce false positives | MTTR/MTTC, revocation time, validated restores and evidence quality |
 
 **KPIs:** percentage of critical assets with auditable logs; median exposed-secret revocation time; privileged-account MFA/PAM coverage; unexplained bulk exports; tested recovery success; antifraud decision latency; proportion of CTI cases with a primary source and explicit evidence state.
 
@@ -261,9 +259,9 @@ The Guinea Ministry of Health/DHIS2 entry references alleged activity dating to 
 
 The reviewed external sources do not independently validate the **complete claimed volumes** in several major cases, including ZISPIS, Morocco's Ministry of Justice, XP95/Gauteng, Stats SA, GCRA and Remita. An **official investigation** is not confirmation of the amount claimed by an actor. An official institutional website may be identified without a forensic connection between that site and the alleged dataset. No unauthorised access or active testing of leaked credentials took place.
 
-**Verified/institutionally sourced domains:** [Buffalo City](https://www.buffalocitymetro.gov.za/) (also listed by [gov.za](https://www.gov.za/nso/about-government/contact-directory/ec-municipalities/buffalo-city-metropolitan-municipality)); [Northern Cape Roads & Public Works](http://ncrpw.ncpg.gov.za/) (domain recorded in an [institutional directory](https://provincialgovernment.co.za/units/view/94/northern-cape/roads-and-public-works)); [Standard Bank](https://www.standardbank.co.za/southafrica/personal); and [Egyptian WMRA](https://wmra.gov.eg/en/). The previously cited `garb.gov.eg` domain has not been technically linked to the WMRA data-leak allegation. The enriched victim records and [validation log](./VALIDATION.md) document those edits.
+**Verified/institutionally sourced domains:** [Buffalo City](https://www.buffalocitymetro.gov.za/) (also listed by [gov.za](https://www.gov.za/nso/about-government/contact-directory/ec-municipalities/buffalo-city-metropolitan-municipality)); [Northern Cape Roads & Public Works](http://ncrpw.ncpg.gov.za/) (domain recorded in an [institutional directory](https://provincialgovernment.co.za/units/view/94/northern-cape/roads-and-public-works)); [Standard Bank](https://www.standardbank.co.za/southafrica/personal); and [Egyptian WMRA](https://wmra.gov.eg/en/). The previously cited `garb.gov.eg` domain has not been technically linked to the WMRA data-leak allegation. The enriched victim records document those edits.
 
-**AFRINTEL priorities:** unify initial-post/discovery/incident dates, resolve February–March overlap (notably Diesel-Electric), reconcile publication-label counts, preserve independent sources for major volumes, retain the distinction between taxonomic status and analyst confidence, normalise industry and include an auditable change trail in each record.
+**AFRINTEL priorities:** unify initial-post/discovery/incident dates, resolve February-March overlap (notably Diesel-Electric), reconcile publication-label counts, preserve independent sources for major volumes, retain the distinction between taxonomic status and analyst confidence, normalise industry and include an auditable change trail in each record.
 
 ### Principal sources
 

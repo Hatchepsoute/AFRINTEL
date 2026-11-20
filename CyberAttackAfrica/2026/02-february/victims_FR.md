@@ -9,7 +9,7 @@
 
 ## Résumé du mois
 
-Février 2026 regroupe **27 dossiers documentés** : **20 Ransomware**, **7 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** et **0 Operational Fraud**, concernant **14 pays africains**. Ces dossiers sont des signalements documentaires, pas nécessairement des intrusions indépendantes confirmées.
+Février 2026 regroupe **27 dossiers documentés** : **20 Ransomware** et **7 Data Leak**, concernant **14 pays africains**. Ces dossiers sont des signalements documentaires, pas nécessairement des intrusions indépendantes confirmées.
 
 ### Incidents marquants
 

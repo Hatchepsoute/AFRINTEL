@@ -3,10 +3,10 @@
 # AFRINTEL | Monthly Cyber Threat Intelligence Report
 ## Cyber threats affecting African organisations - April 2026
 
-**Prepared for CISOs, CIOs, SOC/CERT teams and risk executives**  
-**Record period:** 1–30 April 2026 · **Documentary review:** 6 November 2026  
-**Sources:** [French victim records](./victims_FR.md), [English victim records](./victims.md), post-disclosure examinations described in those records, official institutional statements, and OSINT sources listed below.  
-**Version française :** [README_FR.md](./README_FR.md) · **Quality checks:** [VALIDATION.md](./VALIDATION.md)
+**Prepared for CISOs, CIOs, SOC/CERT teams and risk executives**<br>
+**Record period:** 1-30 April 2026 · **Documentary review:** 6 November 2026<br>
+**Sources:** [French victim records](./victims_FR.md), [English victim records](./victims.md), post-disclosure examinations described in those records, official institutional statements, and OSINT sources listed below.<br>
+**Version française :** [README_FR.md](./README_FR.md)
 
 > **Reliability and evidence note.** This report consolidates the publications recorded by AFRINTEL and any post-disclosure examination documented in the victim records. For ransomware entries, an extortion-site listing is distinguished from accessible leaked documents, independently established encryption and a victim statement. For data leaks, the analysis considers samples, exports, schemas and screenshots **only where examination is documented in the underlying record**. Actor statements lacking verifiable material remain claims. This report does **not** imply that every dataset or victim system was directly inspected during drafting. It publishes no personal data, secrets or illicit archive links.
 
@@ -18,7 +18,7 @@
 
 The **64 canonical observations** comprise **32 data leaks (50.0%)**, **21 ransomware-classified records (32.8%)**, **nine DDoS claims (14.1%)** and **two access-sale listings (3.1%)**. The geographic view covers **15 directly named countries** plus **one cross-border record** relating to Angola, South Africa and Nigeria, counted once. **Egypt (19)**, **Morocco (15)** and **South Africa (6)** account for **40 observations (62.5%)**. This reflects the visibility of collection rather than a reliable ranking of national attack likelihood.
 
-The most distinctive change from March is **nine DDoS claims associated with Keymous+**, concentrated on 11–12 April and including Egyptian government services. Screenshots and availability checks supplied by the account are not technical confirmation of the method, duration or success of a distributed denial-of-service attack. They nevertheless provide reasonable triggers for monitoring service availability and validating DDoS mitigation readiness.
+The most distinctive change from March is **nine DDoS claims associated with Keymous+**, concentrated on 11-12 April and including Egyptian government services. Screenshots and availability checks supplied by the account are not technical confirmation of the method, duration or success of a distributed denial-of-service attack. They nevertheless provide reasonable triggers for monitoring service availability and validating DDoS mitigation readiness.
 
 Three cases warrant immediate executive attention. **Ahmed Al-Kadi Private Hospital**, South Africa, has **confirmed unauthorised access and partial ransomware encryption**. **CNSS Benin** is associated with an alleged institutional mailbox exposure involving social-security, medical and banking records. **Algérie Télécom Satellite (ATS)** has a record documenting examination of **88 payroll-related files**. Other high-consequence claims affect **National Oil Ethiopia**, the **Kenya Airports Authority**, the **University of Chlef** and multiple Moroccan institutions; their reported data, operational impact and attribution must remain tied to the available evidence.
 
@@ -58,7 +58,7 @@ AFRINTEL monitors cyber-threat reporting across 54 African countries. The datase
 | **Victim-confirmed incident** | The scope recognised by the victim is established; additional actor claims remain distinct. |
 | **Contextual analysis** | Attack scenarios and MITRE techniques are detection **hypotheses** without victim-side telemetry proving a procedure. |
 
-**Counting decision.** Historical file headers state **70 documented / 69 canonical victims**, but the uploaded files each contain **65 actual victim headings**. The mutually exclusive breakdown is **32 + 21 + 9 + 2 + 1 = 65**; the final **one** is the Bank of Kigali case (`Under Investigation - Alleged`, `Operational Fraud`), explicitly excluded from canonical statistics in its record. Consequently, the report's canonical charts use **64**, not 65 or 69. The Angola/South Africa/Nigeria record counts once. Details are documented in [VALIDATION.md](./VALIDATION.md).
+**Counting decision.** The source files contain **65 actual victim headings**. The mutually exclusive breakdown is **32 + 21 + 9 + 2 + 1 = 65**; the final **one** is the Bank of Kigali case (`Under Investigation - Alleged`, `Operational Fraud`), explicitly excluded from canonical statistics in its record. Consequently, the report's canonical charts use **64**. The Angola/South Africa/Nigeria record counts once.
 
 **Time discipline.** The event, initial disclosure, first known actor post and AFRINTEL ingestion date may differ. The **Pharmacie.ma** record filed under April identifies an earlier **27 January 2026** post and a claimed **September 2025** breach; **GET/General Electric Trading** refers to a **September 2024** SQL dump, while **National Oil Ethiopia** lists **24 March 2026** as the leak date. These are not automatically new technical intrusions occurring in April.
 
@@ -151,13 +151,13 @@ The **16 sample-published records** do not mean complete archives were examined.
 
 ### 4.3 Algeria - Algérie Télécom Satellite: payroll records exposed
 
-**Analysis documented by AFRINTEL.** The **16 April Phantom Atlas** entry records examination of **88 files (~29 MB)**, chiefly payroll slips dated **2023–2024**. Described fields include employment, pay, social-security and banking information across several regional directorates. Consistent formatting and plausible organisational markings support the **plausibility** of the material, not proof of ongoing access to every ATS system.
+**Analysis documented by AFRINTEL.** The **16 April Phantom Atlas** entry records examination of **88 files (~29 MB)**, chiefly payroll slips dated **2023-2024**. Described fields include employment, pay, social-security and banking information across several regional directorates. Consistent formatting and plausible organisational markings support the **plausibility** of the material, not proof of ongoing access to every ATS system.
 
 **CISO implication:** payroll, HR identity and staff payment details require strong access control to prevent targeted impersonation and payment diversion. **Immediate actions:** investigate HR exports, log access to payroll repositories, review vendor accounts and notify exposed staff through established antifraud procedures when appropriate.
 
 ### 4.4 Algeria - University of Chlef: claimed database-management access
 
-The **10 April Phantom Atlas** record describes screenshots of **phpMyAdmin** displaying a CMS-type database and a staff-administration database with **19 tables** and approximately **13,630 displayed rows**. A visible staff excerpt includes HR attributes and a **40-character hexadecimal password hash**. The actor claims access dating to November 2025; its duration remains independently unverified. No complete export is available in the underlying record.
+The **10 April Phantom Atlas** record describes an observed administrative database interface containing CMS and staff-management structures. The material includes HR-related fields and authentication-related data, but no secret value or personal record is reproduced here. The actor claims access dating to November 2025; its duration remains independently unverified. No complete export is available in the underlying record.
 
 **SOC implication:** monitor administrative database access from unusual networks, bulk export requests, access to HR tables and misuse of application accounts. Database security requires network restriction, least privilege, audit logs, robust authentication and segmentation, not merely hiding an administration page.
 
@@ -264,9 +264,9 @@ The following editorial sector mapping assigns one primary business sector to ea
 
 | Priority | CISO / risk governance | CIO / IT operations | SOC / incident response |
 |---|---|---|---|
-| **P0 (0–7 days)** | Identify critical citizen, HR, payroll, health and KYC data and privileged third parties. | Review high-risk privileges, exposed consoles and restoration of at least one critical service. | Confirm ingestion of IdP/VPN, EDR, mailbox, DB audit, WAF/CDN and network telemetry; monitor unusual exports. |
-| **P1 (8–30 days)** | Prioritise legal/contractual notification readiness and protections for minors and beneficiaries. | Harden MFA/PAM, isolate backups, restrict data exports and audit application tokens. | Validate behavioural detections through authorised tests and drill L1/L2–CSIRT escalation. |
-| **P2 (31–90 days)** | Run cross-organisation crisis exercises and review residual supplier exposure. | Implement tested recovery, segmentation and just-in-time access. | Measure ATT&CK coverage, false positives and detection/containment times. |
+| **P0 (0-7 days)** | Identify critical citizen, HR, payroll, health and KYC data and privileged third parties. | Review high-risk privileges, exposed consoles and restoration of at least one critical service. | Confirm ingestion of IdP/VPN, EDR, mailbox, DB audit, WAF/CDN and network telemetry; monitor unusual exports. |
+| **P1 (8-30 days)** | Prioritise legal/contractual notification readiness and protections for minors and beneficiaries. | Harden MFA/PAM, isolate backups, restrict data exports and audit application tokens. | Validate behavioural detections through authorised tests and drill L1/L2-CSIRT escalation. |
+| **P2 (31-90 days)** | Run cross-organisation crisis exercises and review residual supplier exposure. | Implement tested recovery, segmentation and just-in-time access. | Measure ATT&CK coverage, false positives and detection/containment times. |
 
 ## 10. SOC detection hypotheses and correlation workflow
 
@@ -314,7 +314,7 @@ For **CISOs**, the goal is governable and traceable risk. For **CIOs**, it is re
 
 ### Sources and review limitations
 
-- **Primary documentary basis:** [AFRINTEL April victim records FR](./victims_FR.md), [EN](./victims.md), and [quality / recoding notes](./VALIDATION.md).
+- **Primary documentary basis:** [AFRINTEL April victim records FR](./victims_FR.md) and [EN](./victims.md).
 - **Primary victim confirmation:** [Ahmed Al-Kadi Private Hospital - Notification of Data Incident](https://ahmedalkadi.com/notification-of-data-incident/).
 - **Additional press:** [Taarifa Rwanda - Bank of Kigali, 1 April 2026](https://taarifa.rw/2026/04/01/cyberattack-disrupts-bank-of-kigali-operations-amid-phishing-scheme/) and [6 April update](https://taarifa.rw/2026/04/06/rib-arrests-five-suspects-in-bk-mobile-banking-scam-as-losses-remain-limited/). **Not part of canonical April statistics.**
 - **Defensive references:** [MITRE ATT&CK Enterprise](https://attack.mitre.org/) and [CISA / MS-ISAC Ransomware Guide](https://www.cisa.gov/stopransomware/ransomware-guide).
@@ -322,5 +322,5 @@ For **CISOs**, the goal is governable and traceable risk. For **CIOs**, it is re
 
 ---
 
-**AFRINTEL - African Cyber Threat Intelligence**  
+**AFRINTEL - African Cyber Threat Intelligence**<br>
 [AFRINTEL public repository](https://github.com/Hatchepsoute/AFRINTEL) · **TLP:CLEAR** · Documentary review: 6 November 2026

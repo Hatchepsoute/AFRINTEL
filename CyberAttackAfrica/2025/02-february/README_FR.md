@@ -16,7 +16,7 @@ Sur le plan sectoriel, les catégories les plus représentées sont **Gouverneme
 
 La maturité des preuves reste variable : **9 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
 
-Par rapport à Janvier, le volume mensuel **diminue de 8 fiches**. Les variations les plus visibles concernent Ransomware 16->8 (-8), Data Leak 2->1 (-1), Account Takeover 1->2 (+1).
+Par rapport à Janvier, le volume mensuel **diminue de 9 fiches, passant de 20 à 11 (-45,0 %)**. Les variations les plus visibles concernent Ransomware 16->8 (-8), Data Leak 3->1 (-2), Access Sale 1->0 (-1), Defacement 1->0 (-1) et Account Takeover 0->2 (+2).
 
 > **Note de lecture :** les chiffres AFRINTEL décrivent les incidents documentés et la visibilité des menaces observées. Ils ne constituent pas une mesure exhaustive de toutes les cyberattaques réellement survenues en Afrique.
 
@@ -24,16 +24,18 @@ Par rapport à Janvier, le volume mensuel **diminue de 8 fiches**. Les variation
 
 | Indicateur | Janvier 2025 | Février 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 19 | 11 | **-8 (-42,1 %)** |
+| Total incidents | 20 | 11 | **-9 (-45,0 %)** |
 | Ransomware | 16 | 8 | **-8 (-50,0 %)** |
-| Data Leak | 2 | 1 | **-1 (-50,0 %)** |
+| Data Leak | 3 | 1 | **-2 (-66,7 %)** |
 | Access Sale | 0 | 0 | **Stable** |
 | DDoS | 0 | 0 | **Stable** |
 | Defacement | 0 | 0 | **Stable** |
-| Account Takeover | 1 | 2 | **+1 (+100,0 %)** |
+| Account Takeover | 0 | 2 | **+2 (nouveau)** |
 | System Intrusion | 0 | 0 | **Stable** |
 | Malware | 0 | 0 | **Stable** |
 | Operational Fraud | 0 | 0 | **Stable** |
+
+![Comparaison des types - janvier et février 2025](assets/comparaison_fr.png)
 
 
 
@@ -83,6 +85,9 @@ pie showData
     "Account Takeover" : 2
 ```
 
+![Types d’incident - février 2025](assets/types_fr.png)
+![Répartition des types - février 2025](assets/types_pie_fr.png)
+
 ## 4. Répartition géographique
 
 | Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
@@ -90,7 +95,7 @@ pie showData
 | Égypte | **3** | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | **2** | 0 | 0 | 0 | 0 | 0 | 2 | 0 | 0 |
 | Maroc | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Afrique du Sud | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Afrique du Sud | **2** | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Zambie | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Ghana | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Namibie | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -98,31 +103,37 @@ pie showData
 
 > `Operational Fraud = 0` ce mois-ci ; la colonne est omise pour préserver la lisibilité.
 
+![Pays représentés - février 2025](assets/pays_fr.png)
+
 ## 5. Répartition régionale
 
 | Région | Fiches | Part |
 |---|---:|---:|
-| Afrique du Nord | 4 | 40,0 % |
+| Afrique du Nord | 4 | 36,4 % |
 | Afrique australe | 4 | 36,4 % |
-| Afrique de l'Est | 2 | 20,0 % |
-| Afrique de l'Ouest | 1 | 10,0 % |
+| Afrique de l'Est | 2 | 18,2 % |
+| Afrique de l'Ouest | 1 | 9,1 % |
 | **Total** | **11** | **100 %** |
 
-La région la plus représentée est **Afrique du Nord avec 4 fiches (40,0 %)**.
+Les régions les plus représentées sont **Afrique du Nord et Afrique australe avec 4 fiches chacune (36,4 %)**.
+
+![Répartition régionale - février 2025](assets/regions_fr.png)
 
 ## 6. Impact sectoriel
 
 | Secteur | Fiches | Part | Activité |
 |---|---:|---:|---|
-| Gouvernement / Administration | 2 | 20,0 % | ██ |
-| Finance / Banque | 2 | 20,0 % | ██ |
-| Technologie / IT | 1 | 10,0 % | █ |
-| Médias / Divertissement | 1 | 10,0 % | █ |
-| Non précisé | 1 | 10,0 % | █ |
-| Télécommunications | 1 | 10,0 % | █ |
-| Transport / Logistique | 1 | 10,0 % | █ |
+| Gouvernement / Administration | 2 | 18,2 % | ██ |
+| Finance / Banque | 2 | 18,2 % | ██ |
+| Technologie / IT | 1 | 9,1 % | █ |
+| Médias / Divertissement | 1 | 9,1 % | █ |
+| Non précisé | 1 | 9,1 % | █ |
+| Télécommunications | 1 | 9,1 % | █ |
+| Transport / Logistique | 1 | 9,1 % | █ |
 | Services professionnels / Business | 2 | 18,2 % | ██ |
 | **Total** | **11** | **100 %** | |
+
+![Principaux secteurs - février 2025](assets/secteurs_fr.png)
 
 ## 7. Acteurs / groupes
 
@@ -139,16 +150,20 @@ La région la plus représentée est **Afrique du Nord avec 4 fiches (40,0 %)**.
 | hunter | 1 | █ |
 | Al-Sheikh | 1 | █ |
 
+![Acteurs et groupes - février 2025](assets/acteurs_fr.png)
+
 ## 8. Maturité des preuves
 
 | Maturité de preuve | Fiches | Part |
 |---|---:|---:|
-| Claim - Unverified | 5 | 50,0 % |
+| Claim - Unverified | 5 | 45,5 % |
 | Claim - Data Sample Published | 4 | 36,4 % |
-| Confirmation victime / gouvernement / autorité | 2 | 20,0 % |
+| Confirmation victime / gouvernement / autorité | 2 | 18,2 % |
 | **Total** | **11** | **100 %** |
 
 Les statuts de preuve décrivent le niveau de validation disponible ; ils ne changent pas le type technique de l'incident.
+
+![Maturité des preuves - février 2025](assets/preuve_fr.png)
 
 ## 9. Chronologie
 

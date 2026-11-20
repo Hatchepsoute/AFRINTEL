@@ -714,12 +714,34 @@ def parse_month_victims(md_path: Path, repo: Path) -> List[VictimRecord]:
             entry_start = entry_match.end()
             entry_end = entry_matches[entry_index + 1].start() if entry_index + 1 < len(entry_matches) else len(date_block)
             entry_block = date_block[entry_start:entry_end]
+            # Some monthly corpora retain a documented retrospective or
+            # contextual case while explicitly excluding it from canonical
+            # statistics. Keep the source record available in Markdown, but
+            # do not emit it as a monthly/H1 STIX incident.
+            if re.search(
+                r"(?:excluded from canonical statistics|excluded from canonical totals|"
+                r"not part of canonical (?:April )?statistics|exclu(?:e|s)? des statistiques canoniques|"
+                r"hors dénominateur canonique)",
+                entry_block,
+                re.I,
+            ):
+                continue
             ransomware_lifecycle = parse_ransomware_lifecycle(entry_block)
             fields = parse_fields(RANSOMWARE_LIFECYCLE_RE.sub("", entry_block))
 
             country, organization = split_country_org(header)
             country_codes = extract_country_codes(header)
-            actor = first_matching(fields, ["ransomware group", "actor", "threat actor", "groupe ransomware", "acteur"])
+            # Date fields may contain words such as "actor publication" or
+            # "publication par l'acteur". They are chronology metadata, not
+            # actor attribution, and must not win a substring-based lookup.
+            actor_fields = {
+                key: value for key, value in fields.items()
+                if not (
+                    ("date" in key or "publication" in key)
+                    and ("actor" in key or "acteur" in key)
+                )
+            }
+            actor = first_matching(actor_fields, ["ransomware group", "actor", "threat actor", "groupe ransomware", "acteur"])
             sector = first_matching(fields, ["sector", "secteur"])
             status = first_matching(fields, ["status", "statut"])
             website = first_matching(fields, [

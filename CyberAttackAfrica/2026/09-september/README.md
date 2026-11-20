@@ -6,6 +6,10 @@
 # AFRINTEL - Monthly Cyber Threat Intelligence Report
 ## Cyber threats across Africa | September 2026
 
+**Consolidated edition - 17 November 2026 | For CISOs, CIOs, IT teams and SOC analysts**
+
+[Version française](./README_FR.md) · [33 English case records](./victims.md) · [Verified statistics](./STATISTIQUES_2026-09.json)
+
 **Corpus period:** 1–30 September 2026  
 **Monitoring scope:** 54 African countries; 12 countries represented in the corpus  
 **Audience:** executives, CISOs, CIOs, risk managers and CTI/SOC analysts  
@@ -25,6 +29,8 @@ In September 2026, AFRINTEL recorded **33 cases across 12 African countries**. R
 The most significant finding is not simply the number of posts. **Identity information, administrative documents, financial data and professional records** recur across several samples. Their potential exposure may later fuel fraud, identity impersonation and targeted phishing.
 
 Two cases include a **confirmation of unauthorised access**: South Africa's **RelyComply** platform and unauthorised activity in the **Namibian Ministry of Defence and Veterans Affairs network**. Two others, **Hollard** and **Guardrisk**, concern **third-party data exposures**, without an established direct intrusion at the named insurer. These distinctions matter: **verify the facts, protect affected people and address risky access before declaring a breach.**
+
+**Subsequent official update:** in a notice last updated on **2 November 2026**, RelyComply stated that an independent forensic investigation concluded on **1 October** had confirmed that **data was removed**. It could not identify precisely which records were removed, and had not identified verified evidence of public release or fraudulent use as of that update. This post-period finding supplements the AFRINTEL record last checked on 18 October. [RelyComply official incident statement](https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/).
 
 **For decision-makers:** these observations call for a proportionate response. A criminal listing should be assessed before it is treated as proof of compromise. Where serious harm is established, incident-response and crisis-management procedures should be activated promptly. Sensitive-data visibility, controlled access, tested backups and effective detection reduce real exposure.
 
@@ -59,6 +65,17 @@ Two cases include a **confirmation of unauthorised access**: South Africa's **Re
 
 *Verified August baseline: 33 records (18 ransomware, 14 data leaks, one access sale), from the [AFRINTEL August 2026 report](../08-august/README.md). This compares **records included in monthly collections**, not the exact number of real-world intrusions occurring in each month. Collection coverage and later discoveries can influence the difference.*
 
+### 1.2 Decision dashboard - where to act first
+
+| Priority signal | What is established | Decision | Typical owner |
+|---|---|---|---|
+| Unauthorised access at an AML/KYC service provider | RelyComply confirmed access and, in its 2 November update, data removal without record-level certainty | Review entrusted data flows, restrict delegated APIs and assess proportionate notifications | CISO + privacy + business owner |
+| Indirect insurance-data exposure | Hollard/MIP and Guardrisk/CoverCubed; direct insurer intrusions unestablished | Map subcontractors and demand evidence of the actual affected scope | CIO + procurement + compliance |
+| Identity and financial documents in observed publications | Samples seen across several Moroccan, South African and Angolan cases | Restrict bulk exports, inventory copies and tighten permissions | IT + data governance |
+| Claims naming sensitive services | Government bodies, banks, healthcare and aviation services appear in criminal publications | Perform **rapid evidence-based triage**, not automatic service shutdown | CERT/SOC + management |
+
+*P1 denotes a verification and protection priority, not demonstrated operational impact at each named organisation.*
+
 ## 2. Scope, sources and methodology
 
 AFRINTEL monitors all 54 African countries, but this report uses only the **33 cases documented in the September folder**. Events are allocated to the month based on the initial publication or first retained observation. The date of a criminal publication can follow the alleged compromise by days or months.
@@ -88,13 +105,6 @@ The 33 French and English records were cross-checked for **countries, actors, ty
 
 ![Incident types](./assets/types_september_2026_EN.png)
 
-```mermaid
-pie showData
-    title AFRINTEL September 2026 signals (33)
-    "Ransomware" : 20
-    "Data Leak" : 11
-    "System Intrusion" : 2
-```
 
 The **20 ransomware records** concern postings or events in a ransomware-extortion context. Encryption, interruption duration and the real scope of exfiltration must be **established on a case-by-case basis**.
 
@@ -126,6 +136,8 @@ Across AFRINTEL's broad regions, **North Africa accounts for 13 cases (39.4%)**,
 | Government-confirmed unauthorised access | 1 | Confirmation limited to the affected network and facts stated by the authority |
 | **Total** | **33** | |
 
+**Data-quality check:** **16 + 12 + 1 + 2 + 1 + 1 = 33**. The **two confirmed-access cases** and **two acknowledged third-party exposures** must be distinguished from the **29 other publications or samples**. The submitted victim-file headers still contained stale references to “41 entries” and “13 confirmed cases”; these have been **corrected in the packaged copies**, with no changes to the 33 case records.
+
 **Confidence point:** a coherent sample supports a documentary association but cannot alone prove a breach of the named organisation's systems. The **two confirmed access events** and the **two third-party exposures** are tracked separately from the other 29 records.
 
 ## 4. Analysis by incident type
@@ -156,11 +168,25 @@ The **`subscribers.co.ke`**, **`acao.org.ma`** and **Techne Summit 2026** cases 
 
 ### 4.3 System intrusion: two confirmations with precisely defined scopes
 
-**RelyComply (South Africa)** acknowledged **unauthorised access** to some systems, detected on **8 September 2026**, in connection with a third-party application's vulnerability. The company reports corrective measures including system rebuilds and access/secret revocation or rotation. This establishes an incident, **not technical attribution to the author of a ransomware claim**.
+**RelyComply (South Africa)** acknowledged **unauthorised access** detected on **8 September 2026**, following exploitation of a zero-day vulnerability in a third-party reporting application. Its **2 November** official update confirms that a forensic investigation concluded on **1 October** established that **data was removed**, while the exact individual records and fields cannot be identified. Responses included rebuilding systems, retiring the affected application and rotating credentials. Payment and identity-verification relationships warrant review throughout the **supplier chain**. This does **not** confirm Direwolf attribution, encryption or a definitive number of affected individuals. [Official source](https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/).
 
 In **Namibia**, the government information reviewed confirms unauthorised activity in the **Ministry of Defence and Veterans Affairs network**. The criminal claim names the **Namibian Defence Force**; public confirmation should not be extended without proof to operational military networks, encryption or leaked military secrets.
 
 **Takeaway:** precision about the affected network, confirming source and actions taken enables accurate communication and a better-focused investigation.
+
+### 4.4 Additional cases of practical value to defenders
+
+**Morocco - Pharma 5 (25 September).** The INC Ransom publication includes a quality-specification document with material references, client/supplier/manufacturer roles and details consistent with pharmaceutical supply-chain operations. Public matches strengthen the **documentary association**, but do not establish an intrusion, the claimed **50 GB** theft or a breach at named suppliers. Protect quality documentation, supplier communications, credentials and change audit trails.
+
+**Morocco - La Sultana Hotels (12 September).** The Krybit-labelled publication and associated local collection contain **138 JPEG scans** totalling around **54 MB**, some resembling identity documents. Their **provenance from the hotels' systems is unknown**. Defensive priorities concern access to passport scans, reservation systems and retention of identity copies.
+
+**South Africa - First National Bank (27 September).** Five images of business account statements published under the Blacknet00 label are **consistent with FNB material**, but may originate from account holders, partners or other document repositories. **No direct breach of FNB systems is established.** Prioritise payment fraud and supplier-impersonation controls.
+
+**South Africa - unattributed identity-document collection (25 September).** The associated sample includes **5,000 PDFs**, about **1.77 GB**, containing categories of identity and supporting documents. **Do not invent a victim**: the source organisation is unknown. The potential documentary risk is serious, while attribution remains open.
+
+**Libya - cross-month follow-up.** A **10 September** posting was tracked against the pre-existing Libyan Ministry of Education record. It is **follow-up intelligence**, not a thirty-fourth case or a new September entry. Claimed totals must remain distinct from actually reviewed samples.
+
+**Cross-cutting lesson:** in several cases the document may be a **copy held outside the original system** - by a provider, client, export destination, backup or collaboration platform. Establish the first custodian and data path before declaring which system was breached.
 
 ## 5. Sector reading: where to focus resources
 
@@ -219,7 +245,7 @@ Collection should also improve in underrepresented countries: collaboration with
 
 | Case | Documented element | Risk to anticipate | Evidence limit |
 |---|---|---|---|
-| **RelyComply - South Africa** | Company-acknowledged unauthorised access. | Access governance, partners and transaction-related data. | Technical attribution to the claiming group is unproven. |
+| **RelyComply - South Africa** | Unauthorised access acknowledged; data removal confirmed in the 2 November update, exact records unknown. | Access governance, partners and transaction-related data. | Technical attribution to the claiming group is unproven. |
 | **Namibian defence - Namibia** | Unauthorised activity confirmed in a ministry network. | Sensitive public-service security and continuity. | Encryption, exfiltration and secret leaks not established. |
 | **Centre Atlantique Formation - Morocco** | Structured training-related files and documents examined read-only. | Identity misuse and document fraud. | Entry point and full exposure scope unknown. |
 | **SEPE - Angola** | Administrative sample reviewed; much larger volumes claimed. | Protection of public-service users and supporting documents. | Direct portal compromise and total volume unproven. |
@@ -281,6 +307,18 @@ A criminal posting **does not, by itself, justify shutting down a service**. Ini
 
 **Measure effectiveness:** sensitive-repository logging coverage, usable-alert rate, qualification delay, risky-access revocation time and restore-test results.
 
+### 10.1 SOC workflow - from alert to decision
+
+1. **Capture and preserve** the claim, date, exact organisation name and relevant screenshots in restricted evidence storage. Do not redistribute personal data.
+2. **Qualify the evidence:** distinguish the listing, reviewed sample, official statement and unknown technical provenance. Keep `Claim - Unverified` unless stronger evidence supports a different status.
+3. **Identify the custodian:** map the data owner and providers holding possible copies. A bank or insurer logo on a document does not prove a breach of that institution.
+4. **Correlate telemetry:** align IAM/SSO/VPN, database/API, cloud storage, EDR, proxy and WAF events on one timestamp-normalised timeline.
+5. **Test hypotheses:** bulk exports after unusual authentication, supplier accounts outside approved use, archive creation followed by network egress. Exclude authorised jobs and planned changes.
+6. **Decide and validate:** restrict justified sessions or tokens; activate notification and crisis procedures in proportion to demonstrated impact. Record evidence, ownership and recovery actions.
+7. **Close the intelligence loop:** update the case with observed/corroborated/unknown elements and improve relevant detections.
+
+**Suggested P1 escalation:** internal evidence of unauthorised sensitive-repository access, probable exfiltration or critical business disruption. A criminal posting alone calls for **priority triage**, not automatic emergency containment.
+
 ## 11. Strategic directions for CISOs, CIOs and decision-makers
 
 **First: control data.** Knowing where identity files, customer records and financial documents are copied often matters more than deploying another tool. Limiting duplication and auditing exports reduces the potential impact of exposure.
@@ -289,13 +327,37 @@ A criminal posting **does not, by itself, justify shutting down a service**. Ini
 
 **Third: make decisions from evidence.** When a claim emerges, leaders need a short brief answering: “What did we observe?”, “What is confirmed?”, “What still needs checking?” and “Which immediate action is proportionate?” This protects the organisation, its customers and its reputation.
 
+### 11.1 Recommended CISO management indicators
+
+| Metric | Purpose | Suggested cadence |
+|---|---|---|
+| % of sensitive repositories with usable audit logs | Determine SOC visibility of unusual access and exports | Monthly |
+| Median claim-qualification time | Make decisions despite unverified public postings | Monthly |
+| % of privileged and supplier accounts with appropriate MFA | Reduce credential abuse | Monthly |
+| % of exposed apps reviewed and patched | Reduce exposure windows | Monthly |
+| Tested restore outcomes and measured recovery time | Prove business continuity | Quarterly |
+| % of critical suppliers with tested incident-notification processes | Contain indirect exposure | Quarterly |
+
+These indicators require an organisation-specific asset inventory. They are **not** AFRINTEL measurements of the victims listed in this report.
+
 ## 12. Conclusion and usage limitations
 
 September 2026 contains **33 documented signals across 12 countries**, with substantial visibility of ransomware and data-exposure risks. Several cases include concrete evidence, and **two unauthorised-access events have been confirmed within carefully defined scopes**. Many other publications still require investigation before conclusions can be drawn about a breach, its size or its business impact.
 
 **The findings are serious, but the response is practical and achievable:** monitor access, control exports, protect identities, verify providers and rehearse recovery. AFRINTEL intelligence is intended to **help anticipate**, not to encourage alarm.
 
-**Limitations:** non-exhaustive collection; possible over-representation of extortion posts; discovery dates that may differ from intrusion dates; heterogeneous samples; claimed data volumes that cannot be added together; no automatic equivalence between files, rows, folders and people. Evidence status or high confidence is not a substitute for proof of the source system's compromise. This revision uses the supplied victim records; many case-level independent verification notes are dated **18 October 2026**.
+**Limitations:** non-exhaustive collection; possible over-representation of extortion posts; discovery dates that may differ from intrusion dates; heterogeneous samples; claimed data volumes that cannot be added together; no automatic equivalence between files, rows, folders and people. Evidence status or high confidence is not proof that the named system was breached. This revision uses the supplied victim records; most case-level verification notes are dated **18 October 2026**, while a **2 November 2026 official RelyComply update** is explicitly identified.
+
+### Selected public references
+
+- [RelyComply official notice, 16 September, updated 2 November 2026](https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/) - confirmed access, data removal and forensic limits.
+- [Hollard statements, 15 and 18 September 2026](https://www.fanews.co.za/article/company-news-results/1/hollard/1301/hollard-statement-regarding-reported-cyber-threat-claims/44724) - indirect exposure linked to MIP Holdings.
+- [Guardrisk statement reported 30 September 2026](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html) - CoverCubed context, no demonstrated direct breach.
+- [NAM-CSIRT statement reported 20 September 2026](https://technews.com.na/2026/09/20/namibias-defence-ministry-hit-by-double-extortion-ransomware-attack/) - unauthorised activity in the ministry network.
+- [MITRE ATT&CK](https://attack.mitre.org/) - behavioural hypothesis taxonomy, not incident attribution.
+- [English victim case records](./victims.md) and [September statistics](./STATISTIQUES_2026-09.json) - AFRINTEL corpus, sources and limitations per case.
+
+**Editorial control - 17 November 2026:** the uploaded documents remain the baseline; public updates after the month and 18 October review are clearly marked. No personal data, credentials or criminal download links are published.
 
 ---
 

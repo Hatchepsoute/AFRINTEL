@@ -1,10 +1,10 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Period](https://img.shields.io/badge/Period-April%202026-lightgrey)
-![Victims](https://img.shields.io/badge/Victims-69-critical)
-![Ransomware](https://img.shields.io/badge/Ransomware-20-red)
-![Data%20Leaks](https://img.shields.io/badge/Data%20Leaks-39-orange)
-![Access%20Sales](https://img.shields.io/badge/Access%20Sales-1-yellow)
+![Victims](https://img.shields.io/badge/Victims-64%20canonical%20%2B%201%20tracked-critical)
+![Ransomware](https://img.shields.io/badge/Ransomware-21-red)
+![Data%20Leaks](https://img.shields.io/badge/Data%20Leaks-32-orange)
+![Access%20Sales](https://img.shields.io/badge/Access%20Sales-2-yellow)
 ![DDoS](https://img.shields.io/badge/DDoS-9-blue)
 ![Countries](https://img.shields.io/badge/Direct%20Countries-16-blueviolet)
 ![Actor%20Labels](https://img.shields.io/badge/Actor%20Labels-37-darkred)
@@ -12,12 +12,12 @@
 # African Victims - April 2026
 
 ## Summary
-- **Documented records:** 70
-- **Canonical victim total:** 69
+- **Documented records:** 65
+- **Canonical victim total:** 64
 - **Note:** Bank of Kigali is documented as a retrospective `Under Investigation - Alleged` case but excluded from the canonical total and statistical breakdowns.
-- **Ransomware:** 20
-- **Data leaks:** 39
-- **Access sales:** 1
+- **Ransomware:** 21
+- **Data leaks:** 32
+- **Access sales:** 2
 - **DDoS claims:** 9
 - **Direct country labels:** 16
 - **Countries in expanded geographic view:** 17
@@ -38,6 +38,7 @@
 
 #### 🇩🇿 Algeria - Ministry of Culture [Data Leak]
 - **Initial publication date:** April 01, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** Grubder
 - **Sector :** Government / Culture / Public Administration
@@ -47,6 +48,7 @@
 
 #### 🇪🇬 Egypt - Cairo University (cu.edu.eg) [Data Leak]
 - **Initial publication date:** April 01, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** Grubder
 - **Sector :** Education / University
@@ -83,6 +85,7 @@
 
 #### 🇪🇹 Ethiopia - National Oil Ethiopia PLC (NOC) [Data Leak]
 - **Initial publication date:** April 01, 2026
+- **Incident type:** Data Leak
 
 
 - **Threat Actor / Group :** ByteToBreach
@@ -98,6 +101,7 @@
 
 #### 🇿🇦 South Africa - singita.com [Ransomware]
 - **Initial publication date:** April 02, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** dragonforce
 - **Sector :** Travel and tourism industry
@@ -107,15 +111,17 @@
 
 #### 🇿🇦 South Africa - Takealot.com [Data Leak]
 - **Initial publication date:** April 02, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** Grubder
 - **Sector :** E‑commerce
 - **Website :** [takealot.com](https://www.takealot.com)
 - **Status :** Claim - Data Sample Published
-- **Description :** South Africa’s largest online retailer. A leaked CSV file (`DeliveryAddress_South Africa.csv`) exposes detailed delivery addresses, GPS coordinates, phone numbers, and private home access instructions. Data spans until late 2023.
+- **Description :** South Africa’s largest online retailer. A claimed sample contains delivery, contact and location-related data. No address, coordinate, phone number or private access instruction is reproduced here.
 
 #### 🇿🇦 South Africa - MySchool South Africa [Data Leak]
 - **Initial publication date:** April 02, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** Grubder
 - **Sector :** Education / Student Services
@@ -125,6 +131,7 @@
 
 #### 🇹🇳 Tunisia - Fatales.tn [Data Leak]
 - **Initial publication date:** April 02, 2026
+- **Incident type:** Data Leak
 
 
 - **Threat Actor / Group :** Grubder
@@ -153,6 +160,7 @@
 
 #### 🇹🇳 Tunisia - NSSTunis [Data Leak]
 - **Initial publication date:** April 02, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** Grubder
 - **Sector :** Services / CRM
@@ -162,6 +170,7 @@
 
 #### 🇪🇬 Egypt - Ain Shams University (ums.asu.edu.eg)  [Data Leak]
 - **Initial publication date:** April 02, 2026
+- **Incident type:** Data Leak
 
 
 - **Threat Actor / Group :** Grubder
@@ -175,6 +184,7 @@
 
 #### 🇪🇬 Egypt - United Finance Egypt [Ransomware]
 - **Initial publication date:** April 03, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** payload
 - **Sector :** Finance
@@ -188,6 +198,7 @@
 
 #### 🇧🇼 Botswana - lkc.ac.bw [Ransomware]
 - **Initial publication date:** April 04, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** krybit
 - **Sector :** Academic Institutions
@@ -197,6 +208,7 @@
 
 #### 🇪🇬 Egypt - AUG Pharma [Ransomware]
 - **Initial publication date:** April 04, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** dragonforce
 - **Sector :** Pharmacy and drugs manufacturing
@@ -206,6 +218,7 @@
 
 #### 🇦🇴 🇿🇦 🇳🇬 Africa - Government Data Leak and Administrative Access Sale [Data Leak]
 - **Initial publication date:** April 04, 2026
+- **Incident type:** Data Leak
 
 
 - **Threat Actor / Group :** superduper1
@@ -239,6 +252,7 @@
 
 #### 🇪🇬 Egypt - gas.mercedes-benz.com.eg [Ransomware]
 - **Initial publication date:** April 06, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** lockbit5
 - **Sector :** Automotive
@@ -248,6 +262,7 @@
 
 #### 🇳🇬 Nigeria - Welfare.org.ng [Data Leak]
 - **Initial publication date:** April 06, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** Citizen / NormalLeVrai
 - **Sector :** NGO / Social Welfare
@@ -261,6 +276,7 @@
 
 #### 🇪🇬 Egypt - El Wastani Petroleum Company (WASCO) [Ransomware]
 - **Initial publication date:** April 08, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** payload
 - **Sector :** Oil
@@ -271,6 +287,7 @@
 
 #### 🇪🇬 Egypt - ACE Consulting Engineers [Ransomware]
 - **Initial publication date:** April 08, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** TheGentlemen
 - **Sector :** Engineering consulting
@@ -280,6 +297,7 @@
 
 #### 🇲🇦 Morocco - CNOPS [Data Leak]
 - **Initial publication date:** April 08, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** JBT2026 (relayed by Jabaroot)
 - **Sector :** Healthcare / Health Insurance / Public Administration
@@ -321,6 +339,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 #### 🇸🇨 Seychelles - egov.sc [Ransomware]
 - **Initial publication date:** April 09, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** apt73/bashe
 - **Sector :** Government and administrations
@@ -330,6 +349,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 #### 🇿🇦 South Africa - megasurf.co.za [Ransomware]
 - **Initial publication date:** April 09, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** krybit
 - **Sector :** Internet Service providers
@@ -361,9 +381,9 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
   Phantom Atlas published, on April 10, 2026, a claim of access to the university server's phpMyAdmin interface, addressed directly to the institution's director and framed as exposing "internal governance failures" rather than a mere technical exploit. The post's own text refers to access obtained and maintained since November 8, 2025. The post claims full access to administration panels and student databases, while explicitly stating it does not intend to leak student data. A follow-up message, posted after the site was taken down for maintenance, reiterates the claimed extended access and threatens further disclosures.
 
-  Analysis of the visible data identified two distinct databases presented through phpMyAdmin on univ-chlef.dz. The first corresponds to a CMS-type website database (table prefix `refx_`, including post, comment, user and SEO metadata tables), totaling 15 tables for approximately 152.5 MiB. The second corresponds to a staff administrative-management database (19 tables, including `ats`, `att_travail`, `fiche_paie`, `personne`, `grade`, `print_badge`), totaling approximately 13,630 rows for 1.7 MiB. A visible excerpt of the `ats` table displays named staff records including first and last name in French and Arabic, gender, professional grade, date and place of birth, a photo reference, an appointment date, a faculty assignment code and a password stored as a 40-character hexadecimal hash.
+  Analysis of the visible material identified CMS and staff-administration structures presented through an administrative database interface. The observed fields relate to website content, personnel administration and authentication. No name, date of birth, photo reference, account value or secret is reproduced here.
 
-  The consistency of the visible interface, table names and fields, together with the site's maintenance shortly after the post, supports a high-confidence assessment that the published material plausibly depicts a university database environment. It does not independently establish how access was obtained, whether it remained active or whether all claimed databases were accessible. The visible staff data, including dates of birth and hashed passwords, creates a risk of identity theft, account compromise in case of password reuse, and targeted phishing against university staff. Analysis was limited to the visible material because the original database exports were not available; AFRINTEL does not reproduce any name, date of birth, place of birth, photo reference or hash value.
+  The consistency of the visible interface and fields, together with the site's maintenance shortly after the post, supports a high-confidence assessment that the material plausibly depicts a university database environment. It does not independently establish how access was obtained, whether it remained active or whether all claimed databases were accessible. The observed personnel and authentication categories create risks of identity theft, account compromise and targeted phishing. Analysis was limited to the visible material because the original database exports were not available; AFRINTEL does not reproduce personal records or secret values.
 
 ### April 11, 2026
 
@@ -419,6 +439,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 #### 🇲🇦 Morocco - OFPPT [Data Leak]
 - **Initial publication date:** April 12, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** anisanas2
 - **Sector :** Vocational Training / Education
@@ -428,6 +449,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 #### 🇲🇦 Morocco - Moroccan Identity Documents (Passports/KYC) [Data Leak]
 - **Initial publication date:** April 12, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** Arnoldsudney
 - **Sector :** Digital Identity / Official Documents
@@ -537,6 +559,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 #### 🇰🇪 Kenya - ifmis.go.ke [Ransomware]
 - **Initial publication date:** April 13, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** apt73/bashe
 - **Sector :** Central administration and government
@@ -546,6 +569,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 #### 🇲🇦 Morocco - GET / GENERAL ELECTRIC TRADING (gemaroc.com) [Data Leak]
 - **Initial publication date:** April 13, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :**  bxxxx1
 - **Sector :** Industrial Services / IT Infrastructure
@@ -559,6 +583,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 #### 🇬🇭 Ghana - International Maritime Hospital [Ransomware]
 - **Initial publication date:** April 14, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** TheGentlemen
 - **Sector :** Healthcare services
@@ -568,6 +593,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 #### 🇲🇦 Morocco - Alleged Royal Palace Staff Database (Dar El Makhzen) [Data Leak]
 - **Initial publication date:** April 14, 2026
+- **Incident type:** Data Leak
 
 
 - **Threat Actor / Group :** Rihana
@@ -613,6 +639,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 #### 🇪🇬 Egypt - orientalweavers.com [Ransomware]
 - **Initial publication date:** April 16, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** payload
 - **Sector :** Manufacturing
@@ -622,6 +649,7 @@ Given the absence of a named victim, verifiable evidence or pricing detail, this
 
 #### 🇰🇪 Kenya - Kenya Airports Authority (KAA)  [Data Leak]
 - **Initial publication date:** April 16, 2026
+- **Incident type:** Data Leak
 
 
 - **Threat Actor / Group :** RubiconH4ck
@@ -682,6 +710,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇿🇦 South Africa - Sunspray Food [Ransomware]
 - **Initial publication date:** April 19, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** TheGentlemen
 - **Sector :** Food and drinks businesses
@@ -691,6 +720,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇲🇦 Morocco - Al Barid Bank [Data Leak]
 - **Initial publication date:** April 19, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** Sejjil
 - **Sector :** Banking / Financial Services
@@ -702,6 +732,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇪🇬 Egypt - Better House [Ransomware]
 - **Initial publication date:** April 20, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** payload
 - **Sector :** Construction
@@ -711,6 +742,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇲🇦 Morocco - SUPTECH SANTÉ [Data Leak]
 - **Initial publication date:** April 20, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** xNov
 - **Sector :** Education / Training / Health Technologies
@@ -724,6 +756,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇲🇦 Morocco - LNM6 (National Laboratory Mohammed VI) [Data Leak]
 - **Initial publication date:** April 21, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** anisanas2
 - **Sector :** Healthcare / Medical Laboratory
@@ -733,6 +766,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇳🇬 Nigeria - Federal Housing Authority (FHA) [Data Leak]
 - **Initial publication date:** April 21, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** 0xLei / Nullsec
 - **Sector :** Public Administration / Housing
@@ -742,15 +776,17 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇳🇬 Nigeria - EFCC [Data Leak]
 - **Initial publication date:** April 21, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** ki4t / Nullsec Nigeria
 - **Sector :** Law Enforcement / Anti‑corruption
 - **Website :** [efcc.gov.ng](https://www.efcc.gov.ng/)
 - **Status :** Claim - Data Sample Published
-- **Description :** Nigeria’s Economic and Financial Crimes Commission. Exposed user accounts, emails, phones, internal roles, bcrypt password hashes, internal IPs, agent data.
+- **Description :** Nigeria’s Economic and Financial Crimes Commission. The claim concerns user and contact fields, internal roles and agent-related data. Authentication material and network details are described only at an aggregate level; no secret or internal address is reproduced.
 
 #### 🇲🇦 Morocco - Royal Moroccan Football Federation (FRMF) [Data Leak]
 - **Initial publication date:** April 21, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** MDGhost
 - **Sector :** Sports
@@ -760,6 +796,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇲🇦 Morocco - Pharmacie.ma [Data Leak]
 - **Initial publication date:** April 21, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** Tanaka
 - **Sector :** Healthcare / Pharmacy / E-health
@@ -779,6 +816,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇲🇦 Morocco - Equatorial Coca-Cola Bottling [Ransomware]
 - **Initial publication date:** April 22, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** worldleaks
 - **Sector :** Food and drinks businesses
@@ -791,6 +829,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇧🇯 Benin - CNSS Benin [Data Leak]
 - **Initial publication date:** April 25, 2026
+- **Incident type:** Data Leak
 
 
 - **Threat Actor / Group :** NormalLeVrai
@@ -818,6 +857,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇪🇬 Egypt - EEC Group [Ransomware]
 - **Initial publication date:** April 26, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** TheGentlemen
 - **Sector :** Manufacturing
@@ -827,6 +867,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇲🇦 Morocco - Regional Investment Center Rabat‑Salé‑Kénitra (CRI) [Data Leak]
 - **Initial publication date:** April 26, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** kutam_dz
 - **Sector :** Public Administration / Investment / Legal
@@ -836,6 +877,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇹🇳 Tunisia - Tawjih.tn [Data Leak]
 - **Initial publication date:** April 26, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** mecrobyte
 - **Sector :** Education / Academic Guidance
@@ -850,6 +892,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇪🇬 Egypt - alx-pc.com [Ransomware]
 - **Initial publication date:** April 27, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** apt73/bashe
 - **Sector :** Oil
@@ -859,6 +902,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇬🇭 Ghana - providentgh.com [Ransomware]
 - **Initial publication date:** April 27, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** apt73/bashe
 - **Sector :** Wealth Management
@@ -868,15 +912,17 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇺🇬 Uganda - Ministry of Agriculture (E‑Extension) [Data Leak]
 - **Initial publication date:** April 27, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** vicmeow
 - **Sector :** Government / Agriculture
 - **Website :** [extension.agriculture.go.ug](https://extension.agriculture.go.ug/)
 - **Status :** Claim - Data Sample Published
-- **Description :** Ugandan digital agricultural platform. Exposed emails, names, phones, addresses, weak/plaintext passwords, and an API token for SMS gateway.
+- **Description :** Ugandan digital agricultural platform. The claim concerns contact, address, authentication and messaging-integration fields. No password, token or other secret is reproduced.
 
 #### 🇳🇬 Nigeria - Oyo State Ministry of Trade, Industry, Investment and Cooperatives [Data Leak]
 - **Initial publication date:** April 27, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** AckLine
 - **Sector :** Public Administration / Trade
@@ -909,7 +955,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 - **Analysis:**
 
-  **Observed:** The screenshot shows a post titled “Admin Access To Tikohub.co.ke | Kenya”, dated 28 April 2026 at 23:26 according to the displayed timestamp. It contains an administrative-resource URL and fields presented as a username and password. These values are deliberately not reproduced and were not tested. The screenshot was supplied to AFRINTEL on 24 September 2026.
+  **Observed:** The screenshot shows a post titled “Admin Access To Tikohub.co.ke | Kenya”, dated 28 April 2026 at 23:26 according to the displayed timestamp. It presents administrative-access fields. No URL, username, password or secret is reproduced, and nothing was tested. The screenshot was supplied to AFRINTEL on 24 September 2026.
 
   **Assumption:** The `tikohub.co.ke` domain corresponds to a Kenyan ticketing platform, making the target plausible. The post could nevertheless be inaccurate, recycled, falsified or related to limited access to a third-party component. 28 April is the observed post date, not necessarily the initial compromise date.
 
@@ -923,7 +969,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 1. Preserve authentication, administration, API and hosting logs from 28 April 2026 onward.
 2. Reset potentially affected administrator accounts and revoke sessions as justified by TikoHUB's defensive investigation.
 3. Review privilege changes, exports, account creation and ticket or event modifications.
-4. Do not test the disclosed credentials or open the sensitive URL shown in the screenshot.
+4. Do not test or access any credentials, endpoint or resource referenced by the screenshot.
 5. Monitor impersonation, ticket fraud and secret reuse.
 
 - **Sources / Evidence:** screenshot supplied to AFRINTEL on 24 September 2026; public [TikoHUB website](https://www.tikohub.co.ke/).
@@ -932,6 +978,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇲🇦 Morocco - planetsport.ma [Ransomware]
 - **Initial publication date:** April 29, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** lockbit5
 - **Sector :** Sports
@@ -944,6 +991,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇿🇲 Zambia - zsiclife.co.zm [Ransomware]
 - **Initial publication date:** April 29, 2026
+- **Incident type:** Ransomware
 
 - **Ransomware Group :** krybit
 - **Sector :** Insurance services
@@ -953,6 +1001,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇲🇦 Morocco - Royal Moroccan Tennis Federation (FRMT) [Data Leak]
 - **Initial publication date:** April 29, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** Keymous
 - **Sector :** Sports
@@ -962,6 +1011,7 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 
 #### 🇲🇦 Morocco - List of 4 Million Moroccan Email Addresses [Data Leak]
 - **Initial publication date:** April 29, 2026
+- **Incident type:** Data Leak
 
 - **Threat Actor / Group :** Rihana
 - **Sector :** Personal Data / Email Marketing / Data Aggregation

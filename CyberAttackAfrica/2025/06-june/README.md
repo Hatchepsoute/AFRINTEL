@@ -39,6 +39,8 @@ Compared with May, monthly volume **decreases by 5 records**. The most visible c
 
 
 ## 2. Methodology
+![June 2025 comparison with previous month](assets/comparaison_EN.png)
+
 
 - **Scope:** 54 African countries; reference period: June 2025.
 - **Source of truth:** validated `victims_FR.md` / `victims.md` pair.
@@ -83,6 +85,9 @@ pie showData
 ```
 
 ## 4. Geographic distribution
+![Incident types](assets/types_EN.png)
+![Incident distribution](assets/types_pie_EN.png)
+
 
 | Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -99,6 +104,8 @@ pie showData
 > `Operational Fraud = 0` this month; the column is omitted for readability.
 
 ## 5. Regional distribution
+![Documented incidents by country](assets/pays_EN.png)
+
 
 | Region | Records | Share |
 |---|---:|---:|
@@ -112,6 +119,9 @@ pie showData
 The leading region is **North Africa with 16 records (76.2%)**.
 
 ## 6. Sector impact
+![Regional distribution](assets/regions_EN.png)
+![Regional shares](assets/regions_pie_EN.png)
+
 
 | Sector | Records | Share | Activity |
 |---|---:|---:|---|
@@ -125,6 +135,9 @@ The leading region is **North Africa with 16 records (76.2%)**.
 | **Total** | **21** | **100%** | |
 
 ## 7. Actors / groups
+![Sector exposure](assets/secteurs_EN.png)
+![Sector distribution](assets/secteurs_pie_EN.png)
+
 
 `Unknown` denotes missing attribution, not a threat actor.
 
@@ -146,6 +159,8 @@ The leading region is **North Africa with 16 records (76.2%)**.
 | MdHackersArmy | 1 | █ |
 
 ## 8. Evidence maturity
+![Actors and publication labels](assets/acteurs_EN.png)
+
 
 | Evidence maturity | Records | Share |
 |---|---:|---:|
@@ -157,6 +172,8 @@ The leading region is **North Africa with 16 records (76.2%)**.
 Evidence statuses describe the available validation level; they do not change the technical incident type.
 
 ## 9. Timeline
+![Evidence maturity](assets/preuves_EN.png)
+
 
 ```mermaid
 timeline

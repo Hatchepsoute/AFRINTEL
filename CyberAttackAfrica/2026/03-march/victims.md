@@ -63,10 +63,10 @@
 - **Website:** [mcdss.gov.zm](https://www.mcdss.gov.zm)
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Data Leak
-- **Victim Description:** The ZISPIS system, a unified national registry used by the Zambian government to manage social protection programs, is the subject of an alleged compromise. The actor claims to have affected approximately 15 million individuals and exposed over 34 million records. The leaked data includes full personal information (name, date of birth, gender, national identifiers), detailed socio-economic data (household conditions, education level, living standards), financial data (payments, balances, cycles), and geographic information (GPS coordinates). Published samples also confirm the exposure of system audit logs and user activity, indicating a deep compromise of the application infrastructure.
+- **Victim Description:** The ZISPIS system, a unified national registry used by the Zambian government to manage social protection programs, is the subject of an alleged compromise. The actor claims exposure affecting approximately 15 million individuals and more than 34 million records. The claimed categories include identity, socio-economic, payment, geographic and application-activity data. No personal record, identifier, contact detail or precise location is reproduced.
 
 - **Analysis:**
-  AFRINTEL reviewed a post by the threat actor Spirigatito on a cybercriminal forum, titled "Government of Zambia (ZIPSIS) - 34M", along with an associated data sample. The sample consists of JSON exports from the ZISPIS system, operated by the Ministry of Community Development and Social Services (mcdss.gov.zm) as part of the Social Cash Transfer program. Observed beneficiary records include full name, gender, date of birth, national identifier, household GPS coordinates, district and village of residence, detailed socio-economic status (dwelling type, water and electricity access, food security, disability status) and payment data (amounts, cycles, delivery channel, and the named payment point representative with contact details). The sample also includes application activity logs tied to named government agent accounts (email addresses on the mcdss.gov.zm and cbt.gov.zm domains), with actions such as beneficiary record updates, payment validation, report generation and case closure due to death. These elements are consistent with direct access to the ZISPIS application database and its audit logs, rather than a limited partial export. AFRINTEL does not reproduce any individual name, national identifier, phone number or GPS coordinate from this sample. AFRINTEL did not have access to the full claimed 34 million records and cannot confirm this total volume or the initial access vector.
+  AFRINTEL reviewed a post by the threat actor Spirigatito on a cybercriminal forum, titled "Government of Zambia (ZIPSIS) - 34M", along with an associated data sample. The sample is described as JSON material from the ZISPIS system, operated by the Ministry of Community Development and Social Services. The observed categories include beneficiary identity, socio-economic, payment and application-activity fields. The material is consistent with possible access to the application database and audit records, but AFRINTEL did not have access to the full claimed volume and cannot confirm its completeness or initial access vector. No personal record, identifier, contact detail or precise location is reproduced.
 
 
 - **AFRINTEL CTI follow-up (analytical review, 2026-11-06) :** The record concerns an alleged data publication; authenticity and full scope are not established beyond the described evidence. Defensive auditing of access and exports is recommended.
@@ -81,7 +81,7 @@
 - **Leak Date:** January 16, 2026 (Identified in March 2026)
 - **Status:** Data Fully Published
 - **Incident type:** Data Leak
-- **Victim description:** Eventing South Africa is the national governing body for eventing equestrian sports. xNov leaked a database containing club and member information: names, email addresses, login credentials (passwords), affiliation details, horse and rider records, competition data, and administrative/financial records (payments, invoices).
+- **Victim description:** Eventing South Africa is the national governing body for eventing equestrian sports. xNov claimed exposure of club and member information, affiliation, competition and administrative data. No account or payment value is reproduced.
 
 
 - **AFRINTEL CTI follow-up (analytical review, 2026-11-06) :** The record concerns an alleged data publication; authenticity and full scope are not established beyond the described evidence. Defensive auditing of access and exports is recommended.
@@ -116,7 +116,7 @@
 - **Confidence level:** High
 - **Impact level:** Level 3
 - **Victim description:** Loozap is a pan-African online classifieds platform (formerly Listings360) operating country-specific sections across dozens of African markets from a single shared application, rather than a standalone national service. A threat actor published a database containing approximately 34,000 user accounts.
-- **Analysis:** AFRINTEL reviewed a structured sample of the published user table. The records are not tied to a single country: reviewed entries list users located in, among others, Egypt, Kenya, Ghana, Ethiopia, Nigeria and Mozambique, consistent with Loozap's role as a single shared platform database serving its country-specific subdomains rather than a per-country deployment. The reviewed fields include full name, email address, an SHA1-format password hash, registration IP address, precise geolocation coordinates, date of birth, gender and social-activity metadata (followers, likes, group memberships). The consistent database schema across records from different countries, together with the volume and internal structure of the sample, supports a high confidence assessment of a genuine, full compromise of the platform's shared user database rather than a claim limited to one national instance. Given the multi-country scope, the presence of precise geolocation data and weak (SHA1) password hashing, this incident creates a risk of large-scale account takeover, credential-stuffing against reused passwords, and targeted phishing affecting users across multiple African countries simultaneously. AFRINTEL does not reproduce any name, email address, password hash, IP address or geolocation coordinate from the reviewed sample.
+- **Analysis:** AFRINTEL reviewed a structured sample of the published user table. The records are not tied to a single country and are consistent with Loozap's role as a shared platform serving several African markets. The reviewed material includes account, contact, activity and location-related fields. No credential value, personal record or precise location is reproduced here. The consistency of the structure supports a high-confidence assessment that the material plausibly represents the shared user database, without validating the complete claimed volume or the initial access vector.
 
 - **AFRINTEL CTI follow-up (analytical review, 2026-11-06) :** The record concerns an alleged data publication; authenticity and full scope are not established beyond the described evidence. Defensive auditing of access and exports is recommended.
 
@@ -489,7 +489,7 @@ This chronology is recorded as **two observed claims** - XP95 in March and Kazu 
 - **Website:** [unisa.ac.za](https://www.unisa.ac.za)
 - **Status:** Data Fully Published
 - **Incident type:** Data Leak
-- **Victim description:** UNISA is Africa's largest distance learning institution. Blackwinter99 publicly disclosed login credentials for the site's administration page on an underground forum, which, if valid, could provide elevated platform privileges, enabling massive student data exfiltration, tampering with academic records, or complete takeover of the web infrastructure.
+- **Victim description:** UNISA is Africa's largest distance learning institution. Blackwinter99 published information presented as administrative access on an underground forum. If authentic, it could create risks for privileged access, student-data exposure and website integrity, but no credential value is reproduced or tested.
 
 - **AFRINTEL CTI follow-up (analytical review, 2026-11-06) :** Publication of allegedly privileged credentials does not prove that they remain valid. Portal takeover and mass exfiltration are potential scenarios, not demonstrated outcomes.
 
@@ -594,7 +594,7 @@ This chronology is recorded as **two observed claims** - XP95 in March and Kazu 
 Standard Bank confirmed unauthorised access to internal administrative systems and document repositories, potentially exposing names, identifiers, contact details, addresses and account numbers. Transactional and core systems were reportedly not accessed. The vector, number of people and copied volume remain unknown. This record is distinct from the May Standard Bank Group claim.
 
 
-- **Official source :** [Standard Bank – 23/03/2026](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-message-from-standard-bank) ; [14/04/2026](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-data-incident-update-14-april).
+- **Official source :** [Standard Bank - 23/03/2026](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-message-from-standard-bank) ; [14/04/2026](https://www.standardbank.co.za/southafrica/news-and-media/newsroom/an-important-data-incident-update-14-april).
 
 - **AFRINTEL CTI follow-up (analytical review, 2026-11-06) :** First-party confirmation: Standard Bank acknowledged unauthorised access to some data on 23 March. Its 14 April update identifies internal administrative and document systems, while core banking and transactional systems were reportedly not accessed. The main risk is targeted impersonation rather than proven payment-system compromise.
 
@@ -617,22 +617,19 @@ Standard Bank confirmed unauthorised access to internal administrative systems a
   - email addresses
   - phone numbers
   - birth dates
-  - passwords
-  - banking card information
-  - VISA and Mastercard details
-  - 3DS-related data
-  - delivery addresses and history
-  - GPS coordinates
-  - customer service notes
+  - account and authentication-related fields
+  - payment-related data
+  - delivery and location-related data
+  - customer service information
 
 - **CTI Analysis :**
   The published samples suggest exposure of a sensitive e-commerce database containing personal information, address history, and payment-related data. Risks include banking fraud, identity theft, targeted phishing, and customer account compromise.
 
 - **CTI Note :**
-  The observed samples include structured SQL extracts, address history records, and payment card/3DS-related information.
+  The observed samples include structured SQL extracts, address history records and payment-related information. No card data, authentication value or personal record is reproduced.
 ---
 
-- **AFRINTEL CTI follow-up (analytical review, 2026-11-06) :** The listing suggests delivery and payment-related data; card and 3DS fields need independent characterisation. Historic integration of Bottles into Pick n Pay ASAP does not establish compromise of current acquirer systems. Focus on provenance and customer-fraud monitoring.
+- **AFRINTEL CTI follow-up (analytical review, 2026-11-06) :** The listing suggests delivery and payment-related data; no card data or authentication value is reproduced. Historic integration of Bottles into Pick n Pay ASAP does not establish compromise of current acquirer systems. Focus on provenance and customer-fraud monitoring.
 
 ### March 24, 2026
 
@@ -833,10 +830,10 @@ Standard Bank confirmed unauthorised access to internal administrative systems a
 - **Website:** [remita.net](https://www.remita.net)
 - **Status:** Data Fully Published
 - **Incident type:** Data Leak
-- **Victim description:** Major payment platform in Nigeria used by individuals, businesses, and government. Actor-claimed 3 TB leak: 800 GB of KYC documents (IDs, passports, bank statements, invoices), MySQL/Postgres databases, source code, Docker registries, government HSM keys, over 35,000 password hashes.
+- **Victim description:** Major payment platform in Nigeria used by individuals, businesses, and government. The actor claims exposure of a large volume of KYC, transaction, source-code, configuration and infrastructure-related material. No credential, key, token, hash or identity document is reproduced.
 
 - **Analysis:**
-  AFRINTEL reviewed a set of technical elements associated with this claim. A credentials file lists approximately 35,800 email address / password hash pairs (bcrypt format), covering both internal accounts (agents, operators) and likely platform customer accounts; AFRINTEL did not extract or attempt to crack any hash. Screenshots show a restored instance of the platform's databases in a SQL administration tool, including a business owner table (BVN number, ID type and number, base64-encoded identity document), an interbank transaction table (amounts, beneficiary bank codes, channel, payment reference), an internal admin account table (SystemSpecs agents with role and status) and a customer personal information table (date of birth, email, phone number, KYC status, hashed password). Other screenshots show a source code archive covering several platform microservices, including an SFTP-based encrypted communication module with the Central Bank of Nigeria (CBN) for exchanging payment instructions, an integration with the Pan-African Payment and Settlement System (PAPSS), a virtual wallet system built in partnership with OPay, and OTP verification logic. An additional screenshot shows a directory of key files named after more than twenty Nigerian banks (including GTBank, Zenith, UBA, First Bank, Access, FCMB, Fidelity, Sterling, Stanbic, Ecobank, UBN, Wema, Unity, Providus, Heritage and Citibank), consistent with master encryption keys tied to interbank integration; AFRINTEL did not verify the content or validity of these files. Secret-scanning tool results run against the source code repositories show detection of API keys, cloud access tokens and hardcoded database credentials in several configuration files, associated with SystemSpecs employee email addresses. AFRINTEL also reviewed the structure of a Git backup archive (approximately 34,800 files) covering roughly forty distinct internal repositories with full commit history, corresponding to the entire internal "remitacenta" GitLab organization: interbank and pan-African payment components (including a PAPSS connector and an ISO 20022 payment message builder, a standard used for interbank messaging), a fraud detection engine, a card tokenization SDK, Kubernetes infrastructure-as-code (three separate manifest sets) and a business intelligence module (Superset), the latter alone accounting for over a quarter of the archive's files. The archive contains approximately 200 production configuration files, 354 Helm "values.yaml" files and more than 400 file names explicitly referencing secrets, consistent with potential exposure of numerous additional credentials beyond those already flagged by the scanning tools; AFRINTEL did not open these files individually and does not reproduce any further secret. One additional file, marked as an unfinished download, corresponds to a backup image in Veeam Backup & Replication format (XBSTCK01 signature, tool version 12.1.2) referencing InnoDB log files, consistent with a system-level backup including a MySQL/MariaDB database; as this file is incomplete, AFRINTEL was unable to mount it or review its content. A final screenshot shows access, via cloud credentials extracted from the source code, to a cloud storage bucket dedicated to KYC documents containing approximately 657,000 files for a raw volume of approximately 588 GB, as well as several other buckets tied to the company's internal GitLab infrastructure (backups, artifacts, container registry). AFRINTEL does not reproduce any individual credential, key, token, hash, account name or identity document from these elements. Taken together, these observations are consistent with a deep compromise of Remita's development and production infrastructure, potentially extending to its banking and pan-African integration systems, but AFRINTEL did not verify the authenticity or currency of each individual element and cannot confirm the exact extent of access obtained or the initial access vector.
+  AFRINTEL reviewed technical elements associated with the claim, including repository, configuration, KYC, transaction and infrastructure-related material. No credential, key, token, hash, account name or identity document is reproduced. The material supports a high-level exposure hypothesis, but its authenticity, currency, completeness and initial access vector remain unverified.
 
 
 - **Regulatory follow-up :** [NDPC / presse indépendante, 06/04/2026](https://www.premiumtimesng.com/news/top-news/869669-ndpc-investigates-remita-sterling-bank-for-alleged-data-breach.html). Investigation opened; impact scope not confirmed.
@@ -852,10 +849,10 @@ Standard Bank confirmed unauthorised access to internal administrative systems a
 - **Website:** [smarteez.eu](https://smarteez.eu)
 - **Status:** Data Fully Published
 - **Incident type:** Data Leak
-- **Victim description:** Smarteez is a Moroccan digital provider used by L'Oréal Morocco for field operations management. Exposure of critical data: information on 296 pharmacies (GPS, segmentation), 361,000 sales/KPI records, 22 plaintext OAuth2 application secrets, complete administrative logs. A production APK was also disclosed.
+- **Victim description:** Smarteez is a Moroccan digital provider used by L'Oréal Morocco for field operations management. The claim concerns pharmacy-related information, sales/KPI records, administrative logs and application authentication material related to OAuth2. No secret, precise location or production credential is reproduced.
 
 
-- **AFRINTEL CTI follow-up (analytical review, 2026-11-06) :** The reported OAuth2 secrets and commercial records warrant legitimacy checks and defensive rotation by authorised operators. The supply-chain connection to L’Oréal Morocco may enable partner fraud, but does not prove compromise of L’Oréal systems.
+- **AFRINTEL CTI follow-up (analytical review, 2026-11-06) :** The reported application-authentication material and commercial records warrant legitimacy checks and defensive rotation by authorised operators. The supply-chain connection to L'Oréal Morocco may enable partner fraud, but does not prove compromise of L'Oréal systems.
 
 #### 🇪🇬 Egypt - Semsar Masr (semsarmasr.com)
 - **Initial publication date:** March 31, 2026
@@ -868,10 +865,10 @@ Standard Bank confirmed unauthorised access to internal administrative systems a
 - **Status:** Claim - Data Sample Published
 - **Incident type:** Data Leak
 - **Victim description:** Semsar Masr is an Egyptian real estate classifieds platform, active since 2007, enabling the posting and browsing of listings for apartments, land and other properties for sale or rent in Egypt.
-- **Analysis:** AFRINTEL reviewed a post published on January 28, 2026 by the actor Al-Sheikh concerning the `tb_members_Profiles` table of semsarmasr.com, stating it contains 185,024 rows and that user passwords are stored in plaintext. The sample displayed in the post includes a field schema covering user ID, account status, email address, phone number, password, user role, contact name, company name, address, social media handles (WhatsApp, Telegram, LinkedIn, Twitter, Facebook), date of birth, occupation, gender, marital status, email/phone verification flags, and account creation/update dates. Ten complete records are directly visible in the sample, with email addresses, Egyptian and international phone numbers, full names and plaintext passwords tied to accounts created on January 28, 2026. The consistency of the schema with a real-estate classifieds platform and the presence of unhashed passwords in the sample support a high confidence level regarding the authenticity of this leak, although the total claimed volume of 185,024 rows could not be independently verified beyond the observed sample. The exposure of plaintext passwords, combined with user contact details and identity, creates a high risk of account takeover, password reuse across other services and targeted phishing. AFRINTEL does not reproduce any name, email address, phone number or password from the reviewed sample.
+- **Analysis:** AFRINTEL reviewed a post published on January 28, 2026 by the actor Al-Sheikh concerning a user table attributed to semsarmasr.com. The post claims a large dataset containing account, contact, role and property-listing fields, with authentication-related information described in the sample. No account, contact value or secret is reproduced. The schema is consistent with a real-estate classifieds platform and supports a high-confidence assessment that the material is plausible, although the total claimed volume and the complete security posture could not be independently verified.
 
 
-- **AFRINTEL CTI follow-up (analytical review, 2026-11-06) :** The analysed forum post originated on 28 January 2026 and was identified later. Ten visible rows do not verify the claimed 185,024 records; plaintext passwords, if authentic, warrant account-reset and password-reuse controls.
+- **AFRINTEL CTI follow-up (analytical review, 2026-11-06) :** The analysed forum post originated on 28 January 2026 and was identified later. The visible sample does not verify the claimed volume; defensive review should focus on account reset, authentication monitoring and password-reuse controls if the exposure is confirmed.
 
 #### 🇬🇳 Guinea - Ministry of Health (sante.gov.gn)
 - **Initial publication date:** March 31, 2026

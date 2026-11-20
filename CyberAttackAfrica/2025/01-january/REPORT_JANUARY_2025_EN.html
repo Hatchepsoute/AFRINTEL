@@ -1,0 +1,881 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>AFRINTEL | Monthly cyber threat intelligence report - AFRINTEL</title><style>body{font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.62;color:#243b53;max-width:1060px;margin:24px auto;padding:28px;background:#fff}h1,h2,h3{color:#1f3e61}h1{font-size:2.3em;border-bottom:3px solid #229f9b;padding-bottom:18px}h2{border-bottom:1px solid #dde5ec;padding-top:24px}a{color:#1768a1}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:10px;border:1px solid #d7e0e9;text-align:left;vertical-align:top}th{background:#eaf2f7}tr:nth-child(even){background:#f7f9fb}blockquote{background:#f1f7fb;border-left:5px solid #239b98;padding:16px;margin:20px 0}img{max-width:100%;height:auto;margin:12px auto;border-radius:8px}pre{white-space:pre-wrap;background:#f4f7fa;padding:12px;border-radius:6px;overflow:auto}code{font-family:Consolas,monospace}hr{border:0;border-top:1px solid #ddd}.report-meta{font-size:.92em;color:#52606d;margin-bottom:22px}</style></head><body><h1>AFRINTEL | Monthly cyber threat intelligence report</h1>
+<h2>Cyber threats targeting African organizations, January 2025</h2>
+<p><img alt="AFRINTEL" src="https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue" /> <img alt="Scope" src="https://img.shields.io/badge/Scope-Africa-orange" /> <img alt="Classification" src="https://img.shields.io/badge/TLP-CLEAR-green" /> <img alt="Period" src="https://img.shields.io/badge/Period-January%202025-blueviolet" /></p>
+<p><strong>Audience:</strong> CISOs, risk leaders, SOC/CERT managers and business continuity owners.
+<strong>Period covered:</strong> 1–31 January 2025, based on documented publications and events.
+<strong>Distribution:</strong> TLP:CLEAR.
+👉🏾 <a href="./README_FR.md">Version française</a> | <a href="./victims_FR.md">Detailed French records</a> | <a href="./victims.md">English corpus</a></p>
+<blockquote>
+<p><strong>Evidence methodology - how to read this report.</strong> AFRINTEL distinguishes observed publications, samples actually examined, corroboration and official confirmation. A ransomware claim alone does not prove encryption, complete exfiltration or the announced volume. Raw personal data, secrets and identifiers are not reproduced.</p>
+</blockquote>
+<h2>1. Executive summary</h2>
+<p>In January 2025, AFRINTEL documents <strong>20 cyber incidents</strong> affecting organizations and digital services across <strong>8 African countries</strong>.</p>
+<p>The landscape is dominated by <strong>Ransomware with 16 records (80.0%)</strong>, followed by <strong>Data Leak with 3 (15.0%)</strong>. Other observed types are Account Takeover 1.</p>
+<p>Geographic concentration is significant: <strong>Kenya (4)</strong>, <strong>Egypt (4)</strong>, <strong>Nigeria (4)</strong> together account for <strong>12 records, or 60.0% of the month</strong>. This concentration reflects AFRINTEL corpus visibility rather than an exhaustive national compromise rate.</p>
+<p>At sector level, the most represented categories are <strong>Education / University (6)</strong>, <strong>Government / Administration (4)</strong>, <strong>Healthcare / Medical (2)</strong>. The most frequent actor labels are <code>funksec</code> (6), <code>GDLockerSec</code> (3), <code>ransomhub</code> (2). <code>Unknown</code>, when present, denotes missing attribution rather than a threat actor.</p>
+<p>Evidence maturity remains variable: <strong>18 records</strong> are unverified claims or claims accompanied by samples. AFRINTEL maintains a strict separation between <strong>observed facts, claims, corroboration, official confirmation, and technical unknowns</strong>.</p>
+<p>Compared with the final corrected December 2024 baseline, monthly volume <strong>increases by 2 records, from 18 to 20 (+11.1%)</strong>. Ransomware rises from 11 to 16 (+5), while Data Leak moves from 5 to 3 (-2), Access Sale falls from 1 to 0 (-1), and Defacement from 1 to 0 (-1). Account Takeover appears with 1 record in January.</p>
+<blockquote>
+<p><strong>Reading note:</strong> AFRINTEL figures describe documented incidents and the visibility of observed threats. They are not an exhaustive measurement of every cyberattack that actually occurred across Africa.</p>
+</blockquote>
+<h3>1.1 Month-over-month comparison</h3>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th style="text-align: right;">Final corrected December 2024</th>
+<th style="text-align: right;">January 2025</th>
+<th style="text-align: right;">Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total incidents</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;"><strong>+2 (+11.1%)</strong></td>
+</tr>
+<tr>
+<td>Ransomware</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;"><strong>+5 (+45.5%)</strong></td>
+</tr>
+<tr>
+<td>Data Leak</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;"><strong>-2 (-40.0%)</strong></td>
+</tr>
+<tr>
+<td>Access Sale</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>-1 (-100.0%)</strong></td>
+</tr>
+<tr>
+<td>DDoS</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>Stable</strong></td>
+</tr>
+<tr>
+<td>Defacement</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>-1 (-100.0%)</strong></td>
+</tr>
+<tr>
+<td>Account Takeover</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;"><strong>+1 (new)</strong></td>
+</tr>
+<tr>
+<td>System Intrusion</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>Stable</strong></td>
+</tr>
+<tr>
+<td>Malware</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>Stable</strong></td>
+</tr>
+<tr>
+<td>Operational Fraud</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>Stable</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Comparison basis:</strong> December 2024 uses the final AFRINTEL 2024 baseline after chronology review, reclassification, and integration of validated 2024 cases. All nine incident types are therefore directly comparable with January 2025.</p>
+</blockquote>
+<h2>2. Scope, method and limitations</h2>
+<ul>
+<li><strong>Scope:</strong> 54 African countries; reference period: January 2025.</li>
+<li><strong>Source of truth:</strong> validated <code>victims_FR.md</code> / <code>victims.md</code> pair.</li>
+<li><strong>Classification:</strong> Ransomware, Data Leak, Access Sale, DDoS, Defacement, Account Takeover, System Intrusion, Malware, and Operational Fraud.</li>
+<li><strong>Counting:</strong> one canonical record equals one documented cyber incident; cases under investigation remain outside statistics.</li>
+<li><strong>Timeline:</strong> <code>Incident date</code> and <code>Initial publication date</code> remain separate. A later disclosure does not artificially move an incident into another month when chronology is sufficiently supported.</li>
+<li><strong>Uncertain dates:</strong> when no exact day is known, the evidence-supported month or time window is retained.</li>
+<li><strong>Sources:</strong> public links are retained for supplementary incidents found through OSINT/web research; they are not retroactively imposed on historical or direct Dark Web observations.</li>
+<li><strong>Evidence:</strong> incident type, status, confidence, impact, and provenance remain separate dimensions.</li>
+<li><strong>Sectors:</strong> normalization is calculated once from the structured corpus and used identically in FR and EN.</li>
+<li><strong>Limitation:</strong> frequencies reflect AFRINTEL visibility rather than every real compromise on the continent.</li>
+</ul>
+<h3>AFRINTEL validation protocol</h3>
+<table>
+<thead>
+<tr>
+<th>Case type</th>
+<th>Examination</th>
+<th>Scope of finding</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ransomware / extortion</td>
+<td>Publication, timeline, accessible files or previews and victim context</td>
+<td>Publication and available evidence; encryption, initial access and total volume remain separate questions.</td>
+</tr>
+<tr>
+<td>Data leak</td>
+<td>Structure, fields, dates, observed volumes and sample consistency</td>
+<td>Data actually examined; no automatic validation of the full announced dataset.</td>
+</tr>
+<tr>
+<td>Claim without usable sample</td>
+<td>Source, date, named organization and available public corroboration</td>
+<td>Existence of the claim only.</td>
+</tr>
+<tr>
+<td>Acknowledged incident</td>
+<td>Victim or authority statement, within its exact scope</td>
+<td>Facts confirmed by the source, without extending confirmation to actor assertions.</td>
+</tr>
+</tbody>
+</table>
+<p>The <code>victims_FR.md</code> / <code>victims.md</code> pair is the bilingual source of truth. The 20 records in each language were checked in the same order; report totals are derived from the French version and checked against the English version.</p>
+<h2>3. Overview and incident types</h2>
+<table>
+<thead>
+<tr>
+<th>Indicator</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Documented incidents</td>
+<td style="text-align: right;"><strong>20</strong></td>
+</tr>
+<tr>
+<td>Countries represented</td>
+<td style="text-align: right;"><strong>8</strong></td>
+</tr>
+<tr>
+<td>Regions represented</td>
+<td style="text-align: right;"><strong>4</strong></td>
+</tr>
+<tr>
+<td>Leading country</td>
+<td style="text-align: right;"><strong>Kenya (4)</strong></td>
+</tr>
+<tr>
+<td>Leading sector</td>
+<td style="text-align: right;"><strong>Education / University (6)</strong></td>
+</tr>
+<tr>
+<td>Leading actor label</td>
+<td style="text-align: right;"><strong>funksec (6)</strong></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Incident type</th>
+<th style="text-align: right;">Records</th>
+<th style="text-align: right;">Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ransomware</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">80.0%</td>
+</tr>
+<tr>
+<td>Data Leak</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">15.0%</td>
+</tr>
+<tr>
+<td>Access Sale</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.0%</td>
+</tr>
+<tr>
+<td>DDoS</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.0%</td>
+</tr>
+<tr>
+<td>Defacement</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.0%</td>
+</tr>
+<tr>
+<td>Account Takeover</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5.0%</td>
+</tr>
+<tr>
+<td>System Intrusion</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.0%</td>
+</tr>
+<tr>
+<td>Malware</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.0%</td>
+</tr>
+<tr>
+<td>Operational Fraud</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.0%</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>20</strong></td>
+<td style="text-align: right;"><strong>100%</strong></td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-mermaid">pie showData
+    title Incident types - January 2025
+    &quot;Ransomware&quot; : 16
+    &quot;Data Leak&quot; : 3
+    &quot;Account Takeover&quot; : 1
+</code></pre>
+<p><img alt="Incident types, January 2025" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNjAwIiBoZWlnaHQ9IjkwMCIgdmlld0JveD0iMCAwIDE2MDAgOTAwIj48cmVjdCB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI5MDAiIGZpbGw9IndoaXRlIi8+PHRleHQgeD0iNjAiIHk9Ijc1IiBmb250LWZhbWlseT0iRGVqYVZ1IFNhbnMiIGZvbnQtc2l6ZT0iNDIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMTYyMjM0Ij5BRlJJTlRFTCDigJQgSmFudWFyeSAyMDI1IOKAlCBUeXBlczwvdGV4dD4KPHRleHQgeD0iNjAiIHk9IjE5NyIgZm9udC1mYW1pbHk9IkRlamFWdSBTYW5zIiBmb250LXNpemU9IjIyIiBmaWxsPSIjMjgzMDNjIj5SYW5zb213YXJlPC90ZXh0Pgo8cmVjdCB4PSI0MzAiIHk9IjE3MCIgd2lkdGg9IjkwMCIgaGVpZ2h0PSIyOCIgcng9IjEwIiBmaWxsPSIjZThlZWY1Ii8+PHJlY3QgeD0iNDMwIiB5PSIxNzAiIHdpZHRoPSI5MDAiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iIzIzNjhiMCIvPjx0ZXh0IHg9IjEzNjAiIHk9IjE5NyIgZm9udC1mYW1pbHk9IkRlamFWdSBTYW5zIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzE2MjIzNCI+MTY8L3RleHQ+Cjx0ZXh0IHg9IjYwIiB5PSIyNTEiIGZvbnQtZmFtaWx5PSJEZWphVnUgU2FucyIgZm9udC1zaXplPSIyMiIgZmlsbD0iIzI4MzAzYyI+RGF0YSBMZWFrPC90ZXh0Pgo8cmVjdCB4PSI0MzAiIHk9IjIyNCIgd2lkdGg9IjkwMCIgaGVpZ2h0PSIyOCIgcng9IjEwIiBmaWxsPSIjZThlZWY1Ii8+PHJlY3QgeD0iNDMwIiB5PSIyMjQiIHdpZHRoPSIxNjgiIGhlaWdodD0iMjgiIHJ4PSIxMCIgZmlsbD0iIzIzNjhiMCIvPjx0ZXh0IHg9IjEzNjAiIHk9IjI1MSIgZm9udC1mYW1pbHk9IkRlamFWdSBTYW5zIiBmb250LXNpemU9IjIyIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzE2MjIzNCI+MzwvdGV4dD4KPHRleHQgeD0iNjAiIHk9IjMwNSIgZm9udC1mYW1pbHk9IkRlamFWdSBTYW5zIiBmb250LXNpemU9IjIyIiBmaWxsPSIjMjgzMDNjIj5BY2NvdW50IFRha2VvdmVyPC90ZXh0Pgo8cmVjdCB4PSI0MzAiIHk9IjI3OCIgd2lkdGg9IjkwMCIgaGVpZ2h0PSIyOCIgcng9IjEwIiBmaWxsPSIjZThlZWY1Ii8+PHJlY3QgeD0iNDMwIiB5PSIyNzgiIHdpZHRoPSI1NiIgaGVpZ2h0PSIyOCIgcng9IjEwIiBmaWxsPSIjMjM2OGIwIi8+PHRleHQgeD0iMTM2MCIgeT0iMzA1IiBmb250LWZhbWlseT0iRGVqYVZ1IFNhbnMiIGZvbnQtc2l6ZT0iMjIiIGZvbnQtd2VpZ2h0PSJib2xkIiBmaWxsPSIjMTYyMjM0Ij4xPC90ZXh0Pgo8L3N2Zz4K" /></p>
+<h2>4. Geographic and regional distribution</h2>
+<table>
+<thead>
+<tr>
+<th>Country</th>
+<th style="text-align: right;">Total</th>
+<th style="text-align: right;">Ransomware</th>
+<th style="text-align: right;">Data Leak</th>
+<th style="text-align: right;">Access Sale</th>
+<th style="text-align: right;">DDoS</th>
+<th style="text-align: right;">Defacement</th>
+<th style="text-align: right;">Account Takeover</th>
+<th style="text-align: right;">System Intrusion</th>
+<th style="text-align: right;">Malware</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kenya</td>
+<td style="text-align: right;"><strong>4</strong></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Egypt</td>
+<td style="text-align: right;"><strong>4</strong></td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Nigeria</td>
+<td style="text-align: right;"><strong>4</strong></td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>South Africa</td>
+<td style="text-align: right;"><strong>2</strong></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Morocco</td>
+<td style="text-align: right;"><strong>2</strong></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Algeria</td>
+<td style="text-align: right;"><strong>2</strong></td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Uganda</td>
+<td style="text-align: right;"><strong>1</strong></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td>Zambia</td>
+<td style="text-align: right;"><strong>1</strong></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>20</strong></td>
+<td style="text-align: right;"><strong>16</strong></td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+<td style="text-align: right;"><strong>1</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><code>Malware</code> and <code>Operational Fraud</code> are zero this month and are omitted from the geographic matrix for readability.</p>
+</blockquote>
+<p><img alt="Countries represented, January 2025" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiB2aWV3Qm94PSIwIDAgOTAwIDUwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZiIvPjxzdHlsZT50ZXh0e2ZvbnQtZmFtaWx5OkFyaWFsLHNhbnMtc2VyaWY7ZmlsbDojMjYzMjM4fS50aXRsZXtmb250LXNpemU6MjJweDtmb250LXdlaWdodDo3MDB9LmxhYmVse2ZvbnQtc2l6ZToxM3B4fS52YWx1ZXtmb250LXNpemU6MTNweDtmb250LXdlaWdodDo3MDB9LmdyaWR7c3Ryb2tlOiNkZmU1ZTg7c3Ryb2tlLXdpZHRoOjF9PC9zdHlsZT48dGV4dCB4PSI3MCIgeT0iMzgiIGNsYXNzPSJ0aXRsZSI+Q291bnRyaWVzIHJlcHJlc2VudGVkIOKAlCBKYW51YXJ5IDIwMjU8L3RleHQ+PGxpbmUgeDE9IjcwIiB5MT0iMzg1LjAiIHgyPSI4NjUiIHkyPSIzODUuMCIgY2xhc3M9ImdyaWQiLz48dGV4dCB4PSI1NiIgeT0iMzkwLjAiIHRleHQtYW5jaG9yPSJlbmQiIGNsYXNzPSJsYWJlbCI+MDwvdGV4dD48bGluZSB4MT0iNzAiIHkxPSIzMDcuNSIgeDI9Ijg2NSIgeTI9IjMwNy41IiBjbGFzcz0iZ3JpZCIvPjx0ZXh0IHg9IjU2IiB5PSIzMTIuNSIgdGV4dC1hbmNob3I9ImVuZCIgY2xhc3M9ImxhYmVsIj4xPC90ZXh0PjxsaW5lIHgxPSI3MCIgeTE9IjIzMC4wIiB4Mj0iODY1IiB5Mj0iMjMwLjAiIGNsYXNzPSJncmlkIi8+PHRleHQgeD0iNTYiIHk9IjIzNS4wIiB0ZXh0LWFuY2hvcj0iZW5kIiBjbGFzcz0ibGFiZWwiPjI8L3RleHQ+PGxpbmUgeDE9IjcwIiB5MT0iMTUyLjUiIHgyPSI4NjUiIHkyPSIxNTIuNSIgY2xhc3M9ImdyaWQiLz48dGV4dCB4PSI1NiIgeT0iMTU3LjUiIHRleHQtYW5jaG9yPSJlbmQiIGNsYXNzPSJsYWJlbCI+MzwvdGV4dD48bGluZSB4MT0iNzAiIHkxPSI3NS4wIiB4Mj0iODY1IiB5Mj0iNzUuMCIgY2xhc3M9ImdyaWQiLz48dGV4dCB4PSI1NiIgeT0iODAuMCIgdGV4dC1hbmNob3I9ImVuZCIgY2xhc3M9ImxhYmVsIj40PC90ZXh0PjxyZWN0IHg9Ijg3LjkiIHk9Ijc1LjAiIHdpZHRoPSI2My42IiBoZWlnaHQ9IjMxMC4wIiByeD0iMyIgZmlsbD0iIzE2N2M4MCIvPjx0ZXh0IHg9IjExOS43IiB5PSI2OC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0idmFsdWUiPjQ8L3RleHQ+PHRleHQgeD0iMTE5LjciIHk9IjQ0NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9ImxhYmVsIiB0cmFuc2Zvcm09InJvdGF0ZSgtMzUgMTE5LjcsNDQ1KSI+S2VueWE8L3RleHQ+PHJlY3QgeD0iMTg3LjMiIHk9Ijc1LjAiIHdpZHRoPSI2My42IiBoZWlnaHQ9IjMxMC4wIiByeD0iMyIgZmlsbD0iIzE2N2M4MCIvPjx0ZXh0IHg9IjIxOS4xIiB5PSI2OC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0idmFsdWUiPjQ8L3RleHQ+PHRleHQgeD0iMjE5LjEiIHk9IjQ0NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9ImxhYmVsIiB0cmFuc2Zvcm09InJvdGF0ZSgtMzUgMjE5LjEsNDQ1KSI+RWd5cHQ8L3RleHQ+PHJlY3QgeD0iMjg2LjYiIHk9Ijc1LjAiIHdpZHRoPSI2My42IiBoZWlnaHQ9IjMxMC4wIiByeD0iMyIgZmlsbD0iIzE2N2M4MCIvPjx0ZXh0IHg9IjMxOC40IiB5PSI2OC4wIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0idmFsdWUiPjQ8L3RleHQ+PHRleHQgeD0iMzE4LjQiIHk9IjQ0NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9ImxhYmVsIiB0cmFuc2Zvcm09InJvdGF0ZSgtMzUgMzE4LjQsNDQ1KSI+TmlnZXJpYTwvdGV4dD48cmVjdCB4PSIzODYuMCIgeT0iMjMwLjAiIHdpZHRoPSI2My42IiBoZWlnaHQ9IjE1NS4wIiByeD0iMyIgZmlsbD0iIzE2N2M4MCIvPjx0ZXh0IHg9IjQxNy44IiB5PSIyMjMuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InZhbHVlIj4yPC90ZXh0Pjx0ZXh0IHg9IjQxNy44IiB5PSI0NDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJsYWJlbCIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDQxNy44LDQ0NSkiPlNvdXRoIEFmcmljYTwvdGV4dD48cmVjdCB4PSI0ODUuNCIgeT0iMjMwLjAiIHdpZHRoPSI2My42IiBoZWlnaHQ9IjE1NS4wIiByeD0iMyIgZmlsbD0iIzE2N2M4MCIvPjx0ZXh0IHg9IjUxNy4yIiB5PSIyMjMuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InZhbHVlIj4yPC90ZXh0Pjx0ZXh0IHg9IjUxNy4yIiB5PSI0NDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJsYWJlbCIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDUxNy4yLDQ0NSkiPk1vcm9jY288L3RleHQ+PHJlY3QgeD0iNTg0LjgiIHk9IjIzMC4wIiB3aWR0aD0iNjMuNiIgaGVpZ2h0PSIxNTUuMCIgcng9IjMiIGZpbGw9IiMxNjdjODAiLz48dGV4dCB4PSI2MTYuNiIgeT0iMjIzLjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJ2YWx1ZSI+MjwvdGV4dD48dGV4dCB4PSI2MTYuNiIgeT0iNDQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0icm90YXRlKC0zNSA2MTYuNiw0NDUpIj5BbGdlcmlhPC90ZXh0PjxyZWN0IHg9IjY4NC4xIiB5PSIzMDcuNSIgd2lkdGg9IjYzLjYiIGhlaWdodD0iNzcuNSIgcng9IjMiIGZpbGw9IiMxNjdjODAiLz48dGV4dCB4PSI3MTUuOSIgeT0iMzAwLjUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJ2YWx1ZSI+MTwvdGV4dD48dGV4dCB4PSI3MTUuOSIgeT0iNDQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0icm90YXRlKC0zNSA3MTUuOSw0NDUpIj5VZ2FuZGE8L3RleHQ+PHJlY3QgeD0iNzgzLjUiIHk9IjMwNy41IiB3aWR0aD0iNjMuNiIgaGVpZ2h0PSI3Ny41IiByeD0iMyIgZmlsbD0iIzE2N2M4MCIvPjx0ZXh0IHg9IjgxNS4zIiB5PSIzMDAuNSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InZhbHVlIj4xPC90ZXh0Pjx0ZXh0IHg9IjgxNS4zIiB5PSI0NDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJsYWJlbCIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDgxNS4zLDQ0NSkiPlphbWJpYTwvdGV4dD48L3N2Zz4=" /></p>
+<table>
+<thead>
+<tr>
+<th>Region</th>
+<th style="text-align: right;">Records</th>
+<th style="text-align: right;">Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>North Africa</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">40.0%</td>
+</tr>
+<tr>
+<td>East Africa</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">25.0%</td>
+</tr>
+<tr>
+<td>Southern Africa</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">15.0%</td>
+</tr>
+<tr>
+<td>West Africa</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">20.0%</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>20</strong></td>
+<td style="text-align: right;"><strong>100%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The leading region is <strong>North Africa with 8 records (40.0%)</strong>.</p>
+<h2>5. Sector exposure and business risks</h2>
+<table>
+<thead>
+<tr>
+<th>Sector</th>
+<th style="text-align: right;">Records</th>
+<th style="text-align: right;">Share</th>
+<th>Main business risks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Education / University</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">30.0%</td>
+<td>student data, service disruption</td>
+</tr>
+<tr>
+<td>Government / Administration</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">20.0%</td>
+<td>identity, public services, trust</td>
+</tr>
+<tr>
+<td>Healthcare / Medical</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">10.0%</td>
+<td>care continuity, confidentiality</td>
+</tr>
+<tr>
+<td>Media / Entertainment</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">10.0%</td>
+<td>accounts, content and reputation</td>
+</tr>
+<tr>
+<td>Retail / E-commerce</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5.0%</td>
+<td>customer data, transactions, fraud</td>
+</tr>
+<tr>
+<td>Technology / IT</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5.0%</td>
+<td>technical access, propagation</td>
+</tr>
+<tr>
+<td>Transport / Logistics</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5.0%</td>
+<td>operational continuity, suppliers</td>
+</tr>
+<tr>
+<td>Hospitality / Tourism</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5.0%</td>
+<td>reservations, customer data</td>
+</tr>
+<tr>
+<td>Professional / Business Services</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5.0%</td>
+<td>contracts, impersonation</td>
+</tr>
+<tr>
+<td>Religious Organization / Association</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5.0%</td>
+<td>accounts and member data</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>20</strong></td>
+<td style="text-align: right;"><strong>100%</strong></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Sector exposure, January 2025" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiB2aWV3Qm94PSIwIDAgOTAwIDUwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZiIvPjxzdHlsZT50ZXh0e2ZvbnQtZmFtaWx5OkFyaWFsLHNhbnMtc2VyaWY7ZmlsbDojMjYzMjM4fS50aXRsZXtmb250LXNpemU6MjJweDtmb250LXdlaWdodDo3MDB9LmxhYmVse2ZvbnQtc2l6ZToxM3B4fS52YWx1ZXtmb250LXNpemU6MTNweDtmb250LXdlaWdodDo3MDB9LmdyaWR7c3Ryb2tlOiNkZmU1ZTg7c3Ryb2tlLXdpZHRoOjF9PC9zdHlsZT48dGV4dCB4PSI3MCIgeT0iMzgiIGNsYXNzPSJ0aXRsZSI+U2VjdG9yIGV4cG9zdXJlIOKAlCBKYW51YXJ5IDIwMjU8L3RleHQ+PGxpbmUgeDE9IjcwIiB5MT0iMzg1LjAiIHgyPSI4NjUiIHkyPSIzODUuMCIgY2xhc3M9ImdyaWQiLz48dGV4dCB4PSI1NiIgeT0iMzkwLjAiIHRleHQtYW5jaG9yPSJlbmQiIGNsYXNzPSJsYWJlbCI+MDwvdGV4dD48bGluZSB4MT0iNzAiIHkxPSIzMzMuMyIgeDI9Ijg2NSIgeTI9IjMzMy4zIiBjbGFzcz0iZ3JpZCIvPjx0ZXh0IHg9IjU2IiB5PSIzMzguMyIgdGV4dC1hbmNob3I9ImVuZCIgY2xhc3M9ImxhYmVsIj4xPC90ZXh0PjxsaW5lIHgxPSI3MCIgeTE9IjI4MS43IiB4Mj0iODY1IiB5Mj0iMjgxLjciIGNsYXNzPSJncmlkIi8+PHRleHQgeD0iNTYiIHk9IjI4Ni43IiB0ZXh0LWFuY2hvcj0iZW5kIiBjbGFzcz0ibGFiZWwiPjI8L3RleHQ+PGxpbmUgeDE9IjcwIiB5MT0iMjMwLjAiIHgyPSI4NjUiIHkyPSIyMzAuMCIgY2xhc3M9ImdyaWQiLz48dGV4dCB4PSI1NiIgeT0iMjM1LjAiIHRleHQtYW5jaG9yPSJlbmQiIGNsYXNzPSJsYWJlbCI+MzwvdGV4dD48bGluZSB4MT0iNzAiIHkxPSIxNzguMyIgeDI9Ijg2NSIgeTI9IjE3OC4zIiBjbGFzcz0iZ3JpZCIvPjx0ZXh0IHg9IjU2IiB5PSIxODMuMyIgdGV4dC1hbmNob3I9ImVuZCIgY2xhc3M9ImxhYmVsIj40PC90ZXh0PjxsaW5lIHgxPSI3MCIgeTE9IjEyNi43IiB4Mj0iODY1IiB5Mj0iMTI2LjciIGNsYXNzPSJncmlkIi8+PHRleHQgeD0iNTYiIHk9IjEzMS43IiB0ZXh0LWFuY2hvcj0iZW5kIiBjbGFzcz0ibGFiZWwiPjU8L3RleHQ+PGxpbmUgeDE9IjcwIiB5MT0iNzUuMCIgeDI9Ijg2NSIgeTI9Ijc1LjAiIGNsYXNzPSJncmlkIi8+PHRleHQgeD0iNTYiIHk9IjgwLjAiIHRleHQtYW5jaG9yPSJlbmQiIGNsYXNzPSJsYWJlbCI+NjwvdGV4dD48cmVjdCB4PSI4NC4zIiB5PSI3NS4wIiB3aWR0aD0iNTAuOSIgaGVpZ2h0PSIzMTAuMCIgcng9IjMiIGZpbGw9IiMxNjdjODAiLz48dGV4dCB4PSIxMDkuOCIgeT0iNjguMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InZhbHVlIj42PC90ZXh0Pjx0ZXh0IHg9IjEwOS44IiB5PSI0NDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJsYWJlbCIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDEwOS44LDQ0NSkiPkVkdWNhdGlvbjwvdGV4dD48cmVjdCB4PSIxNjMuOCIgeT0iMTc4LjMiIHdpZHRoPSI1MC45IiBoZWlnaHQ9IjIwNi43IiByeD0iMyIgZmlsbD0iIzE2N2M4MCIvPjx0ZXh0IHg9IjE4OS4yIiB5PSIxNzEuMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InZhbHVlIj40PC90ZXh0Pjx0ZXh0IHg9IjE4OS4yIiB5PSI0NDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJsYWJlbCIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDE4OS4yLDQ0NSkiPkdvdmVybm1lbnQ8L3RleHQ+PHJlY3QgeD0iMjQzLjMiIHk9IjI4MS43IiB3aWR0aD0iNTAuOSIgaGVpZ2h0PSIxMDMuMyIgcng9IjMiIGZpbGw9IiMxNjdjODAiLz48dGV4dCB4PSIyNjguOCIgeT0iMjc0LjciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJ2YWx1ZSI+MjwvdGV4dD48dGV4dCB4PSIyNjguOCIgeT0iNDQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0icm90YXRlKC0zNSAyNjguOCw0NDUpIj5IZWFsdGhjYXJlPC90ZXh0PjxyZWN0IHg9IjMyMi44IiB5PSIyODEuNyIgd2lkdGg9IjUwLjkiIGhlaWdodD0iMTAzLjMiIHJ4PSIzIiBmaWxsPSIjMTY3YzgwIi8+PHRleHQgeD0iMzQ4LjIiIHk9IjI3NC43IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0idmFsdWUiPjI8L3RleHQ+PHRleHQgeD0iMzQ4LjIiIHk9IjQ0NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9ImxhYmVsIiB0cmFuc2Zvcm09InJvdGF0ZSgtMzUgMzQ4LjIsNDQ1KSI+TWVkaWE8L3RleHQ+PHJlY3QgeD0iNDAyLjMiIHk9IjMzMy4zIiB3aWR0aD0iNTAuOSIgaGVpZ2h0PSI1MS43IiByeD0iMyIgZmlsbD0iIzE2N2M4MCIvPjx0ZXh0IHg9IjQyNy44IiB5PSIzMjYuMyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InZhbHVlIj4xPC90ZXh0Pjx0ZXh0IHg9IjQyNy44IiB5PSI0NDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJsYWJlbCIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDQyNy44LDQ0NSkiPkNvbW1lcmNlPC90ZXh0PjxyZWN0IHg9IjQ4MS44IiB5PSIzMzMuMyIgd2lkdGg9IjUwLjkiIGhlaWdodD0iNTEuNyIgcng9IjMiIGZpbGw9IiMxNjdjODAiLz48dGV4dCB4PSI1MDcuMiIgeT0iMzI2LjMiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJ2YWx1ZSI+MTwvdGV4dD48dGV4dCB4PSI1MDcuMiIgeT0iNDQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0icm90YXRlKC0zNSA1MDcuMiw0NDUpIj5JVDwvdGV4dD48cmVjdCB4PSI1NjEuMyIgeT0iMzMzLjMiIHdpZHRoPSI1MC45IiBoZWlnaHQ9IjUxLjciIHJ4PSIzIiBmaWxsPSIjMTY3YzgwIi8+PHRleHQgeD0iNTg2LjgiIHk9IjMyNi4zIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0idmFsdWUiPjE8L3RleHQ+PHRleHQgeD0iNTg2LjgiIHk9IjQ0NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9ImxhYmVsIiB0cmFuc2Zvcm09InJvdGF0ZSgtMzUgNTg2LjgsNDQ1KSI+VHJhbnNwb3J0PC90ZXh0PjxyZWN0IHg9IjY0MC44IiB5PSIzMzMuMyIgd2lkdGg9IjUwLjkiIGhlaWdodD0iNTEuNyIgcng9IjMiIGZpbGw9IiMxNjdjODAiLz48dGV4dCB4PSI2NjYuMiIgeT0iMzI2LjMiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJ2YWx1ZSI+MTwvdGV4dD48dGV4dCB4PSI2NjYuMiIgeT0iNDQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0icm90YXRlKC0zNSA2NjYuMiw0NDUpIj5Ib3NwaXRhbGl0eTwvdGV4dD48cmVjdCB4PSI3MjAuMyIgeT0iMzMzLjMiIHdpZHRoPSI1MC45IiBoZWlnaHQ9IjUxLjciIHJ4PSIzIiBmaWxsPSIjMTY3YzgwIi8+PHRleHQgeD0iNzQ1LjgiIHk9IjMyNi4zIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0idmFsdWUiPjE8L3RleHQ+PHRleHQgeD0iNzQ1LjgiIHk9IjQ0NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9ImxhYmVsIiB0cmFuc2Zvcm09InJvdGF0ZSgtMzUgNzQ1LjgsNDQ1KSI+UHJvZmVzc2lvbmFsPC90ZXh0PjxyZWN0IHg9Ijc5OS44IiB5PSIzMzMuMyIgd2lkdGg9IjUwLjkiIGhlaWdodD0iNTEuNyIgcng9IjMiIGZpbGw9IiMxNjdjODAiLz48dGV4dCB4PSI4MjUuMiIgeT0iMzI2LjMiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJ2YWx1ZSI+MTwvdGV4dD48dGV4dCB4PSI4MjUuMiIgeT0iNDQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0icm90YXRlKC0zNSA4MjUuMiw0NDUpIj5Bc3NvY2lhdGlvbjwvdGV4dD48L3N2Zz4=" /></p>
+<h2>6. Actors, groups and evidence maturity</h2>
+<p><code>Unknown</code> denotes missing attribution, not a threat actor.</p>
+<table>
+<thead>
+<tr>
+<th>Actor / Group</th>
+<th style="text-align: right;">Records</th>
+<th>Activity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>funksec</td>
+<td style="text-align: right;">6</td>
+<td>██████</td>
+</tr>
+<tr>
+<td>GDLockerSec</td>
+<td style="text-align: right;">3</td>
+<td>███</td>
+</tr>
+<tr>
+<td>ransomhub</td>
+<td style="text-align: right;">2</td>
+<td>██</td>
+</tr>
+<tr>
+<td>spacebears</td>
+<td style="text-align: right;">2</td>
+<td>██</td>
+</tr>
+<tr>
+<td>babuk2</td>
+<td style="text-align: right;">2</td>
+<td>██</td>
+</tr>
+<tr>
+<td>Unknown</td>
+<td style="text-align: right;">2</td>
+<td>██</td>
+</tr>
+<tr>
+<td>apt73</td>
+<td style="text-align: right;">1</td>
+<td>█</td>
+</tr>
+<tr>
+<td>SevenZeroDay404</td>
+<td style="text-align: right;">1</td>
+<td>█</td>
+</tr>
+<tr>
+<td>Counter</td>
+<td style="text-align: right;">1</td>
+<td>█</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="Actors and groups, January 2025" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiB2aWV3Qm94PSIwIDAgOTAwIDUwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZiIvPjxzdHlsZT50ZXh0e2ZvbnQtZmFtaWx5OkFyaWFsLHNhbnMtc2VyaWY7ZmlsbDojMjYzMjM4fS50aXRsZXtmb250LXNpemU6MjJweDtmb250LXdlaWdodDo3MDB9LmxhYmVse2ZvbnQtc2l6ZToxM3B4fS52YWx1ZXtmb250LXNpemU6MTNweDtmb250LXdlaWdodDo3MDB9LmdyaWR7c3Ryb2tlOiNkZmU1ZTg7c3Ryb2tlLXdpZHRoOjF9PC9zdHlsZT48dGV4dCB4PSI3MCIgeT0iMzgiIGNsYXNzPSJ0aXRsZSI+QWN0b3JzIC8gZ3JvdXBzIOKAlCBKYW51YXJ5IDIwMjU8L3RleHQ+PGxpbmUgeDE9IjcwIiB5MT0iMzg1LjAiIHgyPSI4NjUiIHkyPSIzODUuMCIgY2xhc3M9ImdyaWQiLz48dGV4dCB4PSI1NiIgeT0iMzkwLjAiIHRleHQtYW5jaG9yPSJlbmQiIGNsYXNzPSJsYWJlbCI+MDwvdGV4dD48bGluZSB4MT0iNzAiIHkxPSIzMzMuMyIgeDI9Ijg2NSIgeTI9IjMzMy4zIiBjbGFzcz0iZ3JpZCIvPjx0ZXh0IHg9IjU2IiB5PSIzMzguMyIgdGV4dC1hbmNob3I9ImVuZCIgY2xhc3M9ImxhYmVsIj4xPC90ZXh0PjxsaW5lIHgxPSI3MCIgeTE9IjI4MS43IiB4Mj0iODY1IiB5Mj0iMjgxLjciIGNsYXNzPSJncmlkIi8+PHRleHQgeD0iNTYiIHk9IjI4Ni43IiB0ZXh0LWFuY2hvcj0iZW5kIiBjbGFzcz0ibGFiZWwiPjI8L3RleHQ+PGxpbmUgeDE9IjcwIiB5MT0iMjMwLjAiIHgyPSI4NjUiIHkyPSIyMzAuMCIgY2xhc3M9ImdyaWQiLz48dGV4dCB4PSI1NiIgeT0iMjM1LjAiIHRleHQtYW5jaG9yPSJlbmQiIGNsYXNzPSJsYWJlbCI+MzwvdGV4dD48bGluZSB4MT0iNzAiIHkxPSIxNzguMyIgeDI9Ijg2NSIgeTI9IjE3OC4zIiBjbGFzcz0iZ3JpZCIvPjx0ZXh0IHg9IjU2IiB5PSIxODMuMyIgdGV4dC1hbmNob3I9ImVuZCIgY2xhc3M9ImxhYmVsIj40PC90ZXh0PjxsaW5lIHgxPSI3MCIgeTE9IjEyNi43IiB4Mj0iODY1IiB5Mj0iMTI2LjciIGNsYXNzPSJncmlkIi8+PHRleHQgeD0iNTYiIHk9IjEzMS43IiB0ZXh0LWFuY2hvcj0iZW5kIiBjbGFzcz0ibGFiZWwiPjU8L3RleHQ+PGxpbmUgeDE9IjcwIiB5MT0iNzUuMCIgeDI9Ijg2NSIgeTI9Ijc1LjAiIGNsYXNzPSJncmlkIi8+PHRleHQgeD0iNTYiIHk9IjgwLjAiIHRleHQtYW5jaG9yPSJlbmQiIGNsYXNzPSJsYWJlbCI+NjwvdGV4dD48cmVjdCB4PSI4NS45IiB5PSI3NS4wIiB3aWR0aD0iNTYuNSIgaGVpZ2h0PSIzMTAuMCIgcng9IjMiIGZpbGw9IiMxNjdjODAiLz48dGV4dCB4PSIxMTQuMiIgeT0iNjguMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InZhbHVlIj42PC90ZXh0Pjx0ZXh0IHg9IjExNC4yIiB5PSI0NDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJsYWJlbCIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDExNC4yLDQ0NSkiPmZ1bmtzZWM8L3RleHQ+PHJlY3QgeD0iMTc0LjIiIHk9IjIzMC4wIiB3aWR0aD0iNTYuNSIgaGVpZ2h0PSIxNTUuMCIgcng9IjMiIGZpbGw9IiMxNjdjODAiLz48dGV4dCB4PSIyMDIuNSIgeT0iMjIzLjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJ2YWx1ZSI+MzwvdGV4dD48dGV4dCB4PSIyMDIuNSIgeT0iNDQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0icm90YXRlKC0zNSAyMDIuNSw0NDUpIj5HRExvY2tlclNlYzwvdGV4dD48cmVjdCB4PSIyNjIuNiIgeT0iMjgxLjciIHdpZHRoPSI1Ni41IiBoZWlnaHQ9IjEwMy4zIiByeD0iMyIgZmlsbD0iIzE2N2M4MCIvPjx0ZXh0IHg9IjI5MC44IiB5PSIyNzQuNyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InZhbHVlIj4yPC90ZXh0Pjx0ZXh0IHg9IjI5MC44IiB5PSI0NDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJsYWJlbCIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDI5MC44LDQ0NSkiPnJhbnNvbWh1YjwvdGV4dD48cmVjdCB4PSIzNTAuOSIgeT0iMjgxLjciIHdpZHRoPSI1Ni41IiBoZWlnaHQ9IjEwMy4zIiByeD0iMyIgZmlsbD0iIzE2N2M4MCIvPjx0ZXh0IHg9IjM3OS4yIiB5PSIyNzQuNyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InZhbHVlIj4yPC90ZXh0Pjx0ZXh0IHg9IjM3OS4yIiB5PSI0NDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJsYWJlbCIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDM3OS4yLDQ0NSkiPnNwYWNlYmVhcnM8L3RleHQ+PHJlY3QgeD0iNDM5LjIiIHk9IjI4MS43IiB3aWR0aD0iNTYuNSIgaGVpZ2h0PSIxMDMuMyIgcng9IjMiIGZpbGw9IiMxNjdjODAiLz48dGV4dCB4PSI0NjcuNSIgeT0iMjc0LjciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJ2YWx1ZSI+MjwvdGV4dD48dGV4dCB4PSI0NjcuNSIgeT0iNDQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0icm90YXRlKC0zNSA0NjcuNSw0NDUpIj5iYWJ1azI8L3RleHQ+PHJlY3QgeD0iNTI3LjYiIHk9IjI4MS43IiB3aWR0aD0iNTYuNSIgaGVpZ2h0PSIxMDMuMyIgcng9IjMiIGZpbGw9IiMxNjdjODAiLz48dGV4dCB4PSI1NTUuOCIgeT0iMjc0LjciIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJ2YWx1ZSI+MjwvdGV4dD48dGV4dCB4PSI1NTUuOCIgeT0iNDQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0icm90YXRlKC0zNSA1NTUuOCw0NDUpIj5Vbmtub3duPC90ZXh0PjxyZWN0IHg9IjYxNS45IiB5PSIzMzMuMyIgd2lkdGg9IjU2LjUiIGhlaWdodD0iNTEuNyIgcng9IjMiIGZpbGw9IiMxNjdjODAiLz48dGV4dCB4PSI2NDQuMiIgeT0iMzI2LjMiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJ2YWx1ZSI+MTwvdGV4dD48dGV4dCB4PSI2NDQuMiIgeT0iNDQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0icm90YXRlKC0zNSA2NDQuMiw0NDUpIj5hcHQ3MzwvdGV4dD48cmVjdCB4PSI3MDQuMiIgeT0iMzMzLjMiIHdpZHRoPSI1Ni41IiBoZWlnaHQ9IjUxLjciIHJ4PSIzIiBmaWxsPSIjMTY3YzgwIi8+PHRleHQgeD0iNzMyLjUiIHk9IjMyNi4zIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0idmFsdWUiPjE8L3RleHQ+PHRleHQgeD0iNzMyLjUiIHk9IjQ0NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9ImxhYmVsIiB0cmFuc2Zvcm09InJvdGF0ZSgtMzUgNzMyLjUsNDQ1KSI+U2V2ZW5aZXJvRGF5NDA0PC90ZXh0PjxyZWN0IHg9Ijc5Mi42IiB5PSIzMzMuMyIgd2lkdGg9IjU2LjUiIGhlaWdodD0iNTEuNyIgcng9IjMiIGZpbGw9IiMxNjdjODAiLz48dGV4dCB4PSI4MjAuOCIgeT0iMzI2LjMiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJ2YWx1ZSI+MTwvdGV4dD48dGV4dCB4PSI4MjAuOCIgeT0iNDQ1IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBjbGFzcz0ibGFiZWwiIHRyYW5zZm9ybT0icm90YXRlKC0zNSA4MjAuOCw0NDUpIj5Db3VudGVyPC90ZXh0Pjwvc3ZnPg==" /></p>
+<h3>6.1 Evidence maturity</h3>
+<table>
+<thead>
+<tr>
+<th>Evidence maturity</th>
+<th style="text-align: right;">Records</th>
+<th style="text-align: right;">Share</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Claim - Unverified</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">40.0%</td>
+</tr>
+<tr>
+<td>Claim - Data Sample Published</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">50.0%</td>
+</tr>
+<tr>
+<td>Victim/Government/Authority Confirmed</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">10.0%</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>20</strong></td>
+<td style="text-align: right;"><strong>100%</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Evidence statuses describe the available validation level; they do not change the technical incident type.</p>
+<p><img alt="Evidence maturity, January 2025" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIiB2aWV3Qm94PSIwIDAgOTAwIDUwMCI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2ZmZiIvPjxzdHlsZT50ZXh0e2ZvbnQtZmFtaWx5OkFyaWFsLHNhbnMtc2VyaWY7ZmlsbDojMjYzMjM4fS50aXRsZXtmb250LXNpemU6MjJweDtmb250LXdlaWdodDo3MDB9LmxhYmVse2ZvbnQtc2l6ZToxM3B4fS52YWx1ZXtmb250LXNpemU6MTNweDtmb250LXdlaWdodDo3MDB9LmdyaWR7c3Ryb2tlOiNkZmU1ZTg7c3Ryb2tlLXdpZHRoOjF9PC9zdHlsZT48dGV4dCB4PSI3MCIgeT0iMzgiIGNsYXNzPSJ0aXRsZSI+RXZpZGVuY2UgbWF0dXJpdHkg4oCUIEphbnVhcnkgMjAyNTwvdGV4dD48bGluZSB4MT0iNzAiIHkxPSIzODUuMCIgeDI9Ijg2NSIgeTI9IjM4NS4wIiBjbGFzcz0iZ3JpZCIvPjx0ZXh0IHg9IjU2IiB5PSIzOTAuMCIgdGV4dC1hbmNob3I9ImVuZCIgY2xhc3M9ImxhYmVsIj4wPC90ZXh0PjxsaW5lIHgxPSI3MCIgeTE9IjM1NC4wIiB4Mj0iODY1IiB5Mj0iMzU0LjAiIGNsYXNzPSJncmlkIi8+PHRleHQgeD0iNTYiIHk9IjM1OS4wIiB0ZXh0LWFuY2hvcj0iZW5kIiBjbGFzcz0ibGFiZWwiPjE8L3RleHQ+PGxpbmUgeDE9IjcwIiB5MT0iMzIzLjAiIHgyPSI4NjUiIHkyPSIzMjMuMCIgY2xhc3M9ImdyaWQiLz48dGV4dCB4PSI1NiIgeT0iMzI4LjAiIHRleHQtYW5jaG9yPSJlbmQiIGNsYXNzPSJsYWJlbCI+MjwvdGV4dD48bGluZSB4MT0iNzAiIHkxPSIyOTIuMCIgeDI9Ijg2NSIgeTI9IjI5Mi4wIiBjbGFzcz0iZ3JpZCIvPjx0ZXh0IHg9IjU2IiB5PSIyOTcuMCIgdGV4dC1hbmNob3I9ImVuZCIgY2xhc3M9ImxhYmVsIj4zPC90ZXh0PjxsaW5lIHgxPSI3MCIgeTE9IjI2MS4wIiB4Mj0iODY1IiB5Mj0iMjYxLjAiIGNsYXNzPSJncmlkIi8+PHRleHQgeD0iNTYiIHk9IjI2Ni4wIiB0ZXh0LWFuY2hvcj0iZW5kIiBjbGFzcz0ibGFiZWwiPjQ8L3RleHQ+PGxpbmUgeDE9IjcwIiB5MT0iMjMwLjAiIHgyPSI4NjUiIHkyPSIyMzAuMCIgY2xhc3M9ImdyaWQiLz48dGV4dCB4PSI1NiIgeT0iMjM1LjAiIHRleHQtYW5jaG9yPSJlbmQiIGNsYXNzPSJsYWJlbCI+NTwvdGV4dD48bGluZSB4MT0iNzAiIHkxPSIxOTkuMCIgeDI9Ijg2NSIgeTI9IjE5OS4wIiBjbGFzcz0iZ3JpZCIvPjx0ZXh0IHg9IjU2IiB5PSIyMDQuMCIgdGV4dC1hbmNob3I9ImVuZCIgY2xhc3M9ImxhYmVsIj42PC90ZXh0PjxsaW5lIHgxPSI3MCIgeTE9IjE2OC4wIiB4Mj0iODY1IiB5Mj0iMTY4LjAiIGNsYXNzPSJncmlkIi8+PHRleHQgeD0iNTYiIHk9IjE3My4wIiB0ZXh0LWFuY2hvcj0iZW5kIiBjbGFzcz0ibGFiZWwiPjc8L3RleHQ+PGxpbmUgeDE9IjcwIiB5MT0iMTM3LjAiIHgyPSI4NjUiIHkyPSIxMzcuMCIgY2xhc3M9ImdyaWQiLz48dGV4dCB4PSI1NiIgeT0iMTQyLjAiIHRleHQtYW5jaG9yPSJlbmQiIGNsYXNzPSJsYWJlbCI+ODwvdGV4dD48bGluZSB4MT0iNzAiIHkxPSIxMDYuMCIgeDI9Ijg2NSIgeTI9IjEwNi4wIiBjbGFzcz0iZ3JpZCIvPjx0ZXh0IHg9IjU2IiB5PSIxMTEuMCIgdGV4dC1hbmNob3I9ImVuZCIgY2xhc3M9ImxhYmVsIj45PC90ZXh0PjxsaW5lIHgxPSI3MCIgeTE9Ijc1LjAiIHgyPSI4NjUiIHkyPSI3NS4wIiBjbGFzcz0iZ3JpZCIvPjx0ZXh0IHg9IjU2IiB5PSI4MC4wIiB0ZXh0LWFuY2hvcj0iZW5kIiBjbGFzcz0ibGFiZWwiPjEwPC90ZXh0PjxyZWN0IHg9IjExNy43IiB5PSIxMzcuMCIgd2lkdGg9IjE2OS42IiBoZWlnaHQ9IjI0OC4wIiByeD0iMyIgZmlsbD0iIzE2N2M4MCIvPjx0ZXh0IHg9IjIwMi41IiB5PSIxMzAuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InZhbHVlIj44PC90ZXh0Pjx0ZXh0IHg9IjIwMi41IiB5PSI0NDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJsYWJlbCIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDIwMi41LDQ0NSkiPkNsYWltIOKAlCBVbnZlcmlmaWVkPC90ZXh0PjxyZWN0IHg9IjM4Mi43IiB5PSI3NS4wIiB3aWR0aD0iMTY5LjYiIGhlaWdodD0iMzEwLjAiIHJ4PSIzIiBmaWxsPSIjMTY3YzgwIi8+PHRleHQgeD0iNDY3LjUiIHk9IjY4LjAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJ2YWx1ZSI+MTA8L3RleHQ+PHRleHQgeD0iNDY3LjUiIHk9IjQ0NSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9ImxhYmVsIiB0cmFuc2Zvcm09InJvdGF0ZSgtMzUgNDY3LjUsNDQ1KSI+U2FtcGxlIHB1Ymxpc2hlZDwvdGV4dD48cmVjdCB4PSI2NDcuNyIgeT0iMzIzLjAiIHdpZHRoPSIxNjkuNiIgaGVpZ2h0PSI2Mi4wIiByeD0iMyIgZmlsbD0iIzE2N2M4MCIvPjx0ZXh0IHg9IjczMi41IiB5PSIzMTYuMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgY2xhc3M9InZhbHVlIj4yPC90ZXh0Pjx0ZXh0IHg9IjczMi41IiB5PSI0NDUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGNsYXNzPSJsYWJlbCIgdHJhbnNmb3JtPSJyb3RhdGUoLTM1IDczMi41LDQ0NSkiPkNvbmZpcm1lZDwvdGV4dD48L3N2Zz4=" /></p>
+<h3>6.2 Risk-area assessment</h3>
+<table>
+<thead>
+<tr>
+<th>Area</th>
+<th>CISO monitoring priority</th>
+<th>Corpus-based rationale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kenya, Egypt, Nigeria</td>
+<td>High</td>
+<td>Four records each, representing 60.0% of observations.</td>
+</tr>
+<tr>
+<td>North Africa</td>
+<td>Reinforced</td>
+<td>Eight records and a strong presence of ransomware claims.</td>
+</tr>
+<tr>
+<td>Education and administration</td>
+<td>Reinforced</td>
+<td>Ten records combined, involving sensitive data and services.</td>
+</tr>
+<tr>
+<td>Other countries and sectors</td>
+<td>Targeted</td>
+<td>Case-by-case monitoring based on victim sensitivity and evidence quality.</td>
+</tr>
+</tbody>
+</table>
+<p>These priorities apply to the documented corpus and are not an official ranking of national cyber risk.</p>
+<h2>7. Observation timeline</h2>
+<pre><code class="language-mermaid">timeline
+    title AFRINTEL - January 2025
+    06 January 2025 : Molars Dental Practice
+    09 January 2025 : General Authority for Government Services
+    09 January 2025 : Pick n Pay (pnp.co.za)
+    11 January 2025 : SEOCOM Marrakech (seocommarrakech.com)
+    13 January 2025 : Living Seed (livingseed.org)
+    14 January 2025 : INTELS Nigeria Limited (intelservice.com)
+    14 January 2025 : Sharm Reef Hotel
+    15 January 2025 : Misr Technology Services (MTS / mts.gov.eg)
+    16 January 2025 : North-West University (NWU)
+    21 January 2025 : Barika University Center (cu-barika.dz)
+    21 January 2025 : Inaya Clinic (inayaclinic.org)
+    24 January 2025 : Lower Niger River Basin Development Authority (LNRBDA)
+    24 January 2025 : Sidi Mohamed Ben Abdellah University (www.usmba.ac.ma)
+    26 January 2025 : Achievers Journal of Scientific Research
+    26 January 2025 : FGSE, Cairo University (fgse.cu.edu.eg)
+    27 January 2025 : QED (qed.co.ug)
+    27 January 2025 : Workers (workers.com.zm)
+    27 January 2025 : Zetech University (zetech.ac.ke)
+    31 January 2025 - reported date : Business Registration Service (BRS)
+    31 January 2025 : Kenya Broadcasting Corporation (KBC)
+</code></pre>
+<h2>8. Trends and intelligence gaps</h2>
+<h3>CTI trends</h3>
+<p><strong>16 records</strong> are classified as Ransomware. Leading countries: Egypt (4), Nigeria (3), Kenya (2). A leak-site listing does not itself prove encryption or complete exfiltration.</p>
+<h3>Data exposure</h3>
+<p><strong>3 records</strong> are classified as Data Leak. Leading countries: South Africa (1), Kenya (1), Nigeria (1). AFRINTEL distinguishes actually observed data from aggregate volumes claimed by actors.</p>
+<h3>Account takeover</h3>
+<p><strong>One Account Takeover record</strong> is documented in Kenya. This category keeps institutional-account compromise distinct.</p>
+<h3>Priority intelligence gaps</h3>
+<table>
+<thead>
+<tr>
+<th>Gap</th>
+<th>Effect</th>
+<th>Expected verification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Initial access vector</td>
+<td>Limits attribution and technical tracking</td>
+<td>IAM, VPN, EDR, WAF logs and DFIR timelines</td>
+</tr>
+<tr>
+<td>Actual exfiltrated volume</td>
+<td>Risk of overestimating exposure</td>
+<td>Inventory, deduplication and reliable sampling</td>
+</tr>
+<tr>
+<td>Remediation and root cause</td>
+<td>Limits residual-exposure assessment</td>
+<td>Technical statements and post-incident reports</td>
+</tr>
+<tr>
+<td>Label attribution</td>
+<td>A pseudonym may be confused with an intrusion group</td>
+<td>Independent corroboration and documented infrastructure</td>
+</tr>
+</tbody>
+</table>
+<h2>9. Incidents to retain for the security committee</h2>
+<table>
+<thead>
+<tr>
+<th>Country</th>
+<th>Organization</th>
+<th>Type</th>
+<th>Status</th>
+<th>Impact</th>
+<th>Confidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Kenya</td>
+<td>Business Registration Service (BRS)</td>
+<td>Data Leak</td>
+<td>Government Confirmed</td>
+<td>Level 4</td>
+<td>Very High</td>
+</tr>
+<tr>
+<td>Nigeria</td>
+<td>Lower Niger River Basin Development Authority (LNRBDA)</td>
+<td>Ransomware</td>
+<td>Claim - Data Sample Published</td>
+<td>Level 4</td>
+<td>Very High</td>
+</tr>
+<tr>
+<td>Uganda</td>
+<td>QED (qed.co.ug)</td>
+<td>Ransomware</td>
+<td>Claim - Data Sample Published</td>
+<td>Level 4</td>
+<td>Very High</td>
+</tr>
+<tr>
+<td>Kenya</td>
+<td>Kenya Broadcasting Corporation (KBC)</td>
+<td>Account Takeover</td>
+<td>Victim Confirmed</td>
+<td>Level 3</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Kenya</td>
+<td>Molars Dental Practice</td>
+<td>Ransomware</td>
+<td>Claim - Data Sample Published</td>
+<td>Level 3</td>
+<td>High</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>This table highlights five records using structured impact, confirmation, and confidence fields. It is not an absolute severity ranking.</p>
+</blockquote>
+<h2>10. MITRE ATT&amp;CK: defensive mappings</h2>
+<p>The mappings below support defensive hunting; they are not technical attribution for every case.</p>
+<table>
+<thead>
+<tr>
+<th>Technique</th>
+<th>Evidence level</th>
+<th>Associated risk</th>
+<th>Telemetry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://attack.mitre.org/techniques/T1486/">T1486 - Data Encrypted for Impact</a></td>
+<td>Defensive hypothesis linked to ransomware claims</td>
+<td>Encryption and unavailability</td>
+<td>EDR, file logs, backups</td>
+</tr>
+<tr>
+<td><a href="https://attack.mitre.org/techniques/T1078/">T1078 - Valid Accounts</a></td>
+<td>Defensive hypothesis for ATO</td>
+<td>Abuse of legitimate accounts</td>
+<td>IAM, MFA, VPN, AD</td>
+</tr>
+<tr>
+<td><a href="https://attack.mitre.org/techniques/T1005/">T1005 - Data from Local System</a></td>
+<td>Hypothesis for leaks</td>
+<td>Collection of documents and databases</td>
+<td>EDR, file auditing, DLP</td>
+</tr>
+<tr>
+<td><a href="https://attack.mitre.org/techniques/T1567/">T1567 - Exfiltration Over Web Service</a></td>
+<td>Hypothesis; channel not established</td>
+<td>Abnormal outbound transfers</td>
+<td>Proxy, DNS, cloud, network</td>
+</tr>
+</tbody>
+</table>
+<h2>11. SOC operational plan: detect, qualify, contain</h2>
+<table>
+<thead>
+<tr>
+<th>Use case</th>
+<th>Signals to correlate</th>
+<th>Defensive action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Suspicious encryption</td>
+<td>Mass renames, backup deletion, ransom note</td>
+<td>Isolate hosts, protect backups, preserve evidence</td>
+</tr>
+<tr>
+<td>Abnormal privileged access</td>
+<td>Off-hours logins, role changes, unusual MFA</td>
+<td>Revoke sessions, reset accounts, strengthen controls</td>
+</tr>
+<tr>
+<td>Mass export</td>
+<td>Large reads, archives, increased egress</td>
+<td>Restrict egress and trigger the data-response plan</td>
+</tr>
+<tr>
+<td>Compromised institutional account</td>
+<td>New devices, unusual geography or activity</td>
+<td>Out-of-band verification, rotate secrets, review logs</td>
+</tr>
+<tr>
+<td>Public-service integrity</td>
+<td>Unplanned content or CMS-admin changes</td>
+<td>Restore from a trusted source and audit admin access</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Recommended workflow:</strong> timestamp the alert → consolidate by identity/host/service → qualify <code>observed / hypothesis / unknown</code> → contain proportionately → notify CISO and business owners → preserve evidence.</p>
+<h2>12. Prioritized CISO roadmap</h2>
+<table>
+<thead>
+<tr>
+<th>Horizon</th>
+<th>Priority</th>
+<th>Expected action</th>
+<th>Implementation evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–72 hours</td>
+<td>P0</td>
+<td>Review privileged accounts, MFA, VPN, backups and public services</td>
+<td>Access review and restore test</td>
+</tr>
+<tr>
+<td>7–30 days</td>
+<td>P1</td>
+<td>Deploy ransomware, mass-export, ATO and web-integrity detections</td>
+<td>Active rules and detection tests</td>
+</tr>
+<tr>
+<td>30–90 days</td>
+<td>P1</td>
+<td>Exercise a combined outage and data-leak crisis</td>
+<td>Exercise report and tracked actions</td>
+</tr>
+<tr>
+<td>30–90 days</td>
+<td>P2</td>
+<td>Industrialize CTI monitoring and FR/EN synchronization</td>
+<td>Parity controls and source traceability</td>
+</tr>
+</tbody>
+</table>
+<h2>13. Recommendations</h2>
+<h3>Organizations</h3>
+<ul>
+<li>enforce phishing-resistant MFA on privileged accounts, VPN, email, social media, and administration consoles;</li>
+<li>apply PAM, least privilege, segmentation, and secret rotation;</li>
+<li>maintain immutable backups and test restoration;</li>
+<li>strengthen public applications, APIs, and administration interfaces;</li>
+<li>formalize incident response and data-breach notification.</li>
+</ul>
+<h3>SOC and detection</h3>
+<ul>
+<li>monitor abnormal authentication, MFA changes, privileged-account creation, and role elevation;</li>
+<li>detect mass database reads, unusual exports, archive creation, and large outbound transfers;</li>
+<li>correlate EDR, IAM, VPN, WAF, proxy, DNS, cloud, and application logs;</li>
+<li>distinguish DDoS, internal intrusion, account compromise, and data exposure to avoid unsupported conclusions.</li>
+</ul>
+<h3>CTI</h3>
+<ul>
+<li>keep incident date, initial publication, first observation, sample, disclosure, and confirmation separate;</li>
+<li>track republication and resale without automatically counting them as new compromise;</li>
+<li>preserve the evidence hierarchy between claim, corroboration, and confirmation;</li>
+<li>validate FR/EN parity before generating statistics.</li>
+</ul>
+<h2>14. Conclusion</h2>
+<p><strong>January 2025</strong> contains <strong>20 documented cyber incidents</strong> across <strong>8 African countries</strong>. The monthly CTI value lies not only in volume but in separating <strong>incident type, timeline, evidence level, geography, sector, and actor</strong>.</p>
+<p>The report therefore preserves a structured picture of the observable threat environment while keeping claims, corroboration, confirmations, and unknowns at their actual evidence level.</p>
+<p>👉🏾 <a href="./victims.md">See monthly victims</a></p>
+<p><strong>AFRINTEL</strong> - TLP:CLEAR</p><hr><p class="report-meta">AFRINTEL · TLP:CLEAR · Standalone HTML generated from the validated Markdown report.</p></body></html>

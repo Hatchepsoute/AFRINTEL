@@ -41,7 +41,7 @@ Le corpus d'octobre comprend **48 fiches**, toutes rattachées à octobre après
 
 ### Cybermenaces en Afrique - août 2026
 
-La collecte d'août 2026 comprend **32 incidents documentés** : **18 ransomware**, **13 fuites de données** et **1 vente d'accès**.
+La collecte d'août 2026 comprend **28 incidents documentés** : **18 ransomware**, **9 fuites de données** et **1 vente d'accès**.
 
 Le Furniture Bargaining Council a reconnu un chiffrement de serveurs et DC Partner a publié une confirmation publique de l’incident. Les analyses documentent notamment des données de paiement chez The Courier Guy, un classeur de réinitialisation de comptes chez Daily Trust, des documents internes du Conseil Gabonais des Chargeurs et des données d'identité dans les cas RAMED et DGSN/DGST. Les échantillons examinés ne valident pas automatiquement les volumes globaux revendiqués ou les méthodes d'acquisition.
 
@@ -75,7 +75,7 @@ Le corpus de septembre comprend **33 fiches documentées** : **20 Ransomware**, 
 
 ### Rapport cybermenaces du premier semestre 2026
 
-Entre janvier et juin 2026, AFRINTEL a documenté **304 incidents** : **116 Ransomware**, **126 Data Leak**, **5 Access Sale**, **52 DDoS**, **2 System Intrusion**, **1 Defacement** et **2 Operational Fraud**.
+Entre janvier et juin 2026, AFRINTEL a documenté **320 incidents** : **115 Ransomware**, **140 Data Leak**, **9 Access Sale**, **52 DDoS**, **2 System Intrusion**, **1 Defacement** et **1 Operational Fraud**.
 
 Les 52 fiches DDoS sont des revendications d’acteurs ou des observations de disponibilité datées, dont 43 observations Keymous+ en mai. Des observations répétées de la même organisation à des dates différentes ne correspondent pas nécessairement à des attaques techniquement indépendantes.
 
@@ -97,12 +97,12 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 
 | Année | Fiches documentées | FR | EN |
 | :--- | ---: | :--- | :--- |
-| 2024 | **124** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
-| 2025 | **231** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
+| 2024 | **125** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
+| 2025 | **234** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
 
-**Référence 2024 du corpus mensuel actuel :** **124 fiches documentées**, reclassées selon la même taxonomie à neuf types que celle utilisée pour 2025. Les rapports semestriels corrigés conservent des snapshots historiques et ne reflètent pas tous les ajouts rétrospectifs présents dans les couples mensuels actuels.
+**Référence 2024 du corpus mensuel actuel :** **125 fiches documentées**, reclassées selon la même taxonomie à neuf types que celle utilisée pour 2025. Les rapports semestriels corrigés conservent des snapshots historiques et ne reflètent pas tous les ajouts rétrospectifs présents dans les couples mensuels actuels.
 
-**Référence 2025 du corpus mensuel actuel :** **231 fiches documentées**. Le S1 compte **115 fiches** et le S2 **116**. Les ventilations géographiques comptent **232 occurrences**, car une fiche couvre plusieurs pays.
+**Référence 2025 du corpus mensuel actuel :** **234 fiches documentées**. Le S1 compte **115 fiches** et le S2 **119**. La table régionale annuelle validée totalise **234 occurrences géographiques**.
 
 ---
 
@@ -111,12 +111,12 @@ Chaque rapport annuel consolide le corpus mensuel validé de l'année : réparti
 | Période | Fiches documentées | FR | EN |
 | :--- | ---: | :--- | :--- |
 | S1 2024 | **46** | [Rapport S1](CyberAttackAfrica/2024/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2024/README_H1.md) |
-| S2 2024 | **78** | [Rapport S2](CyberAttackAfrica/2024/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2024/README_H2.md) |
+| S2 2024 | **79** | [Rapport S2](CyberAttackAfrica/2024/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2024/README_H2.md) |
 | S1 2025 | **115** | [Rapport S1](CyberAttackAfrica/2025/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2025/README_H1.md) |
-| S2 2025 | **116** | [Rapport S2](CyberAttackAfrica/2025/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2025/README_H2.md) |
-| S1 2026 | **304** | [Rapport S1](CyberAttackAfrica/2026/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2026/README_H1.md) |
+| S2 2025 | **119** | [Rapport S2](CyberAttackAfrica/2025/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2025/README_H2.md) |
+| S1 2026 | **320** | [Rapport S1](CyberAttackAfrica/2026/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2026/README_H1.md) |
 
-> **Note de comptage :** ces valeurs suivent les couples mensuels actuellement présents dans le dépôt : S1 2024 = 46, S2 2024 = 78, S1 2025 = 115, S2 2025 = 116 et S1 2026 = 304. Les snapshots semestriels antérieurs peuvent différer après déduplication ; ils ne doivent pas être mélangés avec les corpus mensuels enrichis depuis.
+> **Note de comptage :** ces valeurs suivent les couples mensuels actuellement présents dans le dépôt : S1 2024 = 46, S2 2024 = 79, S1 2025 = 115, S2 2025 = 119 et S1 2026 = 320. Les snapshots semestriels antérieurs peuvent différer après déduplication ; ils ne doivent pas être mélangés avec les corpus mensuels enrichis depuis.
 
 ---
 

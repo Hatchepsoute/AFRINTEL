@@ -6,6 +6,10 @@
 # AFRINTEL - Rapport mensuel de renseignement cyber
 ## Cybermenaces en Afrique | Septembre 2026
 
+**Édition consolidée du 17 novembre 2026 - Rapport pour RSSI, DSI, équipes IT et SOC**
+
+[English version](./README.md) · [33 fiches victimes FR](./victims_FR.md) · [Statistiques vérifiées](./STATISTIQUES_2026-09.json)
+
 **Période du corpus :** 1er au 30 septembre 2026  
 **Couverture de veille :** 54 pays africains ; 12 pays présents dans le corpus  
 **Public visé :** directions générales, RSSI, DSI, responsables de la gestion des risques et analystes CTI/SOC  
@@ -25,6 +29,8 @@ L'**Afrique du Sud (9)**, l'**Égypte (8)** et le **Maroc (4)** concentrent **21
 Le fait le plus important n'est pas seulement le nombre de publications. **Les informations d'identité, les documents administratifs, les données financières et les dossiers professionnels** reviennent dans plusieurs échantillons. Leur divulgation éventuelle peut alimenter, dans un second temps, des fraudes, des usurpations d'identité et des tentatives d'hameçonnage ciblé.
 
 Deux dossiers comportent une **confirmation d'accès non autorisé** : la plateforme sud-africaine **RelyComply** et une activité non autorisée dans le réseau du **ministère namibien de la Défense et des Anciens combattants**. Deux autres dossiers, **Hollard** et **Guardrisk**, concernent des **expositions liées à des tiers**, sans intrusion directe établie chez l'assureur cité. Ces nuances changent les décisions à prendre : **vérifier les faits, protéger les personnes et traiter les accès à risque avant de conclure à une attaque.**
+
+**Mise à jour officielle postérieure au mois :** dans une note actualisée le **2 novembre 2026**, RelyComply précise que l’investigation forensique clôturée le **1er octobre** a confirmé qu’**une extraction de données** s’est produite. L’entreprise ne peut cependant déterminer exactement quels enregistrements ont été emportés et ne signale pas de preuve vérifiée de revente ou d’exploitation frauduleuse à cette date. Ce constat complète, sans étendre arbitrairement, la fiche AFRINTEL initialement contrôlée au 18 octobre. [Source : communiqué officiel RelyComply](https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/).
 
 **Message aux décideurs :** ces observations justifient une vigilance proportionnée. Une publication criminelle doit être qualifiée avant d’être traitée comme une compromission. Si des faits confirment une atteinte grave, les dispositifs de réponse à incident et de gestion de crise doivent être activés sans délai. La visibilité sur les données sensibles, la maîtrise des accès, des sauvegardes testées et une détection adaptée réduisent concrètement les risques.
 
@@ -59,6 +65,17 @@ Deux dossiers comportent une **confirmation d'accès non autorisé** : la platef
 
 *Base août vérifiée : 33 fiches (18 ransomware, 14 fuites de données, 1 vente d’accès), selon le [rapport AFRINTEL d’août 2026](../08-august/README_FR.md). La comparaison porte sur les **dossiers intégrés aux corpus mensuels**, pas sur le nombre exact d'intrusions qui se sont produites pendant chaque mois. La progression peut être influencée par la collecte et la découverte tardive.*
 
+### 1.2 Tableau de bord décisionnel - où intervenir d'abord ?
+
+| Signal prioritaire | Ce qui est établi | Décision à prendre | Responsable type |
+|---|---|---|---|
+| Accès non autorisé chez un fournisseur AML/KYC | RelyComply a reconnu l’accès puis, dans sa mise à jour du 2 novembre, une extraction de données sans détail individuel exhaustif | Vérifier les flux confiés, limiter les accès API délégués et préparer les notifications adaptées | RSSI + DPO + propriétaire métier |
+| Exposition indirecte de données d'assurance | Hollard/MIP et Guardrisk/CoverCubed ; intrusion directe chez les assureurs non démontrée | Cartographier les sous-traitants et exiger des éléments probants sur le périmètre | DSI + achats + conformité |
+| Publications de documents identifiants et financiers | Extraits observés dans plusieurs dossiers marocains, sud-africains et angolais | Restreindre les exports de masse, faire l'inventaire des copies et renforcer le contrôle des accès | IT + gouvernance de la donnée |
+| Revendications visant des services sensibles | Autorités, banques, santé et transport aérien nommés sur des plateformes criminelles | Activer une **qualification rapide**, sans interrompre les services sur une simple publication | CERT/SOC + direction |
+
+*P1 signifie priorité de vérification et de protection ; ce n'est pas la preuve d'un impact opérationnel dans chaque organisation citée.*
+
 ## 2. Périmètre, sources et méthode
 
 AFRINTEL suit les 54 pays du continent, mais ne retient ici que les **33 fiches documentées dans le dossier de septembre**. Les événements sont rattachés au mois sur la base de la publication initiale ou de la première observation retenue. La date d'une publication criminelle peut être postérieure de plusieurs jours ou mois à la compromission alléguée.
@@ -88,13 +105,6 @@ Les 33 fiches françaises et anglaises ont été rapprochées pour les **pays, a
 
 ![Types de signalements](./assets/types_september_2026_FR.png)
 
-```mermaid
-pie showData
-    title Signalements AFRINTEL - septembre 2026 (33)
-    "Ransomware" : 20
-    "Fuite de données" : 11
-    "Intrusion système" : 2
-```
 
 Les **20 cas classés ransomware** correspondent à des publications ou événements inscrits dans un contexte d'extorsion. Le chiffrement, la durée d'interruption et l'ampleur réelle d'une exfiltration restent **à établir dossier par dossier**.
 
@@ -126,6 +136,8 @@ Par grandes régions AFRINTEL, **l'Afrique du Nord compte 13 dossiers (39,4 %)**
 | Accès non autorisé confirmé par une autorité | 1 | Confirmation limitée au réseau et aux faits mentionnés par l'autorité |
 | **Total** | **33** | |
 
+**Contrôle de cohérence :** **16 + 12 + 1 + 2 + 1 + 1 = 33**. Les **2 dossiers d’accès confirmé** (RelyComply et réseau ministériel namibien) et les **2 expositions tierces reconnues** ne doivent pas être confondus avec les **29 autres publications ou échantillons**. Les en-têtes des fichiers victimes transmis contenaient encore une ancienne phrase parlant de « 41 fiches » et « 13 incidents confirmés » : ces chiffres ont été **corrigés dans les copies jointes**, sans changement des 33 fiches.
+
 **Point de confiance :** un échantillon cohérent renforce l'association documentaire ; il ne prouve pas, à lui seul, que le système de l'organisation citée a été piraté. Les **deux confirmations d'accès** et les **deux expositions tierces** doivent rester identifiables séparément des 29 autres dossiers.
 
 ## 4. Analyse par type d'incident
@@ -156,11 +168,25 @@ Les dossiers **`subscribers.co.ke`**, **`acao.org.ma`** et **Techne Summit 2026*
 
 ### 4.3 Intrusions système : deux confirmations, deux périmètres précis
 
-**RelyComply (Afrique du Sud)** a reconnu un **accès non autorisé** à certains systèmes, détecté le **8 septembre 2026**, dans un contexte de vulnérabilité d'une application tierce. L'entreprise indique avoir mis en œuvre des mesures correctives, notamment la reconstruction de systèmes et la révocation ou le renouvellement d'accès et de secrets. Cela établit l'existence d'un incident, **pas l'attribution technique à l'auteur d'une revendication ransomware**.
+**RelyComply (Afrique du Sud)** a reconnu un **accès non autorisé** détecté le **8 septembre 2026**, après l’exploitation d’une vulnérabilité zero-day dans une application tierce de reporting. La mise à jour officielle du **2 novembre** indique que les investigations clôturées le **1er octobre** ont confirmé la **sortie de données** de son environnement, sans pouvoir circonscrire chaque champ ou enregistrement retiré. Les mesures annoncées comprennent la reconstruction de systèmes, le retrait de l’application vulnérable, la rotation de secrets et la notification aux clients. Le rapprochement possible avec des données de partenaires de paiement et de vérification d’identité exige une analyse de la **chaîne de sous-traitance**. Ce constat **ne confirme pas** l’attribution à Direwolf, l’existence d’un chiffrement ni un nombre déterminé de personnes touchées. [Source officielle](https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/).
 
 En **Namibie**, les informations gouvernementales examinées confirment une activité non autorisée dans le réseau du **ministère de la Défense et des Anciens combattants**. La revendication criminelle utilise le nom **Namibian Defence Force** ; la confirmation publique ne doit pas être étendue sans preuve aux réseaux militaires opérationnels, à un chiffrement ou à la fuite de secrets.
 
 **Conséquence :** le fait d'être précis sur le réseau concerné, la source de la confirmation et les actions réalisées permet de communiquer sans spéculation et de concentrer l'enquête sur les bons actifs.
+
+### 4.4 Autres dossiers à forte valeur pour les défenseurs
+
+**Maroc - Pharma 5 (25 septembre).** La publication attribuée à INC Ransom est accompagnée d’un document de spécifications qualité présentant des références de matières premières, des rôles « client / fournisseur / fabricant » et des éléments cohérents avec la chaîne pharmaceutique. Des concordances publiques renforcent **l’association documentaire**, sans confirmer une intrusion, un vol de **50 Go revendiqués** ou une atteinte à des partenaires mentionnés dans le document. Pour un laboratoire, la priorité consiste à protéger les dossiers qualité, les relations fournisseurs, les identifiants et la traçabilité des changements.
+
+**Maroc - La Sultana Hotels (12 septembre).** La fiche attribuée à Krybit et le corpus local contiennent **138 scans JPEG** d’environ **54 Mo**, dont des pages ressemblant à des documents d’identité. Leur **provenance depuis les systèmes hôteliers reste inconnue**. La réponse défensive doit porter sur les accès aux scans de passeports, les plateformes de réservation et la limitation de la conservation de copies d’identité.
+
+**Afrique du Sud - First National Bank (27 septembre).** Cinq images de relevés professionnels publiées sous le label Blacknet00 sont **compatibles avec des documents FNB**, mais peuvent provenir de clients ou de partenaires. **Aucune intrusion directe de la banque n’est établie.** Les scénarios prioritaires concernent les fraudes aux virements, les faux changements de coordonnées et l’usurpation de fournisseurs.
+
+**Afrique du Sud - corpus d'identité sans détenteur identifié (25 septembre).** L’échantillon associé comprend **5 000 PDF** totalisant approximativement **1,77 Go**, avec des catégories liées aux identités et aux justificatifs. **Ne pas inventer de victime** : la source organisationnelle n’est pas déterminée. Le risque documentaire est élevé, mais l’attribution reste ouverte.
+
+**Libye - suivi intermensuel.** Une nouvelle publication du **10 septembre** a été rapprochée du dossier antérieur concernant le ministère libyen de l’Éducation. Elle fait l’objet d’un **suivi**, sans création d’un trente-quatrième dossier ni double comptage dans les statistiques de septembre. Les volumes revendiqués restent distincts de l’échantillon réellement examiné.
+
+**Lecture transverse :** plusieurs exemples montrent un même risque métier, celui d’une **copie documentaire hors du système d’origine** (prestataire, client, export, sauvegarde, stockage collaboratif). Avant de désigner un système « piraté », il faut rechercher le premier détenteur, les droits de partage et la trajectoire du document.
 
 ## 5. Lecture sectorielle : où porter les efforts ?
 
@@ -219,7 +245,7 @@ La couverture doit aussi être renforcée pour les pays moins visibles : relatio
 
 | Dossier | Élément documenté | Risque à anticiper | Limite de la preuve |
 |---|---|---|---|
-| **RelyComply - Afrique du Sud** | Accès non autorisé reconnu par l'entreprise. | Sécurité des accès, partenaires et données transactionnelles. | Responsabilité technique du groupe revendiquant l'attaque non établie. |
+| **RelyComply - Afrique du Sud** | Accès non autorisé reconnu ; extraction de données confirmée le 2 novembre, périmètre détaillé inconnu. | Sécurité des accès, partenaires et données transactionnelles. | Responsabilité technique du groupe revendiquant l'attaque non établie. |
 | **Défense namibienne** | Activité non autorisée confirmée dans le réseau ministériel. | Sécurité et continuité des services publics sensibles. | Chiffrement, extraction et fuite de secrets non établis. |
 | **Centre Atlantique Formation - Maroc** | Archive structurée et documents de formation cohérents, examinés en lecture seule. | Fraude documentaire, usurpation d'identité. | Point d'entrée et exhaustivité de l'exposition inconnus. |
 | **SEPE - Angola** | Échantillon administratif examiné ; volumes nettement supérieurs revendiqués. | Protection des usagers et des justificatifs administratifs. | Compromission directe du portail et volume total non prouvés. |
@@ -281,6 +307,18 @@ Une publication criminelle **ne justifie pas à elle seule** l'arrêt d'un servi
 
 **Mesure d'efficacité recommandée :** suivre la couverture de journalisation des dépôts sensibles, le taux d'alertes exploitables, les délais de qualification, la révocation des accès à risque et les résultats des tests de restauration.
 
+### 10.1 Workflow SOC - du signalement à la décision
+
+1. **Recevoir et préserver** : enregistrer la publication, sa date, le nom exact de l'organisation et les captures utiles dans un espace d'enquête protégé. Ne pas redistribuer les données personnelles.
+2. **Qualifier** : distinguer le *listing*, l'échantillon vérifiable, les déclarations officielles et l'origine technique encore inconnue. Conserver `Claim - Unverified` tant qu'aucune preuve supérieure ne justifie un autre statut.
+3. **Définir le périmètre** : rechercher le propriétaire des données et les tiers potentiellement détenteurs. Ne pas attribuer un incident à une banque ou un assureur uniquement parce que son logo figure sur un document.
+4. **Corréler les télémétries** : réunir les événements IAM/SSO/VPN, journaux de bases et d’API, stockage cloud, EDR, proxy et WAF dans une chronologie unique avec horodatages harmonisés.
+5. **Tester des hypothèses** : export massif après nouvelle authentification, compte prestataire hors horaires, création d’archive suivie de trafic sortant. Écarter les traitements autorisés et les changements planifiés avant l’escalade.
+6. **Décider puis vérifier** : limiter les sessions ou clés concernées en cas de preuve suffisante ; déclencher les notifications et le plan de crise selon l’impact réel. Documenter qui décide, les preuves retenues et les mesures de rétablissement.
+7. **Clore avec retour d’expérience** : compléter la fiche CTI (observé / corroboré / inconnu), conserver les éléments forensiques selon la politique interne et ajuster les détections pour les prochains cas.
+
+**Escalade P1 recommandée** lorsque des faits internes confirment un accès non autorisé à un référentiel sensible, une exfiltration probable ou une indisponibilité métier critique. Une revendication seule déclenche d’abord une **qualification prioritaire**, pas systématiquement un confinement d’urgence.
+
 ## 11. Orientations stratégiques pour RSSI, DSI et décideurs
 
 **Première priorité : maîtriser les données.** Savoir où se trouvent les copies des fichiers d'identité, des dossiers clients et des documents financiers est souvent plus décisif que multiplier les outils. Limiter leur duplication et auditer les exports réduit l'impact d'une exposition éventuelle.
@@ -289,13 +327,37 @@ Une publication criminelle **ne justifie pas à elle seule** l'arrêt d'un servi
 
 **Troisième priorité : décider sur des faits.** Face à une revendication, la direction doit pouvoir recevoir une note courte : « qu'avons-nous observé ? », « qu'est-ce qui est confirmé ? », « quelles vérifications restent nécessaires ? », « quelle action immédiate est proportionnée ? ». Cette discipline protège à la fois l'organisation, ses clients et sa réputation.
 
+### 11.1 Indicateurs à suivre par le RSSI
+
+| Indicateur | Pourquoi le suivre | Rythme conseillé |
+|---|---|---|
+| % de référentiels sensibles journalisés | Déterminer si le SOC peut observer un export ou une consultation abusive | Mensuel |
+| Délai médian de qualification d'une revendication visant l'organisation | Ne pas laisser une publication non vérifiée bloquer les décisions | Mensuel |
+| % des comptes privilégiés et fournisseurs sous MFA adapté | Réduire le risque de détournement d'identifiants | Mensuel |
+| % des applications publiques à jour / testées | Réduire les fenêtres d'exposition sur les services accessibles | Mensuel |
+| Résultats de restauration et temps mesuré | Valider réellement la continuité d’activité | Trimestriel |
+| % de prestataires critiques disposant d'une procédure de notification testée | Identifier rapidement les expositions par sous-traitance | Trimestriel |
+
+Ces KPI doivent être définis à partir de l'inventaire propre à chaque organisation. Ils ne sont **pas** des mesures calculées par AFRINTEL sur les victimes de ce corpus.
+
 ## 12. Conclusion et limites d'utilisation
 
 Le mois de septembre 2026 présente **33 signalements documentés dans 12 pays**, avec une forte visibilité du ransomware et des risques de divulgation de données. Plusieurs dossiers contiennent des éléments concrets, et **deux accès non autorisés sont confirmés dans des périmètres précisément définis**. De nombreuses autres publications demandent encore des vérifications avant toute conclusion sur la réalité d'une intrusion, l'ampleur d'une fuite ou les effets sur l'activité.
 
 **Le constat est sérieux, mais les réponses sont connues et à portée des organisations :** surveiller les accès, encadrer les exports, protéger les identités, vérifier les fournisseurs et s'entraîner à restaurer les services. La veille AFRINTEL sert à **anticiper**, non à entretenir l'inquiétude.
 
-**Limites :** corpus non exhaustif ; surreprésentation possible des publications d'extorsion ; découverte parfois postérieure à la date d'accès ; échantillons hétérogènes ; volumes annoncés non additionnables ; aucune équivalence automatique entre fichier, ligne, dossier et personne. Un statut de preuve ou un niveau de confiance élevé ne remplace pas une confirmation du système compromis. Les chiffres proviennent des fiches analysées ; les vérifications indépendantes propres aux fiches sont, pour une grande partie, datées du **18 octobre 2026**.
+**Limites :** corpus non exhaustif ; surreprésentation possible des publications d'extorsion ; découverte parfois postérieure à la date d'accès ; échantillons hétérogènes ; volumes annoncés non additionnables ; aucune équivalence automatique entre fichier, ligne, dossier et personne. Un statut de preuve ou un niveau de confiance élevé ne remplace pas une confirmation du système compromis. Les chiffres proviennent des fiches analysées ; les vérifications indépendantes figurant dans ces fiches datent majoritairement du **18 octobre 2026**. Une **mise à jour indépendante du 2 novembre 2026** est explicitement mentionnée pour RelyComply.
+
+### Références publiques sélectionnées
+
+- [RelyComply - communication officielle, 16 septembre, mise à jour du 2 novembre 2026](https://relycomply.com/relycomply-cyber-incident-what-happened-and-what-you-can-do/) - accès non autorisé, extraction confirmée et limites forensiques.
+- [Hollard - communiqué des 15 et 18 septembre 2026](https://www.fanews.co.za/article/company-news-results/1/hollard/1301/hollard-statement-regarding-reported-cyber-threat-claims/44724) - exposition indirecte liée à MIP Holdings.
+- [Guardrisk - déclaration rapportée le 30 septembre 2026](https://mybroadband.co.za/news/security/669576-momentum-group-company-responds-to-data-breach-claims.html) - contexte CoverCubed, pas d’intrusion directe démontrée.
+- [NAM-CSIRT - déclaration relayée le 20 septembre 2026](https://technews.com.na/2026/09/20/namibias-defence-ministry-hit-by-double-extortion-ransomware-attack/) - activité non autorisée dans le réseau ministériel.
+- [MITRE ATT&CK](https://attack.mitre.org/) - taxonomie utilisée pour les hypothèses défensives, non pour attribuer des techniques aux dossiers.
+- [Fiches victimes FR](./victims_FR.md) et [statistiques septembre](./STATISTIQUES_2026-09.json) - corpus AFRINTEL, sources et limites propres à chaque cas.
+
+**Contrôle éditorial - 17 novembre 2026 :** les données d'origine sont celles des fichiers transmis ; les mises à jour publiques postérieures au mois et aux revues du 18 octobre sont signalées séparément. L'analyse n'expose aucune donnée personnelle, aucun identifiant d'accès ni aucun lien criminel exploitable.
 
 ---
 

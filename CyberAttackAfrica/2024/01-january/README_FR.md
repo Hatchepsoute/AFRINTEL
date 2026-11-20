@@ -1,6 +1,13 @@
 # Rapport CTI AFRINTEL - Cybermenaces en Afrique - Janvier 2024
 
-👉🏾 [English version](./README.md)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL) ![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Période](https://img.shields.io/badge/Période-Janvier%202024-blueviolet)
+
+**Public:** RSSI, responsables SOC/CERT, comités de risque et continuité d'activité.<br>
+**Période:** 1–31 janvier 2024, sur la base des fiches canoniques documentées.<br>
+**Édition:** auditée le 20 novembre 2026 | **Diffusion:** TLP:CLEAR.<br>
+👉🏾 [English version](./README.md) | [Fiches détaillées en français](./victims_FR.md) | [English records](./victims.md)
+
+> **Méthode probatoire.** Ce rapport dérive des fiches victimes validées de janvier 2024. Revendications, confirmations de victimes, échantillons et niveaux de confiance restent séparés. Une publication criminelle n'est pas traitée comme une preuve de chiffrement, d'exfiltration ou de compromission complète sans éléments concordants.
 
 ## 1. Synthèse exécutive
 
@@ -10,6 +17,10 @@ Les pays les plus représentés sont **l'Afrique du Sud (4)** et le **Cameroun (
 
 La baseline de janvier a été corrigée après l'intégration rétrospective de la **Data Leak de Daeyang University**, publiée initialement le **25 janvier 2024** avec un échantillon SQL visible. L'acteur revendique plus de 224 000 lignes SQL ; AFRINTEL n'assimile pas ce chiffre à un nombre de personnes affectées.
 
+### 1.1 Comparaison avec décembre 2023
+
+Décembre 2023 reste **N/A** dans ce rapport, car aucun corpus rétrospectif comparable n'a été validé avec les mêmes règles de comptage. Janvier constitue donc une baseline mensuelle absolue et ne doit pas être interprété comme une hausse mensuelle mesurée.
+
 ## 2. Méthodologie
 
 - Un incident canonique correspond à un événement retenu dans le millésime 2024.
@@ -18,6 +29,8 @@ La baseline de janvier a été corrigée après l'intégration rétrospective de
 - Les 9 types AFRINTEL sont utilisés ; une tentative est représentée par le statut, jamais par un type `Attempted Attack`.
 - Un DDoS coordonné est compté par campagne.
 - Type, statut, confiance, impact, attribution et source restent distincts.
+
+Les fichiers français et anglais contiennent **8 fiches dans le même ordre**. Tous les graphiques et tableaux de ce rapport dérivent de ce couple validé ; les catégories à zéro sont conservées afin de respecter la taxonomie AFRINTEL à neuf types.
 
 ## 3. Répartition par type d'incident
 
@@ -32,6 +45,10 @@ La baseline de janvier a été corrigée après l'intégration rétrospective de
 | System Intrusion | 2 | 25,0 % |
 | Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
+| **Total** | **8** | **100,0 %** |
+
+![Types d’incident](assets/types_FR.png)
+![Répartition des types](assets/types_pie_FR.png)
 
 ```mermaid
 pie showData
@@ -50,6 +67,10 @@ pie showData
 | Cameroun | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Angola | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Malawi | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **Total** | **8** | **4** | **1** | **1** | **0** | **0** | **0** | **2** | **0** | **0** |
+
+
+![Pays](assets/pays_FR.png)
 
 ## 5. Répartition régionale
 
@@ -57,6 +78,11 @@ pie showData
 |---|---:|---:|
 | Afrique australe | 6 | 75,0 % |
 | Afrique centrale | 2 | 25,0 % |
+| **Total** | **8** | **100,0 %** |
+
+
+![Régions](assets/regions_FR.png)
+![Répartition régions](assets/regions_pie_FR.png)
 
 ## 6. Répartition sectorielle
 
@@ -68,6 +94,11 @@ pie showData
 | Finance / Banque | 1 | 12,5 % |
 | Services professionnels / Business | 1 | 12,5 % |
 | Énergie / Services publics | 1 | 12,5 % |
+| **Total** | **8** | **100,0 %** |
+
+
+![Secteurs](assets/secteurs_FR.png)
+![Répartition secteurs](assets/secteurs_pie_FR.png)
 
 ## 7. Acteurs / groupes
 
@@ -77,6 +108,10 @@ pie showData
 | lockbit3 | 3 | 37,5 % |
 | cnHunter | 1 | 12,5 % |
 | X0Frankenstein | 1 | 12,5 % |
+| **Total** | **8** | **100,0 %** |
+
+
+![Acteurs / groupes](assets/acteurs_FR.png)
 
 ## 8. Maturité des preuves
 
@@ -85,6 +120,10 @@ pie showData
 | Claim - Unverified | 4 | 50,0 % |
 | Confirmed | 3 | 37,5 % |
 | Claim - Data Sample Published | 1 | 12,5 % |
+| **Total** | **8** | **100,0 %** |
+
+
+![Maturité des preuves](assets/preuves_FR.png)
 
 ### Confiance
 

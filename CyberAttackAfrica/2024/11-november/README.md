@@ -1,6 +1,13 @@
 # AFRINTEL CTI Report - Cyber Threats in Africa - November 2024
 
-👉🏾 [Version française](./README_FR.md)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL) ![Scope](https://img.shields.io/badge/Scope-Africa-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Period](https://img.shields.io/badge/Period-November%202024-blueviolet)
+
+**Audience:** CISOs, SOC/CERT leads, risk committees and business continuity managers.<br>
+**Period:** November 1–30, 2024, based on the documented canonical records.<br>
+**Edition:** audited November 20, 2026 | **Distribution:** TLP:CLEAR.<br>
+👉🏾 [Version française](./README_FR.md) | [Detailed records in English](./victims.md) | [French records](./victims_FR.md)
+
+> **Evidence method.** This report derives from the validated November 2024 victim cards. Claims, victim confirmations, samples and confidence levels remain separate. A criminal publication is not treated as proof of encryption, exfiltration or full compromise without supporting evidence.
 
 ## 1. Executive summary
 
@@ -21,6 +28,8 @@ In November 2024, AFRINTEL retains **16 canonical cyber incidents across 11 coun
 | Malware | 0 | 0 | Stable |
 | Operational Fraud | 0 | 0 | Stable |
 
+![Comparaison mensuelle](assets/comparaison_EN.png)
+
 ### 1.2 Comparative analysis
 
 Monthly volume **increases by 5 incidents**. Structural changes are: Ransomware 8->12 (+4), Access Sale 0->2 (+2), Data Leak 2->2 (stable), and System Intrusion 1->0 (-1). This describes the documented corpus and does not necessarily equal the change in real compromises across the continent.
@@ -38,15 +47,18 @@ Monthly volume **increases by 5 incidents**. Structural changes are: Ransomware 
 
 | Type | Records | Share |
 |---|---|---|
-| Ransomware | 12 | 80.0% |
+| Ransomware | 12 | 75.0% |
 | Data Leak | 2 | 12.5% |
-| Access Sale | 2 | 13.3% |
+| Access Sale | 2 | 12.5% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
 | Account Takeover | 0 | 0.0% |
 | System Intrusion | 0 | 0.0% |
 | Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
+
+![Types d’incident](assets/types_EN.png)
+![Répartition des types](assets/types_pie_EN.png)
 
 ```mermaid
 pie showData
@@ -72,6 +84,9 @@ pie showData
 | Cameroon | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Namibia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
+
+![Pays](assets/pays_EN.png)
+
 ## 5. Regional distribution
 
 | Region | Records | Share |
@@ -81,6 +96,10 @@ pie showData
 | West Africa | 4 | 26.7% |
 | North Africa | 2 | 13.3% |
 | Central Africa | 1 | 6.7% |
+
+
+![Régions](assets/regions_EN.png)
+![Répartition régions](assets/regions_pie_EN.png)
 
 ## 6. Sector distribution
 
@@ -95,6 +114,10 @@ pie showData
 | Commerce / E-commerce | 1 | 6.3% |
 | Education / University | 1 | 6.7% |
 | Agriculture / Agribusiness | 1 | 6.7% |
+
+
+![Secteurs](assets/secteurs_EN.png)
+![Répartition secteurs](assets/secteurs_pie_EN.png)
 
 ## 7. Actors / groups
 
@@ -112,6 +135,9 @@ pie showData
 | fog | 1 | 6.7% |
 | spacebears | 1 | 6.7% |
 
+
+![Acteurs / groupes](assets/acteurs_EN.png)
+
 ## 8. Evidence maturity
 
 | Evidence position | Records | Share |
@@ -127,6 +153,9 @@ pie showData
 | Low | 11 | 73.3% |
 | Very High | 2 | 13.3% |
 | Medium | 3 | 18.8% |
+
+
+![Maturité des preuves](assets/preuves_EN.png)
 
 ## 9. Timeline
 

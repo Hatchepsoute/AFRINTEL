@@ -11,6 +11,8 @@
 
 **Statut du suivi mensuel : Published / Publié**  -  corpus de 48 fiches publiées ou signalées en octobre 2026. La clôture et les statistiques mensuelles sont publiées dans le rapport associé.
 
+> **Chronologie :** Les sections journalières présentent les dates des publications et signalements suivis en octobre. Une publication plus ancienne, identifiée a posteriori pour e-Solde, reste indiquée avec sa date réelle ; son maintien dans le suivi d’octobre est explicité dans le rapport.
+
 ### 01 octobre 2026
 
 #### 🇨🇩 République démocratique du Congo - ServerUnlockApp (`serverunlockapp.com`) [Data Leak]
@@ -44,7 +46,7 @@
 - **Périmètre et limites de l'analyse :** L'arborescence locale a été inventoriée en lecture seule. Les fichiers PHP, JavaScript et autres scripts n'ont pas été exécutés. Les valeurs de configuration, clés, certificats, identifiants, e-mails et données financières n'ont pas été reproduits. L'analyse porte sur la structure de la sauvegarde et sur des agrégats du CSV/JSON ; elle ne valide ni l'exhaustivité du prétendu backup ni l'accès actuel à l'application.
 - **Risques :** Réutilisation de comptes clients, fraude liée aux soldes ou paiements, phishing ciblé, usurpation de revendeurs, exposition de données commerciales, réutilisation potentielle de secrets et compromission secondaire d'intégrations de paiement ou de messagerie.
 - **Recommandations SOC / CTI :** Révoquer et renouveler les secrets, clés, certificats et sessions potentiellement exposés ; examiner les journaux d'administration, de téléchargement et d'export ; vérifier les comptes clients et revendeurs ; contrôler les intégrations de paiement et de messagerie ; rechercher les modifications de code et tâches planifiées ; préserver les sauvegardes originales et ne pas exécuter les scripts divulgués.
-- **Évaluation AFRINTEL :** Publication observée ; sauvegarde applicative fournie et analysée ; attribution à ServerUnlockApp fortement plausible ; données de comptes et éléments commerciaux observés ; secrets potentiels présents mais non testés ; accès non autorisé, exfiltration complète et validité actuelle des secrets non documenté dans les sources publiquess.
+- **Évaluation AFRINTEL :** Publication observée ; sauvegarde applicative fournie et analysée ; attribution à ServerUnlockApp fortement plausible ; données de comptes et éléments commerciaux observés ; secrets potentiels présents mais non testés ; accès non autorisé, exfiltration complète et validité actuelle des secrets non documentés dans les sources publiques.
 
 #### 🇲🇦 Maroc - Midipcom
 - **Date de publication initiale :** 1 octobre 2026
@@ -194,25 +196,9 @@
 
 - **Sources / Éléments de preuve :** publications de forum et Telegram fournies le 9 octobre 2026. Aucun lien de téléchargement, donnée individuelle, identifiant, secret ou archive n’est publié.
 
-#### 🇿🇦 Afrique du Sud - Ampath Laboratories [Data Leak]
-- **Date de publication initiale :** 2 octobre 2026
-
-- **Date de publication / notification publique :** 2 octobre 2026
-- **Domaine :** `ampath.co.za`
-- **Acteur / Groupe :** bytetobreach (compte de publication affiché)
-- **Secteur :** Santé / Laboratoires médicaux
-- **Statut :** Claim - Data Sample Published
-- **Type d'incident :** Data Leak
-- **Niveau de confiance :** High
-- **Niveau d'impact :** Level 4
-- **Description victime :** Ampath Laboratories est un réseau sud-africain de laboratoires médicaux et de services de diagnostic.
-- **Analyse :** La publication du compte bytetobreach affirme que 10 bases de données sur environ 375 auraient été copiées et que l'ensemble concerné dépasserait 80 millions d'enregistrements. Elle décrit des données RH et employés, plusieurs bases de patients, des données financières, des configurations de systèmes et des composants applicatifs. Le dossier local fourni comprend des échantillons structurés analysés en lecture seule : 4 000 lignes d'employés, 5 000 lignes de patients, 1 000 dossiers Medicaid, 1 000 inscriptions de patients et 997 paiements par carte, ainsi qu'un fichier XML de 278 401 lignes structurelles. Les schémas contiennent des catégories d'identité, de contact, de santé, d'emploi, d'assurance et de paiement. Cette cohérence structurelle étaye l'existence d'un échantillon associé à Ampath, mais ne valide pas les 375 bases, le volume de 80 millions d'enregistrements, l'exhaustivité du corpus, la méthode d'accès ou l'identité réelle de l'acteur.
-- **Périmètre et limites de l'analyse :** Les cinq CSV et le fichier XML disponibles ont été examinés en lecture seule, avec contrôle des types, tailles, empreintes, colonnes et volumes de lignes. L'inventaire de fichiers et les composants applicatifs ont été traités comme éléments de contexte ; aucun binaire, script, lien ou secret n'a été exécuté, testé ou publié. Les comptes, identifiants, adresses, données médicales, données financières et secrets restent hors du dépôt.
-- **Évaluation des risques :** L'exposition potentielle concerne des données de santé, d'identité, de contact, d'emploi, d'assurance et de paiement. Elle pourrait faciliter l'usurpation, le phishing ciblé, la fraude documentaire, la fraude financière et le ciblage de patients ou d'employés. Aucun dossier individuel n'est reproduit.
-- **Sources / Éléments de preuve :** publication et éléments visuels fournis ; échantillons locaux Ampath analysés en lecture seule. Le compte bytetobreach est conservé comme identifiant de publication ; son identité et son affiliation technique ne sont pas établies.
-
 #### 🇨🇬 République du Congo - e-Solde (`e-solde.cg`) [Access Sale]
-- **Date de publication initiale :** 2 octobre 2026
+- **Date de publication initiale :** 28 juin 2026 (publication antérieure identifiée a posteriori)
+- **Première observation retenue dans le corpus AFRINTEL :** 2 octobre 2026 (republication)
 
 
 - **Publication antérieure identifiée a posteriori :** 28 juin 2026 à 13:17 par le compte affiché Sensitive2025 (horodatage et fuseau tels qu'affichés)
@@ -223,7 +209,7 @@
 - **Type d'incident :** Access Sale
 - **Niveau de confiance :** High
 - **Niveau d'impact :** Level 4
-- **Prix revendiqué :** 110 000 USD (devise inférée du contexte de marché ; non explicitement affichée)
+- **Prix revendiqué :** 110K (devise non affichée ; interprétation en USD uniquement hypothétique)
 - **Type de source :** Publication de forum underground et échantillon de données fourni à AFRINTEL
 - **Source publique :** [Note circulaire sur la plateforme e-Solde](https://lasemaineafricaine.info/wp-content/uploads/2024/04/4227.pdf)
 
@@ -402,7 +388,7 @@
 - **Site web :** [techexchange.co.za](https://techexchange.co.za/)
 - **Statut :** Claim - Data Sample Published
 - **Type d'incident :** Data Leak
-- **Niveau de confiance :** High pour l'existence de la publication et la cohérence du domaine ; Medium pour l'attribution de l'ensemble du corpus à TechExchange
+- **Niveau de confiance :** High
 - **Niveau d'impact :** Level 4 (potentiel)
 - **Type de source :** Publication de forum avec échantillon CSV visible et extrait structuré fourni à AFRINTEL
 
@@ -414,6 +400,7 @@
 - **Périmètre et limites de l'analyse :** Analyse détaillée de la publication, des éléments visuels et de l'extrait structuré fournis ; le fichier source complet, son empreinte et les 6 000 fichiers annoncés n'étaient pas disponibles. Aucun lien de téléchargement ou contact criminel n'a été suivi et aucune donnée personnelle brute n'est conservée dans le dépôt.
 - **Évaluation des risques :** L'exposition potentielle de données de commande, de contact, de livraison et de paiement pourrait faciliter la fraude transactionnelle, les faux remboursements, le phishing ciblé, l'usurpation de clients ou de fournisseurs et l'atteinte à la vie privée.
 - **Sources / Éléments de preuve :** éléments visuels et extrait structurés fournis à AFRINTEL ; publication du forum attribuée au compte Sensitive2025. Les données brutes et liens de téléchargement restent hors du dépôt.
+- **Nuance sur la confiance :** High pour l'existence de la publication et la cohérence du domaine ; Medium pour l'attribution de l'ensemble du corpus à TechExchange
 
 #### 🇿🇦 Afrique du Sud - Thrive Online Group (`thriveonlinegroup.com`)
 - **Date de publication initiale :** 5 octobre 2026
@@ -424,7 +411,7 @@
 - **Site web associé :** `thriveonlinegroup.com`
 - **Statut :** Claim - Data Sample Published
 - **Type d'incident :** Data Leak
-- **Niveau de confiance :** High pour l'existence de la publication et des extraits visibles ; Medium pour l'attribution de l'ensemble des données à Thrive Online Group
+- **Niveau de confiance :** High
 - **Niveau d'impact :** Level 4 (potentiel)
 - **Type de source :** Publication de forum et extraits CSV visibles fournis à AFRINTEL
 
@@ -437,25 +424,7 @@
 - **Évaluation des risques :** Si les données sont authentiques, la combinaison de coordonnées, d'identifiants sud-africains et de données de campagne pourrait soutenir l'hameçonnage ciblé, l'usurpation, les fraudes par téléphone ou SMS et le recoupement d'identités.
 - **Recommandations SOC/CTI :** Préserver les journaux des applications marketing, CRM, bases de données, comptes de service et intégrations SMS ; rechercher les exports massifs et accès privilégiés inhabituels ; vérifier les prestataires et campagnes associés ; surveiller les domaines, numéros et messages usurpant l'organisation ; ne pas acheter, télécharger ni tester les données proposées.
 - **Sources / Éléments de preuve :** éléments visuels et extraits structurés fournis à AFRINTEL ; publication de forum attribuée au compte Sorb. Aucun identifiant, numéro, adresse électronique ou lien de marché criminel n'est publié.
-
-#### 🇿🇦 Afrique du Sud - Lawyers for Human Rights [System Intrusion]
-- **Date de publication initiale :** 5 octobre 2026
-
-- **Date de publication de l'avis de sécurité :** 15 octobre 2026
-- **Domaine officiel :** [lhr.org.za](https://www.lhr.org.za/)
-- **Acteur / Groupe :** Non établi
-- **Secteur :** ONG / Droits humains / Services juridiques
-- **Statut :** Incident Confirmed by Victim
-- **Type d'incident :** System Intrusion
-- **Niveau de confiance :** High
-- **Niveau d'impact :** Level 4
-- **Description victime :** Lawyers for Human Rights est une organisation sud-africaine fournissant des services et une assistance juridiques dans le domaine des droits humains.
-- **Analyse :** Dans son avis de sécurité du 15 octobre 2026, LHR indique qu'une base de données hébergée par un prestataire tiers a fait l'objet d'un accès non autorisé le 5 octobre. L'enquête de LHR conclut qu'un tiers a consulté et téléchargé des informations. L'environnement a été sécurisé, une investigation ouverte et les autorités ainsi que les personnes potentiellement concernées ont été notifiées.
-- **Données concernées ou potentiellement affectées :** noms, numéros d'identité sud-africains, numéros de passeport ou de permis de réfugié/demandeur d'asile, adresses, téléphones, e-mails, dates de naissance, genre, nationalité, informations professionnelles et contractuelles, informations de locataires et de baux, dossiers de clients et bénéficiaires, informations d'organisations, documents et correspondances liés à des dossiers juridiques, ainsi que des données relatives aux partenaires, donateurs, salariés, prestataires et locataires.
-- **Nombre de personnes et volume :** Non établis.
-- **Évaluation des risques :** Les données juridiques, d'identité, de contact et relatives à des personnes vulnérables peuvent entraîner des risques élevés d'usurpation, de phishing, de fraude documentaire, de ciblage et d'intimidation. Aucun rançongiciel, chiffrement ou publication sur un site de fuite n'est établi.
-- **Action SOC/CTI :** Préserver et rapprocher les journaux du prestataire, de la base, des comptes d'administration et des passerelles sortantes autour du 5 octobre ; révoquer les accès et secrets partagés avec le tiers ; contrôler les environnements utilisant les mêmes identités ; surveiller les faux échanges juridiques et demandes de documents ; privilégier la validation hors bande avec LHR.
-- **Sources / Éléments de preuve :** [avis officiel de LHR du 15 octobre 2026](https://www.lhr.org.za/lhr-news/important-notice-regarding-a-security-incident/) ; [index des actualités LHR](https://www.lhr.org.za/lhr-news/). L'étendue exacte du corpus et le nombre de personnes concernées restent en cours d'évaluation.
+- **Nuance sur la confiance :** High pour l'existence de la publication et des extraits visibles ; Medium pour l'attribution de l'ensemble des données à Thrive Online Group
 
 #### 🇪🇬 Égypte - Millensys (`millensys.com`) [Ransomware]
 - **Date de publication initiale :** 5 octobre 2026
@@ -523,7 +492,7 @@
 - **Périmètre et limites de l’analyse :** L’échantillon texte local a été analysé dans son intégralité, avec empreinte SHA-256, taille, nombre de lignes, largeur apparente et comptage agrégé de marqueurs. Le matériel fourni a été examiné sans transcription des données personnelles. Le fichier n’est pas un export CSV normalisé : les champs ne peuvent pas être associés de façon fiable à des colonnes et les décomptes de motifs ne constituent pas des décomptes d’individus. Le corpus complet annoncé n’était pas disponible.
 - **Risques :** Usurpation d’identité, fraude documentaire, phishing ciblé, compromission de comptes, atteinte à la confidentialité médicale, ciblage de professionnels de santé et exploitation de données relatives aux établissements sanitaires.
 - **Recommandations SOC / CTI :** Préserver les journaux IAM, API, bases de données, exports et téléchargements ; révoquer les secrets ou sessions potentiellement exposés après validation ; renforcer MFA et contrôle des comptes privilégiés ; vérifier les accès aux systèmes d’identité et de santé ; rechercher les exports massifs et transferts sortants ; protéger les copies d’identité et appliquer les procédures de notification prévues par la réglementation applicable.
-- **Évaluation AFRINTEL :** Publication observée et échantillon sensible analysé ; attribution à un environnement sanitaire éthiopien fortement plausible ; compromission directe du ministère, volume global et méthode d’acquisition non documenté dans les sources publiquess.
+- **Évaluation AFRINTEL :** Publication observée et échantillon sensible analysé ; attribution à un environnement sanitaire éthiopien fortement plausible ; compromission directe du ministère, volume global et méthode d’acquisition non documentés dans les sources publiques.
 - **Sources / Éléments de preuve :** publication du forum et matériel fourni le 30 octobre 2026 ; échantillon local analysé en lecture seule. Aucun identifiant national, nom, adresse email, numéro, photographie ou secret n’est publié dans cette fiche.
 
 #### 🇪🇬 Égypte - SANAtech Global Solutions [Ransomware]
@@ -666,6 +635,7 @@
 - **Sous-type :** Exposition présumée de données de commandes, de clients et de logistique
 - **Statut :** Claim - Data Sample Published
 - **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 3
 - **Volumes revendiqués :** « +26K rows » dans le titre ; environ « 24 438+ commandes clients » dans le corps de la publication. Ces deux mesures ne portent pas nécessairement sur la même unité et ne sont pas validées par l'échantillon.
 - **Type de source :** Publication observée sur un forum underground (captures fournies) ; échantillon CSV et version reconstituée examinés en lecture seule.
 
@@ -727,7 +697,7 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 
 - **Analyse :**
 
-  **Observed :** La fiche observée indique Eurogate Tanger, le Maroc, le secteur du transport maritime, le groupe N0n et une mention `NOT PAID – EXPOSED`. Le champ « Published data » est indiqué comme `N/D`. L'archive locale fournie sous le nom `eurogate_tanger.com-leak.zip` est intacte lors du test de lecture : **355 fichiers**, **373 065 003 octets** non compressés, **373 150 373 octets** pour l'archive, sans chiffrement ZIP. Les fichiers sont regroupés sous `eurogate-tanger.com` et comprennent notamment des documents DOCX, XLS/XLSX, PDF, MSG, PPTX, ODS, EDI, XML, journaux/traces, SQL, archives et fichiers techniques. Le README inclus décrit explicitement un **premier lot** et annonce d'éventuels lots ultérieurs.
+  **Observed :** La fiche observée indique Eurogate Tanger, le Maroc, le secteur du transport maritime, le groupe N0n et une mention `NOT PAID - EXPOSED`. Le champ « Published data » est indiqué comme `N/D`. L'archive locale fournie sous le nom `eurogate_tanger.com-leak.zip` est intacte lors du test de lecture : **355 fichiers**, **373 065 003 octets** non compressés, **373 150 373 octets** pour l'archive, sans chiffrement ZIP. Les fichiers sont regroupés sous `eurogate-tanger.com` et comprennent notamment des documents DOCX, XLS/XLSX, PDF, MSG, PPTX, ODS, EDI, XML, journaux/traces, SQL, archives et fichiers techniques. Le README inclus décrit explicitement un **premier lot** et annonce d'éventuels lots ultérieurs.
 
   Une analyse statique en lecture seule a couvert les **354 fichiers extraits sous le domaine** : empreintes, types réels, structures et contenu textuel/XML lorsqu'extractible. Elle comprend notamment **98 DOCX, 86 XLSX, 11 XLS, 5 PPTX, 2 ODS, 22 PDF, 10 MSG, 32 TRC, 32 TRM, 19 RAR, 5 ZIP, 1 JAR, 1 classe Java, ainsi que des fichiers EDI/XML/WSDL/SQL et des journaux**. L'analyse XML des XLSX représente environ **652 708 éléments de lignes** et **13 686 923 éléments de cellules** ; ces valeurs sont structurelles et ne représentent pas directement le nombre de personnes ou d'opérations uniques.
 
@@ -759,6 +729,32 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Évaluation des risques :** Les risques potentiels concernent les données industrielles, les opérations de fabrication, les fournisseurs et les systèmes de production. Aucun impact opérationnel n'est établi.
 - **Sources / Éléments de preuve :** [Duys Engineering Group](https://duysgroup.com/) ; [registre fournisseur Aeroklas Duys](https://cloud.procureactiv.co.za/procurement/suppliers/view/aeroklas) ; [DeXpose](https://www.dexpose.io/deadlock-ransomware-strikes-aeroklas-duys-in-south-africa/).
 
+### 13 octobre 2026
+
+#### 🇿🇦 Afrique du Sud - Ampath Laboratories [Data Leak]
+- **Date de l'incident détecté :** 2 octobre 2026 (information communiquée par Ampath)
+- **Date de publication initiale par l'acteur :** 13 octobre 2026 (date rapportée par les sources publiques)
+- **Date de déclaration publique de la victime :** 14 octobre 2026
+- **Date de publication initiale :** 13 octobre 2026
+- **Domaine :** `ampath.co.za`
+- **Acteur / Groupe :** ByteToBreach (compte revendiquant la divulgation, attribution technique non établie)
+- **Secteur :** Santé / Laboratoires médicaux
+- **Statut :** Incident Confirmed by Victim
+- **Type d'incident :** Data Leak
+- **Niveau de confiance :** Very High
+- **Niveau d'impact :** Level 4
+- **Description victime :** Ampath Laboratories est un réseau sud-africain de laboratoires de biologie médicale et de services de diagnostic.
+- **Analyse CTI :** L'organisation a **reconnu un cyberincident détecté et contenu le 2 octobre 2026**, affectant une partie de son environnement informatique. Des mesures de confinement, de rotation des accès et de remédiation ont été engagées ; l'Information Regulator sud-africain a été notifié. La reconnaissance de l'incident par Ampath est distincte du contenu et des volumes affichés par le compte ByteToBreach sur un forum underground.
+
+  **Observations sur les données :** AFRINTEL a examiné en lecture seule un ensemble local comprenant cinq CSV avec **4 000 lignes d'employés, 5 000 lignes de patients, 1 000 lignes d'assurance, 1 000 inscriptions et 997 enregistrements de paiement**, ainsi qu'un XML de **278 401 lignes structurelles**. Les schémas contiennent des champs d'identité, de contact, d'emploi, d'assurance, de santé et de paiement. Ce contrôle établit la nature des catégories présentes dans l'échantillon fourni, non le périmètre complet d'une extraction. Les **80 millions d'enregistrements annoncés** par l'acteur ne sont pas un décompte de patients distincts.
+
+  **Position de la victime :** Selon la communication d'Ampath rapportée le 14 et le 15 octobre, l'exposition potentielle semble concerner principalement des **données démographiques et administratives**, notamment des références de prise en charge et de paiement. L'organisation déclare ne disposer, au stade de son communiqué, d'aucune preuve de compromission de **dossiers médicaux, diagnostics, résultats d'analyses ou informations bancaires**. Cette précision doit accompagner toute lecture des catégories visibles dans l'échantillon.
+
+- **Périmètre et limites de l'analyse :** Contenus examinés en lecture seule, sans diffusion d'informations individuelles ni test de secrets. La confirmation publique porte sur le cyberincident ; les volumes revendiqués et la provenance de chaque fichier nécessitent une évaluation distincte.
+- **Risques :** Usurpation d'identité, hameçonnage ciblé, fraude administrative ou à l'assurance et exploitation de coordonnées personnelles potentiellement exposées.
+- **Action SOC / CTI :** Corréler IAM, applications, journaux de bases, flux et EDR autour du 2 octobre ; auditer les exports et accès privilégiés ; révoquer les identifiants exposés ; prévenir les usurpations visant les patients et partenaires ; ajuster les notifications aux données réellement identifiées.
+- **Sources / Éléments de preuve :** Publication underground et échantillons analysés par AFRINTEL ; [déclaration d'Ampath reproduite par Novus Press Bulletin, 14 octobre 2026](https://novuspressbulletin.co.za/blog/ampath-cautions-about-overstated-numbers-as-cybersecurity-incident-probe-continues) ; [ITWeb, 15 octobre 2026](https://www.itweb.co.za/article/ampath-downplays-data-breach-claims/8OKdWqDXOjmqbznQ) ; [IT-Online, 15 octobre 2026](https://it-online.co.za/2026/10/15/ampath-confirms-hack-but-disputes-theft-of-80m-patient-records/).
+
 ### 14 octobre 2026
 
 #### 🇿🇦 Afrique du Sud - Europ Assistance South Africa / AZOZA [Ransomware]
@@ -776,6 +772,26 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Analyse :** L'ancienne identité Europ Assistance South Africa est apparue sur un site de fuite associé à The Gentlemen. Aucun échantillon n'a été analysé ; intrusion, exfiltration, chiffrement et impact ne sont pas confirmés.
 
 ### 15 octobre 2026
+
+#### 🇿🇦 Afrique du Sud - Lawyers for Human Rights [System Intrusion]
+- **Date de l’incident :** 5 octobre 2026
+- **Date de publication initiale :** 15 octobre 2026
+
+- **Date de publication de l'avis de sécurité :** 15 octobre 2026
+- **Domaine officiel :** [lhr.org.za](https://www.lhr.org.za/)
+- **Acteur / Groupe :** Non établi
+- **Secteur :** ONG / Droits humains / Services juridiques
+- **Statut :** Incident Confirmed by Victim
+- **Type d'incident :** System Intrusion
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 4
+- **Description victime :** Lawyers for Human Rights est une organisation sud-africaine fournissant des services et une assistance juridiques dans le domaine des droits humains.
+- **Analyse :** Dans son avis de sécurité du 15 octobre 2026, LHR indique qu'une base de données hébergée par un prestataire tiers a fait l'objet d'un accès non autorisé le 5 octobre. L'enquête de LHR conclut qu'un tiers a consulté et téléchargé des informations. L'environnement a été sécurisé, une investigation ouverte et les autorités ainsi que les personnes potentiellement concernées ont été notifiées.
+- **Données concernées ou potentiellement affectées :** noms, numéros d'identité sud-africains, numéros de passeport ou de permis de réfugié/demandeur d'asile, adresses, téléphones, e-mails, dates de naissance, genre, nationalité, informations professionnelles et contractuelles, informations de locataires et de baux, dossiers de clients et bénéficiaires, informations d'organisations, documents et correspondances liés à des dossiers juridiques, ainsi que des données relatives aux partenaires, donateurs, salariés, prestataires et locataires.
+- **Nombre de personnes et volume :** Non établis.
+- **Évaluation des risques :** Les données juridiques, d'identité, de contact et relatives à des personnes vulnérables peuvent entraîner des risques élevés d'usurpation, de phishing, de fraude documentaire, de ciblage et d'intimidation. Aucun rançongiciel, chiffrement ou publication sur un site de fuite n'est établi.
+- **Action SOC/CTI :** Préserver et rapprocher les journaux du prestataire, de la base, des comptes d'administration et des passerelles sortantes autour du 5 octobre ; révoquer les accès et secrets partagés avec le tiers ; contrôler les environnements utilisant les mêmes identités ; surveiller les faux échanges juridiques et demandes de documents ; privilégier la validation hors bande avec LHR.
+- **Sources / Éléments de preuve :** [avis officiel de LHR du 15 octobre 2026](https://www.lhr.org.za/lhr-news/important-notice-regarding-a-security-incident/) ; [index des actualités LHR](https://www.lhr.org.za/lhr-news/). L'étendue exacte du corpus et le nombre de personnes concernées restent en cours d'évaluation.
 
 #### 🇪🇬 Égypte - Luxor Company for Drinking Water and Sanitation [Ransomware]
 - **Date de publication initiale :** 15 octobre 2026
@@ -857,36 +873,29 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 
 #### 🇲🇿 Mozambique - Procuradoria-Geral da República (PGR) [Data Leak]
 - **Date de publication initiale :** 20 octobre 2026
-
-
-- **Acteur / Groupe :** Kazu (compte affiché ; identité et affiliation attribuée à la publication)
+- **Acteur / Groupe :** Kazu (compte de publication sur un forum underground)
 - **Secteur :** Administration publique / Justice et ministère public
 - **Site web :** [pgr.gov.mz](https://www.pgr.gov.mz/)
-- **Statut :** Claim - Data Sample Published
+- **Statut :** Claim - Unverified
 - **Type d'incident :** Data Leak
-- **Effet revendiqué :** Exposition et vente alléguées d'une sauvegarde du système public de justice
-- **Volume revendiqué :** 22 GB et 158 511 fichiers ; chiffres attribué à la publications
-- **Prix revendiqué :** Make an offer
-- **Niveau de confiance :** High
-- **Niveau d'impact :** Level 4
-- **Type de source :** Publication de forum underground et échantillons locaux fournis à AFRINTEL
+- **Effet revendiqué :** Offre portant sur des données présentées comme une sauvegarde du système public de justice
+- **Volume revendiqué :** 22 Go et 158 511 fichiers (déclaration de l'auteur)
+- **Prix revendiqué :** « Make an offer »
+- **Niveau de confiance :** Medium
+- **Niveau d'impact :** Level 4 (potentiel)
+- **Type de source :** Publication sur un forum underground et captures disponibles
 
-- **Description victime :** La Procuradoria-Geral da República (PGR) est le ministère public du Mozambique. L'institution exerce des fonctions liées à la légalité, à la poursuite des infractions et à l'administration de la justice. Le portail officiel de la PGR publie des informations institutionnelles, juridiques, administratives et judiciaires.
+- **Description victime :** La Procuradoria-Geral da República (PGR) est l'institution mozambicaine chargée de l'exercice du ministère public et de fonctions relatives à la justice.
 
-- **Analyse :**
+- **Analyse CTI :** Le **20 octobre 2026**, le compte **Kazu** a présenté sur un forum cybercriminel une offre associée à la PGR du Mozambique et au domaine `pgr.gov.mz`. L'auteur annonce **22 Go** et **158 511 fichiers**. Cette publication constitue un signalement documenté d'un marché clandestin ; l'origine réelle des données nécessite un contrôle supplémentaire.
 
-  **Observed :** Une publication attribuée au compte **Kazu**, horodatée du **20 octobre 2026 à 04:29** selon l'heure affichée, propose à la vente un « Public Justice System » associé à la PGR Mozambique et au domaine `pgr.gov.mz`. L'auteur revendique **22 GB** et **158 511 fichiers**. Le corpus local fourni contient **262 fichiers** pour **75 941 802 octets** : **180 JSON**, **71 PDF**, **9 courriels EML**, un fichier DOC et une image JPG.
+  **Contrôle de provenance :** Un lot de **262 fichiers / 75 941 802 octets** avait été décrit dans une première version comme échantillon PGR. Or son inventaire est strictement identique à celui associé à Rand Mutual Assurance : **180 JSON, 71 PDF, 9 EML, un DOC et un JPG**. L'analyse de la fiche Rand Mutual relève, en outre, des références explicites à `randmutual.co.za`, à des dossiers d'indemnisation et à des documents RMA. **Le même lot ne peut donc pas être utilisé comme preuve autonome de deux victimes distinctes.** Faute d'empreintes de tous les fichiers et de chaîne de provenance vérifiée entre les deux publications, l'échantillon est **écarté de l'argumentation concernant la PGR**, sans conclusion définitive sur son origine ni sur la revendication de Kazu.
 
-  Les 180 JSON sont lisibles et présentent tous une structure d'objet comportant **22 clés** ; leurs valeurs individuelles ne sont pas publiées. Les 71 PDF ont été contrôlés en lecture seule et totalisent **117 pages**. Les 9 messages EML contiennent chacun des métadonnées d'expéditeur, de destinataire, de date et d'objet. La combinaison de données structurées, de documents PDF et de messages électroniques est compatible avec une sauvegarde applicative ou documentaire d'un environnement administratif et judiciaire. Ces 262 fichiers ne valident pas le volume revendiqué de 22 GB ni le total de 158 511 fichiers.
+  **Évaluation :** La publication sur le forum et l'identification de l'organisation sont retenues ; les volumes, l'origine technique, le contenu du prétendu jeu de données et l'accès au système de la PGR restent à vérifier. Le niveau `Medium` concerne la traçabilité de la publication, pas la preuve d'une intrusion.
 
-  **Assumption :** La correspondance entre le nom de la PGR, le domaine officiel mozambicain, l'identité visuelle institutionnelle et la structure du corpus rend l'attribution au périmètre de la PGR plausible. La nature des fichiers est compatible avec des documents administratifs, juridiques ou de gestion du ministère public. Cette cohérence ne documente pas que l'acteur a compromis l'infrastructure de la PGR ni que l'échantillon représente l'intégralité du système.
-
-  **Unknown :** Le vecteur d'accès, les systèmes affectés, la chronologie technique de l’accès, l'origine technique des fichiers, le nombre de dossiers et de personnes uniques, la présence de doublons, l'exhaustivité, la sensibilité juridique exacte des documents, l'impact opérationnel et toute confirmation officielle ne sont pas renseignés dans les sources consultées.
-
-- **Périmètre et limites de l'analyse :** Les 262 fichiers ont été inventoriés en lecture seule. Les JSON, PDF et EML ont fait l'objet de contrôles structurels ; aucun document individuel, message, nom, adresse ou élément de procédure n'est reproduit. Aucun script, lien criminel ou contenu distant n'a été exécuté ou suivi. L'analyse confirme la composition de l'échantillon fourni, mais pas l'accès initial, l'exfiltration complète ni la compromission officielle.
-- **Risques :** Exposition de dossiers judiciaires ou administratifs, atteinte à la confidentialité des personnes impliquées dans des procédures, phishing ciblé, fraude documentaire, intimidation de témoins ou de personnels et exploitation d'informations sensibles relatives à l'administration de la justice.
-- **Recommandations SOC / CTI :** Préserver les journaux des portails, systèmes documentaires, messageries et comptes administratifs ; rechercher les exports massifs et téléchargements anormaux ; contrôler les accès aux dossiers judiciaires ; révoquer les sessions et secrets potentiellement exposés ; vérifier l'intégrité des sauvegardes ; coordonner la réponse avec les autorités mozambicaines compétentes ; ne pas télécharger ni redistribuer de données supplémentaires.
-- **Évaluation AFRINTEL :** Publication observée ; échantillon local fourni et analysé ; attribution à la PGR plausible ; structure documentaire cohérente ; volume global et exhaustivité attribué à la publications ; accès non autorisé et exfiltration non documenté dans les sources publiquess ; confirmation officielle non observée.
+- **Risques à surveiller :** Confidentialité des dossiers administratifs ou judiciaires, usurpation, fraude documentaire et ciblage de personnels, sous réserve de la réalité de l'exposition.
+- **Recommandations SOC / CTI :** Archiver les métadonnées de publication ; chercher une source indépendante et les empreintes de fichiers ; préserver les journaux d'export et d'accès documentaire ; déclencher une investigation ciblée si l'organisation identifie une correspondance avec des données internes. Ne pas republier le lot contesté.
+- **Sources / Éléments de preuve :** Publication underground observée et éléments transmis à AFRINTEL ; [PGR Mozambique](https://www.pgr.gov.mz/). Aucune confirmation institutionnelle ni preuve technique autonome de la compromission de la PGR n'a été identifiée lors de cette revue.
 
 #### 🇲🇬 Madagascar - `staging.sso.gov.mg` (attribution revendiquée)
 - **Date de publication initiale :** 20 octobre 2026
@@ -943,7 +952,7 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Statut :** Claim - Data Sample Published
 - **Type d'incident :** Data Leak
 - **Effet revendiqué :** Exposition et vente alléguées d'un corpus lié à une plateforme d'enregistrement d'enseignants
-- **Volume revendiqué :** 136 GB et 125 823 fichiers ; chiffres attribué à la publications
+- **Volume revendiqué :** 136 GB et 125 823 fichiers ; chiffres déclarés dans la publication.
 - **Prix revendiqué :** Make an offer
 - **Niveau de confiance :** High
 - **Niveau d'impact :** Level 4
@@ -966,7 +975,7 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Périmètre et limites de l'analyse :** L'archive fournie a été inventoriée dans son intégralité et ses PDF ont fait l'objet d'un contrôle structurel et d'une extraction textuelle agrégée. Les images et les pages de documents n'ont pas été transcrites ni publiées. L'analyse établit l'existence et la composition de l'artefact fourni, mais les sources consultées ne précisent pas son origine système, sa date d'acquisition, l'accès initial, l'exfiltration ou la compromission officielle. Les données brutes restent hors du dépôt.
 - **Risques :** Usurpation d'identité d'enseignants, fraude documentaire, phishing ciblé, fraude administrative, atteinte à la confidentialité des personnels et exploitation de documents de carrière ou de pièces justificatives.
 - **Recommandations SOC / CTI :** Préserver les journaux de la plateforme et des comptes d'administration ; rechercher les exports massifs, téléchargements anormaux et accès depuis de nouveaux appareils ; réinitialiser les sessions et secrets potentiellement exposés ; vérifier les contrôles d'accès aux dossiers et pièces justificatives ; rechercher les campagnes de phishing visant les établissements et enseignants ; coordonner la réponse avec l'autorité congolaise compétente ; ne pas télécharger ni redistribuer de données supplémentaires.
-- **Évaluation AFRINTEL :** Publication observée ; archive d'échantillons fournie et analysée ; attribution à MINESURSI plausible ; structure et catégories de documents cohérentes ; volume global et exhaustivité attribué à la publications ; accès non autorisé et exfiltration non documenté dans les sources publiquess ; confirmation officielle non observée.
+- **Évaluation AFRINTEL :** Publication observée ; archive d'échantillons fournie et analysée ; attribution à MINESURSI plausible ; structure et catégories de documents cohérentes ; volume global et exhaustivité déclarés dans la publication ; accès non autorisé et exfiltration non documentés dans les sources publiques ; confirmation officielle non observée.
 
 ### 21 octobre 2026
 
@@ -1001,7 +1010,7 @@ L'échantillon contient **496 lignes avec un champ téléphone renseigné** (417
 - **Évaluation des risques :** Les risques potentiels comprennent l'exposition de données de clients, employés ou fournisseurs, la fraude au fournisseur, le phishing ciblé, l'exploitation d'informations commerciales et une perturbation des activités si un chiffrement était ultérieurement démontré.
 - **Recommandations SOC/CTI :** Préserver les journaux VPN, IAM, EDR, pare-feu, messagerie et applications métiers ; rechercher les connexions administratives inhabituelles, créations d'archives, exports massifs et transferts sortants ; examiner les nouveaux appareils et pays d'authentification ; révoquer les sessions suspectes ; contrôler les accès aux systèmes commerciaux et bases clients ; vérifier l'intégrité des sauvegardes ; surveiller les domaines ressemblants et les campagnes de phishing ; ne pas télécharger les données éventuellement publiées.
 - **Hypothèses de détection MITRE ATT&CK :** `T1078 Valid Accounts`, `T1110 Brute Force`, `T1560 Archive Collected Data`, `T1041 Exfiltration Over C2 Channel`, `T1021 Remote Services` et `T1486 Data Encrypted for Impact` sont des pistes de détection générales ; aucune n'est établie comme exécutée dans cet incident.
-- **Évaluation AFRINTEL :** Publication sur un site de divulgation observée ; identification de la victime plausible ; échantillon non observé et non analysé ; accès non autorisé, exfiltration, chiffrement et interruption de service non documenté dans les sources publiquess ; attribution à HYFLOCK fondée sur la revendication publiée.
+- **Évaluation AFRINTEL :** Publication sur un site de divulgation observée ; identification de la victime plausible ; échantillon non observé et non analysé ; accès non autorisé, exfiltration, chiffrement et interruption de service non documentés dans les sources publiques ; attribution à HYFLOCK fondée sur la revendication publiée.
 - **Sources / Éléments de preuve :** éléments issus du site HYFLOCK et fournis le 23 octobre 2026 ; [site public de Gabon Meca](https://gabonmeca.com/). Aucun lien direct vers une ressource criminelle, donnée personnelle ou échantillon n'est publié.
 
 <!-- afrintel:ransomware-lifecycle
@@ -1030,7 +1039,7 @@ last_checked_at: 2026-10-23
 - **Site web :** [randmutual.co.za](https://www.randmutual.co.za/)
 - **Statut :** Under Investigation
 - **Type d'incident :** System Intrusion
-- **Niveau de confiance :** Medium pour l'existence de l'alerte et de l'enquête ; Low pour l'accès effectif, l'exfiltration et les volumes revendiqués
+- **Niveau de confiance :** Medium
 - **Niveau d'impact :** Level 4 (jeu de données d'assurance et d'indemnisation à forte sensibilité ; volume global revendiqué non renseigné dans les sources consultées par l'échantillon)
 - **Échéance :** 5 novembre 2026 ; fuseau horaire non précisé
 - **Rançon revendiquée :** 95 000 USD
@@ -1048,6 +1057,7 @@ last_checked_at: 2026-10-23
 - **Limites de preuve :** RMA confirme l'alerte et l'enquête, mais pas l'accès effectif aux données ni leur extraction. La revendication, la demande de rançon, l'échéance et les volumes restent attribués à un acteur non identifié. Le centre média public de RMA ne comportait pas encore de bilan d'enquête au dernier contrôle.
 - **Action SOC/CTI :** Préserver les journaux IAM, VPN, EDR, bases de données de sinistres, stockage documentaire et passerelles sortantes antérieurs au 23 octobre ; rechercher les consultations ou exportations massives ; révoquer les sessions et secrets suspects ; surveiller les modifications frauduleuses de coordonnées bancaires liées aux indemnisations.
 - **Sources / Éléments de preuve :** [ITWeb](https://www.itweb.co.za/article/rand-mutual-probes-alleged-breach-of-168m-claims/G98YdqLGAgXMX2PD) ; [TechCentral](https://techcentral.co.za/rand-mutual-assurance-data-breach-claim/287621/) ; [centre média RMA](https://www.randmutual.co.za/media). RMA confirme l'alerte et l'investigation, pas la compromission complète.
+- **Nuance sur la confiance :** Medium pour l'existence de l'alerte et de l'enquête ; Low pour l'accès effectif, l'exfiltration et les volumes revendiqués
 
 #### 🇪🇹 Éthiopie - Horn of Africa Regional Environment Centre and Network (HoA-REC&N) [Data Leak]
 - **Date de publication initiale :** 23 octobre 2026
@@ -1094,25 +1104,6 @@ last_checked_at: 2026-10-23
 - **Description victime :** MODON Developments S.A.E est une entreprise égyptienne du secteur immobilier et du développement de projets.
 - **Analyse :** La victime apparaît sur une source associée à KryBit. Aucune nature de données, aucun volume et aucune preuve publique d'intrusion, d'exfiltration ou de chiffrement n'ont été établis.
 
-#### 🇿🇦 Afrique du Sud - Government Communication and Information System (GCIS) [System Intrusion]
-- **Date de publication initiale :** 24 octobre 2026
-
-- **Domaine officiel :** [gcis.gov.za](https://www.gcis.gov.za/)
-- **Système concerné :** [erecruitment.gcis.gov.za](http://erecruitment.gcis.gov.za/), portail de candidature référencé par le GCIS
-- **Acteur / Groupe :** Non identifié
-- **Secteur :** Administration publique / Communication gouvernementale
-- **Statut :** Incident Confirmed by Victim
-- **Type d'incident :** System Intrusion
-- **Niveau de confiance :** High pour l'existence et la compromission du système ; Medium pour l'exposition effective des données
-- **Niveau d'impact :** Level 3 (potentiel)
-- **Description victime :** Le Government Communication and Information System (GCIS) est une administration sud-africaine chargée de coordonner la communication gouvernementale et ses services d'information.
-- **Analyse :** Le GCIS a indiqué que son système de recrutement électronique avait été compromis après la détection d'une activité suspecte visant ses systèmes web le 24 octobre 2026. Le portail a été isolé et l'incident signalé à l'Information Regulator, à la South African Police Service et à la State Security Agency. Les informations potentiellement concernées comprennent des numéros d'identité, des numéros de téléphone et des adresses électroniques de candidats, mais l'accès effectif à chaque donnée et l'étendue de l'exposition restent en investigation. Aucun rançongiciel, chiffrement, publication sur un site de fuite ou arrêt de service n'est établi.
-- **Observed :** Compromission du système de recrutement reconnue par le GCIS ; activité suspecte détectée le 24 octobre ; isolement du système et notifications aux autorités confirmés ; exposition de données personnelles formulée comme potentielle.
-- **Unknown :** Vecteur d'accès, comptes utilisés, requêtes et objets consultés ou exportés, nombre de candidats concernés, volume, durée d'accès, persistance et éventuelle utilisation abusive des données ne sont pas renseignés dans les sources consultées.
-- **Évaluation des risques :** Les candidats peuvent être exposés à l'usurpation d'identité, au phishing, aux fausses convocations, aux fausses offres d'emploi et aux demandes frauduleuses de documents d'identité.
-- **Action SOC/CTI :** Préserver les journaux WAF, serveur web, base de données, IAM et EDR antérieurs au 24 octobre ; identifier les comptes, requêtes et objets consultés ou exportés ; révoquer les sessions et secrets applicatifs concernés ; surveiller les campagnes d'usurpation ciblant les candidats.
-- **Sources / Éléments de preuve :** [GCIS - page officielle des offres d'emploi](https://www.gcis.gov.za/content/about-us/hr/vacancies), qui référence le portail de recrutement ; [ITWeb - GCIS warns of information breach](https://www.itweb.co.za/article/gcis-warns-of-information-breach/wbrpO7g2ea3vDLZn), publié le 30 octobre 2026.
-
 ### 25 octobre 2026
 
 #### 🇧🇯 Bénin - YOD Ingénierie (`yodingenierie.com`) [Ransomware]
@@ -1125,7 +1116,7 @@ last_checked_at: 2026-10-23
 - **Site web officiel :** [yodingenierie.com](https://yodingenierie.com/)
 - **Statut :** Claim - Unverified
 - **Type d'incident :** Ransomware
-- **Niveau de confiance :** Medium pour l'existence de la publication et l'identification de l'entreprise ; Low à Medium pour l'attribution technique des données
+- **Niveau de confiance :** Medium
 - **Niveau d'impact :** Level 4 (potentiel)
 - **Type de source :** Publication d'un site de divulgation ransomware et inventaire local de fichiers examiné en lecture seule
 - **Description victime :** YOD Ingénierie est une entreprise béninoise d'ingénierie et de technologies de l'information, membre du groupe NED&CO. Elle intervient dans la transformation numérique, la gouvernance des systèmes d'information et les projets liés à l'intelligence artificielle.
@@ -1141,6 +1132,7 @@ last_checked_at: 2026-10-23
 - **Périmètre et limites de l'analyse :** Analyse structurelle et préliminaire fondée sur la publication, les informations publiques de l'entreprise et l'inventaire local. Le contenu des documents n'a pas pu être examiné ; aucune donnée personnelle brute, pièce d'identité, secret ou lien de téléchargement n'est reproduit dans le dépôt.
 - **Évaluation des risques :** Si les données sont authentiques, les risques potentiels comprennent l'usurpation d'identité, la fraude documentaire et financière, le phishing ciblé, l'atteinte à la confidentialité des employés et partenaires, ainsi que l'exposition d'informations contractuelles et opérationnelles.
 - **Sources / Éléments de preuve :** Publication attribuée à Panzer observée le 30 octobre 2026 ; image de la publication et déclaration de l'acteur concernant l'échec des négociations, les 12 jours restants et l'absence alléguée de paiement, fournies pour analyse ; inventaire local `yodingenierie-tree.txt` ; [site officiel de YOD Ingénierie](https://yodingenierie.com/) ; [profil public CTI de Panzer](https://secureresearch.com/threat-actors/panzer.html). Les fichiers potentiellement sensibles restent hors du dépôt.
+- **Nuance sur la confiance :** Medium pour l'existence de la publication et l'identification de l'entreprise ; Low à Medium pour l'attribution technique des données
 
 ### 26 octobre 2026
 
@@ -1202,7 +1194,7 @@ last_checked_at: 2026-10-23
 - **Site web associé :** [bluebus.com.eg](https://bluebus.com.eg/)
 - **Statut :** Claim - Data Sample Published
 - **Type d'incident :** Data Leak
-- **Niveau de confiance :** High pour l'existence et l'analyse de l'échantillon publié ; Medium pour son attribution technique à BlueBus
+- **Niveau de confiance :** High
 - **Niveau d'impact :** Level 4
 - **Type de source :** Publication de forum et échantillons locaux examinés en lecture seule
 - **Description victime :** BlueBus est un service égyptien de réservation et de billetterie de transport par autobus. La publication attribuée au compte Lenken associe le domaine `bluebus.com.eg` à une base de commandes et de données liées aux clients, aux billets, aux paiements et aux chauffeurs.
@@ -1220,6 +1212,7 @@ last_checked_at: 2026-10-23
 - **Périmètre et limites de l'analyse :** Les deux fichiers locaux ont été examinés intégralement en lecture seule ; leurs types, tailles, empreintes SHA-256, encodage, schéma, valeurs manquantes, doublons, agrégats, statuts et plages temporelles ont été contrôlés. L'archive RAR a été inspectée sans extraction active ni exécution de contenu. Les valeurs personnelles, identifiants, liens de téléchargement et secrets n'ont pas été publiés, testés ou suivis.
 - **Évaluation des risques :** Si l'échantillon est authentique, l'exposition pourrait faciliter le phishing ciblé, la fraude aux billets et aux paiements, l'usurpation de clients ou de chauffeurs, l'exploitation d'identifiants nationaux et la corrélation de données de mobilité. Ces risques sont potentiels et ne constituent pas une confirmation de l'incident.
 - **Sources / Éléments de preuve :** Publication du forum fournie le 30 octobre 2026 ; `sample.csv` et `drivers.txt` locaux examinés en lecture seule. L'archive et les fichiers sources restent hors du dépôt ; aucune donnée personnelle brute n'est reproduite.
+- **Nuance sur la confiance :** High pour l'existence et l'analyse de l'échantillon publié ; Medium pour son attribution technique à BlueBus
 
 #### 🇪🇬 Égypte - Organisations, cliniques, pharmacies, hôpitaux et médecins [Data Leak]
 - **Date de publication initiale :** 29 octobre 2026
@@ -1229,7 +1222,7 @@ last_checked_at: 2026-10-23
 - **Site web associé :** Non précisé dans la publication
 - **Statut :** Claim - Data Sample Published
 - **Type d'incident :** Data Leak
-- **Niveau de confiance :** High pour l'existence et l'analyse du fichier médecin ; Medium pour son attribution au périmètre égyptien revendiqué
+- **Niveau de confiance :** High
 - **Niveau d'impact :** Level 3
 - **Type de source :** Publication de forum et classeur XLSX local examiné en lecture seule
 - **Description victime :** La publication attribuée au compte Marx présente un ensemble de données relatif à des médecins, cliniques, pharmacies, hôpitaux et organisations de santé en Égypte. Le fichier local disponible correspond au volet « Doctor File » et semble constituer un répertoire de professionnels de santé ; le fichier « Organizations File » annoncé dans la publication n'est pas disponible pour analyse.
@@ -1245,6 +1238,7 @@ last_checked_at: 2026-10-23
 - **Périmètre et limites de l'analyse :** Le classeur `Doctor.xlsx` a été analysé intégralement en lecture seule au niveau XML/XLSX, avec contrôle de la structure, des lignes, des colonnes, des champs vides et des valeurs distinctes. Aucun fichier d'organisation n'était présent dans le répertoire local. Aucun nom, numéro, e-mail ou autre donnée personnelle brute n'est reproduit dans le dépôt.
 - **Évaluation des risques :** Si le fichier est authentique, il pourrait faciliter le phishing ciblé, l'usurpation de médecins ou d'organisations, la fraude aux rendez-vous et la cartographie de professionnels de santé. Aucun dossier patient ni donnée clinique n'a été observé dans le fichier analysé.
 - **Sources / Éléments de preuve :** Publication du forum fournie le 30 octobre 2026 et `Doctor.xlsx` local examiné en lecture seule. Le fichier reste hors du dépôt ; aucune donnée personnelle brute n'est publiée.
+- **Nuance sur la confiance :** High pour l'existence et l'analyse du fichier médecin ; Medium pour son attribution au périmètre égyptien revendiqué
 
 #### 🇪🇬 Égypte - Al Arabia United [System Intrusion]
 - **Date de publication initiale :** 29 octobre 2026
@@ -1267,6 +1261,27 @@ last_checked_at: 2026-10-23
 - **Sources / Éléments de preuve :** [audegypt.com](https://audegypt.com/) ; [ministère égyptien de l'Intérieur](https://www.moi.gov.eg/news/GetDetails?newsId=bbfb00a8-b8e2-4c10-81bd-161ba437d035) ; [Al-Ahram Gate](https://gate.ahram.org.eg/News/5974509.aspx) ; [The Cairo Report](https://www.cairoreport.org/p/egypt-brazil-iraq-billboard-hack) ; [x.com/IntCyberDigest](https://x.com/IntCyberDigest/status/2116519809445675248).
 
 ### 30 octobre 2026
+
+#### 🇿🇦 Afrique du Sud - Government Communication and Information System (GCIS) [System Intrusion]
+- **Détection de l’activité suspecte :** 24 octobre 2026
+- **Date de publication initiale :** 30 octobre 2026
+
+- **Domaine officiel :** [gcis.gov.za](https://www.gcis.gov.za/)
+- **Système concerné :** [erecruitment.gcis.gov.za](http://erecruitment.gcis.gov.za/), portail de candidature référencé par le GCIS
+- **Acteur / Groupe :** Non identifié
+- **Secteur :** Administration publique / Communication gouvernementale
+- **Statut :** Incident Confirmed by Victim
+- **Type d'incident :** System Intrusion
+- **Niveau de confiance :** High
+- **Niveau d'impact :** Level 3 (potentiel)
+- **Description victime :** Le Government Communication and Information System (GCIS) est une administration sud-africaine chargée de coordonner la communication gouvernementale et ses services d'information.
+- **Analyse :** Le GCIS a indiqué que son système de recrutement électronique avait été compromis après la détection d'une activité suspecte visant ses systèmes web le 24 octobre 2026. Le portail a été isolé et l'incident signalé à l'Information Regulator, à la South African Police Service et à la State Security Agency. Les informations potentiellement concernées comprennent des numéros d'identité, des numéros de téléphone et des adresses électroniques de candidats, mais l'accès effectif à chaque donnée et l'étendue de l'exposition restent en investigation. Aucun rançongiciel, chiffrement, publication sur un site de fuite ou arrêt de service n'est établi.
+- **Observed :** Compromission du système de recrutement reconnue par le GCIS ; activité suspecte détectée le 24 octobre ; isolement du système et notifications aux autorités confirmés ; exposition de données personnelles formulée comme potentielle.
+- **Unknown :** Vecteur d'accès, comptes utilisés, requêtes et objets consultés ou exportés, nombre de candidats concernés, volume, durée d'accès, persistance et éventuelle utilisation abusive des données ne sont pas renseignés dans les sources consultées.
+- **Évaluation des risques :** Les candidats peuvent être exposés à l'usurpation d'identité, au phishing, aux fausses convocations, aux fausses offres d'emploi et aux demandes frauduleuses de documents d'identité.
+- **Action SOC/CTI :** Préserver les journaux WAF, serveur web, base de données, IAM et EDR antérieurs au 24 octobre ; identifier les comptes, requêtes et objets consultés ou exportés ; révoquer les sessions et secrets applicatifs concernés ; surveiller les campagnes d'usurpation ciblant les candidats.
+- **Sources / Éléments de preuve :** [GCIS - page officielle des offres d'emploi](https://www.gcis.gov.za/content/about-us/hr/vacancies), qui référence le portail de recrutement ; [ITWeb - GCIS warns of information breach](https://www.itweb.co.za/article/gcis-warns-of-information-breach/wbrpO7g2ea3vDLZn), publié le 30 octobre 2026.
+- **Nuance sur la confiance :** High pour l'existence et la compromission du système ; Medium pour l'exposition effective des données
 
 #### 🇨🇮 Côte d'Ivoire - Société Ivoirienne de Télédiffusion [Ransomware]
 - **Date de publication initiale :** 30 octobre 2026

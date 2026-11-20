@@ -6,7 +6,7 @@
 
 ## Monthly snapshot
 
-**19 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 14, Data Leak 5.
+**21 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 14, Data Leak 7.
 
 > Public-source links are added to supplementary incidents identified through online research to complete the corpus. They are not retroactively imposed on historical AFRINTEL records, including Dark Web observations.
 
@@ -92,6 +92,39 @@
 - **Status:** Claim - Unverified
 - **Incident type:** Ransomware
 - **Victim Description:** La Rabta Hospital is one of the largest hospital complexes in Tunisia.
+
+### December 13, 2025
+#### 🇨🇮 Ivory Coast - National Agency for Rural Development (ANADER) (`anader.ci`)
+- **Initial publication date:** December 13, 2025 at 15:59
+- **Incident date:** Not established
+- **Actor / Group:** Ahlul Sahara
+- **Sector:** Agriculture / Rural development / Public administration
+- **Website:** [anader.ci](https://www.anader.ci/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Claimed volume:** 11.4 MB for an SQL and JSON dump, unverified
+- **Confidence level:** Medium for the existence of the publication and the structural consistency of the visible sample; technical provenance and completeness remain uncorroborated
+- **Impact level:** Level 4
+- **Source type:** Forum publication and sample content supplied as a visual capture
+
+- **Victim description:** The National Agency for Rural Development (ANADER) is an Ivorian institution associated with rural-development support. The domain presented in the publication is `anader.ci`.
+
+- **Analysis:** The December 13, 2025 publication claims an “ANADER data dump” presented as a raw database dump in UTF-8 SQL and JSON, with an advertised size of **11.4 MB**. It describes `users`, `contacts` and `zones` tables, a Symfony / Doctrine ORM structure and fields relating to accounts, roles, salts, password hashes, email addresses, usernames and metadata connections.
+
+  The visible content presents several user-table records with account identifiers, usernames, email addresses, activation states, administrative roles, salts and encoded password values. The visible values are intentionally omitted from this record. The publication describes the password values as derived from a PBKDF2-HMAC algorithm and the salts as random Base64 strings; these claims were not cryptographically verified against the original file. The presence of accounts carrying roles such as super-administrator or administrator indicates potentially high risk, but does not establish that the passwords or accounts remain valid.
+
+  A contacts table exposes, in the visible sample, function labels and telephone numbers. A zones table contains Ivorian locality names and regional-directorate identifiers. The publication also mentions an `acteurs` table with indexes linking users, actor types, zones, departments, sub-prefectures and ANADER directorates, as well as an `agent` table linked to regional directorates and zones. This structure is compatible with an application model for user management, contacts and territorial assignments.
+
+  **Observed:** Publication timestamped December 13, 2025 at 15:59; `anader.ci` displayed; claimed raw 11.4 MB SQL/JSON dump; `users`, `contacts` and `zones` tables cited; visible account, role, salt, password-hash, email, contact and regional-mapping fields; alleged indexes linking users, actors, zones and directorates.
+
+  **Assumption:** Consistency between the ANADER domain, the announced Symfony / Doctrine structure, administrative roles, Ivorian zone references and territorial relationships makes contextual association of the sample with an ANADER-related application plausible. This does not confirm that the dump came from the agency's servers, that it was acquired by the publication author or that account access remains possible.
+
+  **Unknown:** Source system, access vector and date, acquisition method, actual account and contact counts, dump integrity, validity of hashes, salts or sessions, table completeness, additional data in the SQL/JSON, exfiltration, confirmation by ANADER and notification to a competent authority.
+
+- **Analysis scope and limitations:** Structural and preliminary analysis based on a visual capture and the visible publication text; the original SQL/JSON dump was not supplied. Names, email addresses, phone numbers, identifiers, salts, hashes, detailed roles and other raw values are not reproduced, tested or added to the repository. The advertised 11.4 MB volume and complete table set were not independently verified.
+- **Risk assessment:** If authentic, the sample could facilitate account takeover, credential stuffing, targeted phishing, staff impersonation, telephone fraud, mapping of regional deployments and secondary access to administrative functions. The presence of privileged roles and territorial-assignment data warrants priority response, without assuming that the secrets remain exploitable.
+- **SOC / CTI recommendations:** Preserve Symfony, Doctrine, web, database, IAM and VPN logs; reset privileged accounts and invalidate sessions after scoping; investigate SQL/JSON exports, bulk queries and outbound transfers; verify secret rotation and hash resilience; review links between accounts, zones, directorates and actors; monitor impersonation campaigns targeting staff and regional offices; notify relevant parties under applicable regulations.
+- **Sources / Evidence:** Forum publication supplied to AFRINTEL and a visual capture taken on November 18, 2026 showing the post dated December 13, 2025; [ANADER associated website](https://www.anader.ci/). No dump, identifier, secret, hash, contact or raw personal value is published.
 
 ### 15 December 2025
 #### 🇹🇳 Tunisia - Examens.tn

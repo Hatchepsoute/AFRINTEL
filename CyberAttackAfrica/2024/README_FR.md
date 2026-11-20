@@ -10,9 +10,9 @@ Le paysage est dominé par **Ransomware : 91 (72,8 %)**, suivi de **Data Leak : 
 
 Les pays les plus représentés sont **l'Afrique du Sud avec 36 incidents**, **l'Égypte avec 15**, **le Nigeria avec 8** et **la Tunisie avec 6**. Les principaux secteurs sont **Finance / Banque (18)**, **Gouvernement / Administration (18)** et **Services professionnels / Business (12)**.
 
-La répartition régionale montre une forte visibilité de **l'Afrique australe avec 50 incidents (41,0 %)**, suivie de **l'Afrique du Nord avec 31 (25,4 %)** et de **l'Afrique de l'Ouest avec 19 (15,6 %)**.
+La répartition régionale montre une forte visibilité de **l'Afrique australe avec 50 incidents (40,0 %)**, suivie de **l'Afrique du Nord avec 34 (27,2 %)** et de **l'Afrique de l'Ouest avec 19 (15,2 %)**.
 
-La maturité des preuves reste hétérogène : **87 Claim - Unverified**, **19 Claim - Data Sample Published**, **15 Confirmed**, **2 Corroborated** et **1 Attempted**. Ces positions de preuve restent distinctes du type technique de l'incident.
+La maturité des preuves reste hétérogène : **87 Claim - Unverified**, **20 Claim - Data Sample Published**, **15 Confirmed**, **2 Corroborated** et **1 Attempted**. Ces positions de preuve restent distinctes du type technique de l'incident.
 
 Le premier semestre compte **46 incidents**, contre **79 au second semestre**. Le ransomware reste la menace la plus fréquemment observée sur l'ensemble de l'année, tandis que les Data Leak, ventes d'accès, intrusions système, DDoS et autres catégories montrent un paysage de menace plus diversifié qu'une lecture centrée uniquement sur le ransomware.
 
@@ -64,7 +64,7 @@ timeline
     Juin : 3 incidents
     Juillet : 11 incidents
     Août : 16 incidents
-    Septembre : 6 incidents
+    Septembre : 7 incidents
     Octobre : 11 incidents
     Novembre : 16 incidents
     Décembre : 18 incidents
@@ -106,7 +106,7 @@ pie showData
 | Tunisie | 6 | 5 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Cameroun | 4 | 2 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Namibie | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Maroc | 4 | 1 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Maroc | 5 | 1 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Côte d'Ivoire | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Libye | 3 | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -136,12 +136,12 @@ pie showData
 
 | Région | Fiches | Part |
 |---|---|---|
-| Afrique australe | 50 | 41,3 % |
-| Afrique du Nord | 31 | 25,6 % |
-| Afrique de l'Ouest | 19 | 15,6 % |
-| Afrique de l'Est | 12 | 9,9 % |
-| Afrique centrale | 5 | 4,2 % |
-| Océan Indien | 5 | 4,2 % |
+| Afrique australe | 50 | 40,0 % |
+| Afrique du Nord | 34 | 27,2 % |
+| Afrique de l'Ouest | 19 | 15,2 % |
+| Afrique de l'Est | 12 | 9,6 % |
+| Afrique centrale | 5 | 4,0 % |
+| Océan Indien | 5 | 4,0 % |
 
 ## 2. Répartition sectorielle
 
@@ -154,7 +154,7 @@ pie showData
 | Santé / Médical | 10 | 8,3 % |
 | Technologie / IT | 9 | 7,4 % |
 | Éducation / Université | 9 | 7,4 % |
-| Commerce / E-commerce | 8 | 6,5 % |
+| Commerce / E-commerce | 10 | 8,0 % |
 | Télécommunications | 5 | 4,2 % |
 | Énergie / Services publics | 4 | 3,3 % |
 | Médias / Divertissement | 3 | 2,5 % |
@@ -205,9 +205,9 @@ pie showData
 
 | Position de preuve | Fiches | Part |
 |---|---|---|
-| Claim - Unverified | 87 | 71,3 % |
-| Confirmed | 15 | 12,3 % |
-| Claim - Data Sample Published | 19 | 15,3 % |
+| Claim - Unverified | 87 | 69,6 % |
+| Confirmed | 15 | 12,0 % |
+| Claim - Data Sample Published | 20 | 16,0 % |
 | Corroborated | 2 | 1,6 % |
 | Attempted | 1 | 0,8 % |
 
@@ -215,18 +215,18 @@ pie showData
 
 | Confiance | Fiches | Part |
 |---|---|---|
-| Low | 84 | 69,4 % |
-| Very High | 16 | 13,2 % |
-| Medium | 17 | 13,7 % |
-| High | 7 | 5,8 % |
+| Low | 84 | 67,2 % |
+| Very High | 16 | 12,8 % |
+| Medium | 18 | 14,4 % |
+| High | 7 | 5,6 % |
 
 ### Impact
 
 | Impact | Fiches | Part |
 |---|---|---|
-| Level 3 | 57 | 46,0 % |
-| Level 2 | 47 | 38,8 % |
-| Level 4 | 19 | 15,7 % |
+| Level 3 | 58 | 46,4 % |
+| Level 2 | 48 | 38,4 % |
+| Level 4 | 19 | 15,2 % |
 
 ## 2. Étude comparative S1 vs S2
 

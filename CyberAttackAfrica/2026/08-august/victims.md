@@ -4,7 +4,7 @@
 
 👉🏾 [Version française](./victims_FR.md)
 
-> **Counting rule:** 28 records retained for traceability: **27 included in canonical statistics** and **one under investigation (Yalidine), excluded from the denominator**. A claim is not a confirmed compromise. The ordering follows the record classification date, not necessarily the intrusion date.
+> **Counting rule:** 28 records retained and included in the canonical corpus. A claim is not a confirmed compromise. The ordering follows the observed publication date, not necessarily the intrusion date.
 
 ## August 2026
 
@@ -726,8 +726,6 @@ last_checked_at: 2026-08-20T13:54:00
 -->
 
 ---
-> ⚠️ **Case under investigation - excluded from the canonical total.**
-
 #### 🇩🇿 Algeria - Yalidine El Djazair Service (`yalidine.com`) - attribution unconfirmed
 - **Initial publication date:** August 20, 2026
 
@@ -736,7 +734,7 @@ last_checked_at: 2026-08-20T13:54:00
 - **Actor / Group:** TelephoneHooliganism (account displayed in the post; identity and affiliation unverified)
 - **Claimed sector:** Transport / Logistics / Express Delivery
 - **Claimed website:** [yalidine.com](https://www.yalidine.com/)
-- **Status:** Under Investigation
+- **Status:** Claim - Data Sample Published
 - **Incident type:** Data Leak
 - **Confidence level:** Low
 - **Impact level:** Level 3 (potential)
@@ -750,21 +748,32 @@ last_checked_at: 2026-08-20T13:54:00
 
   AFRINTEL examined three local CSV files read-only corresponding to those datasets: **50 contact rows**, **20 booking rows** and **20 ticket rows**. The files are structurally readable and total **90 tabular rows**, but that total does not represent 90 unique people. The files contain **34, 29 and 29 columns**, respectively. The fields cover contacts, CRM information, bookings, payments, support tickets and customer follow-up. No raw personal data is reproduced in this record.
 
-  **Observed anomalies:** only **3 of 50 contacts** have `Algeria` as the country value; the remaining countries are predominantly foreign. The booking cities observed are not Algerian. The `contact_id` values used in bookings and tickets do not match the identifiers in the Contacts file. The 20 bookings contain only **2 distinct `booking_id` values**, and the 20 tickets contain only **2 distinct `ticket_id` values**. Links to booking records are also inconsistent. Ticket email and phone fields are empty, and several advertised contact fields are largely or entirely empty. Data-quality or encoding problems appear in some geographic values.
+  **Deep content analysis:** The 50 contacts contain identity, contact, address, commercial-status, lead-source, account-tier, contact-preference, segmentation, sales-activity and internal-note fields. The 20 bookings cover cities, dates, times, services, statuses, payments, agents and follow-up. The 20 tickets cover support categories, priorities, statuses, escalation levels, response times, customer impact and resolution. These categories are compatible with a CRM and delivery or customer-service environment, but they do not prove use by Yalidine.
+
+  **Quality and coverage:** No complete duplicate row was detected. Contact dates range from January 2022 to June 2024; bookings range from October 2022 to May 2024; tickets range from March 2022 to August 2024, with due dates through September 2024. The files are historical extracts, not a complete snapshot of a system in August 2026. Several columns are empty or highly incomplete: ticket email and phone fields are entirely empty, attachment fields contain only one repeated URL, and many CRM fields are populated for only six contacts.
+
+  **Observed anomalies:** only **3 of 50 contacts** have `Algeria` as the country value; the other countries are mainly foreign, notably Argentina and Brazil. The 20 booking cities observed are not Algerian. None of the 20 booking or ticket `contact_id` values matches the 50 identifiers in the Contacts file. The 20 bookings contain only **2 distinct `booking_id` values**, and the 20 tickets contain only **2 distinct `ticket_id` values**. The 20 ticket booking references match none of the observed booking identifiers. These geographic and relational inconsistencies materially reduce confidence in direct attribution to Yalidine.
 
   Local SHA-256 hashes are: `Contacts_Algeria.csv` **fb87c90da9b74d186b3f5a3bbcef32ff63f177c908c48ad75b44b868e818da51**; `Booking_History_Algeria.csv` **964fe16260cd75f3994feb0dc9fe0393334ef37eb23e6a22851a6729b2244443**; `Support_Tickets_Algeria.csv` **49dc113a234b852ba97709a2dfc09ac26dae3b8af5397b543286885e3ac2218d**.
 
-  **Assumption:** The domain name, Yalidine’s business activity and the three-table structure are compatible with the claim. That compatibility is weak: geographic, relational and completeness inconsistencies outweigh the elements linking the sample to Yalidine. The sample may be synthetic, misattributed, drawn from a multi-country environment, incomplete or built from a generic CRM template.
+  **Possible hypotheses:**
+  * the sample comes from an environment linked to Yalidine, but is old, partial or mixed with data from other markets;
+  * the files come from a multi-country environment or shared SaaS provider and are not directly sourced from Yalidine;
+  * the sample is synthetic, demonstrative or built from a generic CRM template;
+  * the actor misattributed the files to the Yalidine domain or reused a structure from another organisation;
+  * the post is an exaggerated commercial offer in which the claimed 563,000 records are not represented by the supplied files.
+
+  The domain name, Yalidine’s business activity and the three-table structure are compatible with the claim, but this compatibility remains weak in light of the observed inconsistencies.
 
   A link with the **Afribaba** case from 20 August 2026 is possible only at campaign level: the displayed actor, publication date and broad data categories are similar. This could reflect a campaign targeting multiple Algerian organisations or reuse of a posting template. No shared identifier, domain, file or technical marker was observed; the link is therefore **not specified in the sources consulted** and must not merge the victims.
 
   **Unknown:** The files’ technical provenance, extraction date, authenticity, number of unique people, existence of unauthorised access, acquisition method, completeness of the advertised database, operational impact and any confirmation by Yalidine or an authority all remain unknown.
 
-- **Analysis scope and limitations:** All three supplied CSV files were examined read-only, including structure, counts, blank fields, duplicates, inter-table relationships, date ranges and SHA-256 hashes. The files remain outside the repository. The analysis does not validate the claimed **563,000 records** and cannot attribute the sample to Yalidine.
+- **Analysis scope and limitations:** All three supplied CSV files were examined in full and read-only: **90 data rows, 92 columns in total and approximately 26 KB**. The review covered encoding, structure, counts, blank fields, duplicates, date ranges, inter-table relationships and SHA-256 hashes. The files remain outside the repository. The analysis does not validate the claimed **563,000 records** and cannot attribute the sample to Yalidine.
 
 - **Risk assessment:** If any part of the sample were authentic, the advertised categories could facilitate targeted phishing, social engineering, customer impersonation and order- or payment-related fraud. The sources consulted do not specify the actual exposure of Yalidine’s customers.
 
-- **Counting decision:** The allegation is assigned to the actor’s publication month. `Under Investigation` and `Low` confidence are retained: inclusion does not confirm a breach or validate the claimed 563,000 records.
+- **Counting decision:** The record is included in the August 2026 canonical corpus because the actor’s post is dated August 20. `Claim - Data Sample Published` means that a sample was published; it does not confirm a compromise, Yalidine origin or the claimed 563,000 records.
 
 - **Sources / Evidence:** publication and moderator message dated 20 August 2026, screenshots supplied for later review; three local CSV files examined read-only; [Yalidine official website](https://www.yalidine.com/). No onion link, criminal account, personal data or individual value is published.
 - **Public-source follow-up (5 November 2026):** no Yalidine official statement specifically confirming or disputing the **20 August 2026** allegation was located in the public sources reviewed. An [Awras report dated 17 December 2025](https://www.awras.com/%D9%85%D8%A7-%D8%AD%D9%82%D9%8A%D9%82%D8%A9-%D8%AA%D8%B9%D8%B1%D8%B6-%D8%B4%D8%B1%D9%83%D8%A9-%D9%8A%D8%A7%D9%84%D9%8A%D8%AF%D9%8A%D9%86-%D9%84%D9%84%D8%AA%D9%88%D8%B5%D9%8A%D9%84-%D8%A7%D9%84/) describes Yalidine denying **a separate earlier allegation**; it must not be used as evidence that the August 2026 allegation is true or false.
