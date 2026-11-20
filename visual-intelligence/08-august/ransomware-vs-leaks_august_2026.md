@@ -2,7 +2,7 @@
 
 ```mermaid
 pie showData
-    title Primary types (33 records)
+    title Primary types (28 records)
     "Ransomware" : 18
     "Data Leak" : 14
     "Access Sale" : 1

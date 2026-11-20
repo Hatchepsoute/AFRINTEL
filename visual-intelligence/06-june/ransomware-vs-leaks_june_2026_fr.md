@@ -13,7 +13,7 @@ title Ransomware et fuites de données - juin 2026
 |---|---:|---:|
 | 🟧 Ransomware | 20 | 50,0 % |
 | 🟦 Fuites de données et ventes d'accès | 20 | 50,0 % |
-| **Total** | **40** | **100 %** |
+| **Total** | **47** | **100 %** |
 
 ## Comparaison géographique développée
 

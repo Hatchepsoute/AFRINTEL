@@ -2,7 +2,7 @@
 
 ```mermaid
 pie showData
-    title Types principaux (33 fiches)
+    title Types principaux (28 fiches)
     "Ransomware" : 18
     "Data Leak" : 14
     "Access Sale" : 1

@@ -8,15 +8,15 @@ The corpus is led by **Ransomware (121, 51.7%)**. Figures represent AFRINTEL doc
 
 ## Annual visualizations
 
-![Incident types — 2025](assets/annual_types_EN.png)
+![Incident types - 2025](assets/annual_types_EN.png)
 
-![Countries — Top 10 — 2025](assets/annual_countries_EN.png)
+![Countries - Top 10 - 2025](assets/annual_countries_EN.png)
 
-![Regions — 2025](assets/annual_regions_EN.png)
+![Regions - 2025](assets/annual_regions_EN.png)
 
-![Sectors — Top 10 — 2025](assets/annual_sectors_EN.png)
+![Sectors - Top 10 - 2025](assets/annual_sectors_EN.png)
 
-![Actors and groups — Top 10 — 2025](assets/annual_actors_EN.png)
+![Actors and groups - Top 10 - 2025](assets/annual_actors_EN.png)
 
 ## Incident types
 

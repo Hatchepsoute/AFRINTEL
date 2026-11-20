@@ -1,5 +1,5 @@
-![January 2026](https://img.shields.io/badge/January%202026-21%20Incidents-blue)
-![February 2026](https://img.shields.io/badge/February%202026-20%20Incidents-blue)
+![January 2026](https://img.shields.io/badge/January%202026-30%20Incidents-blue)
+![February 2026](https://img.shields.io/badge/February%202026-27%20Incidents-blue)
 ![Data Source](https://img.shields.io/badge/Data%20Source-Leak%20Sites-black)
 ![AFRINTEL](https://img.shields.io/badge/Project-AFRINTEL-black)
 ![Africa Threat Map](https://img.shields.io/badge/Africa-Threat%20Monitoring-darkgreen)

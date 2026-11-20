@@ -8,15 +8,15 @@ Le corpus est dominé par **Ransomware (121, 51,7 %)**. Les chiffres représente
 
 ## Visualisations annuelles
 
-![Types d'incident — 2025](assets/annual_types_FR.png)
+![Types d'incident - 2025](assets/annual_types_FR.png)
 
-![Pays — Top 10 — 2025](assets/annual_countries_FR.png)
+![Pays - Top 10 - 2025](assets/annual_countries_FR.png)
 
-![Régions — 2025](assets/annual_regions_FR.png)
+![Régions - 2025](assets/annual_regions_FR.png)
 
-![Secteurs — Top 10 — 2025](assets/annual_sectors_FR.png)
+![Secteurs - Top 10 - 2025](assets/annual_sectors_FR.png)
 
-![Acteurs et groupes — Top 10 — 2025](assets/annual_actors_FR.png)
+![Acteurs et groupes - Top 10 - 2025](assets/annual_actors_FR.png)
 
 ## Types d’incident
 

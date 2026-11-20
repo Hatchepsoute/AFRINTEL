@@ -1,14 +1,14 @@
 ![Visualization](https://img.shields.io/badge/Visualization-Map-blue)
 ![Data Source](https://img.shields.io/badge/Data%20Source-Leak%20Sites-black)
 ![Period](https://img.shields.io/badge/Period-2026--01%20to%202026--02-informational)
-![Coverage](https://img.shields.io/badge/Coverage-41%20Incidents-brightgreen)
+![Coverage](https://img.shields.io/badge/Coverage-57%20Incidents-brightgreen)
 ![Countries](https://img.shields.io/badge/Countries-18-yellow)
 ![Threat Actors](https://img.shields.io/badge/Threat%20Actors-12-orange)
 ![Sectors](https://img.shields.io/badge/Sectors-13-purple)
 ## 🔗 Cartographie des acteurs de menace - Janvier & Février 2026
 👉🏾 [English version](./ecosystem-map.md)
 
-Ce graphique illustre les connexions entre les groupes ransomware et leurs cibles à travers l'Afrique, basé sur 41 incidents documentés dans 18 pays.
+Ce graphique illustre les connexions entre les groupes ransomware et leurs cibles à travers l'Afrique, basé sur 57 fiches documentées dans 18 pays.
 
 ### Acteurs → victimes → pays (Janvier + Février 2026)
 

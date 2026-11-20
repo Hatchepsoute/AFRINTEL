@@ -2,7 +2,7 @@
 
 ```mermaid
 pie showData
-    title Normalised sectors (33 records)
+    title Normalised sectors (28 records)
     "Government / Administration" : 7
     "Finance / Banking" : 6
     "Human Resources / Recruitment" : 3

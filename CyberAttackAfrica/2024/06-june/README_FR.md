@@ -3,7 +3,7 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL) ![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Période](https://img.shields.io/badge/Période-juin%202024-blueviolet)
 
 **Public:** RSSI, responsables SOC/CERT, comités de risque et continuité d'activité.<br>
-**Période:** 1–30 juin 2024, sur la base des fiches canoniques documentées.<br>
+**Période:** 1-30 juin 2024, sur la base des fiches canoniques documentées.<br>
 **Édition:** auditée le 20 novembre 2026 | **Diffusion:** TLP:CLEAR.<br>
 👉🏾 [English version](./README.md) | [Fiches détaillées en français](./victims_FR.md) | [English records](./victims.md)
 

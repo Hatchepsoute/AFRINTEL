@@ -3,7 +3,7 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL) ![Scope](https://img.shields.io/badge/Scope-Africa-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Period](https://img.shields.io/badge/Period-July%202024-blueviolet)
 
 **Audience:** CISOs, SOC/CERT leads, risk committees and business continuity managers.<br>
-**Period:** July 1–31, 2024, based on the documented canonical records.<br>
+**Period:** July 1-31, 2024, based on the documented canonical records.<br>
 **Edition:** audited November 20, 2026 | **Distribution:** TLP:CLEAR.<br>
 👉🏾 [Version française](./README_FR.md) | [Detailed records in English](./victims.md) | [French records](./victims_FR.md)
 

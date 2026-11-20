@@ -14,7 +14,7 @@ Leak-site, forum and underground-channel posts are treated as **unverified claim
 
 | Indicator | Value |
 |---|---:|
-| Victims | 41 |
+| Victims | 45 |
 | Affected countries | 12 (plus 1 multi-country incident) |
 | Attributed actors | 26 |
 | Affected sectors | 38 |
@@ -34,9 +34,10 @@ xychart-beta
 ```mermaid
 pie
     title Incident typology - March 2026
-    "Ransomware (21)" : 21
-    "Data Breach (19)" : 19
-    "Intrusion/Fraud (1)" : 1
+    "Ransomware (19)" : 19
+    "Data Leak (24)" : 24
+    "Access Sale (1)" : 1
+    "Operational Fraud (1)" : 1
 ```
 
 ## Most active actors

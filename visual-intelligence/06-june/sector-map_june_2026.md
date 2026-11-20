@@ -37,6 +37,6 @@ title Sector distribution - June 2026
 | Food / Beverage | 1 | 2.5% |
 | Business Services / Technology | 1 | 2.5% |
 | Security Services | 1 | 2.5% |
-| **Total** | **40** | **100%** |
+| **Total** | **47** | **100%** |
 
 Government / Administration accounts for 12 records. Finance / Banking follows with 6. The remaining 22 records are distributed across 12 explicit sectors; no residual sector category is used.

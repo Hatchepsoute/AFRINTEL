@@ -5,11 +5,12 @@
 ```mermaid
 pie
 title Incidents by country
-"🇿🇦 South Africa (4)" : 4
+"🇿🇦 South Africa (6)" : 6
 "🇰🇪 Kenya (4)" : 4
-"🇪🇬 Egypt (3)" : 3
-"🇲🇦 Morocco (2)" : 2
-"Others" : 8
+"🇪🇬 Egypt (4)" : 4
+"🇩🇿 Algeria (4)" : 4
+"🇲🇦 Morocco (3)" : 3
+"Others" : 9
 ```
 
 ## Most active actors
@@ -19,7 +20,7 @@ pie
 title Active groups
 "TheGentlemen (6)" : 6
 "tengu (5)" : 5
-"Others" : 10
+"Other actor labels" : 19
 ```
 
 ## CTI Ecosystem Map
@@ -61,7 +62,7 @@ xychart-beta
 title "Targeted sectors"
 x-axis ["Government","Finance","Industry","Transport","Healthcare"]
 y-axis "Incidents" 0 --> 6
-bar [5,3,3,3,1]
+bar [6,5,4,4]
 ```
 
 ## CTI Reading

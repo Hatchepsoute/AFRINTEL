@@ -6,7 +6,7 @@
 **Audience:** CISOs, CIOs, SOC/CERT leaders, risk and business continuity teams.  
 **Period:** February 1-28, 2026, based on the initial publications described in the source corpus.
 **Edition:** November 6, 2026 | **Distribution:** TLP:CLEAR.  
-👉🏾 [Version française](./README_FR.md) | [French victim records](./victims_FR.md) | [Detailed English records](./victims.md) | [Jan–Feb comparison](../../comparison/2026/01-january-february/README.md)
+👉🏾 [Version française](./README_FR.md) | [French victim records](./victims_FR.md) | [Detailed English records](./victims.md) | [Jan-Feb comparison](../../comparison/2026/01-january-february/README.md)
 
 > **Evidence method - how to read this report.** AFRINTEL consolidates the OSINT investigations and post-disclosure examinations already documented in its victim records. **For ransomware listings**, analysts review the post and, when published, file inventories, previews and released documents to characterise the exposure. **For data leaks**, available samples are assessed for structure, fields, consistency, observed volume and business impact. Readers can therefore distinguish material actually reviewed from volumes merely claimed. First-party confirmations are identified separately; intrusion, encryption and full exfiltration are not assumed without supporting evidence.
 

@@ -28,7 +28,7 @@ From 1 January to 30 June 2026, AFRINTEL records **320 documented incidents or c
 
 ## Methodology
 
-The figures are derived from the French-first victim files, checked against the English files and reused in comparisons and STIX. Monthly assignment follows publication or first documented observation; no compromise date is inferred. April contains **65 canonical records** in the current synchronized monthly pair.
+The figures are derived from the French-first victim files, checked against the English files and reused in comparisons and STIX. Monthly assignment follows publication or first documented observation; no compromise date is inferred. April contains **64 canonical records** and one separately tracked case excluded from the canonical total.
 
 ## Visualisations
 

@@ -2,7 +2,7 @@
 
 ```mermaid
 pie showData
-    title Secteurs normalisés (33 fiches)
+    title Secteurs normalisés (28 fiches)
     "Gouvernement / Administration" : 7
     "Finance / Banque" : 6
     "Ressources humaines / Recrutement" : 3

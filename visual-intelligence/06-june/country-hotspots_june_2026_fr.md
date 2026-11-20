@@ -23,7 +23,7 @@ La vue directe contient 38 fiches mono-pays et deux fiches multi-pays.
 | 🇲🇺 Maurice | 1 | █ |
 | 🇾🇹 Mayotte | 1 | █ |
 | 🌍 Multi-pays | 2 | ██ |
-| **Total** | **40** | |
+| **Total** | **47** | |
 
 ### Exposition africaine développée
 
@@ -52,4 +52,4 @@ title Occurrences par pays africain - juin 2026
 "Sierra Leone" : 1
 ```
 
-La vue développée totalise 53 occurrences géographiques dans 20 pays africains. Elle ne modifie pas le total analytique de 40 incidents.
+La vue développée totalise 53 occurrences géographiques dans 20 pays africains. Elle ne modifie pas le total analytique de 47 incidents.
