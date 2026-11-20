@@ -14,7 +14,7 @@
 ## Summary
 - **Documented records:** 65
 - **Canonical victim total:** 64
-- **Note:** Bank of Kigali is documented as a retrospective `Under Investigation - Alleged` case but excluded from the canonical total and statistical breakdowns.
+- **Note:** Bank of Kigali is documented as a confirmed customer-facing fraud, but remains excluded from the canonical compromise and intrusion denominator.
 - **Ransomware:** 21
 - **Data leaks:** 32
 - **Access sales:** 2
@@ -63,25 +63,25 @@
 - **Statistical attribution period:** April 2026 - H1 2026
 - **Threat Actor / Group:** Unidentified
 - **Sector:** Banking and Financial Services
-- **Status:** Under Investigation - Alleged
+- **Status:** Victim Confirmed
 - **Incident type:** Operational Fraud
 - **Subtype / observed effects:** Phishing campaign; operational disruption and temporary transaction suspension
 - **Confidence level:** Medium
 - **Impact level:** Level 3
-- **Source type:** Rwandan media; Taarifa article
+- **Source type:** Bank of Kigali communication reported by Taarifa and The New Times
 
-- **Victim Description:** **Bank of Kigali** is a Rwandan bank providing banking services to retail and business customers. Taarifa described a phishing campaign targeting its customers and a temporary suspension of internal and external transactions reported as a precautionary measure. The number of affected customers and any financial losses had not been established at publication time ([Taarifa Rwanda](https://taarifa.rw/2026/04/01/cyberattack-disrupts-bank-of-kigali-operations-amid-phishing-scheme/)).
+- **Victim Description:** **Bank of Kigali** is a Rwandan bank providing banking services to retail and business customers. The bank confirmed a campaign of fraudulent messages targeting customers and stated that its internal systems had not been compromised. Taarifa also reported temporary transaction-limit adjustments and limited losses for some customers ([Taarifa Rwanda](https://taarifa.rw/2026/04/06/rib-arrests-five-suspects-in-bk-mobile-banking-scam-as-losses-remain-limited/), [The New Times](https://www.newtimes.co.rw/article/34584/news/finance/banks-raise-alarm-over-surge-in-phishing-attempts/amp)).
 
-- **Analysis:** According to Taarifa, fraudulent links were reportedly distributed to collect sensitive financial information. The bank reportedly warned customers not to share PINs, passwords or card details through SMS, WhatsApp, email or telephone. The article also reported a temporary suspension of internal and external transactions and the involvement of a National Bank of Rwanda team in the investigation. These elements are media-reported and do not constitute independent technical confirmation.
+- **Analysis:** Public sources describe a phishing campaign confirmed by the bank and directed at customers rather than Bank of Kigali's internal infrastructure. The messages urged recipients to click links or provide sensitive information. The identity of the fraudsters, domains and phone numbers used, and the full scope of targeted customers remain unknown. This confirmation concerns customer-facing fraud; it does not confirm intrusion into banking systems.
 
   **Assumption:** The described activity is primarily cyber-enabled operational fraud, with temporary service unavailability as a secondary effect. The exact links, number of victims and existence of fraudulent transactions are not established.
 
-  **Unknown:** Actor, domains and phone numbers used, number of targeted or compromised customers, financial losses, campaign origin, any account takeover, intrusion into Bank of Kigali infrastructure and direct confirmation by the bank all remain unknown. Taarifa stated that the bank had not responded to its requests for clarification at publication time.
+  **Unknown:** Actor, domains and phone numbers used, total number of targeted or compromised customers, aggregate losses and campaign origin remain unknown. No intrusion into the internal infrastructure is established.
 
-- **Analysis scope and limitations:** Analysis based on Taarifa’s public article; no phishing domain, phone number, sample, log or customer data was supplied or examined. The event must not be presented as a confirmed data breach or infrastructure compromise.
+- **Analysis scope and limitations:** Analysis based on public communications reported by Taarifa and The New Times; no phishing domain, phone number, log or customer data was supplied or examined. The event must not be presented as a data leak or confirmed banking-infrastructure compromise.
 - **SOC/CTI recommendations:** Collect and block domains, URLs and phone numbers used; investigate unusual authentications and customer-account takeovers; correlate suspicious logins with fraudulent transactions; reset access for potentially compromised customers; strengthen anti-fraud communications through official channels; monitor campaigns impersonating Bank of Kigali.
-- **Counting decision:** The incident is retained in the April reference set because of its event date, but **excluded from canonical statistics** while the `Under Investigation - Alleged` status remains uncorroborated. It is not a new October incident.
-- **Source / observed element:** [Taarifa Rwanda, April 1, 2026](https://taarifa.rw/2026/04/01/cyberattack-disrupts-bank-of-kigali-operations-amid-phishing-scheme/).
+- **Counting decision:** Retained in the April reference set as a confirmed customer-facing fraud, but kept outside the canonical denominator for compromises and intrusions. It is not a data leak or confirmed banking intrusion and is not a new October incident.
+- **Source / observed element:** [Taarifa Rwanda, April 6, 2026](https://taarifa.rw/2026/04/06/rib-arrests-five-suspects-in-bk-mobile-banking-scam-as-losses-remain-limited/); [The New Times, April 2, 2026](https://www.newtimes.co.rw/article/34584/news/finance/banks-raise-alarm-over-surge-in-phishing-attempts/amp).
 
 #### 🇪🇹 Ethiopia - National Oil Ethiopia PLC (NOC) [Data Leak]
 - **Initial publication date:** April 01, 2026

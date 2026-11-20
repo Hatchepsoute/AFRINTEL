@@ -14,7 +14,7 @@
 ## Récapitulatif
 - **Fiches documentées :** 65
 - **Total victimes canoniques :** 64
-- **Note :** Bank of Kigali est documentée comme cas rétrospectif `Under Investigation - Alleged` mais exclue du total canonique et des ventilations statistiques.
+- **Note :** Bank of Kigali est documentée comme fraude client confirmée, mais reste exclue du dénominateur canonique des compromissions et intrusions.
 - **Ransomware :** 21
 - **Fuites de données :** 32
 - **Ventes d'accès :** 2
@@ -65,25 +65,25 @@
 - **Mois d'intégration au référentiel :** Octobre 2026 (découverte rétrospective)
 - **Acteur / Groupe :** Unidentified
 - **Secteur :** Banque et services financiers
-- **Statut :** Under Investigation - Alleged
+- **Statut :** Victim Confirmed
 - **Type d'incident :** Operational Fraud
 - **Sous-type / effets observés :** Campagne de phishing ; perturbation opérationnelle et suspension temporaire de transactions
 - **Niveau de confiance :** Medium
 - **Niveau d'impact :** Level 3
-- **Type de source :** Média rwandais ; article de Taarifa
+- **Type de source :** Communication de Bank of Kigali rapportée par Taarifa et The New Times
 
-- **Description victime :** **Bank of Kigali** est une banque rwandaise fournissant des services bancaires aux particuliers et aux entreprises. Taarifa décrit une campagne de phishing ciblant ses clients et une suspension temporaire des transactions internes et externes annoncée comme mesure de précaution. Le nombre de clients affectés et les pertes financières éventuelles n'étaient pas établis lors de la publication ([Taarifa Rwanda](https://taarifa.rw/2026/04/01/cyberattack-disrupts-bank-of-kigali-operations-amid-phishing-scheme/)).
+- **Description victime :** **Bank of Kigali** est une banque rwandaise fournissant des services bancaires aux particuliers et aux entreprises. La banque a confirmé une campagne de messages frauduleux visant ses clients et a indiqué que ses systèmes internes n'avaient pas été compromis. Taarifa rapporte également des ajustements temporaires des limites de transaction et des pertes limitées pour certains clients ([Taarifa Rwanda](https://taarifa.rw/2026/04/06/rib-arrests-five-suspects-in-bk-mobile-banking-scam-as-losses-remain-limited/), [The New Times](https://www.newtimes.co.rw/article/34584/news/finance/banks-raise-alarm-over-surge-in-phishing-attempts/amp)).
 
-- **Analyse :** Selon Taarifa, des liens frauduleux auraient été diffusés pour recueillir des informations financières sensibles. La banque aurait averti ses clients de ne pas communiquer leurs PIN, mots de passe ou données de carte par SMS, WhatsApp, e-mail ou téléphone. L'article rapporte également une suspension temporaire des transactions internes et externes, ainsi que l'implication d'une équipe de la National Bank of Rwanda dans l'investigation. Ces éléments sont rapportés par le média et ne constituent pas une confirmation technique indépendante.
+- **Analyse :** Les sources publiques décrivent une campagne de phishing confirmée par la banque, dirigée contre les clients et non contre l'infrastructure interne de Bank of Kigali. Les messages demandaient de cliquer sur des liens ou de communiquer des informations sensibles. L'identité des fraudeurs, les domaines et numéros utilisés, ainsi que le périmètre complet des clients ciblés restent inconnus. Cette confirmation concerne la fraude visant les clients ; elle ne confirme pas une intrusion dans les systèmes bancaires.
 
   **Assumption :** La campagne décrite relève principalement d'une fraude opérationnelle cyber-activée, avec indisponibilité temporaire de services comme effet secondaire. La nature exacte des liens, le nombre de victimes et l'existence de transactions frauduleuses ne sont pas établis.
 
-  **Unknown :** L'acteur, les domaines et numéros utilisés, le nombre de clients ciblés ou compromis, les pertes financières, l'origine de la campagne, toute prise de contrôle de compte, l'existence d'une intrusion dans l'infrastructure de Bank of Kigali et toute confirmation directe par la banque restent inconnus. Taarifa indique que ses demandes de clarification auprès de la banque n'avaient pas reçu de réponse au moment de la publication.
+  **Unknown :** L'acteur, les domaines et numéros utilisés, le nombre total de clients ciblés ou compromis, les pertes globales et l'origine de la campagne restent inconnus. Aucune intrusion dans l'infrastructure interne n'est établie.
 
-- **Périmètre et limites :** Analyse fondée sur l'article public de Taarifa ; aucun domaine de phishing, numéro, échantillon, journal ou donnée client n'a été fourni ou examiné. L'événement ne doit pas être présenté comme une fuite de données ou une compromission confirmée.
+- **Périmètre et limites :** Analyse fondée sur les communications publiques rapportées par Taarifa et The New Times ; aucun domaine de phishing, numéro, journal ou donnée client n'a été fourni ou examiné. L'événement ne doit pas être présenté comme une fuite de données ou une compromission de l'infrastructure bancaire.
 - **Recommandations SOC/CTI :** Collecter et bloquer les domaines, URL et numéros utilisés ; rechercher les authentifications inhabituelles et prises de contrôle de comptes ; corréler les connexions suspectes avec les transactions frauduleuses ; réinitialiser les accès des clients potentiellement compromis ; renforcer les communications antifraude sur les canaux officiels ; surveiller les campagnes usurpant l'identité de Bank of Kigali.
-- **Décision de comptage :** Incident conservé dans le référentiel d'avril pour sa date d'événement, mais **exclu des statistiques canoniques** tant que le statut `Under Investigation - Alleged` n'est pas corroboré. Il ne constitue pas un nouvel incident d'octobre.
-- **Source / élément observé :** [Taarifa Rwanda, 1er avril 2026](https://taarifa.rw/2026/04/01/cyberattack-disrupts-bank-of-kigali-operations-amid-phishing-scheme/).
+- **Décision de comptage :** Incident conservé dans le référentiel d'avril comme fraude client confirmée, mais maintenu hors du dénominateur canonique des compromissions et intrusions. Il ne constitue pas une fuite de données ni une intrusion bancaire confirmée, et ne constitue pas un nouvel incident d'octobre.
+- **Source / élément observé :** [Taarifa Rwanda, 6 avril 2026](https://taarifa.rw/2026/04/06/rib-arrests-five-suspects-in-bk-mobile-banking-scam-as-losses-remain-limited/) ; [The New Times, 2 avril 2026](https://www.newtimes.co.rw/article/34584/news/finance/banks-raise-alarm-over-surge-in-phishing-attempts/amp).
 
 #### 🇪🇹 Éthiopie - National Oil Ethiopia PLC (NOC) [Fuite de données]
 - **Date de publication initiale :** 1 avril 2026
