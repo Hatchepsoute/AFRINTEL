@@ -28,7 +28,7 @@ Du 1er janvier au 30 juin 2026, AFRINTEL recense **320 incidents ou cas document
 
 ## Méthodologie
 
-Les chiffres sont calculés depuis les fiches françaises, contrôlés contre les fiches anglaises, puis réutilisés dans les comparaisons et STIX. Le rattachement mensuel suit la publication ou la première observation documentée ; aucune date de compromission n'est déduite. Avril contient **65 fiches canoniques** dans le couple mensuel synchronisé actuel.
+Les chiffres sont calculés depuis les fiches françaises, contrôlés contre les fiches anglaises, puis réutilisés dans les comparaisons et STIX. Le rattachement mensuel suit la publication ou la première observation documentée ; aucune date de compromission n'est déduite. Avril contient **64 fiches canoniques** et un cas suivi séparément, exclu du total canonique.
 
 ## Visualisations
 

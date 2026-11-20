@@ -10,7 +10,7 @@
 
 [Version française](./README_FR.md) · [33 English case records](./victims.md) · [Verified statistics](./STATISTIQUES_2026-09.json)
 
-**Corpus period:** 1–30 September 2026  
+**Corpus period:** 1-30 September 2026  
 **Monitoring scope:** 54 African countries; 12 countries represented in the corpus  
 **Audience:** executives, CISOs, CIOs, risk managers and CTI/SOC analysts  
 **Sources:** ransomware-group disclosure sites on the Dark Web, underground forums, data leak and sales platforms on the Dark Web and Deep Web, official statements, specialist reporting and available samples.  
@@ -61,7 +61,7 @@ Two cases include a **confirmation of unauthorised access**: South Africa's **Re
 
 **CTI reading:** the overall volume is **stable (33 cases)**. Ransomware records rise from 18 to 20, while data leaks fall from 14 to 11. This shift reflects the AFRINTEL collection, not necessarily a change in real-world compromises.
 
-![August–September comparison](./assets/comparison_aug_sep_2026_EN.png)
+![August-September comparison](./assets/comparison_aug_sep_2026_EN.png)
 
 *Verified August baseline: 33 records (18 ransomware, 14 data leaks, one access sale), from the [AFRINTEL August 2026 report](../08-august/README.md). This compares **records included in monthly collections**, not the exact number of real-world intrusions occurring in each month. Collection coverage and later discoveries can influence the difference.*
 
@@ -301,9 +301,9 @@ A criminal posting **does not, by itself, justify shutting down a service**. Ini
 
 | Timeframe | Practical actions | Expected evidence of completion |
 |---|---|---|
-| **0–7 days** | Identify relevant assets and providers; retain logs and screenshots; review postings citing your organisation; enforce independent financial validation | Targeted inventory, assessment record, named owners |
-| **8–30 days** | Test bulk-export and abnormal-access alerts; audit privileged and third-party access; fix demonstrated exposures | Validated SIEM rules, access reviews, remediation tickets |
-| **30–90 days** | Exercise data-leak, supplier-incident and ransomware scenarios; restore backups in practice; improve crisis response | Exercise findings, restore-time evidence, improvement plan |
+| **0-7 days** | Identify relevant assets and providers; retain logs and screenshots; review postings citing your organisation; enforce independent financial validation | Targeted inventory, assessment record, named owners |
+| **8-30 days** | Test bulk-export and abnormal-access alerts; audit privileged and third-party access; fix demonstrated exposures | Validated SIEM rules, access reviews, remediation tickets |
+| **30-90 days** | Exercise data-leak, supplier-incident and ransomware scenarios; restore backups in practice; improve crisis response | Exercise findings, restore-time evidence, improvement plan |
 
 **Measure effectiveness:** sensitive-repository logging coverage, usable-alert rate, qualification delay, risky-access revocation time and restore-test results.
 

@@ -7,7 +7,7 @@ Cette carte présente une vue lisible et synthétique du paysage des cyberattaqu
 - les **secteurs les plus exposés**
 - un échantillon de **victimes représentatives**
 
-Pour le détail complet des 149 incidents, veuillez vous référer aux rapports mensuels et aux statistiques annuelles.
+Pour le détail complet des 234 incidents, veuillez vous référer aux rapports mensuels et aux statistiques annuelles.
 
 ## 1. Carte stratégique de l'écosystème
 

@@ -6,7 +6,7 @@
 **Public cible :** RSSI, DSI, responsables SOC/CERT, directions des risques et de la continuité d'activité.  
 **Période couverte :** 1er au 28 février 2026, sur la base des publications initiales décrites dans le corpus.  
 **Édition :** 6 novembre 2026 | **Diffusion :** TLP:CLEAR.  
-👉🏾 [English version](./README.md) | [Fiches victimes en français](./victims_FR.md) | [Victim records in English](./victims.md) | [Comparaison janvier–février](../../comparison/2026/01-january-february/README_FR.md)
+👉🏾 [English version](./README.md) | [Fiches victimes en français](./victims_FR.md) | [Victim records in English](./victims.md) | [Comparaison janvier-février](../../comparison/2026/01-january-february/README_FR.md)
 
 > **Méthodologie de preuve - lecture du rapport.** AFRINTEL consolide les investigations OSINT et analyses post-divulgation déjà consignées dans les fiches victimes. **Pour les dossiers ransomware**, les annonces et, lorsque publiés, les inventaires, aperçus et documents divulgués sont analysés afin de caractériser l'exposition. **Pour les fuites de données**, les échantillons disponibles sont examinés (structure, champs, cohérence, volume observé et risque métier). Le lecteur peut ainsi distinguer un contenu effectivement analysé d'un volume simplement revendiqué. Les confirmations officielles sont identifiées séparément ; le rapport ne suppose ni intrusion, ni chiffrement, ni exfiltration exhaustive sans pièces correspondantes.
 

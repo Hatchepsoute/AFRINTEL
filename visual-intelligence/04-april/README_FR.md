@@ -8,9 +8,9 @@ Ce dossier fournit une lecture visuelle des incidents cyber observés par AFRINT
 
 Les visualisations reposent sur les statistiques consolidées suivantes :
 
-- **60 incidents** au total
-- **20 attaques ransomware**
-- **40 fuites de données / ventes d’accès**
+- **64 incidents canoniques**
+- **21 attaques ransomware**
+- **32 fuites de données, 9 revendications DDoS et 2 ventes d’accès**
 - **16 pays touchés**
 - **30+ acteurs distincts**
 

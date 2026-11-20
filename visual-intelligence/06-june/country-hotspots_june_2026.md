@@ -23,7 +23,7 @@ The direct view contains 38 single-country records and two multi-country records
 | 🇲🇺 Mauritius | 1 | █ |
 | 🇾🇹 Mayotte | 1 | █ |
 | 🌍 Multi-country | 2 | ██ |
-| **Total** | **40** | |
+| **Total** | **47** | |
 
 ### Expanded African exposure
 
@@ -52,4 +52,4 @@ title African country occurrences - June 2026
 "Sierra Leone" : 1
 ```
 
-The expanded view totals 53 geographic occurrences across 20 African countries. It does not change the analytical total of 40 incidents.
+The expanded view totals 53 geographic occurrences across 20 African countries. It does not change the analytical total of 47 incidents.

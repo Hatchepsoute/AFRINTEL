@@ -4,13 +4,13 @@
 
 ## Objective
 
-This directory presents visual intelligence derived from the 40 incident cards documented by AFRINTEL in June 2026.
+This directory presents visual intelligence derived from the 47 incident cards documented by AFRINTEL in June 2026.
 
 ## Key figures
 
-- **40 unique incidents**
+- **47 unique incidents**
 - **20 ransomware incidents**
-- **20 data leaks or access sales**
+- **22 data leaks, 4 access sales and 1 system intrusion**
 - **14 direct country labels**
 - **20 African countries represented after expanding two multi-country records**
 - **53 geographic occurrences**
@@ -26,7 +26,7 @@ This directory presents visual intelligence derived from the 40 incident cards d
 |---|---|
 | [ecosystem-map_june_2026.md](./ecosystem-map_june_2026.md) | Selected actor, country and sector relationships |
 | [country-hotspots_june_2026.md](./country-hotspots_june_2026.md) | Direct and expanded geographic distribution |
-| [sector-map_june_2026.md](./sector-map_june_2026.md) | Distribution of the 40 incidents by explicit sector |
+| [sector-map_june_2026.md](./sector-map_june_2026.md) | Distribution of the 47 incidents by explicit sector |
 | [ransomware-vs-leaks_june_2026.md](./ransomware-vs-leaks_june_2026.md) | Ransomware and leak comparison |
 | [actors_june_2026.md](./actors_june_2026.md) | Most active actors and sources |
 | [afrintel_juin_2026_carte.png](./afrintel_juin_2026_carte.png) | June 2026 visual map |

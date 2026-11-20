@@ -8,9 +8,9 @@ Ce dossier fournit une vue visual intelligence des incidents cyber surveillés p
 
 Les visualisations reposent sur les statistiques consolidées suivantes :
 
-- **57 incidents au total**
+- **107 incidents au total**
 - **17 attaques ransomware**
-- **40 fuites de données / ventes d'accès**
+- **45 fuites de données, 43 revendications DDoS, 1 vente d'accès et 1 intrusion système**
 - **11 pays touchés + incidents multi-pays**
 - **25+ acteurs de menace distincts**
 

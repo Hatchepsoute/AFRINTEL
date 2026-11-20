@@ -37,6 +37,6 @@ title Répartition sectorielle - juin 2026
 | Alimentation / Boissons | 1 | 2,5 % |
 | Services aux entreprises / Technologie | 1 | 2,5 % |
 | Services de sécurité | 1 | 2,5 % |
-| **Total** | **40** | **100 %** |
+| **Total** | **47** | **100 %** |
 
 Government / Administration représente 12 fiches, suivi de Finance / Banking avec 6. Les 22 autres fiches sont réparties dans 12 secteurs explicites ; aucune catégorie sectorielle résiduelle n'est utilisée.

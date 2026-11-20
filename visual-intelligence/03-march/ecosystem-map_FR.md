@@ -14,7 +14,7 @@ Les publications issues des leak sites, forums et canaux underground sont trait�
 
 | Indicateur | Valeur |
 |---|---:|
-| Victimes | 41 |
+| Victimes | 45 |
 | Pays touchés | 12 (plus 1 incident multi-pays) |
 | Acteurs attribués | 26 |
 | Secteurs touchés | 38 |
@@ -34,9 +34,10 @@ xychart-beta
 ```mermaid
 pie
     title Typologie des incidents - Mars 2026
-    "Ransomware (21)" : 21
-    "Data Breach (19)" : 19
-    "Intrusion/Fraud (1)" : 1
+    "Ransomware (19)" : 19
+    "Fuite de données (24)" : 24
+    "Vente d'accès (1)" : 1
+    "Fraude opérationnelle (1)" : 1
 ```
 
 ## Acteurs les plus actifs

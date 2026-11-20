@@ -202,4 +202,4 @@ Mars 2025 compte **16 incidents documentés** dans **9 pays africains**. Le corp
 
 👉🏾 [Voir les victimes du mois](./victims_FR.md)
 
-**AFRINTEL** — TLP:CLEAR
+**AFRINTEL** - TLP:CLEAR

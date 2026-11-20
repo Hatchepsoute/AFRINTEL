@@ -2,7 +2,7 @@
 
 👉🏾 [French version](README_FR.md)
 
-This visual dashboard separates the **29 September publications** from the complete **41-record corpus**. The 12 earlier records integrated retrospectively are not added to the monthly charts.
+This visual dashboard presents the complete **33-record September corpus**. The figures derive from the validated bilingual victim pair.
 
 ## Available visuals
 
@@ -22,7 +22,7 @@ The figures are stored with the CTI report and describe monitoring observations:
 
 | Dimension | Main signal |
 |---|---|
-| Type | Ransomware: 20/29; Data Leak: 7/29; System Intrusion: 2/29 |
+| Type | Ransomware: 20/33; Data Leak: 11/33; System Intrusion: 2/33 |
 | Geography | South Africa: 8; Egypt: 7; Morocco: 3 |
 | Sector | Finance / Insurance / Compliance: 7 |
 | Displayed actor | `krybit`: 6; `TheGentlemen`: 4 |

@@ -1,14 +1,14 @@
 ![Visualization](https://img.shields.io/badge/Visualization-Map-blue)
 ![Data Source](https://img.shields.io/badge/Data%20Source-Leak%20Sites-black)
 ![Period](https://img.shields.io/badge/Period-2026--01%20to%202026--02-informational)
-![Coverage](https://img.shields.io/badge/Coverage-41%20Incidents-brightgreen)
+![Coverage](https://img.shields.io/badge/Coverage-57%20Incidents-brightgreen)
 ![Countries](https://img.shields.io/badge/Countries-18-yellow)
 ![Threat Actors](https://img.shields.io/badge/Threat%20Actors-12-orange)
 ![Sectors](https://img.shields.io/badge/Sectors-13-purple)
 ## 🔗 Threat Actor Mapping - January & February 2026
 👉🏾 [French version](./ecosystem-map_fr.md)
 
-## CTI Ecosystem Map - Africa Cyber Incidents (Jan-Feb 2026)
+## CTI Ecosystem Map - Africa Cyber Incidents (Jan-Feb 2026, 57 documented records)
 
 This visual map illustrates the relationships between threat actors, their victims, and the countries impacted across Africa during the first two months of 2026.
 ### Actors → victims → countries (January + February 2026)

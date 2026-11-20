@@ -17,6 +17,6 @@ title Principaux acteurs et sources - juin 2026
 | DeadLock | 4 | Ransomware | 🇬🇦 Gabon, 🇳🇬 Nigeria, 🇾🇹 Mayotte, 🇰🇪 Kenya |
 | LockBit 5 | 3 | Ransomware | 🇧🇼 Botswana, 🇿🇦 Afrique du Sud, 🇲🇺 Maurice |
 | 22 acteurs ou sources restants | 26 | Ransomware, fuites et ventes d'accès | Plusieurs pays |
-| **Total** | **40** | | |
+| **Total** | **47** | | |
 
 Les sept fiches anisanas2 concernent des cibles marocaines différentes. Elles établissent une activité répétée de la source, pas un vecteur d'accès initial commun ni une intrusion partagée.

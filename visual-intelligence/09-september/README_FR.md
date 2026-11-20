@@ -2,7 +2,7 @@
 
 👉🏾 [Version anglaise](README.md)
 
-Le tableau de bord visuel distingue la cohorte de **29 publications de septembre** du corpus complet de **41 fiches**. Les 12 fiches antérieures intégrées rétrospectivement ne sont pas ajoutées aux graphiques mensuels.
+Le tableau de bord visuel présente le corpus complet de septembre, soit **33 fiches**. Les chiffres dérivent du couple bilingue validé des victimes.
 
 ## Visuels disponibles
 
@@ -22,7 +22,7 @@ Les figures sont conservées avec le rapport CTI et décrivent des observations 
 
 | Dimension | Signal principal |
 |---|---|
-| Type | Ransomware : 20/29 ; Data Leak : 7/29 ; System Intrusion : 2/29 |
+| Type | Ransomware : 20/33 ; Data Leak : 11/33 ; System Intrusion : 2/33 |
 | Géographie | Afrique du Sud : 8 ; Égypte : 7 ; Maroc : 3 |
 | Secteur | Finance / Assurance / Conformité : 7 |
 | Acteur affiché | `krybit` : 6 ; `TheGentlemen` : 4 |

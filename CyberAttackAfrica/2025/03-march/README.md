@@ -4,7 +4,7 @@
 ![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue) ![Scope](https://img.shields.io/badge/Scope-Africa-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Period](https://img.shields.io/badge/Period-March%202025-blueviolet)
 
 **Audience:** CISOs, risk leaders, SOC/CERT managers and business continuity owners.
-**Period covered:** 1–31 March 2025, based on documented publications and events.
+**Period covered:** 1-31 March 2025, based on documented publications and events.
 **Distribution:** TLP:CLEAR.
 👉🏾 [French version](./README_FR.md) | [Detailed French records](./victims_FR.md) | [English corpus](./victims.md)
 
@@ -187,10 +187,10 @@ The mappings below support defensive hunting; they are not technical attribution
 
 | Horizon | Priority | Expected action | Implementation evidence |
 |---|---|---|---|
-| 0–72 hours | P0 | Review privileged accounts, MFA, VPN, backups and public services | Access review and restore test |
-| 7–30 days | P1 | Deploy ATO, mass-extraction, ransomware and web-integrity detections | Active rules and detection tests |
-| 30–90 days | P1 | Exercise a combined account-compromise, leak and outage crisis | Exercise report and tracked actions |
-| 30–90 days | P2 | Industrialize CTI monitoring and FR/EN parity controls | Observation traceability and automated checks |
+| 0-72 hours | P0 | Review privileged accounts, MFA, VPN, backups and public services | Access review and restore test |
+| 7-30 days | P1 | Deploy ATO, mass-extraction, ransomware and web-integrity detections | Active rules and detection tests |
+| 30-90 days | P1 | Exercise a combined account-compromise, leak and outage crisis | Exercise report and tracked actions |
+| 30-90 days | P2 | Industrialize CTI monitoring and FR/EN parity controls | Observation traceability and automated checks |
 
 ## 12. Detailed methodology
 
@@ -202,4 +202,4 @@ March 2025 records **16 documented incidents** across **9 African countries**. T
 
 👉🏾 [See monthly victims](./victims.md)
 
-**AFRINTEL** — TLP:CLEAR
+**AFRINTEL** - TLP:CLEAR

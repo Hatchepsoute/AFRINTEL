@@ -13,7 +13,7 @@ title Ransomware vs data leaks - June 2026
 |---|---:|---:|
 | 🟧 Ransomware | 20 | 50.0% |
 | 🟦 Data leaks and access sales | 20 | 50.0% |
-| **Total** | **40** | **100%** |
+| **Total** | **47** | **100%** |
 
 ## Expanded geographic comparison
 
