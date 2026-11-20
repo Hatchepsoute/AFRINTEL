@@ -139,6 +139,16 @@ Initial vectors, technical dates, exact volumes, exfiltration, and public DFIR c
 
 Phishing-resistant MFA, PAM, segmentation, immutable backups, centralized logging, and separate tracking of historical reposts.
 
+## Visualisations
+
+![Incident types](assets/h1/types_en.png)
+![Incident type distribution](assets/h1/types_pie_en.png)
+![Countries](assets/h1/countries_en.png)
+![Geographic distribution](assets/h1/countries_pie_en.png)
+![Sectors](assets/h1/sectors_en.png)
+![Sector distribution](assets/h1/sectors_pie_en.png)
+![Actors](assets/h1/actors_en.png)
+
 ## 14. Conclusion
 
 H1 2024 retains **46 canonical incidents**.

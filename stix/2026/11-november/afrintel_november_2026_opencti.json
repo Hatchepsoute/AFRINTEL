@@ -1,0 +1,364 @@
+{
+  "type": "bundle",
+  "id": "bundle--6d66b62b-f184-5de2-b23d-59549821a638",
+  "objects": [
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "name": "AFRINTEL",
+      "identity_class": "organization",
+      "description": "African Cyber Threat Intelligence project monitoring ransomware, data leaks, access sales, and extortion activity affecting African organizations. Maintained by Adama ASSIONGBON, SOC & Cyber Threat Intelligence Consultant.",
+      "external_references": [
+        {
+          "source_name": "AFRINTEL",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--707731a7-3035-5eec-b7ff-cdbebc34b59c",
+      "created": "2024-01-01T00:00:00Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "name": "Adama ASSIONGBON",
+      "identity_class": "individual",
+      "roles": [
+        "SOC Consultant",
+        "Cyber Threat Intelligence Consultant",
+        "AFRINTEL Maintainer"
+      ],
+      "description": "Author and maintainer of the AFRINTEL project.",
+      "external_references": [
+        {
+          "source_name": "LinkedIn",
+          "url": "https://www.linkedin.com/in/adama-assiongbon-9029893a/"
+        }
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--cb3afc58-e852-55a2-a798-2e3c0748dd56",
+      "created": "2026-11-20T11:29:08Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "name": "Sophia",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 11-november 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "11-november"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/11-november/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/11-november/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--515500ed-2b35-5e22-a3e6-dfa7424931b3",
+      "created": "2026-11-20T11:29:08Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "name": "Egyptian Drug Store (egyptiandrugstore.com)",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Egypt. Sector: Retail / Pharmacy / E-commerce.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Égypte. Secteur : Commerce / Pharmacie / E-commerce.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "egypt",
+        "pharmaceuticals"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/11-november/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/11-november/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://egyptiandrugstore.com"
+        }
+      ],
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_fr": "Égypte",
+      "x_afrintel_organization_fr": "Egyptian Drug Store (egyptiandrugstore.com)",
+      "x_afrintel_sector_raw": "Commerce / Pharmacie / E-commerce",
+      "x_afrintel_sector_raw_en": "Retail / Pharmacy / E-commerce",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/11-november/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/11-november/victims.md",
+      "sectors": [
+        "pharmaceuticals"
+      ]
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--91f8ac80-643e-5e48-8bdf-36637b43e38e",
+      "created": "2026-11-20T11:29:08Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "name": "AFRINTEL November 2026 incident 01: Egyptian Drug Store (egyptiandrugstore.com)",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Egyptian Drug Store (egyptiandrugstore.com) in Egypt on November 16, 2026. The source actor is listed as Sophia. Status: Claim - Data Sample Published. Sector: Retail / Pharmacy / E-commerce. Source summary: Egyptian Drug Store is presented in the publication as an online store associated with pharmacy or health-product distribution activity. The domain displayed in the publication is egyptiandrugstore.com.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Egyptian Drug Store (egyptiandrugstore.com) en Égypte, à la date du 16 novembre 2026. L'acteur source est indiqué comme Sophia. Statut : Claim - Data Sample Published. Secteur : Commerce / Pharmacie / E-commerce. Résumé de la source : Egyptian Drug Store est présenté dans la publication comme un site de commerce en ligne associé à une activité de pharmacie ou de distribution de produits de santé. Le domaine affiché dans la publication est egyptiandrugstore.com.",
+      "first_seen": "2026-11-16T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "egypt",
+        "pharmaceuticals"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/11-november/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/11-november/victims.md"
+        },
+        {
+          "source_name": "website",
+          "url": "https://egyptiandrugstore.com"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 1,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Egypt",
+      "x_afrintel_country_fr": "Égypte",
+      "x_afrintel_sector_raw": "Commerce / Pharmacie / E-commerce",
+      "x_afrintel_sector_raw_en": "Retail / Pharmacy / E-commerce",
+      "x_afrintel_actor": "Sophia",
+      "x_afrintel_actor_fr": "Sophia",
+      "x_afrintel_date_display": "16 novembre 2026",
+      "x_afrintel_date_display_en": "November 16, 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/11-november/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/11-november/victims.md",
+      "x_afrintel_confidence_level": "Medium",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d2144c77-c0d8-5a66-8945-f772de6444f4",
+      "created": "2026-11-20T11:29:08Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--91f8ac80-643e-5e48-8bdf-36637b43e38e",
+      "target_ref": "threat-actor--cb3afc58-e852-55a2-a798-2e3c0748dd56",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--22808548-0d4e-5a40-b62b-fdcf171572c9",
+      "created": "2026-11-20T11:29:08Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--cb3afc58-e852-55a2-a798-2e3c0748dd56",
+      "target_ref": "identity--515500ed-2b35-5e22-a3e6-dfa7424931b3",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--4c61d98e-94f3-5514-9429-761e4a7c0af3",
+      "created": "2026-11-20T11:29:08Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--91f8ac80-643e-5e48-8bdf-36637b43e38e",
+      "target_ref": "identity--515500ed-2b35-5e22-a3e6-dfa7424931b3",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--10095241-649d-57f1-952a-7dbc7c47692b",
+      "created": "2026-11-20T11:29:08Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "name": "Blacknet00",
+      "description": "Threat actor, ransomware group, or source referenced by AFRINTEL for 11-november 2026. Claims are unverified unless stated otherwise.",
+      "labels": [
+        "afrintel",
+        "africa",
+        "claim-unverified",
+        "2026",
+        "11-november"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/11-november/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/11-november/victims.md"
+        }
+      ]
+    },
+    {
+      "type": "identity",
+      "spec_version": "2.1",
+      "id": "identity--642425ac-f841-507b-9ba2-99097aa75127",
+      "created": "2026-11-20T11:29:08Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "name": "Ard Essalam 2 School, Salé",
+      "identity_class": "organization",
+      "description": "## English\n\nVictim entity or affected dataset recorded by AFRINTEL in Morocco. Sector: Education / Private education.\n\n## Français\n\nEntité victime ou jeu de données affecté recensé par AFRINTEL en Maroc. Secteur : Éducation / Enseignement privé.",
+      "labels": [
+        "afrintel",
+        "victim",
+        "morocco"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/11-november/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/11-november/victims.md"
+        }
+      ],
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_organization_fr": "Établissement Ard Essalam 2, Salé",
+      "x_afrintel_sector_raw": "Éducation / Enseignement privé",
+      "x_afrintel_sector_raw_en": "Education / Private education",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/11-november/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/11-november/victims.md"
+    },
+    {
+      "type": "incident",
+      "spec_version": "2.1",
+      "id": "incident--5171a0dc-9ca3-5167-9fc3-67416c335363",
+      "created": "2026-11-20T11:29:08Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "name": "AFRINTEL November 2026 incident 02: Ard Essalam 2 School, Salé",
+      "description": "## English\n\nAFRINTEL recorded a publicly claimed data leak affecting Ard Essalam 2 School, Salé in Morocco on November 17, 2026. The source actor is listed as Blacknet00. Status: Claim - Data Sample Published. Sector: Education / Private education. Source summary: Ard Essalam 2 is a private school located in Salé. The visible certificates carry the header of the Regional Academy of Education and Training of Rabat-Salé-Kénitra and the Salé Provincial Directorate. Public sources also associate “مؤسسة أرض السلام 2” with Salé, but they do not confirm the incident.\n\n## Français\n\nAFRINTEL a recensé une revendication publique de type fuite de données concernant Établissement Ard Essalam 2, Salé en Maroc, à la date du 17 novembre 2026. L'acteur source est indiqué comme Blacknet00. Statut : Claim - Data Sample Published. Secteur : Éducation / Enseignement privé. Résumé de la source : Ard Essalam 2 est un établissement scolaire privé situé à Salé. Les certificats visibles portent l'en-tête de l'Académie régionale d'éducation et de formation de Rabat-Salé-Kénitra et de la Direction provinciale de Salé. Des sources publiques associent également l'établissement « مؤسسة أرض السلام 2 » à Salé, sans constituer une confirmation de l'incident.",
+      "first_seen": "2026-11-17T00:00:00Z",
+      "labels": [
+        "afrintel",
+        "africa",
+        "data-leak",
+        "data-sample-published",
+        "morocco"
+      ],
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ],
+      "external_references": [
+        {
+          "source_name": "AFRINTEL victims_FR.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/11-november/victims_FR.md"
+        },
+        {
+          "source_name": "AFRINTEL victims.md",
+          "url": "https://github.com/Hatchepsoute/AFRINTEL/blob/main/CyberAttackAfrica/2026/11-november/victims.md"
+        }
+      ],
+      "x_opencti_incident_type": "data-leak",
+      "x_afrintel_incident_index": 2,
+      "x_afrintel_status": "Claim - Data Sample Published",
+      "x_afrintel_country": "Morocco",
+      "x_afrintel_country_fr": "Maroc",
+      "x_afrintel_sector_raw": "Éducation / Enseignement privé",
+      "x_afrintel_sector_raw_en": "Education / Private education",
+      "x_afrintel_actor": "Blacknet00",
+      "x_afrintel_actor_fr": "Blacknet00",
+      "x_afrintel_date_display": "17 novembre 2026",
+      "x_afrintel_date_display_en": "November 17, 2026",
+      "x_afrintel_source_path": "CyberAttackAfrica/2026/11-november/victims_FR.md",
+      "x_afrintel_source_path_en": "CyberAttackAfrica/2026/11-november/victims.md",
+      "x_afrintel_confidence_level": "Medium",
+      "x_afrintel_impact_level": "Level 4"
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--886d4463-a367-5f5e-bf77-0de58677b5c7",
+      "created": "2026-11-20T11:29:08Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "relationship_type": "attributed-to",
+      "source_ref": "incident--5171a0dc-9ca3-5167-9fc3-67416c335363",
+      "target_ref": "threat-actor--10095241-649d-57f1-952a-7dbc7c47692b",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2be9de80-c664-5206-bc35-4bf53a7779c1",
+      "created": "2026-11-20T11:29:08Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--10095241-649d-57f1-952a-7dbc7c47692b",
+      "target_ref": "identity--642425ac-f841-507b-9ba2-99097aa75127",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--d7e2141c-24cf-5f5e-9b31-5f14becb6f0d",
+      "created": "2026-11-20T11:29:08Z",
+      "modified": "2026-11-20T11:29:08Z",
+      "relationship_type": "targets",
+      "source_ref": "incident--5171a0dc-9ca3-5167-9fc3-67416c335363",
+      "target_ref": "identity--642425ac-f841-507b-9ba2-99097aa75127",
+      "created_by_ref": "identity--d3497218-f905-57e1-a219-a8700a85eb4a",
+      "object_marking_refs": [
+        "marking-definition--94868c89-83c2-464b-929b-a1a8aa3c8487"
+      ]
+    }
+  ]
+}

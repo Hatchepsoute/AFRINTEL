@@ -1,6 +1,13 @@
 # AFRINTEL CTI Report - Cyber Threats in Africa - March 2024
 
-👉🏾 [Version française](./README_FR.md)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL) ![Scope](https://img.shields.io/badge/Scope-Africa-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Period](https://img.shields.io/badge/Period-March%202024-blueviolet)
+
+**Audience:** CISOs, SOC/CERT leads, risk committees and business continuity managers.<br>
+**Period:** March 1–31, 2024, based on the documented canonical records.<br>
+**Edition:** audited November 20, 2026 | **Distribution:** TLP:CLEAR.<br>
+👉🏾 [Version française](./README_FR.md) | [Detailed records in English](./victims.md) | [French records](./victims_FR.md)
+
+> **Evidence method.** This report derives from the validated March 2024 victim cards. Claims, victim confirmations, samples and confidence levels remain separate. A criminal publication is not treated as proof of encryption, exfiltration or full compromise without supporting evidence.
 
 ## 1. Executive summary
 
@@ -20,6 +27,8 @@ In March 2024, AFRINTEL retains **9 canonical cyber incidents across 6 countries
 | System Intrusion | 1 | 0 | -1 (-100.0%) |
 | Malware | 0 | 0 | Stable |
 | Operational Fraud | 0 | 0 | Stable |
+
+![Comparaison mensuelle](assets/comparaison_EN.png)
 
 ### 1.2 Comparative analysis
 
@@ -48,6 +57,9 @@ Monthly volume **increases by 1 incident(s)**. Structural changes are: Ransomwar
 | Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
 
+![Types d’incident](assets/types_EN.png)
+![Répartition des types](assets/types_pie_EN.png)
+
 ```mermaid
 pie showData
     title Incident types - March 2024
@@ -66,6 +78,9 @@ pie showData
 | Namibia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Morocco | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
+
+![Pays](assets/pays_EN.png)
+
 ## 5. Regional distribution
 
 | Region | Records | Share |
@@ -73,6 +88,10 @@ pie showData
 | North Africa | 5 | 55.6% |
 | Southern Africa | 3 | 33.3% |
 | West Africa | 1 | 11.1% |
+
+
+![Régions](assets/regions_EN.png)
+![Répartition régions](assets/regions_pie_EN.png)
 
 ## 6. Sector distribution
 
@@ -86,6 +105,10 @@ pie showData
 | Education / University | 1 | 11.1% |
 | Manufacturing / Industry | 1 | 11.1% |
 
+
+![Secteurs](assets/secteurs_EN.png)
+![Répartition secteurs](assets/secteurs_pie_EN.png)
+
 ## 7. Actors / groups
 
 | Actor / Group | Records | Share |
@@ -94,6 +117,9 @@ pie showData
 | ransomhub | 2 | 22.2% |
 | Unknown | 2 | 22.2% |
 | hunters | 1 | 11.1% |
+
+
+![Acteurs / groupes](assets/acteurs_EN.png)
 
 ## 8. Evidence maturity
 
@@ -110,6 +136,9 @@ pie showData
 | Low | 7 | 77.8% |
 | Very High | 1 | 11.1% |
 | Medium | 1 | 11.1% |
+
+
+![Maturité des preuves](assets/preuves_EN.png)
 
 ## 9. Timeline
 

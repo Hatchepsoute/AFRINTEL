@@ -16,7 +16,7 @@ At sector level, the most represented categories are **Government / Administrati
 
 Evidence maturity remains variable: **19 records** are unverified claims or claims accompanied by samples. AFRINTEL maintains a strict separation between **observed facts, claims, corroboration, official confirmation, and technical unknowns**.
 
-Compared with March, monthly volume **increases by 6 records**. The most visible changes are Data Leak 2->11 (+9), Ransomware 9->7 (-2), Account Takeover 2->0 (-2).
+Compared with March, monthly volume **increases by 5 records, from 16 to 21 (+31.3%)**. The most visible changes are Data Leak 2->11 (+9), Ransomware 9->7 (-2), DDoS 0->1 (+1), Account Takeover 2->0 (-2), and System Intrusion 1->0 (-1).
 
 > **Reading note:** AFRINTEL figures describe documented incidents and the visibility of observed threats. They are not an exhaustive measurement of every cyberattack that actually occurred across Africa.
 
@@ -24,16 +24,18 @@ Compared with March, monthly volume **increases by 6 records**. The most visible
 
 | Indicator | March 2025 | April 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 15 | 21 | **+6 (+40.0%)** |
+| Total incidents | 16 | 21 | **+5 (+31.3%)** |
 | Ransomware | 9 | 7 | **-2 (-22.2%)** |
 | Data Leak | 2 | 11 | **+9 (+450.0%)** |
-| Access Sale | 1 | 2 | **+1 (+100.0%)** |
+| Access Sale | 2 | 2 | **Stable** |
 | DDoS | 0 | 1 | **+1 (new)** |
 | Defacement | 0 | 0 | **Stable** |
 | Account Takeover | 2 | 0 | **-2 (-100.0%)** |
 | System Intrusion | 1 | 0 | **-1 (-100.0%)** |
 | Malware | 0 | 0 | **Stable** |
 | Operational Fraud | 0 | 0 | **Stable** |
+
+![Incident-type comparison - March and April 2025](assets/comparaison_en.png)
 
 
 
@@ -64,10 +66,10 @@ Compared with March, monthly volume **increases by 6 records**. The most visible
 
 | Incident type | Records | Share |
 |---|---:|---:|
-| Ransomware | 7 | 35.0% |
+| Ransomware | 7 | 33.3% |
 | Data Leak | 11 | 52.4% |
-| Access Sale | 2 | 10.0% |
-| DDoS | 1 | 5.0% |
+| Access Sale | 2 | 9.5% |
+| DDoS | 1 | 4.8% |
 | Defacement | 0 | 0.0% |
 | Account Takeover | 0 | 0.0% |
 | System Intrusion | 0 | 0.0% |
@@ -83,6 +85,9 @@ pie showData
     "Access Sale" : 2
     "DDoS" : 1
 ```
+
+![Incident types - April 2025](assets/types_en.png)
+![Incident-type share - April 2025](assets/types_pie_en.png)
 
 ## 4. Geographic distribution
 
@@ -100,32 +105,38 @@ pie showData
 
 > `Operational Fraud = 0` this month; the column is omitted for readability.
 
+![Countries represented - April 2025](assets/pays_en.png)
+
 ## 5. Regional distribution
 
 | Region | Records | Share |
 |---|---:|---:|
 | North Africa | 16 | 76.2% |
-| West Africa | 3 | 15.0% |
-| Southern Africa | 2 | 10.0% |
+| West Africa | 3 | 14.3% |
+| Southern Africa | 2 | 9.5% |
 | **Total** | **21** | **100%** |
 
 The leading region is **North Africa with 16 records (76.2%)**.
+
+![Regional distribution - April 2025](assets/regions_en.png)
 
 ## 6. Sector impact
 
 | Sector | Records | Share | Activity |
 |---|---:|---:|---|
-| Government / Administration | 6 | 30.0% | ██████ |
-| Finance / Banking | 4 | 20.0% | ████ |
-| Technology / IT | 2 | 10.0% | ██ |
-| Telecommunications | 2 | 10.0% | ██ |
-| Defense / Security | 1 | 5.0% | █ |
-| Professional / Business Services | 1 | 5.0% | █ |
+| Government / Administration | 6 | 28.6% | ██████ |
+| Finance / Banking | 4 | 19.0% | ████ |
+| Technology / IT | 2 | 9.5% | ██ |
+| Telecommunications | 2 | 9.5% | ██ |
+| Defense / Security | 1 | 4.8% | █ |
+| Professional / Business Services | 1 | 4.8% | █ |
 | Education / University | 2 | 9.5% | ██ |
-| Agriculture / Agribusiness | 1 | 5.0% | █ |
-| Manufacturing / Industry | 1 | 5.0% | █ |
-| Healthcare / Medical | 1 | 5.0% | █ |
+| Agriculture / Agribusiness | 1 | 4.8% | █ |
+| Manufacturing / Industry | 1 | 4.8% | █ |
+| Healthcare / Medical | 1 | 4.8% | █ |
 | **Total** | **21** | **100%** | |
+
+![Leading sectors - April 2025](assets/secteurs_en.png)
 
 ## 7. Actors / groups
 
@@ -150,17 +161,21 @@ The leading region is **North Africa with 16 records (76.2%)**.
 | gunra | 1 | █ |
 | Oxrau1 | 1 | █ |
 
+![Actors and groups - April 2025](assets/acteurs_en.png)
+
 ## 8. Evidence maturity
 
 | Evidence maturity | Records | Share |
 |---|---:|---:|
 | Claim - Unverified | 10 | 47.6% |
-| Claim - Data Sample Published | 9 | 45.0% |
-| Victim/Government/Authority Confirmed | 1 | 5.0% |
-| Corroborated / Secondary evidence | 1 | 5.0% |
+| Claim - Data Sample Published | 9 | 42.9% |
+| Victim/Government/Authority Confirmed | 1 | 4.8% |
+| Corroborated / Secondary evidence | 1 | 4.8% |
 | **Total** | **21** | **100%** |
 
 Evidence statuses describe the available validation level; they do not change the technical incident type.
+
+![Evidence maturity - April 2025](assets/preuve_en.png)
 
 ## 9. Timeline
 

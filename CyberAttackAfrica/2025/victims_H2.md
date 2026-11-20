@@ -1,6 +1,6 @@
 # AFRINTEL - African victims - H2 2025
 
-**116 documented cyber incidents under AFRINTEL.**
+**119 documented cyber incidents under AFRINTEL.**
 
 > **Reading dates:** `Incident date` indicates when the event occurred or was detected according to available evidence. `Initial publication date` indicates when it was first publicly disclosed, claimed or communicated. The two dates may fall in different months.
 
@@ -625,6 +625,20 @@
 - **Analysis:** The publication dated 11 September 2025 claims a database of 245 Angolan government employees and lists fields for employee identifiers, names, dates of birth, administrative area and function. The local TXT file supplied for review contains 244 non-empty comma-separated lines, including one header and approximately 243 data rows, with six fields per row. This supports the existence of a structured employee-data sample but does not independently confirm the advertised total, the exact government body, the dataset's authenticity or its completeness. AFRINTEL does not reproduce any names, identifiers, dates of birth or other personal data from the file.
 
 ### 12 September 2025
+#### 🇹🇳 Tunisia - TOPNET
+- **Initial publication date:** 11 September 2025 at 5:33 AM (forum-displayed time; timezone not specified)
+- **Actor / Group:** Hider_N3x
+- **Sector:** Telecommunications / Internet Service Provider
+- **Website:** [topnet.tn](https://www.topnet.tn)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** High
+- **Impact level:** Level 4
+- **Victim Description:** TOPNET is a Tunisian Internet and telecommunications service provider.
+- **Analysis:** A post attributed to Hider_N3x claims to have compromised TOPNET and offers a database, website files and more than 5,000 accounts for sale. The associated screenshots display TOPNET account pages containing personal information, contact details, addresses and authentication fields. AFRINTEL does not reproduce any raw value, password or identifier. The visible material supports the existence of a sensitive sample presented as associated with TOPNET, but does not establish corpus completeness, the actual number of affected accounts, the access vector or official victim confirmation.
+
+### 11 September 2025
+
 #### 🇨🇩 Congo (DRC) - Public Administration Reform Fund (FRAP)
 - **Incident type:** Data Leak
 - **Actor / Group:** privilege
@@ -662,6 +676,20 @@
 - **Victim Description:** Egyptian publisher of integrated management solutions (accounting, HR, production) used by numerous companies in the Middle East and Africa.
 
 ### 22 September 2025
+#### 🇩🇿 Algeria - Ministry of Finance
+- **Initial publication date:** September 19, 2025 at 10:29 AM (forum-displayed time; timezone not specified)
+- **Actor / Group:** sarah8toumi (source account)
+- **Sector:** Government / Finance
+- **Website:** Not specified
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Low
+- **Impact level:** Level 3
+- **Victim Description:** The Algerian Ministry of Finance is the government institution responsible for national fiscal and financial administration.
+- **Analysis:** A forum post dated September 19, 2025 offers for sale an internal archive attributed to the ministry, described as containing HR, appointments and internal correspondence documents. The post displays a single PDF sample link. The visible elements establish the existence of a sales offer and an advertised sample, but do not confirm the archive's authenticity, completeness, access vector or official victim confirmation. Its relationship to a later post attributed to `jrintel` in January 2026 is not established.
+
+### 22 September 2025
+
 #### 🇲🇦 Morocco - Fractalite (fractalite.com)
 - **Ransomware Group:** killsec
 - **Sector:** Technology / Digital Services / Software Development
@@ -1038,6 +1066,25 @@
 - **Public sources:** [The Star - restoration statement](https://www.the-star.co.ke/news/2025-11-17-state-websites-restored-after-cyber-breach) | [The Star - affected sites](https://www.the-star.co.ke/news/2025-11-17-hackers-take-down-key-government-websites)
 
 ### 25 November 2025
+#### 🇰🇲🇨🇲 Comoros / Cameroon - Comores Telecom, Comoros Customs and Cameroonian Ministry of Justice
+- **Incident date:** Not established
+- **Initial publication date:** November 18, 2025, according to the visible post timestamp
+- **AFRINTEL discovery / integration date:** October 16, 2026
+- **Countries concerned:** Comoros and Cameroon
+- **Actor / Group:** Ahlul Sahara
+- **Sector:** Telecommunications / Customs / Government / Justice
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Confidence level:** Medium
+- **Impact level:** Level 4
+- **Sources / Evidence:** forum-post screenshot supplied to AFRINTEL on October 16, 2026; original URL not provided
+
+- **Description:** A post titled “Comores Telecom / Douanes Comores / Cameroun MinJustice” claims a multi-country leak attributed to Ahlul Sahara. The visible content associates material presented as originating from Comores Telecom and Comoros Customs with a Joomla configuration identifying the Cameroonian Ministry of Justice (`minjustice`).
+- **Analysis:** The visible material includes user accounts, internal messages, administrative correspondence and application-configuration parameters. The post also exposes authentication and internal-service connection elements; AFRINTEL does not reproduce any sensitive value. These elements support the existence of a published sample and an apparent association with Comorian and Cameroonian environments, but do not independently confirm initial access, the technical provenance of every file, complete exfiltration, the number of people affected or official confirmation by the three organisations.
+- **Counting rule:** one canonical multi-country incident in the global total; two geographic occurrences, one for Comoros and one for Cameroon.
+
+### 25 November 2025
+
 #### 🇪🇬 Egypt - LAMAICA, Egypt
 - **Ransomware Group:** nightspire
 - **Sector:** Wood and Building Materials Manufacturing
@@ -1157,6 +1204,57 @@
 - **Victim Description:** La Rabta Hospital is one of the largest hospital complexes in Tunisia.
 
 ### 15 December 2025
+#### 🇨🇮 Ivory Coast - National Agency for Rural Development (ANADER) (`anader.ci`)
+- **Initial publication date:** December 13, 2025 at 15:59
+- **Incident date:** Not established
+- **Actor / Group:** Ahlul Sahara
+- **Sector:** Agriculture / Rural development / Public administration
+- **Website:** [anader.ci](https://www.anader.ci/)
+- **Status:** Claim - Data Sample Published
+- **Incident type:** Data Leak
+- **Claimed volume:** 11.4 MB for an SQL and JSON dump, unverified
+- **Confidence level:** Medium for the existence of the publication and the structural consistency of the visible sample; technical provenance and completeness remain uncorroborated
+- **Impact level:** Level 4
+- **Source type:** Forum publication and sample content supplied as a visual capture
+
+- **Victim description:** The National Agency for Rural Development (ANADER) is an Ivorian institution associated with rural-development support. The domain presented in the publication is `anader.ci`.
+
+- **Analysis:** The December 13, 2025 publication claims an “ANADER data dump” presented as a raw database dump in UTF-8 SQL and JSON, with an advertised size of **11.4 MB**. It describes `users`, `contacts` and `zones` tables, a Symfony / Doctrine ORM structure and fields relating to accounts, roles, salts, password hashes, email addresses, usernames and metadata connections.
+
+  The visible content presents several user-table records with account identifiers, usernames, email addresses, activation states, administrative roles, salts and encoded password values. The visible values are intentionally omitted from this record. The publication describes the password values as derived from a PBKDF2-HMAC algorithm and the salts as random Base64 strings; these claims were not cryptographically verified against the original file. The presence of accounts carrying roles such as super-administrator or administrator indicates potentially high risk, but does not establish that the passwords or accounts remain valid.
+
+  A contacts table exposes, in the visible sample, function labels and telephone numbers. A zones table contains Ivorian locality names and regional-directorate identifiers. The publication also mentions an `acteurs` table with indexes linking users, actor types, zones, departments, sub-prefectures and ANADER directorates, as well as an `agent` table linked to regional directorates and zones. This structure is compatible with an application model for user management, contacts and territorial assignments.
+
+  **Observed:** Publication timestamped December 13, 2025 at 15:59; `anader.ci` displayed; claimed raw 11.4 MB SQL/JSON dump; `users`, `contacts` and `zones` tables cited; visible account, role, salt, password-hash, email, contact and regional-mapping fields; alleged indexes linking users, actors, zones and directorates.
+
+  **Assumption:** Consistency between the ANADER domain, the announced Symfony / Doctrine structure, administrative roles, Ivorian zone references and territorial relationships makes contextual association of the sample with an ANADER-related application plausible. This does not confirm that the dump came from the agency's servers, that it was acquired by the publication author or that account access remains possible.
+
+  **Unknown:** Source system, access vector and date, acquisition method, actual account and contact counts, dump integrity, validity of hashes, salts or sessions, table completeness, additional data in the SQL/JSON, exfiltration, confirmation by ANADER and notification to a competent authority.
+
+- **Analysis scope and limitations:** Structural and preliminary analysis based on a visual capture and the visible publication text; the original SQL/JSON dump was not supplied. Names, email addresses, phone numbers, identifiers, salts, hashes, detailed roles and other raw values are not reproduced, tested or added to the repository. The advertised 11.4 MB volume and complete table set were not independently verified.
+- **Risk assessment:** If authentic, the sample could facilitate account takeover, credential stuffing, targeted phishing, staff impersonation, telephone fraud, mapping of regional deployments and secondary access to administrative functions. The presence of privileged roles and territorial-assignment data warrants priority response, without assuming that the secrets remain exploitable.
+- **SOC / CTI recommendations:** Preserve Symfony, Doctrine, web, database, IAM and VPN logs; reset privileged accounts and invalidate sessions after scoping; investigate SQL/JSON exports, bulk queries and outbound transfers; verify secret rotation and hash resilience; review links between accounts, zones, directorates and actors; monitor impersonation campaigns targeting staff and regional offices; notify relevant parties under applicable regulations.
+- **Sources / Evidence:** Forum publication supplied to AFRINTEL and a visual capture taken on November 18, 2026 showing the post dated December 13, 2025; [ANADER associated website](https://www.anader.ci/). No dump, identifier, secret, hash, contact or raw personal value is published.
+
+### 15 December 2025
+
+#### 🇹🇳 Tunisia - Examens.tn
+- **Actor / Group:** AshleyWood2022
+- **Sector:** Education / University
+- **Website:** [examens.tn](https://examens.tn/)
+- **Status:** Data Fully Published
+- **Incident type:** Data Leak
+- **Incident / initial publication date:** 15 December 2025 (displayed publication timestamp)
+- **Follow-up / observed modification date:** 23 June 2026 (later modification visible; update, republication or new volume not established)
+- **Confidence level:** High for the existence of the publication and sample; initial access and completeness unknown
+- **Impact level:** Level 3
+- **Victim description:** Examens.tn is a Tunisian educational platform providing courses, exercises and exam-preparation resources for students and teachers.
+- **Analysis:** The publication presents a database as complete, including an approximately **717 MB** `examens.sql` dump and `wp_users` and `wp_usermeta` exports. AFRINTEL's documented local analysis confirms exposure of **3,697 user accounts** and **74,891 metadata records**, including login identifiers, email addresses, display names, WordPress password hashes, account statuses, payment information and user roles, including an administrator account. Session tokens, password-reset tokens, Google Site Kit OAuth data and an application password are also reported in the metadata. No raw secret or personal data is published.
+- **Timeline and limitations:** The capture displays an initial publication on 15 December 2025 and a modification on 23 June 2026. It is not established whether this represents the same leak being updated, a new attack by another actor, a new sample or an unremediated vulnerability. No new actor, new sample, new fingerprint or distinct access is established.
+- **Sources / Evidence:** publication screenshot supplied to AFRINTEL; local analysis of the associated dump and exports. Raw data, credentials, passwords and tokens are not published.
+
+### 15 December 2025
+
 #### 🇹🇳 Tunisia - Tunisian Society of Radiology (strtn.org)
 - **Ransomware Group:** nova
 - **Sector:** Health / Medical Association / Education

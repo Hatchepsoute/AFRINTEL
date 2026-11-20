@@ -1,6 +1,13 @@
 # AFRINTEL CTI Report - Cyber Threats in Africa - December 2024
 
-👉🏾 [Version française](./README_FR.md)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL) ![Scope](https://img.shields.io/badge/Scope-Africa-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Period](https://img.shields.io/badge/Period-December%202024-blueviolet)
+
+**Audience:** CISOs, SOC/CERT leads, risk committees and business continuity managers.<br>
+**Period:** December 1–31, 2024, based on the documented canonical records.<br>
+**Edition:** audited November 20, 2026 | **Distribution:** TLP:CLEAR.<br>
+👉🏾 [Version française](./README_FR.md) | [Detailed records in English](./victims.md) | [French records](./victims_FR.md)
+
+> **Evidence method.** This report derives from the validated December 2024 victim cards. Claims, victim confirmations, samples and confidence levels remain separate. A criminal publication is not treated as proof of encryption, exfiltration or full compromise without supporting evidence.
 
 ## 1. Executive summary
 
@@ -20,6 +27,8 @@ In December 2024, AFRINTEL retains **18 canonical cyber incidents across 13 coun
 | System Intrusion | 0 | 0 | Stable |
 | Malware | 0 | 0 | Stable |
 | Operational Fraud | 0 | 0 | Stable |
+
+![Comparaison mensuelle](assets/comparaison_EN.png)
 
 ### 1.2 Comparative analysis
 
@@ -42,11 +51,14 @@ Monthly volume **increases by 3 incidents**. Structural changes are: Data Leak 1
 | Data Leak | 5 | 27.8% |
 | Access Sale | 1 | 5.6% |
 | DDoS | 0 | 0.0% |
-| Defacement | 1 | 6.2% |
+| Defacement | 1 | 5.6% |
 | Account Takeover | 0 | 0.0% |
 | System Intrusion | 0 | 0.0% |
 | Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
+
+![Types d’incident](assets/types_EN.png)
+![Répartition des types](assets/types_pie_EN.png)
 
 ```mermaid
 pie showData
@@ -75,6 +87,9 @@ pie showData
 | Kenya | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Morocco | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
+
+![Pays](assets/pays_EN.png)
+
 ## 5. Regional distribution
 
 | Region | Records | Share |
@@ -83,6 +98,10 @@ pie showData
 | Southern Africa | 5 | 31.2% |
 | East Africa | 3 | 18.8% |
 | West Africa | 2 | 12.5% |
+
+
+![Régions](assets/regions_EN.png)
+![Répartition régions](assets/regions_pie_EN.png)
 
 ## 6. Sector distribution
 
@@ -101,6 +120,10 @@ pie showData
 | Transport / Logistics | 1 | 6.2% |
 | Healthcare / Medical | 1 | 6.2% |
 
+
+![Secteurs](assets/secteurs_EN.png)
+![Répartition secteurs](assets/secteurs_pie_EN.png)
+
 ## 7. Actors / groups
 
 | Actor / Group | Records | Share |
@@ -116,6 +139,9 @@ pie showData
 | ransomhouse | 1 | 6.2% |
 | arcusmedia | 1 | 6.2% |
 | Satanic | 1 | 6.2% |
+
+
+![Acteurs / groupes](assets/acteurs_EN.png)
 
 ## 8. Evidence maturity
 
@@ -134,6 +160,9 @@ pie showData
 | Medium | 4 | 25.0% |
 | Very High | 3 | 18.8% |
 | High | 1 | 6.2% |
+
+
+![Maturité des preuves](assets/preuves_EN.png)
 
 ## 9. Timeline
 

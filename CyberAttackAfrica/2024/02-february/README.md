@@ -1,6 +1,13 @@
 # AFRINTEL CTI Report - Cyber Threats in Africa - February 2024
 
-👉🏾 [Version française](./README_FR.md)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL) ![Scope](https://img.shields.io/badge/Scope-Africa-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Period](https://img.shields.io/badge/Period-February%202024-blueviolet)
+
+**Audience:** CISOs, SOC/CERT leads, risk committees and business continuity managers.<br>
+**Period:** February 1–29, 2024, based on the documented canonical records.<br>
+**Edition:** audited November 20, 2026 | **Distribution:** TLP:CLEAR.<br>
+👉🏾 [Version française](./README_FR.md) | [Detailed records in English](./victims.md) | [French records](./victims_FR.md)
+
+> **Evidence method.** This report derives from the validated February 2024 victim cards. Claims, victim confirmations, samples and confidence levels remain separate. A criminal publication is not treated as proof of encryption, exfiltration or full compromise without supporting evidence.
 
 ## 1. Executive summary
 
@@ -122,6 +129,9 @@ For SOC teams, the February profile supports prioritizing **ransomware resilienc
 | Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
 
+![Types d’incident](assets/types_EN.png)
+![Répartition des types](assets/types_pie_EN.png)
+
 ```mermaid
 pie showData
     title Incident types - February 2024
@@ -140,6 +150,9 @@ pie showData
 | Ivory Coast | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Malawi | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 
+
+![Pays](assets/pays_EN.png)
+
 ## 5. Regional distribution
 
 | Region | Records | Share |
@@ -147,6 +160,10 @@ pie showData
 | Southern Africa | 5 | 62.5% |
 | North Africa | 2 | 25.0% |
 | West Africa | 1 | 12.5% |
+
+
+![Régions](assets/regions_EN.png)
+![Répartition régions](assets/regions_pie_EN.png)
 
 ## 6. Sector distribution
 
@@ -158,6 +175,10 @@ pie showData
 | Healthcare / Medical | 1 | 12.5% |
 | Water / Utilities | 1 | 12.5% |
 
+
+![Secteurs](assets/secteurs_EN.png)
+![Répartition secteurs](assets/secteurs_pie_EN.png)
+
 ## 7. Actors / groups
 
 | Actor / Group | Records | Share |
@@ -167,6 +188,9 @@ pie showData
 | medusa | 1 | 12.5% |
 | hunters | 1 | 12.5% |
 | dragonforce | 1 | 12.5% |
+
+
+![Acteurs / groupes](assets/acteurs_EN.png)
 
 ## 8. Evidence maturity
 
@@ -182,6 +206,9 @@ pie showData
 | Low | 5 | 62.5% |
 | Very High | 2 | 25.0% |
 | High | 1 | 12.5% |
+
+
+![Maturité des preuves](assets/preuves_EN.png)
 
 ## 9. Timeline
 

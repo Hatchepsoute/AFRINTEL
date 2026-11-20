@@ -4,45 +4,45 @@ Source: validated monthly pairs victims_FR.md / victims.md. Counts are derived f
 
 ## Monthly totals
 
-| Month | Total | Ransomware | Data leaks | DDoS | Defacement |
-|---|---:|---:|---:|---:|---:|
-| January | 23 | 19 | 2 | 0 | 1 |
-| February | 21 | 20 | 1 | 0 | 0 |
-| March | 41 | 19 | 21 | 0 | 0 |
-| April | 72 | 21 | 40 | 9 | 0 |
-| May | 106 | 17 | 44 | 43 | 0 |
-| June | 41 | 20 | 18 | 0 | 0 |
-| **H1 2026** | **304** | **116** | **126** | **52** | **1** |
+| Month | Total | Ransomware | Data leaks | DDoS | Defacement | Access Sale | Operational Fraud | System Intrusion |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| January | 30 | 18 | 10 |  | 1 | 1 |  |  |
+| February | 27 | 20 | 7 |  |  |  |  |  |
+| March | 45 | 19 | 24 |  |  | 1 | 1 |  |
+| April | 64 | 21 | 32 | 9 |  | 2 |  |  |
+| May | 107 | 17 | 45 | 43 |  | 1 |  | 1 |
+| June | 47 | 20 | 22 |  |  | 4 |  | 1 |
+| **H1 2026** | **320** | **115** | **140** | **52** | **1** | **9** | **1** | **2** |
 
 ## Geographic view
 
-The deduplicated corpus contains 304 incidents. The regional breakdown contains 312 occurrences because some records cover multiple countries. This breakdown does not change the incident total.
+The canonical corpus contains 320 incidents. The regional view below uses the primary country or scope assigned to each record; multi-country records remain grouped as pan-African or unspecified and are not expanded into additional incidents.
 
-| Region | Occurrences |
+| Region or scope | Primary records |
 |---|---:|
-| Afrique du Nord | 173 |
-| Afrique australe | 65 |
-| Afrique de l'Ouest | 37 |
-| Afrique de l'Est | 25 |
-| Océan Indien | 5 |
-| Panafricain / non précisé | 5 |
-| Afrique centrale | 2 |
-| **Geographic total** | **312** |
+| North Africa | 185 |
+| Southern Africa | 64 |
+| West Africa | 33 |
+| East Africa | 23 |
+| Indian Ocean | 5 |
+| Central Africa | 2 |
+| Pan-African / multi-country | 8 |
+| **Geographic total** | **320** |
 
 ## Top direct countries
 
 | Country | Incidents |
 |---|---:|
-| Maroc | 90 |
-| Afrique du Sud | 55 |
-| Égypte | 55 |
-| Tunisie | 15 |
+| Morocco | 91 |
+| Egypt | 61 |
+| South Africa | 56 |
+| Tunisia | 18 |
 | Nigeria | 15 |
 | Kenya | 10 |
-| Algérie | 8 |
-| Sénégal | 6 |
-| Tanzanie | 6 |
-| Ghana | 5 |
+| Algeria | 11 |
+| Ghana | 6 |
+| Senegal | 6 |
+| Tanzania | 6 |
 
 ## Visualisations
 

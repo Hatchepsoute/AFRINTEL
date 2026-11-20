@@ -10,9 +10,9 @@ The landscape is dominated by **Ransomware: 91 (72.8%)**, followed by **Data Lea
 
 The most represented countries are **South Africa with 36 incidents**, **Egypt with 15**, **Nigeria with 8**, and **Tunisia with 6**. The leading sectors are **Finance / Banking (18)**, **Government / Administration (18)**, and **Professional / Business Services (12)**.
 
-Regionally, **Southern Africa accounts for 50 incidents (41.0%)**, followed by **North Africa with 31 (25.4%)** and **West Africa with 19 (15.6%)**.
+Regionally, **Southern Africa accounts for 50 incidents (40.0%)**, followed by **North Africa with 34 (27.2%)** and **West Africa with 19 (15.2%)**.
 
-Evidence maturity remains heterogeneous: **87 Claim - Unverified**, **19 Claim - Data Sample Published**, **15 Confirmed**, **2 Corroborated**, and **1 Attempted**. These evidence positions remain separate from the technical incident type.
+Evidence maturity remains heterogeneous: **87 Claim - Unverified**, **20 Claim - Data Sample Published**, **15 Confirmed**, **2 Corroborated**, and **1 Attempted**. These evidence positions remain separate from the technical incident type.
 
 H1 contains **46 incidents**, compared with **79 in H2**. Ransomware remains the most frequently observed threat across the year, while Data Leak, Access Sale, System Intrusion, DDoS and other categories show a threat landscape that cannot be reduced to ransomware alone.
 
@@ -58,7 +58,7 @@ timeline
     June : 3 incidents
     July : 11 incidents
     August : 16 incidents
-    September : 6 incidents
+    September : 7 incidents
     October : 11 incidents
     November : 16 incidents
     December : 18 incidents
@@ -100,7 +100,7 @@ pie showData
 | Tunisia | 6 | 5 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Cameroon | 4 | 2 | 0 | 1 | 0 | 0 | 0 | 1 | 0 | 0 |
 | Namibia | 4 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Morocco | 4 | 1 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Morocco | 5 | 1 | 4 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | 4 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Ivory Coast | 3 | 3 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Libya | 3 | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
@@ -130,12 +130,12 @@ pie showData
 
 | Region | Records | Share |
 |---|---|---|
-| Southern Africa | 50 | 41.3% |
-| North Africa | 31 | 25.6% |
-| West Africa | 18 | 14.9% |
-| East Africa | 12 | 9.9% |
-| Central Africa | 5 | 4.2% |
-| Indian Ocean | 5 | 4.2% |
+| Southern Africa | 50 | 40.0% |
+| North Africa | 34 | 27.2% |
+| West Africa | 19 | 15.2% |
+| East Africa | 12 | 9.6% |
+| Central Africa | 5 | 4.0% |
+| Indian Ocean | 5 | 4.0% |
 
 ## 2. Sector distribution
 
@@ -148,7 +148,7 @@ pie showData
 | Healthcare / Medical | 10 | 8.3% |
 | Technology / IT | 9 | 7.4% |
 | Education / University | 9 | 7.4% |
-| Retail / E-commerce | 8 | 6.5% |
+| Retail / E-commerce | 10 | 8.0% |
 | Telecommunications | 5 | 4.2% |
 | Energy / Utilities | 4 | 3.3% |
 | Media / Entertainment | 3 | 2.5% |
@@ -197,9 +197,9 @@ pie showData
 
 | Evidence position | Records | Share |
 |---|---|---|
-| Claim - Unverified | 87 | 71.3% |
-| Confirmed | 15 | 12.3% |
-| Claim - Data Sample Published | 19 | 15.3% |
+| Claim - Unverified | 87 | 69.6% |
+| Confirmed | 15 | 12.0% |
+| Claim - Data Sample Published | 20 | 16.0% |
 | Corroborated | 2 | 1.6% |
 | Attempted | 1 | 0.8% |
 
@@ -218,7 +218,7 @@ pie showData
 | Malware | 0 | 0 | Stable |
 | Operational Fraud | 1 | 0 | -1 (-100.0%) |
 
-H1 contains **46 incidents** and H2 **78**, a ** +33 (+71.7%)** increase in the documented corpus. The main driver of the difference is ransomware, while Data Leak rises from **5 in H1 to 13 in H2**. This comparison measures corpus visibility and should not be interpreted as an equivalent increase in real-world compromises.
+H1 contains **46 incidents** and H2 **79**, a ** +33 (+71.7%)** increase in the documented corpus. The main driver of the difference is ransomware, while Data Leak rises from **5 in H1 to 13 in H2**. This comparison measures corpus visibility and should not be interpreted as an equivalent increase in real-world compromises.
 
 ## 2. CTI analysis by type
 

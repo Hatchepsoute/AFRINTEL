@@ -1,0 +1,48 @@
+{
+  "month": "2026-10",
+  "review_date": "2026-11-17",
+  "countries_covered": 15,
+  "countries_monitored": 54,
+  "records": 48,
+  "types": {
+    "Data Leak": 23,
+    "Access Sale": 3,
+    "Ransomware": 17,
+    "System Intrusion": 5
+  },
+  "evidence": {
+    "Claim - Data Sample Published": 19,
+    "Data Fully Published": 2,
+    "Claim - Unverified": 21,
+    "Incident Confirmed by Victim": 5,
+    "Under Investigation": 1
+  },
+  "countries": {
+    "Egypt": 12,
+    "Morocco": 12,
+    "South Africa": 9,
+    "DR Congo": 2,
+    "Ethiopia": 2,
+    "Madagascar": 2,
+    "Nigeria": 1,
+    "Republic of Congo": 1,
+    "Rwanda": 1,
+    "Mozambique": 1,
+    "Gabon": 1,
+    "Tunisia": 1,
+    "Benin": 1,
+    "Sierra Leone": 1,
+    "Cote d Ivoire": 1
+  },
+  "regions": {
+    "North Africa": 25,
+    "Southern Africa": 10,
+    "East Africa": 5,
+    "Central Africa": 4,
+    "West Africa": 4
+  },
+  "caveats": [
+    "PGR 262-file sample excluded due to provenance conflict with RMA",
+    "e-Solde first post June 28, October 2 repost included in observation corpus"
+  ]
+}

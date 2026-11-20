@@ -1,8 +1,14 @@
-# AFRINTEL CTI Report - Cyber Threats in Africa - January 2025
+# AFRINTEL | Monthly cyber threat intelligence report
+## Cyber threats targeting African organizations, January 2025
 
-👉🏾 [Version française](./README_FR.md)
+![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue) ![Scope](https://img.shields.io/badge/Scope-Africa-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Period](https://img.shields.io/badge/Period-January%202025-blueviolet)
 
-![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Période](https://img.shields.io/badge/Period-January%202025-blue) ![TLP](https://img.shields.io/badge/TLP-CLEAR-green)
+**Audience:** CISOs, risk leaders, SOC/CERT managers and business continuity owners.
+**Period covered:** 1–31 January 2025, based on documented publications and events.
+**Distribution:** TLP:CLEAR.
+👉🏾 [Version française](./README_FR.md) | [Detailed French records](./victims_FR.md) | [English corpus](./victims.md)
+
+> **Evidence methodology - how to read this report.** AFRINTEL distinguishes observed publications, samples actually examined, corroboration and official confirmation. A ransomware claim alone does not prove encryption, complete exfiltration or the announced volume. Raw personal data, secrets and identifiers are not reproduced.
 
 ## 1. Executive summary
 
@@ -16,7 +22,7 @@ At sector level, the most represented categories are **Education / University (6
 
 Evidence maturity remains variable: **18 records** are unverified claims or claims accompanied by samples. AFRINTEL maintains a strict separation between **observed facts, claims, corroboration, official confirmation, and technical unknowns**.
 
-Compared with the final corrected December 2024 baseline, monthly volume **increases by 4 records, from 16 to 20 (+25.0%)**. Ransomware rises from 11 to 16 (+5), while Data Leak remains at 3, Access Sale falls from 1 to 0, and Defacement from 1 to 0. Account Takeover appears with 1 record in January.
+Compared with the final corrected December 2024 baseline, monthly volume **increases by 2 records, from 18 to 20 (+11.1%)**. Ransomware rises from 11 to 16 (+5), while Data Leak moves from 5 to 3 (-2), Access Sale falls from 1 to 0 (-1), and Defacement from 1 to 0 (-1). Account Takeover appears with 1 record in January.
 
 > **Reading note:** AFRINTEL figures describe documented incidents and the visibility of observed threats. They are not an exhaustive measurement of every cyberattack that actually occurred across Africa.
 
@@ -24,9 +30,9 @@ Compared with the final corrected December 2024 baseline, monthly volume **incre
 
 | Indicator | Final corrected December 2024 | January 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 16 | 20 | **+4 (+25.0%)** |
+| Total incidents | 18 | 20 | **+2 (+11.1%)** |
 | Ransomware | 11 | 16 | **+5 (+45.5%)** |
-| Data Leak | 3 | 3 | **Stable** |
+| Data Leak | 5 | 3 | **-2 (-40.0%)** |
 | Access Sale | 1 | 0 | **-1 (-100.0%)** |
 | DDoS | 0 | 0 | **Stable** |
 | Defacement | 1 | 0 | **-1 (-100.0%)** |
@@ -37,7 +43,7 @@ Compared with the final corrected December 2024 baseline, monthly volume **incre
 
 > **Comparison basis:** December 2024 uses the final AFRINTEL 2024 baseline after chronology review, reclassification, and integration of validated 2024 cases. All nine incident types are therefore directly comparable with January 2025.
 
-## 2. Methodology
+## 2. Scope, method and limitations
 
 - **Scope:** 54 African countries; reference period: January 2025.
 - **Source of truth:** validated `victims_FR.md` / `victims.md` pair.
@@ -49,6 +55,17 @@ Compared with the final corrected December 2024 baseline, monthly volume **incre
 - **Evidence:** incident type, status, confidence, impact, and provenance remain separate dimensions.
 - **Sectors:** normalization is calculated once from the structured corpus and used identically in FR and EN.
 - **Limitation:** frequencies reflect AFRINTEL visibility rather than every real compromise on the continent.
+
+### AFRINTEL validation protocol
+
+| Case type | Examination | Scope of finding |
+|---|---|---|
+| Ransomware / extortion | Publication, timeline, accessible files or previews and victim context | Publication and available evidence; encryption, initial access and total volume remain separate questions. |
+| Data leak | Structure, fields, dates, observed volumes and sample consistency | Data actually examined; no automatic validation of the full announced dataset. |
+| Claim without usable sample | Source, date, named organization and available public corroboration | Existence of the claim only. |
+| Acknowledged incident | Victim or authority statement, within its exact scope | Facts confirmed by the source, without extending confirmation to actor assertions. |
+
+The `victims_FR.md` / `victims.md` pair is the bilingual source of truth. The 20 records in each language were checked in the same order; report totals are derived from the French version and checked against the English version.
 
 ## 3. Overview and incident types
 
@@ -68,7 +85,7 @@ Compared with the final corrected December 2024 baseline, monthly volume **incre
 | Access Sale | 0 | 0.0% |
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
-| Account Takeover | 1 | 5.3% |
+| Account Takeover | 1 | 5.0% |
 | System Intrusion | 0 | 0.0% |
 | Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
@@ -82,7 +99,9 @@ pie showData
     "Account Takeover" : 1
 ```
 
-## 4. Geographic distribution
+![Incident types, January 2025](./assets/incident_types_january_2025.svg)
+
+## 4. Geographic and regional distribution
 
 | Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -96,37 +115,39 @@ pie showData
 | Zambia | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | **Total** | **20** | **16** | **3** | **0** | **0** | **0** | **1** | **0** | **0** |
 
-> `Operational Fraud = 0` this month; the column is omitted for readability.
+> `Malware` and `Operational Fraud` are zero this month and are omitted from the geographic matrix for readability.
 
-## 5. Regional distribution
+![Countries represented, January 2025](./assets/countries_january_2025_EN.svg)
 
 | Region | Records | Share |
 |---|---:|---:|
-| North Africa | 8 | 42.1% |
-| East Africa | 5 | 26.3% |
-| Southern Africa | 3 | 15.8% |
+| North Africa | 8 | 40.0% |
+| East Africa | 5 | 25.0% |
+| Southern Africa | 3 | 15.0% |
 | West Africa | 4 | 20.0% |
 | **Total** | **20** | **100%** |
 
-The leading region is **North Africa with 8 records (42.1%)**.
+The leading region is **North Africa with 8 records (40.0%)**.
 
-## 6. Sector impact
+## 5. Sector exposure and business risks
 
-| Sector | Records | Share | Activity |
+| Sector | Records | Share | Main business risks |
 |---|---:|---:|---|
-| Education / University | 6 | 31.6% | ██████ |
-| Government / Administration | 4 | 21.1% | ████ |
-| Healthcare / Medical | 2 | 10.5% | ██ |
-| Media / Entertainment | 2 | 10.5% | ██ |
-| Retail / E-commerce | 1 | 5.3% | █ |
-| Technology / IT | 1 | 5.3% | █ |
-| Transport / Logistics | 1 | 5.3% | █ |
-| Hospitality / Tourism | 1 | 5.3% | █ |
-| Professional / Business Services | 1 | 5.3% | █ |
-| Religious Organization / Association | 1 | 5.0% | █ |
+| Education / University | 6 | 30.0% | student data, service disruption |
+| Government / Administration | 4 | 20.0% | identity, public services, trust |
+| Healthcare / Medical | 2 | 10.0% | care continuity, confidentiality |
+| Media / Entertainment | 2 | 10.0% | accounts, content and reputation |
+| Retail / E-commerce | 1 | 5.0% | customer data, transactions, fraud |
+| Technology / IT | 1 | 5.0% | technical access, propagation |
+| Transport / Logistics | 1 | 5.0% | operational continuity, suppliers |
+| Hospitality / Tourism | 1 | 5.0% | reservations, customer data |
+| Professional / Business Services | 1 | 5.0% | contracts, impersonation |
+| Religious Organization / Association | 1 | 5.0% | accounts and member data |
 | **Total** | **20** | **100%** | |
 
-## 7. Actors / groups
+![Sector exposure, January 2025](./assets/sectors_january_2025_EN.svg)
+
+## 6. Actors, groups and evidence maturity
 
 `Unknown` denotes missing attribution, not a threat actor.
 
@@ -142,18 +163,33 @@ The leading region is **North Africa with 8 records (42.1%)**.
 | SevenZeroDay404 | 1 | █ |
 | Counter | 1 | █ |
 
-## 8. Evidence maturity
+![Actors and groups, January 2025](./assets/actors_january_2025_EN.svg)
+
+### 6.1 Evidence maturity
 
 | Evidence maturity | Records | Share |
 |---|---:|---:|
-| Claim - Unverified | 8 | 42.1% |
+| Claim - Unverified | 8 | 40.0% |
 | Claim - Data Sample Published | 10 | 50.0% |
-| Victim/Government/Authority Confirmed | 2 | 10.5% |
+| Victim/Government/Authority Confirmed | 2 | 10.0% |
 | **Total** | **20** | **100%** |
 
 Evidence statuses describe the available validation level; they do not change the technical incident type.
 
-## 9. Timeline
+![Evidence maturity, January 2025](./assets/statuses_january_2025_EN.svg)
+
+### 6.2 Risk-area assessment
+
+| Area | CISO monitoring priority | Corpus-based rationale |
+|---|---|---|
+| Kenya, Egypt, Nigeria | High | Four records each, representing 60.0% of observations. |
+| North Africa | Reinforced | Eight records and a strong presence of ransomware claims. |
+| Education and administration | Reinforced | Ten records combined, involving sensitive data and services. |
+| Other countries and sectors | Targeted | Case-by-case monitoring based on victim sensitivity and evidence quality. |
+
+These priorities apply to the documented corpus and are not an official ranking of national cyber risk.
+
+## 7. Observation timeline
 
 ```mermaid
 timeline
@@ -180,21 +216,30 @@ timeline
     31 January 2025 : Kenya Broadcasting Corporation (KBC)
 ```
 
-## 10. Monthly CTI analysis
+## 8. Trends and intelligence gaps
 
-### Ransomware
+### CTI trends
 
 **16 records** are classified as Ransomware. Leading countries: Egypt (4), Nigeria (3), Kenya (2). A leak-site listing does not itself prove encryption or complete exfiltration.
 
-### Data Leak
+### Data exposure
 
 **3 records** are classified as Data Leak. Leading countries: South Africa (1), Kenya (1), Nigeria (1). AFRINTEL distinguishes actually observed data from aggregate volumes claimed by actors.
 
-### Account Takeover
+### Account takeover
 
-**1 Account Takeover records** are documented. Distribution: Kenya (1). This category keeps institutional-account compromise distinct.
+**One Account Takeover record** is documented in Kenya. This category keeps institutional-account compromise distinct.
 
-## 11. Notable incidents
+### Priority intelligence gaps
+
+| Gap | Effect | Expected verification |
+|---|---|---|
+| Initial access vector | Limits attribution and technical tracking | IAM, VPN, EDR, WAF logs and DFIR timelines |
+| Actual exfiltrated volume | Risk of overestimating exposure | Inventory, deduplication and reliable sampling |
+| Remediation and root cause | Limits residual-exposure assessment | Technical statements and post-incident reports |
+| Label attribution | A pseudonym may be confused with an intrusion group | Independent corroboration and documented infrastructure |
+
+## 9. Incidents to retain for the security committee
 
 | Country | Organization | Type | Status | Impact | Confidence |
 |---|---|---|---|---|---|
@@ -204,25 +249,39 @@ timeline
 | Kenya | Kenya Broadcasting Corporation (KBC) | Account Takeover | Victim Confirmed | Level 3 | High |
 | Kenya | Molars Dental Practice | Ransomware | Claim - Data Sample Published | Level 3 | High |
 
-> This table highlights up to five records using structured impact, confirmation, and confidence fields. It is not an absolute severity ranking.
+> This table highlights five records using structured impact, confirmation, and confidence fields. It is not an absolute severity ranking.
 
-## 12. Key findings and intelligence gaps
+## 10. MITRE ATT&CK: defensive mappings
 
-- **Geographic concentration:** Kenya accounts for 4 records (20.0%), followed by Egypt (4) and Nigeria (4).
-- **Threat structure:** Ransomware is the leading type with 16 records, followed by Data Leak (3).
-- **Sectors:** Education / University (6) and Government / Administration (4) have the highest visibility.
-- **Actors:** the most frequent labels are funksec (6), GDLockerSec (3), and ransomhub (2).
-- **Evidence:** 17 records rely on unverified claims or claims with a published sample; these statuses do not equal complete technical confirmation.
+The mappings below support defensive hunting; they are not technical attribution for every case.
 
-### Intelligence gaps
+| Technique | Evidence level | Associated risk | Telemetry |
+|---|---|---|---|
+| [T1486 - Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486/) | Defensive hypothesis linked to ransomware claims | Encryption and unavailability | EDR, file logs, backups |
+| [T1078 - Valid Accounts](https://attack.mitre.org/techniques/T1078/) | Defensive hypothesis for ATO | Abuse of legitimate accounts | IAM, MFA, VPN, AD |
+| [T1005 - Data from Local System](https://attack.mitre.org/techniques/T1005/) | Hypothesis for leaks | Collection of documents and databases | EDR, file auditing, DLP |
+| [T1567 - Exfiltration Over Web Service](https://attack.mitre.org/techniques/T1567/) | Hypothesis; channel not established | Abnormal outbound transfers | Proxy, DNS, cloud, network |
 
-- initial-access vector often not public;
-- exact technical compromise date sometimes unknown;
-- claimed volumes rarely fully verifiable;
-- technical attribution often limited to a publication handle or label;
-- public remediation, root-cause, and DFIR conclusions remain limited.
+## 11. SOC operational plan: detect, qualify, contain
 
-These gaps should guide collection rather than be replaced with assumptions.
+| Use case | Signals to correlate | Defensive action |
+|---|---|---|
+| Suspicious encryption | Mass renames, backup deletion, ransom note | Isolate hosts, protect backups, preserve evidence |
+| Abnormal privileged access | Off-hours logins, role changes, unusual MFA | Revoke sessions, reset accounts, strengthen controls |
+| Mass export | Large reads, archives, increased egress | Restrict egress and trigger the data-response plan |
+| Compromised institutional account | New devices, unusual geography or activity | Out-of-band verification, rotate secrets, review logs |
+| Public-service integrity | Unplanned content or CMS-admin changes | Restore from a trusted source and audit admin access |
+
+**Recommended workflow:** timestamp the alert → consolidate by identity/host/service → qualify `observed / hypothesis / unknown` → contain proportionately → notify CISO and business owners → preserve evidence.
+
+## 12. Prioritized CISO roadmap
+
+| Horizon | Priority | Expected action | Implementation evidence |
+|---|---|---|---|
+| 0–72 hours | P0 | Review privileged accounts, MFA, VPN, backups and public services | Access review and restore test |
+| 7–30 days | P1 | Deploy ransomware, mass-export, ATO and web-integrity detections | Active rules and detection tests |
+| 30–90 days | P1 | Exercise a combined outage and data-leak crisis | Exercise report and tracked actions |
+| 30–90 days | P2 | Industrialize CTI monitoring and FR/EN synchronization | Parity controls and source traceability |
 
 ## 13. Recommendations
 
@@ -250,7 +309,7 @@ These gaps should guide collection rather than be replaced with assumptions.
 
 ## 14. Conclusion
 
-**January 2025** contains **19 documented cyber incidents** across **8 African countries**. The monthly CTI value lies not only in volume but in separating **incident type, timeline, evidence level, geography, sector, and actor**.
+**January 2025** contains **20 documented cyber incidents** across **8 African countries**. The monthly CTI value lies not only in volume but in separating **incident type, timeline, evidence level, geography, sector, and actor**.
 
 The report therefore preserves a structured picture of the observable threat environment while keeping claims, corroboration, confirmations, and unknowns at their actual evidence level.
 

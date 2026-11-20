@@ -1,82 +1,98 @@
 # Statistiques CTI AFRINTEL - Avril 2025
 
-👉🏾 [English version](./README.md)
+Source de vérité : couple validé `victims_FR.md` / `victims.md`.
 
-Cette fiche reprend les 21 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu'aucune confirmation indépendante n'est disponible.
+Cette fiche reprend les **21 fiches** du corpus victimes. Les chiffres décrivent la visibilité documentée par AFRINTEL.
 
 | Indicateur | Valeur |
 |---|---:|
 | Total incidents | 21 |
+| Pays / portées géographiques | 9 |
+| Secteurs distincts | 20 |
+| Acteurs / sources distincts | 16 |
+
+## Types
+
+| Type | Fiches |
+|---|---:|
 | Ransomware | 7 |
-| Fuites de données | 11 |
-| Ventes d'accès | 2 |
+| Fuite de données | 11 |
+| Vente d'accès | 2 |
 | DDoS | 1 |
-| Pays touchés | 8 |
-| Secteurs | 18 |
-| Acteurs / sources | 14 |
+| Défacement | 0 |
+| Prise de contrôle de compte | 0 |
+| Intrusion système | 0 |
+| Malware | 0 |
+| Fraude opérationnelle | 0 |
+| **Total** | **21** |
 
 ## Pays
 
-| Pays | Incidents |
+| Pays / portée | Fiches |
 |---|---:|
 | 🇪🇬 Égypte | 5 |
-| 🇲🇦 Maroc | 4 |
+| 🇲🇦 Maroc | 5 |
 | 🇩🇿 Algérie | 4 |
 | 🇿🇦 Afrique du Sud | 2 |
-| 🇸🇳 Sénégal | 1 |
+| Ghana | 1 |
+| Maroc | 1 |
 | 🇲🇷 Mauritanie | 1 |
+| 🇸🇳 Sénégal | 1 |
 | 🇹🇳 Tunisie | 1 |
 
 ## Secteurs
 
-| Secteur | Incidents |
+| Secteur | Fiches |
 |---|---:|
-| Défense / Sécurité Nationale | 1 |
-| Finance / Logistique | 1 |
-| Technologies (Télécommunications) | 1 |
-| Services aux entreprises / Externalisation (BPO) | 1 |
+| Telecommunications | 2 |
 | Administrations publiques (Sécurité sociale) | 1 |
-| Gouvernement / Économie et Industrie. | 1 |
-| Gouvernement / Sécurité sociale | 1 |
-| Social / Mutuelle de Santé. | 1 |
-| Gouvernement / Administration du travail | 1 |
-| Finance / Paiement mobile | 1 |
-| Technologies de l'Information | 1 |
-| Éducation / Enseignement supérieur / Audiovisuel et cinéma | 1 |
-| Éducation / Enseignement supérieur | 1 |
-| Gouvernement / Habitat / Politique de la ville | 1 |
-| Services financiers / Banque d'investissement / Conseil en financement de projets | 1 |
 | Agroalimentaire | 1 |
 | Agroalimentaire / Industrie Laitière | 1 |
+| Défense / Sécurité Nationale | 1 |
+| Finance / Logistique | 1 |
+| Finance / Paiement mobile | 1 |
+| Gouvernement / Administration du travail | 1 |
+| Gouvernement / Habitat / Politique de la ville | 1 |
+| Gouvernement / Sécurité sociale | 1 |
+| Gouvernement / Économie et Industrie. | 1 |
+| Government / Administration | 1 |
 | Santé | 1 |
+| Services aux entreprises / Externalisation (BPO) | 1 |
+| Services financiers / Banque d'investissement / Conseil en financement de projets | 1 |
+| Social / Mutuelle de Santé. | 1 |
+| Technologies (Télécommunications) | 1 |
+| Technologies de l'Information | 1 |
+| Éducation / Enseignement supérieur | 1 |
+| Éducation / Enseignement supérieur / Audiovisuel et cinéma | 1 |
 
 ## Acteurs / sources
 
-| Acteur / source | Incidents |
+| Acteur / source | Fiches |
 |---|---:|
 | Phantom Atlas | 3 |
-| Jabaroot DZ | 2 |
 | devman | 2 |
-| oblivion666 | 1 |
-| dragonforce | 1 |
-| ransomhouse | 1 |
-| crypto24 | 1 |
-| Killer_Bee | 1 |
-| p4xar | 1 |
+| Jabaroot DZ | 2 |
+| Unknown | 2 |
 | B4baYega | 1 |
-| nightspire | 1 |
 | cicada3301 | 1 |
+| crypto24 | 1 |
+| dragonforce | 1 |
 | gunra | 1 |
+| Killer_Bee | 1 |
+| nightspire | 1 |
+| oblivion666 | 1 |
 | Oxrau1 | 1 |
+| p4xar | 1 |
+| ransomhouse | 1 |
+| yn0x1 | 1 |
 
-## Types
+## Statuts
 
-| Type | Incidents |
+| Statut | Fiches |
 |---|---:|
-| Data Leak | 11 |
-| Ransomware | 7 |
-| Access Sale | 2 |
-| DDoS | 1 |
+| Claim - Unverified | 10 |
+| Claim - Data Sample Published | 9 |
+| Incident Corroborated - Attribution Unconfirmed | 1 |
+| Victim Confirmed | 1 |
 
 **AFRINTEL** - TLP:CLEAR
-

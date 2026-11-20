@@ -16,7 +16,7 @@ At sector level, the most represented categories are **Finance / Banking (9)**, 
 
 Evidence maturity remains variable: **20 records** are unverified claims or claims accompanied by samples. AFRINTEL maintains a strict separation between **observed facts, claims, corroboration, official confirmation, and technical unknowns**.
 
-Compared with April, monthly volume **increases by 6 records**. The most visible changes are Ransomware 7->13 (+6), Defacement 0->2 (+2), Access Sale 2->0 (-2).
+Compared with April, monthly volume **increases by 5 records, from 21 to 26 (+23.8%)**. The most visible changes are Ransomware 7->13 (+6), Defacement 0->2 (+2), Account Takeover 0->1 (+1), System Intrusion 0->1 (+1), Access Sale 2->0 (-2), and DDoS 1->0 (-1).
 
 > **Reading note:** AFRINTEL figures describe documented incidents and the visibility of observed threats. They are not an exhaustive measurement of every cyberattack that actually occurred across Africa.
 
@@ -24,9 +24,9 @@ Compared with April, monthly volume **increases by 6 records**. The most visible
 
 | Indicator | April 2025 | May 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 20 | 26 | **+6 (+30.0%)** |
+| Total incidents | 21 | 26 | **+5 (+23.8%)** |
 | Ransomware | 7 | 13 | **+6 (+85.7%)** |
-| Data Leak | 10 | 9 | **-1 (-10.0%)** |
+| Data Leak | 11 | 9 | **-2 (-18.2%)** |
 | Access Sale | 2 | 0 | **-2 (-100.0%)** |
 | DDoS | 1 | 0 | **-1 (-100.0%)** |
 | Defacement | 0 | 2 | **+2 (new)** |
@@ -34,6 +34,8 @@ Compared with April, monthly volume **increases by 6 records**. The most visible
 | System Intrusion | 0 | 1 | **+1 (new)** |
 | Malware | 0 | 0 | **Stable** |
 | Operational Fraud | 0 | 0 | **Stable** |
+
+![April-May 2025 comparison](assets/comparaison_EN.png)
 
 
 
@@ -75,6 +77,9 @@ Compared with April, monthly volume **increases by 6 records**. The most visible
 | Operational Fraud | 0 | 0.0% |
 | **Total** | **26** | **100%** |
 
+![Incident types](assets/types_EN.png)
+![Incident distribution](assets/types_pie_EN.png)
+
 ```mermaid
 pie showData
     title Incident types - May 2025
@@ -104,6 +109,8 @@ pie showData
 
 > `Operational Fraud = 0` this month; the column is omitted for readability.
 
+![Documented incidents by country](assets/pays_EN.png)
+
 ## 5. Regional distribution
 
 | Region | Records | Share |
@@ -116,6 +123,9 @@ pie showData
 | **Total** | **26** | **100%** |
 
 The leading region is **Southern Africa with 12 records (46.2%)**.
+
+![Regional distribution](assets/regions_EN.png)
+![Regional shares](assets/regions_pie_EN.png)
 
 ## 6. Sector impact
 
@@ -134,9 +144,14 @@ The leading region is **Southern Africa with 12 records (46.2%)**.
 | Retail / E-commerce | 1 | 3.8% | █ |
 | **Total** | **26** | **100%** | |
 
+![Sector exposure](assets/secteurs_EN.png)
+![Sector distribution](assets/secteurs_pie_EN.png)
+
 ## 7. Actors / groups
 
 `Unknown` denotes missing attribution, not a threat actor.
+
+![Actors and publication labels](assets/acteurs_EN.png)
 
 | Actor / Group | Records | Activity |
 |---|---:|---|
@@ -166,6 +181,8 @@ The leading region is **Southern Africa with 12 records (46.2%)**.
 | Corroborated / Secondary evidence | 2 | 7.7% |
 | Attempted | 1 | 3.8% |
 | **Total** | **26** | **100%** |
+
+![Evidence maturity](assets/preuves_EN.png)
 
 Evidence statuses describe the available validation level; they do not change the technical incident type.
 

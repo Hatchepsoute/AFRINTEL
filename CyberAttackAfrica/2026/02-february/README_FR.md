@@ -6,7 +6,7 @@
 **Public cible :** RSSI, DSI, responsables SOC/CERT, directions des risques et de la continuité d'activité.  
 **Période couverte :** 1er au 28 février 2026, sur la base des publications initiales décrites dans le corpus.  
 **Édition :** 6 novembre 2026 | **Diffusion :** TLP:CLEAR.  
-👉🏾 [English version](./README.md) | [Fiches victimes en français](./victims_FR.md) | [Victim records in English](./victims.md)
+👉🏾 [English version](./README.md) | [Fiches victimes en français](./victims_FR.md) | [Victim records in English](./victims.md) | [Comparaison janvier–février](../../comparison/2026/01-january-february/README_FR.md)
 
 > **Méthodologie de preuve - lecture du rapport.** AFRINTEL consolide les investigations OSINT et analyses post-divulgation déjà consignées dans les fiches victimes. **Pour les dossiers ransomware**, les annonces et, lorsque publiés, les inventaires, aperçus et documents divulgués sont analysés afin de caractériser l'exposition. **Pour les fuites de données**, les échantillons disponibles sont examinés (structure, champs, cohérence, volume observé et risque métier). Le lecteur peut ainsi distinguer un contenu effectivement analysé d'un volume simplement revendiqué. Les confirmations officielles sont identifiées séparément ; le rapport ne suppose ni intrusion, ni chiffrement, ni exfiltration exhaustive sans pièces correspondantes.
 
@@ -24,22 +24,22 @@ Trois affaires appellent une attention prioritaire des directions : **Air Côte 
 
 ### 1.1 Comparaison avec janvier 2026
 
-> Comparaison entre les **31 fiches recomptées de janvier** et les **27 fiches de février**. Une variation du nombre de publications dans AFRINTEL n'établit pas une évolution du nombre réel de compromissions sur le continent. Les en-têtes historiques des fichiers victimes nécessitent une correction éditoriale.
+> Comparaison entre les **30 fiches recomptées de janvier** et les **27 fiches de février**. Une variation du nombre de publications dans AFRINTEL n'établit pas une évolution du nombre réel de compromissions sur le continent. Les fichiers victimes ont été rapprochés du corpus de 27 fiches.
 
 | Indicateur | Janvier | Février | Évolution documentée |
 |---|---:|---:|---:|
-| **Total** | **31** | **27** | **-4 (-12,9 %)** |
-| Ransomware | 19 | 20 | +1 (+5,3 %) |
+| **Total** | **30** | **27** | **-3 (-10,0 %)** |
+| Ransomware | 18 | 20 | +2 (+11,1 %) |
 | Data Leak | 10 | 7 | -3 (-30,0 %) |
-| Access Sale | 1 | 0 | -1 (-100,0 %) |
-| DDoS | 0 | 0 | 0 (stable) |
-| Defacement | 1 | 0 | -1 (-100,0 %) |
-| Account Takeover | 0 | 0 | 0 (stable) |
-| System Intrusion | 0 | 0 | 0 (stable) |
-| Malware | 0 | 0 | 0 (stable) |
-| Operational Fraud | 0 | 0 | 0 (stable) |
+| Vente d'accès | 1 | 0 | -1 (-100,0 %) |
+| DDoS | 0 | 0 | 0 |
+| Défacement | 1 | 0 | -1 (-100,0 %) |
+| Prise de contrôle de compte | 0 | 0 | 0 |
+| Intrusion système | 0 | 0 | 0 |
+| Malware | 0 | 0 | 0 |
+| Fraude opérationnelle | 0 | 0 | 0 |
 
-La part du ransomware passe de **61,3 % en janvier** à **74,1 % en février**, principalement parce que le nombre total de fiches baisse alors que les revendications ransomware restent proches du mois précédent. Cette hausse relative n'implique pas une recrudescence prouvée des attaques.
+La part du ransomware passe de **60,0 % en janvier** à **74,1 % en février**, principalement parce que le nombre total de fiches baisse alors que les revendications ransomware restent proches du mois précédent. Cette hausse relative n'implique pas une recrudescence prouvée des attaques.
 
 ## 2. Périmètre, méthode et limites
 
@@ -47,7 +47,7 @@ Le périmètre AFRINTEL comprend les **54 pays africains** et les publications v
 
 L'analyse distingue : **observé** (publication, structure d'échantillon ou document cité dans les fiches), **revendiqué** (volume, accès ou portée annoncés), **confirmé** (reconnaissance indépendante explicite) et **inconnu** (vecteur d'entrée, périmètre réel, persistance, chiffrement, paiement de rançon). Un libellé `Data Fully Published` ne démontre pas l'exhaustivité d'un corpus et ne constitue pas une confirmation de la victime.
 
-**Contrôle de cohérence :** les fichiers FR et EN contiennent **27 fiches dans le même ordre**. Leurs synthèses indiquent encore « 21 incidents uniques, 20 ransomwares et 1 fuite », mais les fiches détaillées documentent **20 ransomwares et 7 fuites**. Les deux fiches de fuite concernant **Al Akhawayn University** et **Chezpara** ne comportent pas de champ explicite `Type d'incident` ; la qualification `Data Leak` est ici dérivée de leur intitulé et de leur description et devra être inscrite dans les deux langues. Les graphiques initiaux transmis pour février portent sur les **20 ransomwares uniquement** : ils ne sont pas utilisés comme tableaux globaux dans ce rapport.
+**Contrôle de cohérence :** les fichiers FR et EN contiennent **27 fiches dans le même ordre**. Leurs synthèses et leurs champs structurés documentent désormais **20 ransomwares et 7 fuites**. Les graphiques initiaux transmis pour février portent sur les **20 ransomwares uniquement** : ils ne sont pas utilisés comme tableaux globaux dans ce rapport.
 
 La revendication de photos d'identité concernant **le Nigeria et la Côte d'Ivoire** constitue **un seul dossier multi-pays**. Dans le tableau géographique, ce dossier est classé sous `MULTI (NG/CI)` afin d'éviter de le compter deux fois, tout en reconnaissant les deux pays dans le périmètre des **14 pays concernés**. Aucun nom de personne, pièce d'identité, numéro de compte, secret ni échantillon sensible n'est reproduit.
 
@@ -74,7 +74,6 @@ L'analyse AFRINTEL intervient **après l'observation de la publication de l'acte
 |---|---:|---:|
 | **Ransomware** | **20** | **74,1 %** |
 | **Fuite de données** | **7** | **25,9 %** |
-| Autres types AFRINTEL | 0 | 0,0 % |
 | **Total** | **27** | **100 %** |
 
 ![Types de signalements - février 2026](assets/types_FR.png)

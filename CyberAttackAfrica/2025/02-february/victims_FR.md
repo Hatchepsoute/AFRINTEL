@@ -6,7 +6,7 @@
 
 ## Synthèse mensuelle
 
-**10 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 8, Account Takeover 2.
+**11 cyberincidents documentés** sous AFRINTEL Taxonomy v2 : Ransomware 8, Data Leak 1, Account Takeover 2.
 
 > Les liens de sources sont ajoutés aux incidents complémentaires identifiés via des recherches publiques pour combler le corpus. Ils ne sont pas imposés rétrospectivement aux fiches historiques issues des observations AFRINTEL, notamment Dark Web.
 

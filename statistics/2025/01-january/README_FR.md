@@ -1,70 +1,90 @@
 # Statistiques CTI AFRINTEL - Janvier 2025
 
-👉🏾 [English version](./README.md)
+Source de vérité : couple validé `victims_FR.md` / `victims.md`.
 
-Cette fiche reprend les 20 cartes du fichier victimes mensuel. Les publications restent des revendications lorsqu’aucune confirmation indépendante n’est disponible.
+Cette fiche reprend les **20 fiches** du corpus victimes. Les chiffres décrivent la visibilité documentée par AFRINTEL.
 
 | Indicateur | Valeur |
 |---|---:|
 | Total incidents | 20 |
+| Pays / portées géographiques | 9 |
+| Secteurs distincts | 19 |
+| Acteurs / sources distincts | 9 |
+
+## Types
+
+| Type | Fiches |
+|---|---:|
 | Ransomware | 16 |
-| Fuites de données | 3 |
-| Pays touchés | 8 |
-| Secteurs | 16 |
-| Acteurs / sources | 7 |
+| Fuite de données | 3 |
+| Vente d'accès | 0 |
+| DDoS | 0 |
+| Défacement | 0 |
+| Prise de contrôle de compte | 1 |
+| Intrusion système | 0 |
+| Malware | 0 |
+| Fraude opérationnelle | 0 |
+| **Total** | **20** |
 
 ## Pays
 
-| Pays | Incidents |
+| Pays / portée | Fiches |
 |---|---:|
 | 🇪🇬 Égypte | 4 |
 | 🇳🇬 Nigeria | 4 |
+| Kenya | 2 |
+| 🇩🇿 Algérie | 2 |
 | 🇰🇪 Kenya | 2 |
 | 🇲🇦 Maroc | 2 |
-| 🇩🇿 Algérie | 2 |
-| 🇿🇦 Afrique du Sud | 1 |
+| 🇿🇦 Afrique du Sud | 2 |
 | 🇺🇬 Ouganda | 1 |
 | 🇿🇲 Zambie | 1 |
 
 ## Secteurs
 
-| Secteur | Incidents |
+| Secteur | Fiches |
 |---|---:|
 | Éducation / Enseignement Supérieur / Recherche. | 2 |
-| Santé (Dentaire) | 1 |
+| Administrations publiques | 1 |
+| Administrations publiques / Ressources en Eau / Agriculture. | 1 |
 | Administrations publiques/ Finances / Marchés Publics. | 1 |
 | Commerce de détail/Grande distribution (Retail). | 1 |
-| Technologies / Marketing Digital / SEO. | 1 |
-| Logistique Pétrolière et Gazière / Services Portuaires. | 1 |
+| Government / Administration | 1 |
 | Hôtellerie / Tourisme. | 1 |
-| Administrations publiques | 1 |
+| Logistique Pétrolière et Gazière / Services Portuaires. | 1 |
+| Media / Entertainment | 1 |
+| Organisation religieuse / Association | 1 |
 | Santé | 1 |
-| Administrations publiques / Ressources en Eau / Agriculture. | 1 |
-| Éducation / Recherche Scientifique / Publication Académique. | 1 |
-| Éducation / Enseignement Supérieur / Recherche Pédagogique. | 1 |
+| Santé (Dentaire) | 1 |
 | Services de Conseil / SMS en masse et messagerie broadcast | 1 |
 | Services RH / Recrutement | 1 |
+| Technologies / Marketing Digital / SEO. | 1 |
 | Éducation / Enseignement Supérieur | 1 |
-| Organisation religieuse / Association | 1 |
+| Éducation / Enseignement Supérieur / Recherche Pédagogique. | 1 |
+| Éducation / Recherche Scientifique / Publication Académique. | 1 |
+| Éducation / Université | 1 |
 
 ## Acteurs / sources
 
-| Acteur / source | Incidents |
+| Acteur / source | Fiches |
 |---|---:|
 | funksec | 6 |
 | GDLockerSec | 3 |
+| babuk2 | 2 |
 | ransomhub | 2 |
 | spacebears | 2 |
-| babuk2 | 2 |
+| Unknown | 2 |
 | apt73 | 1 |
 | Counter | 1 |
+| SevenZeroDay404 | 1 |
 
-## Types
+## Statuts
 
-| Type | Incidents |
+| Statut | Fiches |
 |---|---:|
-| Ransomware | 16 |
-| Data Leak | 3 |
+| Claim - Data Sample Published | 10 |
+| Claim - Unverified | 8 |
+| Government Confirmed | 1 |
+| Victim Confirmed | 1 |
 
 **AFRINTEL** - TLP:CLEAR
-

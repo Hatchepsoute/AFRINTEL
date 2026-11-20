@@ -1,6 +1,13 @@
 # AFRINTEL CTI Report - Cyber Threats in Africa - September 2024
 
-👉🏾 [Version française](./README_FR.md)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL) ![Scope](https://img.shields.io/badge/Scope-Africa-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Period](https://img.shields.io/badge/Period-September%202024-blueviolet)
+
+**Audience:** CISOs, SOC/CERT leads, risk committees and business continuity managers.<br>
+**Period:** September 1–30, 2024, based on the documented canonical records.<br>
+**Edition:** audited November 20, 2026 | **Distribution:** TLP:CLEAR.<br>
+👉🏾 [Version française](./README_FR.md) | [Detailed records in English](./victims.md) | [French records](./victims_FR.md)
+
+> **Evidence method.** This report derives from the validated September 2024 victim cards. Claims, victim confirmations, samples and confidence levels remain separate. A criminal publication is not treated as proof of encryption, exfiltration or full compromise without supporting evidence.
 
 ## 1. Executive summary
 
@@ -20,6 +27,8 @@ In September 2024, AFRINTEL retains **7 canonical cyber incidents across 7 count
 | System Intrusion | 1 | 1 | Stable |
 | Malware | 0 | 0 | Stable |
 | Operational Fraud | 0 | 0 | Stable |
+
+![Comparaison mensuelle](assets/comparaison_EN.png)
 
 ### 1.2 Comparative analysis
 
@@ -44,9 +53,12 @@ Monthly volume **decreases by 9 incident(s)**. Structural changes are: Ransomwar
 | DDoS | 0 | 0.0% |
 | Defacement | 0 | 0.0% |
 | Account Takeover | 0 | 0.0% |
-| System Intrusion | 1 | 16.7% |
+| System Intrusion | 1 | 14.3% |
 | Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
+
+![Types d’incident](assets/types_EN.png)
+![Répartition des types](assets/types_pie_EN.png)
 
 ```mermaid
 pie showData
@@ -67,6 +79,9 @@ pie showData
 | Tunisia | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Mozambique | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 1 | 0 | 0 |
 
+
+![Pays](assets/pays_EN.png)
+
 ## 5. Regional distribution
 
 | Region | Records | Share |
@@ -76,6 +91,10 @@ pie showData
 | Central Africa | 1 | 16.7% |
 | Indian Ocean | 1 | 16.7% |
 | North Africa | 1 | 16.7% |
+
+
+![Régions](assets/regions_EN.png)
+![Répartition régions](assets/regions_pie_EN.png)
 
 ## 6. Sector distribution
 
@@ -87,6 +106,10 @@ pie showData
 | Aviation | 1 | 16.7% |
 | Manufacturing / Industry | 1 | 16.7% |
 
+
+![Secteurs](assets/secteurs_EN.png)
+![Répartition secteurs](assets/secteurs_pie_EN.png)
+
 ## 7. Actors / groups
 
 | Actor / Group | Records | Share |
@@ -96,6 +119,9 @@ pie showData
 | spacebears | 1 | 16.7% |
 | arcusmedia | 1 | 16.7% |
 | orca | 1 | 16.7% |
+
+
+![Acteurs / groupes](assets/acteurs_EN.png)
 
 ## 8. Evidence maturity
 
@@ -112,6 +138,9 @@ pie showData
 | Low | 4 | 66.7% |
 | Medium | 1 | 14.3% |
 | Very High | 2 | 28.6% |
+
+
+![Maturité des preuves](assets/preuves_EN.png)
 
 ## 9. Timeline
 

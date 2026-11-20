@@ -1,91 +1,94 @@
-# AFRINTEL CTI statistics - September 2025
+# AFRINTEL CTI Statistics - September 2025
 
-👉🏾 [French version](./README_FR.md)
+Source of truth: validated `victims_FR.md` / `victims.md` pair.
 
-## Summary
-
-This statistical sheet is compiled from the 18 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+This sheet covers the **21 records** in the victims corpus. Figures describe AFRINTEL documented visibility.
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 18 |
+| Total incidents | 21 |
+| Countries / geographic scopes | 13 |
+| Distinct sectors | 19 |
+| Distinct actors / sources | 9 |
+
+## Types
+
+| Type | Records |
+|---|---:|
 | Ransomware | 11 |
-| Data leaks | 7 |
-| Access sales | 0 |
+| Data Leak | 9 |
+| Access Sale | 0 |
+| DDoS | 1 |
 | Defacement | 0 |
-| Unclassified public claims | 0 |
-| Countries | 11 |
-| Sectors | 17 |
-| Actors / sources | 15 |
+| Account Takeover | 0 |
+| System Intrusion | 0 |
+| Malware | 0 |
+| Operational Fraud | 0 |
+| **Total** | **21** |
 
-## 1. Country
+## Countries
 
-| Country | Incidents |
+| Country / scope | Records |
 |---|---:|
 | 🇳🇬 Nigeria | 4 |
 | 🇪🇬 Egypt | 3 |
-| 🇲🇦 Morocco | 2 |
+| 🇩🇿 Algeria | 2 |
 | 🇰🇪 Kenya | 2 |
-| 🇩🇿 Algeria | 1 |
-| 🇨🇮 Ivory Coast | 1 |
-| 🇿🇼 Zimbabwe | 1 |
-| 🇳🇦 Namibia | 1 |
+| 🇲🇦 Morocco | 2 |
+| Morocco | 1 |
 | 🇦🇴 Angola | 1 |
 | 🇨🇩 Congo (DRC) | 1 |
+| 🇨🇮 Ivory Coast | 1 |
+| 🇳🇦 Namibia | 1 |
 | 🇸🇳 Senegal | 1 |
+| 🇹🇳 Tunisia | 1 |
+| 🇿🇼 Zimbabwe | 1 |
 
-## 2. Sector
+## Sectors
 
-| Sector | Incidents |
+| Sector | Records |
 |---|---:|
+| Government / Administration | 2 |
 | Insurance / Financial Services | 2 |
-| Education / Higher Education | 1 |
-| Fintech / Payment Services | 1 |
-| Real Estate / Construction / Engineering | 1 |
 | Catering / Food Services / Industrial Catering | 1 |
-| Manufacturing Industry / Bedding / Furniture | 1 |
-| Manufacturing Industry (Plastics) | 1 |
+| Education / Higher Education | 1 |
 | Finance | 1 |
 | Financial Services | 1 |
+| Fintech / Payment Services | 1 |
+| Government / Finance | 1 |
 | Government / Public Administration | 1 |
-| Government / Administration | 1 |
-| Public administrations | 1 |
-| Technology / ERP Software Publishing | 1 |
-| Technology / Digital Services / Software Development | 1 |
+| Manufacturing Industry (Plastics) | 1 |
+| Manufacturing Industry / Bedding / Furniture | 1 |
 | Microfinance / Banking | 1 |
 | Public Administration / Finance / Taxation | 1 |
+| Public administrations | 1 |
+| Real Estate / Construction / Engineering | 1 |
+| Technology / Digital Services / Software Development | 1 |
+| Technology / ERP Software Publishing | 1 |
 | Telecommunications | 1 |
+| Telecommunications / Internet Service Provider | 1 |
 
-## 3. Actor / source
+## Actors / sources
 
-| Actor / source | Incidents |
+| Actor / source | Records |
 |---|---:|
+| Unknown | 11 |
 | Not specified | 2 |
-| TheGentlemen | 2 |
-| killsec | 2 |
+| privilege | 2 |
 | Fire Wire | 1 |
-| obscura | 1 |
-| Tanaka | 1 |
-| yurei | 1 |
-| radar | 1 |
-| privilege, post published on a cybercriminal forum | 1 |
-| privilege | 1 |
-| qilin | 1 |
-| warlock | 1 |
-| arcusmedia | 1 |
-| blackshrantac | 1 |
+| Hider_N3x | 1 |
+| Keymous (claim) | 1 |
 | KILLUAX | 1 |
+| sarah8toumi (source account) | 1 |
+| Tanaka | 1 |
 
-## 4. Type
+## Statuses
 
-| Type | Incidents |
+| Status | Records |
 |---|---:|
-| Ransomware | 11 |
-| Data Leak | 7 |
-
-## CTI reading
-
-The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
+| Claim - Unverified | 10 |
+| Claim - Data Sample Published | 9 |
+| Claim - OSINT Availability Evidence | 1 |
+| Data Fully Published | 1 |
 
 **AFRINTEL** - TLP:CLEAR
-

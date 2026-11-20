@@ -39,6 +39,8 @@ Par rapport à Octobre, le volume mensuel **diminue de 4 fiches**. Les variation
 
 
 ## 2. Méthodologie
+![Comparaison novembre 2025 avec le mois précédent](assets/comparaison_FR.png)
+
 
 - **Périmètre :** 54 pays africains ; période de référence : Novembre 2025.
 - **Source de vérité :** couple validé `victims_FR.md` / `victims.md`.
@@ -68,7 +70,7 @@ Par rapport à Octobre, le volume mensuel **diminue de 4 fiches**. Les variation
 | Data Leak | 5 | 31,3 % |
 | Access Sale | 0 | 0,0 % |
 | DDoS | 0 | 0,0 % |
-| Defacement | 1 | 6,7 % |
+| Defacement | 1 | 6,2 % |
 | Account Takeover | 0 | 0,0 % |
 | System Intrusion | 0 | 0,0 % |
 | Malware | 0 | 0,0 % |
@@ -84,6 +86,9 @@ pie showData
 ```
 
 ## 4. Répartition géographique
+![Types d’incident](assets/types_FR.png)
+![Répartition des types d’incident](assets/types_pie_FR.png)
+
 
 | Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -96,11 +101,13 @@ pie showData
 | Zambie | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Nigeria | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | **1** | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
-| **Total des occurrences géographiques** | **17** | **10** | **5** | **0** | **0** | **1** | **0** | **0** | **0** |
+| **Total des occurrences géographiques** | **17** | **10** | **6** | **0** | **0** | **1** | **0** | **0** | **0** |
 
 > `Operational Fraud = 0` ce mois-ci ; la colonne est omise pour préserver la lisibilité. Les deux occurrences Comores/Cameroun proviennent d'une seule fiche multi-pays ; le total canonique reste 16.
 
 ## 5. Répartition régionale
+![Incidents documentés par pays](assets/pays_FR.png)
+
 
 | Région | Fiches | Part |
 |---|---:|---:|
@@ -112,24 +119,30 @@ pie showData
 | Océan Indien | 1 | 5,9 % |
 | **Total des occurrences régionales** | **17** | **100 %** |
 
-La région la plus représentée est **Afrique du Nord avec 8 fiches (53,3 %)**.
+La région la plus représentée est **Afrique du Nord avec 8 occurrences géographiques (47,1 %)**.
 
 ## 6. Impact sectoriel
+![Répartition régionale](assets/regions_FR.png)
+![Parts régionales](assets/regions_pie_FR.png)
+
 
 | Secteur | Fiches | Part | Activité |
 |---|---:|---:|---|
 | Gouvernement / Administration | 4 | 25,0 % | ████ |
-| Transport / Logistique | 2 | 13,3 % | ██ |
-| Technologie / IT | 2 | 13,3 % | ██ |
-| Finance / Banque | 2 | 13,3 % | ██ |
-| Construction / Immobilier | 2 | 13,3 % | ██ |
-| Services professionnels / Business | 1 | 6,7 % | █ |
-| Commerce / E-commerce | 1 | 6,7 % | █ |
-| Industrie / Fabrication | 1 | 6,7 % | █ |
-| Santé / Médical | 1 | 6,7 % | █ |
+| Transport / Logistique | 2 | 12,5 % | ██ |
+| Technologie / IT | 2 | 12,5 % | ██ |
+| Finance / Banque | 2 | 12,5 % | ██ |
+| Construction / Immobilier | 2 | 12,5 % | ██ |
+| Services professionnels / Business | 1 | 6,3 % | █ |
+| Commerce / E-commerce | 1 | 6,3 % | █ |
+| Industrie / Fabrication | 1 | 6,3 % | █ |
+| Santé / Médical | 1 | 6,3 % | █ |
 | **Total** | **16** | **100 %** | |
 
 ## 7. Acteurs / groupes
+![Exposition sectorielle](assets/secteurs_FR.png)
+![Répartition sectorielle](assets/secteurs_pie_FR.png)
+
 
 `Unknown` correspond à une absence d'attribution, pas à un acteur.
 
@@ -149,18 +162,22 @@ La région la plus représentée est **Afrique du Nord avec 8 fiches (53,3 %)**.
 | Ahlul Sahara | 1 | █ |
 
 ## 8. Maturité des preuves
+![Acteurs et labels de publication](assets/acteurs_FR.png)
+
 
 | Maturité de preuve | Fiches | Part |
 |---|---:|---:|
-| Claim - Unverified | 9 | 60,0 % |
+| Claim - Unverified | 9 | 56,3 % |
 | Claim - Data Sample Published | 5 | 31,3 % |
-| Data Fully Published | 1 | 6,7 % |
-| Confirmation victime / gouvernement / autorité | 1 | 6,7 % |
+| Data Fully Published | 1 | 6,3 % |
+| Confirmation victime / gouvernement / autorité | 1 | 6,3 % |
 | **Total** | **16** | **100 %** |
 
 Les statuts de preuve décrivent le niveau de validation disponible ; ils ne changent pas le type technique de l'incident.
 
 ## 9. Chronologie
+![Maturité des preuves](assets/preuves_FR.png)
+
 
 ```mermaid
 timeline

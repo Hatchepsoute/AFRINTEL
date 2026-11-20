@@ -1,88 +1,88 @@
-# AFRINTEL CTI statistics - October 2025
+# AFRINTEL CTI Statistics - October 2025
 
-👉🏾 [French version](./README_FR.md)
+Source of truth: validated `victims_FR.md` / `victims.md` pair.
 
-## Summary
-
-This statistical sheet is compiled from the 19 cards in the monthly victim file. Publications remain claims when the source provides no independent confirmation.
+This sheet covers the **20 records** in the victims corpus. Figures describe AFRINTEL documented visibility.
 
 | Indicator | Value |
 |---|---:|
-| Total incidents | 19 |
-| Ransomware | 17 |
-| Data leaks | 2 |
-| Access sales | 0 |
+| Total incidents | 20 |
+| Countries / geographic scopes | 12 |
+| Distinct sectors | 17 |
+| Distinct actors / sources | 5 |
+
+## Types
+
+| Type | Records |
+|---|---:|
+| Ransomware | 16 |
+| Data Leak | 3 |
+| Access Sale | 1 |
+| DDoS | 0 |
 | Defacement | 0 |
-| Unclassified public claims | 0 |
-| Countries | 11 |
-| Sectors | 16 |
-| Actors / sources | 13 |
+| Account Takeover | 0 |
+| System Intrusion | 0 |
+| Malware | 0 |
+| Operational Fraud | 0 |
+| **Total** | **20** |
 
-## 1. Country
+## Countries
 
-| Country | Incidents |
+| Country / scope | Records |
 |---|---:|
 | 🇲🇦 Morocco | 5 |
 | 🇿🇦 South Africa | 4 |
-| 🇪🇬 Egypt | 2 |
-| 🇰🇪 Kenya | 1 |
-| 🇲🇬 Madagascar | 1 |
+| 🇰🇪 Kenya | 2 |
+| South Africa | 1 |
 | 🇨🇩 Congo (DRC) | 1 |
-| 🇬🇦 Gabon | 1 |
-| 🇳🇬 Nigeria | 1 |
-| 🇹🇿 Tanzania | 1 |
-| 🇹🇳 Tunisia | 1 |
 | 🇩🇿 Algeria | 1 |
+| 🇪🇬 Egypt | 1 |
+| 🇬🇦 Gabon | 1 |
+| 🇲🇬 Madagascar | 1 |
+| 🇳🇬 Nigeria | 1 |
+| 🇹🇳 Tunisia | 1 |
+| 🇹🇿 Tanzania | 1 |
 
-## 2. Sector
+## Sectors
 
-| Sector | Incidents |
+| Sector | Records |
 |---|---:|
 | Finance | 3 |
 | Logistics | 2 |
-| Construction / HVAC | 1 |
-| Religion / Charitable Organization | 1 |
-| Transport / Logistics | 1 |
-| Real Estate / Construction / Engineering | 1 |
-| Technology / Fintech (Insurance Solutions) | 1 |
-| Air transport | 1 |
-| Mining / Conglomerate | 1 |
-| Education (University) | 1 |
 | Agribusiness | 1 |
-| Wholesale Trade (Food Products) | 1 |
-| Pharmaceutical Industry / Laboratory | 1 |
-| Legal Services | 1 |
+| Air transport | 1 |
+| Construction / HVAC | 1 |
+| Education (University) | 1 |
 | Education / Higher Education / Agronomy and Veterinary Sciences | 1 |
+| Government / Administration | 1 |
 | Government / Education / Higher Education | 1 |
+| Healthcare / Health Technology | 1 |
+| Legal Services | 1 |
+| Mining / Conglomerate | 1 |
+| Pharmaceutical Industry / Laboratory | 1 |
+| Religion / Charitable Organization | 1 |
+| Technology / Fintech (Insurance Solutions) | 1 |
+| Transport / Logistics | 1 |
+| Wholesale Trade (Food Products) | 1 |
 
-## 3. Actor / source
+## Actors / sources
 
-| Actor / source | Incidents |
+| Actor / source | Records |
 |---|---:|
-| incransom | 4 |
-| qilin | 3 |
-| tengu | 2 |
-| beast | 1 |
-| brotherhood | 1 |
-| medusa | 1 |
-| obscura | 1 |
-| TheGentlemen | 1 |
-| radar | 1 |
-| clop | 1 |
-| blackshrantac | 1 |
+| Unknown | 16 |
 | DBhacker_BF | 1 |
 | EternalRed | 1 |
+| fuckoverflow (claimed seller) | 1 |
+| Kazu (claim) | 1 |
 
-## 4. Type
+## Statuses
 
-| Type | Incidents |
+| Status | Records |
 |---|---:|
-| Ransomware | 17 |
-| Data Leak | 2 |
-
-## CTI reading
-
-The monthly volume reflects public visibility in the sources reviewed, not all incidents that occurred.
+| Claim - Unverified | 10 |
+| Claim - Data Sample Published | 7 |
+| Claim - Unverified Marketplace Listing | 1 |
+| Corroborated - Data Sample Independently Reviewed + Regulator Investigation | 1 |
+| Data Fully Published | 1 |
 
 **AFRINTEL** - TLP:CLEAR
-

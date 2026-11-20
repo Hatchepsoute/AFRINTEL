@@ -6,17 +6,17 @@
 
 ## 1. Synthèse exécutive
 
-En décembre 2025, AFRINTEL documente **20 cyberincidents** affectant des organisations et services numériques dans **10 pays africains**.
+En décembre 2025, AFRINTEL documente **21 cyberincidents** affectant des organisations et services numériques dans **11 pays africains**.
 
-Le paysage est dominé par le **Ransomware avec 14 fiches (70,0 %)**, suivi des **Data Leak avec 6 (30,0 %)**.
+Le paysage est dominé par le **Ransomware avec 14 fiches (66,7 %)**, suivi des **Data Leak avec 7 (33,3 %)**.
 
-La concentration géographique est marquée : **Égypte (6)**, **Afrique du Sud (3)** et **Tunisie (4)** représentent ensemble **13 fiches, soit 65,0 % du mois**. Cette concentration reflète la visibilité du corpus AFRINTEL et non un taux national exhaustif de compromission.
+La concentration géographique est marquée : **Égypte (6)**, **Afrique du Sud (3)** et **Tunisie (4)** représentent ensemble **13 fiches, soit 61,9 % du mois**. Cette concentration reflète la visibilité du corpus AFRINTEL et non un taux national exhaustif de compromission.
 
 Sur le plan sectoriel, les catégories normalisées les plus représentées sont **Finance / Banque (4)**, **Santé / Médical (3)**, **Gouvernement / Administration (2)**, **Éducation / Université (3)** et **Industrie / Fabrication (2)**. Les labels d'acteurs les plus fréquents sont `qilin` (3), `lockbit5` (3), `dragonforce` (2) et `nova` (2).
 
-La maturité des preuves reste variable : **13 fiches sont `Claim - Unverified` et 6 sont `Claim - Data Sample Published`**. AFRINTEL conserve une séparation stricte entre faits observés, revendications, corroborations, confirmations officielles et inconnues techniques.
+La maturité des preuves reste variable : **13 fiches sont `Claim - Unverified`, 7 sont `Claim - Data Sample Published` et 1 est `Data Fully Published`**. AFRINTEL conserve une séparation stricte entre faits observés, revendications, corroborations, confirmations officielles et inconnues techniques.
 
-Par rapport à novembre, le volume mensuel **augmente de 5 fiches**. Les variations les plus visibles concernent le Ransomware 10→14 (+4), les Data Leak 4→6 (+2) et le Defacement 1→0 (-1).
+Par rapport à novembre, le volume mensuel **augmente de 5 fiches**. Les variations les plus visibles concernent le Ransomware 10→14 (+4), les Data Leak 5→7 (+2) et le Defacement 1→0 (-1).
 
 > **Note de lecture :** les chiffres AFRINTEL décrivent les incidents documentés et la visibilité des menaces observées. Ils ne constituent pas une mesure exhaustive de toutes les cyberattaques réellement survenues en Afrique.
 
@@ -24,9 +24,9 @@ Par rapport à novembre, le volume mensuel **augmente de 5 fiches**. Les variati
 
 | Indicateur | Novembre 2025 | Décembre 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 15 | 20 | **+4 (+26,7 %)** |
+| Total incidents | 16 | 21 | **+5 (+31,3 %)** |
 | Ransomware | 10 | 14 | **+4 (+40,0 %)** |
-| Data Leak | 4 | 6 | **+2 (+50,0 %)** |
+| Data Leak | 5 | 7 | **+2 (+40,0 %)** |
 | Access Sale | 0 | 0 | **Stable** |
 | DDoS | 0 | 0 | **Stable** |
 | Defacement | 1 | 0 | **-1 (-100,0 %)** |
@@ -36,6 +36,8 @@ Par rapport à novembre, le volume mensuel **augmente de 5 fiches**. Les variati
 | Operational Fraud | 0 | 0 | **Stable** |
 
 ## 2. Méthodologie
+![Comparaison décembre 2025 avec le mois précédent](assets/comparaison_FR.png)
+
 
 - **Périmètre :** 54 pays africains ; période de référence : décembre 2025.
 - **Source de vérité :** couple validé `victims_FR.md` / `victims.md`.
@@ -50,8 +52,8 @@ Par rapport à novembre, le volume mensuel **augmente de 5 fiches**. Les variati
 
 | Indicateur | Valeur |
 |---|---:|
-| Incidents documentés | **20** |
-| Pays représentés | **10** |
+| Incidents documentés | **21** |
+| Pays représentés | **11** |
 | Régions représentées | **4** |
 | Premier pays | **Égypte (6)** |
 | Premier secteur normalisé | **Finance / Banque (4)** |
@@ -59,8 +61,8 @@ Par rapport à novembre, le volume mensuel **augmente de 5 fiches**. Les variati
 
 | Type d'incident | Fiches | Part |
 |---|---:|---:|
-| Ransomware | 14 | 73,7 % |
-| Data Leak | 6 | 30,0 % |
+| Ransomware | 14 | 66,7 % |
+| Data Leak | 7 | 33,3 % |
 | Access Sale | 0 | 0,0 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 0 | 0,0 % |
@@ -68,16 +70,19 @@ Par rapport à novembre, le volume mensuel **augmente de 5 fiches**. Les variati
 | System Intrusion | 0 | 0,0 % |
 | Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
-| **Total** | **20** | **100 %** |
+| **Total** | **21** | **100 %** |
 
 ```mermaid
 pie showData
     title Types d'incident - Décembre 2025
     "Ransomware" : 14
-    "Data Leak" : 6
+    "Data Leak" : 7
 ```
 
 ## 4. Répartition géographique
+![Types d’incident](assets/types_FR.png)
+![Répartition des types d’incident](assets/types_pie_FR.png)
+
 
 | Pays | Total | Ransomware | Data Leak |
 |---|---:|---:|---:|
@@ -91,38 +96,47 @@ pie showData
 | Algérie | **1** | 0 | 1 |
 | Maroc | **1** | 0 | 1 |
 | Kenya | **1** | 0 | 1 |
-| **Total** | **20** | **14** | **6** |
+| Côte d'Ivoire | **1** | 0 | 1 |
+| **Total** | **21** | **14** | **7** |
 
 ## 5. Répartition régionale
+![Incidents documentés par pays](assets/pays_FR.png)
+
 
 | Région | Fiches | Part |
 |---|---:|---:|
-| Afrique du Nord | 12 | 60,0 % |
-| Afrique australe | 5 | 26,3 % |
-| Afrique de l'Ouest | 2 | 10,5 % |
-| Afrique de l'Est | 1 | 5,3 % |
-| **Total** | **20** | **100 %** |
+| Afrique du Nord | 12 | 57,1 % |
+| Afrique australe | 5 | 23,8 % |
+| Afrique de l'Ouest | 3 | 14,3 % |
+| Afrique de l'Est | 1 | 4,8 % |
+| **Total** | **21** | **100 %** |
 
-La région la plus représentée est **l'Afrique du Nord avec 11 fiches (57,9 %)**.
+La région la plus représentée est **l'Afrique du Nord avec 12 fiches (57,1 %)**.
 
 ## 6. Impact sectoriel
+![Répartition régionale](assets/regions_FR.png)
+![Parts régionales](assets/regions_pie_FR.png)
+
 
 | Secteur normalisé | Fiches | Part |
 |---|---:|---:|
-| Finance / Banque | 4 | 21,1 % |
-| Santé / Médical | 3 | 15,8 % |
-| Gouvernement / Administration | 2 | 10,5 % |
-| Éducation / Université | 3 | 15,0 % |
-| Industrie / Fabrication | 2 | 10,5 % |
-| Technologie / IT | 1 | 5,3 % |
-| Agriculture / Agro-industrie | 1 | 5,3 % |
-| Non précisé | 1 | 5,3 % |
-| Construction / Immobilier | 1 | 5,3 % |
-| Énergie / Services publics | 1 | 5,3 % |
-| Commerce / E-commerce | 1 | 5,3 % |
-| **Total** | **20** | **100 %** |
+| Finance / Banque | 4 | 19,0 % |
+| Santé / Médical | 3 | 14,3 % |
+| Gouvernement / Administration | 2 | 9,5 % |
+| Éducation / Université | 3 | 14,3 % |
+| Industrie / Fabrication | 2 | 9,5 % |
+| Technologie / IT | 1 | 4,8 % |
+| Agriculture / Agro-industrie | 2 | 9,5 % |
+| Non précisé | 1 | 4,8 % |
+| Construction / Immobilier | 1 | 4,8 % |
+| Énergie / Services publics | 1 | 4,8 % |
+| Commerce / E-commerce | 1 | 4,8 % |
+| **Total** | **21** | **100 %** |
 
 ## 7. Acteurs / groupes
+![Exposition sectorielle](assets/secteurs_FR.png)
+![Répartition sectorielle](assets/secteurs_pie_FR.png)
+
 
 | Acteur / Groupe | Fiches |
 |---|---:|
@@ -139,16 +153,22 @@ La région la plus représentée est **l'Afrique du Nord avec 11 fiches (57,9 %)
 | camillabf | 1 |
 | KaruHunters | 1 |
 | LindaBF | 1 |
+| Ahlul Sahara | 1 |
 
 ## 8. Maturité des preuves
+![Acteurs et labels de publication](assets/acteurs_FR.png)
+
 
 | Maturité de preuve | Fiches | Part |
 |---|---:|---:|
-| Claim - Unverified | 13 | 68,4 % |
-| Claim - Data Sample Published | 6 | 31,6 % |
-| **Total** | **20** | **100 %** |
+| Claim - Unverified | 13 | 61,9 % |
+| Claim - Data Sample Published | 7 | 33,3 % |
+| Data Fully Published | 1 | 4,8 % |
+| **Total** | **21** | **100 %** |
 
 ## 9. Chronologie
+![Maturité des preuves](assets/preuves_FR.png)
+
 
 ```mermaid
 timeline
@@ -162,6 +182,7 @@ timeline
     08 Décembre 2025 : Arkan
     11 Décembre 2025 : Leadway Assurance / Leadway Health
     12 Décembre 2025 : Hopital La Rabta
+    13 Décembre 2025 : ANADER
     15 Décembre 2025 : Examens.tn
     15 Décembre 2025 : Société Tunisienne de Radiologie
     22 Décembre 2025 : Polaris Parks
@@ -183,7 +204,7 @@ timeline
 
 ### Data Leak
 
-**6 fiches** sont classées Data Leak. L'Égypte en compte 2, tandis que l'Algérie, le Maroc et le Kenya en comptent une chacun. Le nouveau dossier Yalla Tager est une **revendication accompagnée d'un échantillon** : le matériel fourni est structurellement cohérent avec des données clients/commerçants, mais le volume revendiqué de 20 000 utilisateurs, le vecteur d'accès, la date d'extraction et la provenance complète restent non vérifiés.
+**7 fiches** sont classées Data Leak. L'Égypte en compte 2, tandis que l'Algérie, la Côte d'Ivoire, le Maroc et le Kenya en comptent une chacun. Le dossier ANADER est une **revendication accompagnée d'un échantillon** : la structure SQL/JSON, les rôles administratifs et les rattachements territoriaux sont visibles, mais le dump de 11,4 MB, son origine et son exhaustivité restent non vérifiés.
 
 ## 11. Incidents notables
 
@@ -197,10 +218,10 @@ timeline
 
 ## 12. Principaux enseignements et lacunes de renseignement
 
-- **Concentration géographique :** l'Égypte représente 6 fiches (31,6 %), devant l'Afrique du Sud (3) et la Tunisie (4).
-- **Structure de menace :** le Ransomware reste le premier type avec 14 fiches, suivi des Data Leak (6).
+- **Concentration géographique :** l'Égypte représente 6 fiches (28,6 %), devant l'Afrique du Sud (3) et la Tunisie (4).
+- **Structure de menace :** le Ransomware reste le premier type avec 14 fiches, suivi des Data Leak (7).
 - **Secteurs :** Finance / Banque (4) et Santé / Médical (3) concentrent la plus forte visibilité ; Commerce / E-commerce gagne une fiche avec Yalla Tager.
-- **Preuve :** les 20 fiches restent des revendications, dont 6 accompagnées d'échantillons publiés.
+- **Preuve :** les 21 fiches restent des revendications ou publications à niveaux de preuve distincts, dont 7 accompagnées d'échantillons publiés et 1 présentée comme entièrement publiée.
 - **Yalla Tager :** l'échantillon soutient une revendication d'exposition de données clients/commerçants, sans établir la date ni la méthode de compromission et sans valider le volume annoncé de 20 000 utilisateurs.
 
 ### Intelligence gaps
@@ -235,7 +256,7 @@ timeline
 
 ## 14. Conclusion
 
-**Décembre 2025** compte **20 cyberincidents documentés** dans **10 pays africains** : 14 Ransomware et 6 Data Leak. L'ajout de Yalla Tager porte l'Égypte à 6 fiches et augmente la composante Data Leak accompagnée d'échantillons, sans modifier l'exigence analytique consistant à séparer les données observées du périmètre revendiqué.
+**Décembre 2025** compte **21 cyberincidents documentés** dans **11 pays africains** : 14 Ransomware et 7 Data Leak. L'ajout d'ANADER porte la Côte d'Ivoire à une fiche et augmente la composante Data Leak accompagnée d'échantillons, sans modifier l'exigence analytique consistant à séparer les données observées du périmètre revendiqué.
 
 👉🏾 [Voir les victimes du mois](./victims_FR.md)
 

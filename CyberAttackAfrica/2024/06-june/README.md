@@ -1,6 +1,13 @@
 # AFRINTEL CTI Report - Cyber Threats in Africa - June 2024
 
-👉🏾 [Version française](./README_FR.md)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL) ![Scope](https://img.shields.io/badge/Scope-Africa-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Period](https://img.shields.io/badge/Period-June%202024-blueviolet)
+
+**Audience:** CISOs, SOC/CERT leads, risk committees and business continuity managers.<br>
+**Period:** June 1–30, 2024, based on the documented canonical records.<br>
+**Edition:** audited November 20, 2026 | **Distribution:** TLP:CLEAR.<br>
+👉🏾 [Version française](./README_FR.md) | [Detailed records in English](./victims.md) | [French records](./victims_FR.md)
+
+> **Evidence method.** This report derives from the validated June 2024 victim cards. Claims, victim confirmations, samples and confidence levels remain separate. A criminal publication is not treated as proof of encryption, exfiltration or full compromise without supporting evidence.
 
 ## 1. Executive summary
 
@@ -20,6 +27,8 @@ In June 2024, AFRINTEL retains **3 canonical cyber incidents across 2 countries*
 | System Intrusion | 0 | 0 | Stable |
 | Malware | 0 | 0 | Stable |
 | Operational Fraud | 1 | 0 | -1 (-100.0%) |
+
+![Comparaison mensuelle](assets/comparaison_EN.png)
 
 ### 1.2 Comparative analysis
 
@@ -48,6 +57,9 @@ Monthly volume **decreases by 6 incident(s)**. Structural changes are: Ransomwar
 | Malware | 0 | 0.0% |
 | Operational Fraud | 0 | 0.0% |
 
+![Types d’incident](assets/types_EN.png)
+![Répartition des types](assets/types_pie_EN.png)
+
 ```mermaid
 pie showData
     title Incident types - June 2024
@@ -61,12 +73,19 @@ pie showData
 | South Africa | 2 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Congo | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
+
+![Pays](assets/pays_EN.png)
+
 ## 5. Regional distribution
 
 | Region | Records | Share |
 |---|---|---|
 | Southern Africa | 2 | 66.7% |
 | Central Africa | 1 | 33.3% |
+
+
+![Régions](assets/regions_EN.png)
+![Répartition régions](assets/regions_pie_EN.png)
 
 ## 6. Sector distribution
 
@@ -76,6 +95,10 @@ pie showData
 | Professional / Business Services | 1 | 33.3% |
 | Legal / Justice | 1 | 33.3% |
 
+
+![Secteurs](assets/secteurs_EN.png)
+![Répartition secteurs](assets/secteurs_pie_EN.png)
+
 ## 7. Actors / groups
 
 | Actor / Group | Records | Share |
@@ -83,6 +106,9 @@ pie showData
 | arcusmedia | 1 | 33.3% |
 | eldorado | 1 | 33.3% |
 | cactus | 1 | 33.3% |
+
+
+![Acteurs / groupes](assets/acteurs_EN.png)
 
 ## 8. Evidence maturity
 
@@ -95,6 +121,9 @@ pie showData
 | Confidence | Records | Share |
 |---|---|---|
 | Low | 3 | 100.0% |
+
+
+![Maturité des preuves](assets/preuves_EN.png)
 
 ## 9. Timeline
 

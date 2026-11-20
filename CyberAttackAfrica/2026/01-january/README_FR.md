@@ -6,17 +6,17 @@
 **Public cible :** RSSI, directions des risques, responsables SOC/CERT, responsables de la continuité d'activité.  
 **Période étudiée :** 1er au 31 janvier 2026, selon les publications et événements documentés.  
 **Édition :** 6 novembre 2026 | **Diffusion :** TLP:CLEAR.  
-👉🏾 [English version](./README.md) | [Fiches détaillées en français](./victims_FR.md) | [Corpus anglais](./victims.md)
+👉🏾 [English version](./README.md) | [Fiches détaillées en français](./victims_FR.md) | [Corpus anglais](./victims.md) | [Rapport hebdomadaire](./WEEKLY_REPORT_JANUARY_2026_FR.md)
 
 > **Méthodologie de preuve - lecture du rapport.** AFRINTEL consolide les investigations OSINT et analyses post-divulgation déjà consignées dans les fiches victimes. **Pour les dossiers ransomware**, les annonces et, lorsque publiés, les inventaires, aperçus et documents divulgués sont analysés afin de caractériser l'exposition. **Pour les fuites de données**, les échantillons disponibles sont examinés (structure, champs, cohérence, volume observé et risque métier). Le lecteur peut ainsi distinguer un contenu effectivement analysé d'un volume simplement revendiqué. Les confirmations officielles sont identifiées séparément ; le rapport ne suppose ni intrusion, ni chiffrement, ni exfiltration exhaustive sans pièces correspondantes.
 
 ## 1. Synthèse exécutive
 
-Le corpus AFRINTEL de janvier 2026 regroupe **31 observations documentées dans 13 pays africains**. La menace d'extorsion domine avec **19 fiches ransomware (61,3 %)**, devant **10 publications de fuite de données (32,3 %)**, **une offre de vente d'accès** et **un défacement coordonné** (3,2 % chacun). Le décompte décrit d'abord la visibilité de la menace dans les sources collectées. Il ne constitue ni un taux de compromission national ni un indicateur exhaustif des attaques effectivement subies.
+Le corpus AFRINTEL de janvier 2026 regroupe **30 observations documentées dans 13 pays africains**. La menace d'extorsion domine avec **18 fiches ransomware (60,0 %)**, devant **10 publications de fuite de données (33,3 %)**, **une offre de vente d'accès** et **un défacement coordonné** (3,3 % chacun). Le décompte décrit d'abord la visibilité de la menace dans les sources collectées. Il ne constitue ni un taux de compromission national ni un indicateur exhaustif des attaques effectivement subies.
 
-L'**Afrique du Sud (6)** concentre le plus grand nombre de fiches, suivie du **Kenya (5)**, de l'**Égypte (4)** et de l'**Algérie (4)**. Ces quatre pays représentent **19 observations sur 31 (61,3 %)**. Les secteurs agrégés les plus représentés sont les services financiers et assimilés (6), l'industrie et l'ingénierie (5), l'administration publique (4) et le transport et la logistique au sens large (4). Cette diversité rappelle qu'une campagne d'extorsion ou une fuite de données n'est pas seulement une question d'IT : elle peut affecter les paiements, les services publics, l'identité numérique et les relations avec des prestataires.
+L'**Afrique du Sud (6)** concentre le plus grand nombre de fiches, suivie du **Kenya (4)**, de l'**Égypte (4)** et de l'**Algérie (4)**. Ces quatre pays représentent **18 observations sur 30 (60,0 %)**. Les secteurs agrégés les plus représentés sont les services financiers et assimilés (6), l'industrie et l'ingénierie (5), l'administration publique (4) et le transport et la logistique au sens large (4). Cette diversité rappelle qu'une campagne d'extorsion ou une fuite de données n'est pas seulement une question d'IT : elle peut affecter les paiements, les services publics, l'identité numérique et les relations avec des prestataires.
 
-Deux étiquettes ransomware ressortent : **TheGentlemen (6 publications)** et **tengu (5)**. Ensemble, elles représentent **11 des 19 fiches ransomware (57,9 %)** ; cette concentration des publications ne démontre pas à elle seule une campagne coordonnée ni une hausse de la capacité opérationnelle de ces groupes. En parallèle, des publications de données sensibles concernent le système de facturation de Nerasolgh au Ghana, des configurations de paiement attribuées à PixPay au Sénégal et des archives de financement PAYGO associées au Kenya.
+Deux étiquettes ransomware ressortent : **TheGentlemen (6 publications)** et **tengu (5)**. Ensemble, elles représentent **11 des 18 fiches ransomware (61,1 %)** ; cette concentration des publications ne démontre pas à elle seule une campagne coordonnée ni une hausse de la capacité opérationnelle de ces groupes. En parallèle, des publications de données sensibles concernent le système de facturation de Nerasolgh au Ghana, des configurations de paiement attribuées à PixPay au Sénégal et des archives de financement PAYGO associées au Kenya.
 
 La **Land Bank sud-africaine** constitue le cas de ransomware le plus clairement confirmé du mois : l'incident a été publiquement reconnu, avec chiffrement de certains équipements et exfiltration de fichiers rapportés. D'autres cas sont documentés par des publications de groupes, des listes de fichiers ou des échantillons, mais leur périmètre opérationnel reste souvent inconnu. Le rapport retient une priorité de direction : **prévenir l'arrêt d'activité, limiter le risque de fraude et démontrer la capacité à contenir une exposition d'identifiants ou de données sensibles en quelques heures**.
 
@@ -26,28 +26,23 @@ La **Land Bank sud-africaine** constitue le cas de ransomware le plus clairement
 
 | Indicateur | Décembre 2025, fiches recomptées | Janvier 2026 | Évolution indicative |
 |---|---:|---:|---:|
-| Total des fiches | 20 | **31** | **+11 (+55,0 %)** |
-| Ransomware | 14 | **19** | +5 (+35,7 %) |
+| Total des fiches | 20 | **30** | **+10 (+50,0 %)** |
+| Ransomware | 14 | **18** | +4 (+28,6 %) |
 | Data Leak | 6 | **10** | +4 (+66,7 %) |
 | Access Sale | 0 | **1** | +1 (nouveau) |
-| DDoS | 0 | **0** | 0 (stable) |
 | Defacement | 0 | **1** | +1 (nouveau) |
-| Account Takeover | 0 | **0** | 0 (stable) |
-| System Intrusion | 0 | **0** | 0 (stable) |
-| Malware | 0 | **0** | 0 (stable) |
-| Operational Fraud | 0 | **0** | 0 (stable) |
 
 **Lecture RSSI :** l'augmentation des fiches documentées peut résulter de découvertes ou d'enrichissements rétrospectifs, de nouvelles sources et de publications répétées. Elle ne permet pas d'affirmer une augmentation de 55 % du nombre réel d'intrusions en Afrique.
 
 ## 2. Périmètre, méthode et limites
 
-L'analyse couvre les **54 pays africains** ; seuls les cas dont le lien avec une organisation, une activité ou des données africaines est explicite sont recensés. Les données sources sont les deux fichiers [victims_FR.md](./victims_FR.md) et [victims.md](./victims.md) fournis pour janvier. Le fichier français sert à normaliser les catégories ; le fichier anglais a été contrôlé en correspondance, à raison de **31 fiches dans chaque langue, dans le même ordre**. Les chiffres ont été recalculés à partir des fiches elles-mêmes, et non repris des résumés initiaux ou des huit graphiques joints.
+L'analyse couvre les **54 pays africains** ; seuls les cas dont le lien avec une organisation, une activité ou des données africaines est explicite sont recensés. Les données sources sont les deux fichiers [victims_FR.md](./victims_FR.md) et [victims.md](./victims.md) fournis pour janvier. Le fichier français sert à normaliser les catégories ; le fichier anglais a été contrôlé en correspondance, à raison de **30 fiches dans chaque langue, dans le même ordre**. Les chiffres ont été recalculés à partir des fiches elles-mêmes, et non repris des résumés initiaux ou des huit graphiques joints.
 
 Une fiche est comptée **une seule fois** dans une catégorie principale et un pays principal. Les publications multi-pays mentionnées à l'intérieur d'un jeu de données PAYGO ne créent pas de nouvelles victimes par pays sans attribution suffisante. La date portée dans les fiches est très souvent une **date de publication**, pas la date certaine de l'accès initial. Les cas de republication, notamment BazookaEgy, restent des événements documentaires distincts sans preuve d'une nouvelle intrusion.
 
 Les sources comprennent les publications de groupes ransomware, les forums, les inventaires et échantillons **examinés et décrits lors des analyses post-divulgation d’AFRINTEL**, ainsi que les confirmations publiques disponibles. Cette édition consolide ces analyses documentées, avec indication précise des contenus effectivement consultés par dossier ; elle ne revendique pas une nouvelle expertise forensique sur les infrastructures des victimes. Les références et la portée de chaque pièce figurent dans les fiches.
 
-**Contrôle qualité du corpus.** Les deux résumés mensuels joints affichent des totaux obsolètes ou incohérents (21 en anglais, 23 en français), avec un détail de 17 + 2 + 1 + 1 = 21. Les graphiques fournis sont également établis sur 23 entrées, contre **31 fiches réellement listées**. Les graphiques présents dans cette édition ont été intégralement recalculés. Plusieurs champs `Type d'incident`, `Niveau de confiance` et `Niveau d'impact` manquent dans les anciennes fiches ; le type principal peut être déduit du contexte explicite « Groupe ransomware », mais aucun niveau de confiance ou d'impact absent n'a été inventé.
+**Contrôle qualité du corpus.** Les deux résumés mensuels joints affichaient initialement des totaux obsolètes ou incohérents (21 en anglais, 23 en français), avec un détail de 17 + 2 + 1 + 1 = 21. Les graphiques fournis étaient également établis sur 23 entrées, contre **30 fiches réellement listées** après exclusion de la revendication kényane non corroborée. Les graphiques présents dans cette édition ont été recalculés. Les 30 fiches comportent désormais les champs structurés `Type d'incident`, `Niveau de confiance` et `Niveau d'impact`.
 
 ### Protocole AFRINTEL de validation post-publication
 
@@ -68,18 +63,18 @@ L'analyse AFRINTEL intervient **après l'observation de la publication de l'acte
 
 | Type | Fiches | Part |
 |---|---:|---:|
-| Ransomware | **19** | **61,3 %** |
+| Ransomware | **18** | **60,0 %** |
 | Fuite de données | **10** | **32,3 %** |
 | Vente d'accès | **1** | **3,2 %** |
 | Défacement | **1** | **3,2 %** |
-| **Total** | **31** | **100 %** |
+| **Total** | **30** | **100 %** |
 
 ![Typologie des incidents, janvier 2026](./assets/typologie_janvier_2026.png)
 
 ```mermaid
 pie showData
     title Répartition des fiches AFRINTEL - janvier 2026
-    "Ransomware" : 19
+    "Ransomware" : 18
     "Data Leak" : 10
     "Access Sale" : 1
     "Defacement" : 1
@@ -92,7 +87,7 @@ pie showData
 | Pays | Ransomware | Fuite | Vente d'accès | Défacement | Total |
 |---|---:|---:|---:|---:|---:|
 | 🇿🇦 Afrique du Sud | 6 | 0 | 0 | 0 | **6** |
-| 🇰🇪 Kenya | 4 | 1 | 0 | 0 | **5** |
+| 🇰🇪 Kenya | 3 | 1 | 0 | 0 | **4** |
 | 🇩🇿 Algérie | 1 | 3 | 0 | 0 | **4** |
 | 🇪🇬 Égypte | 3 | 1 | 0 | 0 | **4** |
 | 🇲🇦 Maroc | 1 | 2 | 0 | 0 | **3** |
@@ -104,7 +99,7 @@ pie showData
 | 🇸🇳 Sénégal | 0 | 1 | 0 | 0 | 1 |
 | 🇹🇿 Tanzanie | 1 | 0 | 0 | 0 | 1 |
 | 🇹🇬 Togo | 0 | 0 | 1 | 0 | 1 |
-| **Total** | **19** | **10** | **1** | **1** | **31** |
+| **Total** | **18** | **10** | **1** | **1** | **30** |
 
 ![Pays les plus représentés, janvier 2026](./assets/pays_janvier_2026.png)
 
@@ -112,17 +107,16 @@ pie showData
 |---|---|---:|---:|
 | Afrique du Nord | Algérie, Égypte, Maroc, Tunisie | 13 | 41,9 % |
 | Afrique australe | Afrique du Sud, Mozambique | 7 | 22,6 % |
-| Afrique de l'Est | Kenya, Tanzanie | 6 | 19,4 % |
+| Afrique de l'Est | Kenya, Tanzanie | 5 | 16,7 % |
 | Afrique de l'Ouest | Ghana, Niger, Sénégal, Togo | 4 | 12,9 % |
 | Océan Indien | Maurice | 1 | 3,2 % |
-| Afrique centrale | Aucun cas dans ce corpus | 0 | 0 % |
-| **Total** | **13 pays** | **31** | **100 %** |
+| **Total** | **13 pays** | **30** | **100 %** |
 
 Ce classement mesure l'intensité des **observations accessibles à AFRINTEL**, non le niveau absolu de cyberrisque des États. Le Kenya et l'Afrique du Sud présentent des expositions de services financiers et publics ; l'Algérie se distingue par des publications mêlant documents d'identité, assurance, sport et environnement industriel.
 
 ## 5. Exposition sectorielle et risques métiers
 
-Le classement est établi sur une **normalisation de 31 secteurs bruts vers 13 familles métiers**, une seule catégorie principale par fiche. Ce regroupement n'efface pas l'activité précise des victimes, conservée dans les fichiers détaillés.
+Le classement est établi sur une **normalisation de 30 secteurs bruts vers 13 familles métiers**, une seule catégorie principale par fiche. Ce regroupement n'efface pas l'activité précise des victimes, conservée dans les fichiers détaillés.
 
 | Famille de secteur | Fiches | Part | Risques métier principaux |
 |---|---:|---:|---|
@@ -130,7 +124,7 @@ Le classement est établi sur une **normalisation de 31 secteurs bruts vers 13 f
 | Industrie, ingénierie et BTP | **5** | **16,1 %** | arrêt de production, exposition des contrats et de la paie |
 | Administration et gouvernement | **4** | **12,9 %** | interruption des services, usurpation institutionnelle, confiance publique |
 | Transport, logistique, aviation et tourisme | **4** | **12,9 %** | perturbation de la chaîne logistique, fraude fournisseur |
-| Services publics : eau et déchets | 2 | 6,5 % | continuité de service, données de facturation |
+| Services publics : eau et déchets | 1 | 3,3 % | continuité de service, données de facturation |
 | Santé et pharmacie | 2 | 6,5 % | continuité des soins, systèmes métier sensibles |
 | Commerce et distribution | 2 | 6,5 % | informations clients, transactions, activité commerciale |
 | Technologie et cybersécurité | 1 | 3,2 % | compromission d'environnements techniques |
@@ -139,7 +133,7 @@ Le classement est établi sur une **normalisation de 31 secteurs bruts vers 13 f
 | Assurance et assistance | 1 | 3,2 % | fraude documentaire et aux sinistres |
 | Mines et ressources minérales | 1 | 3,2 % | ERP, gestion du personnel et sauvegardes |
 | Services postaux | 1 | 3,2 % | usurpation d'identité, services aux citoyens |
-| **Total** | **31** | **100 %** | |
+| **Total** | **30** | **100 %** | |
 
 ![Répartition sectorielle corrigée, janvier 2026](./assets/secteurs_janvier_2026.png)
 
@@ -152,9 +146,9 @@ Le classement est établi sur une **normalisation de 31 secteurs bruts vers 13 f
 | **TheGentlemen** | **6** | Revendications visant l'Afrique du Sud (3), l'Égypte (1), le Kenya (1) et Maurice (1). |
 | **tengu** | **5** | Publications visant le Maroc, le Kenya, la Tunisie, l'Égypte et l'Algérie. |
 | **dark07x** | **2** | Publications de données attribuées à la LRFA/Foot'Up et à Inter Partner Assistance en Algérie. |
-| Autres étiquettes individuelles | 15 | Une fiche chacune ; certaines identifient un auteur de publication ou un republicateur et non l'auteur de l'intrusion. |
+| Autres étiquettes individuelles | 14 | Une fiche chacune ; certaines identifient un auteur de publication ou un republicateur et non l'auteur de l'intrusion. |
 | Sans attribution humaine fiable | 3 | Constantia Pharmacy, Land Bank et défacement au Niger. `Want_to_cry` est une désignation de ransomware observé, pas une attribution humaine. |
-| **Total** | **31** | **Les comptes de publication ne sont pas équivalents à des groupes d'intrusion attribués.** |
+| **Total** | **30** | **Les comptes de publication ne sont pas équivalents à des groupes d'intrusion attribués.** |
 
 ![Groupes et attribution, janvier 2026](./assets/acteurs_janvier_2026.png)
 
@@ -162,13 +156,13 @@ Le classement est établi sur une **normalisation de 31 secteurs bruts vers 13 f
 
 | Statut figurant dans les fiches | Cas | Interprétation |
 |---|---:|---|
-| `Claim - Unverified` | 15 | Revendication ou publication ; intrusion non établie indépendamment. |
+| `Claim - Unverified` | 14 | Revendication ou publication ; intrusion non établie indépendamment. |
 | `Claim - Data Sample Published` | 11 | Un échantillon est présenté ou accessible ; périmètre global non nécessairement vérifié. |
 | `Data Fully Published` | 2 | Données présentées comme publiées ; exhaustivité non automatiquement vérifiée. |
 | `Corroborated` | 1 | Éléments convergents pour Constantia Pharmacy. |
 | `Victim Confirmed` | 1 | Land Bank : reconnaissance publique de l'incident. |
 | `Under Investigation` (ancien libellé) | 1 | Défacement coordonné au Niger, qualification maintenue en investigation. |
-| **Total** | **31** | |
+| **Total** | **30** | |
 
 ![Maturité des preuves, janvier 2026](./assets/statuts_janvier_2026.png)
 
@@ -178,7 +172,7 @@ La **maturité probatoire** n'est pas une mesure de la gravité. L'absence de co
 
 | Zone | Priorité de veille RSSI | Justification tirée du corpus |
 |---|---|---|
-| 🔴 Afrique du Sud, Kenya | Élevée | Six et cinq observations ; exposition de finance publique, retraite, industrie et services. |
+| 🔴 Afrique du Sud, Kenya | Élevée | Six et quatre observations ; exposition de finance publique, retraite, industrie et services. |
 | 🟠 Algérie, Égypte, Maroc | Renforcée | Publications industrielles et d'identité, fuite de données ou revendications de vente. |
 | 🟡 Autres pays documentés | Ciblée | Suivi au cas par cas selon sensibilité des systèmes et fiabilité des éléments. |
 
@@ -232,7 +226,7 @@ Le **4 janvier**, plusieurs sites officiels nigériens font l'objet d'un **défa
 
 ## 8. Tendances et principales lacunes de renseignement
 
-**Premier constat, l'extorsion est la première source d'observations.** Les 19 publications ransomware concernent des secteurs très différents. L'activité de TheGentlemen et de tengu couvre plusieurs pays, mais les fiches ne suffisent pas à relier tous les cas à une même infrastructure, à un même accès initial ou à une campagne coordonnée.
+**Premier constat, l'extorsion est la première source d'observations.** Les 18 publications ransomware concernent des secteurs très différents. L'activité de TheGentlemen et de tengu couvre plusieurs pays, mais les fiches ne suffisent pas à relier tous les cas à une même infrastructure, à un même accès initial ou à une campagne coordonnée.
 
 **Deuxième constat, le risque lié aux données dépasse les simples listes de contacts.** Les dossiers Nerasolgh, PAYGO, PixPay, LRFA/Foot'Up et Inter Partner Assistance décrivent, à des niveaux de preuve différents, des données financières, des documents officiels, des jetons applicatifs ou des informations de localisation. Leur valeur pour la fraude peut persister après la correction d'une vulnérabilité.
 

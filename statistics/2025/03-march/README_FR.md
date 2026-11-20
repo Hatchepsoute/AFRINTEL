@@ -1,77 +1,87 @@
-# Rapport CTI AFRINTEL - Cybermenaces en Afrique - Mars 2025
+# Statistiques CTI AFRINTEL - Mars 2025
 
-Corpus documenté : **16 incidents**.
+Source de vérité : couple validé `victims_FR.md` / `victims.md`.
 
-## Synthèse
+Cette fiche reprend les **16 fiches** du corpus victimes. Les chiffres décrivent la visibilité documentée par AFRINTEL.
 
-Le corpus est dominé par **Ransomware (9, 56.2 %)**. Les chiffres représentent la visibilité documentée par AFRINTEL.
+| Indicateur | Valeur |
+|---|---:|
+| Total incidents | 16 |
+| Pays / portées géographiques | 10 |
+| Secteurs distincts | 13 |
+| Acteurs / sources distincts | 11 |
 
-## Types d’incident
+## Types
 
-
-| Type | Fiches | Part |
-| Ransomware | 9 | 56.2 % |
-| Fuite de données | 2 | 12.5 % |
-| Prise de contrôle de compte | 2 | 12.5 % |
-| Vente d'accès | 2 | 12.5 % |
-| Intrusion système | 1 | 6.2 % |
-| **Total** | **16** | **100 %** |
+| Type | Fiches |
+|---|---:|
+| Ransomware | 9 |
+| Fuite de données | 2 |
+| Vente d'accès | 2 |
+| DDoS | 0 |
+| Défacement | 0 |
+| Prise de contrôle de compte | 2 |
+| Intrusion système | 1 |
+| Malware | 0 |
+| Fraude opérationnelle | 0 |
+| **Total** | **16** |
 
 ## Pays
 
-
-| Pays | Fiches |
-| Afrique du Sud | 5 |
-| Égypte | 3 |
-| Nigeria | 2 |
-| Botswana | 1 |
-| Tanzanie | 1 |
+| Pays / portée | Fiches |
+|---|---:|
+| Afrique du Sud | 3 |
+| 🇪🇬 Égypte | 3 |
+| 🇳🇬 Nigeria | 2 |
+| 🇿🇦 Afrique du Sud | 2 |
 | Ghana | 1 |
-| Angola | 1 |
-| Burkina Faso | 1 |
-| Rwanda | 1 |
-| **Total** | **16** |
+| 🇦🇴 Angola | 1 |
+| 🇧🇫 Burkina Faso | 1 |
+| 🇧🇼 Botswana | 1 |
+| 🇷🇼 Rwanda | 1 |
+| 🇹🇿 Tanzanie | 1 |
 
-## Régions
+## Secteurs
 
+| Secteur | Fiches |
+|---|---:|
+| Conseil en technologies | 3 |
+| Government / Administration | 2 |
+| Administration publique / Régulation de la santé | 1 |
+| Administrations publiques (Santé) | 1 |
+| Agriculture / Agribusiness | 1 |
+| Commerce de détail (Distribution) | 1 |
+| Construction / Real Estate | 1 |
+| Finance | 1 |
+| Gouvernement / Administration | 1 |
+| Santé / Santé publique | 1 |
+| Santé / Secteur Hospitalier | 1 |
+| Éducation / Enseignement privé. | 1 |
+| Éducation / Services RH | 1 |
 
-| Région | Occurrences |
-| Southern Africa | 7 |
-| West Africa | 4 |
-| North Africa | 3 |
-| East Africa | 2 |
-| **Total** | **16** |
+## Acteurs / sources
 
-## Secteurs normalisés
-
-
-| Secteur | Fiches | Part |
-| Government / Administration | 5 | 31.2 % |
-| Technology / IT | 3 | 18.8 % |
-| Education / University | 2 | 12.5 % |
-| Healthcare / Medical | 2 | 12.5 % |
-| Commerce / E-commerce | 1 | 6.2 % |
-| Construction / Real Estate | 1 | 6.2 % |
-| Agriculture / Agribusiness | 1 | 6.2 % |
-| Finance / Banking | 1 | 6.2 % |
-| **Total** | **16** | **100 %** |
-
-## Acteurs / groupes
-
-
-| Acteur / groupe | Fiches |
+| Acteur / source | Fiches |
+|---|---:|
 | Unknown | 4 |
 | arcusmedia | 2 |
 | nightspire | 2 |
-| play | 1 |
-| killsec | 1 |
-| MisterSam | 1 |
-| lynx | 1 |
-| funksec | 1 |
 | Altsiona | 1 |
-| Ghudra | 1 |
 | babuk2 | 1 |
+| funksec | 1 |
+| Ghudra | 1 |
+| killsec | 1 |
+| lynx | 1 |
+| MisterSam | 1 |
+| play | 1 |
 
-## Méthodologie
+## Statuts
 
-Les fiches sont classées selon la date de publication ou de première observation documentée. La date de compromission n’est pas déduite.
+| Statut | Fiches |
+|---|---:|
+| Claim - Unverified | 8 |
+| Claim - Data Sample Published | 4 |
+| Victim Confirmed | 3 |
+| Authority Confirmed | 1 |
+
+**AFRINTEL** - TLP:CLEAR

@@ -6,15 +6,15 @@
 
 ## 1. Synthèse exécutive
 
-En Septembre 2025, AFRINTEL documente **19 cyberincidents** affectant des organisations et services numériques dans **11 pays africains**.
+En Septembre 2025, AFRINTEL documente **21 cyberincidents** affectant des organisations et services numériques dans **12 pays africains**.
 
-Le paysage est dominé par **Ransomware avec 11 fiches (57,9 %)**, suivi de **Data Leak avec 7 (36,8 %)**. Les autres types observés sont DDoS 1.
+Le paysage est dominé par **Ransomware avec 11 fiches (52,4 %)**, suivi de **Data Leak avec 9 (42,9 %)**. Les autres types observés sont DDoS 1.
 
-La concentration géographique est marquée : **Nigeria (4)**, **Maroc (3)**, **Égypte (3)** représentent ensemble **10 fiches, soit 52,6 % du mois**. Cette concentration doit être interprétée comme la visibilité du corpus AFRINTEL et non comme un taux national exhaustif de compromission.
+La concentration géographique est marquée : **Nigeria (4)**, **Maroc (3)**, **Égypte (3)** représentent ensemble **10 fiches, soit 47,6 % du mois**. Cette concentration doit être interprétée comme la visibilité du corpus AFRINTEL et non comme un taux national exhaustif de compromission.
 
-Sur le plan sectoriel, les catégories les plus représentées sont **Gouvernement / Administration (5)**, **Finance / Banque (5)**, **Non précisé (2)**. Les labels d'acteurs les plus fréquents sont `Not specified` (2), `TheGentlemen` (2), `killsec` (2). `Unknown`, lorsqu'il apparaît, désigne une absence d'attribution et non un groupe cybercriminel.
+Sur le plan sectoriel, les catégories les plus représentées sont **Gouvernement / Administration (6)**, **Finance / Banque (5)**, **Non précisé (2)**. Les labels d'acteurs les plus fréquents sont `Not specified` (2), `TheGentlemen` (2), `killsec` (2). `Unknown`, lorsqu'il apparaît, désigne une absence d'attribution et non un groupe cybercriminel.
 
-La maturité des preuves reste variable : **17 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
+La maturité des preuves reste variable : **19 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
 
 Par rapport à Août, le volume mensuel **augmente de 3 fiches**. Les variations les plus visibles concernent Ransomware 7->11 (+4), Data Leak 5->7 (+2), Access Sale 2->0 (-2).
 
@@ -24,9 +24,9 @@ Par rapport à Août, le volume mensuel **augmente de 3 fiches**. Les variations
 
 | Indicateur | Août 2025 | Septembre 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 16 | 19 | **+3 (+18,8 %)** |
+| Total incidents | 16 | 21 | **+5 (+31,3 %)** |
 | Ransomware | 7 | 11 | **+4 (+57,1 %)** |
-| Data Leak | 5 | 7 | **+2 (+40,0 %)** |
+| Data Leak | 5 | 9 | **+4 (+80,0 %)** |
 | Access Sale | 2 | 0 | **-2 (-100,0 %)** |
 | DDoS | 1 | 1 | **Stable** |
 | Defacement | 1 | 0 | **-1 (-100,0 %)** |
@@ -39,6 +39,8 @@ Par rapport à Août, le volume mensuel **augmente de 3 fiches**. Les variations
 
 
 ## 2. Méthodologie
+![Comparaison septembre 2025 avec le mois précédent](assets/comparaison_FR.png)
+
 
 - **Périmètre :** 54 pays africains ; période de référence : Septembre 2025.
 - **Source de vérité :** couple validé `victims_FR.md` / `victims.md`.
@@ -55,8 +57,8 @@ Par rapport à Août, le volume mensuel **augmente de 3 fiches**. Les variations
 
 | Indicateur | Valeur |
 |---|---:|
-| Incidents documentés | **19** |
-| Pays représentés | **11** |
+| Incidents documentés | **21** |
+| Pays représentés | **12** |
 | Régions représentées | **5** |
 | Premier pays | **Nigeria (4)** |
 | Premier secteur | **Gouvernement / Administration (5)** |
@@ -64,26 +66,29 @@ Par rapport à Août, le volume mensuel **augmente de 3 fiches**. Les variations
 
 | Type d'incident | Fiches | Part |
 |---|---:|---:|
-| Ransomware | 11 | 57,9 % |
-| Data Leak | 7 | 36,8 % |
+| Ransomware | 11 | 52,4 % |
+| Data Leak | 9 | 42,9 % |
 | Access Sale | 0 | 0,0 % |
-| DDoS | 1 | 5,3 % |
+| DDoS | 1 | 4,8 % |
 | Defacement | 0 | 0,0 % |
 | Account Takeover | 0 | 0,0 % |
 | System Intrusion | 0 | 0,0 % |
 | Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
-| **Total** | **19** | **100 %** |
+| **Total** | **21** | **100 %** |
 
 ```mermaid
 pie showData
     title Types d'incident - Septembre 2025
     "Ransomware" : 11
-    "Data Leak" : 7
+    "Data Leak" : 9
     "DDoS" : 1
 ```
 
 ## 4. Répartition géographique
+![Types d’incident](assets/types_FR.png)
+![Répartition des types d’incident](assets/types_pie_FR.png)
+
 
 | Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -91,45 +96,54 @@ pie showData
 | Maroc | **3** | 2 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
 | Égypte | **3** | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Algérie | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Algérie | **2** | 0 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Tunisie | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Côte d'Ivoire | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Zimbabwe | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Namibie | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Angola | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Congo (RDC) | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Sénégal | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **19** | **11** | **7** | **0** | **1** | **0** | **0** | **0** | **0** |
+| **Total** | **21** | **11** | **9** | **0** | **1** | **0** | **0** | **0** | **0** |
 
 > `Operational Fraud = 0` ce mois-ci ; la colonne est omise pour préserver la lisibilité.
 
 ## 5. Répartition régionale
+![Incidents documentés par pays](assets/pays_FR.png)
+
 
 | Région | Fiches | Part |
 |---|---:|---:|
-| Afrique du Nord | 7 | 36,8 % |
-| Afrique de l'Ouest | 6 | 31,6 % |
-| Afrique australe | 3 | 15,8 % |
-| Afrique de l'Est | 2 | 10,5 % |
-| Afrique centrale | 1 | 5,3 % |
-| **Total** | **19** | **100 %** |
+| Afrique du Nord | 9 | 42,9 % |
+| Afrique de l'Ouest | 6 | 28,6 % |
+| Afrique australe | 3 | 14,3 % |
+| Afrique de l'Est | 2 | 9,5 % |
+| Afrique centrale | 1 | 4,8 % |
+| **Total** | **21** | **100 %** |
 
-La région la plus représentée est **Afrique du Nord avec 7 fiches (36,8 %)**.
+La région la plus représentée est **Afrique du Nord avec 9 fiches (42,9 %)**.
 
 ## 6. Impact sectoriel
+![Répartition régionale](assets/regions_FR.png)
+![Parts régionales](assets/regions_pie_FR.png)
+
 
 | Secteur | Fiches | Part | Activité |
 |---|---:|---:|---|
-| Gouvernement / Administration | 5 | 26,3 % | █████ |
-| Finance / Banque | 5 | 26,3 % | █████ |
-| Non précisé | 2 | 10,5 % | ██ |
-| Industrie / Fabrication | 2 | 10,5 % | ██ |
-| Technologie / IT | 2 | 10,5 % | ██ |
-| Éducation / Université | 1 | 5,3 % | █ |
-| Construction / Immobilier | 1 | 5,3 % | █ |
-| Télécommunications | 1 | 5,3 % | █ |
-| **Total** | **19** | **100 %** | |
+| Gouvernement / Administration | 6 | 28,6 % | ██████ |
+| Finance / Banque | 5 | 23,8 % | █████ |
+| Non précisé | 2 | 9,5 % | ██ |
+| Industrie / Fabrication | 2 | 9,5 % | ██ |
+| Technologie / IT | 2 | 9,5 % | ██ |
+| Éducation / Université | 1 | 4,8 % | █ |
+| Construction / Immobilier | 1 | 4,8 % | █ |
+| Télécommunications | 2 | 9,5 % | ██ |
+| **Total** | **21** | **100 %** | |
 
 ## 7. Acteurs / groupes
+![Exposition sectorielle](assets/secteurs_FR.png)
+![Répartition sectorielle](assets/secteurs_pie_FR.png)
+
 
 `Unknown` correspond à une absence d'attribution, pas à un acteur.
 
@@ -150,20 +164,26 @@ La région la plus représentée est **Afrique du Nord avec 7 fiches (36,8 %)**.
 | arcusmedia | 1 | █ |
 | BlackShrantac | 1 | █ |
 | KILLUAX | 1 | █ |
+| Hider_N3x | 1 | █ |
+| sarah8toumi (compte source) | 1 | █ |
 
 ## 8. Maturité des preuves
+![Acteurs et labels de publication](assets/acteurs_FR.png)
+
 
 | Maturité de preuve | Fiches | Part |
 |---|---:|---:|
-| Claim - Unverified | 10 | 52,6 % |
-| Claim - Data Sample Published | 7 | 36,8 % |
-| Data Fully Published | 1 | 5,3 % |
-| Corroboré / preuve secondaire | 1 | 5,3 % |
-| **Total** | **19** | **100 %** |
+| Claim - Unverified | 10 | 47,6 % |
+| Claim - Data Sample Published | 9 | 42,9 % |
+| Data Fully Published | 1 | 4,8 % |
+| Corroboré / preuve secondaire | 1 | 4,8 % |
+| **Total** | **21** | **100 %** |
 
 Les statuts de preuve décrivent le niveau de validation disponible ; ils ne changent pas le type technique de l'incident.
 
 ## 9. Chronologie
+![Maturité des preuves](assets/preuves_FR.png)
+
 
 ```mermaid
 timeline
@@ -177,12 +197,14 @@ timeline
     09 Septembre 2025 : Dolidol
     09 Septembre 2025 : Proplastics Limited
     10 Septembre 2025 : Princeps Credit Systems Limited
+    11 Septembre 2025 : TOPNET
     11 Septembre 2025 : Epia Financial Services
     11 Septembre 2025 : Base de données des employés du gouvernement angolais (pape.gov.ao)
     12 Septembre 2025 : Fonds pour la Réforme de l'Administration Publique (FRAP)
     14 Septembre 2025 : Office Of The Registrar Of Political Parties
     16 Septembre 2025 : Jubilee Life Insurance
     17 Septembre 2025 : Accflex ERP
+    19 Septembre 2025 : Ministère algérien des Finances
     22 Septembre 2025 : Fractalite (fractalite.com)
     24 Septembre 2025 : Kolomoni Microfinance Bank
     29 Septembre 2025 : Direction Générale des Impôts et des Domaines (DGID)
@@ -197,7 +219,7 @@ timeline
 
 ### Data Leak
 
-**7 fiches** sont classées Data Leak. Principaux pays : Nigeria (2), Algérie (1), Côte d'Ivoire (1). AFRINTEL distingue les données effectivement observées des volumes globaux revendiqués.
+**9 fiches** sont classées Data Leak. Principaux pays : Nigeria (2), Algérie (2), Côte d'Ivoire (1), Tunisie (1). AFRINTEL distingue les données effectivement observées des volumes globaux revendiqués.
 
 ### DDoS
 
@@ -217,7 +239,7 @@ timeline
 
 ## 12. Principaux enseignements et lacunes de renseignement
 
-- **Concentration géographique :** Nigeria représente 4 fiches (21,1 %), devant Maroc (3) et Égypte (3).
+- **Concentration géographique :** Nigeria représente 4 fiches (19,0 %), devant Maroc (3) et Égypte (3).
 - **Structure de menace :** Ransomware est le premier type avec 11 fiches, suivi de Data Leak (7).
 - **Secteurs :** Gouvernement / Administration (5) et Finance / Banque (5) concentrent la plus forte visibilité.
 - **Acteurs :** les labels les plus fréquents sont Not specified (2), TheGentlemen (2) et killsec (2).
@@ -259,7 +281,7 @@ Ces lacunes doivent guider la collecte sans être remplacées par des hypothèse
 
 ## 14. Conclusion
 
-Le mois de **Septembre 2025** compte **19 cyberincidents documentés** dans **11 pays africains**. La lecture mensuelle montre que la valeur CTI ne réside pas seulement dans le volume, mais dans la distinction entre **type d'incident, chronologie, niveau de preuve, géographie, secteur et acteur**.
+Le mois de **Septembre 2025** compte **21 cyberincidents documentés** dans **12 pays africains**. La lecture mensuelle montre que la valeur CTI ne réside pas seulement dans le volume, mais dans la distinction entre **type d'incident, chronologie, niveau de preuve, géographie, secteur et acteur**.
 
 Le rapport conserve ainsi une photographie structurée de la menace observable tout en maintenant les revendications, corroborations, confirmations et inconnues à leur niveau de preuve réel.
 

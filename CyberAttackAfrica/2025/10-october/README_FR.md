@@ -24,9 +24,9 @@ Par rapport à Septembre, le volume mensuel **augmente de 1 fiche**. Les variati
 
 | Indicateur | Septembre 2025 | Octobre 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 19 | 20 | **+1 (+5,3 %)** |
+| Total incidents | 21 | 20 | **-1 (-4,8 %)** |
 | Ransomware | 11 | 16 | **+5 (+45,5 %)** |
-| Data Leak | 7 | 3 | **-4 (-57,1 %)** |
+| Data Leak | 9 | 3 | **-6 (-66,7 %)** |
 | Access Sale | 0 | 1 | **+1 (nouveau)** |
 | DDoS | 1 | 0 | **-1 (-100,0 %)** |
 | Defacement | 0 | 0 | **Stable** |
@@ -39,6 +39,8 @@ Par rapport à Septembre, le volume mensuel **augmente de 1 fiche**. Les variati
 
 
 ## 2. Méthodologie
+![Comparaison octobre 2025 avec le mois précédent](assets/comparaison_FR.png)
+
 
 - **Périmètre :** 54 pays africains ; période de référence : Octobre 2025.
 - **Source de vérité :** couple validé `victims_FR.md` / `victims.md`.
@@ -84,6 +86,9 @@ pie showData
 ```
 
 ## 4. Répartition géographique
+![Types d’incident](assets/types_FR.png)
+![Répartition des types d’incident](assets/types_pie_FR.png)
+
 
 | Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -103,6 +108,8 @@ pie showData
 > `Operational Fraud = 0` ce mois-ci ; la colonne est omise pour préserver la lisibilité.
 
 ## 5. Répartition régionale
+![Incidents documentés par pays](assets/pays_FR.png)
+
 
 | Région | Fiches | Part |
 |---|---:|---:|
@@ -117,6 +124,9 @@ pie showData
 La région la plus représentée est **Afrique du Nord avec 8 fiches (40,0 %)**.
 
 ## 6. Impact sectoriel
+![Répartition régionale](assets/regions_FR.png)
+![Parts régionales](assets/regions_pie_FR.png)
+
 
 | Secteur | Fiches | Part | Activité |
 |---|---:|---:|---|
@@ -133,6 +143,9 @@ La région la plus représentée est **Afrique du Nord avec 8 fiches (40,0 %)**.
 | **Total** | **20** | **100 %** | |
 
 ## 7. Acteurs / groupes
+![Exposition sectorielle](assets/secteurs_FR.png)
+![Répartition sectorielle](assets/secteurs_pie_FR.png)
+
 
 `Unknown` correspond à une absence d'attribution, pas à un acteur.
 
@@ -154,6 +167,8 @@ La région la plus représentée est **Afrique du Nord avec 8 fiches (40,0 %)**.
 | EternalRed | 1 | █ |
 
 ## 8. Maturité des preuves
+![Acteurs et labels de publication](assets/acteurs_FR.png)
+
 
 | Maturité de preuve | Fiches | Part |
 |---|---:|---:|
@@ -166,6 +181,8 @@ La région la plus représentée est **Afrique du Nord avec 8 fiches (40,0 %)**.
 Les statuts de preuve décrivent le niveau de validation disponible ; ils ne changent pas le type technique de l'incident.
 
 ## 9. Chronologie
+![Maturité des preuves](assets/preuves_FR.png)
+
 
 ```mermaid
 timeline

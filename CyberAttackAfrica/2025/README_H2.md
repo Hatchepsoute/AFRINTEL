@@ -6,13 +6,13 @@
 
 ## 1. Executive summary
 
-Between July-December 2025, AFRINTEL documented **116 cyber incidents** affecting organizations, institutions, and digital services across Africa.
+Between July-December 2025, AFRINTEL documented **119 cyber incidents** affecting organizations, institutions, and digital services across Africa.
 
-The semester is dominated by **Ransomware with 63 records (54.3%)** and **Data Leak with 44 (37.9%)**. Together, they account for **107 incidents, or 92.2% of the semester corpus**. Other events include 3 Access Sale, 0 Account Takeover, 2 Defacement, 2 DDoS, 1 System Intrusion, and 1 Malware.
+The semester is dominated by **Ransomware with 63 records (52.9%)** and **Data Leak with 47 (39.5%)**. Together, they account for **110 incidents, or 92.4% of the semester corpus**. Other events include 3 Access Sale, 0 Account Takeover, 2 Defacement, 2 DDoS, 1 System Intrusion, and 1 Malware.
 
 Geographic concentration is significant: **Morocco (19)**, **Egypt (18)**, and **South Africa (15)** lead the semester. Together, these countries represent **52 records, or 45.6%**.
 
-At sector level, **Government / Administration (25)**, **Finance / Banking (24)**, and **Education / University (9)** are most represented. The top two sectors account for **49 records, or 42.2%**.
+At sector level, **Government / Administration (26)**, **Finance / Banking (24)**, and **Education / University (9)** are most represented. The top two sectors account for **50 records, or 42.0%**.
 
 Activity varies across the semester: **July is the highest-volume month with 25 incidents**, while **November records 16**.
 
@@ -36,13 +36,13 @@ Evidence maturity remains heterogeneous. AFRINTEL distinguishes unverified claim
 
 ## 3. Corrected H2 2024 vs H2 2025 comparison
 
-The final corrected H2 2024 corpus contains **74 canonical incidents**, compared with **116** in H2 2025. The 2024 baseline has undergone chronology review and reclassification under the **same nine incident types** used for 2025, so the categories below are directly comparable and valid zero values are no longer shown as `N/A`.
+The final corrected H2 2024 corpus contains **74 canonical incidents**, compared with **119** in H2 2025. The 2024 baseline has undergone chronology review and reclassification under the **same nine incident types** used for 2025, so the categories below are directly comparable and valid zero values are no longer shown as `N/A`.
 
 | Indicator | Final corrected 2024 | 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 74 | 116 | **+42 (+56.8%)** |
+| Total incidents | 74 | 119 | **+45 (+60.8%)** |
 | Ransomware | 57 | 63 | **+6 (+10.5%)** |
-| Data Leak | 9 | 44 | **+35 (+388.9%)** |
+| Data Leak | 9 | 47 | **+38 (+422.2%)** |
 | Access Sale | 3 | 3 | **0 (0.0%)** |
 | DDoS | 0 | 2 | **+2 (newly observed)** |
 | Defacement | 1 | 2 | **+1 (+100.0%)** |
@@ -51,14 +51,14 @@ The final corrected H2 2024 corpus contains **74 canonical incidents**, compared
 | Malware | 0 | 1 | **+1 (newly observed)** |
 | Operational Fraud | 0 | 0 | **Stable** |
 
-The documented H2 corpus increases from **74 to 116 incidents**, an increase of **42 (+56.8%)**. Data Leak shows the largest absolute difference (**+35**), while Ransomware rises by six records. These figures describe AFRINTEL corpus visibility and do not by themselves demonstrate an equivalent increase in successful real-world compromises.
+The documented H2 corpus increases from **74 to 119 incidents**, an increase of **45 (+60.8%)**. Data Leak shows the largest absolute difference (**+38**), while Ransomware rises by six records. These figures describe AFRINTEL corpus visibility and do not by themselves demonstrate an equivalent increase in successful real-world compromises.
 ### 3.1 H1 vs H2 2025
 
 | Indicator | H1 2025 | H2 2025 | Change |
 |---|---:|---:|---:|
-| Total incidents | 112 | 116 | **+4 (+3.6%)** |
+| Total incidents | 115 | 119 | **+4 (+3.5%)** |
 | Ransomware | 58 | 63 | **+5 (+8.6%)** |
-| Data Leak | 40 | 44 | **+4 (+10.0%)** |
+| Data Leak | 42 | 47 | **+5 (+11.9%)** |
 | Access Sale | 3 | 3 | **0 (0.0%)** |
 | DDoS | 1 | 2 | **+1 (+100.0%)** |
 | Defacement | 2 | 2 | **0 (0.0%)** |
@@ -67,7 +67,7 @@ The documented H2 corpus increases from **74 to 116 incidents**, an increase of 
 | Malware | 0 | 1 | **+1 (new)** |
 | Operational Fraud | 0 | 0 | **Stable** |
 
-Overall volume is almost stable: **112 incidents in H1 versus 116 in H2**. The structure still changes: all six Account Takeover records of the year are concentrated in H1, while H2 contains more Ransomware and the year's only Malware incident.
+Overall volume is almost stable: **115 incidents in H1 versus 119 in H2**. The structure still changes: all six Account Takeover records of the year are concentrated in H1, while H2 contains more Ransomware and the year's only Malware incident.
 
 
 ## 4. Monthly evolution
@@ -76,11 +76,11 @@ Overall volume is almost stable: **112 incidents in H1 versus 116 in H2**. The s
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | July | 25 | 5 | 18 | 0 | 0 | 0 | 0 | 1 | 1 | 0 |
 | August | 16 | 7 | 5 | 2 | 1 | 1 | 0 | 0 | 0 | 0 |
-| September | 19 | 11 | 7 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
+| September | 21 | 11 | 9 | 0 | 1 | 0 | 0 | 0 | 0 | 0 |
 | October | 20 | 16 | 3 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | November | 16 | 10 | 5 | 0 | 0 | 1 | 0 | 0 | 0 | 0 |
-| December | 20 | 14 | 6 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **116** | **63** | **44** | **3** | **2** | **2** | **0** | **1** | **1** | **0** |
+| December | 21 | 14 | 7 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **Total** | **119** | **63** | **47** | **3** | **2** | **2** | **0** | **1** | **1** | **0** |
 
 ### 4.1 Monthly volume
 
@@ -88,42 +88,42 @@ Overall volume is almost stable: **112 incidents in H1 versus 116 in H2**. The s
 |---|---:|---|
 | July | 25 | █████████████████████████ |
 | August | 16 | ████████████████ |
-| September | 19 | ███████████████████ |
+| September | 21 | █████████████████████ |
 | October | 20 | ████████████████████ |
 | November | 16 | ████████████████ |
-| December | 20 | ████████████████████ |
+| December | 21 | █████████████████████ |
 
 ```mermaid
 timeline
     title Monthly activity - H2 2025
     July : 25
     August : 16
-    September : 19
+    September : 21
     October : 20
     November : 16
-    December : 20
+    December : 21
 ```
 
 ## 5. Incident-type distribution
 
 | Incident type | Records | Share |
 |---|---:|---:|
-| Ransomware | **63** | 55.3% |
-| Data Leak | **44** | 37.9% |
-| Access Sale | **3** | 2.6% |
-| DDoS | **2** | 1.8% |
-| Defacement | **2** | 1.8% |
+| Ransomware | **63** | 52.9% |
+| Data Leak | **47** | 39.5% |
+| Access Sale | **3** | 2.5% |
+| DDoS | **2** | 1.7% |
+| Defacement | **2** | 1.7% |
 | Account Takeover | **0** | 0.0% |
-| System Intrusion | **1** | 0.9% |
-| Malware | **1** | 0.9% |
+| System Intrusion | **1** | 0.8% |
+| Malware | **1** | 0.8% |
 | Operational Fraud | **0** | 0.0% |
-| **Total** | **116** | **100%** |
+| **Total** | **119** | **100%** |
 
 ```mermaid
 pie showData
     title Incident types - H2 2025
     "Ransomware" : 63
-    "Data Leak" : 44
+    "Data Leak" : 47
     "Access Sale" : 3
     "DDoS" : 2
     "Defacement" : 2
@@ -142,11 +142,11 @@ Ransomware and Data Leak together account for **105 records (92.1%)**.
 | Morocco | **19** | 7 | 10 | 0 | 1 | 1 | 0 | 0 | 0 |
 | Egypt | **18** | 12 | 4 | 1 | 1 | 0 | 0 | 0 | 0 |
 | South Africa | **15** | 11 | 2 | 1 | 0 | 0 | 0 | 0 | 1 |
-| Tunisia | **13** | 5 | 7 | 0 | 0 | 0 | 0 | 1 | 0 |
+| Tunisia | **14** | 5 | 8 | 0 | 0 | 0 | 0 | 1 | 0 |
 | Nigeria | **9** | 5 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Kenya | **9** | 5 | 3 | 0 | 0 | 1 | 0 | 0 | 0 |
-| Algeria | **6** | 2 | 4 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Ivory Coast | **3** | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Algeria | **7** | 2 | 5 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Ivory Coast | **4** | 1 | 3 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Tanzania | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Namibia | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Zimbabwe | **2** | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -164,7 +164,7 @@ Ransomware and Data Leak together account for **105 records (92.1%)**.
 | Madagascar | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Gabon | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Ghana | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **116** | **63** | **44** | **3** | **2** | **2** | **0** | **1** | **1** |
+| **Total** | **119** | **63** | **47** | **3** | **2** | **2** | **0** | **1** | **1** |
 
 > `Operational Fraud = 0` in this semester; the column is omitted for readability.
 
@@ -172,37 +172,37 @@ Ransomware and Data Leak together account for **105 records (92.1%)**.
 
 | Region | Total | Share | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| North Africa | **56** | 49.1% | 26 | 25 | 1 | 2 | 1 | 0 | 1 | 0 |
-| Southern Africa | **22** | 19.3% | 17 | 3 | 1 | 0 | 0 | 0 | 0 | 1 |
-| West Africa | **16** | 14.0% | 8 | 7 | 1 | 0 | 0 | 0 | 0 | 0 |
-| East Africa | **14** | 12.3% | 8 | 5 | 0 | 0 | 1 | 0 | 0 | 0 |
-| Indian Ocean | **3** | 2.6% | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| Central Africa | **3** | 2.6% | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total** | **116** | **100%** | **63** | **44** | **3** | **2** | **2** | **0** | **1** | **1** |
+| North Africa | **58** | 48.7% | 26 | 27 | 1 | 2 | 1 | 0 | 1 | 0 |
+| Southern Africa | **22** | 18.5% | 17 | 3 | 1 | 0 | 0 | 0 | 0 | 1 |
+| West Africa | **17** | 14.3% | 8 | 8 | 1 | 0 | 0 | 0 | 0 | 0 |
+| East Africa | **14** | 11.8% | 8 | 5 | 0 | 0 | 1 | 0 | 0 | 0 |
+| Indian Ocean | **3** | 2.5% | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| Central Africa | **3** | 2.5% | 2 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
+| **Total** | **119** | **100%** | **63** | **47** | **3** | **2** | **2** | **0** | **1** | **1** |
 
-The leading region is **North Africa with 56 incidents (49.1%)**.
+The leading region is **North Africa with 58 incidents (48.7%)**.
 
 ## 7. Sector distribution
 
 | Sector | Records | Share | Activity |
 |---|---:|---:|---|
-| Finance / Banking | 24 | 20.7% | ████████████ |
-| Government / Administration | 25 | 21.6% | █████████████ |
-| Education / University | 9 | 7.8% | ████ |
-| Technology / IT | 8 | 7.0% | ████ |
-| Healthcare / Medical | 7 | 6.1% | ████ |
-| Transport / Logistics | 7 | 6.1% | ████ |
-| Construction / Real Estate | 6 | 5.3% | ███ |
-| Manufacturing / Industry | 6 | 5.3% | ███ |
-| Not specified | 6 | 5.3% | ███ |
-| Telecommunications | 4 | 3.5% | ██ |
-| Retail / E-commerce | 4 | 3.5% | ██ |
-| Energy / Utilities | 3 | 2.6% | ██ |
-| Mining | 2 | 1.8% | █ |
-| Professional / Business Services | 2 | 1.8% | █ |
-| Agriculture / Agribusiness | 2 | 1.8% | █ |
-| Legal | 1 | 0.9% | █ |
-| **Total** | **116** | **100%** | |
+| Finance / Banking | 24 | 20.2% | ████████████ |
+| Government / Administration | 26 | 21.8% | █████████████ |
+| Education / University | 9 | 7.6% | ████ |
+| Technology / IT | 8 | 6.7% | ████ |
+| Healthcare / Medical | 7 | 5.9% | ████ |
+| Transport / Logistics | 7 | 5.9% | ████ |
+| Construction / Real Estate | 6 | 5.0% | ███ |
+| Manufacturing / Industry | 6 | 5.0% | ███ |
+| Not specified | 6 | 5.0% | ███ |
+| Telecommunications | 5 | 4.2% | ██ |
+| Retail / E-commerce | 4 | 3.4% | ██ |
+| Energy / Utilities | 3 | 2.5% | ██ |
+| Mining | 2 | 1.7% | █ |
+| Professional / Business Services | 2 | 1.7% | █ |
+| Agriculture / Agribusiness | 3 | 2.5% | ██ |
+| Legal | 1 | 0.8% | █ |
+| **Total** | **119** | **100%** | |
 
 ## 8. Actor / group profile
 
@@ -241,7 +241,7 @@ The leading region is **North Africa with 56 incidents (49.1%)**.
 | Victim/Government/Authority Confirmed | 3 | 2.6% |
 | Corroborated / Secondary evidence | 7 | 6.0% |
 | Attempted | 1 | 0.9% |
-| **Total** | **116** | **100%** |
+| **Total** | **119** | **100%** |
 
 This grouping improves semester-level readability without replacing the detailed statuses in victim records.
 
@@ -249,11 +249,11 @@ This grouping improves semester-level readability without replacing the detailed
 
 ### Ransomware - 63
 
-Ransomware represents **63 records (55.3%)**. Leading countries are Egypt (12), South Africa (11), Morocco (7). A leak-site listing does not itself prove encryption.
+Ransomware represents **63 records (52.9%)**. Leading countries are Egypt (12), South Africa (11), Morocco (7). A leak-site listing does not itself prove encryption.
 
-### Data Leak - 44
+### Data Leak - 47
 
-Data Leak represents **44 records (37.9%)**. Leading countries are Morocco (10), Tunisia (7), while Nigeria, Algeria, and Egypt have 4 each. Publication, observed sample, and claimed aggregate volume remain separate evidence levels.
+Data Leak represents **47 records (39.5%)**. Leading countries are Morocco (10), Tunisia (8), while Nigeria, Algeria, and Egypt have 4 each. Publication, observed sample, and claimed aggregate volume remain separate evidence levels.
 
 ### Access Sale - 3
 
@@ -371,7 +371,7 @@ No incident is classified as `Operational Fraud` during this semester. Absence f
 
 ## 15. Conclusion
 
-H2 2025 contains **116 documented cyber incidents**. Ransomware and Data Leak remain dominant, but the other types confirm a more diverse threat landscape than a view limited to extortion and leaks.
+H2 2025 contains **119 documented cyber incidents**. Ransomware and Data Leak remain dominant, but the other types confirm a more diverse threat landscape than a view limited to extortion and leaks.
 
 The CTI value of the report comes from separating **incident type, timeline, evidence level, geography, sector, and actor**, providing a structured picture of the observable African threat environment without turning uncertainty into certainty.
 

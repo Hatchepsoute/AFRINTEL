@@ -39,6 +39,8 @@ Par rapport à Mai, le volume mensuel **diminue de 5 fiches**. Les variations le
 
 
 ## 2. Méthodologie
+![Comparaison juin 2025 avec le mois précédent](assets/comparaison_FR.png)
+
 
 - **Périmètre :** 54 pays africains ; période de référence : Juin 2025.
 - **Source de vérité :** couple validé `victims_FR.md` / `victims.md`.
@@ -83,6 +85,9 @@ pie showData
 ```
 
 ## 4. Répartition géographique
+![Types d’incident](assets/types_FR.png)
+![Répartition des types d’incident](assets/types_pie_FR.png)
+
 
 | Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -99,6 +104,8 @@ pie showData
 > `Operational Fraud = 0` ce mois-ci ; la colonne est omise pour préserver la lisibilité.
 
 ## 5. Répartition régionale
+![Incidents documentés par pays](assets/pays_FR.png)
+
 
 | Région | Fiches | Part |
 |---|---:|---:|
@@ -112,6 +119,9 @@ pie showData
 La région la plus représentée est **Afrique du Nord avec 16 fiches (76,2 %)**.
 
 ## 6. Impact sectoriel
+![Répartition régionale](assets/regions_FR.png)
+![Parts régionales](assets/regions_pie_FR.png)
+
 
 | Secteur | Fiches | Part | Activité |
 |---|---:|---:|---|
@@ -125,6 +135,9 @@ La région la plus représentée est **Afrique du Nord avec 16 fiches (76,2 %)**
 | **Total** | **21** | **100 %** | |
 
 ## 7. Acteurs / groupes
+![Exposition sectorielle](assets/secteurs_FR.png)
+![Répartition sectorielle](assets/secteurs_pie_FR.png)
+
 
 `Unknown` correspond à une absence d'attribution, pas à un acteur.
 
@@ -146,6 +159,8 @@ La région la plus représentée est **Afrique du Nord avec 16 fiches (76,2 %)**
 | MdHackersArmy | 1 | █ |
 
 ## 8. Maturité des preuves
+![Acteurs et labels de publication](assets/acteurs_FR.png)
+
 
 | Maturité de preuve | Fiches | Part |
 |---|---:|---:|
@@ -157,6 +172,8 @@ La région la plus représentée est **Afrique du Nord avec 16 fiches (76,2 %)**
 Les statuts de preuve décrivent le niveau de validation disponible ; ils ne changent pas le type technique de l'incident.
 
 ## 9. Chronologie
+![Maturité des preuves](assets/preuves_FR.png)
+
 
 ```mermaid
 timeline

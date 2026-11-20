@@ -4,9 +4,9 @@
 ## Cyber threats affecting African organisations, February 2026
 
 **Audience:** CISOs, CIOs, SOC/CERT leaders, risk and business continuity teams.  
-**Period:** February 1–28, 2026, based on the initial publications described in the source corpus.  
+**Period:** February 1-28, 2026, based on the initial publications described in the source corpus.
 **Edition:** November 6, 2026 | **Distribution:** TLP:CLEAR.  
-👉🏾 [Version française](./README_FR.md) | [French victim records](./victims_FR.md) | [Detailed English records](./victims.md)
+👉🏾 [Version française](./README_FR.md) | [French victim records](./victims_FR.md) | [Detailed English records](./victims.md) | [Jan–Feb comparison](../../comparison/2026/01-january-february/README.md)
 
 > **Evidence method - how to read this report.** AFRINTEL consolidates the OSINT investigations and post-disclosure examinations already documented in its victim records. **For ransomware listings**, analysts review the post and, when published, file inventories, previews and released documents to characterise the exposure. **For data leaks**, available samples are assessed for structure, fields, consistency, observed volume and business impact. Readers can therefore distinguish material actually reviewed from volumes merely claimed. First-party confirmations are identified separately; intrusion, encryption and full exfiltration are not assumed without supporting evidence.
 
@@ -24,22 +24,22 @@ Three cases deserve prompt leadership attention: **Air Côte d'Ivoire**, due to 
 
 ### 1.1 Comparison with January 2026
 
-> This comparison uses the **31 recounted January records** and the **27 February records**. A change in AFRINTEL's publication count is not proof of an equivalent change in actual intrusions. Legacy headers in the source victim files still require editorial correction.
+> This comparison uses the **30 recounted January records** and the **27 February records**. A change in AFRINTEL's publication count is not proof of an equivalent change in actual intrusions. The source victim files have been reconciled to the 27-record corpus.
 
 | Indicator | January | February | Documented change |
 |---|---:|---:|---:|
-| **Total** | **31** | **27** | **-4 (-12.9%)** |
-| Ransomware | 19 | 20 | +1 (+5.3%) |
+| **Total** | **30** | **27** | **-3 (-10.0%)** |
+| Ransomware | 18 | 20 | +2 (+11.1%) |
 | Data Leak | 10 | 7 | -3 (-30.0%) |
 | Access Sale | 1 | 0 | -1 (-100.0%) |
-| DDoS | 0 | 0 | 0 (stable) |
+| DDoS | 0 | 0 | 0 |
 | Defacement | 1 | 0 | -1 (-100.0%) |
-| Account Takeover | 0 | 0 | 0 (stable) |
-| System Intrusion | 0 | 0 | 0 (stable) |
-| Malware | 0 | 0 | 0 (stable) |
-| Operational Fraud | 0 | 0 | 0 (stable) |
+| Account Takeover | 0 | 0 | 0 |
+| System Intrusion | 0 | 0 | 0 |
+| Malware | 0 | 0 | 0 |
+| Operational Fraud | 0 | 0 | 0 |
 
-Ransomware's share moves from **61.3% in January** to **74.1% in February**, primarily because the overall record count falls while ransomware listings remain close to the previous month's level. The relative increase does not prove an increase in attacks.
+Ransomware's share moves from **60.0% in January** to **74.1% in February**, primarily because the overall record count falls while ransomware listings remain close to the previous month's level. The relative increase does not prove an increase in attacks.
 
 ## 2. Scope, method and limitations
 
@@ -47,7 +47,7 @@ AFRINTEL monitors the **54 African countries** and publications affecting Africa
 
 The analysis distinguishes **observed** (a listing, sample structure or document described in the records), **claimed** (actor-reported volume, access or impact), **confirmed** (explicit independent recognition) and **unknown** (initial access, actual extent, persistence, encryption and ransom payment). A `Data Fully Published` label does not independently demonstrate the completeness of a release or official victim confirmation.
 
-**Consistency review:** Both FR and EN source files contain **27 entries in the same order**. Their snapshot summaries still state “21 unique incidents, 20 ransomware, one data leak”, whereas the detailed records support **20 ransomware cases and seven data leaks**. The **Al Akhawayn University** and **Chezpara** leak records lack an explicit `Incident type` field; `Data Leak` is derived here from their headings and descriptions and should be added to both files. The initially supplied February charts cover only the **20 ransomware records** and therefore are not reused as whole-corpus charts in this report.
+**Consistency review:** Both FR and EN source files contain **27 entries in the same order**. Their snapshot summaries and structured incident fields now support **20 ransomware cases and seven data leaks**. The initially supplied February charts cover only the **20 ransomware records** and therefore are not reused as whole-corpus charts in this report.
 
 A claim concerning identity photographs linked to **Nigeria and Côte d'Ivoire** is counted as **one multi-country record**. It appears as `MULTI (NG/CI)` in the geographic table to avoid double-counting, while both countries remain included in the **14-country footprint**. No personal name, identity document, financial account detail, secret or sensitive sample is reproduced.
 
@@ -74,7 +74,6 @@ AFRINTEL's analysis begins **after an actor post or reported disclosure has been
 |---|---:|---:|
 | **Ransomware** | **20** | **74.1%** |
 | **Data Leak** | **7** | **25.9%** |
-| Other AFRINTEL incident types | 0 | 0.0% |
 | **Total** | **27** | **100%** |
 
 ![Incident types - February 2026](assets/types_EN.png)
@@ -214,12 +213,12 @@ The 20 ransomware records cover government services, transportation, energy, ind
 
 | Initial publication | Main signal |
 |---|---|
-| February 1–2 | Grouped leaks involving Egyptian laboratories and universities; BlueSky Aviation; multi-country identity data |
-| February 5–6 | Claims involving DAF Senegal, Global Media Alliance, Vertex Law Chambers and Wells Fargo Kenya |
-| February 8–12 | Al Akhawayn University, Getly, Ghana Bauxite and Midwestern Oil & Gas |
-| February 13–18 | Nile Air, Sands Suites, Intsika Yethu, BITS, SODIC and Amtaar Investment |
-| February 19–20 | Air Côte d'Ivoire, Shora Advisory and Egypt's Ministry of Agriculture |
-| February 22–27 | CYMOT, Chezpara, EnerTec and Diesel-Electric |
+| February 1-2 | Grouped leaks involving Egyptian laboratories and universities; BlueSky Aviation; multi-country identity data |
+| February 5-6 | Claims involving DAF Senegal, Global Media Alliance, Vertex Law Chambers and Wells Fargo Kenya |
+| February 8-12 | Al Akhawayn University, Getly, Ghana Bauxite and Midwestern Oil & Gas |
+| February 13-18 | Nile Air, Sands Suites, Intsika Yethu, BITS, SODIC and Amtaar Investment |
+| February 19-20 | Air Côte d'Ivoire, Shora Advisory and Egypt's Ministry of Agriculture |
+| February 22-27 | CYMOT, Chezpara, EnerTec and Diesel-Electric |
 
 The publication sequence is not a technical initial-access timeline. Older evidence, notably the 2022 payroll document in the Air Côte d'Ivoire case, retains its original date.
 
@@ -273,9 +272,9 @@ Future collection should preserve **listing observation date, sample state, coun
 
 | Timing | CISO / governance | CIO / operations | SOC / CTI |
 |---|---|---|---|
-| **0–7 days** | Validate critical data and services; assign incident/fraud owners; require out-of-band bank-detail change verification | Review backups, privileged/provider access to essential services and log preservation | Hunt for abnormal exports and privileged logins; reconcile external claims with internal evidence |
-| **8–30 days** | Reassess provider obligations, notifications and retention; rank high-access vendors | Deploy strong MFA/PAM, harden APIs/storage, test representative restoration | Test behavioural SIEM rules; improve EDR/AD/cloud/API visibility and ingestion coverage |
-| **31–90 days** | Exercise a ransomware + data leak + fraud scenario; measure data-protection outcomes | Segment sensitive zones, limit large exports, ensure isolated and restorable backups | Operationalise L1/L2/N3 playbooks, lessons learned, status monitoring and CTI deduplication |
+| **0-7 days** | Validate critical data and services; assign incident/fraud owners; require out-of-band bank-detail change verification | Review backups, privileged/provider access to essential services and log preservation | Hunt for abnormal exports and privileged logins; reconcile external claims with internal evidence |
+| **8-30 days** | Reassess provider obligations, notifications and retention; rank high-access vendors | Deploy strong MFA/PAM, harden APIs/storage, test representative restoration | Test behavioural SIEM rules; improve EDR/AD/cloud/API visibility and ingestion coverage |
+| **31-90 days** | Exercise a ransomware + data leak + fraud scenario; measure data-protection outcomes | Segment sensitive zones, limit large exports, ensure isolated and restorable backups | Operationalise L1/L2/N3 playbooks, lessons learned, status monitoring and CTI deduplication |
 
 **Suggested metrics:** coverage of critical assets with EDR and searchable logs; proportion of privileged identities protected by MFA/PAM; secret revocation time; restoration test success; time to triage a suspicious export; coverage of high-access vendors; and documented closure rate of CTI notifications.
 

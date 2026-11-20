@@ -1,6 +1,13 @@
 # Rapport CTI AFRINTEL - Cybermenaces en Afrique - Décembre 2024
 
-👉🏾 [English version](./README.md)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL) ![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Période](https://img.shields.io/badge/Période-décembre%202024-blueviolet)
+
+**Public:** RSSI, responsables SOC/CERT, comités de risque et continuité d'activité.<br>
+**Période:** 1–31 décembre 2024, sur la base des fiches canoniques documentées.<br>
+**Édition:** auditée le 20 novembre 2026 | **Diffusion:** TLP:CLEAR.<br>
+👉🏾 [English version](./README.md) | [Fiches détaillées en français](./victims_FR.md) | [English records](./victims.md)
+
+> **Méthode probatoire.** Ce rapport dérive des fiches victimes validées de décembre 2024. Revendications, confirmations de victimes, échantillons et niveaux de confiance restent séparés. Une publication criminelle n'est pas traitée comme une preuve de chiffrement, d'exfiltration ou de compromission complète sans éléments concordants.
 
 ## 1. Synthèse exécutive
 
@@ -23,6 +30,8 @@ La maturité de preuve est répartie entre **Claim - Unverified: 10**, **Claim -
 | Malware | 0 | 0 | Stable |
 | Operational Fraud | 0 | 0 | Stable |
 
+![Comparaison mensuelle](assets/comparaison_FR.png)
+
 ### 1.2 Analyse comparative
 
 Le volume mensuel **augmente de 3 incidents**. Les variations structurantes sont : Data Leak 1->5 (+4), Defacement 0->1 (+1), Ransomware 12->11 (-1), Access Sale 2->1 (-1). Cette variation décrit le corpus documenté, pas nécessairement une variation équivalente du nombre réel de compromissions sur le continent.
@@ -44,11 +53,14 @@ Le volume mensuel **augmente de 3 incidents**. Les variations structurantes sont
 | Data Leak | 5 | 27,8 % |
 | Access Sale | 1 | 5,6 % |
 | DDoS | 0 | 0,0 % |
-| Defacement | 1 | 6,2 % |
+| Defacement | 1 | 5,6 % |
 | Account Takeover | 0 | 0,0 % |
 | System Intrusion | 0 | 0,0 % |
 | Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
+
+![Types d’incident](assets/types_FR.png)
+![Répartition des types](assets/types_pie_FR.png)
 
 ```mermaid
 pie showData
@@ -77,6 +89,9 @@ pie showData
 | Kenya | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Maroc | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
+
+![Pays](assets/pays_FR.png)
+
 ## 5. Répartition régionale
 
 | Région | Fiches | Part |
@@ -85,6 +100,10 @@ pie showData
 | Afrique australe | 5 | 31,2 % |
 | Afrique de l'Est | 3 | 18,8 % |
 | Afrique de l'Ouest | 2 | 12,5 % |
+
+
+![Régions](assets/regions_FR.png)
+![Répartition régions](assets/regions_pie_FR.png)
 
 ## 6. Répartition sectorielle
 
@@ -103,6 +122,10 @@ pie showData
 | Transport / Logistique | 1 | 6,2 % |
 | Santé / Médical | 1 | 6,2 % |
 
+
+![Secteurs](assets/secteurs_FR.png)
+![Répartition secteurs](assets/secteurs_pie_FR.png)
+
 ## 7. Acteurs / groupes
 
 | Acteur / Groupe | Fiches | Part |
@@ -119,6 +142,9 @@ pie showData
 | arcusmedia | 1 | 6,2 % |
 | Satanic | 1 | 6,2 % |
 
+
+![Acteurs / groupes](assets/acteurs_FR.png)
+
 ## 8. Maturité des preuves
 
 | Position de preuve | Fiches | Part |
@@ -127,6 +153,9 @@ pie showData
 | Claim - Data Sample Published | 4 | 25,0 % |
 | Confirmed | 1 | 6,2 % |
 | Corroborated | 1 | 6,2 % |
+
+
+![Maturité des preuves](assets/preuves_FR.png)
 
 ### Confiance
 

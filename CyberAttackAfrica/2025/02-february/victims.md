@@ -6,7 +6,7 @@
 
 ## Monthly snapshot
 
-**10 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 8, Account Takeover 2.
+**11 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 8, Data Leak 1, Account Takeover 2.
 
 > Public-source links are added to supplementary incidents identified through online research to complete the corpus. They are not retroactively imposed on historical AFRINTEL records, including Dark Web observations.
 

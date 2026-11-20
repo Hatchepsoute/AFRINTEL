@@ -3,9 +3,9 @@
 # AFRINTEL | Monthly Cyber Threat Intelligence Report
 ## Cyber threats affecting African organizations - May 2026
 
-**Audience:** CISOs, CIOs, risk executives, SOC/CERT managers and national cyber authorities.  
-**Canonical reporting window:** 1–31 May 2026 · **Documentary review:** 6 November 2026.  
-**Primary material:** [Victim records EN](./victims.md) · [French victim records](./victims_FR.md) · [Validation](./VALIDATION.md) · [Reproducible statistics](./AUDIT_STATISTIQUES.json).  
+**Audience:** CISOs, CIOs, risk executives, SOC/CERT managers and national cyber authorities.<br>
+**Canonical reporting window:** 1-31 May 2026 · **Documentary review:** 6 November 2026 · **Edition:** revised with synchronized evidence status and charts.<br>
+**Primary material:** [Victim records EN](./victims.md) · [French victim records](./victims_FR.md).<br>
 👉🏾 **[Lire le rapport français](./README_FR.md)**
 
 > **Reliability note - observation, analysis and confirmation.** AFRINTEL documents threat-actor publications, ransomware extortion listings, offered datasets and samples examined after disclosure. Where a victim record documents a technical or documentary examination, this report describes **the data categories identified, the actual amount examined and the limitations of that review**. Adversary-claimed volumes are not automatically verified totals. A ransomware listing does not prove encryption, and an availability screenshot does not independently prove a DDoS attack. Institutional confirmations are cited independently. No personal identifiers, secrets or individual exposed documents are reproduced.
@@ -14,6 +14,8 @@
 
 ## 1. Executive summary
 
+
+This edition is a **retrospective consolidation reviewed on 6 November 2026**. It preserves **107 publication-level canonical records**, with explicitly documented possible overlap; the count is not a verified tally of technical intrusions.
 
 The 107 observations comprise **45 data leaks (42.1%)**, **43 DDoS claims (40.2%)**, **17 ransomware-related records (15.9%)**, **one access sale (0.9%)** and **one system intrusion (0.9%)**. Single-country records concentrate in **Morocco (53)**, **Egypt (17)** and **South Africa (17)**. **Three multi-country records** extend the geographical scope to 18 African countries. The 107 canonical incidents represent **115 country exposures** after expanding each multi-country record to the explicitly named countries; the two denominators should never be conflated.
 
@@ -42,7 +44,7 @@ Further significant documentary findings concern **Gauteng Provincial Government
 | Malware | 0 | 0 | 0 (stable) |
 | Operational Fraud | 0 | 0 | 0 (stable) |
 
-![April–May comparison](assets/comparaison_EN.png)
+![April-May comparison](assets/comparaison_EN.png)
 
 **CTI interpretation.** The **43-record increase** is primarily explained by **34 additional DDoS claims**, associated in the records with the same Keymous+ account. This concentration may reflect a coordinated publication campaign rather than a comparable increase in technically confirmed attacks. The four-record decrease in ransomware reflects fewer **listings in the corpus**, not proof of lower actual intrusion rates. Data-leak publications remain prominent and increase by thirteen records.
 
@@ -53,21 +55,21 @@ AFRINTEL monitors 54 African countries through ransomware leak sites, undergroun
 A `Ransomware` category indicates a record in an **extortion/ransomware publication context** or an explicitly confirmed compromise; it does not assert proven encryption in all 17 cases. For leaks, a visible sample can support a finding of exposure without validating every claimed row. An `Access Sale` claim does not prove that the credentials still work; **AFRINTEL did not attempt authentication**. DDoS is counted as **actor-side claims or observations**, without assuming traffic volume, attack duration or sustained service disruption.
 
 
-**Timeline caveat.** Canonical assignment is based on a documented publication when the technical initial-access date cannot be established. Datasets may have been collected much earlier. May's **Gauteng** and **Stats SA** publications require comparison to **March XP95** claims; a May post does not by itself prove a second intrusion. The **Mansoura** record was supplemented by a **July 2026 sample review**, which is retrospective. The detailed **Lengau** public confirmation was reported on **24 August 2026** and must not be backdated as a May public announcement.
+**Timeline caveat.** Canonical assignment uses documented publication timing when initial access cannot be established. **All 107 entries are publication-level documentary records, not 107 proven independent technical compromises.** Two posts on **23 May** attributed to **Keymous+** and **Keymous** both name **Morocco's Ministry of Foreign Affairs** and **8,440 applicant rows**. A republication or shared source is plausible. Both records remain in the user's **107-record baseline**, but cannot be described as two proven independent breaches. Any future deduplication must be versioned and transparently documented. Datasets may have been collected much earlier. May's **Gauteng** and **Stats SA** publications require comparison to **March XP95** claims; a May post does not by itself prove a second intrusion. The **Mansoura** record was supplemented by a **July 2026 sample review**, which is retrospective. The detailed **Lengau** public confirmation was reported on **24 August 2026** and must not be backdated as a May public announcement. The case's **31 May** date is a **corpus-assignment anchor**, not verified evidence of its first public publication on that day.
 
 ### 2.1 Evidence-status distribution
 
 | Status in May records | Records | Share | Interpretation |
 |---|---:|---:|---|
 | `Claim - Unverified` | 71 | 66.4% | Publication recorded; impact, source or full scope not independently proven. |
-| `Claim - Data Sample Published` | 33 | 30.8% | Sample described; authenticity and attribution assessed case by case. |
+| `Claim - Data Sample Published` | 32 | 29.9% | Sample described; provenance and completeness require case-specific review. |
 | `Data Fully Published` | 2 | 1.9% | Full publication reported, not a blanket verification of the whole dataset. |
-| `Victim Confirmed` (normalization pending) | 1 | 0.9% | The CHPC/Lengau incident was institutionally acknowledged. |
-| **Total** | **107** | **100%** | Original status classification before external enrichment. |
+| `Victim Confirmed` | 2 | 1.9% | Senegal Treasury and CHPC/Lengau: incident confirmed, subject to scoped confirmation statements. |
+| **Total** | **107** | **100%** | After 6 November corroboration review (rounded shares may sum to 100.1%). |
 
 ![Evidence qualification](assets/preuves_EN.png)
 
-**Important corroboration:** the Senegalese Treasury's **18 May** statement confirms malicious activity and irregular information disclosure. The source record remains marked `Claim - Data Sample Published`; its status should be **reassessed with a scoped explanation**, without implying that the victim officially validated all 1.66 million records.
+**Scope of confirmed incidents:** the Senegal Treasury's **18 May** statement confirms malicious acts, disruption and irregular disclosure. The record is now `Victim Confirmed`, as is **CHPC/Lengau**. This **does not confirm all ~1.66 million entries** discussed in the AFRINTEL sample analysis, encryption, or attribution to AuditTeam. Confirmations are case-specific and documented in the victim records.
 
 ## 3. Quantitative overview
 
@@ -145,15 +147,15 @@ The most important operational risk is **reuse of exposed information**: identit
 
 **🇸🇳 Senegalese Public Treasury - strategic risk.** The AuditTeam record describes **three analyzed database datasets**, totaling about **1,659,735 entries**: staff/payroll (~40,394), taxpayers/debtors (~960,146) and public payment orders (~659,195). Additional transfer files dated through **8 May** and **323 days of SICA operational files** establish sensitive business context. Exposed fields include tax IDs, bank coordinates, payment orders, staff and government suppliers. **Institutionally corroborated:** the Treasury reported an incident beginning **10 May**, and on **18 May** confirmed malicious acts, service disruption and irregular dissemination of information while services were progressively resumed. **Not established:** execution of ransomware encryption, initial access mechanism, or official validation of every dataset. **CISO impact:** supplier fraud, diverted transfers, identity abuse and cross-government exposure. [APS - 11 May](https://aps.sn/le-tresor-public-victime-dun-piratage-informatique/) · [APS - 18 May](https://aps.sn/le-tresor-public-annonce-la-reprise-progressive-de-ses-services-a-la-suite-de-lincident-informatique/).
 
-**🇿🇦 Gauteng Provincial Government / Gauteng City Region Academy (GCRA).** The Gauteng post claims **3.8 TB / 3,673,556 files**, while the **locally examined sample contains 1,905 files (~1.905 GB)**, including **1,632 PDF**, **175 JPG** and **89 DOCX** items (plus a few other formats). Extractable text covers administrative material, procurement, taxation, contracts, housing and identity-related documents. GCRA's publisher claims **147 GB / 429,473 files**, whereas **2,945 PDF documents (~1.145 GB)** were actually examined, covering students, bursaries, payments and banking references. PDFs without a text layer were not exhaustively reviewed. The material supports the existence of sensitive documentary samples but **cannot validate the full advertised volumes**. March **XP95** claims concerning the same entities make **possible resale/republication** an important scenario to examine, not proof of a new independent compromise.
+**🇿🇦 Gauteng Provincial Government / Gauteng City Region Academy (GCRA).** The Gauteng post claims **3.8 TB / 3,673,556 files**, while the **locally examined sample contains 1,905 files (~1.905 GB)**, including **1,632 PDF**, **175 JPG** and **89 DOCX** items (plus a few other formats). Extractable text covers administrative material, procurement, taxation, contracts, housing and identity-related documents. GCRA's publisher claims **147 GB / 429,473 files**, whereas **2,944 PDFs (~1.144 GB; 1,143,999,172 bytes)** were actually examined, covering students, bursaries, payments and banking references. PDFs without a text layer were not exhaustively reviewed. The material supports the existence of sensitive documentary samples but **cannot validate the full advertised volumes**. March **XP95** claims concerning the same entities make **possible resale/republication** an important scenario to examine, not proof of a new independent compromise.
 
-**🇪🇬 Education - Ministry of Education, PAT and Mansoura.** **Revesky** advertises **22.6 GB**, **26.8 million** student records and **3.8 million** education staff records, plus claimed administrative privileges. These are **adversary figures and capabilities**, not independently audited access to Egyptian education systems. The **Professional Academy for Teachers (PAT)** record describes samples including teacher identifiers, institutional affiliations and administrative data; the claimed total is **8–10 GB compressed**. For **Mansoura**, a later July examination covers exactly **4,239 sample entries**, versus **989,000 records claimed** in the earlier publication. **ISSA Egypt (19 June)** described the Revesky allegations as unconfirmed, with no official authentication of the advertised scale or privileges. [ISSA Egypt](https://issa-eg.org/alleged-data-breach-claims-involving-egypts-ministry-of-education-highlight-potential-cybersecurity-risks/).
+**🇪🇬 Education - Ministry of Education, PAT and Mansoura.** **Revesky** advertises **22.6 GB**, **26.8 million** student records and **3.8 million** education staff records, plus claimed administrative privileges. These are **adversary figures and capabilities**, not independently audited access to Egyptian education systems. The **Professional Academy for Teachers (PAT)** record describes samples including teacher identifiers, institutional affiliations and administrative data; the claimed total is **8-10 GB compressed**. For **Mansoura**, a later July examination covers exactly **4,239 sample entries**, versus **989,000 records claimed** in the earlier publication. **ISSA Egypt (19 June)** described the Revesky allegations as unconfirmed, with no official authentication of the advertised scale or privileges. [ISSA Egypt](https://issa-eg.org/alleged-data-breach-claims-involving-egypts-ministry-of-education-highlight-potential-cybersecurity-risks/).
 
 **🇲🇦 SDTM / Barid Al-Maghrib - ERP identities and financial flows.** **Sejjil** advertises **129 CSV files** attributed to SAGE ERP and associated systems. The record documents accounting information, bank identifiers, ERP users, MD5 password hashes and session tokens described by the source as active. **Current validity was not tested.** The CIO's key priorities are **secret rotation, ERP export auditing, control of messaging gateways and financial-environment segregation**.
 
 **🇲🇿 🇱🇷 🇳🇬 🇹🇬 🇸🇱 DHIS2 - regional technology dependency.** A post attributed to **Keymous** (kept distinct from Keymous+) contains alleged URL/username/password combinations for health-information instances in **five African countries**. **No access attempt was made.** The presumed exposure justifies credential revocation and authentication-log review but **does not prove data manipulation or continuing access**. Two countries outside Africa appear in the source context but are excluded from AFRINTEL counts.
 
-**🇹🇿 Tanzanian police / 🇲🇦 RADEM / 🇪🇬 FutureShop.** A seller advertises credentials for **over 10,000 police webmail accounts**, without proof of current validity. RADEM is associated with a claim of **1.1 million documents**, compared with a reported first release of **about 18,000 PDFs**; these are different scopes. FutureShop's record discusses an **allegedly unauthenticated API** and object storage exposing customer and delivery data, without independent active testing of the live infrastructure at report time. Relevant defenses include mail-account security, document segregation and API authorization review.
+**🇹🇿 Tanzanian police / 🇲🇦 RADEM / 🇪🇬 FutureShop.** A seller advertises credentials for **over 10,000 police webmail accounts**, without proof of current validity. RADEM is associated with a claim of **1.1 million documents**, compared with a reported first release of **about 18,000 PDFs**; these are different scopes. FutureShop's publication **claims an unauthenticated API and associated object storage** containing customer and delivery information. **AFRINTEL did not independently test the API's actual authorization configuration or the storage's present reachability**; authorized owners should verify these controls. Relevant defenses include mail-account security, document segregation and API authorization review.
 
 **Attribution caution.** The **SARS** record contains credential pairs linked to SARS login URLs, but many visible addresses belong to international third parties. **Credentials paired with a target URL do not by themselves prove that the target organization's database was breached.** The same provenance checks are needed for commercially advertised datasets that use generic Contacts/Orders/Tickets schemas.
 
@@ -173,7 +175,7 @@ The **AuditTeam/Treasury** entry is categorized as ransomware based on the extor
 
 **🇲🇦 Spacex.ma** - a **DarkMafiaX** publication advertises supposed administrator credentials. Publication does not establish the account is usable; AFRINTEL did not attempt to authenticate. Defenses include targeted rotation/revocation, MFA, administrator activity review and removal of unnecessary administrative exposure.
 
-**🇿🇦 CHPC/Lengau** - South African authorities confirmed an **intrusion** affecting part of the HPC environment in late May. Details reported on **24 August** highlighted **vulnerabilities in a legacy HPC environment** and disruption to computing resources. This is distinct from extortion listings: **no ransomware or specific exfiltration is attributed without evidence**. The case underscores risks involving critical research infrastructure, legacy administration systems and the integrity of scientific workloads. [ITWeb - 24 August](https://www.itweb.co.za/article/cause-of-breach-on-sas-supercomputer-revealed/KPNG878NLeGq4mwD).
+**🇿🇦 CHPC/Lengau** - A South African Parliamentary reply, reported on **24 August 2026**, confirmed **unauthorized access to some HPC components** in late May, **exploitation of weaknesses in ageing HPC infrastructure**, and the **deployment of cryptocurrency-mining malware**. Officials stated that the broader national infrastructure had not been compromised. **Neither ransomware nor a specific data theft is established.** The incident directly motivates monitoring for anomalous compute workloads, unauthorized jobs and outbound mining traffic (**T1496.001**), and stricter privileged-access controls. [ITWeb - 24 August](https://www.itweb.co.za/article/cause-of-breach-on-sas-supercomputer-revealed/KPNG878NLeGq4mwD).
 
 ## 5. Sector impact and business consequences
 
@@ -198,12 +200,12 @@ Sector visibility is shaped by the collection sources and monitored campaigns. T
 | **TheGentlemen** | **4** | Ransomware/extortion listings across countries. |
 | **Kazu** | **3** | Documentary samples, potentially overlapping XP95 claims. |
 | **NightSpire** | **3** | Several Egyptian organization listings. |
-| **Keymous** | **2** | Retained as distinct from Keymous+ until an identity link is established. |
+| **Keymous** | **3** | Retained as distinct from Keymous+ until an identity link is established. |
 | **INT3X / cc5ab / anisanas2** | **2 each** | Education records, API data, infrastructure and data sales. |
 
 ![Leading non-DDoS actors](assets/acteurs_EN.png)
 
-The non-DDoS chart avoids having the **43 posts attributed to one account** conceal other leak and extortion activity. The table includes Keymous+'s full total. Actor names, marketplace usernames and temporary coalitions are **publication identities**, not proof of technical attribution to the same operator. Coalition labels (such as NullSec and 404Crew) are preserved rather than merged into stand-alone actor counts.
+The chart is **truly filtered to non-DDoS publications**: it includes **3 Keymous+ records**, whereas the actor table shows its **46 total publications**, including **43 DDoS claims**. These intentionally different denominators help readers assess data and extortion activity without mistaking publicity volume for intrusion volume. Actor names, marketplace usernames and temporary coalitions are **publication identities**, not proof of technical attribution to the same operator. Coalition labels (such as NullSec and 404Crew) are preserved rather than merged into stand-alone actor counts.
 
 ### 6.1 Geographic prioritization for CISOs (signals, not national risk rankings)
 
@@ -223,7 +225,7 @@ The non-DDoS chart avoids having the **43 posts attributed to one account** conc
 
 **Trend 3 - recycled datasets and timeline uncertainty.** **Kazu/XP95** overlaps, and records supplemented after their initial publications, require clear separation between a **new post, resale, new sample and new compromise**. This reduces overcounting in quarterly reports.
 
-**Priority gaps:** (i) no independently supplied WAF/CDN evidence for the 43 DDoS claims; (ii) no validation of complete Egyptian education database volumes; (iii) uncertain technical provenance for some brokered datasets; (iv) unresolved XP95–Kazu relationships; and (v) incomplete deadlines or disclosure states for some ransomware listings. Not finding a public DFIR report in reviewed sources **does not mean no investigation exists**.
+**Priority gaps:** (i) no independently supplied WAF/CDN evidence for the 43 DDoS claims; (ii) no validation of complete Egyptian education database volumes; (iii) uncertain technical provenance for some brokered datasets; (iv) unresolved XP95-Kazu relationships; and (v) incomplete deadlines or disclosure states for some ransomware listings. Not finding a public DFIR report in reviewed sources **does not mean no investigation exists**.
 
 ## 8. MITRE ATT&CK: behavioral hypotheses and limitations
 
@@ -238,6 +240,7 @@ The non-DDoS chart avoids having the **43 posts attributed to one account** conc
 | [T1567 - Exfiltration Over Web Service](https://attack.mitre.org/techniques/T1567/) | Unusual outbound volume by identity/service | Disclosed datasets; transfer method not established | Hypothesis; no exfil destination attributed |
 | [T1486 - Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486/) | Rapid mass writes/renames, ransom notes, backup tampering | 17 ransomware-related records; **encryption not generally proven** | Preventive/hunting |
 | [T1498 - Network Denial of Service](https://attack.mitre.org/techniques/T1498/) | Correlated bandwidth/RPS spikes and elevated 5xx | 43 Keymous+ DDoS claims | Hypothesis; technique not proven |
+| [T1496.001 - Compute Hijacking](https://attack.mitre.org/techniques/T1496/001/) | Unexpected CPU/GPU load + unapproved process + outbound mining-related traffic | CHPC/Lengau: mining malware reported in institutional Parliamentary reply (24 August) | Corroborated incident behavior; local hunting still needs telemetry |
 
 ## 9. Recommendations by organization type
 
@@ -259,6 +262,7 @@ The non-DDoS chart avoids having the **43 posts attributed to one account** conc
 | **Claimed DDoS wave** | WAF/CDN, NetFlow, load balancer, DNS, SLO/APM | RPS/bandwidth spike + 429/5xx rise + observable user impact | Differentiate valid demand spike, app outage, DNS/CDN failure and network attack. |
 | **Public API or cloud storage exposure** | API gateway, CloudTrail/object access, CSPM, WAF | Anonymous export requests + unusual object access/public-policy change | Review authorization and ACL safely without accessing third-party data. |
 | **Ransomware precursors** | EDR, Sysmon/auditd, backup, hypervisor | Mass file modifications + snapshot deletion + unexpected service stop | Isolate if corroborated, preserve evidence and validate recoverability. |
+| **HPC compute hijacking** | Scheduler/job logs, CPU/GPU metrics, Linux EDR, DNS/proxy | Unknown job or persistent CPU spike + unapproved executable + unusual outbound destination | Validate job ownership, process lineage, scope and any exfiltration without assuming it occurred. |
 
 **Investigation workflow:** **(1)** establish the actor/date/victim context; **(2)** identify relevant assets and identities; **(3)** correlate with internal logs; **(4)** qualify business impact; **(5)** contain and notify per response plan; **(6)** preserve evidence, uncertainties and remediation actions. Thresholds must be tuned against organizational baselines; **a single large transfer is not proof of exfiltration**.
 
@@ -266,26 +270,26 @@ The non-DDoS chart avoids having the **43 posts attributed to one account** conc
 
 | Timing | Priority | Owner | Verifiable deliverable | Nature |
 |---|---|---|---|---|
-| **Days 0–7** | **P0** | CISO + IAM + SOC | Inventory exposed identities/accounts; targeted revocation or rotation and retrospective sign-in hunt | Response to observed exposure |
-| **Days 0–7** | **P0** | CIO + Finance | Out-of-band beneficiary verification; ERP privilege and backup review | Response to documented payment-data exposure |
-| **Days 0–15** | **P1** | Network/CDN + SOC | RPS/5xx/latency dashboard and evidence-based DDoS qualification procedure | Response to claimed campaign |
-| **Days 8–30** | **P1** | CIO + Applications | API/bucket authorization and RBAC reviews; sensitive-export inventory | Preventive, triggered by exposure cases |
-| **Days 8–30** | **P1** | SOC + Anti-fraud | Two deployed correlations: data extraction and suspicious beneficiary/payment changes | Proactive detection |
-| **Days 31–60** | **P2** | CISO + Data owners | Data classification and third-party delegated-access review | Supply-chain risk reduction |
-| **Days 31–90** | **P2** | CIO + CERT/SOC | Recovery drills, segmentation tests, ransomware/DDoS tabletop | Resilience/prevention |
-| **Days 31–90** | **P2** | CISO + Internal audit | Legacy critical-system review and remediation/compensating-control plan | Lengau lesson learned |
+| **Days 0-7** | **P0** | CISO + IAM + SOC | Inventory exposed identities/accounts; targeted revocation or rotation and retrospective sign-in hunt | Response to observed exposure |
+| **Days 0-7** | **P0** | CIO + Finance | Out-of-band beneficiary verification; ERP privilege and backup review | Response to documented payment-data exposure |
+| **Days 0-15** | **P1** | Network/CDN + SOC | RPS/5xx/latency dashboard and evidence-based DDoS qualification procedure | Response to claimed campaign |
+| **Days 8-30** | **P1** | CIO + Applications | API/bucket authorization and RBAC reviews; sensitive-export inventory | Preventive, triggered by exposure cases |
+| **Days 8-30** | **P1** | SOC + Anti-fraud | Two deployed correlations: data extraction and suspicious beneficiary/payment changes | Proactive detection |
+| **Days 31-60** | **P2** | CISO + Data owners | Data classification and third-party delegated-access review | Supply-chain risk reduction |
+| **Days 31-90** | **P2** | CIO + CERT/SOC | Recovery drills, segmentation tests, ransomware/DDoS tabletop | Resilience/prevention |
+| **Days 31-90** | **P2** | CISO + Internal audit | Legacy critical-system review and remediation/compensating-control plan | Lengau lesson learned |
 
 **Suggested KPIs:** privileged-identity MFA coverage, time to revoke exposed credentials, successful recovery-test ratio, application/cloud log coverage, availability measured through real customer journeys, time to triage a leak signal, and percentage of high-risk payment changes validated out of band. No baseline performance figures are assumed for organizations not directly examined.
 
 ## 12. Conclusion - implications for cyber defense
 
-The increase from **64 to 107 canonical observations** should not be described as a comparable rise in actual intrusions. The corpus documents three distinct dynamics: **intensified actor-side availability claims against Morocco**, **circulation of sensitive financial and government datasets**, and **institutionally confirmed incidents** whose technical nature may differ from criminal group headlines.
+The increase from **64 to 107 documentary observations** should not be described as a comparable rise in actual intrusions. The corpus also retains **two 23 May publications referencing the same alleged 8,440 applicant rows**; the possible overlap is disclosed rather than concealed. The corpus documents three distinct dynamics: **intensified actor-side availability claims against Morocco**, **circulation of sensitive financial and government datasets**, and **institutionally confirmed incidents** whose technical nature may differ from criminal group headlines.
 
 For executives, the useful response is not simply to track actor names. It is to **reduce the ongoing value of exposed data, defend payment workflows, strengthen identities and demonstrate service resilience**. For SOCs, the priority is reproducible correlation between external intelligence and internal telemetry; without that link, a claim remains a publication, not an attributed intrusion sequence.
 
-**AFRINTEL - African Cyber Threat Intelligence**  
-**Coverage:** 54 African countries · **Sharing:** TLP:CLEAR · **Method:** OSINT-safe, sample traceability and explicit uncertainty control.  
-**Repository:** [Hatchepsoute/AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL) · **Records:** [victims.md](./victims.md) · **QA:** [VALIDATION.md](./VALIDATION.md).
+**AFRINTEL - African Cyber Threat Intelligence**<br>
+**Coverage:** 54 African countries · **Sharing:** TLP:CLEAR · **Method:** OSINT-safe, sample traceability and explicit uncertainty control.<br>
+**Repository:** [Hatchepsoute/AFRINTEL](https://github.com/Hatchepsoute/AFRINTEL) · **Records:** [victims.md](./victims.md).
 
 ### External corroboration and reference sources
 

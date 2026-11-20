@@ -1,6 +1,13 @@
 # Rapport CTI AFRINTEL - Cybermenaces en Afrique - Avril 2024
 
-👉🏾 [English version](./README.md)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL) ![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Période](https://img.shields.io/badge/Période-avril%202024-blueviolet)
+
+**Public:** RSSI, responsables SOC/CERT, comités de risque et continuité d'activité.<br>
+**Période:** 1–30 avril 2024, sur la base des fiches canoniques documentées.<br>
+**Édition:** auditée le 20 novembre 2026 | **Diffusion:** TLP:CLEAR.<br>
+👉🏾 [English version](./README.md) | [Fiches détaillées en français](./victims_FR.md) | [English records](./victims.md)
+
+> **Méthode probatoire.** Ce rapport dérive des fiches victimes validées de avril 2024. Revendications, confirmations de victimes, échantillons et niveaux de confiance restent séparés. Une publication criminelle n'est pas traitée comme une preuve de chiffrement, d'exfiltration ou de compromission complète sans éléments concordants.
 
 ## 1. Synthèse exécutive
 
@@ -22,6 +29,8 @@ La maturité de preuve est répartie entre **Claim - Unverified: 5**, **Confirme
 | System Intrusion | 0 | 0 | Stable |
 | Malware | 0 | 0 | Stable |
 | Operational Fraud | 0 | 0 | Stable |
+
+![Comparaison mensuelle](assets/comparaison_FR.png)
 
 ### 1.2 Analyse comparative
 
@@ -50,6 +59,9 @@ Le volume mensuel **reste stable de 0 incident(s)**. Les variations structurante
 | Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
 
+![Types d’incident](assets/types_FR.png)
+![Répartition des types](assets/types_pie_FR.png)
+
 ```mermaid
 pie showData
     title Types d'incident - Avril 2024
@@ -69,6 +81,9 @@ pie showData
 | Burkina Faso | 1 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Maroc | 1 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
+
+![Pays](assets/pays_FR.png)
+
 ## 5. Répartition régionale
 
 | Région | Fiches | Part |
@@ -77,6 +92,10 @@ pie showData
 | Afrique australe | 3 | 33,3 % |
 | Océan Indien | 1 | 11,1 % |
 | Afrique de l'Ouest | 1 | 11,1 % |
+
+
+![Régions](assets/regions_FR.png)
+![Répartition régions](assets/regions_pie_FR.png)
 
 ## 6. Répartition sectorielle
 
@@ -90,6 +109,10 @@ pie showData
 | Technologie / IT | 1 | 11,1 % |
 | Énergie / Services publics | 1 | 11,1 % |
 
+
+![Secteurs](assets/secteurs_FR.png)
+![Répartition secteurs](assets/secteurs_pie_FR.png)
+
 ## 7. Acteurs / groupes
 
 | Acteur / Groupe | Fiches | Part |
@@ -102,6 +125,9 @@ pie showData
 | Pedi | 1 | 11,1 % |
 | ransomhub | 1 | 11,1 % |
 
+
+![Acteurs / groupes](assets/acteurs_FR.png)
+
 ## 8. Maturité des preuves
 
 | Position de preuve | Fiches | Part |
@@ -109,6 +135,9 @@ pie showData
 | Claim - Unverified | 5 | 55,6 % |
 | Confirmed | 2 | 22,2 % |
 | Claim - Data Sample Published | 2 | 22,2 % |
+
+
+![Maturité des preuves](assets/preuves_FR.png)
 
 ### Confiance
 

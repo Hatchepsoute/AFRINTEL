@@ -9,7 +9,7 @@
 
 ## Monthly snapshot
 
-February 2026 includes **27 documented records**: **20 Ransomware**, **7 Data Leak**, **0 Access Sale**, **0 DDoS**, **0 Defacement** and **0 Operational Fraud**, involving **14 African countries**. These are documented reports, not necessarily independently confirmed intrusions.
+February 2026 includes **27 documented records**: **20 Ransomware** and **7 Data Leak**, involving **14 African countries**. These are documented reports, not necessarily independently confirmed intrusions.
 
 ### February 01, 2026
 

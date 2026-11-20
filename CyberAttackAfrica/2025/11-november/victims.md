@@ -6,7 +6,7 @@
 
 ## Monthly snapshot
 
-**15 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 10, Data Leak 4, Defacement 1.
+**16 documented cyber incidents** under AFRINTEL Taxonomy v2: Ransomware 10, Data Leak 5, Defacement 1.
 
 > Public-source links are added to supplementary incidents identified through online research to complete the corpus. They are not retroactively imposed on historical AFRINTEL records, including Dark Web observations.
 

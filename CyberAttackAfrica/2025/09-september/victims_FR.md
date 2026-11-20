@@ -116,7 +116,7 @@
 - **Secteur :** Télécommunications / Fournisseur d'accès Internet
 - **Site web :** [topnet.tn](https://www.topnet.tn)
 - **Statut :** Claim - Data Sample Published
-- **Type d'incident :** Fuite de données
+- **Type d'incident:** Data Leak
 - **Niveau de confiance :** Élevé
 - **Niveau d'impact :** Niveau 4
 - **Description victime :** TOPNET est un fournisseur tunisien de services Internet et de télécommunications.
@@ -188,7 +188,7 @@
 - **Secteur :** Gouvernement / Finance
 - **Site web :** Non précisé
 - **Statut :** Claim - Data Sample Published
-- **Type d'incident :** Fuite de données
+- **Type d'incident:** Data Leak
 - **Niveau de confiance :** Faible
 - **Niveau d'impact :** Niveau 3
 - **Description victime :** Le Ministère algérien des Finances est l'institution gouvernementale chargée de l'administration fiscale et financière nationale.

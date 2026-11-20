@@ -1,8 +1,14 @@
-# Rapport CTI AFRINTEL - Cybermenaces en Afrique - Janvier 2025
+# AFRINTEL | Rapport mensuel de cyber threat intelligence
+## Cybermenaces visant les organisations africaines, janvier 2025
 
-👉🏾 [English version](./README.md)
+![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue) ![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange) ![Classification](https://img.shields.io/badge/TLP-CLEAR-green) ![Période](https://img.shields.io/badge/Période-Janvier%202025-blueviolet)
 
-![Scope](https://img.shields.io/badge/Scope-Africa-darkgreen) ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet) ![Période](https://img.shields.io/badge/Period-January%202025-blue) ![TLP](https://img.shields.io/badge/TLP-CLEAR-green)
+**Public cible :** RSSI, directions des risques, responsables SOC/CERT et responsables de la continuité d'activité.
+**Période étudiée :** 1er au 31 janvier 2025, selon les publications et événements documentés.
+**Diffusion :** TLP:CLEAR.
+👉🏾 [English version](./README.md) | [Fiches détaillées en français](./victims_FR.md) | [Corpus anglais](./victims.md)
+
+> **Méthodologie de preuve - lecture du rapport.** AFRINTEL distingue les publications observées, les échantillons effectivement examinés, les corroborations et les confirmations officielles. Une revendication de ransomware ne prouve pas à elle seule le chiffrement, l'exfiltration complète ou le volume annoncé. Les éléments personnels, secrets et identifiants bruts ne sont pas reproduits.
 
 ## 1. Synthèse exécutive
 
@@ -16,7 +22,7 @@ Sur le plan sectoriel, les catégories les plus représentées sont **Éducation
 
 La maturité des preuves reste variable : **18 fiches** relèvent de claims non vérifiés ou accompagnés d'échantillons. AFRINTEL conserve une séparation stricte entre **faits observés, revendications, corroborations, confirmations officielles et inconnues techniques**.
 
-Par rapport à la baseline finale corrigée de décembre 2024, le volume mensuel **augmente de 4 fiches, passant de 16 à 20 (+25,0 %)**. Le Ransomware progresse de 11 à 16 (+5), tandis que Data Leak passe de 3 à 3, Access Sale de 1 à 0 et Defacement de 1 à 0. Account Takeover apparaît avec 1 fiche en janvier.
+Par rapport à la baseline finale corrigée de décembre 2024, le volume mensuel **augmente de 2 fiches, passant de 18 à 20 (+11,1 %)**. Le Ransomware progresse de 11 à 16 (+5), tandis que Data Leak passe de 5 à 3 (-2), Access Sale de 1 à 0 (-1) et Defacement de 1 à 0 (-1). Account Takeover apparaît avec 1 fiche en janvier.
 
 > **Note de lecture :** les chiffres AFRINTEL décrivent les incidents documentés et la visibilité des menaces observées. Ils ne constituent pas une mesure exhaustive de toutes les cyberattaques réellement survenues en Afrique.
 
@@ -24,9 +30,9 @@ Par rapport à la baseline finale corrigée de décembre 2024, le volume mensuel
 
 | Indicateur | Décembre 2024 final corrigé | Janvier 2025 | Évolution |
 |---|---:|---:|---:|
-| Total incidents | 16 | 20 | **+4 (+25,0 %)** |
+| Total incidents | 18 | 20 | **+2 (+11,1 %)** |
 | Ransomware | 11 | 16 | **+5 (+45,5 %)** |
-| Data Leak | 3 | 3 | **Stable** |
+| Data Leak | 5 | 3 | **-2 (-40,0 %)** |
 | Access Sale | 1 | 0 | **-1 (-100,0 %)** |
 | DDoS | 0 | 0 | **Stable** |
 | Defacement | 1 | 0 | **-1 (-100,0 %)** |
@@ -37,7 +43,7 @@ Par rapport à la baseline finale corrigée de décembre 2024, le volume mensuel
 
 > **Base de comparaison :** décembre 2024 utilise la baseline AFRINTEL finale après contrôle chronologique, reclassement et intégration des cas 2024 validés. Les neuf types d'incident sont donc directement comparables avec janvier 2025.
 
-## 2. Méthodologie
+## 2. Périmètre, méthode et limites
 
 - **Périmètre :** 54 pays africains ; période de référence : Janvier 2025.
 - **Source de vérité :** couple validé `victims_FR.md` / `victims.md`.
@@ -49,6 +55,17 @@ Par rapport à la baseline finale corrigée de décembre 2024, le volume mensuel
 - **Preuve :** type d'incident, statut, confiance, impact et provenance restent des dimensions distinctes.
 - **Secteurs :** normalisation calculée une seule fois à partir du corpus structuré, puis utilisée à l'identique en FR et EN.
 - **Limite :** les fréquences reflètent la visibilité AFRINTEL et non l'ensemble des compromissions réelles sur le continent.
+
+### Protocole AFRINTEL de validation
+
+| Nature du dossier | Examen | Portée du constat |
+|---|---|---|
+| Ransomware / extorsion | Publication, chronologie, fichiers ou aperçus accessibles et contexte de la victime | Publication et éléments disponibles ; chiffrement, accès initial et volume total restent distincts. |
+| Fuite de données | Structure, champs, dates, volumes observés et cohérence des échantillons | Données effectivement examinées ; pas de validation automatique de la totalité annoncée. |
+| Revendication sans échantillon | Source, date, organisation citée et recoupements publics disponibles | Existence de la revendication uniquement. |
+| Incident reconnu | Déclaration de la victime ou d'une autorité, dans sa portée exacte | Faits confirmés par la source, sans étendre la confirmation aux assertions de l'acteur. |
+
+Le couple `victims_FR.md` / `victims.md` est la source de vérité bilingue. Les 20 fiches de chaque langue ont été contrôlées dans le même ordre ; les totaux du présent rapport sont dérivés de la version française puis vérifiés contre la version anglaise.
 
 ## 3. Vue d'ensemble et types d'incident
 
@@ -68,7 +85,7 @@ Par rapport à la baseline finale corrigée de décembre 2024, le volume mensuel
 | Access Sale | 0 | 0,0 % |
 | DDoS | 0 | 0,0 % |
 | Defacement | 0 | 0,0 % |
-| Account Takeover | 1 | 5,3 % |
+| Account Takeover | 1 | 5,0 % |
 | System Intrusion | 0 | 0,0 % |
 | Malware | 0 | 0,0 % |
 | Operational Fraud | 0 | 0,0 % |
@@ -82,7 +99,9 @@ pie showData
     "Account Takeover" : 1
 ```
 
-## 4. Répartition géographique
+![Typologie des incidents, janvier 2025](./assets/typologie_janvier_2025.svg)
+
+## 4. Répartition géographique et régionale
 
 | Pays | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -96,37 +115,39 @@ pie showData
 | Zambie | **1** | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | **Total** | **20** | **16** | **3** | **0** | **0** | **0** | **1** | **0** | **0** |
 
-> `Operational Fraud = 0` ce mois-ci ; la colonne est omise pour préserver la lisibilité.
+> `Malware` et `Operational Fraud` sont nuls ce mois-ci ; ils ne sont pas affichés dans la matrice géographique pour préserver la lisibilité.
 
-## 5. Répartition régionale
+![Pays représentés, janvier 2025](./assets/pays_janvier_2025.svg)
 
 | Région | Fiches | Part |
 |---|---:|---:|
-| Afrique du Nord | 8 | 42,1 % |
-| Afrique de l'Est | 5 | 26,3 % |
-| Afrique australe | 3 | 15,8 % |
+| Afrique du Nord | 8 | 40,0 % |
+| Afrique de l'Est | 5 | 25,0 % |
+| Afrique australe | 3 | 15,0 % |
 | Afrique de l'Ouest | 4 | 20,0 % |
 | **Total** | **20** | **100 %** |
 
-La région la plus représentée est **Afrique du Nord avec 8 fiches (42,1 %)**.
+La région la plus représentée est **Afrique du Nord avec 8 fiches (40,0 %)**.
 
-## 6. Impact sectoriel
+## 5. Exposition sectorielle et risques métiers
 
-| Secteur | Fiches | Part | Activité |
+| Secteur | Fiches | Part | Risques métiers principaux |
 |---|---:|---:|---|
-| Éducation / Université | 6 | 31,6 % | ██████ |
-| Gouvernement / Administration | 4 | 21,1 % | ████ |
-| Santé / Médical | 2 | 10,5 % | ██ |
-| Médias / Divertissement | 2 | 10,5 % | ██ |
-| Commerce / E-commerce | 1 | 5,3 % | █ |
-| Technologie / IT | 1 | 5,3 % | █ |
-| Transport / Logistique | 1 | 5,3 % | █ |
-| Hôtellerie / Tourisme | 1 | 5,3 % | █ |
-| Services professionnels / Business | 1 | 5,3 % | █ |
-| Organisation religieuse / Association | 1 | 5,0 % | █ |
+| Éducation / Université | 6 | 30,0 % | données d'élèves, interruption des services |
+| Gouvernement / Administration | 4 | 20,0 % | identité, services publics, confiance |
+| Santé / Médical | 2 | 10,0 % | continuité des soins, confidentialité |
+| Médias / Divertissement | 2 | 10,0 % | comptes, contenus et réputation |
+| Commerce / E-commerce | 1 | 5,0 % | données clients, transactions, fraude |
+| Technologie / IT | 1 | 5,0 % | accès techniques, propagation |
+| Transport / Logistique | 1 | 5,0 % | continuité opérationnelle, chaîne fournisseurs |
+| Hôtellerie / Tourisme | 1 | 5,0 % | réservations, données clients |
+| Services professionnels / Business | 1 | 5,0 % | documents contractuels, usurpation |
+| Organisation religieuse / Association | 1 | 5,0 % | comptes et données adhérents |
 | **Total** | **20** | **100 %** | |
 
-## 7. Acteurs / groupes
+![Exposition sectorielle, janvier 2025](./assets/secteurs_janvier_2025.svg)
+
+## 6. Acteurs, groupes et maturité des preuves
 
 `Unknown` correspond à une absence d'attribution, pas à un acteur.
 
@@ -142,18 +163,33 @@ La région la plus représentée est **Afrique du Nord avec 8 fiches (42,1 %)**.
 | SevenZeroDay404 | 1 | █ |
 | Counter | 1 | █ |
 
-## 8. Maturité des preuves
+![Acteurs et groupes, janvier 2025](./assets/acteurs_janvier_2025.svg)
+
+### 6.1 Maturité des preuves
 
 | Maturité de preuve | Fiches | Part |
 |---|---:|---:|
-| Claim - Unverified | 8 | 42,1 % |
+| Claim - Unverified | 8 | 40,0 % |
 | Claim - Data Sample Published | 10 | 50,0 % |
-| Confirmation victime / gouvernement / autorité | 2 | 10,5 % |
+| Confirmation victime / gouvernement / autorité | 2 | 10,0 % |
 | **Total** | **20** | **100 %** |
 
 Les statuts de preuve décrivent le niveau de validation disponible ; ils ne changent pas le type technique de l'incident.
 
-## 9. Chronologie
+![Maturité des preuves, janvier 2025](./assets/statuts_janvier_2025.svg)
+
+### 6.2 Appréciation des zones de risque
+
+| Zone | Priorité de veille RSSI | Justification tirée du corpus |
+|---|---|---|
+| Kenya, Égypte, Nigeria | Élevée | 4 fiches chacun, soit 60,0 % des observations. |
+| Afrique du Nord | Renforcée | 8 fiches et forte présence de revendications ransomware. |
+| Éducation et administration | Renforcée | 10 fiches cumulées, avec données et services sensibles. |
+| Autres pays et secteurs | Ciblée | Suivi selon la sensibilité de la victime et la qualité des éléments. |
+
+Ces priorités concernent le corpus documenté, et non un classement officiel du risque cyber des pays.
+
+## 7. Chronologie des observations
 
 ```mermaid
 timeline
@@ -180,21 +216,30 @@ timeline
     31 Janvier 2025 : Kenya Broadcasting Corporation (KBC)
 ```
 
-## 10. Analyse CTI mensuelle
+## 8. Tendances et principales lacunes de renseignement
 
-### Ransomware
+### Tendances CTI
 
-**16 fiches** sont classées Ransomware. Principaux pays : Égypte (4), Nigeria (3), Kenya (2). Une publication sur un leak site ne prouve pas, à elle seule, le chiffrement ou l'exfiltration complète.
+**16 fiches** sont classées Ransomware. Principaux pays : Égypte (4), Nigeria (3), Kenya (2). Une publication sur un site d'extorsion ne prouve pas, à elle seule, le chiffrement ou l'exfiltration complète.
 
-### Data Leak
+### Exposition des données
 
 **3 fiches** sont classées Data Leak. Principaux pays : Afrique du Sud (1), Kenya (1), Nigeria (1). AFRINTEL distingue les données effectivement observées des volumes globaux revendiqués.
 
-### Account Takeover
+### Prise de contrôle de compte
 
-**1 Account Takeover** sont documentés. Répartition : Kenya (1). Cette catégorie conserve séparément les compromissions de comptes institutionnels.
+**1 fiche Account Takeover** est documentée, au Kenya. Cette catégorie conserve séparément les compromissions de comptes institutionnels.
 
-## 11. Incidents notables
+### Lacunes prioritaires
+
+| Lacune | Effet | Vérification attendue |
+|---|---|---|
+| Vecteur d'accès initial | Limite l'attribution et le suivi technique | Journaux IAM, VPN, EDR, WAF et chronologies DFIR |
+| Volume réel exfiltré | Risque de surestimation | Inventaire, déduplication et échantillonnage fiable |
+| Remédiation et cause racine | Évaluation de l'exposition résiduelle limitée | Déclarations techniques et rapports post-incident |
+| Attribution des labels | Pseudonyme parfois confondu avec groupe d'intrusion | Recoupements indépendants et infrastructure documentée |
+
+## 9. Incidents à retenir pour le comité de sécurité
 
 | Pays | Organisation | Type | Statut | Impact | Confiance |
 |---|---|---|---|---|---|
@@ -204,25 +249,39 @@ timeline
 | Kenya | Kenya Broadcasting Corporation (KBC) | Account Takeover | Victim Confirmed | Level 3 | High |
 | Kenya | Molars Dental Practice | Ransomware | Claim - Data Sample Published | Level 3 | High |
 
-> Ce tableau met en avant jusqu'à cinq fiches selon le niveau d'impact, la confirmation et la confiance structurés. Il ne constitue pas un classement absolu de gravité.
+> Ce tableau met en avant cinq fiches selon l'impact, la confirmation et la confiance structurés. Il ne constitue pas un classement absolu de gravité.
 
-## 12. Principaux enseignements et lacunes de renseignement
+## 10. MITRE ATT&CK : correspondances défensives
 
-- **Concentration géographique :** Kenya représente 4 fiches (20,0 %), devant Égypte (4) et Nigeria (4).
-- **Structure de menace :** Ransomware est le premier type avec 16 fiches, suivi de Data Leak (3).
-- **Secteurs :** Éducation / Université (6) et Gouvernement / Administration (4) concentrent la plus forte visibilité.
-- **Acteurs :** les labels les plus fréquents sont funksec (6), GDLockerSec (3) et ransomhub (2).
-- **Preuve :** 17 fiches reposent sur des claims non vérifiés ou accompagnés d'un échantillon ; ces statuts ne valent pas confirmation technique complète.
+Les correspondances ci-dessous orientent la chasse défensive ; elles ne constituent pas une attribution technique de tous les cas.
 
-### Intelligence gaps
+| Technique | Niveau de preuve | Risque associé | Télémétrie |
+|---|---|---|---|
+| [T1486 - Data Encrypted for Impact](https://attack.mitre.org/techniques/T1486/) | Hypothèse liée aux revendications ransomware | Chiffrement et indisponibilité | EDR, journaux fichiers, sauvegardes |
+| [T1078 - Valid Accounts](https://attack.mitre.org/techniques/T1078/) | Hypothèse défensive pour l'ATO | Abus de comptes légitimes | IAM, MFA, VPN, AD |
+| [T1005 - Data from Local System](https://attack.mitre.org/techniques/T1005/) | Hypothèse pour les fuites | Collecte de documents et bases | EDR, audit fichiers, DLP |
+| [T1567 - Exfiltration Over Web Service](https://attack.mitre.org/techniques/T1567/) | Hypothèse ; canal non établi | Transferts sortants anormaux | Proxy, DNS, cloud, réseau |
 
-- vecteur d'accès initial souvent non public ;
-- date technique exacte de compromission parfois inconnue ;
-- volumes revendiqués rarement vérifiables intégralement ;
-- attribution technique souvent limitée au pseudonyme ou label de publication ;
-- informations publiques sur remédiation, cause racine et conclusions DFIR encore limitées.
+## 11. Plan opérationnel SOC : détecter, qualifier, contenir
 
-Ces lacunes doivent guider la collecte sans être remplacées par des hypothèses.
+| Cas d'usage | Signaux à corréler | Action défensive |
+|---|---|---|
+| Chiffrement suspect | Renommages massifs, suppressions de sauvegardes, note de rançon | Isoler les hôtes, protéger les sauvegardes, préserver les preuves |
+| Accès privilégié anormal | Connexions hors horaires, changements de rôles, MFA inhabituel | Révoquer les sessions, réinitialiser les comptes, renforcer le contrôle |
+| Export massif | Lectures volumineuses, archives, hausse d'egress | Restreindre l'egress et déclencher le plan de réponse aux données |
+| Compte institutionnel compromis | Nouveaux appareils, géolocalisation ou activité inhabituelle | Vérification hors bande, rotation des secrets et analyse des journaux |
+| Intégrité d'un service public | Modification de contenu ou accès CMS non planifié | Restaurer depuis une source fiable et auditer les accès d'administration |
+
+**Workflow recommandé :** alerte horodatée → consolidation par identité/hôte/service → qualification `observé / hypothèse / inconnu` → confinement proportionné → notification RSSI et métiers → préservation des preuves.
+
+## 12. Feuille de route RSSI priorisée
+
+| Horizon | Priorité | Action attendue | Preuve de mise en œuvre |
+|---|---|---|---|
+| 0 à 72 h | P0 | Vérifier comptes privilégiés, MFA, VPN, sauvegardes et services publics | Revue des accès et test de restauration |
+| 7 à 30 jours | P1 | Déployer les détections ransomware, export massif, ATO et intégrité web | Règles actives et tests de détection |
+| 30 à 90 jours | P1 | Exercer une crise combinant indisponibilité et fuite de données | Compte rendu d'exercice et actions suivies |
+| 30 à 90 jours | P2 | Industrialiser la veille et la synchronisation FR/EN | Contrôles de parité et traçabilité des sources |
 
 ## 13. Recommandations
 
@@ -248,9 +307,9 @@ Ces lacunes doivent guider la collecte sans être remplacées par des hypothèse
 - maintenir la hiérarchie de preuve entre claim, corroboration et confirmation ;
 - valider la parité FR/EN avant toute génération de statistiques.
 
-## 14. Conclusion
+## 14. Conclusion et décisions attendues
 
-Le mois de **Janvier 2025** compte **19 cyberincidents documentés** dans **8 pays africains**. La lecture mensuelle montre que la valeur CTI ne réside pas seulement dans le volume, mais dans la distinction entre **type d'incident, chronologie, niveau de preuve, géographie, secteur et acteur**.
+Le mois de **Janvier 2025** compte **20 cyberincidents documentés** dans **8 pays africains**. La lecture mensuelle montre que la valeur CTI ne réside pas seulement dans le volume, mais dans la distinction entre **type d'incident, chronologie, niveau de preuve, géographie, secteur et acteur**.
 
 Le rapport conserve ainsi une photographie structurée de la menace observable tout en maintenant les revendications, corroborations, confirmations et inconnues à leur niveau de preuve réel.
 

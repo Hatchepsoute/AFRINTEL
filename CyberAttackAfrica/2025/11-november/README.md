@@ -39,6 +39,8 @@ Compared with October, monthly volume **decreases by 4 records**. The most visib
 
 
 ## 2. Methodology
+![November 2025 comparison with previous month](assets/comparaison_EN.png)
+
 
 - **Scope:** 54 African countries; reference period: November 2025.
 - **Source of truth:** validated `victims_FR.md` / `victims.md` pair.
@@ -64,11 +66,11 @@ Compared with October, monthly volume **decreases by 4 records**. The most visib
 
 | Incident type | Records | Share |
 |---|---:|---:|
-| Ransomware | 10 | 66.7% |
+| Ransomware | 10 | 62.5% |
 | Data Leak | 5 | 31.3% |
 | Access Sale | 0 | 0.0% |
 | DDoS | 0 | 0.0% |
-| Defacement | 1 | 6.7% |
+| Defacement | 1 | 6.2% |
 | Account Takeover | 0 | 0.0% |
 | System Intrusion | 0 | 0.0% |
 | Malware | 0 | 0.0% |
@@ -84,6 +86,9 @@ pie showData
 ```
 
 ## 4. Geographic distribution
+![Incident types](assets/types_EN.png)
+![Incident distribution](assets/types_pie_EN.png)
+
 
 | Country | Total | Ransomware | Data Leak | Access Sale | DDoS | Defacement | Account Takeover | System Intrusion | Malware |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
@@ -96,11 +101,13 @@ pie showData
 | Kenya | **1** | 0 | 0 | 0 | 0 | 1 | 0 | 0 | 0 |
 | Cameroon | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
 | Comoros | **1** | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Total geographic occurrences** | **17** | **10** | **5** | **0** | **0** | **1** | **0** | **0** | **0** |
+| **Total geographic occurrences** | **17** | **10** | **6** | **0** | **0** | **1** | **0** | **0** | **0** |
 
 > `Operational Fraud = 0` this month; the column is omitted for readability.
 
 ## 5. Regional distribution
+![Documented incidents by country](assets/pays_EN.png)
+
 
 | Region | Records | Share |
 |---|---:|---:|
@@ -112,24 +119,30 @@ pie showData
 | Indian Ocean | 1 | 5.9% |
 | **Total geographic occurrences** | **17** | **100%** |
 
-The leading region is **North Africa with 8 records (53.3%)**.
+The leading region is **North Africa with 8 geographic occurrences (47.1%)**.
 
 ## 6. Sector impact
+![Regional distribution](assets/regions_EN.png)
+![Regional shares](assets/regions_pie_EN.png)
+
 
 | Sector | Records | Share | Activity |
 |---|---:|---:|---|
 | Government / Administration | 4 | 25.0% | ████ |
-| Transport / Logistics | 2 | 13.3% | ██ |
-| Technology / IT | 2 | 13.3% | ██ |
-| Finance / Banking | 2 | 13.3% | ██ |
-| Construction / Real Estate | 2 | 13.3% | ██ |
-| Professional / Business Services | 1 | 6.7% | █ |
-| Retail / E-commerce | 1 | 6.7% | █ |
-| Manufacturing / Industry | 1 | 6.7% | █ |
-| Healthcare / Medical | 1 | 6.7% | █ |
+| Transport / Logistics | 2 | 12.5% | ██ |
+| Technology / IT | 2 | 12.5% | ██ |
+| Finance / Banking | 2 | 12.5% | ██ |
+| Construction / Real Estate | 2 | 12.5% | ██ |
+| Professional / Business Services | 1 | 6.3% | █ |
+| Retail / E-commerce | 1 | 6.3% | █ |
+| Manufacturing / Industry | 1 | 6.3% | █ |
+| Healthcare / Medical | 1 | 6.3% | █ |
 | **Total** | **16** | **100%** | |
 
 ## 7. Actors / groups
+![Sector exposure](assets/secteurs_EN.png)
+![Sector distribution](assets/secteurs_pie_EN.png)
+
 
 `Unknown` denotes missing attribution, not a threat actor.
 
@@ -149,18 +162,22 @@ The leading region is **North Africa with 8 records (53.3%)**.
 | Ahlul Sahara | 1 | █ |
 
 ## 8. Evidence maturity
+![Actors and publication labels](assets/acteurs_EN.png)
+
 
 | Evidence maturity | Records | Share |
 |---|---:|---:|
-| Claim - Unverified | 9 | 60.0% |
+| Claim - Unverified | 9 | 56.3% |
 | Claim - Data Sample Published | 5 | 31.3% |
-| Data Fully Published | 1 | 6.7% |
-| Victim/Government/Authority Confirmed | 1 | 6.7% |
+| Data Fully Published | 1 | 6.3% |
+| Victim/Government/Authority Confirmed | 1 | 6.3% |
 | **Total** | **16** | **100%** |
 
 Evidence statuses describe the available validation level; they do not change the technical incident type.
 
 ## 9. Timeline
+![Evidence maturity](assets/preuves_EN.png)
+
 
 ```mermaid
 timeline
