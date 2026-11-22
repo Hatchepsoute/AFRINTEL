@@ -2,13 +2,13 @@
 
 ## Périmètre comparable
 
-Cette comparaison utilise les fichiers victimes bilingues validés : **33 fiches en août** et **33 fiches en septembre**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
+Cette comparaison utilise les fichiers victimes bilingues validés : **28 fiches en août** et **33 fiches en septembre**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
 
 | Indicateur | Août | Septembre | Évolution |
 |---|---:|---:|---:|
-| Total incidents | **33** | **33** | **0 (0.0%)** |
+| Total incidents | **28** | **33** | **+5 (+17.9%)** |
 | Ransomware | 18 | 20 | +2 |
-| Fuite de données | 14 | 11 | -3 |
+| Fuite de données | 9 | 11 | +2 |
 | Vente d'accès | 1 | 0 | -1 |
 | Intrusion système | 0 | 2 | +2 |
 
@@ -17,7 +17,7 @@ xychart-beta
     title "Fiches mensuelles : août vs septembre 2026"
     x-axis [Août, Septembre]
     y-axis "Records" 0 --> 38
-    bar [33, 33]
+    bar [28, 33]
 ```
 
 ## Countries represented
@@ -44,4 +44,4 @@ xychart-beta
 
 ## CTI reading
 
-Le corpus reste à 33 fiches en août et en septembre. Il s agit d une évolution de la composition et des types documentés par AFRINTEL ; cela ne constitue pas, à lui seul, une preuve d une évolution du nombre réel de compromissions.
+Le corpus reste à 28 fiches en août et en septembre. Il s agit d une évolution de la composition et des types documentés par AFRINTEL ; cela ne constitue pas, à lui seul, une preuve d une évolution du nombre réel de compromissions.

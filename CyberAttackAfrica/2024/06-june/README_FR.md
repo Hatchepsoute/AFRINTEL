@@ -135,7 +135,7 @@ timeline
     4 Juin 2024 : Botselo
 - **Acteur / Groupe -** arcusmedia
 - **Secteur -** Agriculture / Agribusiness
-- **Site web -** [botselo.com](https -//www.botselo.com)
+- **Site web -** [botselo.com](https://www.botselo.com)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 2
@@ -158,7 +158,7 @@ timeline
     6 Juin 2024 : Burotec.biz
 - **Acteur / Groupe -** eldorado
 - **Secteur -** Professional / Business Services
-- **Site web -** [burotec.biz](https -//www.burotec.biz)
+- **Site web -** [burotec.biz](https://www.burotec.biz)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 2
@@ -181,7 +181,7 @@ timeline
     23 Juin 2024 : Glyn Marais
 - **Acteur / Groupe -** cactus
 - **Secteur -** Legal / Justice
-- **Site web -** [glynmarais.co.za](https -//www.glynmarais.co.za)
+- **Site web -** [glynmarais.co.za](https://www.glynmarais.co.za)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 2

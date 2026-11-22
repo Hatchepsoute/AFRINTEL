@@ -2,14 +2,14 @@
 
 ## Périmètre comparable
 
-Cette comparaison utilise les fichiers victimes bilingues validés : **41 fiches en mars** et **72 fiches en avril**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
+Cette comparaison utilise les fichiers victimes bilingues validés : **45 fiches en mars** et **65 fiches en avril**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
 
 | Indicateur | Mars | Avril | Évolution |
 |---|---:|---:|---:|
-| Total incidents | **41** | **72** | **+31 (+75.6%)** |
+| Total incidents | **45** | **65** | **+20 (+44.4%)** |
 | Ransomware | 19 | 21 | +2 |
-| Fuite de données | 21 | 40 | +19 |
-| Vente d'accès | 0 | 1 | +1 |
+| Fuite de données | 24 | 32 | +8 |
+| Vente d'accès | 1 | 2 | +1 |
 | DDoS | 0 | 9 | +9 |
 | Fraude opérationnelle | 1 | 1 | 0 |
 
@@ -18,7 +18,7 @@ xychart-beta
     title "Fiches mensuelles : mars vs avril 2026"
     x-axis [Mars, Avril]
     y-axis "Records" 0 --> 77
-    bar [41, 72]
+    bar [45, 65]
 ```
 
 ## Countries represented
@@ -50,4 +50,4 @@ xychart-beta
 
 ## CTI reading
 
-Le corpus évolue de 41 à 72 fiches. Il s agit d une évolution de la visibilité et de la composition documentées par AFRINTEL ; elle ne constitue pas, à elle seule, une preuve d une évolution du nombre réel de compromissions.
+Le corpus évolue de 45 à 65 fiches. Il s agit d une évolution de la visibilité et de la composition documentées par AFRINTEL ; elle ne constitue pas, à elle seule, une preuve d une évolution du nombre réel de compromissions.

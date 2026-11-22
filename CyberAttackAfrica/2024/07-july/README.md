@@ -161,7 +161,7 @@ timeline
     01 Juillet 2024 : Maxcess-logistics
 - **Acteur / Groupe -** killsec
 - **Secteur -** Transport / Logistics
-- **Site web -** [maxcess-logistics.com](https -//www.maxcess-logistics.com)
+- **Site web -** [maxcess-logistics.com](https://www.maxcess-logistics.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -177,7 +177,7 @@ timeline
 - **Contexte source -** Publication de vente de données sur RaidForums
 - **Secteur -** Defense / Security
 - **Statut -** Claim - Data Sample Published
-- **Site web -** [dwc.edu.et](https -//dwc.edu.et/wc/) (organisation observée dans les échantillons) ; domaine cité par l'acteur  - nwc.ndu.edu
+- **Site web -** [dwc.edu.et](https://dwc.edu.et/wc/) (organisation observée dans les échantillons) ; domaine cité par l'acteur  - nwc.ndu.edu
 - **Niveau de confiance -** Medium
 - **Niveau d'impact -** Level 4
 - **Type d'incident -** Data Leak
@@ -187,14 +187,14 @@ timeline
   La publication de TheColorYellow annonce une victime présentée comme le « National War College of Ethiopia » et cite le domaine nwc.ndu.edu. Ce domaine correspond au National War College de la National Defense University des États-Unis. Toutefois, les cinq fichiers PNG fournis localement présentent l'emblème et l'en-tête en amharique du « F.D.R.E Defence War College » éthiopien, ainsi que des documents internes, un inventaire de 29 postes et un tableau de 17 entrées téléphoniques. Une erreur de domaine dans l'annonce, une confusion de nom ou une attribution technique incorrecte restent donc possibles. AFRINTEL retient comme organisation observée le F.D.R.E Defence War College et conserve nwc.ndu.edu comme domaine annoncé mais non vérifié.
 
 - **Description -**
-  Les éléments visibles correspondent au F.D.R.E Defence War College, établissement d’enseignement militaire éthiopien. Le lien officiel observé pour cette organisation est [dwc.edu.et](https -//dwc.edu.et/wc/). Le domaine nwc.ndu.edu reste uniquement le domaine cité dans l’annonce de l’acteur.
+  Les éléments visibles correspondent au F.D.R.E Defence War College, établissement d’enseignement militaire éthiopien. Le lien officiel observé pour cette organisation est [dwc.edu.et](https://dwc.edu.et/wc/). Le domaine nwc.ndu.edu reste uniquement le domaine cité dans l’annonce de l’acteur.
 
 - **Analyse -**
   L'acteur TheColorYellow affirme détenir 747 Mo de courriels confidentiels prétendument volés directement sur le serveur Exchange de l'établissement, exportés sous forme de fichiers de boîtes aux lettres PST, et propose ces données pour 500 $ avec recours à un escrow. Le répertoire local fourni contient cinq PNG, mais aucun PST, EML, MSG ou export Exchange. Les images comprennent des documents institutionnels, un avis en chinois pour les étudiants internationaux, un inventaire visible de 29 postes et un tableau visible de 17 entrées téléphoniques. Ces éléments sont cohérents avec des documents internes du F.D.R.E Defence War College et renforcent l'attribution de l'échantillon, mais ne confirment ni l'accès au serveur Exchange, ni l'existence des 747 Mo, ni l'exhaustivité ou l'origine des données. L'OCR amharique et chinois n'a pas été utilisé pour transcrire les valeurs ; aucun nom, numéro, identifiant matériel ou numéro de téléphone n'est reproduit.
     5 Juillet 2024 : National health laboratory services (NHLS)
 - **Acteur / Groupe -** blacksuit
 - **Secteur -** Healthcare / Medical
-- **Site web -** [nhls.ac.za](https -//www.nhls.ac.za)
+- **Site web -** [nhls.ac.za](https://www.nhls.ac.za)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -211,19 +211,19 @@ timeline
 - **Précision chronologique -** Date du mercredi 10 juillet supportée par les sources de l'audit.
 - **Acteur / Groupe -** Unknown
 - **Secteur -** Professional / Business Services
-- **Site web -** [emploipartner.com](https -//www.emploipartner.com/)
+- **Site web -** [emploipartner.com](https://www.emploipartner.com/)
 - **Statut -** Victim Confirmed
 - **Type d'incident -** System Intrusion
 - **Niveau de confiance -** High
 - **Niveau d'impact -** Level 3
 - **Analyse -** EmploiPartner a indiqué avoir détecté et maîtrisé une intrusion non autorisée, lancé une enquête et renforcé sa plateforme. Les sources publiques utilisées dans l'audit ne suffisent pas à confirmer une exfiltration de données, un ransomware, un DDoS ou une vente d'accès. AFRINTEL retient `System Intrusion`.
-- **Sources publiques -** [Le Jeune Indépendant](https -//www.jeune-independant.net/wp-content/uploads/2024/07/EDITION-14-07-2024.pdf) | [KonBriefing](https -//konbriefing.com/en-topics/cyber-attacks-2024.html) | [EmploiPartner](https -//www.emploipartner.com/)
+- **Sources publiques -** [Le Jeune Indépendant](https://www.jeune-independant.net/wp-content/uploads/2024/07/EDITION-14-07-2024.pdf) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html) | [EmploiPartner](https://www.emploipartner.com/)
 
 ----------------------------
     13 Juillet 2024 : Kenya urban roads authority (KURA)
 - **Acteur / Groupe -** hunters
 - **Secteur -** Transport / Logistics
-- **Site web -** [kura.go.ke](https -//www.kura.go.ke)
+- **Site web -** [kura.go.ke](https://www.kura.go.ke)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -236,7 +236,7 @@ timeline
     17 Juillet 2024 : Zb financial holdings
 - **Acteur / Groupe -** madliberator
 - **Secteur -** Finance / Banking
-- **Site web -** [zb.co.zw](https -//www.zb.co.zw)
+- **Site web -** [zb.co.zw](https://www.zb.co.zw)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -249,7 +249,7 @@ timeline
     17 Juillet 2024 : Cities network
 - **Acteur / Groupe -** madliberator
 - **Secteur -** Professional / Business Services
-- **Site web -** [sacities.net](https -//www.sacities.net)
+- **Site web -** [sacities.net](https://www.sacities.net)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -262,7 +262,7 @@ timeline
     17 Juillet 2024 : Assih
 - **Acteur / Groupe -** lockbit3
 - **Secteur -** Professional / Business Services
-- **Site web -** [assih.com](https -//www.assih.com)
+- **Site web -** [assih.com](https://www.assih.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -275,7 +275,7 @@ timeline
     22 Juillet 2024 : Sibanye-stillwater
 - **Acteur / Groupe -** ransomhouse
 - **Secteur -** Mining / Extractive Industries
-- **Site web -** [sibanyestillwater.com](https -//www.sibanyestillwater.com)
+- **Site web -** [sibanyestillwater.com](https://www.sibanyestillwater.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -294,7 +294,7 @@ timeline
 - **Acteur / Groupe -** vjvjvj
 - **Affiliation revendiquée -** The Night Hunters - selon le post observé
 - **Secteur -** Aviation
-- **Site web -** [acao.org.ma](https -//acao.org.ma)
+- **Site web -** [acao.org.ma](https://acao.org.ma)
 - **Statut -** Corroborated
 - **Type d'incident -** Data Leak
 - **Niveau de confiance -** High

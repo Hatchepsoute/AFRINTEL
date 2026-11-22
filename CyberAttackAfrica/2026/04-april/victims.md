@@ -1,7 +1,7 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Scope](https://img.shields.io/badge/Scope-Africa-orange)
 ![Period](https://img.shields.io/badge/Period-April%202026-lightgrey)
-![Victims](https://img.shields.io/badge/Victims-64%20canonical%20%2B%201%20tracked-critical)
+![Victims](https://img.shields.io/badge/Victims-65-critical)
 ![Ransomware](https://img.shields.io/badge/Ransomware-21-red)
 ![Data%20Leaks](https://img.shields.io/badge/Data%20Leaks-32-orange)
 ![Access%20Sales](https://img.shields.io/badge/Access%20Sales-2-yellow)
@@ -13,8 +13,8 @@
 
 ## Summary
 - **Documented records:** 65
-- **Canonical victim total:** 64
-- **Note:** Bank of Kigali is documented as a confirmed customer-facing fraud, but remains excluded from the canonical compromise and intrusion denominator.
+- **Canonical victim total:** 65
+- **Note:** Bank of Kigali is included as a confirmed customer-facing fraud (`Operational Fraud`); it is not classified as an internal banking intrusion or data leak.
 - **Ransomware:** 21
 - **Data leaks:** 32
 - **Access sales:** 2
@@ -80,7 +80,7 @@
 
 - **Analysis scope and limitations:** Analysis based on public communications reported by Taarifa and The New Times; no phishing domain, phone number, log or customer data was supplied or examined. The event must not be presented as a data leak or confirmed banking-infrastructure compromise.
 - **SOC/CTI recommendations:** Collect and block domains, URLs and phone numbers used; investigate unusual authentications and customer-account takeovers; correlate suspicious logins with fraudulent transactions; reset access for potentially compromised customers; strengthen anti-fraud communications through official channels; monitor campaigns impersonating Bank of Kigali.
-- **Counting decision:** Retained in the April reference set as a confirmed customer-facing fraud, but kept outside the canonical denominator for compromises and intrusions. It is not a data leak or confirmed banking intrusion and is not a new October incident.
+- **Counting decision:** Retained in the April reference set as a confirmed customer-facing fraud and counted once as `Operational Fraud`. It is not a data leak or confirmed banking intrusion and is not a new October incident.
 - **Source / observed element:** [Taarifa Rwanda, April 6, 2026](https://taarifa.rw/2026/04/06/rib-arrests-five-suspects-in-bk-mobile-banking-scam-as-losses-remain-limited/); [The New Times, April 2, 2026](https://www.newtimes.co.rw/article/34584/news/finance/banks-raise-alarm-over-surge-in-phishing-attempts/amp).
 
 #### 🇪🇹 Ethiopia - National Oil Ethiopia PLC (NOC) [Data Leak]

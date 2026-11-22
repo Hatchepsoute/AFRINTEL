@@ -8,15 +8,11 @@ This visual dashboard presents the complete **33-record September corpus**. The 
 
 The figures are stored with the CTI report and describe monitoring observations:
 
-- [Corpus composition](../../CyberAttackAfrica/2026/09-september/AFRINTEL_figures/01_corpus.png)
-- [Publications by country](../../CyberAttackAfrica/2026/09-september/AFRINTEL_figures/02_pays.png)
-- [Type and evidence](../../CyberAttackAfrica/2026/09-september/AFRINTEL_figures/03_typologie_preuve.png)
-- [Publication chronology](../../CyberAttackAfrica/2026/09-september/AFRINTEL_figures/04_chronologie.png)
-- [Sectors](../../CyberAttackAfrica/2026/09-september/AFRINTEL_figures/05_secteurs.png)
-- [Actors](../../CyberAttackAfrica/2026/09-september/AFRINTEL_figures/06_acteurs.png)
-- [Country and type](../../CyberAttackAfrica/2026/09-september/AFRINTEL_figures/07_pays_typo.png)
-- [Documentary depth](../../CyberAttackAfrica/2026/09-september/AFRINTEL_figures/08_profondeur.png)
-- [Incident-type comparison](../../CyberAttackAfrica/2026/09-september/AFRINTEL_figures/09_types_comparison.png)
+- [Countries](../../CyberAttackAfrica/2026/09-september/assets/countries_september_2026_EN.png)
+- [Sectors](../../CyberAttackAfrica/2026/09-september/assets/sectors_september_2026_EN.png)
+- [Actors](../../CyberAttackAfrica/2026/09-september/assets/actors_september_2026_EN.png)
+- [Types](../../CyberAttackAfrica/2026/09-september/assets/types_september_2026_EN.png)
+- [August-September comparison](../../CyberAttackAfrica/2026/09-september/assets/comparison_aug_sep_2026_EN.png)
 
 ## Quick read
 

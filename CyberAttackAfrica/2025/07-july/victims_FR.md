@@ -292,7 +292,7 @@
   Une publication attribuée au compte BabayoSysteam, datée du 30 juillet 2025, met à disposition une base de données PesaBay présentée comme complète et contenant 1 850 enregistrements. Les champs publiés comprennent le prénom, le nom, l'adresse e-mail, le numéro de téléphone et le statut du compte. La présence de nombreux numéros utilisant l'indicatif burundais `+257`, combinée à l'identité visuelle de PesaBay et à la structure cohérente des enregistrements, étaye avec une confiance moyenne l'attribution du jeu de données à la plateforme. AFRINTEL classe donc le cas `Data Fully Published`. Cette qualification décrit la publication du jeu annoncé comme complet ; elle ne confirme pas indépendamment la méthode d'acquisition, l'intrusion initiale, l'unicité des lignes ni la couverture de l'ensemble de la base de production de PesaBay. Les données de contact publiées présentent un risque de phishing ciblé, de fraude, de spam et d'usurpation d'identité numérique, correspondant à un impact de niveau 2. Aucun nom, e-mail, numéro de téléphone ni autre donnée personnelle brute n'est reproduit.
 
 ---
-[Rapport de Juillet 2025](./report/README_FR.md)
+[Rapport de Juillet 2025](./README_FR.md)
 ---
 
 ### 31 Juillet 2025

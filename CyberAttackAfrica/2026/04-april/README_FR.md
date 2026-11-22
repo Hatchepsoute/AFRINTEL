@@ -1,4 +1,4 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-2176D2)](https://github.com/Hatchepsoute/AFRINTEL) ![Période](https://img.shields.io/badge/Période-Avril%202026-334155) ![Diffusion](https://img.shields.io/badge/TLP-CLEAR-16A34A) ![Périmètre](https://img.shields.io/badge/Périmètre-54%20pays%20africains-CA8A04) ![Fiches](https://img.shields.io/badge/Corpus-64%20canoniques%20%2B%201%20suivi-7C3AED)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-2176D2)](https://github.com/Hatchepsoute/AFRINTEL) ![Période](https://img.shields.io/badge/Période-Avril%202026-334155) ![Diffusion](https://img.shields.io/badge/TLP-CLEAR-16A34A) ![Périmètre](https://img.shields.io/badge/Périmètre-54%20pays%20africains-CA8A04) ![Fiches](https://img.shields.io/badge/Corpus-65%20fiches-7C3AED)
 
 # AFRINTEL | Rapport mensuel de Cyber Threat Intelligence
 ## Cybermenaces visant les organisations africaines - Avril 2026
@@ -14,9 +14,9 @@
 
 ## 1. Synthèse exécutive
 
-**Avril 2026 confirme la prépondérance des divulgations de données dans la veille AFRINTEL et montre une concentration élevée de publications visant les administrations, le secteur industriel et l'éducation.** Le contrôle des deux fichiers victimes donne **65 fiches documentaires**, dont **64 observations retenues pour le reporting canonique**. La différence correspond à la fraude client confirmée de **Bank of Kigali**, maintenue hors du dénominateur canonique des compromissions et intrusions.
+**Avril 2026 confirme la prépondérance des divulgations de données dans la veille AFRINTEL et montre une concentration élevée de publications visant les administrations, le secteur industriel et l'éducation.** Le contrôle des deux fichiers victimes donne **65 fiches documentaires**. Toutes les fiches sont incluses dans le total mensuel, y compris la fraude client confirmée de **Bank of Kigali**, classée `Operational Fraud`.
 
-Sur les **64 observations**, on compte **32 fuites de données (50,0 %)**, **21 dossiers classés ransomware (32,8 %)**, **9 revendications DDoS (14,1 %)** et **2 offres de vente d'accès (3,1 %)**. Le corpus comprend **15 pays directement désignés** et **une publication multi-pays** (Angola, Afrique du Sud, Nigeria), comptée une seule fois. **L'Égypte (19)**, **le Maroc (15)** et **l'Afrique du Sud (6)** concentrent **40 observations (62,5 %)**, ce qui mesure la visibilité documentaire de la collecte, **pas la probabilité nationale de cyberattaque**.
+Sur les **65 observations**, on compte **32 fuites de données (50,0 %)**, **21 dossiers classés ransomware (32,8 %)**, **9 revendications DDoS (14,1 %)** et **2 offres de vente d'accès (3,1 %)**. Le corpus comprend **15 pays directement désignés** et **une publication multi-pays** (Angola, Afrique du Sud, Nigeria), comptée une seule fois. **L'Égypte (19)**, **le Maroc (15)** et **l'Afrique du Sud (6)** concentrent **40 observations (62,5 %)**, ce qui mesure la visibilité documentaire de la collecte, **pas la probabilité nationale de cyberattaque**.
 
 La principale rupture par rapport à mars tient aux **neuf publications DDoS revendiquées par le compte Keymous+**, concentrées les 11-12 avril et visant notamment des services publics égyptiens. Les captures ou tests de disponibilité publiés par le compte n'attestent ni la méthode, ni la durée, ni le succès d'une attaque DDoS. Cette série peut néanmoins alimenter la surveillance de disponibilité et les dispositifs anti-DDoS.
 
@@ -26,11 +26,11 @@ Quatre dossiers justifient une attention immédiate des responsables de la sécu
 
 ### 1.1 Comparaison avec le mois précédent
 
-> Comparaison fondée sur les **45 fiches documentées en mars** et les **64 observations canoniques d'avril**. Une variation des publications recensées ne prouve pas, à elle seule, une variation équivalente des intrusions effectives. Les dates de publication, d'incident et de découverte ne sont pas toujours identiques.
+> Comparaison fondée sur les **45 fiches documentées en mars** et les **65 fiches d'avril**. Une variation des publications recensées ne prouve pas, à elle seule, une variation équivalente des intrusions effectives. Les dates de publication, d'incident et de découverte ne sont pas toujours identiques.
 
 | Indicateur | Mars 2026 | Avril 2026 | Évolution observée |
 |---|---:|---:|---:|
-| **Total incidents / observations** | **45** | **64** | **+19 (+42,2 %)** |
+| **Total incidents / observations** | **45** | **65** | **+20 (+44,4 %)** |
 | Ransomware | 19 | 21 | +2 (+10,5 %) |
 | Data Leak | 24 | 32 | +8 (+33,3 %) |
 | Access Sale | 1 | 2 | +1 (+100,0 %) |
@@ -39,7 +39,7 @@ Quatre dossiers justifient une attention immédiate des responsables de la sécu
 | Account Takeover | 0 | 0 | 0 (stable) |
 | System Intrusion | 0 | 0 | 0 (stable) |
 | Malware | 0 | 0 | 0 (stable) |
-| Operational Fraud | 1 | 0 | −1 (−100,0 %) |
+| Operational Fraud | 1 | 1 | 0 (stable) |
 
 ![Comparaison Mars-Avril](assets/comparaison_FR.png)
 
@@ -58,7 +58,7 @@ AFRINTEL surveille les menaces affectant les organisations ou les données assoc
 | **Incident confirmé par la victime** | Le périmètre reconnu publiquement est établi ; les affirmations non reprises par la victime demeurent séparées. |
 | **Analyse contextuelle** | Les scénarios d'attaque et hypothèses MITRE sont des **axes de détection** lorsqu'aucune télémétrie victime ne démontre la technique. |
 
-**Décision de comptage.** Les fichiers contiennent **65 en-têtes de fiches dans chaque langue**. La ventilation réductible est **32 + 21 + 9 + 2 + 1 = 65** ; le dernier terme correspond à la fraude client **Bank of Kigali** (`Victim Confirmed`, `Operational Fraud`), **hors dénominateur canonique des compromissions et intrusions**. Les graphiques canoniques du présent rapport utilisent **64**. La publication multi-pays **Angola / Afrique du Sud / Nigeria** est comptée une fois, sans multiplier les pays ou les victimes.
+**Décision de comptage.** Les fichiers contiennent **65 en-têtes de fiches dans chaque langue**. La ventilation réductible est **32 + 21 + 9 + 2 + 1 = 65** ; le dernier terme correspond à la fraude client **Bank of Kigali** (`Victim Confirmed`, `Operational Fraud`). Le total, les tableaux et les graphiques utilisent **65**. La publication multi-pays **Angola / Afrique du Sud / Nigeria** est comptée une fois, sans multiplier les victimes.
 
 **Contrôle temporel.** La publication observée, la fuite initiale, la date réelle de compromission et l'entrée dans AFRINTEL peuvent diverger. Ainsi, la fiche **Pharmacie.ma**, classée dans l'inventaire d'avril, rapporte une première annonce au **27 janvier 2026** et une compromission revendiquée en **septembre 2025** ; le dump GET/General Electric Trading renvoie à **septembre 2024** ; la fiche **National Oil Ethiopia** mentionne une fuite au **24 mars 2026**. Ces événements ne doivent pas être décrits comme autant de nouvelles intrusions découvertes techniquement en avril.
 
@@ -68,27 +68,29 @@ AFRINTEL surveille les menaces affectant les organisations ou les données assoc
 
 | Type principal | Observations | Part |
 |---|---:|---:|
-| **Fuite de données** | **32** | **50,0 %** |
-| **Ransomware / publication d'extorsion** | **21** | **32,8 %** |
-| **DDoS revendiqué** | **9** | **14,1 %** |
+| **Fuite de données** | **32** | **49,2 %** |
+| **Ransomware / publication d'extorsion** | **21** | **32,3 %** |
+| **DDoS revendiqué** | **9** | **13,8 %** |
 | **Vente d'accès** | **2** | **3,1 %** |
-| **TOTAL** | **64** | **100,0 %** |
+| **Fraude opérationnelle** | **1** | **1,5 %** |
+| **TOTAL** | **65** | **100,0 %** |
 
 ![Types d'incidents](assets/types_FR.png)
 ![Types d'incidents - répartition](assets/types_pie_FR.png)
 
 ```mermaid
 pie showData
-    title Avril 2026 - 64 observations canoniques
+    title Avril 2026 - 65 fiches victimes
     "Fuites de données" : 32
     "Ransomware" : 21
     "DDoS revendiqués" : 9
     "Ventes d'accès" : 2
+    "Fraude opérationnelle" : 1
 ```
 
 ### 3.2 Répartition géographique
 
-| Pays ou périmètre | Dossiers | Part des 64 |
+| Pays ou périmètre | Dossiers | Part des 65 |
 |---|---:|---:|
 | Égypte | **19** | **29,7 %** |
 | Maroc | **15** | **23,4 %** |
@@ -100,9 +102,10 @@ pie showData
 | Ghana | 2 | 3,1 % |
 | Bénin, Botswana, Éthiopie, Ouganda, Seychelles, Soudan, Zambie | 7 | 10,9 % |
 | **Multi-pays (Angola / Afrique du Sud / Nigeria)** | **1** | **1,6 %** |
-| **TOTAL** | **64** | **100,0 %** |
+| Rwanda | **1** | **1,5 %** |
+| **TOTAL** | **65** | **100,0 %** |
 
-![Répartition géographique - 64 observations](assets/pays_FR.png)
+![Répartition géographique - 65 observations](assets/pays_FR.png)
 
 L'Égypte est en tête des **publications visibles**, mais **huit de ses 19 entrées** sont des revendications DDoS non corroborées indépendamment. Le Maroc compte 15 dossiers, essentiellement des publications relatives aux données et à l'extorsion. L'Afrique du Sud recense six entrées, dont **un incident ransomware confirmé**. Le suivi multi-pays ne constitue pas un seizième État africain ; il est conservé comme catégorie transversale.
 
@@ -126,11 +129,11 @@ L'Égypte est en tête des **publications visibles**, mais **huit de ses 19 entr
 
 | Statut déclaré | Fiches canoniques | Part |
 |---|---:|---:|
-| `Claim - Unverified` | **47** | **73,4 %** |
-| `Claim - Data Sample Published` | **15** | **23,4 %** |
+| `Claim - Unverified` | **46** | **70,8 %** |
+| `Claim - Data Sample Published` | **16** | **24,6 %** |
 | `Data Fully Published` | **1** | **1,6 %** |
-| `Victim Confirmed` | **1** | **1,6 %** |
-| **TOTAL** | **64** | **100,0 %** |
+| `Victim Confirmed` | **2** | **3,1 %** |
+| **TOTAL** | **65** | **100,0 %** |
 
 ![Qualité documentaire des dossiers](assets/preuves_FR.png)
 
@@ -230,12 +233,12 @@ La grille suivante est une **normalisation éditoriale** à partir de l'activit�
 | Éducation / formation | **8** | **12,5 %** | Contrôler bases étudiants/personnel et interfaces d'administration. |
 | Commerce / e-commerce / données | 6 | 9,4 % | Surveiller CRM, comptes clients, données de localisation. |
 | Santé / pharmacie | 5 | 7,8 % | Sécuriser dossiers sensibles et continuité des soins. |
-| Finance / assurance | 4 | 6,3 % | Détecter fraude et exports transactionnels. |
+| Finance / assurance | 5 | 7,7 % | Détecter fraude et exports transactionnels. |
 | Télécoms / numérique | 4 | 6,3 % | Isoler comptes prestataires, consoles et interfaces clientes. |
 | Transport / tourisme / événements | 3 | 4,7 % | Protéger systèmes de services et parcours clients. |
 | Sport | 2 | 3,1 % | Protéger identités des licenciés, notamment des mineurs. |
 | Services à la personne | 1 | 1,6 % | Maîtriser les données bénéficiaires. |
-| **TOTAL** | **64** | **100,0 %** | |
+| **TOTAL** | **65** | **100,0 %** | |
 
 ![Secteurs normalisés](assets/secteurs_FR.png)
 

@@ -2,14 +2,14 @@
 
 ## Comparable scope
 
-This comparison uses the validated bilingual victim files: **47 records in July** and **33 records in August**. Each record is counted once in its publication or first documented observation month. Earlier or later discovery does not move a record between months.
+This comparison uses the validated bilingual victim files: **34 records in July** and **28 records in August**. Each record is counted once in its publication or first documented observation month. Earlier or later discovery does not move a record between months.
 
 | Indicator | July | August | Change |
 |---|---:|---:|---:|
-| Total incidents | **47** | **33** | **-14 (-29.8%)** |
+| Total incidents | **34** | **28** | **-6 (-17.6%)** |
 | Ransomware | 18 | 18 | 0 |
-| Data Leak | 21 | 14 | -7 |
-| Access Sale | 6 | 1 | -5 |
+| Data Leak | 11 | 9 | -2 |
+| Access Sale | 3 | 1 | -2 |
 | Defacement | 2 | 0 | -2 |
 
 ```mermaid
@@ -17,7 +17,7 @@ xychart-beta
     title "Monthly records: July vs August 2026"
     x-axis [July, August]
     y-axis "Records" 0 --> 52
-    bar [47, 33]
+    bar [34, 28]
 ```
 
 ## Countries represented

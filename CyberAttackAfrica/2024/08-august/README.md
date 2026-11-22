@@ -161,7 +161,7 @@ timeline
     01 Août 2024 : Remitano
 - **Acteur / Groupe -** meow
 - **Secteur -** Finance / Banking
-- **Site web -** [remitano.com](https -//www.remitano.com)
+- **Site web -** [remitano.com](https://www.remitano.com)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 3
@@ -184,7 +184,7 @@ timeline
     11 Août 2024 : Acdcexpress
 - **Acteur / Groupe -** lockbit3
 - **Secteur -** Retail / E-commerce
-- **Site web -** [acdcexpress.com](https -//www.acdcexpress.com)
+- **Site web -** [acdcexpress.com](https://www.acdcexpress.com)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 2
@@ -207,7 +207,7 @@ timeline
     13 Août 2024 : Netone
 - **Acteur / Groupe -** hunters
 - **Secteur -** Telecommunications
-- **Site web -** [netone.co.zw](https -//www.netone.co.zw)
+- **Site web -** [netone.co.zw](https://www.netone.co.zw)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 3
@@ -230,7 +230,7 @@ timeline
     13 Août 2024 : Lenmed
 - **Acteur / Groupe -** darkvault
 - **Secteur -** Healthcare / Medical
-- **Site web -** [lenmed.co.za](https -//www.lenmed.co.za)
+- **Site web -** [lenmed.co.za](https://www.lenmed.co.za)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 3
@@ -256,7 +256,7 @@ timeline
     13 Août 2024 : Gpf.za
 - **Acteur / Groupe -** darkvault
 - **Secteur -** Finance / Banking
-- **Site web -** [gpf.org.za](https -//www.gpf.org.za)
+- **Site web -** [gpf.org.za](https://www.gpf.org.za)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 3
@@ -282,7 +282,7 @@ timeline
 - **Date de correction AFRINTEL -** 23 août 2026
 - **Acteur / Groupe -** Unknown
 - **Secteur -** Finance / Banking
-- **Site web -** [gtbank.com](https -//www.gtbank.com/)
+- **Site web -** [gtbank.com](https://www.gtbank.com/)
 - **Statut -** Attempted - Blocked
 - **Type d'incident -** System Intrusion
 - **Niveau de confiance -** High
@@ -291,13 +291,13 @@ timeline
 - **Note de preuve -** GTBank a confirmé une tentative isolée de compromission de son domaine web. La banque a déclaré que la tentative avait échoué, que le site n'avait pas été cloné et qu'aucune compromission de données clients n'avait eu lieu.
 - **Description victime -** GTBank est une banque commerciale nigériane fournissant des services bancaires aux particuliers, aux entreprises et des services numériques.
 - **Analyse -** GTBank a confirmé une tentative isolée de compromission de son domaine web le 14 août 2024. L'événement a coïncidé avec une indisponibilité temporaire du site et des spéculations publiques selon lesquelles celui-ci aurait été cloné. Selon la banque, la tentative a échoué, le site n'a pas été cloné et les informations clients n'étaient pas stockées sur le site ; aucune compromission de données clients n'a donc été confirmée. AFRINTEL conserve la fiche car la tentative de compromission du domaine et l'impact de disponibilité ont été reconnus par la victime, mais ne transforme pas l'événement en violation réussie et ne lui attribue pas une catégorie des six types sans preuve. L'impact confirmé reste limité à la disponibilité du site/domaine et à la réponse à incident ; la méthode technique d'accès et l'acteur restent inconnus.
-- **Source publique -** [Punch - déclaration GTBank](https -//punchng.com/gtb-confirms-attempt-to-hack-banks-website/)
+- **Source publique -** [Punch - déclaration GTBank](https://punchng.com/gtb-confirms-attempt-to-hack-banks-website/)
 
 ----------------------------
     17 Août 2024 : Wwwconfig
 - **Acteur / Groupe -** ransomhub
 - **Secteur -** Telecommunications
-- **Site web -** [netconfig.co.za](https -//www.netconfig.co.za)
+- **Site web -** [netconfig.co.za](https://www.netconfig.co.za)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 3
@@ -321,7 +321,7 @@ timeline
 - **Acteur / Groupe -** Bambi
 - **Contexte source -** Publication sur un forum cybercriminel
 - **Secteur -** Professional / Business Services
-- **Site web -** [eventizer.io](https -//www.eventizer.io)
+- **Site web -** [eventizer.io](https://www.eventizer.io)
 - **Statut -** Claim - Data Sample Published
 - **Type d'incident -** Data Leak
 - **Niveau de confiance -** Medium
@@ -333,7 +333,7 @@ timeline
     21 Août 2024 : Codival
 - **Acteur / Groupe -** spacebears
 - **Secteur -** Retail / E-commerce
-- **Site web -** [codival.ci](https -//www.codival.ci)
+- **Site web -** [codival.ci](https://www.codival.ci)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 2
@@ -379,7 +379,7 @@ timeline
     22 Août 2024 : Instadriver.co
 - **Acteur / Groupe -** killsec
 - **Secteur -** Retail / E-commerce
-- **Site web -** [instadriver.co](https -//www.instadriver.co)
+- **Site web -** [instadriver.co](https://www.instadriver.co)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 2
@@ -402,7 +402,7 @@ timeline
     24 Août 2024 : Ingotbrokers
 - **Acteur / Groupe -** darkvault
 - **Secteur -** Finance / Banking
-- **Site web -** [ingotbrokers.com](https -//www.ingotbrokers.com)
+- **Site web -** [ingotbrokers.com](https://www.ingotbrokers.com)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 3
@@ -425,7 +425,7 @@ timeline
     26 Août 2024 : Onedayonly
 - **Acteur / Groupe -** killsec
 - **Secteur -** Retail / E-commerce
-- **Site web -** [onedayonly.co.za](https -//www.onedayonly.co.za)
+- **Site web -** [onedayonly.co.za](https://www.onedayonly.co.za)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 2
@@ -448,7 +448,7 @@ timeline
     28 Août 2024 : Dpfza.gov.dj
 - **Acteur / Groupe -** ransomhub
 - **Secteur -** Government / Administration
-- **Site web -** [dpfza.gov.dj](https -//www.dpfza.gov.dj)
+- **Site web -** [dpfza.gov.dj](https://www.dpfza.gov.dj)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 3
@@ -494,7 +494,7 @@ timeline
     28 Août 2024 : Ghanare
 - **Acteur / Groupe -** BrainCipher
 - **Secteur -** Technology / IT
-- **Site web -** [ghanare.com](https -//www.ghanare.com)
+- **Site web -** [ghanare.com](https://www.ghanare.com)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 2

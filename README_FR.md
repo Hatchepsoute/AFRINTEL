@@ -84,6 +84,6 @@ AFRINTEL/
 
 ## Auteur et licence
 
-**Adama ASSIONGBON** — Consultant SOC & Cyber Threat Intelligence
+**Adama ASSIONGBON** - Consultant SOC & Cyber Threat Intelligence
 
 [LinkedIn](https://www.linkedin.com/in/adama-assiongbon-9029893a/) · [Licence MIT](LICENSE)

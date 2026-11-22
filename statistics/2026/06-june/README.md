@@ -1,16 +1,16 @@
 # AFRINTEL monthly statistics - June 2026
 
-This validated corpus contains **41 incidents or documented cases** first published or first observed by AFRINTEL in June 2026. The month assignment follows the publication or first documented observation date; a compromise date is not inferred when it is unavailable.
+This validated corpus contains **45 incidents or documented cases** first published or first observed by AFRINTEL in June 2026. The month assignment follows the publication or first documented observation date; a compromise date is not inferred when it is unavailable.
 
 ## Validated monthly breakdown
 
 | Incident type | Count | Share |
 |---|---:|---:|
-| Ransomware | 20 | 48.8% |
-| Data Leak | 18 | 43.9% |
-| Access Sale | 2 | 4.9% |
-| System Intrusion | 1 | 2.4% |
-| **Total** | **41** | **100.0%** |
+| Ransomware | 20 | 42.6% |
+| Data Leak | 22 | 46.8% |
+| Access Sale | 4 | 8.5% |
+| System Intrusion | 1 | 2.1% |
+| **Total** | **45** | **100.0%** |
 
 ## Countries most represented
 

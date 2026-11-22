@@ -160,7 +160,7 @@ timeline
 - **Acteur / Groupe -** Unknown
 - **Contexte source -** RainbowBF est le compte du forum affiché comme ayant publié la revendication d'accès à une base verrouillée.
 - **Secteur -** Education / University
-- **Site web -** [univ-antananarivo.mg](https -//www.univ-antananarivo.mg)
+- **Site web -** [univ-antananarivo.mg](https://www.univ-antananarivo.mg)
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 3
@@ -171,7 +171,7 @@ timeline
     4 Octobre 2024 : Enterpriseoutsourcing
 - **Acteur / Groupe -** ransomhub
 - **Secteur -** Technology / IT
-- **Site web -** [enterpriseoutsourcing.com](https -//www.enterpriseoutsourcing.com)
+- **Site web -** [enterpriseoutsourcing.com](https://www.enterpriseoutsourcing.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -184,7 +184,7 @@ timeline
     5 Octobre 2024 : Winwinza
 - **Acteur / Groupe -** ransomhub
 - **Secteur -** Education / University
-- **Site web -** [winwinza.com](https -//www.winwinza.com)
+- **Site web -** [winwinza.com](https://www.winwinza.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -197,7 +197,7 @@ timeline
     7 Octobre 2024 : Yassir
 - **Acteur / Groupe -** killsec
 - **Secteur -** Technology / IT
-- **Site web -** [yassir.com](https -//www.yassir.com)
+- **Site web -** [yassir.com](https://www.yassir.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -221,7 +221,7 @@ timeline
     9 Octobre 2024 : GMG Mining Supplies
 - **Acteur / Groupe -** sarcoma
 - **Secteur -** Manufacturing / Industry
-- **Site web -** [gmgminingsupplies.com](https -//www.gmgminingsupplies.com)
+- **Site web -** [gmgminingsupplies.com](https://www.gmgminingsupplies.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -234,7 +234,7 @@ timeline
     9 Octobre 2024 : National Edging
 - **Acteur / Groupe -** sarcoma
 - **Secteur -** Manufacturing / Industry
-- **Site web -** [nationaledging.com](https -//www.nationaledging.com)
+- **Site web -** [nationaledging.com](https://www.nationaledging.com)
 - **Statut -** Claim - Data Sample Published
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Very High
@@ -249,7 +249,7 @@ timeline
     11 Octobre 2024 : Volta River Authority (VRA)
 - **Acteur / Groupe -** blacksuit
 - **Secteur -** Energy / Utilities
-- **Site web -** [vra.com](https -//www.vra.com)
+- **Site web -** [vra.com](https://www.vra.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -262,7 +262,7 @@ timeline
     16 Octobre 2024 : Ministère de l'Intérieur (moi.gov.ly)
 - **Acteur / Groupe -** killsec
 - **Secteur -** Government / Administration
-- **Site web -** [moi.gov.ly](https -//www.moi.gov.ly)
+- **Site web -** [moi.gov.ly](https://www.moi.gov.ly)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -275,7 +275,7 @@ timeline
     21 Octobre 2024 : Résidences universitaires Al Massira
 - **Acteur / Groupe -** bxxxx1
 - **Secteur -** Education / University
-- **Site web -** [ruam.ma](https -//ruam.ma)
+- **Site web -** [ruam.ma](https://ruam.ma)
 - **Statut -** Claim - Data Sample Published
 - **Niveau de confiance -** Medium
 - **Niveau d'impact -** Level 3
@@ -291,7 +291,7 @@ timeline
     25 Octobre 2024 : Matouk Bassiouny
 - **Acteur / Groupe -** raworld
 - **Secteur -** Legal / Justice
-- **Site web -** [matoukbassiouny.com](https -//www.matoukbassiouny.com)
+- **Site web -** [matoukbassiouny.com](https://www.matoukbassiouny.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low

@@ -286,7 +286,7 @@
   A post attributed to the BabayoSysteam account, dated July 30, 2025, makes available a PesaBay database presented as complete and containing 1,850 records. The published fields include first name, last name, email address, phone number and account status. The presence of numerous phone numbers using Burundi's `+257` country code, combined with PesaBay branding and a coherent record structure, supports a medium-confidence attribution of the dataset to the platform. AFRINTEL therefore classifies the case as `Data Fully Published`. This classification describes publication of the dataset advertised as complete; it does not independently confirm the acquisition method, the initial intrusion, row uniqueness, or coverage of PesaBay's entire production database. The published contact data creates risks of targeted phishing, fraud, spam and digital impersonation, corresponding to a Level 2 impact. No name, email address, phone number or other raw personal data is reproduced.
 
 ---
-[July 2025 Report](./report/README.md)
+[July 2025 Report](./07-july/README.md)
 ---
 
 ### 31 July 2025
@@ -469,7 +469,7 @@
 - **Victim Description:** Official portal and digital infrastructures of the Togolese Republic, hosting administrative services and state data.
 - **Analysis:** Material corroborates the actor's claim, including the DarkForums listing itself and several elements showing active administrative access across multiple Togolese government digital platforms: the DSNIC identity and civil-status management system (justice.xflow.gouv.tg), a Nextcloud-based government file-sharing and collaboration platform (cloud.numerique.gouv.tg) with shared folders and configuration files, a KoboToolbox data-collection instance (kf.form.gouv.tg) hosting dozens of active government surveys and forms, and an education-statistics reporting system (stateduc.planifeducation.gouv.tg). The material shows genuine administrative-level access to live dashboards rather than a public-facing sample, consistent with the actor's description of the offer as a "0day vulnerability" granting privileged access. This breadth of access across distinct systems and subdomains under the gouv.tg domain supports a high confidence assessment of an active, unremediated compromise affecting multiple government digital services, independent of the actor's Monero-based pricing claim, which AFRINTEL cannot verify. AFRINTEL does not reproduce any credentials, configuration values, citizen data or session details from the reviewed material.
 ---
-[August 2025 report](./report/README.md)
+[August 2025 report](./08-august/README.md)
 
 ### 27 August 2025
 #### Morocco - Multiple Moroccan websites (OurSec campaign)

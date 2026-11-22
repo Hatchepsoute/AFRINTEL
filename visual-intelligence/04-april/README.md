@@ -8,7 +8,7 @@ This directory provides a visual intelligence view of cyber incidents monitored 
 
 The visualizations are based on the following consolidated statistics:
 
-- **64 canonical incidents**
+- **65 canonical incidents**
 - **21 ransomware attacks**
 - **32 data leaks, 9 DDoS claims and 2 access sales**
 - **16 affected countries**

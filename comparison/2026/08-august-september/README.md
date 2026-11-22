@@ -2,13 +2,13 @@
 
 ## Comparable scope
 
-This comparison uses the validated bilingual victim files: **33 records in August** and **33 records in September**. Each record is counted once in its publication or first documented observation month. Earlier or later discovery does not move a record between months.
+This comparison uses the validated bilingual victim files: **28 records in August** and **33 records in September**. Each record is counted once in its publication or first documented observation month. Earlier or later discovery does not move a record between months.
 
 | Indicator | August | September | Change |
 |---|---:|---:|---:|
-| Total incidents | **33** | **33** | **0 (0.0%)** |
+| Total incidents | **28** | **33** | **+5 (+17.9%)** |
 | Ransomware | 18 | 20 | +2 |
-| Data Leak | 14 | 11 | -3 |
+| Data Leak | 9 | 11 | +2 |
 | Access Sale | 1 | 0 | -1 |
 | System Intrusion | 0 | 2 | +2 |
 
@@ -17,7 +17,7 @@ xychart-beta
     title "Monthly records: August vs September 2026"
     x-axis [August, September]
     y-axis "Records" 0 --> 38
-    bar [33, 33]
+    bar [28, 33]
 ```
 
 ## Countries represented
@@ -44,4 +44,4 @@ xychart-beta
 
 ## CTI reading
 
-The corpus remains at 33 records in both August and September. This is a change in documented composition and incident types; it is not, by itself, evidence of a change in the underlying number of compromises.
+The corpus changes from 28 records in August to 33 in September. This is a change in documented composition and incident types; it is not, by itself, evidence of a change in the underlying number of compromises.

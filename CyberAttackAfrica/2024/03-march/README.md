@@ -148,7 +148,7 @@ timeline
     9 Mars 2024 : Go4Kora
 - **Acteur / Groupe -** ransomhub
 - **Secteur -** Media / Entertainment
-- **Site web -** [go4kora.tv](https -//go4kora.tv)
+- **Site web -** [go4kora.tv](https://go4kora.tv)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -159,7 +159,7 @@ timeline
     11 Mars 2024 : Government Printing Works (GPW)
 - **Acteur / Groupe -** lockbit3
 - **Secteur -** Government / Administration
-- **Site web -** [gpw.gov.za](https -//www.gpw.gov.za)
+- **Site web -** [gpw.gov.za](https://www.gpw.gov.za)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -170,7 +170,7 @@ timeline
     15 Mars 2024 : ATL Leasing
 - **Acteur / Groupe -** hunters
 - **Secteur -** Finance / Banking
-- **Site web -** [atlleasing.com.tn](https -//www.atlleasing.com.tn)
+- **Site web -** [atlleasing.com.tn](https://www.atlleasing.com.tn)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -181,7 +181,7 @@ timeline
     15 Mars 2024 : El Ezaby Pharmacy
 - **Acteur / Groupe -** lockbit3
 - **Secteur -** Healthcare / Medical
-- **Site web -** [elezabypharmacy.com](https -//www.elezabypharmacy.com)
+- **Site web -** [elezabypharmacy.com](https://www.elezabypharmacy.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -196,19 +196,19 @@ timeline
 - **Précision chronologique -** Début rapporté le vendredi 15 mars ; la publication de référence est du 22 mars.
 - **Acteur / Groupe -** Unknown
 - **Secteur -** Government / Administration
-- **Site web -** [parlamento.cv](https -//www.parlamento.cv/)
+- **Site web -** [parlamento.cv](https://www.parlamento.cv/)
 - **Statut -** Victim Confirmed
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Very High
 - **Niveau d'impact -** Level 4
 - **Analyse -** Le responsable de la communication et de la sécurité de l'information du Parlement a confirmé un ransomware ayant chiffré plusieurs serveurs dans un segment du réseau. Le fonctionnement parlementaire a été perturbé et certains serveurs ont dû être récupérés. Les sources examinées ne suffisent pas à établir une exfiltration de données ; elle n'est donc pas déduite.
-- **Sources publiques -** [RTC Cabo Verde](https -//www.rtc.cv/noticia/noticia-details/ataque-cibernetico-esta-a-condicionar-o-funcionamento-da-assembleia-nacional-12835) | [KonBriefing](https -//konbriefing.com/en-topics/cyber-attacks-2024.html)
+- **Sources publiques -** [RTC Cabo Verde](https://www.rtc.cv/noticia/noticia-details/ataque-cibernetico-esta-a-condicionar-o-funcionamento-da-assembleia-nacional-12835) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
 
 ----------------------------
     16 Mars 2024 : Agribank Namibia
 - **Acteur / Groupe -** lockbit3
 - **Secteur -** Finance / Banking
-- **Site web -** [agribank.com.na](https -//www.agribank.com.na)
+- **Site web -** [agribank.com.na](https://www.agribank.com.na)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -219,7 +219,7 @@ timeline
     22 Mars 2024 : PGESCo
 - **Acteur / Groupe -** ransomhub
 - **Secteur -** Energy / Utilities
-- **Site web -** [pgesco.com](https -//www.pgesco.com)
+- **Site web -** [pgesco.com](https://www.pgesco.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -230,7 +230,7 @@ timeline
     26 Mars 2024 : Higher School of Commerce and Management (ESGC.MA)
 - **Acteur / Groupe -** Unknown
 - **Secteur -** Education / University
-- **Site web -** [esgc.ma](https -//esgc.ma)
+- **Site web -** [esgc.ma](https://esgc.ma)
 - **Statut -** Claim - Data Sample Published
 - **Niveau de confiance -** Medium
 - **Niveau d'impact -** Level 3
@@ -243,7 +243,7 @@ timeline
     27 Mars 2024 : Nampak
 - **Acteur / Groupe -** lockbit3
 - **Secteur -** Manufacturing / Industry
-- **Site web -** [nampak.com](https -//www.nampak.com)
+- **Site web -** [nampak.com](https://www.nampak.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
