@@ -907,8 +907,23 @@ The hospital confirmed that an unauthorised party accessed its IT environment an
 - **Ransomware Group :** apt73/bashe
 - **Sector :** Wealth Management
 - **Website :** [providentgh.com](https://providentgh.com)
-- **Status :** Claim - Unverified
-- **Description :** Private insurance company in Ghana (Provident Insurance).
+- **Status :** Data Fully Published
+- **Confidence level:** High
+- **Description :** Provident Insurance Company Limited, a private Ghanaian insurance company.
+
+- **CTI analysis:**
+  **Observed:** The local corpus supplied under `providentgh_com_fvhgjnj3` contains approximately 43,702 files totaling 44.34 GiB: 19,692 `.eml` emails, 18,674 PDFs, 1,974 DOCX files, 737 XLSX files, and several thousand images and other attachments. The examined headers show an internal `Exch01.ProvidentGH.com` mail infrastructure and addresses using the `ProvidentGH.com` domain. The filenames, extracted text and reviewed spreadsheets cover policies, premiums, renewals, claims, commissions, receipts and payments, bank statements, bonds and tenders, as well as motor, marine, fire and staff insurance activities. References to Ghana, Accra, Provident Insurance and Ghana Cocoa Board-related files were observed. Email filenames mainly span August 2020 to July 2025; the local metadata records a last received item on 15 July 2025.
+
+  **Method and coverage:** Extensions, sizes and counts were inventoried across the full corpus. Passive content analysis then covered 187 PDFs representing 699 pages, 99 DOCX files and 74 XLSX files selected deterministically. The sampled PDFs were not encrypted. Text and document structures were extracted without executing macros, scripts, binaries, embedded links or formulas. No name, email address, account number, identifier, secret or raw personal content is reproduced here. The analysis is not exhaustive for the 44.34 GiB corpus; emails, images, videos, archives and part of the document collection were not read in full.
+
+  **Assessment:** The consistency between the `ProvidentGH.com` domain, mail infrastructure, business documents and Ghana-related references makes attribution of the corpus to the Provident Insurance Ghana environment high. According to the provenance communicated to AFRINTEL, the corpus represents all files made accessible by the actor after the announced deadline. This completeness of the public disclosure does not prove that all data exfiltrated from, or present in, the victim's environment was disclosed. It also does not confirm the acquisition method, encryption or operational attribution to `apt73/bashe`. It provides no reliable link to Egypt; the same actor's Egyptian listing, `alx-pc.com`, is a separate incident.
+
+  **Declared provenance and disclosure:** According to information communicated to AFRINTEL, the complete corpus was downloaded from the `apt73/bashe` leak site on the dark web after the deadline set by the group. The publication is therefore documented as an observed full disclosure of the corpus made accessible, not as a mere sample. The exact deadline date and time, any material published before the deadline, and whether the released files correspond to all data exfiltrated remain to be established. The collection date, exact URL and collection hash should remain documented in a separate evidence manifest and should not be published if they expose a sensitive resource.
+
+  **Unknown:** initial access vector, compromise date, operator identity, encryption, actual exfiltrated volume, exact deadline date and time, material published before the deadline, completeness relative to the compromised environment, Provident Insurance confirmation, operational impact, negotiation, payment or resale remain unknown. Historical documents cannot establish that all material was acquired during the April 2026 incident.
+
+- **Analysis scope and limitations:** Partial structural and content analysis of a locally supplied corpus; inventory coverage is complete, while content coverage is limited to the documented sample above. The analysis supports organizational and sectoral consistency but does not confirm the incident officially or establish operational attribution to the actor.
+- **SOC/CTI recommendations:** preserve hashes and chain of custody; search logs for the same filenames, internal domains, document templates and mail identifiers; reset and monitor potentially exposed accounts; review Exchange forwarding rules and mailbox access; investigate abnormal attachment and document-share exfiltration; involve legal, DPO and incident-response functions as applicable; monitor for document reappearance without downloading or interacting with criminal resources.
 
 #### 🇺🇬 Uganda - Ministry of Agriculture (E‑Extension) [Data Leak]
 - **Initial publication date:** April 27, 2026

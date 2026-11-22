@@ -20,7 +20,7 @@ The **64 canonical observations** comprise **32 data leaks (50.0%)**, **21 ranso
 
 The most distinctive change from March is **nine DDoS claims associated with Keymous+**, concentrated on 11-12 April and including Egyptian government services. Screenshots and availability checks supplied by the account are not technical confirmation of the method, duration or success of a distributed denial-of-service attack. They nevertheless provide reasonable triggers for monitoring service availability and validating DDoS mitigation readiness.
 
-Three cases warrant immediate executive attention. **Ahmed Al-Kadi Private Hospital**, South Africa, has **confirmed unauthorised access and partial ransomware encryption**. **CNSS Benin** is associated with an alleged institutional mailbox exposure involving social-security, medical and banking records. **Algérie Télécom Satellite (ATS)** has a record documenting examination of **88 payroll-related files**. Other high-consequence claims affect **National Oil Ethiopia**, the **Kenya Airports Authority**, the **University of Chlef** and multiple Moroccan institutions; their reported data, operational impact and attribution must remain tied to the available evidence.
+Four cases warrant immediate executive attention. **Ahmed Al-Kadi Private Hospital**, South Africa, has **confirmed unauthorised access and partial ransomware encryption**. **CNSS Benin** is associated with an alleged institutional mailbox exposure involving social-security, medical and banking records. **Algérie Télécom Satellite (ATS)** has a record documenting examination of **88 payroll-related files**. **Provident Insurance Ghana** is associated with a complete corpus reportedly downloaded from the `apt73/bashe` leak site after the actor's deadline; this establishes a full public disclosure of the accessible corpus, not necessarily all data present in the compromised environment. Other high-consequence claims affect **National Oil Ethiopia**, the **Kenya Airports Authority**, the **University of Chlef** and multiple Moroccan institutions; their reported data, operational impact and attribution must remain tied to the available evidence.
 
 **Decisions required:** CISOs should prioritise critical datasets and third parties with sensitive privileges. CIOs should validate identity security, recoverable backups and separation of critical systems. SOC teams should operationalise behavioural detections for unusual data exports, mailbox access, privileged sessions, encryption and service-availability anomalies. Baselines and thresholds must be tested against each organisation's telemetry.
 
@@ -127,13 +127,14 @@ Egypt leads in **documented publications**, but **eight of its 19 records** are 
 | Recorded status | Canonical records | Share |
 |---|---:|---:|
 | `Claim - Unverified` | **47** | **73.4%** |
-| `Claim - Data Sample Published` | **16** | **25.0%** |
+| `Claim - Data Sample Published` | **15** | **23.4%** |
+| `Data Fully Published` | **1** | **1.6%** |
 | `Victim Confirmed` | **1** | **1.6%** |
 | **TOTAL** | **64** | **100.0%** |
 
 ![Evidence qualification](assets/preuves_EN.png)
 
-The **16 sample-published records** do not mean complete archives were examined. These are documentary status categories rather than automatic authenticity scores. The official statement of **Ahmed Al-Kadi Private Hospital** confirms unauthorised access and partial encryption, but makes no established public claim of data exfiltration.
+The **15 sample-published records** do not mean complete archives were examined. The separate **Data Fully Published** status for **Provident Insurance Ghana** refers to the complete corpus reportedly accessible after the actor's deadline; it does not prove that all data exfiltrated from the victim was disclosed. These are documentary status categories rather than automatic authenticity scores. The official statement of **Ahmed Al-Kadi Private Hospital** confirms unauthorised access and partial encryption, but makes no established public claim of data exfiltration.
 
 ## 4. Priority incidents and business implications
 
@@ -188,11 +189,19 @@ The **16 April RubiconH4ck** listing advertises about **2 TB** of data allegedly
 
 **CISO/CIO response:** distinguish documentation and office networks from operational aviation systems, review contractor access and restrict sensitive data transfers. **Do not describe this as a confirmed interruption of Kenyan aviation services.**
 
+### 4.8 Ghana - Provident Insurance: complete post-deadline disclosure of an organisational corpus
+
+The **27 April apt73/bashe** ransomware record concerns `providentgh.com`, identified in the victim files as Provident Insurance Company Limited in Ghana. The locally supplied corpus contains approximately **43,702 files / 44.34 GiB**, including emails, PDFs, DOCX and XLSX documents. Passive review found consistent Provident Ghana mail infrastructure, insurance policies, premiums, claims, payments, bank material, bonds, tenders and Ghana-related business records.
+
+According to the collection provenance communicated to AFRINTEL, the corpus was downloaded from the actor's leak site **after the deadline** and represents the complete set of files made accessible in that disclosure. AFRINTEL therefore records **Data Fully Published**, while preserving the distinction between a complete public release and the unknown totality of data that may have existed in the compromised environment. The exact deadline timestamp, initial access, encryption, exfiltration method, official victim confirmation and operational impact remain unknown. No reliable link to Egypt was established; the Egyptian `alx-pc.com` listing is a separate incident.
+
+**SOC implication:** treat the corpus as a potential high-sensitivity exposure; preserve hashes and chain of custody, audit mailbox and document-repository access, investigate abnormal exports and forwarding rules, rotate potentially exposed credentials, and coordinate legal, privacy and incident-response actions. Do not reproduce personal data or access the actor's site.
+
 ## 5. Analysis by incident type
 
 ### 5.1 Ransomware / extortion (21 records)
 
-Listings touch healthcare, industry, energy, digital infrastructure, public bodies, finance and other services. Presence on an extortion site is an intelligence signal but is **not automatically proof of full intrusion**, encryption, complete data loss or ransom payment. **Ahmed Al-Kadi** is the victim-confirmed ransomware case among the canonical records.
+Listings touch healthcare, industry, energy, digital infrastructure, public bodies, finance and other services. Presence on an extortion site is an intelligence signal but is **not automatically proof of full intrusion**, encryption, complete data loss or ransom payment. **Ahmed Al-Kadi** is the victim-confirmed ransomware case; **Provident Insurance Ghana** is the case with a complete post-deadline public corpus documented in the canonical records.
 
 A useful **hypothesis-led hunting sequence** is: initial access → account abuse → discovery and collection → unusual export → backup degradation → encryption. None of these steps is automatically attributed to the other 20 cases without incident-specific evidence.
 
