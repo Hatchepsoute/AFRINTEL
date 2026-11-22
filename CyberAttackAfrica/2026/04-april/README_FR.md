@@ -20,7 +20,7 @@ Sur les **64 observations**, on compte **32 fuites de données (50,0 %)**, **21 
 
 La principale rupture par rapport à mars tient aux **neuf publications DDoS revendiquées par le compte Keymous+**, concentrées les 11-12 avril et visant notamment des services publics égyptiens. Les captures ou tests de disponibilité publiés par le compte n'attestent ni la méthode, ni la durée, ni le succès d'une attaque DDoS. Cette série peut néanmoins alimenter la surveillance de disponibilité et les dispositifs anti-DDoS.
 
-Trois dossiers justifient une attention immédiate des responsables de la sécurité : **Ahmed Al-Kadi Private Hospital** (Afrique du Sud), où le ransomware et le chiffrement partiel sont **confirmés par l'hôpital** ; **la CNSS Bénin**, pour une publication attribuée à une messagerie institutionnelle impliquant des dossiers sociaux, médicaux et bancaires ; et **Algérie Télécom Satellite (ATS)**, dont la fiche décrit un examen de **88 fichiers** de paie sensibles. À ceux-ci s'ajoutent **National Oil Ethiopia**, **Kenya Airports Authority**, **l'Université de Chlef** et plusieurs organismes marocains, où les revendications, les échantillons et les accès allégués doivent être traités à leur niveau de preuve respectif.
+Quatre dossiers justifient une attention immédiate des responsables de la sécurité : **Ahmed Al-Kadi Private Hospital** (Afrique du Sud), où le ransomware et le chiffrement partiel sont **confirmés par l'hôpital** ; **la CNSS Bénin**, pour une publication attribuée à une messagerie institutionnelle impliquant des dossiers sociaux, médicaux et bancaires ; **Algérie Télécom Satellite (ATS)**, dont la fiche décrit un examen de **88 fichiers** de paie sensibles ; et **Provident Insurance Ghana**, associé à un corpus complet qui aurait été téléchargé depuis le site de fuite `apt73/bashe` après l'échéance de l'acteur. Cette dernière information établit une divulgation publique complète du corpus accessible, pas nécessairement de toutes les données présentes dans l'environnement compromis. À ceux-ci s'ajoutent **National Oil Ethiopia**, **Kenya Airports Authority**, **l'Université de Chlef** et plusieurs organismes marocains, où les revendications, les échantillons et les accès allégués doivent être traités à leur niveau de preuve respectif.
 
 **Décisions recommandées :** pour le **RSSI**, prioriser les données critiques et les tiers disposant d'accès sensibles ; pour la **DSI**, renforcer l'identité, les sauvegardes restaurables et l'isolement des environnements ; pour le **SOC**, opérationnaliser les détections comportementales portant sur les exports de données, l'accès aux messageries, les privilèges, le chiffrement et les anomalies de disponibilité. Les seuils et contrôles doivent être validés sur la télémétrie de chaque organisation.
 
@@ -127,13 +127,14 @@ L'Égypte est en tête des **publications visibles**, mais **huit de ses 19 entr
 | Statut déclaré | Fiches canoniques | Part |
 |---|---:|---:|
 | `Claim - Unverified` | **47** | **73,4 %** |
-| `Claim - Data Sample Published` | **16** | **25,0 %** |
+| `Claim - Data Sample Published` | **15** | **23,4 %** |
+| `Data Fully Published` | **1** | **1,6 %** |
 | `Victim Confirmed` | **1** | **1,6 %** |
 | **TOTAL** | **64** | **100,0 %** |
 
 ![Qualité documentaire des dossiers](assets/preuves_FR.png)
 
-Les **16 fiches avec échantillon signalé** n'impliquent pas que l'intégralité de chaque archive ait été analysée ou validée. Les indicateurs décrivent le **niveau documentaire des fiches**, non des scores automatiques d'authenticité. À l'inverse, la notification d'**Ahmed Al-Kadi Private Hospital** constitue une confirmation de première main de l'accès illicite et du chiffrement partiel, sans précision sur une éventuelle exfiltration.
+Les **15 fiches avec échantillon signalé** n'impliquent pas que l'intégralité de chaque archive ait été analysée ou validée. Le statut distinct **Data Fully Published** de **Provident Insurance Ghana** désigne le corpus complet qui aurait été accessible après l'échéance de l'acteur ; il ne prouve pas que toutes les données exfiltrées de la victime aient été divulguées. Les indicateurs décrivent le **niveau documentaire des fiches**, non des scores automatiques d'authenticité. À l'inverse, la notification d'**Ahmed Al-Kadi Private Hospital** constitue une confirmation de première main de l'accès illicite et du chiffrement partiel, sans précision sur une éventuelle exfiltration.
 
 ## 4. Incidents majeurs et conséquences pour les organisations
 
@@ -188,11 +189,19 @@ Le compte **RubiconH4ck** propose, selon la fiche du **16 avril**, des données 
 
 **Priorité DSI/RSSI :** distinguer systèmes de gestion documentaire, identités, réseaux bureautiques et systèmes d'exploitation aéroportuaire ; revoir les accès des prestataires et les transferts de données sensibles. **Ne pas présenter cette revendication comme une interruption de l'aviation kényane.**
 
+### 4.8 Ghana - Provident Insurance : divulgation complète post-échéance d'un corpus organisationnel
+
+La fiche ransomware du **27 avril**, attribuée à **apt73/bashe**, concerne `providentgh.com`, identifié dans les fiches victimes comme Provident Insurance Company Limited au Ghana. Le corpus fourni localement contient environ **43 702 fichiers / 44,34 GiB**, dont des emails, PDF, DOCX et XLSX. L'examen passif a relevé une infrastructure de messagerie Provident Ghana cohérente, ainsi que des polices, primes, sinistres, paiements, documents bancaires, garanties, appels d'offres et dossiers métier liés au Ghana.
+
+Selon la provenance communiquée à AFRINTEL, le corpus a été téléchargé depuis le site de fuite de l'acteur **après l'échéance** et représente l'ensemble des fichiers rendus accessibles lors de cette divulgation. AFRINTEL retient donc le statut **Data Fully Published**, tout en distinguant une publication publique complète de la totalité inconnue des données éventuellement présentes dans l'environnement compromis. La date et l'heure exactes de l'échéance, l'accès initial, le chiffrement, la méthode d'exfiltration, la confirmation officielle de la victime et l'impact opérationnel restent inconnus. Aucun lien fiable avec l'Égypte n'a été établi ; la fiche égyptienne `alx-pc.com` est un incident distinct.
+
+**Conséquence SOC :** traiter le corpus comme une exposition potentielle de données hautement sensibles ; préserver les hash et la chaîne de conservation, auditer les accès aux boîtes et référentiels documentaires, rechercher les exports et règles de transfert anormaux, renouveler les identifiants potentiellement exposés et coordonner les actions juridique, vie privée et réponse à incident. Ne pas reproduire de données personnelles ni accéder au site de l'acteur.
+
 ## 5. Analyse des risques par typologie
 
 ### 5.1 Ransomware et extorsion (21 dossiers)
 
-Les publications concernent la santé, l'industrie, l'énergie, les opérateurs numériques, l'administration, la finance et d'autres services. L'observation d'une fiche sur un site de fuite est un signal de veille pertinent ; **elle ne suffit pas à établir une intrusion complète**, un chiffrement, une fuite intégrale ou un paiement. **Ahmed Al-Kadi** est le cas officiellement confirmé parmi les fiches canoniques.
+Les publications concernent la santé, l'industrie, l'énergie, les opérateurs numériques, l'administration, la finance et d'autres services. L'observation d'une fiche sur un site de fuite est un signal de veille pertinent ; **elle ne suffit pas à établir une intrusion complète**, un chiffrement, une fuite intégrale ou un paiement. **Ahmed Al-Kadi** est le cas officiellement confirmé ; **Provident Insurance Ghana** est le dossier canonique documentant un corpus public complet après échéance.
 
 **Chaîne de risque à surveiller, non attribuée automatiquement aux 20 autres cas :** accès initial → abus de compte → découverte de données → export anormal → dégradation de la restauration → chiffrement. La disponibilité des échantillons et la chronologie de publication doivent être suivies dossier par dossier, sans spéculer sur les éventuels paiements de rançon.
 

@@ -1,8 +1,7 @@
 ![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-darkgreen)
 ![Type](https://img.shields.io/badge/Type-Cyber%20Threat%20Intelligence-blueviolet)
-![Focus](https://img.shields.io/badge/Focus-Incidents%20Cyber%20%26%20Activité%20de%20Menace-red)
-![Dark Web](https://img.shields.io/badge/Source-Dark%20Web%20%2F%20OSINT-black)
-![Projet](https://img.shields.io/badge/Projet-AFRINTEL-black)
+![Focus](https://img.shields.io/badge/Focus-Incidents%20cyber%20%26%20menaces-red)
+![Données](https://img.shields.io/badge/Données-OSINT%20%2F%20Dark%20Web-black)
 ![Licence](https://img.shields.io/badge/Licence-MIT-blue)
 
 <p align="left">
@@ -13,227 +12,78 @@
 
 👉🏾 [English version](README.md)
 
----
+AFRINTEL est un projet CTI open source consacré au suivi des incidents cyber et de l’activité des menaces visant les organisations et écosystèmes africains. Le projet couvre les 54 pays africains et documente neuf types d’incidents canoniques :
 
-**AFRINTEL** est un projet open source de Cyber Threat Intelligence consacré aux incidents cyber affectant les organisations africaines dans les 54 pays du continent. Le projet documente les neuf types d'incident canoniques AFRINTEL : Ransomware, Data Leak, Access Sale, DDoS, Defacement, Account Takeover, System Intrusion, Malware et Operational Fraud. Ces événements sont observés via des sources Dark Web, des leak sites, des forums underground et l'OSINT. Le type d'incident, le statut, le niveau de confiance et l'impact sont traités séparément afin qu'une revendication criminelle ne soit pas automatiquement assimilée à une compromission confirmée.
+**Ransomware · Fuite de données · Vente d’accès · DDoS · Défiguration · Prise de contrôle de compte · Intrusion système · Malware · Fraude opérationnelle**
 
-| Pays surveillés | Acteurs de menace suivis | Période couverte | Formats |
-| :---: | :---: | :---: | :---: |
-| 54 | 100+ | 2024-2026 | Markdown, STIX 2.1, Visual CTI |
+AFRINTEL sépare le type d’incident, le statut de preuve, la confiance, l’impact et la chronologie. Une revendication criminelle n’est pas automatiquement présentée comme une compromission confirmée.
 
-> AFRINTEL documente ce qui a été observé : publications sur les leak sites, forums underground et sources OSINT. Chaque fiche victime conserve le statut correspondant au dernier niveau de validation effectué par AFRINTEL.
+| Pays surveillés | Période couverte | Formats principaux |
+| :---: | :---: | :--- |
+| 54 | 2024–2026 | Markdown · STIX 2.1 · CTI visuelle |
 
----
+> Le dépôt recense les éléments observés sur les sites de fuite, forums clandestins, communications publiques et sources OSINT. Chaque fiche conserve son statut de preuve au moment de la dernière revue.
 
-## Rapports à la une
+## Derniers rapports
 
-### Cybermenaces en Afrique - octobre 2026
+### Octobre 2026
 
-Le corpus d'octobre comprend **48 fiches**, toutes rattachées à octobre après redistribution des publications selon leur mois réel de publication ou de première observation. Le rapport recense **23 fuites de données**, **17 ransomware**, **5 intrusions système** et **3 ventes d'accès**.
+Le corpus d’octobre contient **48 dossiers** : **23 fuites de données**, **17 ransomware**, **5 intrusions système** et **3 ventes d’accès**.
 
-📄 [Rapport CTI complet - octobre 2026](CyberAttackAfrica/2026/10-october/README_FR.md)
+- [Rapport CTI](CyberAttackAfrica/2026/10-october/README_FR.md)
+- [Fiches victimes](CyberAttackAfrica/2026/10-october/victims_FR.md)
+- [Statistiques](statistics/2026/10-october/README_FR.md)
+- [Comparaison septembre–octobre](comparison/2026/09-september-october/README_FR.md)
+- [Bundle STIX 2.1 / OpenCTI](stix/2026/10-october/afrintel_october_2026_opencti.json)
 
-📋 [Fiches victimes - octobre 2026](CyberAttackAfrica/2026/10-october/victims_FR.md)
+### Premier semestre 2026
 
-📊 [Statistiques - octobre 2026](statistics/2026/10-october/README_FR.md)
+Le corpus validé du S1 contient **320 observations** : **115 ransomware**, **140 fuites de données**, **9 ventes d’accès**, **52 revendications DDoS**, **2 intrusions système**, **1 défiguration** et **1 fraude opérationnelle**.
 
-🔄 [Comparaison septembre-octobre 2026](comparison/2026/09-september-october/README_FR.md)
+- [Rapport S1 français](CyberAttackAfrica/2026/README_H1_FR.md)
+- [H1 English report](CyberAttackAfrica/2026/README_H1.md)
+- [Bundle STIX du S1](stix/2026/afrintel_h1_2026_opencti.json)
+- [Intelligence visuelle du S1](visual-intelligence/H1-2026/README.md)
 
-### Cybermenaces en Afrique - août 2026
+## Rapports et jeux de données
 
-La collecte d'août 2026 comprend **28 incidents documentés** : **18 ransomware**, **9 fuites de données** et **1 vente d'accès**.
-
-Le Furniture Bargaining Council a reconnu un chiffrement de serveurs et DC Partner a publié une confirmation publique de l’incident. Les analyses documentent notamment des données de paiement chez The Courier Guy, un classeur de réinitialisation de comptes chez Daily Trust, des documents internes du Conseil Gabonais des Chargeurs et des données d'identité dans les cas RAMED et DGSN/DGST. Les échantillons examinés ne valident pas automatiquement les volumes globaux revendiqués ou les méthodes d'acquisition.
-
-Le rapport intègre les suivis consignés jusqu'au **14 septembre 2026** et distingue les publications antérieures découvertes en août. Les **13 fiches de moins qu'en juillet (-31,0 %)** décrivent une variation de la collecte, sans démontrer une baisse équivalente des compromissions.
-
-📄 [Rapport CTI complet - août 2026](CyberAttackAfrica/2026/08-august/README_FR.md)
-
-📋 [Liste des victimes - août 2026](CyberAttackAfrica/2026/08-august/victims_FR.md)
-
-📊 [Statistiques - août 2026](statistics/2026/08-august/README_FR.md)
-
-📦 [Bundle STIX 2.1 / OpenCTI - août 2026](stix/2026/08-august/afrintel_august_2026_opencti.json)
-
-### Septembre 2026  -  Rapport publié
-
-Le corpus de septembre comprend **33 fiches documentées** : **20 Ransomware**, **11 Data Leak** et **2 System Intrusion**. Les fiches antérieures ont été redistribuées dans leurs mois respectifs au lieu d'être conservées dans septembre.
-
-📄 [Rapport CTI complet - septembre 2026](CyberAttackAfrica/2026/09-september/README_FR.md)
-
-📋 [Fiches victimes - septembre 2026](CyberAttackAfrica/2026/09-september/victims_FR.md)
-
-📊 [Statistiques - septembre 2026](statistics/2026/09-september/README_FR.md)
-
-🔄 [Comparaison août-septembre 2026](comparison/2026/08-august-september/README_FR.md)
-
-🖼️ [Visual intelligence - septembre 2026](visual-intelligence/09-september/README_FR.md)
-
-📦 [Bundle STIX 2.1 / OpenCTI - septembre 2026](stix/2026/09-september/afrintel_september_2026_opencti.json)
-
-*Statut du mois : rapport, statistiques, comparaison et visual intelligence publiés sur la base de la cohorte validée de 33 fiches de septembre.*
-
-### Rapport cybermenaces du premier semestre 2026
-
-Entre janvier et juin 2026, AFRINTEL a documenté **320 incidents** : **115 Ransomware**, **140 Data Leak**, **9 Access Sale**, **52 DDoS**, **2 System Intrusion**, **1 Defacement** et **1 Operational Fraud**.
-
-Les 52 fiches DDoS sont des revendications d’acteurs ou des observations de disponibilité datées, dont 43 observations Keymous+ en mai. Des observations répétées de la même organisation à des dates différentes ne correspondent pas nécessairement à des attaques techniquement indépendantes.
-
-📊 [Rapport complet du S1 2026](CyberAttackAfrica/2026/README_H1_FR.md)
-
-📊 [Full H1 2026 report](CyberAttackAfrica/2026/README_H1.md)
-
-📦 [Bundle STIX 2.1 / OpenCTI S1 2026](stix/2026/afrintel_h1_2026_opencti.json)
-
-🖼️ [Visuel statistique S1 2026](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png)
-
-🗺️ [Carte visuelle S1 2026](visual-intelligence/H1-2026/afrintel_s1_2026_carte.png)
-
----
-
-## Rapports CTI annuels
-
-Chaque rapport annuel consolide le corpus mensuel validé de l'année : répartition par type d'incident, exposition par pays et région, tendances sectorielles, visibilité des acteurs, maturité des preuves et lecture CTI. Les versions française et anglaise sont maintenues avec une structure et des chiffres cohérents.
-
-| Année | Fiches documentées | FR | EN |
-| :--- | ---: | :--- | :--- |
-| 2024 | **125** | [Rapport annuel](CyberAttackAfrica/2024/README_FR.md) | [Annual report](CyberAttackAfrica/2024/README.md) |
-| 2025 | **234** | [Rapport annuel](CyberAttackAfrica/2025/README_FR.md) | [Annual report](CyberAttackAfrica/2025/README.md) |
-
-**Référence 2024 du corpus mensuel actuel :** **125 fiches documentées**, reclassées selon la même taxonomie à neuf types que celle utilisée pour 2025. Les rapports semestriels corrigés conservent des snapshots historiques et ne reflètent pas tous les ajouts rétrospectifs présents dans les couples mensuels actuels.
-
-**Référence 2025 du corpus mensuel actuel :** **234 fiches documentées**. Le S1 compte **115 fiches** et le S2 **119**. La table régionale annuelle validée totalise **234 occurrences géographiques**.
-
----
-
-## Rapports CTI semestriels
-
-| Période | Fiches documentées | FR | EN |
-| :--- | ---: | :--- | :--- |
-| S1 2024 | **46** | [Rapport S1](CyberAttackAfrica/2024/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2024/README_H1.md) |
-| S2 2024 | **79** | [Rapport S2](CyberAttackAfrica/2024/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2024/README_H2.md) |
-| S1 2025 | **115** | [Rapport S1](CyberAttackAfrica/2025/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2025/README_H1.md) |
-| S2 2025 | **119** | [Rapport S2](CyberAttackAfrica/2025/README_H2_FR.md) | [H2 report](CyberAttackAfrica/2025/README_H2.md) |
-| S1 2026 | **320** | [Rapport S1](CyberAttackAfrica/2026/README_H1_FR.md) | [H1 report](CyberAttackAfrica/2026/README_H1.md) |
-
-> **Note de comptage :** ces valeurs suivent les couples mensuels actuellement présents dans le dépôt : S1 2024 = 46, S2 2024 = 79, S1 2025 = 115, S2 2025 = 119 et S1 2026 = 320. Les snapshots semestriels antérieurs peuvent différer après déduplication ; ils ne doivent pas être mélangés avec les corpus mensuels enrichis depuis.
-
----
-
-## Rapports CTI mensuels
-
-| Mois | FR | EN |
-| :--- | :--- | :--- |
-| Janvier 2026 | [Rapport](CyberAttackAfrica/2026/01-january/README_FR.md) | [Report](CyberAttackAfrica/2026/01-january/README.md) |
-| Février 2026 | [Rapport](CyberAttackAfrica/2026/02-february/README_FR.md) | [Report](CyberAttackAfrica/2026/02-february/README.md) |
-| Mars 2026 | [Rapport](CyberAttackAfrica/2026/03-march/README_FR.md) | [Report](CyberAttackAfrica/2026/03-march/README.md) |
-| Avril 2026 | [Rapport](CyberAttackAfrica/2026/04-april/README_FR.md) | [Report](CyberAttackAfrica/2026/04-april/README.md) |
-| Mai 2026 | [Rapport](CyberAttackAfrica/2026/05-may/README_FR.md) | [Report](CyberAttackAfrica/2026/05-may/README.md) |
-| Juin 2026 | [Rapport](CyberAttackAfrica/2026/06-june/README_FR.md) | [Report](CyberAttackAfrica/2026/06-june/README.md) |
-| Juillet 2026 | [Rapport](CyberAttackAfrica/2026/07-july/README_FR.md) | [Report](CyberAttackAfrica/2026/07-july/README.md) |
-| Août 2026 | [Rapport](CyberAttackAfrica/2026/08-august/README_FR.md) | [Report](CyberAttackAfrica/2026/08-august/README.md) |
-| Septembre 2026 | [Rapport](CyberAttackAfrica/2026/09-september/README_FR.md) | [Report](CyberAttackAfrica/2026/09-september/README.md) |
-| Octobre 2026 | [Rapport](CyberAttackAfrica/2026/10-october/README_FR.md) | [Report](CyberAttackAfrica/2026/10-october/README.md) |
-
----
-
-## Statistiques
-
-| Mois | FR | EN |
-| :--- | :--- | :--- |
-| Janvier 2026 | [Statistiques](statistics/2026/01-january/README_FR.md) | [Statistics](statistics/2026/01-january/README.md) |
-| Février 2026 | [Statistiques](statistics/2026/02-february/README_FR.md) | [Statistics](statistics/2026/02-february/README.md) |
-| Mars 2026 | [Statistiques](statistics/2026/03-march/README_FR.md) | [Statistics](statistics/2026/03-march/README.md) |
-| Avril 2026 | [Statistiques](statistics/2026/04-april/README_FR.md) | [Statistics](statistics/2026/04-april/README.md) |
-| Mai 2026 | [Statistiques](statistics/2026/05-may/README_FR.md) | [Statistics](statistics/2026/05-may/README.md) |
-| Juin 2026 | [Statistiques](statistics/2026/06-june/README_FR.md) | [Statistics](statistics/2026/06-june/README.md) |
-| Juillet 2026 | [Statistiques](statistics/2026/07-july/README_FR.md) | [Statistics](statistics/2026/07-july/README.md) |
-| Août 2026 | [Statistiques](statistics/2026/08-august/README_FR.md) | [Statistics](statistics/2026/08-august/README.md) |
-| Septembre 2026 | [Statistiques](statistics/2026/09-september/README_FR.md) | [Statistics](statistics/2026/09-september/README.md) |
-| Octobre 2026 | [Statistiques](statistics/2026/10-october/README_FR.md) | [Statistics](statistics/2026/10-october/README.md) |
-
----
-
-## Comparaisons mois par mois
-
-| Comparaison | FR | EN |
-| :--- | :--- | :--- |
-| Janvier vs Février 2026 | [FR](comparison/2026/01-january-february/README_FR.md) | [EN](comparison/2026/01-january-february/README.md) |
-| Février vs Mars 2026 | [FR](comparison/2026/02-february-march/README_FR.md) | [EN](comparison/2026/02-february-march/README.md) |
-| Mars vs Avril 2026 | [FR](comparison/2026/03-march-april/README_FR.md) | [EN](comparison/2026/03-march-april/README.md) |
-| Avril vs Mai 2026 | [FR](comparison/2026/04-april-may/README_FR.md) | [EN](comparison/2026/04-april-may/README.md) |
-| Mai vs Juin 2026 | [FR](comparison/2026/05-may-june/README_FR.md) | [EN](comparison/2026/05-may-june/README.md) |
-| Juin vs Juillet 2026 | [FR](comparison/2026/06-june-july/README_FR.md) | [EN](comparison/2026/06-june-july/README.md) |
-| Juillet vs Août 2026 | [FR](comparison/2026/07-july-august/README_FR.md) | [EN](comparison/2026/07-july-august/README.md) |
-| Août vs Septembre 2026 | [FR](comparison/2026/08-august-september/README_FR.md) | [EN](comparison/2026/08-august-september/README.md) |
-| Septembre vs Octobre 2026 | [FR](comparison/2026/09-september-october/README_FR.md) | [EN](comparison/2026/09-september-october/README.md) |
-
----
-
-## Visual intelligence
-
-| Période | Tableau / Visuel |
+| Ressource | Accès |
 | :--- | :--- |
-| Janvier 2026 | [Visual intelligence](visual-intelligence/01-january/README.md) |
-| Février 2026 | [Visual intelligence](visual-intelligence/02-february/README.md) |
-| Mars 2026 | [Visual intelligence](visual-intelligence/03-march/README.md) |
-| Avril 2026 | [Visual intelligence](visual-intelligence/04-april/README.md) |
-| Mai 2026 | [Visual intelligence](visual-intelligence/05-may/README.md) |
-| Juin 2026 | [Visual intelligence](visual-intelligence/06-june/README.md) |
-| Juillet 2026 | [Visuel LinkedIn](visual-intelligence/07-july/afrintel_july_2026_linkedin_top5.png) |
-| Août 2026 | [Visual intelligence](visual-intelligence/08-august/README_FR.md) |
-| Septembre 2026 | [Visual intelligence](visual-intelligence/09-september/README_FR.md) |
-| S1 2026 | [Visuel statistique](visual-intelligence/H1-2026/afrintel_h1_2026_statistics.png) |
-| Régions S1 2026 | [Graphique régional](visual-intelligence/H1-2026/regions_fr.png) |
-| Visualisations S1 2026 | [Jeu complet FR](visual-intelligence/H1-2026/README_FR.md) |
+| Rapports CTI annuels | [2024](CyberAttackAfrica/2024/README_FR.md) · [2025](CyberAttackAfrica/2025/README_FR.md) |
+| Rapports CTI mensuels | [Répertoire 2026](CyberAttackAfrica/2026/) |
+| Statistiques mensuelles | [Répertoire 2026](statistics/2026/) |
+| Comparaisons mensuelles | [Répertoire 2026](comparison/2026/) |
+| Intelligence visuelle | [Tableaux de bord et graphiques](visual-intelligence/) |
+| Exports STIX / OpenCTI | [Répertoire STIX](stix/) |
+| Génération et validation STIX | [Guide des scripts](scripts/README.md) |
 
----
+## Workflow et source de vérité
 
-## Datasets STIX / OpenCTI
+Pour chaque mois, `victims_FR.md` est d’abord édité, puis `victims.md` est synchronisé. Le couple bilingue est contrôlé avant la génération des statistiques, rapports, visualisations ou bundles STIX.
 
-| Dataset | Fichier |
-| :--- | :--- |
-| Janvier 2026 | [Bundle STIX](stix/2026/01-january/afrintel_january_2026_opencti.json) |
-| Février 2026 | [Bundle STIX](stix/2026/02-february/afrintel_february_2026_opencti.json) |
-| Mars 2026 | [Bundle STIX](stix/2026/03-march/afrintel_march_2026_opencti.json) |
-| Avril 2026 | [Bundle STIX](stix/2026/04-april/afrintel_april_2026_opencti.json) |
-| Mai 2026 | [Bundle STIX](stix/2026/05-may/afrintel_may_2026_opencti.json) |
-| Juin 2026 | [Bundle STIX](stix/2026/06-june/afrintel_june_2026_opencti.json) |
-| Juillet 2026 | [Bundle STIX](stix/2026/07-july/afrintel_july_2026_opencti.json) |
-| Août 2026 | [Bundle STIX](stix/2026/08-august/afrintel_august_2026_opencti.json) |
-| Septembre 2026 | [Bundle STIX](stix/2026/09-september/afrintel_september_2026_opencti.json) |
-| Octobre 2026 | [Bundle STIX](stix/2026/10-october/afrintel_october_2026_opencti.json) |
-| S1 2026 | [Bundle STIX](stix/2026/afrintel_h1_2026_opencti.json) |
+Le dépôt préserve :
 
-Chaque bundle mensuel STIX 2.1 contient des descriptions bilingues des incidents et victimes, le rapport CTI, les statistiques, les comparaisons mensuelles, les références de sources ainsi que les objets d'identité AFRINTEL et auteur. Les bundles S1 conservent les identifiants STIX mensuels d'origine afin qu'OpenCTI puisse corréler les enregistrements entre les différentes périodes. Lorsqu'un corpus mensuel ou semestriel est corrigé, le bundle STIX agrégé correspondant doit être régénéré avant d'être considéré comme un miroir exact de la source de vérité Markdown. Le contexte MITRE ATT&CK reste documenté dans les descriptions des rapports.
-
----
-
-## Principes de qualité des données
-
-AFRINTEL sépare **type d'incident**, **statut**, **niveau de confiance** et **impact**. Une publication ransomware sur un leak site reste une revendication tant qu'aucun élément plus solide n'est disponible. Les échantillons publiés, confirmations des victimes, confirmations gouvernementales et corroborations ultérieures sont conservés comme des états de preuve différents.
-
-Les republications historiques sont datées séparément de la fuite revendiquée sous-jacente lorsque cette distinction est connue. Les fiches multi-pays comptent une seule fois dans les totaux dédupliqués, mais peuvent produire plusieurs occurrences géographiques. AFRINTEL utilise neuf types d'incident canoniques : Ransomware, Data Leak, Access Sale, DDoS, Defacement, Account Takeover, System Intrusion, Malware et Operational Fraud. Les cas ne pouvant pas encore être classés avec un niveau de preuve suffisant restent en investigation plutôt que d'être forcés dans une catégorie.
-
----
+- la séparation entre faits observés, hypothèses et inconnues ;
+- les statuts de revendication, échantillon publié, divulgation complète et confirmation ;
+- la parité FR/EN pour les dates, victimes, pays, acteurs, types et chiffres ;
+- le comptage dédoublonné des incidents multi-pays ;
+- une publication agrégée sans données personnelles brutes, secrets ni instructions d’accès illicite.
 
 ## Structure du projet
 
 ```text
 AFRINTEL/
-├── CyberAttackAfrica/   # Listes mensuelles de victimes et rapports CTI (2024-2026)
-├── statistics/          # Statistiques mensuelles
-├── comparison/          # Comparaisons mois par mois
-├── visual-intelligence/ # Cartes et diagrammes CTI
+├── CyberAttackAfrica/   # Fiches victimes et rapports CTI mensuels
+├── statistics/          # Statistiques pays, secteur, acteur et type
+├── comparison/          # Comparaisons mensuelles
+├── visual-intelligence/ # Cartes, tableaux de bord et graphiques
 ├── stix/                # Bundles STIX 2.1 / OpenCTI
-├── scripts/             # Scripts de validation et utilitaires
-└── workflows/           # Workflows d'automatisation
+├── scripts/             # Outils de génération et de validation
+└── workflows/           # Workflows d’automatisation
 ```
 
----
+## Auteur et licence
 
-## ✍🏿 Auteur
+**Adama ASSIONGBON** — Consultant SOC & Cyber Threat Intelligence
 
-**Adama ASSIONGBON** - Consultant SOC & Cyber Threat Intelligence
-
-🔗 [LinkedIn](https://www.linkedin.com/in/adama-assiongbon-9029893a/) | 📄 [Licence MIT](LICENSE)
+[LinkedIn](https://www.linkedin.com/in/adama-assiongbon-9029893a/) · [Licence MIT](LICENSE)
