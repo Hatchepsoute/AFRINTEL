@@ -1,15 +1,15 @@
 # Statistiques mensuelles AFRINTEL - mars 2026
 
-Ce corpus validé contient **41 incidents ou cas documentés** publiés pour la première fois ou observés pour la première fois par AFRINTEL en mars 2026. Le rattachement mensuel suit la date de publication ou de première observation documentée ; aucune date de compromission n est déduite lorsqu elle est indisponible.
+Ce corpus validé contient **45 incidents ou cas documentés** publiés pour la première fois ou observés pour la première fois par AFRINTEL en mars 2026. Le rattachement mensuel suit la date de publication ou de première observation documentée ; aucune date de compromission n est déduite lorsqu elle est indisponible.
 
 ## Ventilation mensuelle validée
 
 | Type d incident | Nombre | Part |
 |---|---:|---:|
-| Fuite de données | 21 | 51.2% |
-| Ransomware | 19 | 45.2% |
+| Fuite de données | 24 | 53.3% |
+| Ransomware | 19 | 42.2% |
 | Fraude opérationnelle | 1 | 2.4% |
-| **Total** | **41** | **100.0%** |
+| **Total** | **45** | **100.0%** |
 
 ## Pays les plus représentés
 

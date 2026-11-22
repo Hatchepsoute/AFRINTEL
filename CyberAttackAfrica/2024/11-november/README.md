@@ -165,7 +165,7 @@ timeline
     2 Novembre 2024 : Sumitomo Rubber South Africa
 - **Acteur / Groupe -** killsec
 - **Secteur -** Manufacturing / Industry
-- **Site web -** [srigroup.co.za](https -//www.srigroup.co.za)
+- **Site web -** [srigroup.co.za](https://www.srigroup.co.za)
 - **Statut -** Claim - Data Sample Published
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Very High
@@ -180,7 +180,7 @@ timeline
     4 Novembre 2024 : College of Business Education (CBE)
 - **Acteur / Groupe -** hellcat
 - **Secteur -** Education / University
-- **Site web -** [cbe.ac.tz](https -//www.cbe.ac.tz)
+- **Site web -** [cbe.ac.tz](https://www.cbe.ac.tz)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -191,7 +191,7 @@ timeline
     4 Novembre 2024 : Kenana Sugar Company
 - **Acteur / Groupe -** ransomhub
 - **Secteur -** Agriculture / Agribusiness
-- **Site web -** [kenanasugarcompany.com](https -//www.kenanasugarcompany.com)
+- **Site web -** [kenanasugarcompany.com](https://www.kenanasugarcompany.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -202,7 +202,7 @@ timeline
     14 Novembre 2024 : Environmental Design International
 - **Acteur / Groupe -** akira
 - **Secteur -** Professional / Business Services
-- **Site web -** [environmentaldesigninternational.com](http -//environmentaldesigninternational.com)
+- **Site web -** [environmentaldesigninternational.com](http://environmentaldesigninternational.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -213,7 +213,7 @@ timeline
     17 Novembre 2024 : Egyptian Tax Authority (ETA)
 - **Acteur / Groupe -** moneymessage
 - **Secteur -** Government / Administration
-- **Site web -** [eta.gov.eg](https -//www.eta.gov.eg)
+- **Site web -** [eta.gov.eg](https://www.eta.gov.eg)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -227,7 +227,7 @@ timeline
 - **Date de correction AFRINTEL -** 23 août 2026
 - **Acteur / Groupe -** Unknown
 - **Secteur -** Government / Administration
-- **Site web -** [sabs.co.za](https -//www.sabs.co.za/)
+- **Site web -** [sabs.co.za](https://www.sabs.co.za/)
 - **Statut -** Government Confirmed
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Very High
@@ -236,13 +236,13 @@ timeline
 - **Description victime -** Le SABS est l'organisme national sud-africain de normalisation, chargé notamment du développement des normes, des essais, de la certification et de services associés.
 - **Analyse -** Des documents officiels sud-africains et parlementaires confirment que le SABS a subi en novembre 2024 une attaque ransomware ayant chiffré ses systèmes d'information et provoqué d'importantes perturbations opérationnelles. L'environnement chiffré a empêché l'accès aux données nécessaires aux travaux d'audit, retardé le reporting financier et nécessité une reconstruction importante des machines virtuelles et applications. Des éléments d'audit ultérieurs décrivent un arrêt complet des applications métier et une reprise prolongée. L'attaquant n'est pas identifié dans les sources officielles examinées. Aucun montant de perte financière, nombre d'enregistrements touchés ou volume confirmé de données exfiltrées n'est établi dans le matériel examiné.
 - **Qualification de la preuve -** Le chiffrement et la perturbation opérationnelle sont confirmés par des sources gouvernementales. L'identité de l'attaquant, le vecteur d'accès initial et une éventuelle exfiltration de données restent non établis.
-- **Sources publiques -** [the dtic / présentation SABS](https -//www.thedtic.gov.za/wp-content/uploads/Revised-SABS-Allegations-against-the-SABS.pdf) | [Lettre parlementaire](https -//www.parliament.gov.za/storage/app/media/Docs/atc/01ls62wgbe2fcfr3dgmfh2s7hbu5b7hej4.pdf)
+- **Sources publiques -** [the dtic / présentation SABS](https://www.thedtic.gov.za/wp-content/uploads/Revised-SABS-Allegations-against-the-SABS.pdf) | [Lettre parlementaire](https://www.parliament.gov.za/storage/app/media/Docs/atc/01ls62wgbe2fcfr3dgmfh2s7hbu5b7hej4.pdf)
 
 ----------------------------
     24 Novembre 2024 : EFI Sales
 - **Acteur / Groupe -** killsec
 - **Secteur -** Manufacturing / Industry
-- **Site web -** [efisales.co.ke](https -//www.efisales.co.ke)
+- **Site web -** [efisales.co.ke](https://www.efisales.co.ke)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -253,7 +253,7 @@ timeline
     27 Novembre 2024 : Habesha Cement
 - **Acteur / Groupe -** lockbit3
 - **Secteur -** Manufacturing / Industry
-- **Site web -** [habeshacement.com](https -//www.habeshacement.com)
+- **Site web -** [habeshacement.com](https://www.habeshacement.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -264,7 +264,7 @@ timeline
     27 Novembre 2024 : Contrack Facilities Management
 - **Acteur / Groupe -** raworld
 - **Secteur -** Professional / Business Services
-- **Site web -** [contrackfm.com](https -//www.contrackfm.com)
+- **Site web -** [contrackfm.com](https://www.contrackfm.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -299,7 +299,7 @@ timeline
     28 Novembre 2024 : Briatek
 - **Acteur / Groupe -** killsec
 - **Secteur -** Technology / IT
-- **Site web -** [briatek.com.ng](https -//www.briatek.com.ng)
+- **Site web -** [briatek.com.ng](https://www.briatek.com.ng)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -310,7 +310,7 @@ timeline
     28 Novembre 2024 : Chanas Assurances S.A.
 - **Acteur / Groupe -** fog
 - **Secteur -** Finance / Banking
-- **Site web -** [chanasassurances.com](https -//www.chanasassurances.com)
+- **Site web -** [chanasassurances.com](https://www.chanasassurances.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -321,7 +321,7 @@ timeline
     29 Novembre 2024 : Namforce Life Insurance
 - **Acteur / Groupe -** spacebears
 - **Secteur -** Finance / Banking
-- **Site web -** [namforce.com.na](https -//www.namforce.com.na)
+- **Site web -** [namforce.com.na](https://www.namforce.com.na)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -332,7 +332,7 @@ timeline
     29 Novembre 2024 : PPOTTS
 - **Acteur / Groupe -** ransomhub
 - **Secteur -** Technology / IT
-- **Site web -** [ppotts.com](https -//www.ppotts.com)
+- **Site web -** [ppotts.com](https://www.ppotts.com)
 - **Statut -** Claim - Data Sample Published
 - **Niveau de confiance -** Medium
 - **Niveau d'impact -** Level 3

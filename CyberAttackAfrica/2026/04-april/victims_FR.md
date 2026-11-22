@@ -1,7 +1,7 @@
 [![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-blue)](https://github.com/Hatchepsoute/AFRINTEL)
 ![Périmètre](https://img.shields.io/badge/Périmètre-Afrique-orange)
 ![Période](https://img.shields.io/badge/Période-Avril%202026-lightgrey)
-![Victimes](https://img.shields.io/badge/Victimes-64%20canoniques%20%2B%201%20suivi-critical)
+![Victimes](https://img.shields.io/badge/Victimes-65-critical)
 ![Ransomware](https://img.shields.io/badge/Ransomware-21-red)
 ![Fuites](https://img.shields.io/badge/Fuites-32-orange)
 ![Ventes%20d'accès](https://img.shields.io/badge/Ventes%20d'accès-2-yellow)
@@ -13,8 +13,8 @@
 
 ## Récapitulatif
 - **Fiches documentées :** 65
-- **Total victimes canoniques :** 64
-- **Note :** Bank of Kigali est documentée comme fraude client confirmée, mais reste exclue du dénominateur canonique des compromissions et intrusions.
+- **Total victimes canoniques :** 65
+- **Note :** Bank of Kigali est incluse comme fraude client confirmée (`Operational Fraud`) ; elle n'est pas classée comme intrusion bancaire interne ni comme fuite de données.
 - **Ransomware :** 21
 - **Fuites de données :** 32
 - **Ventes d'accès :** 2
@@ -82,7 +82,7 @@
 
 - **Périmètre et limites :** Analyse fondée sur les communications publiques rapportées par Taarifa et The New Times ; aucun domaine de phishing, numéro, journal ou donnée client n'a été fourni ou examiné. L'événement ne doit pas être présenté comme une fuite de données ou une compromission de l'infrastructure bancaire.
 - **Recommandations SOC/CTI :** Collecter et bloquer les domaines, URL et numéros utilisés ; rechercher les authentifications inhabituelles et prises de contrôle de comptes ; corréler les connexions suspectes avec les transactions frauduleuses ; réinitialiser les accès des clients potentiellement compromis ; renforcer les communications antifraude sur les canaux officiels ; surveiller les campagnes usurpant l'identité de Bank of Kigali.
-- **Décision de comptage :** Incident conservé dans le référentiel d'avril comme fraude client confirmée, mais maintenu hors du dénominateur canonique des compromissions et intrusions. Il ne constitue pas une fuite de données ni une intrusion bancaire confirmée, et ne constitue pas un nouvel incident d'octobre.
+- **Décision de comptage :** Incident conservé dans le référentiel d'avril et compté une fois comme `Operational Fraud`. Il ne constitue pas une fuite de données ni une intrusion bancaire confirmée, et ne constitue pas un nouvel incident d'octobre.
 - **Source / élément observé :** [Taarifa Rwanda, 6 avril 2026](https://taarifa.rw/2026/04/06/rib-arrests-five-suspects-in-bk-mobile-banking-scam-as-losses-remain-limited/) ; [The New Times, 2 avril 2026](https://www.newtimes.co.rw/article/34584/news/finance/banks-raise-alarm-over-surge-in-phishing-attempts/amp).
 
 #### 🇪🇹 Éthiopie - National Oil Ethiopia PLC (NOC) [Fuite de données]

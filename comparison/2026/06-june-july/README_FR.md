@@ -2,14 +2,14 @@
 
 ## Périmètre comparable
 
-Cette comparaison utilise les fichiers victimes bilingues validés : **41 fiches en juin** et **47 fiches en juillet**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
+Cette comparaison utilise les fichiers victimes bilingues validés : **47 fiches en juin** et **34 fiches en juillet**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
 
 | Indicateur | Juin | Juillet | Évolution |
 |---|---:|---:|---:|
-| Total incidents | **41** | **47** | **+6 (+14.6%)** |
+| Total incidents | **47** | **34** | **-13 (-27.7%)** |
 | Ransomware | 20 | 18 | -2 |
-| Fuite de données | 18 | 21 | +3 |
-| Vente d'accès | 2 | 6 | +4 |
+| Fuite de données | 22 | 11 | -11 |
+| Vente d'accès | 4 | 3 | -1 |
 | Défacement | 0 | 2 | +2 |
 | Intrusion système | 1 | 0 | -1 |
 
@@ -18,7 +18,7 @@ xychart-beta
     title "Fiches mensuelles : juin vs juillet 2026"
     x-axis [Juin, Juillet]
     y-axis "Records" 0 --> 52
-    bar [41, 47]
+    bar [47, 34]
 ```
 
 ## Countries represented

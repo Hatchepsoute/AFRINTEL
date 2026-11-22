@@ -174,7 +174,7 @@ timeline
     3 Décembre 2024 : DAL Group
 - **Acteur / Groupe -** ransomhub
 - **Secteur -** Agriculture / Agribusiness
-- **Site web -** [dalgroup.com](https -//www.dalgroup.com)
+- **Site web -** [dalgroup.com](https://www.dalgroup.com)
 - **Statut -** Claim - Data Sample Published
 - **Niveau de confiance -** Medium
 - **Niveau d'impact -** Level 4
@@ -186,7 +186,7 @@ timeline
     9 Décembre 2024 : Bankily
 - **Acteur / Groupe -** apt73/bashe
 - **Secteur -** Finance / Banking
-- **Site web -** [bankily.mr](https -//www.bankily.mr)
+- **Site web -** [bankily.mr](https://www.bankily.mr)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -197,7 +197,7 @@ timeline
     10 Décembre 2024 : Telecom Namibia
 - **Acteur / Groupe -** hunters
 - **Secteur -** Telecommunications
-- **Site web -** [telecom.na](https -//www.telecom.na)
+- **Site web -** [telecom.na](https://www.telecom.na)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -208,7 +208,7 @@ timeline
     13 Décembre 2024 : Kazyon
 - **Acteur / Groupe -** moneymessage
 - **Secteur -** Retail / E-commerce
-- **Site web -** [kazyon.com](https -//www.kazyon.com)
+- **Site web -** [kazyon.com](https://www.kazyon.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -219,7 +219,7 @@ timeline
     15 Décembre 2024 : Tumeny Payments Limited
 - **Acteur / Groupe -** killsec
 - **Secteur -** Finance / Banking
-- **Site web -** [tumenypay.com](https -//www.tumenypay.com)
+- **Site web -** [tumenypay.com](https://www.tumenypay.com)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -230,7 +230,7 @@ timeline
     16 Décembre 2024 : Gouvernement de l'État d'Ekiti
 - **Acteur / Groupe -** FunkSec
 - **Secteur -** Government / Administration
-- **Site web -** [ekitistate.gov.ng](https -//ekitistate.gov.ng)
+- **Site web -** [ekitistate.gov.ng](https://ekitistate.gov.ng)
 - **Statut -** Claim - Data Sample Published
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Very High
@@ -247,7 +247,7 @@ timeline
 - **Date de correction AFRINTEL -** 23 août 2026
 - **Acteur / Groupe -** Unknown
 - **Secteur -** Government / Administration
-- **Site web -** [nigerianstat.gov.ng](https -//www.nigerianstat.gov.ng/)
+- **Site web -** [nigerianstat.gov.ng](https://www.nigerianstat.gov.ng/)
 - **Statut -** Victim Confirmed
 - **Type d'incident -** Defacement
 - **Niveau de confiance -** Very High
@@ -261,7 +261,7 @@ timeline
     20 Décembre 2024 : Water Utilities Corporation (WUC)
 - **Acteur / Groupe -** killsec
 - **Secteur -** Water / Utilities
-- **Site web -** [wuc.bw](https -//www.wuc.bw)
+- **Site web -** [wuc.bw](https://www.wuc.bw)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -272,7 +272,7 @@ timeline
     21 Décembre 2024 : Groupe SETCAR
 - **Acteur / Groupe -** ransomhub
 - **Secteur -** Manufacturing / Industry
-- **Site web -** [groupe-setcar.com.tn](https -//www.groupe-setcar.com.tn)
+- **Site web -** [groupe-setcar.com.tn](https://www.groupe-setcar.com.tn)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -287,19 +287,19 @@ timeline
 - **Précision chronologique -** Le 23 décembre correspond à la première observation rapportée ; la date d'obtention de l'accès n'est pas établie publiquement.
 - **Acteur / Groupe -** FunkSec
 - **Secteur -** Aviation
-- **Site web -** [egyptair.com](https -//www.egyptair.com/)
+- **Site web -** [egyptair.com](https://www.egyptair.com/)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Access Sale
 - **Niveau de confiance -** Medium
 - **Niveau d'impact -** Level 4
 - **Analyse -** FunkSec a listé EgyptAir fin décembre 2024 avec une offre de vente d'accès. Plusieurs trackers documentent la revendication, mais aucune confirmation publique de la victime n'a été identifiée dans l'audit. Le périmètre, la validité de l'accès, sa persistance, une exploitation ultérieure et une éventuelle exfiltration restent non confirmés. AFRINTEL retient `Access Sale` et ne convertit pas la revendication en ransomware ou Data Leak.
-- **Sources publiques -** [Digital Checkmark](https -//digitalchk.com/ransomware-group/funksec/) | [BreachSense](https -//www.breachsense.com/breaches/2024/december/) | [Phillips Consulting](https -//phillipsconsulting.net/articles_post/flying-high-staying-secure-navigating-the-top-two-cybersecurity-challenges-in-aviation/)
+- **Sources publiques -** [Digital Checkmark](https://digitalchk.com/ransomware-group/funksec/) | [BreachSense](https://www.breachsense.com/breaches/2024/december/) | [Phillips Consulting](https://phillipsconsulting.net/articles_post/flying-high-staying-secure-navigating-the-top-two-cybersecurity-challenges-in-aviation/)
 
 ----------------------------
     24 Décembre 2024 : Baker Tilly Morrison Murray
 - **Acteur / Groupe -** sarcoma
 - **Secteur -** Professional / Business Services
-- **Site web -** [bakertillymm.co.za](https -//www.bakertillymm.co.za)
+- **Site web -** [bakertillymm.co.za](https://www.bakertillymm.co.za)
 - **Statut -** Claim - Data Sample Published
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Medium
@@ -311,7 +311,7 @@ timeline
     24 Décembre 2024 : ASJP (Algerian Scientific Journal Platform)
 - **Acteur / Groupe -** FunkSec
 - **Secteur -** Education / University
-- **Site web -** [asjp.cerist.dz](https -//asjp.cerist.dz)
+- **Site web -** [asjp.cerist.dz](https://asjp.cerist.dz)
 - **Statut -** Claim - Data Sample Published
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Very High
@@ -325,7 +325,7 @@ timeline
     28 Décembre 2024 : Cell C
 - **Acteur / Groupe -** ransomhouse
 - **Secteur -** Telecommunications
-- **Site web -** [cellc.co.za](https -//www.cellc.co.za)
+- **Site web -** [cellc.co.za](https://www.cellc.co.za)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -336,7 +336,7 @@ timeline
     29 Décembre 2024 : WOSAC
 - **Acteur / Groupe -** arcusmedia
 - **Secteur -** Transport / Logistics
-- **Site web -** [wosac.co.tz](https -//www.wosac.co.tz)
+- **Site web -** [wosac.co.tz](https://www.wosac.co.tz)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Ransomware
 - **Niveau de confiance -** Low
@@ -350,7 +350,7 @@ timeline
 - **Date de correction AFRINTEL -** 23 août 2026
 - **Acteur / Groupe -** Unknown
 - **Secteur -** Government / Administration
-- **Site web -** [msea.go.ke](https -//msea.go.ke/)
+- **Site web -** [msea.go.ke](https://msea.go.ke/)
 - **Statut -** Corroborated - No Direct Victim Confirmation Located
 - **Type d'incident -** Data Leak
 - **Niveau de confiance -** High
@@ -366,7 +366,7 @@ timeline
 - **Date de publication initiale observée -** 30 décembre 2024 à 20 -03 - selon la capture conservée
 - **Acteur / Groupe -** Satanic
 - **Secteur -** Healthcare / Medical
-- **Site web -** [misrpharmacies.com](https -//misrpharmacies.com/)
+- **Site web -** [misrpharmacies.com](https://misrpharmacies.com/)
 - **Statut -** Claim - Unverified
 - **Type d'incident -** Data Leak
 - **Niveau de confiance -** Medium

@@ -1,15 +1,15 @@
 # AFRINTEL monthly statistics - March 2026
 
-This validated corpus contains **41 incidents or documented cases** first published or first observed by AFRINTEL in March 2026. The month assignment follows the publication or first documented observation date; a compromise date is not inferred when it is unavailable.
+This validated corpus contains **45 incidents or documented cases** first published or first observed by AFRINTEL in March 2026. The month assignment follows the publication or first documented observation date; a compromise date is not inferred when it is unavailable.
 
 ## Validated monthly breakdown
 
 | Incident type | Count | Share |
 |---|---:|---:|
-| Data Leak | 21 | 51.2% |
-| Ransomware | 19 | 45.2% |
-| Operational Fraud | 1 | 2.4% |
-| **Total** | **41** | **100.0%** |
+| Data Leak | 24 | 53.3% |
+| Ransomware | 19 | 42.2% |
+| Operational Fraud | 1 | 2.2% |
+| **Total** | **45** | **100.0%** |
 
 ## Countries most represented
 

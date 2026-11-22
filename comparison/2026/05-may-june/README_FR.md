@@ -2,14 +2,14 @@
 
 ## Périmètre comparable
 
-Cette comparaison utilise les fichiers victimes bilingues validés : **106 fiches en mai** et **41 fiches en juin**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
+Cette comparaison utilise les fichiers victimes bilingues validés : **107 fiches en mai** et **47 fiches en juin**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
 
 | Indicateur | Mai | Juin | Évolution |
 |---|---:|---:|---:|
-| Total incidents | **106** | **41** | **-65 (-61.3%)** |
+| Total incidents | **107** | **47** | **-60 (-56.1%)** |
 | Ransomware | 17 | 20 | +3 |
-| Fuite de données | 44 | 18 | -26 |
-| Vente d'accès | 1 | 2 | +1 |
+| Fuite de données | 45 | 22 | -23 |
+| Vente d'accès | 1 | 4 | +3 |
 | DDoS | 43 | 0 | -43 |
 | Intrusion système | 1 | 1 | 0 |
 
@@ -18,7 +18,7 @@ xychart-beta
     title "Fiches mensuelles : mai vs juin 2026"
     x-axis [Mai, Juin]
     y-axis "Records" 0 --> 111
-    bar [106, 41]
+    bar [107, 47]
 ```
 
 ## Countries represented
@@ -50,4 +50,4 @@ xychart-beta
 
 ## CTI reading
 
-Le corpus évolue de 106 à 41 fiches. Il s agit d une évolution de la visibilité et de la composition documentées par AFRINTEL ; elle ne constitue pas, à elle seule, une preuve d une évolution du nombre réel de compromissions.
+Le corpus évolue de 107 à 47 fiches. Il s agit d une évolution de la visibilité et de la composition documentées par AFRINTEL ; elle ne constitue pas, à elle seule, une preuve d une évolution du nombre réel de compromissions.

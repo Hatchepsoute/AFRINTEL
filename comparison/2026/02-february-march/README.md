@@ -2,13 +2,13 @@
 
 ## Comparable scope
 
-This comparison uses the validated bilingual victim files: **21 records in February** and **41 records in March**. Each record is counted once in its publication or first documented observation month. Earlier or later discovery does not move a record between months.
+This comparison uses the validated bilingual victim files: **27 records in February** and **45 records in March**. Each record is counted once in its publication or first documented observation month. Earlier or later discovery does not move a record between months.
 
 | Indicator | February | March | Change |
 |---|---:|---:|---:|
-| Total incidents | **21** | **41** | **+20 (+95.2%)** |
+| Total incidents | **27** | **45** | **+18 (+66.7%)** |
 | Ransomware | 20 | 19 | -1 |
-| Data Leak | 1 | 21 | +20 |
+| Data Leak | 7 | 24 | +20 |
 | Operational Fraud | 0 | 1 | +1 |
 
 ```mermaid
@@ -16,7 +16,7 @@ xychart-beta
     title "Monthly records: February vs March 2026"
     x-axis [February, March]
     y-axis "Records" 0 --> 47
-    bar [21, 41]
+    bar [27, 45]
 ```
 
 ## Countries represented
@@ -44,4 +44,4 @@ xychart-beta
 
 ## CTI reading
 
-The corpus changes from 21 to 41 records. This is a change in AFRINTEL documented visibility and composition; it is not, by itself, evidence of a change in the underlying number of compromises.
+The corpus changes from 27 to 45 records. This is a change in AFRINTEL documented visibility and composition; it is not, by itself, evidence of a change in the underlying number of compromises.

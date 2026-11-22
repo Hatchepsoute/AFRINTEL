@@ -1648,7 +1648,7 @@
   Une publication attribuée au compte BabayoSysteam, datée du 30 juillet 2025, met à disposition une base de données PesaBay présentée comme complète et contenant 1 850 enregistrements. Les champs publiés comprennent le prénom, le nom, l'adresse e-mail, le numéro de téléphone et le statut du compte. La présence de nombreux numéros utilisant l'indicatif burundais `+257`, combinée à l'identité visuelle de PesaBay et à la structure cohérente des enregistrements, étaye avec une confiance moyenne l'attribution du jeu de données à la plateforme. AFRINTEL classe donc le cas `Data Fully Published`. Cette qualification décrit la publication du jeu annoncé comme complet ; elle ne confirme pas indépendamment la méthode d'acquisition, l'intrusion initiale, l'unicité des lignes ni la couverture de l'ensemble de la base de production de PesaBay. Les données de contact publiées présentent un risque de phishing ciblé, de fraude, de spam et d'usurpation d'identité numérique, correspondant à un impact de niveau 2. Aucun nom, e-mail, numéro de téléphone ni autre donnée personnelle brute n'est reproduit.
 
 ---
-[Rapport de Juillet 2025](./report/README_FR.md)
+[Rapport de Juillet 2025](./07-july/README_FR.md)
 ---
 
 ### 31 Juillet 2025
@@ -1831,7 +1831,7 @@
 - **Description victime:** Portail officiel et infrastructures numériques de la République Togolaise, hébergeant les services administratifs et les données étatiques.
 - **Analyse:** Des éléments corroborent la revendication de l'acteur, incluant le post DarkForums lui-même ainsi que plusieurs éléments montrant un accès administratif actif à plusieurs plateformes numériques gouvernementales togolaises : le système de gestion de l'état civil et de l'identité DSNIC (justice.xflow.gouv.tg), une plateforme de partage de fichiers et de collaboration de type Nextcloud (cloud.numerique.gouv.tg) avec des dossiers partagés et des fichiers de configuration, une instance de collecte de données KoboToolbox (kf.form.gouv.tg) hébergeant plusieurs dizaines d'enquêtes et formulaires gouvernementaux actifs, ainsi qu'un système de reporting statistique de l'éducation (stateduc.planifeducation.gouv.tg). Les éléments montrent un accès administratif réel à des tableaux de bord actifs, et non un simple échantillon public, ce qui est cohérent avec la description de l'offre par l'acteur comme une vulnérabilité 0day donnant un accès privilégié. Cette étendue d'accès à des systèmes et sous-domaines distincts sous le domaine gouv.tg justifie un niveau de confiance élevé quant à une compromission active et non corrigée affectant plusieurs services numériques gouvernementaux, indépendamment du prix en Monero avancé par l'acteur, qu'AFRINTEL ne peut vérifier. AFRINTEL ne reproduit aucun identifiant, valeur de configuration, donnée citoyenne ni détail de session issu des éléments examinés.
 ---
-[Rapport d'Août 2025](./report/README_FR.md)
+[Rapport d'Août 2025](./08-august/README_FR.md)
 ---
 
 ### 27 Août 2025

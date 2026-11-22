@@ -2,13 +2,13 @@
 
 ## Périmètre comparable
 
-Cette comparaison utilise les fichiers victimes bilingues validés : **21 fiches en février** et **41 fiches en mars**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
+Cette comparaison utilise les fichiers victimes bilingues validés : **27 fiches en février** et **45 fiches en mars**. Chaque fiche est comptée une fois dans son mois de publication ou de première observation documentée. Une découverte tardive ne déplace pas la fiche entre les mois.
 
 | Indicateur | Février | Mars | Évolution |
 |---|---:|---:|---:|
-| Total incidents | **21** | **41** | **+20 (+95.2%)** |
+| Total incidents | **27** | **45** | **+18 (+66.7%)** |
 | Ransomware | 20 | 19 | -1 |
-| Fuite de données | 1 | 21 | +20 |
+| Fuite de données | 7 | 24 | +20 |
 | Fraude opérationnelle | 0 | 1 | +1 |
 
 ```mermaid
@@ -16,7 +16,7 @@ xychart-beta
     title "Fiches mensuelles : février vs mars 2026"
     x-axis [Février, Mars]
     y-axis "Records" 0 --> 47
-    bar [21, 41]
+    bar [27, 45]
 ```
 
 ## Countries represented
@@ -44,4 +44,4 @@ xychart-beta
 
 ## CTI reading
 
-Le corpus évolue de 21 à 41 fiches. Il s agit d une évolution de la visibilité et de la composition documentées par AFRINTEL ; elle ne constitue pas, à elle seule, une preuve d une évolution du nombre réel de compromissions.
+Le corpus évolue de 27 à 45 fiches. Il s agit d une évolution de la visibilité et de la composition documentées par AFRINTEL ; elle ne constitue pas, à elle seule, une preuve d une évolution du nombre réel de compromissions.

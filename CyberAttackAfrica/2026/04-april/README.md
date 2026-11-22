@@ -1,4 +1,4 @@
-[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-2176D2)](https://github.com/Hatchepsoute/AFRINTEL) ![Period](https://img.shields.io/badge/Period-April%202026-334155) ![Disclosure](https://img.shields.io/badge/TLP-CLEAR-16A34A) ![Scope](https://img.shields.io/badge/Scope-54%20African%20countries-CA8A04) ![Records](https://img.shields.io/badge/Corpus-64%20canonical%20%2B%201%20tracked-7C3AED)
+[![AFRINTEL](https://img.shields.io/badge/AFRINTEL-Cyber%20Threat%20Intelligence-2176D2)](https://github.com/Hatchepsoute/AFRINTEL) ![Period](https://img.shields.io/badge/Period-April%202026-334155) ![Disclosure](https://img.shields.io/badge/TLP-CLEAR-16A34A) ![Scope](https://img.shields.io/badge/Scope-54%20African%20countries-CA8A04) ![Records](https://img.shields.io/badge/Corpus-65%20victim%20records-7C3AED)
 
 # AFRINTEL | Monthly Cyber Threat Intelligence Report
 ## Cyber threats affecting African organisations - April 2026
@@ -14,9 +14,9 @@
 
 ## 1. Executive summary
 
-**April 2026 shows continued dominance of data-disclosure reporting within AFRINTEL and substantial concentration of claims concerning public administration, industry and education.** A direct audit of the French and English victim files finds **65 documentary records**, of which **64 are included in the canonical reporting population**. **Bank of Kigali** remains a separately tracked confirmed customer-facing fraud and is excluded from the canonical compromise/intrusion denominator under the counting rule stated in its source record.
+**April 2026 shows continued dominance of data-disclosure reporting within AFRINTEL and substantial concentration of claims concerning public administration, industry and education.** A direct audit of the French and English victim files finds **65 victim records**, and all 65 are included in the monthly total. **Bank of Kigali** is classified as `Operational Fraud` and remains part of the victim count.
 
-The **64 canonical observations** comprise **32 data leaks (50.0%)**, **21 ransomware-classified records (32.8%)**, **nine DDoS claims (14.1%)** and **two access-sale listings (3.1%)**. The geographic view covers **15 directly named countries** plus **one cross-border record** relating to Angola, South Africa and Nigeria, counted once. **Egypt (19)**, **Morocco (15)** and **South Africa (6)** account for **40 observations (62.5%)**. This reflects the visibility of collection rather than a reliable ranking of national attack likelihood.
+The **65 victim records** comprise **32 data leaks (49.2%)**, **21 ransomware-classified records (32.3%)**, **nine DDoS claims (13.8%)**, **two access-sale listings (3.1%)** and **one operational-fraud record (1.5%)**. The geographic view covers **16 directly named countries** plus **one cross-border record** relating to Angola, South Africa and Nigeria, counted once. **Egypt (19)**, **Morocco (15)** and **South Africa (6)** account for **40 observations (61.5%)**. This reflects the visibility of collection rather than a reliable ranking of national attack likelihood.
 
 The most distinctive change from March is **nine DDoS claims associated with Keymous+**, concentrated on 11-12 April and including Egyptian government services. Screenshots and availability checks supplied by the account are not technical confirmation of the method, duration or success of a distributed denial-of-service attack. They nevertheless provide reasonable triggers for monitoring service availability and validating DDoS mitigation readiness.
 
@@ -26,11 +26,11 @@ Four cases warrant immediate executive attention. **Ahmed Al-Kadi Private Hospit
 
 ### 1.1 Month-over-month comparison
 
-> Based on **45 documented March records** and **64 canonical April observations**. Growth in recorded publications does not by itself prove growth in actual intrusions. Publication, incident and discovery dates do not always match.
+> Based on **45 documented March records** and **65 April victim records**. Growth in recorded publications does not by itself prove growth in actual intrusions. Publication, incident and discovery dates do not always match.
 
 | Indicator | March 2026 | April 2026 | Observed change |
 |---|---:|---:|---:|
-| **Total incidents / observations** | **45** | **64** | **+19 (+42.2%)** |
+| **Total incidents / observations** | **45** | **65** | **+20 (+44.4%)** |
 | Ransomware | 19 | 21 | +2 (+10.5%) |
 | Data Leak | 24 | 32 | +8 (+33.3%) |
 | Access Sale | 1 | 2 | +1 (+100.0%) |
@@ -39,7 +39,7 @@ Four cases warrant immediate executive attention. **Ahmed Al-Kadi Private Hospit
 | Account Takeover | 0 | 0 | 0 (stable) |
 | System Intrusion | 0 | 0 | 0 (stable) |
 | Malware | 0 | 0 | 0 (stable) |
-| Operational Fraud | 1 | 0 | −1 (−100.0%) |
+| Operational Fraud | 1 | 1 | 0 (stable) |
 
 ![March vs April documentary comparison](assets/comparaison_EN.png)
 
@@ -58,7 +58,7 @@ AFRINTEL monitors cyber-threat reporting across 54 African countries. The datase
 | **Victim-confirmed incident** | The scope recognised by the victim is established; additional actor claims remain distinct. |
 | **Contextual analysis** | Attack scenarios and MITRE techniques are detection **hypotheses** without victim-side telemetry proving a procedure. |
 
-**Counting decision.** The source files contain **65 actual victim headings**. The mutually exclusive breakdown is **32 + 21 + 9 + 2 + 1 = 65**; the final **one** is the Bank of Kigali customer-facing fraud (`Victim Confirmed`, `Operational Fraud`), kept outside the canonical compromise and intrusion denominator. Consequently, the report's canonical charts use **64**. The Angola/South Africa/Nigeria record counts once.
+**Counting decision.** The source files contain **65 actual victim headings**. The mutually exclusive breakdown is **32 + 21 + 9 + 2 + 1 = 65**; the final **one** is the Bank of Kigali customer-facing fraud (`Victim Confirmed`, `Operational Fraud`). The report tables and charts use **65**. The Angola/South Africa/Nigeria record counts once.
 
 **Time discipline.** The event, initial disclosure, first known actor post and AFRINTEL ingestion date may differ. The **Pharmacie.ma** record filed under April identifies an earlier **27 January 2026** post and a claimed **September 2025** breach; **GET/General Electric Trading** refers to a **September 2024** SQL dump, while **National Oil Ethiopia** lists **24 March 2026** as the leak date. These are not automatically new technical intrusions occurring in April.
 
@@ -68,27 +68,29 @@ AFRINTEL monitors cyber-threat reporting across 54 African countries. The datase
 
 | Primary category | Observations | Share |
 |---|---:|---:|
-| **Data Leak** | **32** | **50.0%** |
-| **Ransomware / extortion listing** | **21** | **32.8%** |
-| **DDoS claim** | **9** | **14.1%** |
+| **Data Leak** | **32** | **49.2%** |
+| **Ransomware / extortion listing** | **21** | **32.3%** |
+| **DDoS claim** | **9** | **13.8%** |
 | **Access Sale** | **2** | **3.1%** |
-| **TOTAL** | **64** | **100.0%** |
+| **Operational Fraud** | **1** | **1.5%** |
+| **TOTAL** | **65** | **100.0%** |
 
 ![Incident classifications](assets/types_EN.png)
 ![Incident type distribution](assets/types_pie_EN.png)
 
 ```mermaid
 pie showData
-    title April 2026 - 64 canonical observations
+    title April 2026 - 65 victim records
     "Data leaks" : 32
     "Ransomware" : 21
     "DDoS claims" : 9
     "Access sales" : 2
+    "Operational fraud" : 1
 ```
 
 ### 3.2 Geographic distribution
 
-| Country / scope | Records | Share of 64 |
+| Country / scope | Records | Share of 65 |
 |---|---:|---:|
 | Egypt | **19** | **29.7%** |
 | Morocco | **15** | **23.4%** |
@@ -100,7 +102,8 @@ pie showData
 | Ghana | 2 | 3.1% |
 | Benin, Botswana, Ethiopia, Uganda, Seychelles, Sudan, Zambia | 7 | 10.9% |
 | **Cross-border (Angola / South Africa / Nigeria)** | **1** | **1.6%** |
-| **TOTAL** | **64** | **100.0%** |
+| Rwanda | **1** | **1.5%** |
+| **TOTAL** | **65** | **100.0%** |
 
 ![Geography of canonical records](assets/pays_EN.png)
 
@@ -126,11 +129,11 @@ Egypt leads in **documented publications**, but **eight of its 19 records** are 
 
 | Recorded status | Canonical records | Share |
 |---|---:|---:|
-| `Claim - Unverified` | **47** | **73.4%** |
-| `Claim - Data Sample Published` | **15** | **23.4%** |
+| `Claim - Unverified` | **46** | **70.8%** |
+| `Claim - Data Sample Published` | **16** | **24.6%** |
 | `Data Fully Published` | **1** | **1.6%** |
-| `Victim Confirmed` | **1** | **1.6%** |
-| **TOTAL** | **64** | **100.0%** |
+| `Victim Confirmed` | **2** | **3.1%** |
+| **TOTAL** | **65** | **100.0%** |
 
 ![Evidence qualification](assets/preuves_EN.png)
 
@@ -230,12 +233,12 @@ The following editorial sector mapping assigns one primary business sector to ea
 | Education / training | **8** | **12.5%** | Control student and staff databases and admin consoles. |
 | Commerce / e-commerce / data | 6 | 9.4% | Detect CRM exports and customer-location disclosure. |
 | Healthcare / pharmacy | 5 | 7.8% | Safeguard sensitive records and continuity of care. |
-| Finance / insurance | 4 | 6.3% | Detect payment fraud and transaction-data exposure. |
+| Finance / insurance | 5 | 7.7% | Detect payment fraud and transaction-data exposure. |
 | Telecoms / digital | 4 | 6.3% | Limit service-provider privileges and admin interfaces. |
 | Transport / tourism / events | 3 | 4.7% | Protect service delivery and customer workflows. |
 | Sport | 2 | 3.1% | Protect member identities, especially minors. |
 | Personal / social services | 1 | 1.6% | Safeguard beneficiary records. |
-| **TOTAL** | **64** | **100.0%** | |
+| **TOTAL** | **65** | **100.0%** | |
 
 ![Normalised sectors](assets/secteurs_EN.png)
 

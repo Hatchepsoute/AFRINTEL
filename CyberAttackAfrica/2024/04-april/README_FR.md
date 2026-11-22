@@ -159,13 +159,13 @@ timeline
 - **Précision chronologique -** Campagne couvrant les événements des 1er et 3 avril.
 - **Acteur / Groupe -** Unknown
 - **Secteur -** Finance / Banking
-- **Site web -** [cbl.gov.ly](https -//cbl.gov.ly/)
+- **Site web -** [cbl.gov.ly](https://cbl.gov.ly/)
 - **Statut -** Victim Confirmed
 - **Type d'incident -** DDoS
 - **Niveau de confiance -** Very High
 - **Niveau d'impact -** Level 3
 - **Analyse -** Le 1er avril, la plateforme de réservation de devises a subi une attaque DDoS affectant l'accès. Le 3 avril, le site officiel a subi une attaque du même type. AFRINTEL compte cette séquence comme une seule campagne DDoS et non comme un incident distinct par service ou domaine.
-- **Sources publiques -** [Libya Observer](https -//libyaobserver.ly/sites/default/files/issues/172.pdf) | [KonBriefing](https -//konbriefing.com/en-topics/cyber-attacks-2024.html)
+- **Sources publiques -** [Libya Observer](https://libyaobserver.ly/sites/default/files/issues/172.pdf) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
 
 ----------------------------
     1-2 Avril 2024 : Moneyweb
@@ -175,13 +175,13 @@ timeline
 - **Précision chronologique -** Deux vagues documentées les 1er et 2 avril, comptées comme une seule campagne.
 - **Acteur / Groupe -** Unknown
 - **Secteur -** Media / Entertainment
-- **Site web -** [moneyweb.co.za](https -//www.moneyweb.co.za/)
+- **Site web -** [moneyweb.co.za](https://www.moneyweb.co.za/)
 - **Statut -** Victim Confirmed
 - **Type d'incident -** DDoS
 - **Niveau de confiance -** Very High
 - **Niveau d'impact -** Level 3
 - **Analyse -** Moneyweb a documenté une première attaque DDoS d'environ 12 heures le 1er avril, suivie d'une seconde de plus de 8 heures le 2 avril. La victime a estimé environ 1,015 milliard de requêtes et a reçu un message d'extorsion. AFRINTEL conserve l'extorsion comme contexte et `DDoS` comme type principal unique.
-- **Sources publiques -** [Moneyweb](https -//www.moneyweb.co.za/in-depth/investigations/massive-cyberattack-targets-moneywebs-banxso-articles/) | [KonBriefing](https -//konbriefing.com/en-topics/cyber-attacks-2024.html)
+- **Sources publiques -** [Moneyweb](https://www.moneyweb.co.za/in-depth/investigations/massive-cyberattack-targets-moneywebs-banxso-articles/) | [KonBriefing](https://konbriefing.com/en-topics/cyber-attacks-2024.html)
 
 ----------------------------
     04 Avril 2024 : Remitano (Cryptocurrency Exchange)
@@ -208,7 +208,7 @@ timeline
     13 Avril 2024 : Caxton and CTP Publishers and Printers
 - **Acteur / Groupe -** hunters
 - **Secteur -** Media / Entertainment
-- **Site web -** https -//www.caxton.co.za
+- **Site web -** https://www.caxton.co.za
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 2
@@ -232,7 +232,7 @@ timeline
 - **Date de détection AFRINTEL -** 21 août 2026
 - **Acteur / Groupe -** EgyptLeaks
 - **Secteur -** Healthcare / Medical
-- **Site web -** [vezeeta.com](https -//www.vezeeta.com)
+- **Site web -** [vezeeta.com](https://www.vezeeta.com)
 - **Statut -** Claim - Data Sample Published
 - **Niveau de confiance -** Medium
 - **Niveau d'impact -** Level 3
@@ -252,7 +252,7 @@ timeline
     23 Avril 2024 : ONEF (Observatoire national de l’emploi et de la formation)
 - **Acteur / Groupe -** Pedi
 - **Secteur -** Government / Administration
-- **Site web -** [onef.gov.bf](https -//onef.gov.bf)
+- **Site web -** [onef.gov.bf](https://onef.gov.bf)
 - **Statut -** Claim - Data Sample Published
 - **Niveau de confiance -** Medium
 - **Niveau d'impact -** Level 3
@@ -262,7 +262,7 @@ timeline
     29 Avril 2024 : SM EMBALLAGE
 - **Acteur / Groupe -** spacebears
 - **Secteur -** Manufacturing / Industry
-- **Site web -** https -//smemballage.com/
+- **Site web -** https://smemballage.com/
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 2
@@ -283,7 +283,7 @@ timeline
     29 Avril 2024 : Thinkadam
 - **Acteur / Groupe -** spacebears
 - **Secteur -** Technology / IT
-- **Site web -** https -//www.thinkadam.co/
+- **Site web -** https://www.thinkadam.co/
 - **Statut -** Claim - Unverified
 - **Niveau de confiance -** Low
 - **Niveau d'impact -** Level 2

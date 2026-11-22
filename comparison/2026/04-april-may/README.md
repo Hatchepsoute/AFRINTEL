@@ -2,14 +2,14 @@
 
 ## Comparable scope
 
-This comparison uses the validated bilingual victim files: **72 records in April** and **106 records in May**. Each record is counted once in its publication or first documented observation month. Earlier or later discovery does not move a record between months.
+This comparison uses the validated bilingual victim files: **65 records in April** and **107 records in May**. Each record is counted once in its publication or first documented observation month. Earlier or later discovery does not move a record between months.
 
 | Indicator | April | May | Change |
 |---|---:|---:|---:|
-| Total incidents | **72** | **106** | **+34 (+47.2%)** |
+| Total incidents | **65** | **107** | **+42 (+64.6%)** |
 | Ransomware | 21 | 17 | -4 |
-| Data Leak | 40 | 44 | +4 |
-| Access Sale | 1 | 1 | 0 |
+| Data Leak | 32 | 45 | +13 |
+| Access Sale | 2 | 1 | -1 |
 | DDoS | 9 | 43 | +34 |
 | System Intrusion | 0 | 1 | +1 |
 | Operational Fraud | 1 | 0 | -1 |
@@ -19,7 +19,7 @@ xychart-beta
     title "Monthly records: April vs May 2026"
     x-axis [April, May]
     y-axis "Records" 0 --> 111
-    bar [72, 106]
+    bar [65, 107]
 ```
 
 ## Countries represented

@@ -2,14 +2,14 @@
 
 ## Comparable scope
 
-This comparison uses the validated bilingual victim files: **106 records in May** and **41 records in June**. Each record is counted once in its publication or first documented observation month. Earlier or later discovery does not move a record between months.
+This comparison uses the validated bilingual victim files: **107 records in May** and **47 records in June**. Each record is counted once in its publication or first documented observation month. Earlier or later discovery does not move a record between months.
 
 | Indicator | May | June | Change |
 |---|---:|---:|---:|
-| Total incidents | **106** | **41** | **-65 (-61.3%)** |
+| Total incidents | **107** | **47** | **-60 (-56.1%)** |
 | Ransomware | 17 | 20 | +3 |
-| Data Leak | 44 | 18 | -26 |
-| Access Sale | 1 | 2 | +1 |
+| Data Leak | 45 | 22 | -23 |
+| Access Sale | 1 | 4 | +3 |
 | DDoS | 43 | 0 | -43 |
 | System Intrusion | 1 | 1 | 0 |
 
@@ -18,7 +18,7 @@ xychart-beta
     title "Monthly records: May vs June 2026"
     x-axis [May, June]
     y-axis "Records" 0 --> 111
-    bar [106, 41]
+    bar [107, 47]
 ```
 
 ## Countries represented
@@ -50,4 +50,4 @@ xychart-beta
 
 ## CTI reading
 
-The corpus changes from 106 to 41 records. This is a change in AFRINTEL documented visibility and composition; it is not, by itself, evidence of a change in the underlying number of compromises.
+The corpus changes from 107 to 47 records. This is a change in AFRINTEL documented visibility and composition; it is not, by itself, evidence of a change in the underlying number of compromises.
